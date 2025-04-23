@@ -1,0 +1,157 @@
+[
+    {
+        "id": "3_CelestialBody_test_1",
+        "input_text": "The asteroid, 107 Camilla, was discovered on the 1st of March, 2001, by Nottingham born, N. R. Pogson.",
+        "response": "[107 Camilla, discovered, 1st of March, 2001]:(Asteroid, discovered, Date), [107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Astronomer), [N. R. Pogson, birthPlace, Nottingham]:(Astronomer, birthPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_2",
+        "input_text": "December 31st 2006 is the epoch date of 109 Felicitas, which has a periapsis of 283326000000 and an orbital period of 139705000.",
+        "response": "[109 Felicitas, epoch, December 31st 2006]:(Asteroid, epoch, Date), [109 Felicitas, periapsis, 283326000000]:(Asteroid, periapsis, number), [109 Felicitas, orbitalPeriod, 139705000]:(Asteroid, orbitalPeriod, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_3",
+        "input_text": "1101 Clematis, has a mass of 5.7 kgs, an orbital period of, 183309000, and the epoch date of, 31 December 2006.",
+        "response": "[1101 Clematis, mass, 5.7]:(Asteroid, mass, number), [1101 Clematis, orbitalPeriod, 183309000]:(Asteroid, orbitalPeriod, number), [1101 Clematis, epoch, 31 December 2006]:(Asteroid, epoch, Date)"
+    },
+    {
+        "id": "3_CelestialBody_test_4",
+        "input_text": "103 Hera has a mass of 7.9 kg and an escape velocity of 0.0482 km per sec. It has an apoapsis of 437170000 (kilometres).",
+        "response": "[103 Hera, mass, 7.9]:(Asteroid, mass, number), [103 Hera, escapeVelocity, 0.0482]:(Asteroid, escapeVelocity, number), [103 Hera, apoapsis, 437170000]:(Asteroid, apoapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_5",
+        "input_text": "James Craig Watson, who discovered 103 Hera, is a Canadian national who graduated from the University of Michigan.",
+        "response": "[103 Hera, discoverer, James Craig Watson]:(Asteroid, discoverer, Astronomer), [James Craig Watson, nationality, Canada]:(Astronomer, nationality, Country), [James Craig Watson, almaMater, University of Michigan]:(Astronomer, almaMater, University)"
+    },
+    {
+        "id": "3_CelestialBody_test_6",
+        "input_text": "(29075) 1950 DA has an epoch date of August 27th 2011. It has an orbital period of 69862200 and a periapsis of 124950000000.",
+        "response": "[(29075) 1950 DA, epoch, August 27th 2011]:(Asteroid, epoch, Date), [(29075) 1950 DA, orbitalPeriod, 69862200]:(Asteroid, orbitalPeriod, number), [(29075) 1950 DA, periapsis, 124950000000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_7",
+        "input_text": "(66391) 1999 KW4 has an epoch date of July 14th 2004, an escape velocity of 0 and a periapsis of 29919600000.",
+        "response": "[(66391) 1999 KW4, epoch, July 14th 2004]:(Asteroid, epoch, Date), [(66391) 1999 KW4, escapeVelocity, 0]:(Asteroid, escapeVelocity, number), [(66391) 1999 KW4, periapsis, 29919600000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_8",
+        "input_text": "N. R. Pogson, who was born in Nottingham, discovered 107 Camilla that has an orbital period of 2368.05 days.",
+        "response": "[107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Astronomer), [N. R. Pogson, birthPlace, Nottingham]:(Astronomer, birthPlace, Place), [107 Camilla, orbitalPeriod, 2368.05]:(Asteroid, orbitalPeriod, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_9",
+        "input_text": "31st of December, 2006, is the epoch date for 101 Helena. This asteroid, was discovered by James Craig Watson, who later died in Madison (Wisconsin).",
+        "response": "[101 Helena, epoch, 31st of December, 2006]:(Asteroid, epoch, Date), [101 Helena, discoverer, James Craig Watson]:(Asteroid, discoverer, Person), [James Craig Watson, deathPlace, Madison]:(Person, deathPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_10",
+        "input_text": "The celestial body known as (410777) 2009 FD has an orbital period of 39447000 and was discovered by Spacewatch on 27 June 2015.",
+        "response": "[(410777) 2009 FD, orbitalPeriod, 39447000]:(Asteroid, orbitalPeriod, number), [(410777) 2009 FD, discovered, 27 June 2015]:(Asteroid, discovered, Date), [(410777) 2009 FD, discoverer, Spacewatch]:(Asteroid, discoverer, Organisation)"
+    },
+    {
+        "id": "3_CelestialBody_test_11",
+        "input_text": "Walter Baade, who discovered 1036 Ganymed, graduated from the University of Göttingen where his doctoral student was Halton Arp.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University), [Walter Baade, doctoralStudent, Halton Arp]:(Astronomer, doctoralStudent, Astronomer)"
+    },
+    {
+        "id": "3_CelestialBody_test_12",
+        "input_text": "Walter Baade, who discovered 1036 Ganymed, studied at the University of Göttingen and had Allan Sandage as a doctoral student.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University), [Walter Baade, doctoralStudent, Allan Sandage]:(Astronomer, doctoralStudent, Astronomer)"
+    },
+    {
+        "id": "3_CelestialBody_test_13",
+        "input_text": "Walter Baade, who discovered 1036 Ganymed, was born in the German Empire and attended the University of Göttingen.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, birthPlace, German Empire]:(Astronomer, birthPlace, Place), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University)"
+    },
+    {
+        "id": "3_CelestialBody_test_14",
+        "input_text": "Walter Baade discovered 1036 Ganymed. He was born in the German Empire and his doctoral student was Halton Arp.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, birthPlace, German Empire]:(Astronomer, birthPlace, Place), [Walter Baade, doctoralStudent, Halton Arp]:(Astronomer, doctoralStudent, Astronomer)"
+    },
+    {
+        "id": "3_CelestialBody_test_15",
+        "input_text": "1036 Ganymed was discovered by Walter Baade, a German National who studied at the University of Göttingen.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, nationality, Germany]:(Astronomer, nationality, Country), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University)"
+    },
+    {
+        "id": "3_CelestialBody_test_16",
+        "input_text": "Halton Arp was a doctoral student of Walter Baade who was born in Preußisch Oldendorf and later discovered 1036 Ganymed.",
+        "response": "[Halton Arp, doctoralStudent, Walter Baade]:(Person, doctoralStudent, Person), [Walter Baade, birthPlace, Preußisch Oldendorf]:(Scientist, birthPlace, Place), [1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer)"
+    },
+    {
+        "id": "3_CelestialBody_test_17",
+        "input_text": "1036 Ganymed was discovered by Walter Baade, whose alma mater was the University of Göttingen, and who died in Göttingen.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University), [Walter Baade, deathPlace, Göttingen]:(Astronomer, deathPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_18",
+        "input_text": "Walter Baade, born in Preußisch Oldendorf, discovered 1036 Ganymed. He studied at the University of Göttingen.",
+        "response": "[Walter Baade, birthPlace, Preußisch Oldendorf]:(Astronomer, birthPlace, Place), [Walter Baade, discoverer, 1036 Ganymed]:(Astronomer, discoverer, Asteroid), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University)"
+    },
+    {
+        "id": "3_CelestialBody_test_19",
+        "input_text": "Walter Baade, a graduate from University of Göttingen, discovered 1036 Ganymed, and died in West Germany.",
+        "response": "[1036 Ganymed, discoverer, Walter Baade]:(Asteroid, discoverer, Astronomer), [Walter Baade, almaMater, University of Göttingen]:(Astronomer, almaMater, University), [Walter Baade, deathPlace, West Germany]:(Astronomer, deathPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_20",
+        "input_text": "1036 Ganymed has an epoch date of October 22nd 2004. Its orbital period is 374976 seconds and has an apoapsis measurement of 611961000 (kilometres).",
+        "response": "[1036 Ganymed, epoch, October 22nd 2004]:(Asteroid, epoch, Date), [1036 Ganymed, orbitalPeriod, 374976]:(Asteroid, orbitalPeriod, number), [1036 Ganymed, apoapsis, 611961000]:(Asteroid, apoapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_21",
+        "input_text": "Discovered by C. Woods, 107 Camilla has a periapsis of 479343000 kilometres, and an epoch date of December 31st, 2006.",
+        "response": "[107 Camilla, discoverer, C. Woods]:(Asteroid, discoverer, Person), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number), [107 Camilla, epoch, December 31st, 2006]:(Asteroid, epoch, Date)"
+    },
+    {
+        "id": "3_CelestialBody_test_22",
+        "input_text": "107 Camilla was discovered by Nottingham born N. R. Pogson, who died in Chennai.",
+        "response": "[107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Astronomer), [N. R. Pogson, birthPlace, Nottingham]:(Astronomer, birthPlace, Place), [N. R. Pogson, deathPlace, Chennai]:(Astronomer, deathPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_23",
+        "input_text": "N. R. Pogson, who was born in Nottingham, discovered 107 Camilla on 17 November 1868.",
+        "response": "[N. R. Pogson, birthPlace, Nottingham]:(Astronomer, birthPlace, Place), [107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Astronomer), [107 Camilla, discovered, 17 November 1868]:(Asteroid, discovered, Date)"
+    },
+    {
+        "id": "3_CelestialBody_test_24",
+        "input_text": "107 Camilla was discovered by the British N. R. Pogson who later died in Chennai.",
+        "response": "[107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Astronomer), [N. R. Pogson, deathPlace, Chennai]:(Astronomer, deathPlace, Place)"
+    },
+    {
+        "id": "3_CelestialBody_test_25",
+        "input_text": "N. R. Pogson was born in Nottingham, and discovered 107 Camilla, which has a periapsis of 479343000 kilometres.",
+        "response": "[N. R. Pogson, birthPlace, Nottingham]:(Person, birthPlace, Place), [107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Person), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_26",
+        "input_text": "Discovered by A. Storrs, 107 Camilla, has an epoch date of December 31st 2006, and the periapsis of 479343000 kilometres.",
+        "response": "[107 Camilla, discoverer, A. Storrs]:(Asteroid, discoverer, Person), [107 Camilla, epoch, December 31st 2006]:(Asteroid, epoch, Date), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_27",
+        "input_text": "N. R. Pogson discovered 107 Camilla, which has an epoch date of December 31st 2006, and a periapsis of 479343000 kilometres.",
+        "response": "[107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Person), [107 Camilla, epoch, December 31st 2006]:(Asteroid, epoch, Date), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_28",
+        "input_text": "Discovered by M. Gaffey, 107 Camilla, has the epoch 31 December 2006, and a periapsis of 479343000 kilometres.",
+        "response": "[107 Camilla, discoverer, M. Gaffey]:(Asteroid, discoverer, Person), [107 Camilla, epoch, 31 December 2006]:(Asteroid, epoch, Date), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number)"
+    },
+    {
+        "id": "3_CelestialBody_test_29",
+        "input_text": "107 Camilla which has a periapsis of 479343000 kilometres was discovered by E. Wells and has an epoch date of 31st December 2006.",
+        "response": "[107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number), [107 Camilla, discoverer, E. Wells]:(Asteroid, discoverer, Person), [107 Camilla, epoch, 31st December 2006]:(Asteroid, epoch, Date)"
+    },
+    {
+        "id": "3_CelestialBody_test_30",
+        "input_text": "N. R. Pogson was born in Nottingham and discovered the 107 Camilla which has an epoch date of 31 December 2006.",
+        "response": "[N. R. Pogson, birthPlace, Nottingham]:(Person, birthPlace, Place), [107 Camilla, discoverer, N. R. Pogson]:(Asteroid, discoverer, Person), [107 Camilla, epoch, 31 December 2006]:(Asteroid, epoch, Date)"
+    },
+    {
+        "id": "3_CelestialBody_test_31",
+        "input_text": "B. Zellner discovered 107 Camilla, which has the epoch date of, December 31st 2006, and has a periapsis of, 479343000 kilometres.",
+        "response": "[B. Zellner, discoverer, 107 Camilla]:(Person, discoverer, Asteroid), [107 Camilla, epoch, December 31st 2006]:(Asteroid, epoch, Date), [107 Camilla, periapsis, 479343000]:(Asteroid, periapsis, number)"
+    }
+]

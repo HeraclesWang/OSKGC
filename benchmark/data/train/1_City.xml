@@ -1,0 +1,3252 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_City" id="1_City_train_1">
+      <text>The California State Assembly is located in the California State Capitol.</text>
+      <triples>
+        <triple>
+          <sub>California_State_Assembly</sub>
+          <rel>location</rel>
+          <obj>California_State_Capitol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>location</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_2">
+      <text>Atlanta has the area code of 404.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>areaCode</rel>
+          <obj>404</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_3">
+      <text>Seattle is the largest city in King County.</text>
+      <triples>
+        <triple>
+          <sub>King_County</sub>
+          <rel>largestCity</rel>
+          <obj>Seattle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_4">
+      <text>Lee County (Alabama) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Lee_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_5">
+      <text>Amarillo (Texas) is elevated 1099 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>1099</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_6">
+      <text>The total area of Atlanta is 347.1 SqKm.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>areaTotal</rel>
+          <obj>347.1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_7">
+      <text>Adrián Rivera Pérez is a leader in Morelos.</text>
+      <triples>
+        <triple>
+          <sub>Morelos</sub>
+          <rel>leader</rel>
+          <obj>Adrián_Rivera_Pérez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_8">
+      <text>Arlington (Texas) is part of Texas.</text>
+      <triples>
+        <triple>
+          <sub>Arlington</sub>
+          <rel>isPartOf</rel>
+          <obj>Texas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_9">
+      <text>King County Washington is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>King_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_10">
+      <text>Mayor is the title of the leader of Auburn (Washington).</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_11">
+      <text>Auburn (Washington) is part of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>isPartOf</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_12">
+      <text>Seattle is the largest city in Washington State.</text>
+      <triples>
+        <triple>
+          <sub>Washington</sub>
+          <rel>largestCity</rel>
+          <obj>Seattle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_13">
+      <text>Don Guardian is the leader of Atlantic City (New Jersey).</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>leader</rel>
+          <obj>Don_Guardian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_14">
+      <text>Spanish is a language spoken in Texas.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_15">
+      <text>Indianapolis is the capital of Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Indiana</sub>
+          <rel>capital</rel>
+          <obj>Indianapolis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_16">
+      <text>Anderson (Indiana) has an area of 107.43 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>areaTotal</rel>
+          <obj>107.43</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_17">
+      <text>The total area of Arlington (Texas) is 258.2 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Arlington</sub>
+          <rel>areaTotal</rel>
+          <obj>258.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_18">
+      <text>Lee County (Alabama) is in Alabama.</text>
+      <triples>
+        <triple>
+          <sub>Lee_County</sub>
+          <rel>isPartOf</rel>
+          <obj>Alabama</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_19">
+      <text>The United States House of Representatives leads Anaheim.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>leaderTitle</rel>
+          <obj>United_States_House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_20">
+      <text>The Democratic Party of the United States headquarters on South Capitol Street.</text>
+      <triples>
+        <triple>
+          <sub>Democratic_Party</sub>
+          <rel>headquarter</rel>
+          <obj>South_Capitol_Street</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PoliticalParty</sub>
+          <rel>headquarter</rel>
+          <obj>Road</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_21">
+      <text>The total area of the city Auburn (Alabama), is 140.8 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>areaTotal</rel>
+          <obj>140.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_22">
+      <text>The California State Senate is located at the California State Capitol.</text>
+      <triples>
+        <triple>
+          <sub>California_State_Senate</sub>
+          <rel>location</rel>
+          <obj>California_State_Capitol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>location</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_23">
+      <text>Alabama is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Alabama</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_24">
+      <text>Anaheim has a UTC offset of -8.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>utcOffset</rel>
+          <obj>-8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_25">
+      <text>1.7 square kilometres is the area of water in Auburn (Alabama).</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>areaOfWater</rel>
+          <obj>1.7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_26">
+      <text>Anaheim has an elevation of 48 m above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>48</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_27">
+      <text>Austin (Texas) has a land area of 686 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>areaOfLand</rel>
+          <obj>686</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfLand</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_28">
+      <text>Washington state is located within the United States.</text>
+      <triples>
+        <triple>
+          <sub>Washington</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_29">
+      <text>The total area of Alpharetta is 55.4 SqKm.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>areaTotal</rel>
+          <obj>55.4</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_30">
+      <text>The area code in Atlantic City (New Jersey) is 609.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>areaCode</rel>
+          <obj>609</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_31">
+      <text>Amarillo (Texas) is the county seat of Potter County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Potter_County</sub>
+          <rel>countySeat</rel>
+          <obj>Amarillo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_32">
+      <text>Potter County (Texas) is in Texas.</text>
+      <triples>
+        <triple>
+          <sub>Potter_County</sub>
+          <rel>isPartOf</rel>
+          <obj>Texas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_33">
+      <text>Akron is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_34">
+      <text>Atlantic City has a population density of 1421.2 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>populationDensity</rel>
+          <obj>1421.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_35">
+      <text>Abilene (Texas) has a total area of 286.5 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>areaTotal</rel>
+          <obj>286.5</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_36">
+      <text>Atlantic City is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_37">
+      <text>Auburn (Alabama), has the area code, 334.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>areaCode</rel>
+          <obj>334</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_38">
+      <text>Anaheim is led by the California State Assembly.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>leaderTitle</rel>
+          <obj>California_State_Assembly</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_39">
+      <text>Pierce County (Washington) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Pierce_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_40">
+      <text>Anderson (Indiana) has an elevation of 268 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>268</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_41">
+      <text>The leader of New Mexico House of Representatives is Don Tripp.</text>
+      <triples>
+        <triple>
+          <sub>New_Mexico_House_of_Representatives</sub>
+          <rel>leader</rel>
+          <obj>Don_Tripp</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_42">
+      <text>Chinese is one of the languages spoken in California.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>language</rel>
+          <obj>Chinese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_43">
+      <text>Austin (Texas) is the largest city in Travis County.</text>
+      <triples>
+        <triple>
+          <sub>Travis_County</sub>
+          <rel>largestCity</rel>
+          <obj>Austin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_44">
+      <text>Houston is the largest city in Texas.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>largestCity</rel>
+          <obj>Houston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_45">
+      <text>Anderson (Indiana) is led by the Democratic Party.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>leader</rel>
+          <obj>Democratic_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_46">
+      <text>Arlington (Texas) is part of Tarrant County.</text>
+      <triples>
+        <triple>
+          <sub>Arlington</sub>
+          <rel>isPartOf</rel>
+          <obj>Tarrant_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_47">
+      <text>Albuquerque is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_48">
+      <text>"Mayor" is the title of the leader in Atlantic City.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_49">
+      <text>The leader of Albuquerque (New Mexico) is called the Mayor of Albuquerque.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor_of_Albuquerque</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_50">
+      <text>Population density in Auburn (Alabama) is 368.65 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>populationDensity</rel>
+          <obj>368.65</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_51">
+      <text>Georgetown (Texas) is the county seat of Williamson County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Williamson_County</sub>
+          <rel>countySeat</rel>
+          <obj>Georgetown</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_52">
+      <text>Anderson (Indiana) is part of Anderson Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Anderson_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_53">
+      <text>Albuquerque has a total are of 490.9 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>areaTotal</rel>
+          <obj>490.9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_54">
+      <text>Albuquerque City Council is led by Richard J. Berry.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque_City_Council</sub>
+          <rel>leader</rel>
+          <obj>Richard_J._Berry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_55">
+      <text>The leader title for Ciudad Ayala is City Manager.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>leaderTitle</rel>
+          <obj>City_Manager</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_56">
+      <text>Atlantic City is part of Atlantic County.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>isPartOf</rel>
+          <obj>Atlantic_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_57">
+      <text>One of the ethnic groups in the United States, is Asian Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Asian_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_58">
+      <text>Americans live in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>demonym</rel>
+          <obj>Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_59">
+      <text>The largest city in Hays County is San Marcos.</text>
+      <triples>
+        <triple>
+          <sub>Hays_County</sub>
+          <rel>largestCity</rel>
+          <obj>San_Marcos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_60">
+      <text>Auburn (Washington) has a population density of 914.8 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>populationDensity</rel>
+          <obj>914.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_61">
+      <text>Native Americans are one of the ethnic groups in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_62">
+      <text>Ciudad Ayala is in the Pacific Daylight time zone.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>timeZone</rel>
+          <obj>Pacific_Daylight_Time</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_63">
+      <text>The United States house of Representatives is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States_House_of_Representatives</sub>
+          <rel>location</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_64">
+      <text>Amarillo (Texas) is a city in Texas.</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>isPartOf</rel>
+          <obj>Texas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_65">
+      <text>Abilene (Texas) is 524 m above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>524</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_66">
+      <text>Atlanta is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_67">
+      <text>Contra Costa County is part of the San Francisco Bay area.</text>
+      <triples>
+        <triple>
+          <sub>Contra_Costa_County</sub>
+          <rel>isPartOf</rel>
+          <obj>San_Francisco_Bay_Area</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>isPartOf</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_68">
+      <text>Anderson (Indiana) is a city in Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_69">
+      <text>The leader of Mexico is Roberto Gil Zuarth.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>leader</rel>
+          <obj>Roberto_Gil_Zuarth</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_70">
+      <text>Akron is at a height of 306 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>306</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_71">
+      <text>The area code of Anderson (Indiana), is 765.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>areaCode</rel>
+          <obj>765</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_72">
+      <text>Amarillo (Texas) in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_73">
+      <text>In Indiana, the language spoken is American English.</text>
+      <triples>
+        <triple>
+          <sub>Indiana</sub>
+          <rel>language</rel>
+          <obj>American_English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_74">
+      <text>The population density of Ciudad Ayala is 1604.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>populationDensity</rel>
+          <obj>1604</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_75">
+      <text>Atlantic County is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_76">
+      <text>The total area of Mexico is 1972550 square kilometers.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>areaTotal</rel>
+          <obj>1972550</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_77">
+      <text>Ciudad Ayala is part of Morelos.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>isPartOf</rel>
+          <obj>Morelos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_78">
+      <text>Jones County (Texas) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Jones_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_79">
+      <text>Monroe Township (Madison County, Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Monroe_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_80">
+      <text>The Navajo language, is one of the languages spoken in New Mexico.</text>
+      <triples>
+        <triple>
+          <sub>New_Mexico</sub>
+          <rel>language</rel>
+          <obj>Navajo_language</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_81">
+      <text>Abilene (Texas) is part of Jones County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>isPartOf</rel>
+          <obj>Jones_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_82">
+      <text>Austin (Texas) is the county seat of Travis County.</text>
+      <triples>
+        <triple>
+          <sub>Travis_County</sub>
+          <rel>countySeat</rel>
+          <obj>Austin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_83">
+      <text>Indiana is the United States.</text>
+      <triples>
+        <triple>
+          <sub>Indiana</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_84">
+      <text>Monroe Township (Madison County, Indiana) is a part of Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Monroe_Township</sub>
+          <rel>isPartOf</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_85">
+      <text>Pierce County (Washington) is the largest city in Tacoma.</text>
+      <triples>
+        <triple>
+          <sub>Pierce_County</sub>
+          <rel>largestCity</rel>
+          <obj>Tacoma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_86">
+      <text>Angola (Indiana), has a total area of 16.55 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>areaTotal</rel>
+          <obj>16.55</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_87">
+      <text>The English language is spoken in California.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_88">
+      <text>Anaheim is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_89">
+      <text>Atlanta covers 344.9 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>areaOfLand</rel>
+          <obj>344.9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfLand</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_90">
+      <text>Akron is in Summit County (Ohio).</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>isPartOf</rel>
+          <obj>Summit_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_91">
+      <text>King County is the location of Auburn (Washington).</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>isPartOf</rel>
+          <obj>King_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_92">
+      <text>Anaheim has 336265 people inhabiting it.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>populationTotal</rel>
+          <obj>336265</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_93">
+      <text>The chair of the Democratic Party in the United States is Debbie Wasserman Schultz.</text>
+      <triples>
+        <triple>
+          <sub>Democratic_Party</sub>
+          <rel>chairman</rel>
+          <obj>Debbie_Wasserman_Schultz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PoliticalParty</sub>
+          <rel>chairman</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_94">
+      <text>White Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_95">
+      <text>The government type in the city of Ciudad Ayala is council-manager.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>governmentType</rel>
+          <obj>Council-manager</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>governmentType</rel>
+          <obj>GovernmentType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_96">
+      <text>Auburn (Alabama) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_97">
+      <text>There are 992.6 people per square kilometres in Alpharetta.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>populationDensity</rel>
+          <obj>992.6</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_98">
+      <text>The leader of Atlanta is the Atlanta City Council.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>leader</rel>
+          <obj>Atlanta_City_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_99">
+      <text>Auburn (Alabama) has an elevation above sea level of 214.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>214</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_100">
+      <text>The city manager is the leader of Austin (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>leaderTitle</rel>
+          <obj>City_Manager</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_101">
+      <text>Alpharetta is elevated 346 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>346</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_102">
+      <text>The total population density of Abilene (Texas) is 429.9 inhabitants per sq km.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>populationDensity</rel>
+          <obj>429.9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_103">
+      <text>The California State Assembly is part of the California State Legislature.</text>
+      <triples>
+        <triple>
+          <sub>California_State_Assembly</sub>
+          <rel>isPartOf</rel>
+          <obj>California_State_Legislature</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>isPartOf</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_104">
+      <text>The leader of Ciudad Ayala is Juan Nolasco.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>leader</rel>
+          <obj>Juan_Nolasco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_105">
+      <text>Tom Tait is a leader in Anaheim.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>leader</rel>
+          <obj>Tom_Tait</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_106">
+      <text>Ann Arbor has a total area of 74.33 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>areaTotal</rel>
+          <obj>74.33</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_107">
+      <text>Anaheim is part of California.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>isPartOf</rel>
+          <obj>California</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_108">
+      <text>The area code for Amarillo (Texas) is 806.</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>areaCode</rel>
+          <obj>806</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_109">
+      <text>The California State Senate leads Anaheim.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>leaderTitle</rel>
+          <obj>California_State_Senate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_110">
+      <text>Abilene (Texas) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_111">
+      <text>Atlanta has a population density of 1299 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>populationDensity</rel>
+          <obj>1299</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_112">
+      <text>Angola (Indiana) is a city in Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>isPartOf</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_113">
+      <text>The leader in Austin (Texas) is the Mayor.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_114">
+      <text>The area code for Ann Arbor is 734.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>areaCode</rel>
+          <obj>734</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_115">
+      <text>Canyon (Texas), is the county seat of Randall County.</text>
+      <triples>
+        <triple>
+          <sub>Randall_County</sub>
+          <rel>countySeat</rel>
+          <obj>Canyon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_116">
+      <text>Round Rock is the largest city in Williamson County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Williamson_County</sub>
+          <rel>largestCity</rel>
+          <obj>Round_Rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_117">
+      <text>English is the language spoken in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_118">
+      <text>The area code of Abilene (Texas), is 325.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>areaCode</rel>
+          <obj>325</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_119">
+      <text>Alpharetta has an area of water 1 sq km.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>areaOfWater</rel>
+          <obj>1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_120">
+      <text>Akron has 0.88 square kilometres of water.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>areaOfWater</rel>
+          <obj>0.88</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_121">
+      <text>The United States House of Representatives is part of the United States Congress.</text>
+      <triples>
+        <triple>
+          <sub>United_States_House_of_Representatives</sub>
+          <rel>isPartOf</rel>
+          <obj>United_States_Congress</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>isPartOf</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_122">
+      <text>Austin (Texas) is part of Travis County.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>isPartOf</rel>
+          <obj>Travis_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_123">
+      <text>One of the leaders of the state of Morelos is the Governor.</text>
+      <triples>
+        <triple>
+          <sub>Morelos</sub>
+          <rel>leaderTitle</rel>
+          <obj>Governor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_124">
+      <text>Albuquerque is part of Bernalillo County.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>isPartOf</rel>
+          <obj>Bernalillo_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_125">
+      <text>Anderson (Indiana) is part of Fall Creek Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Fall_Creek_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_126">
+      <text>Anderson (Indiana) is part of Madison County (Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Madison_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_127">
+      <text>The United States house of Representatives is located in Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>United_States_House_of_Representatives</sub>
+          <rel>location</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_128">
+      <text>Anaheim has a UTC offset of -7.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>utcOffset</rel>
+          <obj>-7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_129">
+      <text>Washtenaw County is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Washtenaw_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_130">
+      <text>Randall County is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Randall_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_131">
+      <text>The population in the Ciudad Ayala metropolitan area is 1777539.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>populationMetro</rel>
+          <obj>1777539</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationMetro</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_132">
+      <text>Union Township (Madison County, Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Union_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_133">
+      <text>Abilene (Texas) is a part of Texas.</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>isPartOf</rel>
+          <obj>Texas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_134">
+      <text>Covington (Indiana) is the County seat of Fountain County.</text>
+      <triples>
+        <triple>
+          <sub>Fountain_County</sub>
+          <rel>countySeat</rel>
+          <obj>Covington</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_135">
+      <text>Ciudad Ayala falls into UTC offset -6 timezone.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>utcOffset</rel>
+          <obj>-6</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_136">
+      <text>The leader, of Albuquerque (New Mexico), is Richard J. Berry.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>leader</rel>
+          <obj>Richard_J._Berry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_137">
+      <text>Anderson (Indiana) is part of Lafayette Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Lafayette_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_138">
+      <text>Angola (Indiana) is part of Steuben County (Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>isPartOf</rel>
+          <obj>Steuben_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_139">
+      <text>Newark (New Jersey) is the largest city of New Jersey.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>largestCity</rel>
+          <obj>Newark</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_140">
+      <text>Arlington (Texas) has a water area of 82.8 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Arlington</sub>
+          <rel>areaOfWater</rel>
+          <obj>82.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_141">
+      <text>San Marcos is the county seat of Hays County.</text>
+      <triples>
+        <triple>
+          <sub>Hays_County</sub>
+          <rel>countySeat</rel>
+          <obj>San_Marcos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_142">
+      <text>New Jersey is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_143">
+      <text>The city manager is the leader of Ann Arbor.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>leaderTitle</rel>
+          <obj>City_Manager</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_144">
+      <text>Mayor, is the title of the leader in Ann Arbor.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_145">
+      <text>The biggest city in the United States is New York City.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>largestCity</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_146">
+      <text>Olympia (Washington) is the capital of Washington.</text>
+      <triples>
+        <triple>
+          <sub>Washington</sub>
+          <rel>capital</rel>
+          <obj>Olympia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_147">
+      <text>The population density, of Austin (Texas), is 1296.65 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>populationDensity</rel>
+          <obj>1296.65</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_148">
+      <text>Albuquerque has a population density of 1142.3 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>populationDensity</rel>
+          <obj>1142.3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_149">
+      <text>Abilene (Texas) is the largest city, in Taylor County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Taylor_County</sub>
+          <rel>largestCity</rel>
+          <obj>Abilene</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_150">
+      <text>The Morelos total area is 4879 km².</text>
+      <triples>
+        <triple>
+          <sub>Morelos</sub>
+          <rel>areaTotal</rel>
+          <obj>4879</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_151">
+      <text>Anderson Township (Madison County, Indiana) is in the Country of United States.</text>
+      <triples>
+        <triple>
+          <sub>Anderson_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_152">
+      <text>The capital of the United States is Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>capital</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_153">
+      <text>A leader of Mexico is called the President of the Chamber of Deputies.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_Chamber_of_Deputies</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_154">
+      <text>Monroe Township (Madison County, Indiana) is part of Madison County (Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Monroe_Township</sub>
+          <rel>isPartOf</rel>
+          <obj>Madison_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_155">
+      <text>The Democratic Party headquarters are in Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>Democratic_Party</sub>
+          <rel>headquarter</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PoliticalParty</sub>
+          <rel>headquarter</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_156">
+      <text>John Sánchez, is one of the leaders, in the New Mexico Senate.</text>
+      <triples>
+        <triple>
+          <sub>New_Mexico_Senate</sub>
+          <rel>leader</rel>
+          <obj>John_Sánchez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>leader</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_157">
+      <text>Austin (Texas) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_158">
+      <text>Austin (Texas) is in Hays County.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>isPartOf</rel>
+          <obj>Hays_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_159">
+      <text>Ann Arbor is part of Washtenaw County.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>isPartOf</rel>
+          <obj>Washtenaw_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_160">
+      <text>Opelika is the county seat of Lee County (Alabama).</text>
+      <triples>
+        <triple>
+          <sub>Lee_County</sub>
+          <rel>countySeat</rel>
+          <obj>Opelika</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_161">
+      <text>California is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_162">
+      <text>Austin (Texas) is the capital city of Texas.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>capital</rel>
+          <obj>Austin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_163">
+      <text>Anaheim has a total area of 131.6 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>areaTotal</rel>
+          <obj>131.6</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_164">
+      <text>The city of Ann Arbor, has a population of 1580.7 as per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>populationDensity</rel>
+          <obj>1580.7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_165">
+      <text>Amarillo (Texas) is part of Potter County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>isPartOf</rel>
+          <obj>Potter_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_166">
+      <text>Taylor County (Texas) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Taylor_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_167">
+      <text>African Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_168">
+      <text>Austin (Texas) is part of Williamson County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>isPartOf</rel>
+          <obj>Williamson_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_169">
+      <text>Amarillo (Texas) has a population density of 746 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Amarillo</sub>
+          <rel>populationDensity</rel>
+          <obj>746</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_170">
+      <text>A City Administrator leads Ann Arbor.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>leaderTitle</rel>
+          <obj>City_Administrator</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_171">
+      <text>English is a language spoken in Texas.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_172">
+      <text>Trenton (New Jersey) is the capital of New Jersey.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>capital</rel>
+          <obj>Trenton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_173">
+      <text>Auburn (Washington) is in Pierce County (Washington).</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>isPartOf</rel>
+          <obj>Pierce_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_174">
+      <text>Anderson (Indiana) has 523.9 people per square kilometer.</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>populationDensity</rel>
+          <obj>523.9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_175">
+      <text>The leader's title in Atlantic City (New Jersey) is Clerk, which is a municipal official.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Clerk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_176">
+      <text>Cuernavaca is part of Morelos.</text>
+      <triples>
+        <triple>
+          <sub>Cuernavaca</sub>
+          <rel>isPartOf</rel>
+          <obj>Morelos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_177">
+      <text>Angola (Indiana) is in Pleasant Township (Steuben County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>isPartOf</rel>
+          <obj>Pleasant_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_178">
+      <text>The land area, of Albuquerque (New Mexico), is 486.2 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>areaOfLand</rel>
+          <obj>486.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfLand</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_179">
+      <text>The area of Austin (Texas) is 703.95 (square kilometres).</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>areaTotal</rel>
+          <obj>703.95</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_180">
+      <text>The population density, of Akron (Ohio), is 1239.3 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>populationDensity</rel>
+          <obj>1239.3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_181">
+      <text>Akron is part of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>isPartOf</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_182">
+      <text>Christopher Taylor, politician, leads Ann Arbor.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>leader</rel>
+          <obj>Christopher_Taylor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_183">
+      <text>Auburn (Washington) is part of Washington state.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>isPartOf</rel>
+          <obj>Washington</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_184">
+      <text>Potter County (Texas) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Potter_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_185">
+      <text>Fall Creek Township (Madison County, Indiana) is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Fall_Creek_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_186">
+      <text>Tarrant County is situated in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Tarrant_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_187">
+      <text>Lafayette Township (Madison County, Indiana) is part of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Lafayette_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_188">
+      <text>Fountain County is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Fountain_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_189">
+      <text>Anderson (Indiana) is the largest city in Madison County (Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Madison_County</sub>
+          <rel>largestCity</rel>
+          <obj>Anderson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_190">
+      <text>The area code of Austin (Texas), is 512.</text>
+      <triples>
+        <triple>
+          <sub>Austin</sub>
+          <rel>areaCode</rel>
+          <obj>512</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_train_191">
+      <text>The county seat of Tarrant County in Texas is Fort Worth.</text>
+      <triples>
+        <triple>
+          <sub>Tarrant_County</sub>
+          <rel>countySeat</rel>
+          <obj>Fort_Worth</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

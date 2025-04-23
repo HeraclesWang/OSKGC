@@ -1,0 +1,1229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Company" id="1_Company_train_1">
+      <text>Hypermarcas is the company founded on January 1, 2001.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>foundingDate</rel>
+          <obj>2001-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_2">
+      <text>La Crosse is a city in the United States state of Wisconsin, and the city has a total area of 58.38.</text>
+      <triples>
+        <triple>
+          <sub>La_Crosse</sub>
+          <rel>areaTotal</rel>
+          <obj>58.38</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_3">
+      <text>GMA New Media is located in the GMA Network Center.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>location</rel>
+          <obj>GMA_Network_Center</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_4">
+      <text>Trane manufactures HVAC.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>product</rel>
+          <obj>HVAC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Product</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_5">
+      <text>La Crosse Wisconsin is 204 meters above sea level.</text>
+      <triples>
+        <triple>
+          <sub>La_Crosse</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>204</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_6">
+      <text>Rodrigo Duterte is the leader's name of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>leader</rel>
+          <obj>Rodrigo_Duterte</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_7">
+      <text>Filipino language is the official language in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>officialLanguage</rel>
+          <obj>Filipino_language</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_8">
+      <text>Philippine Entertainment Portal, Inc is a subsidiary of GMA New Media.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>subsidiary</rel>
+          <obj>Philippine_Entertainment_Portal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>subsidiary</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_9">
+      <text>Trane was founded on 01-01-1913.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>foundingDate</rel>
+          <obj>1913-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_10">
+      <text>King of Prussia (Pennsylvania) is in the North American Eastern time zone.</text>
+      <triples>
+        <triple>
+          <sub>King_of_Prussia</sub>
+          <rel>timeZone</rel>
+          <obj>North_American_Eastern_Time_Zone</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Settlement</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_11">
+      <text>Manila is part of Metro Manila.</text>
+      <triples>
+        <triple>
+          <sub>Manila</sub>
+          <rel>isPartOf</rel>
+          <obj>Metro_Manila</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>isPartOf</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_12">
+      <text>The GMA Network Center costs 46000000.</text>
+      <triples>
+        <triple>
+          <sub>GMA_Network_Center</sub>
+          <rel>cost</rel>
+          <obj>46000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>cost</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_13">
+      <text>La Crosse is governed by a mayor.</text>
+      <triples>
+        <triple>
+          <sub>La_Crosse</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_14">
+      <text>Leni Robredo is the leader of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>leader</rel>
+          <obj>Leni_Robredo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>VicePresident</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_15">
+      <text>The total area of Brazil is 8514837.14 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Brazil</sub>
+          <rel>areaTotal</rel>
+          <obj>8514837.14</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_16">
+      <text>The full name of the United States is the United States of America.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>longName</rel>
+          <obj>United_States_of_America</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>longName</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_17">
+      <text>The United States was founded on July 4, 1776.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>foundingDate</rel>
+          <obj>1776-07-04</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_18">
+      <text>GMA New Media is the parent company of Philippine Entertainment Portal.</text>
+      <triples>
+        <triple>
+          <sub>Philippine_Entertainment_Portal</sub>
+          <rel>parentCompany</rel>
+          <obj>GMA_New_Media</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_19">
+      <text>The type of government in the United States is federalism.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>governmentType</rel>
+          <obj>Federalism</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>governmentType</rel>
+          <obj>GovernmentType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_20">
+      <text>Hypermarcas has a net income of 108600000.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>netIncome</rel>
+          <obj>108600000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>netIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_21">
+      <text>GMA New Media is located in the Quezon City.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>location</rel>
+          <obj>Quezon_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_22">
+      <text>Brazil has a population density of 23.8.</text>
+      <triples>
+        <triple>
+          <sub>Brazil</sub>
+          <rel>populationDensity</rel>
+          <obj>23.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_23">
+      <text>The revenue of Trane is 10264000000.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>revenue</rel>
+          <obj>10264000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>revenue</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_24">
+      <text>The Philippines were founded on 12/06/1898.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>foundingDate</rel>
+          <obj>1898-06-12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_25">
+      <text>Manila is led by the City Council.</text>
+      <triples>
+        <triple>
+          <sub>Manila</sub>
+          <rel>leaderTitle</rel>
+          <obj>City_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>GovernmentAgency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_26">
+      <text>GMA Network is a public company.</text>
+      <triples>
+        <triple>
+          <sub>GMA_Network</sub>
+          <rel>type</rel>
+          <obj>Public_company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>type</rel>
+          <obj>CompanyType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_27">
+      <text>The foundation place of Trane is La Crosse.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>foundationPlace</rel>
+          <obj>La_Crosse</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_28">
+      <text>Manila is the capital city of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>capital</rel>
+          <obj>Manila</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_29">
+      <text>Pangasinense people are the ethnic group of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Pangasinense_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_30">
+      <text>Native Americans is a United States ethnic grouping.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_31">
+      <text>Hypermarcas sells healthcare products.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>industry</rel>
+          <obj>Healthcare</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>industry</rel>
+          <obj>Industry</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_32">
+      <text>Hypermarcas is in the pharmaceuticals industry.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>industry</rel>
+          <obj>Pharmaceuticals</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>industry</rel>
+          <obj>Industry</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_33">
+      <text>Trane has a net income of $ 556300000.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>netIncome</rel>
+          <obj>556300000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>netIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_34">
+      <text>Vice President is a United States leadership title.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>Vice_President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_35">
+      <text>The number of employees at Hypermarcas is 10252.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>10252</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_36">
+      <text>The Insular Government of the Philippine Islands was founded on 1901-07-01.</text>
+      <triples>
+        <triple>
+          <sub>Insular_Government_of_the_Philippine_Islands</sub>
+          <rel>foundingDate</rel>
+          <obj>1901-07-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AdministrativeRegion</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_37">
+      <text>The leader of Brazil's title is Vice President.</text>
+      <triples>
+        <triple>
+          <sub>Brazil</sub>
+          <rel>leaderTitle</rel>
+          <obj>Vice_President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_38">
+      <text>The name of the leader of the Philippines is Pantaleon Alvarez.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>leader</rel>
+          <obj>Pantaleon_Alvarez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_39">
+      <text>Hypermarcas is a type of S.A. (corporation).</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>type</rel>
+          <obj>S.A.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>type</rel>
+          <obj>CompanyType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_40">
+      <text>Trane is a subsidiary company.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>type</rel>
+          <obj>Subsidiary</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>type</rel>
+          <obj>CompanyType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_41">
+      <text>The number of employees in Trane is 29000.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>29000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_42">
+      <text>La Crosse is a city in La Crosse County in the United States state of Wisconsin.</text>
+      <triples>
+        <triple>
+          <sub>La_Crosse</sub>
+          <rel>isPartOf</rel>
+          <obj>La_Crosse_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_43">
+      <text>GMA Network is a company and its key person is Felipe Gozon.</text>
+      <triples>
+        <triple>
+          <sub>GMA_Network</sub>
+          <rel>keyPerson</rel>
+          <obj>Felipe_Gozon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_44">
+      <text>Kinsealy is a part of Swords (Dublin).</text>
+      <triples>
+        <triple>
+          <sub>Kinsealy</sub>
+          <rel>isPartOf</rel>
+          <obj>Swords</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_45">
+      <text>La Crosse is located in Wisconsin.</text>
+      <triples>
+        <triple>
+          <sub>La_Crosse</sub>
+          <rel>isPartOf</rel>
+          <obj>Wisconsin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_46">
+      <text>GMA Network is a company located in the city of Diliman.</text>
+      <triples>
+        <triple>
+          <sub>GMA_Network</sub>
+          <rel>city</rel>
+          <obj>Diliman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_47">
+      <text>Hypermarcas is located in São Paulo.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>location</rel>
+          <obj>São_Paulo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_48">
+      <text>Hypermarcas produces cosmetics.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>product</rel>
+          <obj>Cosmetics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Product</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_49">
+      <text>The total area of the United States covered by water is 6.97 percent.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>percentageOfAreaWater</rel>
+          <obj>6.97</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>percentageOfAreaWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_50">
+      <text>Aquilino Pimentel III is the leader of Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>leader</rel>
+          <obj>Aquilino_Pimentel_III</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_51">
+      <text>Swords (Dublin) has an urban area of 11.35 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Swords</sub>
+          <rel>areaUrban</rel>
+          <obj>11.35</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>areaUrban</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_52">
+      <text>Ireland is located in Europe.</text>
+      <triples>
+        <triple>
+          <sub>Ireland</sub>
+          <rel>location</rel>
+          <obj>Europe</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>location</rel>
+          <obj>Continent</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_53">
+      <text>The title of the leader of Swords (Dublin) is County Manager.</text>
+      <triples>
+        <triple>
+          <sub>Swords</sub>
+          <rel>leaderTitle</rel>
+          <obj>County_Manager</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_54">
+      <text>Hypermarcas is managed by their CEO.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>keyPerson</rel>
+          <obj>CEO</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_55">
+      <text>The time zone used by the Philippines is Philippine Standard time.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>timeZone</rel>
+          <obj>Philippine_Standard_Time</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_56">
+      <text>The operating income of Trane is $ 875400000.</text>
+      <triples>
+        <triple>
+          <sub>Trane</sub>
+          <rel>operatingIncome</rel>
+          <obj>875400000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>operatingIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_57">
+      <text>Felipe Gozon's birthdate is 1939-12-08.</text>
+      <triples>
+        <triple>
+          <sub>Felipe_Gozon</sub>
+          <rel>birthDate</rel>
+          <obj>1939-12-08</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BusinessPerson</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_58">
+      <text>GMA New Media makes mobile applications.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>product</rel>
+          <obj>Mobile_Applications</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Software</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_59">
+      <text>Cármen Lúcia is the leader of Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Brazil</sub>
+          <rel>leader</rel>
+          <obj>Cármen_Lúcia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_60">
+      <text>The leader party of Quezon City is the Liberal Party.</text>
+      <triples>
+        <triple>
+          <sub>Quezon_City</sub>
+          <rel>leaderParty</rel>
+          <obj>Liberal_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderParty</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_61">
+      <text>Hypermarcas has a subsidiary called Mantecorp.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>subsidiary</rel>
+          <obj>Mantecorp</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>subsidiary</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_62">
+      <text>GMA New Media's main product is online games.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>product</rel>
+          <obj>Online_Game</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Product</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_63">
+      <text>The United States covers a total area of 9833516.63 (square kilometres).</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>areaTotal</rel>
+          <obj>9833516.63</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_64">
+      <text>Paul Ryan is the leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Paul_Ryan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_65">
+      <text>GMA New Media, Inc. is a media company.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>type</rel>
+          <obj>Media_company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>type</rel>
+          <obj>CompanyType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_66">
+      <text>GMA New Media produces web services.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>service</rel>
+          <obj>Web_service</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>service</rel>
+          <obj>Service</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_67">
+      <text>GMA New Media is located in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>location</rel>
+          <obj>Philippines</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_68">
+      <text>Hypermarcas is located in Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Hypermarcas</sub>
+          <rel>location</rel>
+          <obj>Brazil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_69">
+      <text>GMA New Media, Inc. is a subsidiary of GMA Network.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>parentCompany</rel>
+          <obj>GMA_Network</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_70">
+      <text>African Americans is an ethnic grouping in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_71">
+      <text>Philippine English is the official language of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>officialLanguage</rel>
+          <obj>Philippine_English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_train_72">
+      <text>White Americans is an ethnic grouping in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

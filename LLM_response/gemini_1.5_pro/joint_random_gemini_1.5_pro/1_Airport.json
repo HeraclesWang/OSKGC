@@ -1,0 +1,357 @@
+[
+    {
+        "id": "1_Airport_test_1",
+        "input_text": "Angola International Airport is located at Ícolo e Bengo.",
+        "response": "[Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place)\n"
+    },
+    {
+        "id": "1_Airport_test_2",
+        "input_text": "18R/36L is the runway name at Allama Iqbal International airport.",
+        "response": "[18R/36L, runwayName, Allama Iqbal International airport]:(Runway, runwayName, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_3",
+        "input_text": "Abilene Regional Airport runway name is 17L/35R.",
+        "response": "[Abilene Regional Airport, runwayName, 17L/35R]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "1_Airport_test_4",
+        "input_text": "Alpena County Regional Airport is found in Wilson Township (Alpena County, Michigan)",
+        "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town)\n[Wilson Township, isPartOf, Alpena County]:(Town, isPartOf, County)\n[Alpena County, isPartOf, Michigan]:(County, isPartOf, State)\n\n"
+    },
+    {
+        "id": "1_Airport_test_5",
+        "input_text": "The runway length of Abilene Regional Airport is 2195.",
+        "response": "[Abilene Regional Airport, runwayLength, 2195]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_6",
+        "input_text": "The first runway at Abilene Regional Airport is made from asphalt.",
+        "response": "[Abilene Regional Airport, 1stRunwaySurfaceType, asphalt]:(Airport, 1stRunwaySurfaceType, ChemicalSubstance)\n"
+    },
+    {
+        "id": "1_Airport_test_7",
+        "input_text": "The third runway at Abilene Regional Airport is 7202 feet long.",
+        "response": "[Abilene Regional Airport, 3rdRunwayLengthFeet, 7202]:(Airport, 3rdRunwayLengthFeet, number)\n"
+    },
+    {
+        "id": "1_Airport_test_8",
+        "input_text": "Adirondack Regional Airport is 507 metres above sea level.",
+        "response": "[Adirondack Regional Airport, elevationAboveTheSeaLevelInMetres, 507]:(Airport, elevationAboveTheSeaLevelInMetres, number)\n"
+    },
+    {
+        "id": "1_Airport_test_9",
+        "input_text": "Afonso Pena International Airport runway length is 2215.",
+        "response": "[Afonso Pena International Airport, runwayLength, 2215]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_10",
+        "input_text": "Tirstrup is part of Denmark.",
+        "response": "[Tirstrup, isPartOf, Denmark]:(Settlement, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_11",
+        "input_text": "09R/27L is the runway name at Al Asad airbase.",
+        "response": "[Al Asad airbase, runwayName, 09R/27L]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "1_Airport_test_12",
+        "input_text": "The runway length of Amsterdam Airport Schiphol is 3453.",
+        "response": "[Amsterdam Airport Schiphol, runwayLength, 3453]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_13",
+        "input_text": "The fourth runway at Andrews County Airport is made from asphalt.",
+        "response": "[Andrews County Airport, 4thRunwaySurfaceType, asphalt]:(Airport, 4thRunwaySurfaceType, ChemicalSubstance)\n"
+    },
+    {
+        "id": "1_Airport_test_14",
+        "input_text": "\"South Runway\" is a runway name at Angola International airport.",
+        "response": "[South Runway, runwayName, Angola International]:(Runway, runwayName, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_15",
+        "input_text": "Abilene (Texas) is part of Taylor County (Texas).",
+        "response": "[Abilene (Texas), isPartOf, Taylor County (Texas)]:(City, isPartOf, County)\n"
+    },
+    {
+        "id": "1_Airport_test_16",
+        "input_text": "Al-Taqaddum Air Base is located in Habbaniyah.",
+        "response": "[Al-Taqaddum Air Base, location, Habbaniyah]:(Airport, location, Settlement)\n"
+    },
+    {
+        "id": "1_Airport_test_17",
+        "input_text": "The length of the first runway at Angola International Airport is 13123 feet.",
+        "response": "[Angola International Airport, 1stRunwayLengthFeet, 13123]:(Airport, 1stRunwayLengthFeet, number)\n"
+    },
+    {
+        "id": "1_Airport_test_18",
+        "input_text": "German is the official language of Belgium.",
+        "response": "[Belgium, officialLanguage, German]:(Country, officialLanguage, Language)\n"
+    },
+    {
+        "id": "1_Airport_test_19",
+        "input_text": "The runway length of Al Asad Airbase is 3078.48.",
+        "response": "[Al Asad Airbase, runwayLength, 3078.48]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_20",
+        "input_text": "Allama Iqbal International Airport is found in Punjab (Pakistan).",
+        "response": "[Allama Iqbal International Airport, location, Punjab (Pakistan)]:(Airport, location, Province)\n"
+    },
+    {
+        "id": "1_Airport_test_21",
+        "input_text": "Saranac Lake (New York) is located in the United States.",
+        "response": "[Saranac Lake (New York), isPartOf, United States]:(Village, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_22",
+        "input_text": "The runway length of Appleton International Airport is 1982.",
+        "response": "[Appleton International Airport, runwayLength, 1982]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_23",
+        "input_text": "The Civil Aviation Authority of New Zealand is the operating organisation for Ardmore Airport, New Zealand.",
+        "response": "[Civil Aviation Authority of New Zealand, operatingOrganisation, Ardmore Airport]:(GovernmentAgency, operatingOrganisation, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_24",
+        "input_text": "14R/32L is the name of the runway for Adolfo Suárez Madrid–Barajas Airport.",
+        "response": "[14R/32L, runwayName, Adolfo Suárez Madrid–Barajas Airport]:(Runway, runwayName, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_25",
+        "input_text": "The runway length at Ashgabat International Airport is 2989 meters.",
+        "response": "[Ashgabat International Airport, runwayLengthMetre, 2989]:(Airport, runwayLengthMetre, number)\n"
+    },
+    {
+        "id": "1_Airport_test_26",
+        "input_text": "The runway length of Allama Iqbal International Airport is 2900.",
+        "response": "[Allama Iqbal International Airport, runwayLength, 2900]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_27",
+        "input_text": "The Airports Authority of India is the operating organisation of Agra Airport.",
+        "response": "[Airports Authority of India, operatingOrganisation, Agra Airport]:(Organisation, operatingOrganisation, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_28",
+        "input_text": "Pakistan's leader is Mamnoon Hussain.",
+        "response": "[Pakistan, leader, Mamnoon Hussain]:(Country, leader, President)\n"
+    },
+    {
+        "id": "1_Airport_test_29",
+        "input_text": "The length of the first runway at Adirondack Regional Airport is 6573 feet.",
+        "response": "[Adirondack Regional Airport, 1stRunwayLengthFeet, 6573]:(Airport, 1stRunwayLengthFeet, number)\n"
+    },
+    {
+        "id": "1_Airport_test_30",
+        "input_text": "The runway length of Allama Iqbal International Airport is 3310.",
+        "response": "[Allama Iqbal International Airport, runwayLength, 3310]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_31",
+        "input_text": "Alcobendas is located in Spain.",
+        "response": "[Alcobendas, isPartOf, Spain]:(City, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_32",
+        "input_text": "The location identifier for Abilene Regional airport is ABI.",
+        "response": "[Abilene Regional airport, locationIdentifier, ABI]:(Airport, locationIdentifier, Code)\n"
+    },
+    {
+        "id": "1_Airport_test_33",
+        "input_text": "17R/35L is the runway name at Abilene Regional airport.",
+        "response": "[Abilene Regional, runwayName, 17R/35L]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "1_Airport_test_34",
+        "input_text": "Abilene Regional Airport elevation above the sea level in metres is 546.",
+        "response": "[Abilene Regional Airport, elevationAboveTheSeaLevelInMetres, 546]:(Airport, elevationAboveTheSeaLevelInMetres, number)\n"
+    },
+    {
+        "id": "1_Airport_test_35",
+        "input_text": "Abilene Regional Airport ICAO Location Identifier is KABI.",
+        "response": "[Abilene Regional Airport, icaoLocationIdentifier, KABI]:(Airport, icaoLocationIdentifier, Code)\n"
+    },
+    {
+        "id": "1_Airport_test_36",
+        "input_text": "The runway length of Abilene Regional Airport is 2194.",
+        "response": "[Abilene Regional Airport, runwayLength, 2194]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_37",
+        "input_text": "The runway length of Abilene Regional Airport is 1121.",
+        "response": "[Abilene Regional Airport, runwayLength, 1121]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_38",
+        "input_text": "The length of the 1st runway at Abilene Regional airport is 3678 feet.",
+        "response": "[Abilene Regional airport, 1stRunwayLengthFeet, 3678]:(Airport, 1stRunwayLengthFeet, number)\n"
+    },
+    {
+        "id": "1_Airport_test_39",
+        "input_text": "The runway length of Adirondack Regional Airport is 2003.",
+        "response": "[Adirondack Regional Airport, runwayLength, 2003]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_40",
+        "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York).",
+        "response": "[Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City)\n"
+    },
+    {
+        "id": "1_Airport_test_41",
+        "input_text": "The runway length of Adirondack Regional Airport is 1219.",
+        "response": "[Adirondack Regional Airport, runwayLength, 1219]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "1_Airport_test_42",
+        "input_text": "Lake Placid (New York) is served by the Adirondack Regional Airport.",
+        "response": "[Adirondack Regional Airport, serves, Lake Placid (New York)]:(Airport, serves, Village)\n"
+    },
+    {
+        "id": "1_Airport_test_43",
+        "input_text": "Adirondack Regional airport is located at Harrietstown.",
+        "response": "[Adirondack Regional airport, location, Harrietstown]:(Airport, location, Town)\n"
+    },
+    {
+        "id": "1_Airport_test_44",
+        "input_text": "Adirondack Regional Airport location identifier is SLK.",
+        "response": "[Adirondack Regional Airport, locationIdentifier, SLK]:(Airport, locationIdentifier, Code)\n"
+    },
+    {
+        "id": "1_Airport_test_45",
+        "input_text": "Greenlandic is the language spoken in Denmark.",
+        "response": "[Greenlandic, language, Denmark]:(Language, language, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_46",
+        "input_text": "Denmark's leader name is Lars Løkke Rasmussen.",
+        "response": "[Denmark, leader, Lars Løkke Rasmussen]:(Country, leader, Person)\n"
+    },
+    {
+        "id": "1_Airport_test_47",
+        "input_text": "German is the language spoken in Denmark.",
+        "response": "[Denmark, language, German]:(Place, language, Language)\n"
+    },
+    {
+        "id": "1_Airport_test_48",
+        "input_text": "The Faroese language is spoken in Denmark.",
+        "response": "[Faroese, officialLanguage, Denmark]:(Language, officialLanguage, Country)\n[Denmark, language, Faroese]:(Country, language, Language)\n\n"
+    },
+    {
+        "id": "1_Airport_test_49",
+        "input_text": "Denmark's leader is Margrethe II of Denmark.",
+        "response": "[Denmark, leader, Margrethe II of Denmark]:(Country, leader, Royalty)\n"
+    },
+    {
+        "id": "1_Airport_test_50",
+        "input_text": "Denmark language is Danish language.",
+        "response": "[Denmark, language, Danish]:(Country, language, Language)\n"
+    },
+    {
+        "id": "1_Airport_test_51",
+        "input_text": "Tirstrup is located in the country of Denmark.",
+        "response": "[Tirstrup, location, Denmark]:(Settlement, location, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_52",
+        "input_text": "The capital of Denmark is Copenhagen.",
+        "response": "[Denmark, capital, Copenhagen]:(Country, capital, CapitalCity)\n"
+    },
+    {
+        "id": "1_Airport_test_53",
+        "input_text": "The leader of Punjab (Pakistan) is Shehbaz Sharif.",
+        "response": "[Punjab (Pakistan), leader, Shehbaz Sharif]:(Province, leader, Person)\n"
+    },
+    {
+        "id": "1_Airport_test_54",
+        "input_text": "Punjab (Pakistan) is found in the country Pakistan.",
+        "response": "[Punjab (Pakistan), isPartOf, Pakistan]:(Province, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_55",
+        "input_text": "Malik Muhammad Rafique Rajwana is a leader in the Punjab (Pakistan).",
+        "response": "[Malik Muhammad Rafique Rajwana, leader, Punjab (Pakistan)]:(Person, leader, Place)\n"
+    },
+    {
+        "id": "1_Airport_test_56",
+        "input_text": "The Punjab (Pakistan), is led by the Provincial Assembly of the Punjab (Pakistan).",
+        "response": "[Punjab (Pakistan), leader, Provincial Assembly of the Punjab (Pakistan)]:(Province, leader, Legislature)\n"
+    },
+    {
+        "id": "1_Airport_test_57",
+        "input_text": "Harrietstown is part of the United States.",
+        "response": "[Harrietstown, isPartOf, United States]:(Town, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_58",
+        "input_text": "Harrietstown is located in the United States.",
+        "response": "[Harrietstown, isPartOf, United States]:(Town, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_59",
+        "input_text": "Harrietstown is part of New York.",
+        "response": "[Harrietstown, isPartOf, New York]:(Town, isPartOf, State)\n"
+    },
+    {
+        "id": "1_Airport_test_60",
+        "input_text": "Saranac Lake (New York) is part of Harrietstown.",
+        "response": "[Saranac Lake (New York), isPartOf, Harrietstown]:(Village, isPartOf, Town)\n"
+    },
+    {
+        "id": "1_Airport_test_61",
+        "input_text": "The leader of Aarhus is Jacob Bundsgaard.",
+        "response": "[Aarhus, leader, Jacob Bundsgaard]:(City, leader, Person)\n"
+    },
+    {
+        "id": "1_Airport_test_62",
+        "input_text": "Aarhus airport serves the city of Aarhus.",
+        "response": "[Aarhus airport, serves, Aarhus]:(Airport, serves, City)\n"
+    },
+    {
+        "id": "1_Airport_test_63",
+        "input_text": "The Aarhus airport is the airport of Aarhus.",
+        "response": "[Aarhus airport, location, Aarhus]:(Airport, location, City)\n"
+    },
+    {
+        "id": "1_Airport_test_64",
+        "input_text": "Wilson Township (Alpena County, Michigan) is in the United States.",
+        "response": "[Wilson Township, isPartOf, United States]:(Town, isPartOf, Country)\n[Wilson Township, isPartOf, Michigan]:(Town, isPartOf, State)\n[Wilson Township, isPartOf, Alpena County]:(Town, isPartOf, County)\n"
+    },
+    {
+        "id": "1_Airport_test_65",
+        "input_text": "Wilson Township (Alpena County, Michigan) is part of the United States.",
+        "response": "[Wilson Township (Alpena County, Michigan), isPartOf, United States]:(Town, isPartOf, Country)\n"
+    },
+    {
+        "id": "1_Airport_test_66",
+        "input_text": "18R/36L is the runway name of the Adolfo Suárez Madrid–Barajas Airport.",
+        "response": "[18R/36L, runwayName, Adolfo Suárez Madrid–Barajas Airport]:(Runway, runwayName, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_67",
+        "input_text": "The Pakistan Civil Aviation Authority governs the Allama Iqbal International Airport.",
+        "response": "[Pakistan Civil Aviation Authority, governs, Allama Iqbal International Airport]:(GovernmentAgency, jurisdiction, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_68",
+        "input_text": "Pakistan Civil Aviation Authority's location is Jinnah International Airport.",
+        "response": "[Pakistan Civil Aviation Authority, location, Jinnah International Airport]:(GovernmentAgency, location, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_69",
+        "input_text": "The Pakistan Civil Aviation Authority is headquartered at Jinnah International Airport.",
+        "response": "[Pakistan Civil Aviation Authority, headquarter, Jinnah International Airport]:(GovernmentAgency, headquarter, Airport)\n"
+    },
+    {
+        "id": "1_Airport_test_70",
+        "input_text": "Ícolo e Bengo is in the Luanda Province.",
+        "response": "[Ícolo e Bengo, isPartOf, Luanda Province]:(Town, isPartOf, Province)\n"
+    },
+    {
+        "id": "1_Airport_test_71",
+        "input_text": "Ícolo e Bengo is in Angola.",
+        "response": "[Ícolo e Bengo, isPartOf, Angola]:(Province, isPartOf, Country)\n"
+    }
+]

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_Film" id="2_Film_dev_1">
+      <text>Cyril Frankel, a television director, directed the 1956 movie It's Great to Be Young.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>director</rel>
+          <obj>Cyril_Frankel</obj>
+        </triple>
+        <triple>
+          <sub>Cyril_Frankel</sub>
+          <rel>occupation</rel>
+          <obj>Television_director</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Film" id="2_Film_dev_2">
+      <text>Directed by Cyril Bruce, McVeagh of the South Seas stars actor Harry Carey (actor), who was born in eighteen seventy-eight.</text>
+      <triples>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>director</rel>
+          <obj>Cyril_Bruce</obj>
+        </triple>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>starring</rel>
+          <obj>Harry_Carey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Film" id="2_Film_dev_3">
+      <text>Cecil Parker, born in 1897, stars in the 1956 film It's Great to be Young.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>starring</rel>
+          <obj>Cecil_Parker</obj>
+        </triple>
+        <triple>
+          <sub>Cecil_Parker</sub>
+          <rel>birthYear</rel>
+          <obj>1897</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+        <schema>
+          <sub>Actor</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Film" id="2_Film_dev_4">
+      <text>Tom Sizemore, who is an actor, stars in Super Capers.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>starring</rel>
+          <obj>Tom_Sizemore</obj>
+        </triple>
+        <triple>
+          <sub>Tom_Sizemore</sub>
+          <rel>occupation</rel>
+          <obj>Actor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+        <schema>
+          <sub>Actor</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

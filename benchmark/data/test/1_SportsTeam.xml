@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_1">
+      <text>A.S. Roma competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_2">
+      <text>John van den Brom is in the Jong Ajax club.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>Jong_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_3">
+      <text>Serie A is based in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Serie_A</sub>
+          <rel>country</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_4">
+      <text>Verona is the home to A.C. Chievo Verona.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>ground</rel>
+          <obj>Verona</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_5">
+      <text>Christian Panucci plays at the A.S. Roma.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Panucci</sub>
+          <rel>club</rel>
+          <obj>A.S._Roma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_6">
+      <text>Rome is the capital of Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>capital</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_7">
+      <text>A.F.C. Fylde's ground is Kellamergh Park.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>Kellamergh_Park</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_8">
+      <text>John van den Brom plays for De Graafschap.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>De_Graafschap</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_9">
+      <text>Rolando Maran used to be at Varese Calcio S.S.D.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>Varese_Calcio_S.S.D.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_10">
+      <text>John van den Brom has been manager of AZ Alkmaar.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>manager</rel>
+          <obj>John_van_den_Brom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_11">
+      <text>Michele Marcolini owns Torino F.C.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>club</rel>
+          <obj>Torino_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_12">
+      <text>A.C. Cesena has 23900 members.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>numberOfMembers</rel>
+          <obj>23900</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_13">
+      <text>Frank de Boer played for the Netherlands national football team.</text>
+      <triples>
+        <triple>
+          <sub>Frank_de_Boer</sub>
+          <rel>club</rel>
+          <obj>Netherlands_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_14">
+      <text>A.S. Gubbio 1910 competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_15">
+      <text>The "Associazione Sportiva Roma S.p.A." is the non-abbreviated name of A.S. Roma.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>fullName</rel>
+          <obj>Associazione_Sportiva_Roma_S.p.A.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_16">
+      <text>A.C. Chievo Verona played the 2014–15 Serie A.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>season</rel>
+          <obj>2014–15_Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_17">
+      <text>The footballer Stuart Parker is attached to Irlam Town F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Irlam_Town_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_18">
+      <text>The ground of A.S. Gubbio 1910 is called Stadio Pietro Barbetti.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>ground</rel>
+          <obj>Stadio_Pietro_Barbetti</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_19">
+      <text>The first club Jens Härtel played for was 1. FC Lokomotive Leipzig.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>1._FC_Lokomotive_Leipzig</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_20">
+      <text>Rolando Maran plays at the Carrarese Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>Carrarese_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_21">
+      <text>A.S. Roma play in the Serie A league.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>league</rel>
+          <obj>Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_22">
+      <text>Dave Challinor is at Colwyn Bay F.C.</text>
+      <triples>
+        <triple>
+          <sub>Dave_Challinor</sub>
+          <rel>club</rel>
+          <obj>Colwyn_Bay_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_23">
+      <text>Stuart Parker (footballer) plays for Blackpool F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Blackpool_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_24">
+      <text>John van den Brom plays for ADO Den Haag.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>ADO_Den_Haag</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_25">
+      <text>Serie D champions include S.S. Robur Siena.</text>
+      <triples>
+        <triple>
+          <sub>Serie_D</sub>
+          <rel>champions</rel>
+          <obj>S.S._Robur_Siena</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_26">
+      <text>AEK Athens F.C. played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_27">
+      <text>Massimo Drago plays for S.S. Chieti Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>S.S._Chieti_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_28">
+      <text>Michele Marcolini is attached to the club A.C. Lumezzane.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>club</rel>
+          <obj>A.C._Lumezzane</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_29">
+      <text>Greece is inhabited by Greeks.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>demonym</rel>
+          <obj>Greeks</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_30">
+      <text>John van den Brom is a player in İstanbulspor A.Ş.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>İstanbulspor_A.Ş.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_31">
+      <text>John van den Brom plays at the AZ Alkmaar club.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>AZ_Alkmaar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_32">
+      <text>John van den Brom plays for R.S.C. Anderlecht.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>R.S.C._Anderlecht</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_33">
+      <text>John van den Brom played for the Netherlands national football team.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>Netherlands_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_34">
+      <text>John van den Brom plays for AFC Ajax.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>AFC_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_35">
+      <text>John van den Brom is in Vitesse Arnhem.</text>
+      <triples>
+        <triple>
+          <sub>John_van_den_Brom</sub>
+          <rel>club</rel>
+          <obj>Vitesse_Arnhem</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_36">
+      <text>The home ground of A.C. Chievo Verona is Stadio Marc'Antonio Bentegodi.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>ground</rel>
+          <obj>Stadio_Marc'Antonio_Bentegodi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_37">
+      <text>Michele Marcolini plays for A.C. Chievo Verona.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>club</rel>
+          <obj>A.C._Chievo_Verona</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_38">
+      <text>A.C. Chievo Verona competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_39">
+      <text>A.C. Chievo Verona has 39371 members.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>numberOfMembers</rel>
+          <obj>39371</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_40">
+      <text>The full name of A.C. Chievo Verona is "Associazione Calcio ChievoVerona S.r.l."</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>fullName</rel>
+          <obj>Associazione_Calcio_ChievoVerona_S.r.l.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_41">
+      <text>A.C. Chievo Verona play in the Serie A league.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>league</rel>
+          <obj>Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_42">
+      <text>A.C. Chievo Verona is playing in his ground at Verona.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Chievo_Verona</sub>
+          <rel>ground</rel>
+          <obj>Verona</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_43">
+      <text>Rolando Maran is attached to A.C. Chievo Verona.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>A.C._Chievo_Verona</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_44">
+      <text>Luciano Spalletti is in the A.S. Roma club.</text>
+      <triples>
+        <triple>
+          <sub>Luciano_Spalletti</sub>
+          <rel>club</rel>
+          <obj>A.S._Roma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_45">
+      <text>The chairman of the A.S. Roma is James Pallotta.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>chairman</rel>
+          <obj>James_Pallotta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_46">
+      <text>A.S. Roma's manager is Luciano Spalletti.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>manager</rel>
+          <obj>Luciano_Spalletti</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_47">
+      <text>A.S. Roma ground is Stadio Olimpico.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>ground</rel>
+          <obj>Stadio_Olimpico</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_48">
+      <text>A.S. Roma's ground is in Rome.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>ground</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_49">
+      <text>A.S. Roma has 70634 members.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>numberOfMembers</rel>
+          <obj>70634</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_50">
+      <text>A.S. Roma have a ground in Rome.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>ground</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_51">
+      <text>A.S. Roma were in 2014–15 Serie A.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>season</rel>
+          <obj>2014–15_Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_52">
+      <text>Michele Marcolini has been manager of A.C. Lumezzane.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>manager</rel>
+          <obj>Michele_Marcolini</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_53">
+      <text>Michele Marcolini played youth football for Torino F.C.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>youthclub</rel>
+          <obj>Torino_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>youthclub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_54">
+      <text>Michele Marcolini has been associated with F.C. Bari 1908.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>club</rel>
+          <obj>F.C._Bari_1908</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_55">
+      <text>Michele Marcolini was born in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Michele_Marcolini</sub>
+          <rel>birthPlace</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_56">
+      <text>Juventus F.C. have been Serie A champions.</text>
+      <triples>
+        <triple>
+          <sub>Serie_A</sub>
+          <rel>champions</rel>
+          <obj>Juventus_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_test_57">
+      <text>ACF Fiorentina play in Serie A.</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>league</rel>
+          <obj>Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

@@ -1,0 +1,632 @@
+{
+    "title": "2_Artist",
+    "id": "2_Artist",
+    "entity type": [
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "Background",
+            "label": "Background"
+        },
+        {
+            "id": "Band",
+            "label": "Band"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "CityDistrict",
+            "label": "CityDistrict"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Device",
+            "label": "Device"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Genre",
+            "label": "Genre"
+        },
+        {
+            "id": "Group",
+            "label": "Group"
+        },
+        {
+            "id": "Guitarist",
+            "label": "Guitarist"
+        },
+        {
+            "id": "Instrument",
+            "label": "Instrument"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MusicGenre",
+            "label": "MusicGenre"
+        },
+        {
+            "id": "MusicalArtist",
+            "label": "MusicalArtist"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Photographer",
+            "label": "Photographer"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Profession",
+            "label": "Profession"
+        },
+        {
+            "id": "RecordLabel",
+            "label": "RecordLabel"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "VicePresident",
+            "label": "VicePresident"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "officialLanguage",
+            "label": "officialLanguage",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "profession",
+            "label": "profession",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "origin",
+            "label": "origin",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "genre",
+            "label": "genre",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "populationDensity",
+            "label": "populationDensity",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "occupation",
+            "label": "occupation",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "background",
+            "label": "background",
+            "domain": "Person",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "parentCompany",
+            "label": "parentCompany",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "recordLabel",
+            "label": "recordLabel",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "derivative",
+            "label": "derivative",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "deathDate",
+            "label": "deathDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "associatedMusicalArtist",
+            "label": "associatedMusicalArtist",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "birthYear",
+            "label": "birthYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "instrument",
+            "label": "instrument",
+            "domain": "TopicalConcept",
+            "range": "Device"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "background",
+            "label": "background",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "genre",
+            "label": "genre",
+            "domain": "Person",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "instrument",
+            "label": "instrument",
+            "domain": "Person",
+            "range": "Device"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "activeYearsStartYear",
+            "label": "activeYearsStartYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "associatedBand",
+            "label": "associatedBand",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "musicFusionGenre",
+            "label": "musicFusionGenre",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "musicSubgenre",
+            "label": "musicSubgenre",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "distributingCompany",
+            "label": "distributingCompany",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "stylisticOrigin",
+            "label": "stylisticOrigin",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "RecordLabel",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Photographer",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Guitarist",
+            "range": "MusicalArtist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Group",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CityDistrict",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Profession",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Background",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicalArtist",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicGenre",
+            "range": "Genre"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Genre",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Band",
+            "range": "Group"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "VicePresident",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Instrument",
+            "range": "Device"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        }
+    ]
+}

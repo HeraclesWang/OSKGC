@@ -1,0 +1,92 @@
+[
+  {
+    "id": "3_Astronaut_test_1",
+    "input_text": "Buzz Aldrin who was born in Glen Ridge (New Jersey) and graduated in 1963 from MIT with a Sc. D, served as a fighter pilot.",
+    "response": "[Buzz Aldrin, nationality, United States]:(Astronaut, nationality, Country), [Buzz Aldrin, almaMater, MIT]:(Astronaut, almaMater, EducationalInstitution), [Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, City), [Buzz Aldrin, occupation, fighter pilot]:(Astronaut, occupation, Profession), [Buzz Aldrin, birthDate, 1963]:(Astronaut, birthDate, Date)"
+  },
+  {
+    "id": "3_Astronaut_test_2",
+    "input_text": "Buzz Aldrin, a crew member of Apollo 11, was born in the Essex County (New Jersey) of Glen Ridge (New Jersey).",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, City), [Glen Ridge, isPartOf, Essex County]:(Place, isPartOf, County), [Essex County, isPartOf, New Jersey]:(County, isPartOf, State), [Buzz Aldrin, birthPlace, New Jersey]:(Astronaut, birthPlace, State)"
+  },
+  {
+    "id": "3_Astronaut_test_3",
+    "input_text": "Buzz Aldrin, who was a member of the Apollo 11 crew and spent 52 minutes in space, was born in Glen Ridge (New Jersey).",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Buzz Aldrin, timeInSpace, 52]:(Astronaut, timeInSpace, number), [Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, City), [Glen Ridge, isPartOf, New Jersey]:(Place, isPartOf, State), [New Jersey, isPartOf, Country]:(State, isPartOf, PopulatedPlace)"
+  },
+  {
+    "id": "3_Astronaut_test_4",
+    "input_text": "William Anders joined NASA in 1963, is an American and was born in British Hong Kong.",
+    "response": "[William Anders, selectedByNasa, 1963]\n[William Anders, nationality, United States]\n[William Anders, birthPlace, British Hong Kong]"
+  },
+  {
+    "id": "3_Astronaut_test_5",
+    "input_text": "Buzz Aldrin, also called Edwin E. Aldrin, Jr., graduated in 1963 from MIT with a Sc.D. and was a crew member on Apollo 11.",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Buzz Aldrin, almaMater, MIT]:(Astronaut, almaMater, EducationalInstitution), [Buzz Aldrin, birthDate, 1963]:(Astronaut, birthDate, Date), [Buzz Aldrin, alternativeName, Edwin E. Aldrin, Jr.]:(Astronaut, alternativeName, Person)"
+  },
+  {
+    "id": "3_Astronaut_test_6",
+    "input_text": "Buzz Aldrin won 20 awards, graduated from Massachusetts Institute of Technology with a Sc.D in 1963 and was born on 1930-01-20.",
+    "response": "[Buzz Aldrin, birthDate, 1930-01-20]:(Astronaut, birthDate, Date), [Buzz Aldrin, almaMater, Massachusetts Institute of Technology]:(Astronaut, almaMater, Organisation), [Buzz Aldrin, occupation, Doctor]:(Astronaut, occupation, PersonFunction), [Buzz Aldrin, awards, 20]:(Astronaut, awards, number), [Buzz Aldrin, servedAsChiefOfTheAstronautOfficeIn, 1963]:(Astronaut, servedAsChiefOfTheAstronautOfficeIn, Year)"
+  },
+  {
+    "id": "3_Astronaut_test_7",
+    "input_text": "Buzz Aldrin, a member of the Apollo 11 crew was born in Glen Ridge (New Jersey), United States.",
+    "response": "[Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, City), [Glen Ridge, isPartOf, New Jersey]:(Place, isPartOf, State), [Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Apollo 11, operator, NASA]:(SpaceMission, operator, Organisation), [Buzz Aldrin, birthDate,?]:(Astronaut, birthDate, Date), [Buzz Aldrin, nationality, United States]:(Astronaut, nationality, Country)"
+  },
+  {
+    "id": "3_Astronaut_test_8",
+    "input_text": "Retired American Buzz Aldrin was born in Glen Ridge (New Jersey).",
+    "response": "[Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, Place), [Buzz Aldrin, nationality, United States]:(Astronaut, nationality, Country)"
+  },
+  {
+    "id": "3_Astronaut_test_9",
+    "input_text": "Crew member William Anders and backup pilot Buzz Aldrin served under commander Frank Borman on Apollo 8.",
+    "response": "Here is the constructed knowledge graph based on the input text:\n\n[William Anders, mission, Apollo 8]\n(Astronaut, mission, SpaceMission)\n[Apollo 8, commander, Frank Borman]\n(SpaceMission, commander, Person)\n[Apollo 8, crewMembers, William Anders]\n(SpaceMission, crewMembers, Astronaut)\n[Apollo 8, backupPilot, Buzz Aldrin]\n(SpaceMission, backupPilot, Person)\n[NASA, operator, Apollo 8]\n(Organisation, operator, SpaceMission)\n\nNote that I've followed the ontology schema and extracted the triples based on the given relations and entity types. Let me know if you have any further questions or concerns!"
+  },
+  {
+    "id": "3_Astronaut_test_10",
+    "input_text": "Buzz Aldrin, a United States national, was a crew member on Apollo 11 operated by NASA.",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Apollo 11, operator, NASA]:(SpaceMission, operator, Organisation), [Buzz Aldrin, nationality, United States]:(Person, nationality, Country)"
+  },
+  {
+    "id": "3_Astronaut_test_11",
+    "input_text": "Buzz Aldrin, as part of the NASA operated Apollo 11 program, spent 52 minutes in space.",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Apollo 11, operator, NASA]:(SpaceMission, operator, Organisation), [Buzz Aldrin, timeInSpace, 52]:(Astronaut, timeInSpace, number)"
+  },
+  {
+    "id": "3_Astronaut_test_12",
+    "input_text": "Buzz Aldrin was a crew member of Apollo 11 where William Anders was a backup pilot and the mission was operated by NASA.",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Apollo 11, operator, NASA]:(SpaceMission, operator, Organisation), [Buzz Aldrin, crewMember, Apollo 11]:(Astronaut, crewMember, SpaceMission), [William Anders, backupPilot, Apollo 11]:(Astronaut, backupPilot, SpaceMission)"
+  },
+  {
+    "id": "3_Astronaut_test_13",
+    "input_text": "Born on January 2 1930 in Glen Ridge (New Jersey), Buzz Aldrin was a fighter pilot.",
+    "response": "[Buzz Aldrin, birthDate, January 2 1930]:(Person, birthDate, Date)\n[Buzz Aldrin, birthPlace, Glen Ridge]:(Person, birthPlace, City)\n[Buzz Aldrin, occupation, fighter pilot]:(Person, occupation, Profession)"
+  },
+  {
+    "id": "3_Astronaut_test_14",
+    "input_text": "Buzz Aldrin was a United States national born in Glen Ridge (New Jersey), in the Essex County (New Jersey).",
+    "response": "[Buzz Aldrin, nationality, United States]:(Person, nationality, Place), [Buzz Aldrin, birthPlace, Glen Ridge]:(Person, birthPlace, City), [Buzz Aldrin, birthPlace, New Jersey]:(Person, birthPlace, State), [Buzz Aldrin, birthPlace, Essex County]:(Person, birthPlace, County)"
+  },
+  {
+    "id": "3_Astronaut_test_15",
+    "input_text": "Buzz Aldrin is an American born in Glen Ridge (New Jersey) in the United States of which Joe Biden is a leader.",
+    "response": "[Buzz Aldrin, birthPlace, Glen Ridge]:(Astronaut, birthPlace, Place)\n[Buzz Aldrin, nationality, United States]:(Astronaut, nationality, Country)\n[Buzz Aldrin, leader, Joe Biden]:(Astronaut, leader, Person)\n[United States, leader, Joe Biden]:(Country, leader, Person)"
+  },
+  {
+    "id": "3_Astronaut_test_16",
+    "input_text": "Buzz Aldrin was a crew member on Apollo 11, performed as a fighter pilot and his birth date was 1930 01 20.",
+    "response": "[Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Buzz Aldrin, birthDate, 1930-01-20]:(Astronaut, birthDate, Date), [Buzz Aldrin, occupation, fighterPilot]:(Astronaut, occupation, Profession)"
+  },
+  {
+    "id": "3_Astronaut_test_17",
+    "input_text": "Buzz Aldrin was hired by NASA in 1963 for the Apollo 11 mission.",
+    "response": "[Buzz Aldrin, nationality, United States]:(Astronaut, nationality, Country), [Buzz Aldrin, mission, Apollo 11]:(Astronaut, mission, SpaceMission), [Buzz Aldrin, selectedByNasa, 1963]:(Astronaut, selectedByNasa, Year)"
+  },
+  {
+    "id": "3_Astronaut_test_18",
+    "input_text": "Buzz Aldrin was hired by NASA in 1963, was a member of the Apollo 11 crew and is retired.",
+    "response": "[Buzz Aldrin, nationality, United States]\n[Astronaut, nationality, Country]\n[Buzz Aldrin, mission, Apollo 11]\n[Astronaut, mission, SpaceMission]\n[Buzz Aldrin, selectedByNasa, 1963]\n[Astronaut, selectedByNasa, Year]\n[Buzz Aldrin, timeInSpace, number]\n[Astronaut, timeInSpace, number]\n[Buzz Aldrin, dateOfRetirement, unknown]\n[Astronaut, dateOfRetirement, Date]"
+  }
+]

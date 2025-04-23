@@ -1,0 +1,107 @@
+[
+  {
+    "id": "2_Company_test_1",
+    "input_text": "Located in the Philippines, Chinabank has 295 locations.",
+    "response": "[Chinabank, location, Philippines]:(Company, location, Country)\n[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number)"
+  },
+  {
+    "id": "2_Company_test_2",
+    "input_text": "Chinabank was founded on 1920-08-16 in the Insular Government of the Philippine Islands.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date)\n[Chinabank, location, Insular Government of the Philippine Islands]:(Company, location, Place)"
+  },
+  {
+    "id": "2_Company_test_3",
+    "input_text": "Founded August 16, 1920, Chinabank currently has 295 locations.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Chinabank, numberOfLocations, 295]\n[Chinabank, foundingDate, 1920-08-16]"
+  },
+  {
+    "id": "2_Company_test_4",
+    "input_text": "AmeriGas works in the United States where Paul Ryan is the leader.",
+    "response": "[AmeriGas, serves, United States]\n[United States, leader, Paul Ryan]"
+  },
+  {
+    "id": "2_Company_test_5",
+    "input_text": "Hypermarcas was founded on January 1st, 2001. The key persona in Hypermarcas is their CEO.",
+    "response": "Here is the output based on the input text:\n\n[Hypermarcas, foundingDate, 2001-01-01]\n[Hypermarcas, keyPerson, CEO]\n[Hypermarcas, type, Company]\n\nNote: I assumed \"key persona\" refers to the CEO of the company, which is a common usage in business contexts. If you would like to clarify or provide more context, please let me know."
+  },
+  {
+    "id": "2_Company_test_6",
+    "input_text": "Founded on 08-16-1920, Chinabank has 5594 employees.",
+    "response": "Here is the output:\n\n[Chinabank, numberOfEmployees, 5594]\n[Chinabank, foundingDate, 1920-08-16]"
+  },
+  {
+    "id": "2_Company_test_7",
+    "input_text": "Chinabank provides banking services to customers and has 295 banking centers.",
+    "response": "[Chinabank, serves, Customer]:(Company, serves, TopicalConcept), [Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, service, Banking services]:(Organisation, service, Service)"
+  },
+  {
+    "id": "2_Company_test_8",
+    "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands, currently still remaining in the Philippines.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, foundationPlace, Insular Government of the Philippine Islands], [Chinabank, location, Philippines], [Chinabank, country, Philippines]"
+  },
+  {
+    "id": "2_Company_test_9",
+    "input_text": "The net income of Chinabank is 15100000000, and they have 5594 workers total.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, netIncome, 15100000000]\n[Chinabank, numberOfEmployees, 5594]"
+  },
+  {
+    "id": "2_Company_test_10",
+    "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands, which was founded on July 1st, 1901.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Chinabank, country, Philippines]:(Company, country, Country)\n[Chinabank, foundingDate, 1901-07-01]:(Company, foundingDate, Date)\n\nNote: I assumed \"Insular Government of the Philippine Islands\" is equivalent to the \"Philippines\" country, and \"July 1st, 1901\" is equivalent to the date \"1901-07-01\". If this is not the case, please provide more context or clarify the correct information."
+  },
+  {
+    "id": "2_Company_test_11",
+    "input_text": "Chinabank, which was founded on 08-16-1920, has a net income of 15100000000.",
+    "response": "Here is the output based on the input text and the given ontology schema:\n\n[Chinabank, foundingDate, 08-16-1920]:(Chinabank, foundingDate, Date)\n[Chinabank, netIncome, 15100000000]:(Chinabank, netIncome, number)"
+  },
+  {
+    "id": "2_Company_test_12",
+    "input_text": "Chinabank is a public company that was founded in Manila.",
+    "response": "Here is the output:\n\n[Chinabank, type, PublicCompany]\n[Chinabank, location, Manila]\n[Chinabank, foundingDate, Date]"
+  },
+  {
+    "id": "2_Company_test_13",
+    "input_text": "Chinabank currently pulls in 15100000000 in net income for its banking services.",
+    "response": "[Chinabank, netIncome, 15100000000]:(Company, netIncome, number)"
+  },
+  {
+    "id": "2_Company_test_14",
+    "input_text": "Chinabank is located in the Philippines, which is led by Pantaleon Alvarez.",
+    "response": "Here is the output:\n\n[Chinabank, location, Philippines]:(Company, location, Place)\n[Philippines, leader, Pantaleon Alvarez]:(Place, leader, Person)\n[Pantaleon Alvarez, PersonFunction, Politician]:(Person, PersonFunction, Politician)"
+  },
+  {
+    "id": "2_Company_test_15",
+    "input_text": "With 5594 total employees, Chinabank operates in the banking service.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number)\n[Chinabank, service, Banking]:(Company, service, Service)"
+  },
+  {
+    "id": "2_Company_test_16",
+    "input_text": "Chinabank is a public company that was founded on 1920-08-16.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Chinabank, foundingDate, 1920-08-16]\n[Chinabank, type, Company]\n[Chinabank, type, PublicCompany]\n[Chinabank, industry,?]"
+  },
+  {
+    "id": "2_Company_test_17",
+    "input_text": "Manila, which is led by City Council, is Chinabank's founding place.",
+    "response": "Here is the output based on the input text:\n\n[Manila, leader, City Council]\n[Chinabank, foundationPlace, Manila]"
+  },
+  {
+    "id": "2_Company_test_18",
+    "input_text": "Chinabank was founded in Manila in the Insular Government of the Philippine Islands.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, location, Philippines]:(Company, location, Country)\n[Chinabank, location, Manila]:(Company, location, City)\n[Chinabank, foundingDate,?]:(Company, foundingDate, Date)\n[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, Place)\n\nNote: The date of founding is not explicitly mentioned in the input text, so it is represented as a question mark (?) in the output."
+  },
+  {
+    "id": "2_Company_test_19",
+    "input_text": "Chinabank, a public company, was founded in the Insular Government of the Philippine Islands.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Chinabank, location, Insular Government of the Philippine Islands]\n[Chinabank, type, PublicCompany]\n[Chinabank, foundingDate, Date]"
+  },
+  {
+    "id": "2_Company_test_20",
+    "input_text": "After being founded in Manila, Chinabank now has 295 locations.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, foundationPlace, Manila], (Chinabank, numberOfLocations, 295)"
+  },
+  {
+    "id": "2_Company_test_21",
+    "input_text": "Chinabank is located in the Philippines whose leader has the title of president.",
+    "response": "Here is the output:\n\n[Chinabank, location, Philippines]:(Company, location, Country)\n[Philippines, leaderTitle, President]:(Country, leaderTitle, PoliticalFunction)"
+  }
+]

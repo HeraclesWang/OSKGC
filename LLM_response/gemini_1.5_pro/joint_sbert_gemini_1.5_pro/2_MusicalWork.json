@@ -1,0 +1,57 @@
+[
+    {
+        "id": "2_MusicalWork_test_1",
+        "input_text": "The album Nord was produced by Year of No Light and won the album of the year in the sludge metal genre.",
+        "response": "[Nord, producer, Year of No Light]:(Album, producer, Band), [Nord, genre, sludge metal]:(Album, genre, MusicGenre)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_2",
+        "input_text": "The Brian Kelly album Afterplay was preceded by Pools of Light and then Expect a Miracle.",
+        "response": "[Afterplay, producer, Brian Kelly]:(Album, producer, MusicalArtist), [Afterplay, precededBy, Pools of Light]:(Album, precededBy, Album), [Pools of Light, followedBy, Expect a Miracle]:(Album, followedBy, Album)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_3",
+        "input_text": "The 58.41 minutes Year of No Light album Nord was preceded by Demo 2004.",
+        "response": "[Nord, runtime, 58.41]:(Album, runtime, number), [Nord, precededBy, Demo 2004]:(Album, precededBy, Album)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_4",
+        "input_text": "Year of No Light followed their album Nord, which was released on 06-09-2006, with the album Live at Roadburn 2008.",
+        "response": "[Live at Roadburn 2008, precededBy, Nord]:(Album, precededBy, Album), [Nord, followedBy, Live at Roadburn 2008]:(Album, followedBy, Album), [Nord, releaseDate, 06-09-2006]:(Album, releaseDate, Date)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_5",
+        "input_text": "The Year of No Light album Nord is in the sludge metal genre, one variety of which is southern sludge.",
+        "response": "[Nord, genre, Sludge metal]:(Album, genre, MusicGenre), [Southern sludge, musicSubgenre, Sludge metal]:(MusicGenre, musicSubgenre, MusicGenre), [Nord, producer, The Year of No Light]:(Album, producer, Band)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_6",
+        "input_text": "Altar of Plagues is a band associated with Year of No Light which produced the album Nord.",
+        "response": "[Altar of Plagues, associatedBand, Year of No Light]:(Band, associatedBand, Band), [Nord, producer, Altar of Plagues]:(Album, producer, Band)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_7",
+        "input_text": "Nord is an album by Year of No Light in the sludge metal genre, which originated from the hardcore punk genre.",
+        "response": "[Nord, genre, Sludge metal]:(Album, genre, MusicGenre), [Sludge metal, stylisticOrigin, Hardcore punk]:(MusicGenre, stylisticOrigin, MusicGenre), [Nord, artist, Year of No Light]:(Album, artist, Band)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_8",
+        "input_text": "Nord, an album made by Year of No Light and released by the record label Crucial blast, belongs to the post metal genre.",
+        "response": "[Nord, producer, Year of No Light]:(Album, producer, Band), [Nord, recordLabel, Crucial blast]:(Album, recordLabel, RecordLabel), [Nord, genre, Post metal]:(Album, genre, MusicGenre)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_9",
+        "input_text": "Year of No Light is a band whose members include a former guitarist for Monarch has created an album called Nord.",
+        "response": "[Nord, producer, Year of No Light]:(Album, producer, Band)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_10",
+        "input_text": "The Year of No Light album Live at Roadburn 2008 was followed by their album Nord.",
+        "response": "[Live at Roadburn 2008, followedBy, Nord]:(Album, followedBy, Album)\n"
+    },
+    {
+        "id": "2_MusicalWork_test_11",
+        "input_text": "Year of No Light created the album Live at Roadburn 2008, which was preceded by band’s self-produced album Nord.",
+        "response": "[Live at Roadburn 2008, producer, Year of No Light]:(Album, producer, Band), [Live at Roadburn 2008, precededBy, Nord]:(Album, precededBy, Album), [Nord, producer, Year of No Light]:(Album, producer, Band)\n"
+    }
+]

@@ -1,0 +1,277 @@
+[
+    {
+        "id": "1_Food_test_1",
+        "sent": "The country Binignit comes from is the Philippines.",
+        "response": "{Binignit}:[Food], {Philippines}:[Place]"
+    },
+    {
+        "id": "1_Food_test_2",
+        "sent": "Joko Widodo is the leader of Indonesia.",
+        "response": "Text: Joko Widodo is the leader of Indonesia.\nEntities: [Joko Widodo], [Indonesia]\nOutput: {Joko Widodo}:[Politician], {Indonesia}:[Country]"
+    },
+    {
+        "id": "1_Food_test_3",
+        "sent": "Beef kway teow is a dish from the country of Singapore.",
+        "response": "Text: Beef kway teow is a dish from the country of Singapore.\nEntities: [Singapore]\nOutput: {Singapore}:[Place]"
+    },
+    {
+        "id": "1_Food_test_4",
+        "sent": "The main ingredients of binignit are sweet potatoes.",
+        "response": "Here is the output:\n\n[sweet potatoes]: [Food], [binignit]: [Food]"
+    },
+    {
+        "id": "1_Food_test_5",
+        "sent": "White Americans are an ethnic group in the United States.",
+        "response": "Entities: [United States], [Americans]\nOutput: {United States}:[Place], {Americans}:[EthnicGroup]"
+    },
+    {
+        "id": "1_Food_test_6",
+        "sent": "Chicharrón is found in the Andalusia region.",
+        "response": "{Chicharrón}:[Food], {Andalusia}:[PopulatedPlace]"
+    },
+    {
+        "id": "1_Food_test_7",
+        "sent": "Bionico requires granola as one of its ingredients.",
+        "response": "Based on the text and my knowledge, I select the following entity types:\n\nEntities: [Bionico], [granola]\nOutput: {Bionico}:[Food], {granola}:[Ingredient]"
+    },
+    {
+        "id": "1_Food_test_8",
+        "sent": "Lemon is part of genus Citrus.",
+        "response": "Text: Lemon is part of genus Citrus.\nEntities: [Citrus]\nOutput: {Citrus}:[Species]"
+    },
+    {
+        "id": "1_Food_test_9",
+        "sent": "Rice is an ingredient in bandeja paisa.",
+        "response": "Text: Rice is an ingredient in bandeja paisa.\nEntities: [bandeja paisa]\nOutput: {bandeja paisa}:[Food]"
+    },
+    {
+        "id": "1_Food_test_10",
+        "sent": "Bionico can be found in Guadalajara.",
+        "response": "Text: Bionico can be found in Guadalajara.\nEntities: [Bionico], [Guadalajara]\nOutput: {Bionico}:[Food], {Guadalajara}:[PopulatedPlace]"
+    },
+    {
+        "id": "1_Food_test_11",
+        "sent": "Matteo Renzi is a leader from Italy.",
+        "response": "Text: Matteo Renzi is a leader from Italy.\nEntities: [Matteo Renzi], [Italy]\nOutput: {Matteo Renzi}:[Politician], {Italy}:[Country]"
+    },
+    {
+        "id": "1_Food_test_12",
+        "sent": "An ingredient of Ajoblanco is garlic.",
+        "response": "Based on the given text and candidate entity types, I select the following entity types:\n\nEntities: [Ajoblanco], [garlic]\nOutput: {Ajoblanco}:[Food], {garlic}:[Ingredient]"
+    },
+    {
+        "id": "1_Food_test_13",
+        "sent": "The capital of Malaysia is Kuala Lumpur.",
+        "response": "{Kuala Lumpur}:[City], {Malaysia}:[Country]"
+    },
+    {
+        "id": "1_Food_test_14",
+        "sent": "Sandesh (confectionery) is a dish that can be served as a dessert.",
+        "response": "Based on the text, I select the following entity type for each entity:\n\nEntities: [Sandesh]\nOutput: {Sandesh}:[Food]"
+    },
+    {
+        "id": "1_Food_test_15",
+        "sent": "Noodles are an ingredient in batchoy.",
+        "response": "Text: Noodles are an ingredient in batchoy.\nEntities: [Batchoy]\nOutput: {Batchoy}:[Food]"
+    },
+    {
+        "id": "1_Food_test_16",
+        "sent": "Sour cream is an ingredient of Bionico.",
+        "response": "Text: Sour cream is an ingredient of Bionico.\nEntities: [Bionico]\nOutput: {Bionico}:[Food]"
+    },
+    {
+        "id": "1_Food_test_17",
+        "sent": "Garlic is an ingredient in arrabbiata sauce.",
+        "response": "Text: Garlic is an ingredient in arrabbiata sauce.\nEntities: [arrabbiata sauce]\nOutput: {arrabbiata sauce}:[Food]"
+    },
+    {
+        "id": "1_Food_test_18",
+        "sent": "One dish variation called Barny Cakes is the use of milk in the recipe.",
+        "response": "Text: One dish variation called Barny Cakes is the use of milk in the recipe.\nEntities: [Barny Cakes]\nOutput: {Barny Cakes}:[Dish]"
+    },
+    {
+        "id": "1_Food_test_19",
+        "sent": "Spaniards are the ethnic group of Spain.",
+        "response": "Text: Spaniards are the ethnic group of Spain.\nEntities: [Spaniards], [Spain]\nOutput: {Spaniards}:[EthnicGroup], {Spain}:[Place]"
+    },
+    {
+        "id": "1_Food_test_20",
+        "sent": "The leader of Malaysia is Abdul Halim of Kedah.",
+        "response": "{Malaysia}:[Country]\n{Abdul Halim}:[PersonFunction]"
+    },
+    {
+        "id": "1_Food_test_21",
+        "sent": "The English language is spoken in Singapore.",
+        "response": "Text: The English language is spoken in Singapore.\nEntities: [Singapore]\nOutput: {Singapore}:[PopulatedPlace]"
+    },
+    {
+        "id": "1_Food_test_22",
+        "sent": "Tomato belongs to the genus Solanum.",
+        "response": "Text: Tomato belongs to the genus Solanum.\nEntities: [Solanum]\nOutput: {Solanum}:[Species]"
+    },
+    {
+        "id": "1_Food_test_23",
+        "sent": "Arem-arem is a food found in Indonesia.",
+        "response": "Based on the text, I select the following entity types:\n\nEntities: [Arem-arem], [Indonesia]\nOutput: {Arem-arem}:[Food], {Indonesia}:[Place]"
+    },
+    {
+        "id": "1_Food_test_24",
+        "sent": "Arem-arem is a dish of Javanese cuisine.",
+        "response": "{Arem-arem}:[Dish], {Javanese}:[Cuisine]"
+    },
+    {
+        "id": "1_Food_test_25",
+        "sent": "Arem-arem comes from Indonesia.",
+        "response": "Text: Arem-arem comes from Indonesia.\nEntities: [Arem-arem], [Indonesia]\nOutput: {Arem-arem}:[Food], {Indonesia}:[Place]"
+    },
+    {
+        "id": "1_Food_test_26",
+        "sent": "Lemper is a dish variation of Arem-Arem.",
+        "response": "{Lemper}:[Dish], {Arem-Arem}:[Dish]"
+    },
+    {
+        "id": "1_Food_test_27",
+        "sent": "Banana leaf is an ingredient in Arem-arem.",
+        "response": "Based on the text and my knowledge, I select the following entity types:\n\nEntities: [Arem-arem], [Banana]\nOutput: {Arem-arem}:[Food], {Banana}:[Food]"
+    },
+    {
+        "id": "1_Food_test_28",
+        "sent": "Arem-arem can be served as a main course.",
+        "response": "[Arem-arem] : [Food]"
+    },
+    {
+        "id": "1_Food_test_29",
+        "sent": "Binignit is a dish from the region of Visayas.",
+        "response": "{Binignit}:[Food], {Visayas}:[Place]"
+    },
+    {
+        "id": "1_Food_test_30",
+        "sent": "Coconut milk is an ingredient of Binignit.",
+        "response": "Text: Coconut milk is an ingredient of Binignit.\nEntities: [Binignit]\nOutput: {Binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_31",
+        "sent": "Sweet potato is and ingredient in Binignit.",
+        "response": "Text: Sweet potato is and ingredient in Binignit.\nEntities: [Binignit], [Sweet potato]\nOutput: {Binignit}:[Food], {Sweet potato}:[Food]"
+    },
+    {
+        "id": "1_Food_test_32",
+        "sent": "Binignit should be served as the dessert course.",
+        "response": "Text: Binignit should be served as the dessert course.\nEntities: [Binignit]\nOutput: {Binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_33",
+        "sent": "Taro is a main ingredient of Binignit.",
+        "response": "Text: Taro is a main ingredient of Binignit.\nEntities: [Binignit], [Taro]\nOutput: {Taro}:[Food], {Binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_34",
+        "sent": "Banana is an ingredient in binignit.",
+        "response": "Text: Banana is an ingredient in binignit.\nEntities: [binignit]\nOutput: {binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_35",
+        "sent": "One of the main ingredients in binignit is banana.",
+        "response": "Text: One of the main ingredients in binignit is banana.\nEntities: [banana]\nOutput: {banana}:[Food]"
+    },
+    {
+        "id": "1_Food_test_36",
+        "sent": "Binignit comes from the region Mindanao.",
+        "response": "{Binignit}:[Food], {Mindanao}:[PopulatedPlace]"
+    },
+    {
+        "id": "1_Food_test_37",
+        "sent": "Sago is an ingredient of Binignit.",
+        "response": "Text: Sago is an ingredient of Binignit.\nEntities: [Binignit], [Sago]\nOutput: {Sago}:[Food], {Binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_38",
+        "sent": "One of the main ingredients in Binignit is sago.",
+        "response": "Entities: [Binignit], [sago]\nOutput: {Binignit}:[Food], {sago}:[Ingredient]"
+    },
+    {
+        "id": "1_Food_test_39",
+        "sent": "One of the main ingredients of binignit is coconut milk.",
+        "response": "Entities: [coconut milk], [binignit]\nOutput: {coconut milk}:[ChemicalSubstance], {binignit}:[Food]"
+    },
+    {
+        "id": "1_Food_test_40",
+        "sent": "Sesame oil is an ingredient in beef kway teow.",
+        "response": "Text: Sesame oil is an ingredient in beef kway teow.\nEntities: [Sesame oil], [beef kway teow]\nOutput: {Sesame oil}:[ChemicalSubstance], {beef kway teow}:[Food]"
+    },
+    {
+        "id": "1_Food_test_41",
+        "sent": "Beef kway teow is a dish in Indonesia.",
+        "response": "Text: Beef kway teow is a dish in Indonesia.\nEntities: [Indonesia]\nOutput: {Indonesia}:[Country]\n{Beef kway teow}:[Dish]"
+    },
+    {
+        "id": "1_Food_test_42",
+        "sent": "Beef kway teow comes from the Singapore region.",
+        "response": "Text: Beef kway teow comes from the Singapore region.\nEntities: [Singapore]\nOutput: {Singapore}:[Place]"
+    },
+    {
+        "id": "1_Food_test_43",
+        "sent": "Oyster sauce is an ingredient in Beef kway teow.",
+        "response": "Entities: [Oyster sauce], [Beef kway teow]\nOutput: {Oyster sauce}:[ChemicalSubstance], {Beef kway teow}:[Food]"
+    },
+    {
+        "id": "1_Food_test_44",
+        "sent": "Palm sugar is an ingredient in beef kway teow.",
+        "response": "Entities: [kway teow], [beef]\nOutput: {kway teow}:[Food], {beef}:[Food]"
+    },
+    {
+        "id": "1_Food_test_45",
+        "sent": "Sausage is a main ingredient of Bacon Explosion.",
+        "response": "Text: Sausage is a main ingredient of Bacon Explosion.\nEntities: [Bacon Explosion], [Sausage]\nOutput: {Bacon Explosion}:[Food], {Sausage}:[Food]"
+    },
+    {
+        "id": "1_Food_test_46",
+        "sent": "An ingredient of a bacon explosion is sausage.",
+        "response": "Text: An ingredient of a bacon explosion is sausage.\nEntities: [Sausage], [Bacon]\nOutput: {Sausage}:[Food], {Bacon}:[Food]"
+    },
+    {
+        "id": "1_Food_test_47",
+        "sent": "An ingredient in a bacon sandwich is brown sauce.",
+        "response": "Text: An ingredient in a bacon sandwich is brown sauce.\nEntities: [brown sauce]\nOutput: {brown sauce}:[Food]"
+    },
+    {
+        "id": "1_Food_test_48",
+        "sent": "Jusuf Kalla is a leader in Indonesia.",
+        "response": "Entities: [Jusuf Kalla], [Indonesia]\nOutput: {Jusuf Kalla}:[Politician], {Indonesia}:[Country]"
+    },
+    {
+        "id": "1_Food_test_49",
+        "sent": "Indonesia is the country Bakso comes from.",
+        "response": "Text: Indonesia is the country Bakso comes from.\nEntities: [Indonesia], [Bakso]\nOutput: {Indonesia}:[Place], {Bakso}:[Food]"
+    },
+    {
+        "id": "1_Food_test_50",
+        "sent": "Indonesia is the country Asam pedas comes from.",
+        "response": "Text: Indonesia is the country Asam pedas comes from.\nEntities: [Indonesia], [Asam pedas]\nOutput: {Indonesia}:[Country], {Asam pedas}:[Food]"
+    },
+    {
+        "id": "1_Food_test_51",
+        "sent": "Batagor comes from the country of Indonesia.",
+        "response": "Text: Batagor comes from the country of Indonesia.\nEntities: [Batagor], [Indonesia]\nOutput: {Batagor}:[Food], {Indonesia}:[Place]"
+    },
+    {
+        "id": "1_Food_test_52",
+        "sent": "Bakso is a food found in Indonesia.",
+        "response": "Text: Bakso is a food found in Indonesia.\nEntities: [Bakso], [Indonesia]\nOutput: {Bakso}:[Food], {Indonesia}:[PopulatedPlace]"
+    },
+    {
+        "id": "1_Food_test_53",
+        "sent": "In Indonesia the currency is the Indonesian rupiah.",
+        "response": "Entities: [Indonesia], [Indonesian rupiah]\nOutput: {Indonesia}:[Place], {Indonesian rupiah}:[Currency]"
+    },
+    {
+        "id": "1_Food_test_54",
+        "sent": "Ayam penyet is from Indonesia.",
+        "response": "Text: Ayam penyet is from Indonesia.\nEntities: [Ayam penyet], [Indonesia]\nOutput: {Ayam penyet}:[Food], {Indonesia}:[Place]"
+    },
+    {
+        "id": "1_Food_test_55",
+        "sent": "The capital of Indonesia is Jakarta.",
+        "response": "Text: The capital of Indonesia is Jakarta.\nEntities: [Jakarta], [Indonesia]\n\nOutput: {Jakarta}:[PopulatedPlace:City:CapitalCity], {Indonesia}:[Place:PopulatedPlace:Country]"
+    }
+]

@@ -1,0 +1,242 @@
+[
+    {
+        "id": "2_MeanOfTransportation_test_1",
+        "input_text": "The Acura TLX has a K engine made by Honda.",
+        "response": "[Acura TLX, engine, K engine]:(Automobile, engine, Engine)\n[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Manufacturer)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_2",
+        "input_text": "The Abarth 1000 GT Coupé has a coupé bodystyle and has a straight-four engine.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle)\n[Abarth 1000 GT Coupé, engine, straight-four engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_3",
+        "input_text": "The Ariane 5 is made by Arianespace and was launched at the ELA-3.",
+        "response": "[Ariane 5, builder, Arianespace]\n[Ariane 5, launchSite, ELA-3]\n[Ariane 5, IsA, MeanOfTransportation]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_4",
+        "input_text": "The 1955 Dodge is a sedan with a V8 engine.",
+        "response": "[1955 Dodge, bodyStyle, sedan]:(Automobile, bodyStyle, CarBodyStyle)\n[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_5",
+        "input_text": "Honda is the manufacturer of the Acura TLX, which has an engine size of 3.5 litres.",
+        "response": "[Honda, manufacturer, Organisation]\n[Acura TLX, manufacturer, Organisation]\n[Acura TLX, engineSize, 3.5]\nNote: The output is in the format of [Entity, relation, value] where Entity is the subject, relation is the predicate, and value is the object."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_6",
+        "input_text": "The 1955 Dodge has a straight-six engine and a station wagon style body.",
+        "response": "[Dodge, bodyStyle, station wagon]:(Automobile, bodyStyle, CarBodyStyle)\n[Dodge, engine, straight-six engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_7",
+        "input_text": "The 1955 Dodge and the DeSoto manufactured DeSoto Custom are related means of transportation.",
+        "response": "Here is the output in the required format:\n\n[DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(MeanOfTransportation, relatedMeanOfTransportation, MeanOfTransportation)\n[1955 Dodge, manufacturer, DeSoto]:(MeanOfTransportation, manufacturer, Organisation)\n[DeSoto Custom, manufacturer, DeSoto]:(MeanOfTransportation, manufacturer, Organisation)\n[DeSoto, manufacturer, DeSoto]:(Organisation, manufacturer, Organisation)\n[DeSoto, product, DeSoto Custom]:(Organisation, product, Device)\n[DeSoto Custom, type, CarType]:(MeanOfTransportation, type, TopicalConcept)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_8",
+        "input_text": "Arianespace is the manufacturer of Ariane 5 and is launched from the Guiana Space Centre.",
+        "response": "[Ariane 5, manufacturer, Arianespace]\n[Ariane 5, launchSite, Guiana Space Centre]\n[Ariane 5, builder, Arianespace]\n\nNote: I've followed the example output format and extracted the triples based on the given ontology schema and input text."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_9",
+        "input_text": "Caterpillar Inc. is in the United States. The power type of the AIDAluna is the Caterpillar Inc. engine.",
+        "response": "[Caterpillar Inc., country, United States]\n[AIDAluna, engine, Caterpillar Inc. engine]\nNote: The output is in the format of [Entity, relation, value], where the relation is one of the predefined relations in the ontology schema."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_10",
+        "input_text": "The 1955 Dodge is a convertible with a 230 cubic inch engine.",
+        "response": "[Dodge, bodyStyle, convertible]:(Automobile, bodyStyle, CarBodyStyle), [Dodge, engine, 230 cubic inch engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_11",
+        "input_text": "The AMC Matador is assembled in Mexico, including the 1971 model.",
+        "response": "[AMC Matador, assembly, Mexico]:(MeanOfTransportation, assembly, Place)\n[AMC Matador, modelYears, 1971]:(MeanOfTransportation, modelYears, Year)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_12",
+        "input_text": "The ALCO RS-3 was built by the American Locomotive Company which is located in the United States.",
+        "response": "[ALCO RS-3, builder, American Locomotive Company]:(Locomotive, builder, Organisation)\n[ALCO RS-3, country, United States]:(Locomotive, country, Place)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_13",
+        "input_text": "Honda is the manufacturer of the Acura TLX and has a Honda J engine.",
+        "response": "[Honda, manufacturer, Acura TLX]:(Automobile, manufacturer, Company)\n[Acura TLX, engine, Honda J engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_14",
+        "input_text": "The Acura TLX has a Honda manufactured Honda J engine.",
+        "response": "[Acura TLX, manufacturer, Honda]\n[Acura TLX, engine, Honda J engine]\n[Acura TLX, engine, AutomobileEngine]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_15",
+        "input_text": "The Acura TLX with a 2.4 l engine is produced by Honda.",
+        "response": "[Acura TLX, builder, Honda], (Automobile, builder, Manufacturer), [Acura TLX, engine, 2.4 l engine], (Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_16",
+        "input_text": "Honda makes the Acura TLX which has a V6 engine.",
+        "response": "[Honda, manufacturer, Acura TLX]\n[Acura TLX, manufacturer, Honda]\n[Acura TLX, engine, V6 engine]\n[Acura TLX, manufacturer, Honda]\nNote: The output format follows the example, with no additional text or explanations."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_17",
+        "input_text": "The Acura TLX has a Honda K engine and is manufactured by Honda.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company)\n[Acura TLX, engine, Honda K engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_18",
+        "input_text": "Honda is the manufacturer of the Acura TLX which has an Inline-four engine.",
+        "response": "[Honda, manufacturer, Acura TLX]\n[Acura TLX, manufacturer, Honda]\n[Acura TLX, engine, Inline-four engine]\n[Acura TLX, engine, AutomobileEngine]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_19",
+        "input_text": "Acura is a division of Honda which is the manufacturer of the Acura TLX.",
+        "response": "[Acura TLX, manufacturer, Honda]\n[Acura TLX, manufacturer, Acura]\n[Acura, manufacturer, Honda]\n[Acura, division, Honda]\n\nNote: The output is in the format [Entity, relation, Entity] or [Entity, relation, Entity], following the example provided."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_20",
+        "input_text": "The 1955 Dodge, has a station wagon style body and an engine that is, 230 cubic inches.",
+        "response": "Here is the output based on the input text:\n\n[1955 Dodge, bodyStyle, station wagon]\n[1955 Dodge, engine, AutomobileEngine]\n[1955 Dodge, engineSize, 230 cubic inches]\n\nNote that I've extracted the relevant information from the input text and matched it to the ontology schema. The output format is in the same format as the example, with no additional text or explanations."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_21",
+        "input_text": "The 1955 Dodge and the DeSoto Custom and Plymouth Plaza are related means of transportation.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(MeanOfTransportation, relatedMeanOfTransportation, MeanOfTransportation)\n[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(MeanOfTransportation, relatedMeanOfTransportation, MeanOfTransportation)\n\nNote that the output follows the exact format specified in the example, with no additional text or explanations."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_22",
+        "input_text": "Chrysler Newport, DeSoto Custom and the 1955 Dodge are all cars.",
+        "response": "Here is the output:\n\n[Chrysler Newport, carType, Automobile]\n[DeSoto Custom, carType, Automobile]\n[1955 Dodge, carType, Automobile]\n[Chrysler Newport, manufacturer, Chrysler]\n[DeSoto Custom, manufacturer, DeSoto]\n[1955 Dodge, manufacturer, Dodge]\n[Chrysler Newport, carBodyStyle, TopicalConcept]\n[DeSoto Custom, carBodyStyle, TopicalConcept]\n[1955 Dodge, carBodyStyle, TopicalConcept]\n\nNote that the output is in the same format as the example, with no additional text or explanations. The relations extracted are based on the ontology schema provided, and the entities are matched to the corresponding types in the schema."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_23",
+        "input_text": "The Dodge manufactured, 1955 Dodge and the DeSoto Custom are related means of transportation.",
+        "response": "[Dodge, manufacturer, Chrysler Corporation]:(Automobile, manufacturer, Organisation)\n[1955 Dodge, manufacturer, Chrysler Corporation]:(Automobile, manufacturer, Organisation)\n[DeSoto Custom, manufacturer, Chrysler Corporation]:(Automobile, manufacturer, Organisation)\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_24",
+        "input_text": "The 1955 Dodge is station wagon with an AMC V8 engine.",
+        "response": "[1955 Dodge, bodyStyle, Station Wagon]:(Automobile, bodyStyle, CarBodyStyle)\n[1955 Dodge, engine, AMC V8 engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_25",
+        "input_text": "1955 Dodge and Plymouth Plaza, made by Plymouth, are related kinds of transportation.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, 1955 Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)\n[1955 Plymouth Plaza, manufacturer, Plymouth]:(Automobile, manufacturer, Manufacturer)\n[1955 Dodge, manufacturer, Plymouth]:(Automobile, manufacturer, Manufacturer)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_26",
+        "input_text": "The 1955 Dodge which has a station wagon style body also has a V8 engine.",
+        "response": "[1955 Dodge, bodyStyle, station wagon]:(Automobile, bodyStyle, CarBodyStyle)\n[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_27",
+        "input_text": "The 1955 Dodge has a hardtop and it engine is 230 cubic inches.",
+        "response": "Here is the output:\n\n[1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle)\n[1955 Dodge, engine, 230 cubic inches]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_28",
+        "input_text": "The 1955 Dodge has a V8 engine and a hardtop.",
+        "response": "[1955 Dodge, bodyStyle, hardtop]\n[1955 Dodge, engine, V8 engine]\n[1955 Dodge, class, CarType]\n[1955 Dodge, manufacturer, Company]\n[1955 Dodge, type, Automobile]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_29",
+        "input_text": "Dodge Coronet is the alternative name for the 1955 Dodge which has a V8 engine.",
+        "response": "[Dodge Coronet, alternativeName, 1955 Dodge]:(CarType, alternativeName, CarType), [1955 Dodge, bodyStyle, TopicalConcept], [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_30",
+        "input_text": "The 1955 Dodge, the DeSoto Custom, and the Dodge Coronet are similar and therefore related means of transport.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Dodge Coronet, relatedMeanOfTransportation, DeSoto Custom]\n[Dodge Coronet, relatedMeanOfTransportation, 1955 Dodge]\n[1955 Dodge, relatedMeanOfTransportation, Dodge Coronet]\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]\n[DeSoto Custom, relatedMeanOfTransportation, Dodge Coronet]\n[DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]\n\nNote that I've only extracted the triples that are directly related to the given ontology schema and the input text. If you'd like me to extract more triples or modify the output in any way, please let me know!"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_31",
+        "input_text": "At 252000 millimetres long, the AIDAluna, is powered by Caterpillar Inc.",
+        "response": "[AIDAluna, length, 252000 millimetres]:(MeanOfTransportation, length, number)\n[AIDAluna, poweredBy, Caterpillar Inc.]:(MeanOfTransportation, poweredBy, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_32",
+        "input_text": "Douglas R. Oberhelman is a key person at Caterpillar Inc. where the AIDAluna is manufactured.",
+        "response": "[Douglas R. Oberhelman, keyPerson, Caterpillar Inc.]\n[Caterpillar Inc., keyPerson, Douglas R. Oberhelman]\n[AIDAluna, manufacturer, Caterpillar Inc.]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_33",
+        "input_text": "The power type of the AIDAluna is the engine by Caterpillar Inc. which is located in Illinois.",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]\n[AIDAluna, engine, Caterpillar Inc.]\n\nNote: The ontology schema provides a clear definition of the entity types, relations, and hierarchy. The input text is processed to extract triples based on these definitions. The output format follows the example, with each triple consisting of a subject, a predicate, and an object."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_34",
+        "input_text": "AIDAluna, which is powered by Caterpillar Inc. is located in Peoria (Illinois).",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]\n[AIDAluna, location, Peoria]\n[AIDAluna, country, Illinois]\n\nNote: The output format follows the example provided, with no additional text or explanations. The input text is analyzed and the corresponding triples are generated based on the ontology schema."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_35",
+        "input_text": "The Pontiac Rageous coupé went into production in 1997.",
+        "response": "[Pontiac Rageous, productionStartYear, 1997]:(Automobile, productionStartYear, Date)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_36",
+        "input_text": "The coupé style Pontiac Rageous is assembled in Michigan.",
+        "response": "[Pontiac Rageous, bodyStyle, CarBodyStyle]\n[Pontiac Rageous, assembly, Michigan]\n[Pontiac Rageous, manufacturer, Manufacturer]\n\nNote: I've used the ontology schema to extract the relevant information from the input text and constructed the triples accordingly. The output format follows the example provided."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_37",
+        "input_text": "The Abarth 1000 GT Coupé has a coupé body style and a 2160 millimetre wheelbase.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, Coupé]\n[Abarth 1000 GT Coupé, wheelbase, 2160 millimetre]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_38",
+        "input_text": "With a coupé bodystyle, the last Abarth 1000 GT Coupé rolled off the production line in 1958.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, coupé bodystyle]\n[Abarth 1000 GT Coupé, productionEndYear, 1958]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_39",
+        "input_text": "The Aston Martin V8 is a coupé with a 5.3 litre engine.",
+        "response": "[Aston Martin V8, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle)\n[Aston Martin V8, engine, 5.3 litre engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_40",
+        "input_text": "The Abarth 1000 GT Coupé has a Coupé body style and its production began in 1958.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, productionStartYear, 1958]:(Automobile, productionStartYear, Date)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_41",
+        "input_text": "The Ariane 5 was made by European Space Agency and Arianespace.",
+        "response": "[Ariane 5, builder, European Space Agency], [Ariane 5, builder, Arianespace], [Ariane 5, IsA, Rocket]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_42",
+        "input_text": "The Ariane 5 was launched at the ELA-3, operated by Arianespace.",
+        "response": "[Ariane 5, shipLaunch, 2002-12-10]:(Rocket, shipLaunch, Date)\n[Ariane 5, operator, Arianespace]:(Rocket, operator, Organisation)\n[Ariane 5, launchSite, ELA-3]:(Rocket, launchSite, ArchitecturalStructure)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_43",
+        "input_text": "The Ariane 5 was manufactured by the European Space Agency and launched at ELA-3.",
+        "response": "[Ariane 5, manufacturer, European Space Agency]:(MeanOfTransportation, manufacturer, Organisation)\n[Ariane 5, launchSite, ELA-3]:(MeanOfTransportation, launchSite, ArchitecturalStructure)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_44",
+        "input_text": "Airbus Group is the parent company of Airbus Defence and Space; where Ariane 5 was manufactured.",
+        "response": "[Ariane 5, manufacturer, Airbus Defence and Space]\n[Ariane 5, manufacturer, Airbus Group]\n[Ariane 5, IsA, MeanOfTransportation]\n[Airbus Defence and Space, IsA, Organisation]\n[Airbus Defence and Space, parentCompany, Airbus Group]\n[Airbus Group, IsA, Organisation]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_45",
+        "input_text": "The Ariane 5 is 5.4 m wide and has had 2 partial failures.",
+        "response": "[Ariane 5, diameter, 5.4]\n[Ariane 5, partialFailures, 2]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_46",
+        "input_text": "The Ariane 5 which was manufactured by Airbus Defence and Space was launched from the Guiana Space Centre.",
+        "response": "[Ariane 5, manufacturer, Airbus Defence and Space]\n[Ariane 5, launchSite, Guiana Space Centre]\n[Ariane 5, manufacturer, Airbus Defence and Space]\n[Ariane 5, IsA, Rocket]\n\nNote: The output follows the example format, with no additional text or explanations. The ontology schema is applied to extract triples based on the given entity types, relations, and hierarchy."
+    },
+    {
+        "id": "2_MeanOfTransportation_test_47",
+        "input_text": "Ariane 5 is manufactured by the European Space Agency and launched from the Guiana Space Centre.",
+        "response": "[Ariane 5, manufacturer, European Space Agency]\n[Ariane 5, launchSite, Guiana Space Centre]\n[Ariane 5, manufacturer, MeanOfTransportation]\n[Ariane 5, IsA, MeanOfTransportation]"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_48",
+        "input_text": "The Ariane 5 was launched from the ELA-3 launchpad which is found at the Guiana Space Centre.",
+        "response": "[Ariane 5, launchSite, ELA-3 launchpad]:(MeanOfTransportation, launchSite, ArchitecturalStructure), [Ariane 5, countryOrigin, Guiana Space Centre]:(MeanOfTransportation, countryOrigin, Place), [Ariane 5, shipLaunch, Date]:(MeanOfTransportation, shipLaunch, Date)"
+    }
+]

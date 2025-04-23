@@ -1,0 +1,47 @@
+[
+    {
+        "id": "2_Film_test_1",
+        "input_text": "\"English Without Tears\" was produced by Anatole de Grunwald who was born on December 25, 1910.",
+        "response": "[English Without Tears, producer, Anatole de Grunwald]\n[Anatole de Grunwald, birthDate, 1910-12-25]\n[English Without Tears, producer, Anatole de Grunwald]\n[Anatole de Grunwald, birthDate, 1910-12-25]"
+    },
+    {
+        "id": "2_Film_test_2",
+        "input_text": "English Without Tears producer Anatole de Grunwald was born in Saint Petersburg.",
+        "response": "[Anatole de Grunwald, birthPlace, Saint Petersburg]:(Person, birthPlace, Place)\n[Anatole de Grunwald, birthYear, 0000-00-00]:(Person, birthYear, Year)\n[Anatole de Grunwald, producer, English Without Tears]:(Person, producer, Work)"
+    },
+    {
+        "id": "2_Film_test_3",
+        "input_text": "Anatole de Grunwald is the writer and producer of 'English Without Tears'.",
+        "response": "[English Without Tears, writer, Anatole de Grunwald]\n[English Without Tears, producer, Anatole de Grunwald]\n[Anatole de Grunwald, birthYear, unknown]\n(Authority control: The birth year of Anatole de Grunwald is not provided in the input text, so it is left as unknown)\n\nNote: The output follows the given ontology schema and format, with the extracted triples in the format [Work, relation, Entity]."
+    },
+    {
+        "id": "2_Film_test_4",
+        "input_text": "English Without Tears was written by Anatole de Grunwald and Terence Rattigan.",
+        "response": "Here is the output:\n\n[English Without Tears, writer, Anatole de Grunwald]\n[English Without Tears, writer, Terence Rattigan]\n[Anatole de Grunwald, birthYear, unknown]\n[Terence Rattigan, birthYear, unknown]"
+    },
+    {
+        "id": "2_Film_test_5",
+        "input_text": "Anatole de Grunwald was the producer of 'English Without Tears,' a film with a running time of 89 minutes.",
+        "response": "Here is the output:\n\n[English Without Tears, producer, Anatole de Grunwald]\n[English Without Tears, runtime, 89]\n[Anatole de Grunwald, birthDate,?]\n[Anatole de Grunwald, occupation, PersonFunction]\n\nNote: The birth date of Anatole de Grunwald is not provided in the input text, so it is left as a question mark."
+    },
+    {
+        "id": "2_Film_test_6",
+        "input_text": "Anatole de Grunwald's English Without tears cinematography was done by Bernard Knowles.",
+        "response": "[Anatole de Grunwald, cinematography, Bernard Knowles]\n[Cinematography, cinematography, Bernard Knowles]\n[Anatole de Grunwald, cinematography, Bernard Knowles]"
+    },
+    {
+        "id": "2_Film_test_7",
+        "input_text": "\"English Without Tears\", which was written by Anatole de Grunwald, has a running time of 89 minutes.",
+        "response": "[English Without Tears, writer, Anatole de Grunwald]\n[English Without Tears, runtime, 89]\n[Anatole de Grunwald, birthYear, unknown]\nNote: The birth year of Anatole de Grunwald is not provided in the input text, so it is marked as unknown."
+    },
+    {
+        "id": "2_Film_test_8",
+        "input_text": "Tom Sizemore stars in Super Capers which starred Michael Rooker.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Super Capers, starring, Tom Sizemore]\n[Super Capers, starring, Michael Rooker]\n[Tom Sizemore, birthYear,?]\n[Michael Rooker, birthYear,?]\n\nNote: Since the birthYear information is not provided in the input text, it is represented as a question mark (?) in the output."
+    },
+    {
+        "id": "2_Film_test_9",
+        "input_text": "Super Capers starred Michael Rooker, who was born in Jasper (Alabama).",
+        "response": "[Super Capers, starring, Michael Rooker]:(Film, starring, Person)\n[Michael Rooker, birthPlace, Jasper]:(Person, birthPlace, Place)\n[Michael Rooker, birthPlace, Alabama]:(Place, name, Alabama)\n[Alabama, IsA, Country]:(Country, IsA, PopulatedPlace)\n[Alabama, IsA, Country]:(Country, IsA, Place)"
+    }
+]

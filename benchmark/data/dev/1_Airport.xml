@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Airport" id="1_Airport_dev_1">
+      <text>Maple Ridge Township (Alpena County, Michigan) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Maple_Ridge_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_2">
+      <text>Philippe of Belgium is the leader of Belgium.</text>
+      <triples>
+        <triple>
+          <sub>Belgium</sub>
+          <rel>leader</rel>
+          <obj>Philippe_of_Belgium</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_3">
+      <text>Amsterdam Airport Schiphol is located in Haarlemmermeer.</text>
+      <triples>
+        <triple>
+          <sub>Amsterdam_Airport_Schiphol</sub>
+          <rel>location</rel>
+          <obj>Haarlemmermeer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_4">
+      <text>Appleton (Wisconsin) is part of Grand Chute.</text>
+      <triples>
+        <triple>
+          <sub>Appleton</sub>
+          <rel>isPartOf</rel>
+          <obj>Grand_Chute</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_5">
+      <text>The Atlantic City International Airport serves Atlantic City.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City_International_Airport</sub>
+          <rel>serves</rel>
+          <obj>Atlantic_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>serves</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_6">
+      <text>The runway length of Al Asad Airbase is 3990.</text>
+      <triples>
+        <triple>
+          <sub>Al_Asad_Airbase</sub>
+          <rel>runwayLength</rel>
+          <obj>3990</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_7">
+      <text>The People's Party is the lead party of San Sebastián de los Reyes, Spain.</text>
+      <triples>
+        <triple>
+          <sub>San_Sebastián_de_los_Reyes</sub>
+          <rel>leaderParty</rel>
+          <obj>People's_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderParty</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_8">
+      <text>The mayor of Antwerp is Bart De Wever.</text>
+      <triples>
+        <triple>
+          <sub>Antwerp</sub>
+          <rel>mayor</rel>
+          <obj>Bart_De_Wever</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>mayor</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_9">
+      <text>Atlantic City International Airport's ICAO Location Identifier is KACY.</text>
+      <triples>
+        <triple>
+          <sub>Atlantic_City_International_Airport</sub>
+          <rel>icaoLocationIdentifier</rel>
+          <obj>KACY</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>icaoLocationIdentifier</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_10">
+      <text>The operating organization for Afonso Pena International Airport is Infraero.</text>
+      <triples>
+        <triple>
+          <sub>Afonso_Pena_International_Airport</sub>
+          <rel>operatingOrganisation</rel>
+          <obj>Infraero</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>operatingOrganisation</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_11">
+      <text>Alcobendas is part of Community of Madrid.</text>
+      <triples>
+        <triple>
+          <sub>Alcobendas</sub>
+          <rel>isPartOf</rel>
+          <obj>Community_of_Madrid</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_12">
+      <text>Infraero location is in Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Infraero</sub>
+          <rel>location</rel>
+          <obj>Brazil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_13">
+      <text>French is the official language of Belgium.</text>
+      <triples>
+        <triple>
+          <sub>Belgium</sub>
+          <rel>officialLanguage</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_14">
+      <text>Poaceae belongs to the order of Commelinids.</text>
+      <triples>
+        <triple>
+          <sub>Poaceae</sub>
+          <rel>order</rel>
+          <obj>Commelinids</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Family</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_15">
+      <text>Saranac Lake (New York) is part of Essex County (New York).</text>
+      <triples>
+        <triple>
+          <sub>Saranac_Lake</sub>
+          <rel>isPartOf</rel>
+          <obj>Essex_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Village</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_16">
+      <text>Amsterdam Airport Schiphol is -3.3528 metres above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Amsterdam_Airport_Schiphol</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>-3.3528</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>elevationAboveTheSeaLevelInMetres</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_17">
+      <text>Adolfo Suárez Madrid–Barajas Airport is found in Madrid.</text>
+      <triples>
+        <triple>
+          <sub>Adolfo_Suárez_Madrid–Barajas_Airport</sub>
+          <rel>location</rel>
+          <obj>Madrid</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_18">
+      <text>The runway length of Angola International Airport is 3800.</text>
+      <triples>
+        <triple>
+          <sub>Angola_International_Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>3800</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_19">
+      <text>Curitiba is located in Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Curitiba</sub>
+          <rel>country</rel>
+          <obj>Brazil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_20">
+      <text>Poaceae is the surface type of the second runway of Ardmore Airport, New Zealand.</text>
+      <triples>
+        <triple>
+          <sub>Ardmore_Airport</sub>
+          <rel>2ndRunwaySurfaceType</rel>
+          <obj>Poaceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>2ndRunwaySurfaceType</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_21">
+      <text>MotorSport Vision is located in the city of Fawkham.</text>
+      <triples>
+        <triple>
+          <sub>MotorSport_Vision</sub>
+          <rel>city</rel>
+          <obj>Fawkham</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_22">
+      <text>Amsterdam Airport Schiphol runway name is 04/22 Oostbaan.</text>
+      <triples>
+        <triple>
+          <sub>Amsterdam_Airport_Schiphol</sub>
+          <rel>runwayName</rel>
+          <obj>04/22_Oostbaan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayName</rel>
+          <obj>Runway</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_23">
+      <text>The runway length of Ardmore Airport in New Zealand is 1411.</text>
+      <triples>
+        <triple>
+          <sub>Ardmore_Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>1411</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_24">
+      <text>4000 ft is the runway length at Angola International Airport.</text>
+      <triples>
+        <triple>
+          <sub>Angola_International_Airport</sub>
+          <rel>runwayLengthFeet</rel>
+          <obj>4000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLengthFeet</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_25">
+      <text>One of the noted United States Air Force battles was the Invasion of Grenada.</text>
+      <triples>
+        <triple>
+          <sub>United_States_Air_Force</sub>
+          <rel>battle</rel>
+          <obj>Invasion_of_Grenada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryUnit</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_26">
+      <text>The Kurdish languages are spoken in Iraq.</text>
+      <triples>
+        <triple>
+          <sub>Iraq</sub>
+          <rel>language</rel>
+          <obj>Kurdish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_27">
+      <text>The hub airport for Turkmenistan Airlines is Turkmenbashi International Airport.</text>
+      <triples>
+        <triple>
+          <sub>Turkmenistan_Airlines</sub>
+          <rel>hubAirport</rel>
+          <obj>Turkmenbashi_International_Airport</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airline</sub>
+          <rel>hubAirport</rel>
+          <obj>Airport</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_28">
+      <text>The ICAO location identifier for Bedford Aerodrome is EGBF.</text>
+      <triples>
+        <triple>
+          <sub>Bedford_Aerodrome</sub>
+          <rel>icaoLocationIdentifier</rel>
+          <obj>EGBF</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>icaoLocationIdentifier</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_29">
+      <text>Texas demonym is Tejano.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>demonym</rel>
+          <obj>Tejano</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_30">
+      <text>Allama Iqbal International airport is located in Pakistan.</text>
+      <triples>
+        <triple>
+          <sub>Allama_Iqbal_International_Airport</sub>
+          <rel>location</rel>
+          <obj>Pakistan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_31">
+      <text>The Adolfo Suárez Madrid–Barajas Airport is operated by ENAIRE.</text>
+      <triples>
+        <triple>
+          <sub>Adolfo_Suárez_Madrid–Barajas_Airport</sub>
+          <rel>operatingOrganisation</rel>
+          <obj>ENAIRE</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>operatingOrganisation</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_32">
+      <text>The runway length at Athens International Airport is 3800.</text>
+      <triples>
+        <triple>
+          <sub>Athens_International_Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>3800</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_33">
+      <text>The Ashgabat International Airport's 3rd runway length in ft is 2953.</text>
+      <triples>
+        <triple>
+          <sub>Ashgabat_International_Airport</sub>
+          <rel>3rdRunwayLengthFeet</rel>
+          <obj>2953</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>3rdRunwayLengthFeet</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_34">
+      <text>The Bedford Aerodrome has a runway named "08/26".</text>
+      <triples>
+        <triple>
+          <sub>Bedford_Aerodrome</sub>
+          <rel>runwayName</rel>
+          <obj>08/26</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayName</rel>
+          <obj>Runway</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Airport" id="1_Airport_dev_35">
+      <text>Alpena County Regional Airport's runway length is 2744.</text>
+      <triples>
+        <triple>
+          <sub>Alpena_County_Regional_Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>2744</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Airport</sub>
+          <rel>runwayLength</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

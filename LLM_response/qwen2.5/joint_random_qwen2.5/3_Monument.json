@@ -1,0 +1,57 @@
+[
+    {
+        "id": "3_Monument_test_1",
+        "input_text": "Cumberland county (Pennsylvania) is north of Adams County (Pennsylvania), the location of the 11th Mississippi Infantry Monument in Gettysburg (Pennsylvania).",
+        "response": "[Adams County, hasToItsSouth, Cumberland county]:(Place, hasToItsSouth, Place), [Adams County, location, Pennsylvania]:(Place, location, State), [Cumberland county, location, Pennsylvania]:(Place, location, State), [11th Mississippi Infantry Monument, location, Adams County]:(Monument, location, County), [11th Mississippi Infantry Monument, location, Gettysburg]:(Monument, location, Town)"
+    },
+    {
+        "id": "3_Monument_test_2",
+        "input_text": "The Atatürk Monument (İzmir) was designed by Pietro Canonica, and can be found in Turkey, where the capital is Ankara.",
+        "response": "[Atatürk Monument, location, Turkey]:(Monument, location, Country), [Atatürk Monument, designer, Pietro Canonica]:(Monument, designer, Person), [Turkey, capital, Ankara]:(Place, capital, Place)"
+    },
+    {
+        "id": "3_Monument_test_3",
+        "input_text": "The Pietro Canonica designed Atatürk Monument (İzmir) was inaugurated on 27th July, 1932 and is located in Turkey.",
+        "response": "[Atatürk Monument (İzmir), designer, Pietro Canonica]:(ArchitecturalStructure, designer, Person), [Atatürk Monument (İzmir), location, Turkey]:(Monument, location, Country), [Atatürk Monument (İzmir), inaugurationDate, 27th July, 1932]:(ArchitecturalStructure, inaugurationDate, Date)"
+    },
+    {
+        "id": "3_Monument_test_4",
+        "input_text": "The inauguration date of the Atatürk Monument (İzmir), made of Bronze, in Izmir is the 27th of July, 1932 and located in İzmir, Turkey.",
+        "response": "[Atatürk Monument (İzmir), inaugurationDate, 27th of July, 1932]:(ArchitecturalStructure, inaugurationDate, Date), [Atatürk Monument (İzmir), material, Bronze]:(ArchitecturalStructure, material, ChemicalSubstance), [Atatürk Monument (İzmir), location, İzmir]:(ArchitecturalStructure, location, Place), [Atatürk Monument (İzmir), location, Turkey]:(ArchitecturalStructure, location, Country)"
+    },
+    {
+        "id": "3_Monument_test_5",
+        "input_text": "The Atatürk monument (İzmir) was inaugurated on 27 July 1932 in Izmir, Turkey. The capital of Turkey is Ankara.",
+        "response": "[Atatürk monument, location, Izmir]:(Monument, location, Town), [Atatürk monument, location, Turkey]:(Monument, location, Country), [Atatürk monument, nativeName, Atatürk monument (İzmir)]:(Monument, nativeName, ArchitecturalStructure), [Atatürk monument, inaugurationDate, 27 July 1932]:(Monument, inaugurationDate, Date), [Izmir, capital, Turkey]:(Place, capital, Country)"
+    },
+    {
+        "id": "3_Monument_test_6",
+        "input_text": "The Atatürk monument (İzmir) is located in Turkey, where the largest city is Istanbul and the capital is Ankara.",
+        "response": "[Atatürk monument, location, Turkey]:(Monument, location, Country), [Atatürk monument, location, İzmir]:(Monument, location, Town), [Turkey, largestCity, Istanbul]:(Country, largestCity, City), [Turkey, capital, Ankara]:(Country, capital, Place)"
+    },
+    {
+        "id": "3_Monument_test_7",
+        "input_text": "Turkey's largest city is Istanbul, its currency is the Turkish lira and it has the Atatürk Monument (İzmir).",
+        "response": "[Istanbul, largestCity, Turkey]:(City, largestCity, Country), [Turkey, currency, Turkish lira]:(Country, currency, Currency), [Atatürk Monument (İzmir), locatedIn, İzmir]:(Monument, locatedIn, Town), [Atatürk Monument (İzmir), locatedIn, Turkey]:(Monument, locatedIn, Country)"
+    },
+    {
+        "id": "3_Monument_test_8",
+        "input_text": "Turkey, where the leader is Ahmet Davutoğlu, is the location of the bronze Atatürk monument (İzmir).",
+        "response": "[Atatürk monument (İzmir), location, İzmir]:(Monument, location, Town), [Atatürk monument (İzmir), dedicatedTo, Atatürk]:(ArchitecturalStructure, dedicatedTo, Person), [Turkey, leader, Ahmet Davutoğlu]:(Place, leader, Person), [Turkey, location, İzmir]:(Country, location, Town)"
+    },
+    {
+        "id": "3_Monument_test_9",
+        "input_text": "The Atatürk Monument (İzmir) is located in Turkey, where the leader is Ahmet Davutoğlu and the currency is the Turkish Lira.",
+        "response": "[Atatürk Monument, location, Turkey]:(Monument, location, Country), [Atatürk Monument, nativeName, İzmir]:(Monument, nativeName, Place), [Turkey, leader, Person]:(Place, leader, Person), [Turkey, currency, Turkish Lira]:(Place, currency, Currency)"
+    },
+    {
+        "id": "3_Monument_test_10",
+        "input_text": "Turkey, where the official title of the leader is President, is the location of the Atatürk Monument (İzmir). The monument was inaugurated on 27 July 1932.",
+        "response": "[Atatürk Monument, location, İzmir]:(Monument, location, Town), [Atatürk Monument, inaugurationDate, 27 July 1932]:(Monument, inaugurationDate, Date), [Turkey, leaderTitle, President]:(Place, leaderTitle, PersonFunction), [Turkey, capital, Ankara]:(Place, capital, Place)"
+    },
+    {
+        "id": "3_Monument_test_11",
+        "input_text": "Ahmet Davutoğlu is the President of Turkey. The Atatürk Monument (İzmir) is located in Turkey.",
+        "response": "[Ahmet Davutoğlu, leader, Turkey]:(Person, leader, Country), [Atatürk Monument (İzmir), location, Turkey]:(Monument, location, Country)"
+    }
+]

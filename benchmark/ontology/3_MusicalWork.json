@@ -1,0 +1,406 @@
+{
+    "title": "3_MusicalWork",
+    "id": "3_MusicalWork",
+    "entity type": [
+        {
+            "id": "Album",
+            "label": "Album"
+        },
+        {
+            "id": "AlbumType",
+            "label": "AlbumType"
+        },
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "Band",
+            "label": "Band"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Code",
+            "label": "Code"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Genre",
+            "label": "Genre"
+        },
+        {
+            "id": "Group",
+            "label": "Group"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MusicGenre",
+            "label": "MusicGenre"
+        },
+        {
+            "id": "MusicalArtist",
+            "label": "MusicalArtist"
+        },
+        {
+            "id": "MusicalWork",
+            "label": "MusicalWork"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "RecordLabel",
+            "label": "RecordLabel"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Song",
+            "label": "Song"
+        },
+        {
+            "id": "TimeZone",
+            "label": "TimeZone"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "producer",
+            "label": "producer",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "recordLabel",
+            "label": "recordLabel",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "releaseDate",
+            "label": "releaseDate",
+            "domain": "Work",
+            "range": "Date"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "recordLabel",
+            "label": "recordLabel",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "album",
+            "label": "album",
+            "domain": "Work",
+            "range": "Work"
+        },
+        {
+            "id": "type",
+            "label": "type",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "genre",
+            "label": "genre",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "areaCode",
+            "label": "areaCode",
+            "domain": "Place",
+            "range": "Code"
+        },
+        {
+            "id": "timeZone",
+            "label": "timeZone",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "genre",
+            "label": "genre",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "precededBy",
+            "label": "precededBy",
+            "domain": "Work",
+            "range": "Work"
+        },
+        {
+            "id": "runtime",
+            "label": "runtime",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "musicalBand",
+            "label": "musicalBand",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "producer",
+            "label": "producer",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "recordedIn",
+            "label": "recordedIn",
+            "domain": "Work",
+            "range": "Place"
+        },
+        {
+            "id": "formerBandMember",
+            "label": "formerBandMember",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "musicFusionGenre",
+            "label": "musicFusionGenre",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "followedBy",
+            "label": "followedBy",
+            "domain": "Work",
+            "range": "Work"
+        },
+        {
+            "id": "writer",
+            "label": "writer",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "artist",
+            "label": "artist",
+            "domain": "Work",
+            "range": "Person"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "RecordLabel",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Song",
+            "range": "MusicalWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Group",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AlbumType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicalArtist",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicalWork",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicGenre",
+            "range": "Genre"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Genre",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Band",
+            "range": "Group"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Album",
+            "range": "MusicalWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "TimeZone",
+            "range": "TopicalConcept"
+        }
+    ]
+}

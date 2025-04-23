@@ -1,0 +1,67 @@
+[
+    {
+        "id": "2_University_test_1",
+        "input_text": "There are 16800 undergraduate with 1299 doctoral students at the University of Burgundy.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[University of Burgundy, numberOfUndergraduateStudents, 16800]\n[University of Burgundy, numberOfDoctoralStudents, 1299]\n\nNote that I've extracted the relevant information from the input text and matched it to the corresponding entities and relations in the ontology schema."
+    },
+    {
+        "id": "2_University_test_2",
+        "input_text": "There are 16800 undergraduate with 9400 post-graduate students at the University of Burgundy.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[University of Burgundy, numberOfUndergraduateStudents, 16800]\n[University of Burgundy, numberOfPostgraduateStudents, 9400]"
+    },
+    {
+        "id": "2_University_test_3",
+        "input_text": "The University of Burgundy is located in the city of Dijon and has 9400 postgraduate students.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[University of Burgundy, location, Dijon]:(University, location, Place)\n[University of Burgundy, numberOfPostgraduateStudents, 9400]:(University, numberOfPostgraduateStudents, number)\n[University of Burgundy, country, France]:(University, country, Country)"
+    },
+    {
+        "id": "2_University_test_4",
+        "input_text": "The leader of Denmark is Lars Løkke Rasmussen. Denmark is the home of the Aarhus University.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Aarhus University, leader, Lars Løkke Rasmussen]\n[Aarhus University, country, Denmark]\n\nNote that I've extracted the triples based on the given ontology schema, specifically the relations \"leader\" and \"country\" between the entities \"University\" and \"Person\", and \"Place\" respectively."
+    },
+    {
+        "id": "2_University_test_5",
+        "input_text": "The Aarhus University which was established in 1928, is affiliated with the European University Association.",
+        "response": "[Aarhus University, established, 1928]\n[Aarhus University, affiliation, European University Association]"
+    },
+    {
+        "id": "2_University_test_6",
+        "input_text": "The type of government in Aarhus is that of magistrate. The city of Aarhus is where the Aarhus University is located.",
+        "response": "[Aarhus, governmentType, magistrate]:(Place, governmentType, TopicalConcept)\n[Aarhus, location, Aarhus University]:(Place, location, Organisation)\n[Aarhus University, location, Aarhus]:(Organisation, location, Place)"
+    },
+    {
+        "id": "2_University_test_7",
+        "input_text": "Mols is situated to the northeast of Aarhus where the Aarhus University is located.",
+        "response": "[Mols, hasToItsNortheast, Aarhus]\n[Aarhus, location, Mols]\n[Aarhus, location, Aarhus University]\n[Aarhus University, location, Aarhus]"
+    },
+    {
+        "id": "2_University_test_8",
+        "input_text": "The Aarhus University is located in Aarhus, Denmark.",
+        "response": "[Aarhus University, location, Aarhus]:(Aarhus University, location, Place)\n[Aarhus University, country, Denmark]:(Aarhus University, country, Country)"
+    },
+    {
+        "id": "2_University_test_9",
+        "input_text": "The Aarhus University is located in the country of Denmark which has the religion The Church of Denmark.",
+        "response": "[Aarhus University, location, Denmark]:(Aarhus University, location, Place)\n[Aarhus University, country, Denmark]:(Aarhus University, country, Country)\n[Denmark, religion, The Church of Denmark]:(Denmark, religion, Organisation)"
+    },
+    {
+        "id": "2_University_test_10",
+        "input_text": "Universitas Aarhusiensis is the latin name of the Aarhus University which is affiliated to the European University Association.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Universitas Aarhusiensis, latinName, Aarhus University]:(Organisation, latinName, Organisation)\n[Aarhus University, affiliation, European University Association]:(Organisation, affiliation, Organisation)\n\nNote: The output follows the exact format specified in the example, with no additional text or explanations."
+    },
+    {
+        "id": "2_University_test_11",
+        "input_text": "The Aarhus University is affiliated to the European University Association which has its headquarters in Brussels.",
+        "response": "[Aarhus University, affiliation, European University Association]:(Aarhus University, affiliation, Organisation)\n[Aarhus University, headquarter, Brussels]:(Aarhus University, headquarter, Place)"
+    },
+    {
+        "id": "2_University_test_12",
+        "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio in Switzerland.",
+        "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(Accademia di Architettura di Mendrisio, location, Place)\n[Accademia di Architettura di Mendrisio, country, Switzerland]:(Accademia di Architettura di Mendrisio, country, Country)"
+    },
+    {
+        "id": "2_University_test_13",
+        "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio; the neighboring municipality of Mendrisio is Meride.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Accademia di Architettura di Mendrisio, location, Mendrisio]:(Organisation, location, Place)\n[Accademia di Architettura di Mendrisio, neighboringMunicipality, Meride]:(Organisation, neighboringMunicipality, Place)\n[Mendrisio, city, Mendrisio]:(Place, city, Place)\n[Mendrisio, hasToItsNortheast,?]:(Place, hasToItsNortheast, Place) (Note: The output does not include the relationship for \"hasToItsNortheast\" as it is not provided in the input text)\n[Meride, hasToItsWest, Mendrisio]:(Place, hasToItsWest, Place)"
+    }
+]

@@ -1,0 +1,227 @@
+[
+    {
+        "id": "3_Building_test_1",
+        "input_text": "Alan B. Miller Hall in Virginia was designed by the architect Robert A. M. Stern and is owned by the College of William & Mary.",
+        "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, Place), [Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Architect), [Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, EducationalInstitution)"
+    },
+    {
+        "id": "3_Building_test_2",
+        "input_text": "103 Colmore Row was designed by the architect John Madin whose home town is Birmingham, a town where Khalid Mahmood (British politician) is one of the leaders.",
+        "response": "[103 Colmore Row, architect, John Madin]:(Building, architect, Architect), [John Madin, birthPlace, Birmingham]:(Person, birthPlace, Town), [Birmingham, leader, Khalid Mahmood]:(Town, leader, Politician)"
+    },
+    {
+        "id": "3_Building_test_3",
+        "input_text": "The Mason School of Business are the current tenants of, Alan B. Miller Hall (address: 101 Ukrop way) is situated in Virginia.",
+        "response": "[Alan B. Miller Hall, currentTenants, Mason School of Business]:(ArchitecturalStructure, currentTenants, Organisation), [Alan B. Miller Hall, address, 101 Ukrop way]:(ArchitecturalStructure, address, Place), [Alan B. Miller Hall, location, Virginia]:(ArchitecturalStructure, location, Place)"
+    },
+    {
+        "id": "3_Building_test_4",
+        "input_text": "The College of William & Mary is owned by Alan B. Miller Hall in Williamsburg (Virginia). It was designed by Robert A. M. Stern.",
+        "response": "[College of William & Mary, owner, Alan B. Miller Hall]:(University, owner, Building), [Alan B. Miller Hall, location, Williamsburg]:(Building, location, City), [Williamsburg, isPartOf, Virginia]:(City, isPartOf, State), [Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Architect)"
+    },
+    {
+        "id": "3_Building_test_5",
+        "input_text": "Mason School of Business, located in the United States, is a tenant of the Alan B. Miller Hall, that is situated in Virginia.",
+        "response": "[Mason School of Business, location, United States]:(EducationalInstitution, location, Country), [Alan B. Miller Hall, tenant, Mason School of Business]:(Building, tenant, EducationalInstitution), [Alan B. Miller Hall, location, Virginia]:(Building, location, State)"
+    },
+    {
+        "id": "3_Building_test_6",
+        "input_text": "The College of William & Mary is the owner of the Alan B. Miller Hall, located at 101 Ukrop Way in Virginia.",
+        "response": "[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, EducationalInstitution), [Alan B. Miller Hall, address, 101 Ukrop Way]:(Building, address, Place), [Alan B. Miller Hall, location, Virginia]:(Building, location, Place)"
+    },
+    {
+        "id": "3_Building_test_7",
+        "input_text": "The College of William & Mary is the owner of the Georgian styled Alan B. Miller Hall in Williamsburg (Virginia).",
+        "response": "[College of William & Mary, owner, Alan B. Miller Hall]:(Organisation, owner, Building), [Alan B. Miller Hall, architecturalStyle, Georgian]:(Building, architecturalStyle, ArchitecturalStyle), [Alan B. Miller Hall, location, Williamsburg]:(Building, location, City), [Williamsburg, isPartOf, Virginia]:(City, isPartOf, State)"
+    },
+    {
+        "id": "3_Building_test_8",
+        "input_text": "The Mason School of Business is located in Alan B. Miller Hall on the College of William & Mary's campus in Virginia.",
+        "response": "[Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, Building), [Alan B. Miller Hall, location, College of William & Mary]:(Building, location, EducationalInstitution), [College of William & Mary, location, Virginia]:(EducationalInstitution, location, Place)"
+    },
+    {
+        "id": "3_Building_test_9",
+        "input_text": "Alan B. Miller Hall built in the Georgian architecture style currently hosts the United States Mason School of Business.",
+        "response": "[Alan B. Miller Hall, architecturalStyle, Georgian architecture]:(Building, architecturalStyle, ArchitecturalStyle), [Alan B. Miller Hall, currentTenants, United States Mason School of Business]:(Building, currentTenants, EducationalInstitution)"
+    },
+    {
+        "id": "3_Building_test_10",
+        "input_text": "Amdavad ni Gufa is located in Gujarat, India and has Narendra Modi as the prime minister.",
+        "response": "[Amdavad ni Gufa, location, Gujarat]:(Museum, location, State), [Gujarat, country, India]:(State, country, Country), [India, leader, Narendra Modi]:(Country, leader, PrimeMinister)"
+    },
+    {
+        "id": "3_Building_test_11",
+        "input_text": "Owned by The College of William & Mary, Alan B. Miller Hall was completed on June 1st, 2009 and hosts tenants including the Mason School of Business.",
+        "response": "[Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, completionDate, June 1st, 2009]:(Building, completionDate, Date), [Alan B. Miller Hall, tenant, Mason School of Business]:(Building, tenant, Organisation)"
+    },
+    {
+        "id": "3_Building_test_12",
+        "input_text": "Alan B. Miller Hall is situated in Virginia, United States, and has the Mason School of Business as a tenant.",
+        "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, AdministrativeRegion), [Virginia, isPartOf, United States]:(AdministrativeRegion, isPartOf, Country), [Alan B. Miller Hall, tenant, Mason School of Business]:(Building, tenant, Organisation)"
+    },
+    {
+        "id": "3_Building_test_13",
+        "input_text": "The College of William & Mary, located in Williamsburg (Virginia) is the location of the Mason School of Business located inside Alan B. Miller Hall.",
+        "response": "[College of William & Mary, location, Williamsburg]:(University, location, City),\n[Williamsburg, isPartOf, Virginia]:(City, isPartOf, State),\n[Mason School of Business, location, College of William & Mary]:(Organisation, location, University),\n[Alan B. Miller Hall, location, College of William & Mary]:(Building, location, University),\n[Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, Building)"
+    },
+    {
+        "id": "3_Building_test_14",
+        "input_text": "The Mason School of Business currently tenant Alan B. Miller Hall which was completed on 1 June 2009 in the United States.",
+        "response": "[Alan B. Miller Hall, completionDate, 1 June 2009]:(ArchitecturalStructure, completionDate, Date), [Alan B. Miller Hall, tenant, Mason School of Business]:(ArchitecturalStructure, tenant, Organisation), [Alan B. Miller Hall, country, United States]:(ArchitecturalStructure, country, Country)"
+    },
+    {
+        "id": "3_Building_test_15",
+        "input_text": "Located in the United States, the Mason School of Business currently live in the Alan B. Miller Hall, a building which cost 75000000 dollars.",
+        "response": "[Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, Building), [Alan B. Miller Hall, location, United States]:(Building, location, Country), [Alan B. Miller Hall, cost, 75000000]:(ArchitecturalStructure, cost, number)"
+    },
+    {
+        "id": "3_Building_test_16",
+        "input_text": "The College of William & Mary own the Alan B. Miller Hall that was completed on June 1, 2009 and is located in Virginia.",
+        "response": "[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, Organisation), [Alan B. Miller Hall, completionDate, June 1, 2009]:(Building, completionDate, Date), [Alan B. Miller Hall, location, Virginia]:(Building, location, Place)"
+    },
+    {
+        "id": "3_Building_test_17",
+        "input_text": "The architect of Alan B. Miller Hall is Robert A. M. Stern. The current tenants are the Mason School of Business located in the United States.",
+        "response": "[Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Architect), [Alan B. Miller Hall, currentTenants, Mason School of Business]:(Building, currentTenants, Organisation), [Alan B. Miller Hall, country, United States]:(Building, country, Country)"
+    },
+    {
+        "id": "3_Building_test_18",
+        "input_text": "The Mason School of Business currently occupies Alan B. Miller Hall located in Virginia, the building was designed by Robert A. M. Stern.",
+        "response": "[Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, Building), [Alan B. Miller Hall, location, Virginia]:(Building, location, Place), [Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Architect)"
+    },
+    {
+        "id": "3_Building_test_19",
+        "input_text": "Located in the United States, The Mason School of Business are the current tenants of Alan B. Miller Hall, the address of which is 101 Ukrop Way.",
+        "response": "[Alan B. Miller Hall, location, United States]:(Building, location, Country), [Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, Organisation), [Alan B. Miller Hall, address, 101 Ukrop Way]:(Building, address, Place)"
+    },
+    {
+        "id": "3_Building_test_20",
+        "input_text": "Alan B. Miller Hall, located in Virginia in the United States, includes current tenant The Mason School of Business.",
+        "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, State), [Virginia, isPartOf, United States]:(State, isPartOf, Country), [Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, Organisation)"
+    },
+    {
+        "id": "3_Building_test_21",
+        "input_text": "Robert Gates is the chancellor of The College of William & Mary which is owned by Alan B. Miller Hall and is located in Virginia.",
+        "response": "[The College of William & Mary, chancellor, Robert Gates]:(University, chancellor, Person), [The College of William & Mary, owner, Alan B. Miller Hall]:(University, owner, Person), [The College of William & Mary, location, Virginia]:(University, location, State)"
+    },
+    {
+        "id": "3_Building_test_22",
+        "input_text": "The Mason School of Business in the United States are the current tenants of Alan B. Miller Hall in Virginia.",
+        "response": "[Alan B. Miller Hall, currentTenants, Mason School of Business]:(ArchitecturalStructure, currentTenants, Organisation), [Alan B. Miller Hall, location, Virginia]:(ArchitecturalStructure, location, Place), [Mason School of Business, country, United States]:(Organisation, country, Place)"
+    },
+    {
+        "id": "3_Building_test_23",
+        "input_text": "Alan B. Miller Hall, located in United States, is owned by The College of William & Mary and its current tenants are The Mason School of Business.",
+        "response": "[Alan B. Miller Hall, location, United States]:(Building, location, Country), [Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, Organisation)"
+    },
+    {
+        "id": "3_Building_test_24",
+        "input_text": "The College of William & Mary is the owner of the Alan B. Miller Hall in Virginia. The building was begun on 30 March 2007.",
+        "response": "[College of William & Mary, owner, Alan B. Miller Hall]:(Organisation, owner, Building), [Alan B. Miller Hall, location, Virginia]:(Building, location, Place), [Alan B. Miller Hall, buildingStartDate, 30 March 2007]:(Building, buildingStartDate, Date)"
+    },
+    {
+        "id": "3_Building_test_25",
+        "input_text": "Alan B. Miller Hall was completed on June 1st, 2009 in Williamsburg (Virginia) and is owned by the College of William & Mary.",
+        "response": "[Alan B. Miller Hall, completionDate, June 1st, 2009]:(Building, completionDate, Date), [Alan B. Miller Hall, location, Williamsburg]:(Building, location, City), [Williamsburg, isPartOf, Virginia]:(City, isPartOf, State), [Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, University)"
+    },
+    {
+        "id": "3_Building_test_26",
+        "input_text": "Alan B. Miller Hall, designed by Robert A. M. Stern, is owned by The College of William & Mary and the current tenants are the Mason School of business.",
+        "response": "[Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Architect), [Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, EducationalInstitution), [Alan B. Miller Hall, currentTenants, Mason School of business]:(ArchitecturalStructure, currentTenants, Organisation)"
+    },
+    {
+        "id": "3_Building_test_27",
+        "input_text": "Alan B. Miller Hall, the building of which began 30 March, 2007, is located in Williamsburg (Virginia) and owned by the College of William & Mary.",
+        "response": "[Alan B. Miller Hall, buildingStartDate, 30 March, 2007]:(ArchitecturalStructure, buildingStartDate, Date), [Alan B. Miller Hall, location, Williamsburg]:(ArchitecturalStructure, location, Place), [Alan B. Miller Hall, owner, College of William & Mary]:(ArchitecturalStructure, owner, Organisation), [Williamsburg, isPartOf, Virginia]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "3_Building_test_28",
+        "input_text": "Alan B. Miller Hall which has a Georgian style of architecture is owned by the College of William & Mary and is located in Virginia.",
+        "response": "[Alan B. Miller Hall, architecturalStyle, Georgian]:(Building, architecturalStyle, TopicalConcept), [Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, Organisation), [Alan B. Miller Hall, location, Virginia]:(Building, location, Place)"
+    },
+    {
+        "id": "3_Building_test_29",
+        "input_text": "Austin Fernando is the leader of the Eastern Province (Sri Lanka), Sri Lanka, where Ampara Hospital is located.",
+        "response": "[Eastern Province (Sri Lanka), leader, Austin Fernando]:(AdministrativeRegion, leader, Person), [Eastern Province (Sri Lanka), isPartOf, Sri Lanka]:(AdministrativeRegion, isPartOf, Country), [Ampara Hospital, location, Eastern Province (Sri Lanka)]:(Hospital, location, AdministrativeRegion)"
+    },
+    {
+        "id": "3_Building_test_30",
+        "input_text": "Ampara Hospital is located in Ampara District, Eastern Province (Sri Lanka), Sri Lanka.",
+        "response": "[Ampara Hospital, location, Ampara District]:(Hospital, location, District), [Ampara District, isPartOf, Eastern Province (Sri Lanka)]:(District, isPartOf, Province), [Eastern Province (Sri Lanka), isPartOf, Sri Lanka]:(Province, isPartOf, Country)"
+    },
+    {
+        "id": "3_Building_test_31",
+        "input_text": "Ampara Hospital is located in Ampara District, Sri Lanka. The leader of the country is Ranil Wickremesinghe.",
+        "response": "[Ampara Hospital, location, Ampara District]:(Hospital, location, District), [Ampara District, isPartOf, Sri Lanka]:(District, isPartOf, Country), [Sri Lanka, leader, Ranil Wickremesinghe]:(Country, leader, President)"
+    },
+    {
+        "id": "3_Building_test_32",
+        "input_text": "Ampara Hospital is located in Sri Lanka, which is led by Ranil Wickremesinghe and its capital is Sri Jayawardenepura Kotte.",
+        "response": "[Ampara Hospital, country, Sri Lanka]:(Hospital, country, Country), [Sri Lanka, leader, Ranil Wickremesinghe]:(Country, leader, Politician), [Sri Lanka, capital, Sri Jayawardenepura Kotte]:(Country, capital, CapitalCity)"
+    },
+    {
+        "id": "3_Building_test_33",
+        "input_text": "Ampara Hospital is in Eastern Province (Sri Lanka), Sri Lanka. Ranil Wickremesinghe is a leader there.",
+        "response": "[Ampara Hospital, location, Eastern Province (Sri Lanka)]:(Hospital, location, Province), [Eastern Province (Sri Lanka), isPartOf, Sri Lanka]:(Province, isPartOf, Country), [Sri Lanka, leader, Ranil Wickremesinghe]:(Country, leader, President)"
+    },
+    {
+        "id": "3_Building_test_34",
+        "input_text": "Located in the Eastern Province (Sri Lanka), Sri Lanka, Ampara Hospital has 476 beds.",
+        "response": "[Ampara Hospital, location, Eastern Province (Sri Lanka)]:(Hospital, location, Province), [Eastern Province (Sri Lanka), isPartOf, Sri Lanka]:(Province, isPartOf, Country), [Ampara Hospital, bedCount, 476]:(Hospital, bedCount, number)"
+    },
+    {
+        "id": "3_Building_test_35",
+        "input_text": "The 476 bed Ampara Hospital is located in Ampara District, Sri Lanka.",
+        "response": "[Ampara Hospital, bedCount, 476]:(Hospital, bedCount, number), [Ampara Hospital, location, Ampara District]:(Hospital, location, District), [Ampara District, country, Sri Lanka]:(District, country, Country)"
+    },
+    {
+        "id": "3_Building_test_36",
+        "input_text": "John Madin was born in Birmingham, with Andrew Mitchell as a key leader, and became an architect, designing 103 Colmore Row.",
+        "response": "[John Madin, birthPlace, Birmingham]:(Person, birthPlace, City), [Birmingham, leader, Andrew Mitchell]:(City, leader, Politician), [John Madin, IsA, Architect]:(Architect, IsA, Scientist), [103 Colmore Row, architect, John Madin]:(Building, architect, Architect)"
+    },
+    {
+        "id": "3_Building_test_37",
+        "input_text": "103 Colmore Row, located in Birmingham, with 23 floors, was completed in 1976.",
+        "response": "[103 Colmore Row, location, Birmingham]:(Building, location, City), [103 Colmore Row, floorCount, 23]:(Building, floorCount, number), [103 Colmore Row, completionYear, 1976]:(Building, completionYear, Year)"
+    },
+    {
+        "id": "3_Building_test_38",
+        "input_text": "Birmingham born architect John Madin designed 103 Colmore Row. The British politician Khalid Mahmood is one of the leaders in Birmingham.",
+        "response": "[103 Colmore Row, architect, John Madin]:(Building, architect, Architect), [John Madin, birthPlace, Birmingham]:(Architect, birthPlace, City), [Birmingham, leader, Khalid Mahmood]:(City, leader, Politician)"
+    },
+    {
+        "id": "3_Building_test_39",
+        "input_text": "Birmingham, which is led by the Labour politician John Clancy, is the home town of the architect John Madin who designed 103 Colmore Row.",
+        "response": "[Birmingham, leader, John Clancy]:(City, leader, Mayor), [John Clancy, IsA, Labour politician]:(Politician, IsA, Politician), [John Madin, origin, Birmingham]:(Architect, origin, City), [John Madin, significantBuilding, 103 Colmore Row]:(Architect, significantBuilding, Building), [103 Colmore Row, architect, John Madin]:(Building, architect, Architect), [103 Colmore Row, location, Birmingham]:(Building, location, City)"
+    },
+    {
+        "id": "3_Building_test_40",
+        "input_text": "The architect John Madin was born in Birmingham, which is now led by the Labour Party, and designed 103 Colmore Row.",
+        "response": "[John Madin, birthPlace, Birmingham]:(Architect, birthPlace, City), [Birmingham, leader, Labour Party]:(City, leader, PoliticalParty), [103 Colmore Row, architect, John Madin]:(Building, architect, Architect)"
+    },
+    {
+        "id": "3_Building_test_41",
+        "input_text": "103 Colmore Row was completed in 1976, is located at Colmore Row and has 23 floors.",
+        "response": "[103 Colmore Row, completionYear, 1976]:(Building, completionYear, Year), [103 Colmore Row, address, Colmore Row]:(Building, address, Place), [103 Colmore Row, floorCount, 23]:(Building, floorCount, number)"
+    },
+    {
+        "id": "3_Building_test_42",
+        "input_text": "The Liberal Democrats lead Birmingham, home town of architect John Madin, who designed 103 Colmore Row.",
+        "response": "[Liberal Democrats, leader, Birmingham]:(PoliticalParty, leader, City), [Birmingham, isPartOf, John Madin]:(City, isPartOf, Architect), [John Madin, origin, Birmingham]:(Architect, origin, City), [John Madin, significantBuilding, 103 Colmore Row]:(Architect, significantBuilding, Building)"
+    },
+    {
+        "id": "3_Building_test_43",
+        "input_text": "John Clancy is a labor politican who leads Birmingham, where architect John Madin, who designed 103 Colmore Row, was born.",
+        "response": "[John Clancy, leader, Birmingham]:(Politician, leader, City), [John Madin, birthPlace, Birmingham]:(Architect, birthPlace, City), [John Madin, significantBuilding, 103 Colmore Row]:(Architect, significantBuilding, Building)"
+    },
+    {
+        "id": "3_Building_test_44",
+        "input_text": "103 Colmore Row is located in Colmore Row, Birmingham, England and was completed in 1976 having 23 floors.",
+        "response": "[103 Colmore Row, location, Birmingham]:(Building, location, City), [Birmingham, country, England]:(City, country, Country), [103 Colmore Row, completionYear, 1976]:(Building, completionYear, Year), [103 Colmore Row, floorCount, 23]:(Building, floorCount, number)"
+    },
+    {
+        "id": "3_Building_test_45",
+        "input_text": "103 Colmore Row was designed by the architect John Madin who was born in birmingham where the leader is the conservative party (UK).",
+        "response": "[103 Colmore Row, architect, John Madin]:(Building, architect, Architect), [John Madin, birthPlace, Birmingham]:(Person, birthPlace, Place), [Birmingham, leader, Conservative Party (UK)]:(Place, leader, PoliticalParty)"
+    }
+]

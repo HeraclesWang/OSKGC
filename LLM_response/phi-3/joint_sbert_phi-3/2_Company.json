@@ -1,0 +1,107 @@
+[
+    {
+        "id": "2_Company_test_1",
+        "input_text": "Located in the Philippines, Chinabank has 295 locations.",
+        "response": "[Chinabank, country, Philippines]:(Company, country, Country), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)"
+    },
+    {
+        "id": "2_Company_test_2",
+        "input_text": "Chinabank was founded on 1920-08-16 in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date), [Chinabank, foundationPlace, Insular Government of the Philippine Islands]:(Company, foundationPlace, Place)"
+    },
+    {
+        "id": "2_Company_test_3",
+        "input_text": "Founded August 16, 1920, Chinabank currently has 295 locations.",
+        "response": "[Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)"
+    },
+    {
+        "id": "2_Company_test_4",
+        "input_text": "AmeriGas works in the United States where Paul Ryan is the leader.",
+        "response": "[AmeriGas, serves, United States]:(Company, serves, Country), [United States, leader, Paul Ryan]:(Country, leader, Representative)"
+    },
+    {
+        "id": "2_Company_test_5",
+        "input_text": "Hypermarcas was founded on January 1st, 2001. The key persona in Hypermarcas is their CEO.",
+        "response": "[Hypermarcas, foundingDate, 2001-01-01]:(Company, foundingDate, Date), [Hypermarcas, keyPerson, CEO]:(Company, keyPerson, PersonFunction)"
+    },
+    {
+        "id": "2_Company_test_6",
+        "input_text": "Founded on 08-16-1920, Chinabank has 5594 employees.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number), [Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date)"
+    },
+    {
+        "id": "2_Company_test_7",
+        "input_text": "Chinabank provides banking services to customers and has 295 banking centers.",
+        "response": "[Chinabank, service, Banking services]:(Company, service, TopicalConcept), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)"
+    },
+    {
+        "id": "2_Company_test_8",
+        "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands, currently still remaining in the Philippines.",
+        "response": "[Chinabank, foundationPlace, Insular Government of the Philippine Islands]:(Company, foundationPlace, GovernmentAgency), [Chinabank, location, Philippines]:(Company, location, Country)"
+    },
+    {
+        "id": "2_Company_test_9",
+        "input_text": "The net income of Chinabank is 15100000000, and they have 5594 workers total.",
+        "response": "[Chinabank, netIncome, 15100000000]:(Company, netIncome, number), [Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number)"
+    },
+    {
+        "id": "2_Company_test_10",
+        "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands, which was founded on July 1st, 1901.",
+        "response": "[Chinabank, foundingPlace, Insular Government of the Philippine Islands]:(Company, foundingPlace, Place), [Insular Government of the Philippine Islands, foundingDate, 1901-07-01]:(Place, foundingDate, Date)"
+    },
+    {
+        "id": "2_Company_test_11",
+        "input_text": "Chinabank, which was founded on 08-16-1920, has a net income of 15100000000.",
+        "response": "[Chinabank, foundingDate, 08-16-1920]:(Company, foundingDate, Date), [Chinabank, netIncome, 15100000000]:(Company, netIncome, number)"
+    },
+    {
+        "id": "2_Company_test_12",
+        "input_text": "Chinabank is a public company that was founded in Manila.",
+        "response": "[Chinabank, location, Manila]:(Company, location, City), [Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City)"
+    },
+    {
+        "id": "2_Company_test_13",
+        "input_text": "Chinabank currently pulls in 15100000000 in net income for its banking services.",
+        "response": "[Chinabank, netIncome, 15100000000]:(Company, netIncome, number)"
+    },
+    {
+        "id": "2_Company_test_14",
+        "input_text": "Chinabank is located in the Philippines, which is led by Pantaleon Alvarez.",
+        "response": "[Chinabank, location, Philippines]:(Company, location, Country), [Philippines, leader, Pantaleon Alvarez]:(Country, leader, Politician)"
+    },
+    {
+        "id": "2_Company_test_15",
+        "input_text": "With 5594 total employees, Chinabank operates in the banking service.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number), [Chinabank, service, banking service]:(Company, service, TopicalConcept)"
+    },
+    {
+        "id": "2_Company_test_16",
+        "input_text": "Chinabank is a public company that was founded on 1920-08-16.",
+        "response": "[Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date)"
+    },
+    {
+        "id": "2_Company_test_17",
+        "input_text": "Manila, which is led by City Council, is Chinabank's founding place.",
+        "response": "[Manila, leader, City Council]:(Place, leader, Organisation), [Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City)"
+    },
+    {
+        "id": "2_Company_test_18",
+        "input_text": "Chinabank was founded in Manila in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, foundingDate, Insular Government of the Philippine Islands]:(Company, foundingDate, GovernmentAgency), [Chinabank, location, Manila]:(Company, location, City)"
+    },
+    {
+        "id": "2_Company_test_19",
+        "input_text": "Chinabank, a public company, was founded in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, foundingDate, Insular Government of the Philippine Islands]:(Company, foundingDate, GovernmentAgency), [Chinabank, country, Philippines]:(Company, country, Country)"
+    },
+    {
+        "id": "2_Company_test_20",
+        "input_text": "After being founded in Manila, Chinabank now has 295 locations.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)"
+    },
+    {
+        "id": "2_Company_test_21",
+        "input_text": "Chinabank is located in the Philippines whose leader has the title of president.",
+        "response": "[Chinabank, location, Philippines]:(Company, location, Country), [Philippines, leaderTitle, President]:(Country, leaderTitle, PoliticalFunction)"
+    }
+]

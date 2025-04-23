@@ -1,0 +1,262 @@
+[
+    {
+        "id": "1_Building_test_1",
+        "input_text": "Alan B. Miller Hall was completed on June 1st, 2009.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Alan B. Miller Hall, completionDate, 2009-06-01]\n[Alan B. Miller Hall, completionYear, 2009]\n\nNote: Since the input text only mentions the completion date and year, only those two relations are extracted."
+    },
+    {
+        "id": "1_Building_test_2",
+        "input_text": "The location of Amdavad ni Gufa is Ahmedabad.",
+        "response": "[Amdavad ni Gufa, location, Ahmedabad]\n\nNote: I've extracted the triple based on the ontology schema, where \"Amdavad ni Gufa\" is an ArchitecturalStructure, \"Ahmedabad\" is a Place, and the relation between them is \"location\"."
+    },
+    {
+        "id": "1_Building_test_3",
+        "input_text": "The leader of Japan is called Akihito.",
+        "response": "[Akihito, leaderTitle, Head of State]"
+    },
+    {
+        "id": "1_Building_test_4",
+        "input_text": "Amharic is a language found in Ethiopia.",
+        "response": "[Amharic, language, TopicalConcept]"
+    },
+    {
+        "id": "1_Building_test_5",
+        "input_text": "The leader of Birmingham is the Conservative Party (UK).",
+        "response": "[Birmingham, leader, Conservative Party (UK)]"
+    },
+    {
+        "id": "1_Building_test_6",
+        "input_text": "The floor area of Addis Ababa City Hall is 140000 (square metres).",
+        "response": "[Addis Ababa City Hall, floorArea, 140000]"
+    },
+    {
+        "id": "1_Building_test_7",
+        "input_text": "Asherton is part of the United States.",
+        "response": "[Asherton, isPartOf, United States]"
+    },
+    {
+        "id": "1_Building_test_8",
+        "input_text": "11 Diagonal Street is in Johannesburg.",
+        "response": "Here is the extracted triple based on the ontology schema:\n\n[11 Diagonal Street, location, Johannesburg]"
+    },
+    {
+        "id": "1_Building_test_9",
+        "input_text": "The Asser Levy Public Baths was built in 1904.",
+        "response": "[Asser Levy Public Baths, buildingStartYear, 1904]"
+    },
+    {
+        "id": "1_Building_test_10",
+        "input_text": "The main ethnic group in Japan is the Japanese people.",
+        "response": "[Japan, ethnicGroup, Japanese people]"
+    },
+    {
+        "id": "1_Building_test_11",
+        "input_text": "Illinois is in the United States.",
+        "response": "[United States, location, Illinois]"
+    },
+    {
+        "id": "1_Building_test_12",
+        "input_text": "The leader of Manhattan is Cyrus Vance, Jr.",
+        "response": "[Manhattan, leaderTitle, Governor]\n[Cyrus Vance, Jr., leader, Manhattan]"
+    },
+    {
+        "id": "1_Building_test_13",
+        "input_text": "English is the language of the United States.",
+        "response": "[United States, language, English]\n\nNote: The input text is a simple statement about the language spoken in the United States, which can be mapped to the ontology schema. The output triple is in the format [Subject, relation, Object], where the subject is the entity \"United States\", the relation is \"language\", and the object is the entity \"English\"."
+    },
+    {
+        "id": "1_Building_test_14",
+        "input_text": "The capital of Sri Lanka is Sri Jayawardenepura Kotte.",
+        "response": "[Sri Jayawardenepura Kotte, capital, Sri Lanka]\n\nNote: I have used the provided ontology schema and hierarchy to extract the triples from the input text. The output is in the format specified in the example, with the subject, predicate, and object separated by commas."
+    },
+    {
+        "id": "1_Building_test_15",
+        "input_text": "The 320 South Boston Building is 121.92 metres high.",
+        "response": "[The 320 South Boston Building, height, 121.92]\n[The 320 South Boston Building, height, 121.92]"
+    },
+    {
+        "id": "1_Building_test_16",
+        "input_text": "Chicago is part of DuPage County.",
+        "response": "[Chicago, isPartOf, DuPage County]"
+    },
+    {
+        "id": "1_Building_test_17",
+        "input_text": "The Faroese Language is spoken in Denmark.",
+        "response": "Here is the output:\n\n[Faroese Language, spokenIn, Denmark]"
+    },
+    {
+        "id": "1_Building_test_18",
+        "input_text": "New York city is located in the United States.",
+        "response": "[New York, location, United States]"
+    },
+    {
+        "id": "1_Building_test_19",
+        "input_text": "20 Fenchurch Street has a floor area of 62145.3 square metres.",
+        "response": "Here is the output based on the input text:\n\n[20 Fenchurch Street, floorArea, 62145.3]\n\nNote: I've assumed that the unit of the floor area is square meters, as it is a common unit for floor areas in architecture. If you'd like to include the unit in the output, please let me know!"
+    },
+    {
+        "id": "1_Building_test_20",
+        "input_text": "Asher and Mary Isabelle Richardson House was added to the National Register of Historic Places on \"1988-11-22\".",
+        "response": "[Asher and Mary Isabelle Richardson House, addedToTheNationalRegisterOfHistoricPlaces, 1988-11-22]"
+    },
+    {
+        "id": "1_Building_test_21",
+        "input_text": "Adare Manor is located in the Republic of Ireland.",
+        "response": "Here is the output:\n\n[Adare Manor, location, Republic of Ireland]"
+    },
+    {
+        "id": "1_Building_test_22",
+        "input_text": "The Alan B. Miller Hall cost 75000000 dollars.",
+        "response": "Here is the output in the required format:\n\n[Alan B. Miller Hall, cost, 75000000]"
+    },
+    {
+        "id": "1_Building_test_23",
+        "input_text": "108 St Georges Terrace has a floor area of 39500 square metres.",
+        "response": "108 St Georges Terrace, floorArea, 39500"
+    },
+    {
+        "id": "1_Building_test_24",
+        "input_text": "The Alan B. Miller Hall is in Williamsburg (Virginia).",
+        "response": "[A Alan B. Miller Hall, location, Williamsburg]\n[A Alan B. Miller Hall, location, Virginia]\n\nNote: The output format is in the format of [Entity, relation, value], where Entity is the subject, relation is the predicate, and value is the object."
+    },
+    {
+        "id": "1_Building_test_25",
+        "input_text": "Alan B. Miller Hall's building start date was in 30th March 2007.",
+        "response": "Here is the output:\n\n[Alan B. Miller Hall, buildingStartYear, 2007]"
+    },
+    {
+        "id": "1_Building_test_26",
+        "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall.",
+        "response": "[Alan B. Miller Hall, currentTenants, The Mason School of Business]"
+    },
+    {
+        "id": "1_Building_test_27",
+        "input_text": "The address of Alan B. Miller Hall is \"101 Ukrop Way\".",
+        "response": "[Alan B. Miller Hall, address, \"101 Ukrop Way\"]"
+    },
+    {
+        "id": "1_Building_test_28",
+        "input_text": "The architectural style of the Alan B. Miller Hall is Georgian.",
+        "response": "Here is the output in the required format:\n\n[Alan B. Miller Hall, architecturalStyle, Georgian]"
+    },
+    {
+        "id": "1_Building_test_29",
+        "input_text": "Robert A. M. Stern is the architect for Alan B. Miller Hall.",
+        "response": "[Robert A. M. Stern, architect, Alan B. Miller Hall]"
+    },
+    {
+        "id": "1_Building_test_30",
+        "input_text": "Alan B. Miller Hall is located in Virginia.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Alan B. Miller Hall, location, Virginia]\n\nNote: The output is in the format of [Entity, relation, value], where Entity is the subject, relation is the predicate, and value is the object."
+    },
+    {
+        "id": "1_Building_test_31",
+        "input_text": "Mason School of Business is a tenant of the Alan B. Miller Hall.",
+        "response": "[Mason School of Business, tenant, Alan B. Miller Hall]"
+    },
+    {
+        "id": "1_Building_test_32",
+        "input_text": "Alan B. Miller Hall was inaugurated on 2009-10-02.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Alan B. Miller Hall, completionDate, 2009-10-02]\n[Alan B. Miller Hall, buildingStartDate, 2009-10-02]"
+    },
+    {
+        "id": "1_Building_test_33",
+        "input_text": "Ampara Hospital is in Eastern Province (Sri Lanka).",
+        "response": "[Ampara Hospital, location, Eastern Province]\n[Ampara Hospital, country, Sri Lanka]\n[Ampara Hospital, isPartOf, Sri Lanka]\n[Ampara Hospital, place, Place]\n\nNote: Since the input text does not provide information about the architectural style, building year, completion date, or other specific attributes, the output only includes the extracted triples related to the location and country of Ampara Hospital."
+    },
+    {
+        "id": "1_Building_test_34",
+        "input_text": "Ampara Hospital is located in the region of Ampara District.",
+        "response": "[Ampara Hospital, location, Ampara District]"
+    },
+    {
+        "id": "1_Building_test_35",
+        "input_text": "The Ampara Hospital is in Ampara.",
+        "response": "[Ampara Hospital, location, Ampara]\n\nNote: The ontology schema is used to extract triples from the input text. The entity types, relations, and hierarchy are taken into account to construct the knowledge graph. In this case, the input text mentions the hospital \"Ampara Hospital\" and its location \"Ampara\", which corresponds to the relation \"location\" in the ontology schema."
+    },
+    {
+        "id": "1_Building_test_36",
+        "input_text": "Ampara Hospital is located in Sri Lanka.",
+        "response": "[Ampara Hospital, location, Sri Lanka]\n\nNote: I extracted the relation \"location\" from the ontology schema, which maps to the entity types \"ArchitecturalStructure\" and \"Place\". In this case, \"Ampara Hospital\" is an \"ArchitecturalStructure\" and \"Sri Lanka\" is a \"Place\", so the extracted triple is [Ampara Hospital, location, Sri Lanka]."
+    },
+    {
+        "id": "1_Building_test_37",
+        "input_text": "The bed count of Ampara Hospital is 476.",
+        "response": "[Ampara Hospital, bedCount, 476]"
+    },
+    {
+        "id": "1_Building_test_38",
+        "input_text": "103 Colmore Row is located in Birmingham.",
+        "response": "[103 Colmore Row, location, Birmingham]"
+    },
+    {
+        "id": "1_Building_test_39",
+        "input_text": "103 Colmore Row is located at Colmore Row.",
+        "response": "Here is the extracted triple based on the given ontology schema:\n\n[103 Colmore Row, location, Colmore Row]"
+    },
+    {
+        "id": "1_Building_test_40",
+        "input_text": "103 Colmore Row was completed in 1976.",
+        "response": "[103 Colmore Row, completionYear, 1976]"
+    },
+    {
+        "id": "1_Building_test_41",
+        "input_text": "1973 was the start date for the building at 103 Colmore Row.",
+        "response": "[103 Colmore Row, buildingStartYear, 1973]"
+    },
+    {
+        "id": "1_Building_test_42",
+        "input_text": "The architecture style of 103 Colmore Row falls under Brutalist architecture.",
+        "response": "103 Colmore Row, architecturalStyle, Brutalist architecture"
+    },
+    {
+        "id": "1_Building_test_43",
+        "input_text": "103 Colmore Row is located on Colmore Row, Birmingham, England.",
+        "response": "[103 Colmore Row, location, Colmore Row]\n[103 Colmore Row, location, Birmingham]\n[103 Colmore Row, location, England]"
+    },
+    {
+        "id": "1_Building_test_44",
+        "input_text": "103 Colmore Row was designed by the architect, John Madin.",
+        "response": "[103 Colmore Row, architect, John Madin]"
+    },
+    {
+        "id": "1_Building_test_45",
+        "input_text": "There are 23 floors at 103 Colmore Row.",
+        "response": "Here is the extracted triple based on the ontology schema:\n\n[103 Colmore Row, floorCount, 23]"
+    },
+    {
+        "id": "1_Building_test_46",
+        "input_text": "The AC Hotel Bella Sky Copenhagen was developed by the Bella Center.",
+        "response": "[AC Hotel Bella Sky Copenhagen, developer, Bella Center]"
+    },
+    {
+        "id": "1_Building_test_47",
+        "input_text": "3XN was the architect of the AC Hotel Bella Sky Copenhagen.",
+        "response": "Here is the output:\n\n[3XN, architect, 3XN]\n[3XN, significantBuilding, AC Hotel Bella Sky Copenhagen]\n[AC Hotel Bella Sky Copenhagen, location, Place]\n[AC Hotel Bella Sky Copenhagen, architect, 3XN]\n[AC Hotel Bella Sky Copenhagen, architecturalStyle, ArchitecturalStyle]"
+    },
+    {
+        "id": "1_Building_test_48",
+        "input_text": "Marriott International is the tenant of AC Hotel Bella Sky Copenhagen.",
+        "response": "Here is the output:\n\n[AC Hotel Bella Sky Copenhagen, tenant, Marriott International]"
+    },
+    {
+        "id": "1_Building_test_49",
+        "input_text": "The AC Hotel Bella Sky Copenhagen has 23 floors.",
+        "response": "[AC Hotel Bella Sky Copenhagen, floorCount, 23]"
+    },
+    {
+        "id": "1_Building_test_50",
+        "input_text": "AC Hotel Bella Sky Copenhagen is in Denmark.",
+        "response": "AC Hotel Bella Sky Copenhagen, location, Denmark"
+    },
+    {
+        "id": "1_Building_test_51",
+        "input_text": "The AC Hotel Bella Sky Copenhagen is in Copenhagen.",
+        "response": "[AC Hotel Bella Sky Copenhagen, location, Copenhagen]"
+    },
+    {
+        "id": "1_Building_test_52",
+        "input_text": "AC Hotel Bella Sky Copenhagen is owned by Bella Center.",
+        "response": "AC Hotel Bella Sky Copenhagen, owner, Bella Center"
+    }
+]

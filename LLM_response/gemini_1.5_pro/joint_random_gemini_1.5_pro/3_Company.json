@@ -1,0 +1,107 @@
+[
+    {
+        "id": "3_Company_test_1",
+        "input_text": "Chinabank is a public company that was founded at the Insular Government of the Philippine Islands in Manila.",
+        "response": "[Chinabank, type, Public Company]:(Company, type, CompanyType), [Chinabank, foundationPlace, Insular Government of the Philippine Islands]:(Company, foundationPlace, Organisation), [Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City)\n"
+    },
+    {
+        "id": "3_Company_test_2",
+        "input_text": "Chinabank is a public company that was founded in Manila with 295 branches.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n"
+    },
+    {
+        "id": "3_Company_test_3",
+        "input_text": "Chinabank, founded in the insular Government of the Philippine islands at Manila has 295 locations.",
+        "response": "[Chinabank, foundingDate, insular Government of the Philippine islands]:(Company, foundingDate, Date), [Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n"
+    },
+    {
+        "id": "3_Company_test_4",
+        "input_text": "Chinabank, a banking service with 295 branches, was founded 1920-08-16.",
+        "response": "[Chinabank, type, Banking]:(Company, type, Service), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number), [Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date)\n"
+    },
+    {
+        "id": "3_Company_test_5",
+        "input_text": "Chinabank, founded on 08-16-1920, offers banking services as well as having a net income of 15100000000.",
+        "response": "[Chinabank, foundingDate, 08-16-1920]:(Company, foundingDate, Date), [Chinabank, service, Banking]:(Company, service, Service), [Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_6",
+        "input_text": "AmeriGas serves the population of the United States, which is 324720797.",
+        "response": "[AmeriGas, serves, United States]:(Company, serves, Country), [United States, populationTotal, 324720797]:(Country, populationTotal, number)\n"
+    },
+    {
+        "id": "3_Company_test_7",
+        "input_text": "Chinabank is a public company which has 295 branches, and whose current net income is 15100000000.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number), [Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_8",
+        "input_text": "Chinabank is a public company located in the Philippines with 295 locations.",
+        "response": "[Chinabank, country, Philippines]:(Company, country, Country), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n"
+    },
+    {
+        "id": "3_Company_test_9",
+        "input_text": "Chinabank, a company that was founded on the August 16th, 1920, has 5594 workers and a net income of 15100000000.",
+        "response": "[Chinabank, foundingDate, August 16th, 1920]:(Company, foundingDate, Date), [Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number), [Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_10",
+        "input_text": "Chinabank was founded in Manila at the Insular Government of the Philippine Islands which was established on July 1 1901.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, foundingDate, July 1 1901]:(Company, foundingDate, Date), [Insular Government of the Philippine Islands, foundingDate, July 1 1901]:(Organisation, foundingDate, Date), [Manila, isPartOf, Philippine Islands]:(City, isPartOf, AdministrativeRegion)\n"
+    },
+    {
+        "id": "3_Company_test_11",
+        "input_text": "Chinabank was founded in Manila in the insular government of the Philippine islands and remains located there.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, location, Manila]:(Company, location, City), [Manila, location, Philippine islands]:(City, location, Country)\n"
+    },
+    {
+        "id": "3_Company_test_12",
+        "input_text": "Chinabank is a bank with 5594 employees that was founded on Aug. 16, 1920.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number), [Chinabank, foundingDate, Aug. 16, 1920]:(Company, foundingDate, Date)\n"
+    },
+    {
+        "id": "3_Company_test_13",
+        "input_text": "Chinabank, whose place of foundation was Manila, has 295 locations and a net income of 15100000000.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number), [Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_14",
+        "input_text": "Chinabank was founded in Manila which is the insular government of the Philippine Islands located in Metro Manila.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, City), [Manila, location, Metro Manila]:(City, location, City), [Philippine Islands, capital, Manila]:(Country, capital, City)\n"
+    },
+    {
+        "id": "3_Company_test_15",
+        "input_text": "Trane, founded in La Crosse, Wisconsin, is located in Swords (Dublin).",
+        "response": "[Trane, foundingDate, La Crosse]:(Company, foundingDate, City), [Trane, location, Swords]:(Company, location, Town), [Swords, location, Dublin]:(Town, location, City), [La Crosse, location, Wisconsin]:(City, location, State)\n"
+    },
+    {
+        "id": "3_Company_test_16",
+        "input_text": "Trane located in Swords (Dublin) produces building management systems also located in Ireland.",
+        "response": "[Trane, location, Swords]:(Company, location, Town), [Trane, location, Dublin]:(Company, location, City), [Trane, location, Ireland]:(Company, location, Country), [Trane, product, building management systems]:(Company, product, Product)\n"
+    },
+    {
+        "id": "3_Company_test_17",
+        "input_text": "Trane, which manufactures building management systems, is located in Swords (Dublin), and has a net income of $ 556300000.",
+        "response": "[Trane, location, Swords]:(Company, location, Town), [Trane, location, Dublin]:(Company, location, City), [Trane, netIncome, 556300000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_18",
+        "input_text": "Trane, a company located in Swords (Dublin) has a revenue of $ 10264000000, with a net income of $ 556300000.",
+        "response": "[Trane, location, Swords]:(Company, location, Town), [Trane, location, Dublin]:(Company, location, City), [Trane, revenue, 10264000000]:(Company, revenue, number), [Trane, netIncome, 556300000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_19",
+        "input_text": "Trane, a subsidiary company located in Swords (Dublin), has a net income of $ 556300000.",
+        "response": "[Trane, location, Swords]:(Company, location, Town), [Trane, location, Dublin]:(Company, location, City), [Trane, netIncome, 556300000]:(Company, netIncome, number)\n"
+    },
+    {
+        "id": "3_Company_test_20",
+        "input_text": "Trane, a company in the building materials industry, is located in Swords (Dublin), Ireland.",
+        "response": "[Trane, industry, Building Materials]:(Company, industry, Industry), [Trane, location, Swords]:(Company, location, Town), [Swords, location, Dublin]:(Town, location, City), [Dublin, location, Ireland]:(City, location, Country)\n"
+    },
+    {
+        "id": "3_Company_test_21",
+        "input_text": "With a revenue of 10264000000 and operating out of Swords (Dublin), Trane specializes in building management systems.",
+        "response": "[Trane, revenue, 10264000000]:(Company, revenue, number), [Trane, location, Swords]:(Company, location, Settlement), [Swords, location, Dublin]:(Settlement, location, City), [Trane, product, building management systems]:(Company, product, Product)\n"
+    }
+]

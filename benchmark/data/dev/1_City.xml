@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_City" id="1_City_dev_1">
+      <text>Ciudad Ayala is a city.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>IsA</rel>
+          <obj>City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>IsA</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_2">
+      <text>The population density of Angola (Indiana), is 524.5 (inhabitants per square kilometre).</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>populationDensity</rel>
+          <obj>524.5</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_3">
+      <text>Albuquerque is in New Mexico.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>isPartOf</rel>
+          <obj>New_Mexico</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_4">
+      <text>Ann Arbor is the largest city in Washtenaw County.</text>
+      <triples>
+        <triple>
+          <sub>Washtenaw_County</sub>
+          <rel>largestCity</rel>
+          <obj>Ann_Arbor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_5">
+      <text>The California State Senate is part of the California State Legislature.</text>
+      <triples>
+        <triple>
+          <sub>California_State_Senate</sub>
+          <rel>isPartOf</rel>
+          <obj>California_State_Legislature</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>isPartOf</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_6">
+      <text>Angola (Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Angola</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_7">
+      <text>There are 14.2 square kilometers of water in Abilene (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>areaOfWater</rel>
+          <obj>14.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_8">
+      <text>Auburn (Washington) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_9">
+      <text>Abilene (Texas) is part of Taylor County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Abilene</sub>
+          <rel>isPartOf</rel>
+          <obj>Taylor_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_10">
+      <text>Arlington (Texas) is has an elevation of 184 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Arlington</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>184</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_11">
+      <text>Vietnamese is a language spoken in California.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>language</rel>
+          <obj>Vietnamese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_12">
+      <text>The area of water, in Anaheim (California), is 25.2 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>areaOfWater</rel>
+          <obj>25.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_13">
+      <text>Auburn (Alabama) is part of Alabama.</text>
+      <triples>
+        <triple>
+          <sub>Auburn</sub>
+          <rel>isPartOf</rel>
+          <obj>Alabama</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_14">
+      <text>Akron has a total area of 161.54 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>areaTotal</rel>
+          <obj>161.54</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_15">
+      <text>The Albuquerque City Council has a leadership role in Albuquerque.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>leaderTitle</rel>
+          <obj>Albuquerque_City_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_16">
+      <text>Anderson (Indiana) is part of the Union Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Union_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_17">
+      <text>The leader title in Mexico is the President of the Senate.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_Senate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_18">
+      <text>Ciudad Ayala has a leader called the Governator.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>leaderTitle</rel>
+          <obj>Governator</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_19">
+      <text>Texas is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Texas</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_20">
+      <text>Anaheim has the area code 657.</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>areaCode</rel>
+          <obj>657</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_21">
+      <text>Alpharetta is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_22">
+      <text>The president is the leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_23">
+      <text>In Albuquerque (New Mexico), the leader is called, the United States House of Representatives.</text>
+      <triples>
+        <triple>
+          <sub>Albuquerque</sub>
+          <rel>leaderTitle</rel>
+          <obj>United_States_House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_24">
+      <text>Ciudad Ayala is in the Pacific Standard Time Zone.</text>
+      <triples>
+        <triple>
+          <sub>Ciudad_Ayala</sub>
+          <rel>timeZone</rel>
+          <obj>Pacific_Standard_Time_Zone</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_25">
+      <text>Madison County (Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Madison_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_26">
+      <text>Mayor is the title of the leader of Akron.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_dev_27">
+      <text>Richland Township is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Richland_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

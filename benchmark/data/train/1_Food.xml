@@ -1,0 +1,3218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Food" id="1_Food_train_1">
+      <text>Pork is an ingredient of Batchoy.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>ingredient</rel>
+          <obj>Pork</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_2">
+      <text>The leader of the United States is called the President.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_3">
+      <text>The leader of the Valencian community is Ximo Puig.</text>
+      <triples>
+        <triple>
+          <sub>Valencian_Community</sub>
+          <rel>leader</rel>
+          <obj>Ximo_Puig</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Settlement</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_4">
+      <text>Tomato belongs to the family of solanaceae.</text>
+      <triples>
+        <triple>
+          <sub>Tomato</sub>
+          <rel>family</rel>
+          <obj>Solanaceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>family</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_5">
+      <text>Sweet potato belongs to flowering plants.</text>
+      <triples>
+        <triple>
+          <sub>Sweet_potato</sub>
+          <rel>division</rel>
+          <obj>Flowering_plant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>division</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_6">
+      <text>Siomay is a variation on shumai.</text>
+      <triples>
+        <triple>
+          <sub>Shumai</sub>
+          <rel>dishVariation</rel>
+          <obj>Siomay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_7">
+      <text>Oregano is one of the ingredients that can be used in a variation of Arrabbiata sauce.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Oregano</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_8">
+      <text>Almond is one of the members of the Rosales order.</text>
+      <triples>
+        <triple>
+          <sub>Almond</sub>
+          <rel>order</rel>
+          <obj>Rosales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_9">
+      <text>Ajoblanco is a food found in Andalusia.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>region</rel>
+          <obj>Andalusia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>region</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_10">
+      <text>The leader of France is Manuel Valls.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>leader</rel>
+          <obj>Manuel_Valls</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_11">
+      <text>Malaysian Indian is one of the ethnic groups on Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Malaysian_Indian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_12">
+      <text>Bacon Explosion is a main course.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>course</rel>
+          <obj>Main_course</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_13">
+      <text>Peanut sauce is an ingredient of batagor.</text>
+      <triples>
+        <triple>
+          <sub>Batagor</sub>
+          <rel>ingredient</rel>
+          <obj>Peanut_sauce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>ingredient</rel>
+          <obj>Condiment</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_14">
+      <text>Almond is classed as a flowering plant.</text>
+      <triples>
+        <triple>
+          <sub>Almond</sub>
+          <rel>division</rel>
+          <obj>Flowering_plant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>division</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_15">
+      <text>Beef is an ingredient of Bakso.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Beef</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_16">
+      <text>The country Bacon Explosion comes from is the United States.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_17">
+      <text>Tapioca is an ingredient in bakso.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Tapioca</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_18">
+      <text>Celery is an ingredient of Bakso.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Celery</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_19">
+      <text>The leader of Singapore is Tony Tan.</text>
+      <triples>
+        <triple>
+          <sub>Singapore</sub>
+          <rel>leader</rel>
+          <obj>Tony_Tan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_20">
+      <text>Arepa is an ingredient of Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Arepa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>MainCourse</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_21">
+      <text>Halimah Yacob is a leader of Singapore.</text>
+      <triples>
+        <triple>
+          <sub>Singapore</sub>
+          <rel>leader</rel>
+          <obj>Halimah_Yacob</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_22">
+      <text>Celery is a member of the genus Apium.</text>
+      <triples>
+        <triple>
+          <sub>Celery</sub>
+          <rel>genus</rel>
+          <obj>Apium</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>genus</rel>
+          <obj>Genus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_23">
+      <text>The spoken language in Italy is Italian.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>language</rel>
+          <obj>Italian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_24">
+      <text>Native Americans in the United States are one of the ethnic groups of the country.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_25">
+      <text>Zamboangans are a group in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Zamboangans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_26">
+      <text>A variant of bakewell pudding is bakewell tart.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_pudding</sub>
+          <rel>dishVariation</rel>
+          <obj>Bakewell_tart</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_27">
+      <text>Bionico is a food found in Mexico.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>country</rel>
+          <obj>Mexico</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_28">
+      <text>As a dish variation on a pakora, cauliflower can be used.</text>
+      <triples>
+        <triple>
+          <sub>Pakora</sub>
+          <rel>dishVariation</rel>
+          <obj>Cauliflower</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_29">
+      <text>Amatriciana sauce comes from the region of Lazio.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>region</rel>
+          <obj>Lazio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>region</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_30">
+      <text>In Mexico one of the languages spoken is Mexican Spanish.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>language</rel>
+          <obj>Mexican_Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_31">
+      <text>Lemon is under the order of Rosids.</text>
+      <triples>
+        <triple>
+          <sub>Lemon</sub>
+          <rel>order</rel>
+          <obj>Rosids</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_32">
+      <text>Batchoy is a dish served as a soup course.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>course</rel>
+          <obj>Soup</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_33">
+      <text>Avocado is one of the ingredients in the dish Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Avocado</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_34">
+      <text>Beef is an ingredient of Batchoy.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>ingredient</rel>
+          <obj>Beef</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_35">
+      <text>Sweet potato belongs to the Solanales order of plants.</text>
+      <triples>
+        <triple>
+          <sub>Sweet_potato</sub>
+          <rel>order</rel>
+          <obj>Solanales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_36">
+      <text>The official language in the Philippines is Philippine English.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>officialLanguage</rel>
+          <obj>Philippine_English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_37">
+      <text>In France the currency is the Euro.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_38">
+      <text>Rome is the capital of Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>capital</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_39">
+      <text>Barny cakes contain 1.8 g of protein.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>protein</rel>
+          <obj>1.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>protein</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_40">
+      <text>Barny cakes contain 4.8 g of fat.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>fat</rel>
+          <obj>4.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>fat</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_41">
+      <text>Ajoblanco originates from the country of Spain.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>country</rel>
+          <obj>Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_42">
+      <text>Meringue is an ingredient of a Baked Alaska.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>ingredient</rel>
+          <obj>Meringue</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_43">
+      <text>Barny cakes have 18 grams of carbs.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>carbohydrate</rel>
+          <obj>18</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>carbohydrate</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_44">
+      <text>Indian people are from India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>demonym</rel>
+          <obj>Indian_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_45">
+      <text>Batak is the ethnic group in Sumatra.</text>
+      <triples>
+        <triple>
+          <sub>Sumatra</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Batak</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Island</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_46">
+      <text>The leader of France is François Hollande.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>leader</rel>
+          <obj>François_Hollande</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_47">
+      <text>Olive oil is one ingredient in Amatriciana sauce.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Olive_oil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_48">
+      <text>Bionico is served at the dessert course.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>course</rel>
+          <obj>Dessert</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_49">
+      <text>The lemon belongs to the rutaceae family.</text>
+      <triples>
+        <triple>
+          <sub>Lemon</sub>
+          <rel>family</rel>
+          <obj>Rutaceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>family</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_50">
+      <text>Bakso is from the Chinese cuisine.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>cuisine</rel>
+          <obj>Chinese_cuisine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>cuisine</rel>
+          <obj>Cuisine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_51">
+      <text>An ingredient in a bacon sandwich is bread.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Bread</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_52">
+      <text>Amatriciana sauce can be varied by adding garlic.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Garlic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_53">
+      <text>Bakewell tart comes from the Derbyshire Dales region.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_tart</sub>
+          <rel>region</rel>
+          <obj>Derbyshire_Dales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_54">
+      <text>The dish Bakso contains noodles.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Noodle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_55">
+      <text>Vermicelli is an ingredient in Bakso.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Vermicelli</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_56">
+      <text>The leader of Mexico is Enrique Peña Nieto.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>leader</rel>
+          <obj>Enrique_Peña_Nieto</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_57">
+      <text>Bionico contains raisins.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>ingredient</rel>
+          <obj>Raisin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_58">
+      <text>Arrabbiata sauce can be found in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>country</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_59">
+      <text>Bread is an ingredient of Ajoblanco.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>ingredient</rel>
+          <obj>Bread</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_60">
+      <text>Onion is one variation of ingredients in Amatriciana sauce.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Onion</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_61">
+      <text>London is the Capital of the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>capital</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_62">
+      <text>One of the ingredients of the BLT sandwich is Lettuce.</text>
+      <triples>
+        <triple>
+          <sub>BLT</sub>
+          <rel>ingredient</rel>
+          <obj>Lettuce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_63">
+      <text>The BLT is a variation on the club sandwich.</text>
+      <triples>
+        <triple>
+          <sub>BLT</sub>
+          <rel>dishVariation</rel>
+          <obj>Club_sandwich</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>dishVariation</rel>
+          <obj>Sandwich</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_64">
+      <text>In Hong Kong, the spoken language is Chinese.</text>
+      <triples>
+        <triple>
+          <sub>Hong_Kong</sub>
+          <rel>language</rel>
+          <obj>Chinese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AdministrativeRegion</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_65">
+      <text>Almond is part of the Rosaceae family.</text>
+      <triples>
+        <triple>
+          <sub>Almond</sub>
+          <rel>family</rel>
+          <obj>Rosaceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>family</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_66">
+      <text>Fruit preserves are an ingredient in the bakewell tart.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_tart</sub>
+          <rel>ingredient</rel>
+          <obj>Fruit_preserves</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_67">
+      <text>In Mexico, the spoken language is Spanish.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_68">
+      <text>Pietro Grasso is the leader of Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>leader</rel>
+          <obj>Pietro_Grasso</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_69">
+      <text>Black pudding is an ingredient in Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Black_pudding</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_70">
+      <text>The capital of the United States is Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>capital</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_71">
+      <text>Cephalopod ink is an ingredient of Arròs negre.</text>
+      <triples>
+        <triple>
+          <sub>Arròs_negre</sub>
+          <rel>ingredient</rel>
+          <obj>Cephalopod_ink</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>ChemicalCompound</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_72">
+      <text>Baked Alaska is from the country of France.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>country</rel>
+          <obj>France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_73">
+      <text>The currency of Singapore is the Singapore dollar.</text>
+      <triples>
+        <triple>
+          <sub>Singapore</sub>
+          <rel>currency</rel>
+          <obj>Singapore_dollar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_74">
+      <text>The country Barny Cakes come from is France.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>country</rel>
+          <obj>France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_75">
+      <text>Standard Chinese is a language spoken in Singapore.</text>
+      <triples>
+        <triple>
+          <sub>Singapore</sub>
+          <rel>language</rel>
+          <obj>Standard_Chinese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_76">
+      <text>Bakewell pudding is from the Derbyshire Dales region.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_pudding</sub>
+          <rel>region</rel>
+          <obj>Derbyshire_Dales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_77">
+      <text>Strawberries can be added to barny cakes.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>dishVariation</rel>
+          <obj>Strawberry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_78">
+      <text>Batagor and Siomay are variation of the same dish.</text>
+      <triples>
+        <triple>
+          <sub>Siomay</sub>
+          <rel>dishVariation</rel>
+          <obj>Batagor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_79">
+      <text>African Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_80">
+      <text>Avocado is under the order of laurales.</text>
+      <triples>
+        <triple>
+          <sub>Avocado</sub>
+          <rel>order</rel>
+          <obj>Laurales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_81">
+      <text>Guadalajara is in the country of Mexico.</text>
+      <triples>
+        <triple>
+          <sub>Guadalajara</sub>
+          <rel>country</rel>
+          <obj>Mexico</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_82">
+      <text>In Spain the language spoken is the Spanish language.</text>
+      <triples>
+        <triple>
+          <sub>Spain</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_83">
+      <text>Squid is an ingredient of Arròs negre.</text>
+      <triples>
+        <triple>
+          <sub>Arròs_negre</sub>
+          <rel>ingredient</rel>
+          <obj>Squid</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Mollusca</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_84">
+      <text>Bakewell pudding is a dessert.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_pudding</sub>
+          <rel>course</rel>
+          <obj>Dessert</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_85">
+      <text>Olive oil is an ingredient in Ajoblanco.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>ingredient</rel>
+          <obj>Olive_oil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_86">
+      <text>Barack Obama is a leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Barack_Obama</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_87">
+      <text>Joe Biden is a leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Joe_Biden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_88">
+      <text>Patrick McLoughlin is a leader in the Derbyshire Dales.</text>
+      <triples>
+        <triple>
+          <sub>Derbyshire_Dales</sub>
+          <rel>leader</rel>
+          <obj>Patrick_McLoughlin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Settlement</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_89">
+      <text>Baked Alaska is a dish from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_90">
+      <text>The leader of Karnataka is Vajubhai Vala.</text>
+      <triples>
+        <triple>
+          <sub>Karnataka</sub>
+          <rel>leader</rel>
+          <obj>Vajubhai_Vala</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leader</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_91">
+      <text>Guanciale is an ingredient of Amatriciana sauce.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Guanciale</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_92">
+      <text>Ice cream is a type of dessert.</text>
+      <triples>
+        <triple>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Ice_cream</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Course</sub>
+          <rel>dishVariation</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_93">
+      <text>Spain uses the euro for its currency.</text>
+      <triples>
+        <triple>
+          <sub>Spain</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_94">
+      <text>Sergio Mattarella is a leader in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>leader</rel>
+          <obj>Sergio_Mattarella</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_95">
+      <text>Cubanelle is an ingredient in Arròs negre.</text>
+      <triples>
+        <triple>
+          <sub>Arròs_negre</sub>
+          <rel>ingredient</rel>
+          <obj>Cubanelle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_96">
+      <text>Claude Bartolone is a leader of France.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>leader</rel>
+          <obj>Claude_Bartolone</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_97">
+      <text>Celery is in the family of Apiaceae.</text>
+      <triples>
+        <triple>
+          <sub>Celery</sub>
+          <rel>family</rel>
+          <obj>Apiaceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>family</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_98">
+      <text>Arròs negre is a traditional dish from Spain.</text>
+      <triples>
+        <triple>
+          <sub>Arròs_negre</sub>
+          <rel>country</rel>
+          <obj>Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_99">
+      <text>Spaniards are from Spain.</text>
+      <triples>
+        <triple>
+          <sub>Spain</sub>
+          <rel>demonym</rel>
+          <obj>Spaniards</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_100">
+      <text>Condiments are an ingredient in a bacon sandwich.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Condiment</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_101">
+      <text>A variation on dessert is cake.</text>
+      <triples>
+        <triple>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Cake</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Course</sub>
+          <rel>dishVariation</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_102">
+      <text>Asam pedas is a dish from Sumatra.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>region</rel>
+          <obj>Sumatra</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Island</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_103">
+      <text>Cookie is a type of dessert.</text>
+      <triples>
+        <triple>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Cookie</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Course</sub>
+          <rel>dishVariation</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_104">
+      <text>A main ingredient of fried chicken is chicken.</text>
+      <triples>
+        <triple>
+          <sub>Fried_chicken</sub>
+          <rel>mainIngredient</rel>
+          <obj>Chicken</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>mainIngredient</rel>
+          <obj>Bird</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_105">
+      <text>Batchoy is eaten in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>country</rel>
+          <obj>Philippines</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_106">
+      <text>The Malaysian chinese are an ethnic group from Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Malaysian_Chinese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_107">
+      <text>Olive oil is an ingredient in Arrabbiata sauce.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Olive_oil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_108">
+      <text>Batagor is a variation of the Siomay dish.</text>
+      <triples>
+        <triple>
+          <sub>Batagor</sub>
+          <rel>dishVariation</rel>
+          <obj>Siomay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_109">
+      <text>The Javanese people are an ethnic group of Java.</text>
+      <triples>
+        <triple>
+          <sub>Java</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Javanese_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Island</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_110">
+      <text>Tomato is an ingredient in Arrabbiata sauce.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Tomato</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_111">
+      <text>The capital of Malaysia is Putrajaya.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>capital</rel>
+          <obj>Putrajaya</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_112">
+      <text>One the ethnic groups on Sumatra is the Acehnese people.</text>
+      <triples>
+        <triple>
+          <sub>Sumatra</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Acehnese_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Island</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_113">
+      <text>Cuttlefish is an ingredient in Arròs negre.</text>
+      <triples>
+        <triple>
+          <sub>Arròs_negre</sub>
+          <rel>ingredient</rel>
+          <obj>Cuttlefish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Animal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_114">
+      <text>Ayam penyet comes from the region of Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Ayam_penyet</sub>
+          <rel>region</rel>
+          <obj>Malaysia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_115">
+      <text>Padang cuisine has resulted in the creation of the dish Asam pedas.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>creatorOfDish</rel>
+          <obj>Padang_cuisine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>creatorOfDish</rel>
+          <obj>Cuisine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_116">
+      <text>The main ingredient in a Bacon Explosion is bacon.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>mainIngredient</rel>
+          <obj>Bacon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>mainIngredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_117">
+      <text>Baked Alaska comes from the region of New York.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>region</rel>
+          <obj>New_York</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_118">
+      <text>Narendra Modi is a leader in India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>Narendra_Modi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_119">
+      <text>Barny Cakes can be chocolate flavoured.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>dishVariation</rel>
+          <obj>Chocolate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_120">
+      <text>Baked Alaska is a dessert.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>course</rel>
+          <obj>Dessert</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_121">
+      <text>A variation of a bacon sandwich is the BLT.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>dishVariation</rel>
+          <obj>BLT</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>dishVariation</rel>
+          <obj>Sandwich</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_122">
+      <text>An ingredient of bakewell tart is frangipane.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_tart</sub>
+          <rel>ingredient</rel>
+          <obj>Frangipane</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_123">
+      <text>Batchoy is a food found in La Paz (Iloilo City).</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>region</rel>
+          <obj>La_Paz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>region</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_124">
+      <text>Asam pedas is a food found in Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>country</rel>
+          <obj>Malaysia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_125">
+      <text>Ajoblanco has almond as one of its ingredients.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>ingredient</rel>
+          <obj>Almond</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_126">
+      <text>The French language is spoken in France.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>language</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_127">
+      <text>The English language is used in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_128">
+      <text>Elizabeth II is the leader of the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_129">
+      <text>Cooking Plantain is one of the ingredients in the dish Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Cooking_plantain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_130">
+      <text>Ground meat is an ingredient in bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Ground_meat</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_131">
+      <text>Barny cakes are made with sponge cake.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>ingredient</rel>
+          <obj>Sponge_cake</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>ingredient</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_132">
+      <text>Mondelez International was founded in Chicago.</text>
+      <triples>
+        <triple>
+          <sub>Mondelez_International</sub>
+          <rel>foundationPlace</rel>
+          <obj>Chicago</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_133">
+      <text>Gram flour is an ingredient in Bhaji.</text>
+      <triples>
+        <triple>
+          <sub>Bhaji</sub>
+          <rel>ingredient</rel>
+          <obj>Gram_flour</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_134">
+      <text>The French Language can be heard in New York.</text>
+      <triples>
+        <triple>
+          <sub>New_York</sub>
+          <rel>language</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_135">
+      <text>Bacon Explosion is from the Kansas City metropolitan area.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>region</rel>
+          <obj>Kansas_City_metropolitan_area</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_136">
+      <text>The dish Bhaji is related to pakora.</text>
+      <triples>
+        <triple>
+          <sub>Bhaji</sub>
+          <rel>related</rel>
+          <obj>Pakora</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>related</rel>
+          <obj>Fritter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_137">
+      <text>The leader of Catalonia is Carles Puigdemont.</text>
+      <triples>
+        <triple>
+          <sub>Catalonia</sub>
+          <rel>leader</rel>
+          <obj>Carles_Puigdemont</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AdministrativeRegion</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_138">
+      <text>Asam pedas is a food found in the Malay Peninsula.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>region</rel>
+          <obj>Malay_Peninsula</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_139">
+      <text>The alternative name for asam pedas is asam padeh.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>alternativeName</rel>
+          <obj>Asam_padeh</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>alternativeName</rel>
+          <obj>MainCourse</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_140">
+      <text>Arabic is one of the languages that is spoken in New York.</text>
+      <triples>
+        <triple>
+          <sub>New_York</sub>
+          <rel>language</rel>
+          <obj>Arabic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_141">
+      <text>The leader of Jalisco is Jesús Casillas Romero.</text>
+      <triples>
+        <triple>
+          <sub>Jalisco</sub>
+          <rel>leader</rel>
+          <obj>Jesús_Casillas_Romero</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_142">
+      <text>Shiitake is an ingredient of Shumai.</text>
+      <triples>
+        <triple>
+          <sub>Shumai</sub>
+          <rel>ingredient</rel>
+          <obj>Shiitake</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>ingredient</rel>
+          <obj>Fungus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_143">
+      <text>Bhaji are found in the region of Karnataka.</text>
+      <triples>
+        <triple>
+          <sub>Bhaji</sub>
+          <rel>region</rel>
+          <obj>Karnataka</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>region</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_144">
+      <text>Ajoblanco contains water.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>ingredient</rel>
+          <obj>Water</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>ingredient</rel>
+          <obj>ChemicalCompound</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_145">
+      <text>Abu Zahar Ujang is a leader in Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>leader</rel>
+          <obj>Abu_Zahar_Ujang</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_146">
+      <text>Chicken is an ingredient in Batchoy.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>ingredient</rel>
+          <obj>Chicken</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>ingredient</rel>
+          <obj>Bird</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_147">
+      <text>The alternative name for Ajoblanco is "Ajo blanco".</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>alternativeName</rel>
+          <obj>Ajo_blanco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>alternativeName</rel>
+          <obj>Appetiser</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_148">
+      <text>John Roberts is a leader in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>John_Roberts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_149">
+      <text>Arifin Zakaria is the name of the leader of Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>leader</rel>
+          <obj>Arifin_Zakaria</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_150">
+      <text>Barny cakes were invented in 1999.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>year</rel>
+          <obj>1999</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>year</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_151">
+      <text>Mondelez International is the creator of Barny cakes.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>creator</rel>
+          <obj>Mondelez_International</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>creator</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_152">
+      <text>Pakora can be varied by using paneer.</text>
+      <triples>
+        <triple>
+          <sub>Pakora</sub>
+          <rel>dishVariation</rel>
+          <obj>Paneer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>dishVariation</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_153">
+      <text>Fried egg is an ingredient of Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Fried_egg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_154">
+      <text>T. S. Thakur is India's leader.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>T._S._Thakur</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_155">
+      <text>Bhaji comes from the country India.</text>
+      <triples>
+        <triple>
+          <sub>Bhaji</sub>
+          <rel>country</rel>
+          <obj>India</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_156">
+      <text>Bhaji includes the ingredient vegetables.</text>
+      <triples>
+        <triple>
+          <sub>Bhaji</sub>
+          <rel>ingredient</rel>
+          <obj>Vegetable</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Fritter</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_157">
+      <text>Honey can be used as a variation in the dish Bionico.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>dishVariation</rel>
+          <obj>Honey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_158">
+      <text>Arrabbiata sauce originates from the region of Rome.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>region</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>region</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_159">
+      <text>The main ingredients of Asam pedas are fish cooked in sour and hot sauce.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>mainIngredient</rel>
+          <obj>Fish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>mainIngredient</rel>
+          <obj>Animal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_160">
+      <text>Vegetable are used in the preparation of Batchoy.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>ingredient</rel>
+          <obj>Vegetable</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_161">
+      <text>Barny cakes can be made with apple.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>dishVariation</rel>
+          <obj>Apple</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_162">
+      <text>The kidney bean is an ingredient in Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Kidney_bean</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_163">
+      <text>Philippine English is the language spoken in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>language</rel>
+          <obj>Philippine_English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_164">
+      <text>Bacon is an ingredient in a Bacon Explosion.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>ingredient</rel>
+          <obj>Bacon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_165">
+      <text>The leader of Italy is Laura Boldrini.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>leader</rel>
+          <obj>Laura_Boldrini</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_166">
+      <text>Asian Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Asian_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_167">
+      <text>The language of the United Kingdom is the English language.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_168">
+      <text>Pork belly is an ingredient in the dish Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Pork_belly</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_169">
+      <text>Christmas pudding is an ingredient in Baked Alaska.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>ingredient</rel>
+          <obj>Christmas_pudding</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_170">
+      <text>Amatriciana sauce has tomato as one of its ingredients.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Tomato</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_171">
+      <text>A bacon sandwich includes the ingredient bacon.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Bacon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_172">
+      <text>Almond is part of the order of Rosids.</text>
+      <triples>
+        <triple>
+          <sub>Almond</sub>
+          <rel>order</rel>
+          <obj>Rosids</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_173">
+      <text>Hogao is an ingredient of Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Hogao</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_174">
+      <text>Mexico is inhabited by Mexicans.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>demonym</rel>
+          <obj>Mexicans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_175">
+      <text>Najib Razak is the leader of Malaysia.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>leader</rel>
+          <obj>Najib_Razak</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_176">
+      <text>Asam pedas is a dish that was created within Malay cuisine.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>creatorOfDish</rel>
+          <obj>Malay_cuisine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>creatorOfDish</rel>
+          <obj>Cuisine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_177">
+      <text>Tomato is part of the flowering plant division.</text>
+      <triples>
+        <triple>
+          <sub>Tomato</sub>
+          <rel>division</rel>
+          <obj>Flowering_plant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>division</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_178">
+      <text>One of the languages used in the Philippines is Arabic.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>language</rel>
+          <obj>Arabic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_179">
+      <text>Ayam penyet is a food found in Java.</text>
+      <triples>
+        <triple>
+          <sub>Ayam_penyet</sub>
+          <rel>region</rel>
+          <obj>Java</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Island</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_180">
+      <text>Baduy is the ethnic group of Java.</text>
+      <triples>
+        <triple>
+          <sub>Java</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Baduy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Island</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_181">
+      <text>The avocado is a member of the Lauraceae family.</text>
+      <triples>
+        <triple>
+          <sub>Avocado</sub>
+          <rel>family</rel>
+          <obj>Lauraceae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>family</rel>
+          <obj>Family</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_182">
+      <text>Chorizo is an ingredient in the dish Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Chorizo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_183">
+      <text>The genus of the avocado is persea.</text>
+      <triples>
+        <triple>
+          <sub>Avocado</sub>
+          <rel>genus</rel>
+          <obj>Persea</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>genus</rel>
+          <obj>Genus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_184">
+      <text>The leader of Spain is Felipe VI of Spain.</text>
+      <triples>
+        <triple>
+          <sub>Spain</sub>
+          <rel>leader</rel>
+          <obj>Felipe_VI_of_Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_185">
+      <text>In the Philippines, the spoken language is Philippine Spanish.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>language</rel>
+          <obj>Philippine_Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_186">
+      <text>Fried chicken is an ingredient in Ayam penyet.</text>
+      <triples>
+        <triple>
+          <sub>Ayam_penyet</sub>
+          <rel>ingredient</rel>
+          <obj>Fried_chicken</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>MainCourse</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_187">
+      <text>Ice cream is an ingredient of Baked Alaska.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>ingredient</rel>
+          <obj>Ice_cream</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_188">
+      <text>Chicharrón is a dish traditional in Spain.</text>
+      <triples>
+        <triple>
+          <sub>Chicharrón</sub>
+          <rel>country</rel>
+          <obj>Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_train_189">
+      <text>The Moro people are an ethnic group in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Moro_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Monument" id="1_Monument_dev_1">
+      <text>In England the main religion is the Church of England.</text>
+      <triples>
+        <triple>
+          <sub>England</sub>
+          <rel>religion</rel>
+          <obj>Church_of_England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>religion</rel>
+          <obj>ReligiousOrganisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_dev_2">
+      <text>Ahmet Davutoğlu is a leader of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>leader</rel>
+          <obj>Ahmet_Davutoğlu</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_dev_3">
+      <text>Azerbaijan leader's name is Artur Rasizade.</text>
+      <triples>
+        <triple>
+          <sub>Azerbaijan</sub>
+          <rel>leader</rel>
+          <obj>Artur_Rasizade</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

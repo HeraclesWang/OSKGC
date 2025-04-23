@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Food" id="1_Food_dev_1">
+      <text>Bacon sandwich is a dish from the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>country</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_2">
+      <text>The Chinese Filipino is an ethnic group in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Chinese_Filipino</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_3">
+      <text>Baked Alaska is a dish in China.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>country</rel>
+          <obj>China</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_4">
+      <text>The Minangkabau people are an ethnic group of Sumatra.</text>
+      <triples>
+        <triple>
+          <sub>Sumatra</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Minangkabau_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Island</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_5">
+      <text>The Antioquia Department is found in Colombia.</text>
+      <triples>
+        <triple>
+          <sub>Antioquia_Department</sub>
+          <rel>country</rel>
+          <obj>Colombia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Settlement</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_6">
+      <text>The Igorot people are an ethnic group in the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Igorot_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_7">
+      <text>Standard Chinese is the language of China.</text>
+      <triples>
+        <triple>
+          <sub>China</sub>
+          <rel>language</rel>
+          <obj>Standard_Chinese</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_8">
+      <text>Lemon is an ingredient of Bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Lemon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_9">
+      <text>Ilocano people are an ethnic group from the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Ilocano_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_10">
+      <text>Bandeja paisa is found in the Antioquia Department.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>region</rel>
+          <obj>Antioquia_Department</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_11">
+      <text>Catalonia is led by the Parliament of Catalonia.</text>
+      <triples>
+        <triple>
+          <sub>Catalonia</sub>
+          <rel>leader</rel>
+          <obj>Parliament_of_Catalonia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AdministrativeRegion</sub>
+          <rel>leader</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_12">
+      <text>Condensed milk is an ingredient of Bionico.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>ingredient</rel>
+          <obj>Condensed_milk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_13">
+      <text>Italians are from Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>demonym</rel>
+          <obj>Italians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_14">
+      <text>The tomato is of the order Solanales.</text>
+      <triples>
+        <triple>
+          <sub>Tomato</sub>
+          <rel>order</rel>
+          <obj>Solanales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_15">
+      <text>The currency in Mexico is the peso.</text>
+      <triples>
+        <triple>
+          <sub>Mexico</sub>
+          <rel>currency</rel>
+          <obj>Mexican_peso</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_16">
+      <text>Sponge cake is an ingredient of Baked Alaska.</text>
+      <triples>
+        <triple>
+          <sub>Baked_Alaska</sub>
+          <rel>ingredient</rel>
+          <obj>Sponge_cake</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_17">
+      <text>Carrie Lam is a political leader in Hong Kong.</text>
+      <triples>
+        <triple>
+          <sub>Hong_Kong</sub>
+          <rel>leader</rel>
+          <obj>Carrie_Lam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AdministrativeRegion</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_18">
+      <text>Shumai is a variation of the dish Siomay.</text>
+      <triples>
+        <triple>
+          <sub>Siomay</sub>
+          <rel>dishVariation</rel>
+          <obj>Shumai</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_19">
+      <text>A lemon is included in the order of Sapindales.</text>
+      <triples>
+        <triple>
+          <sub>Lemon</sub>
+          <rel>order</rel>
+          <obj>Sapindales</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>order</rel>
+          <obj>Order</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_20">
+      <text>Arrabbiata sauce has basil as a variation.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Basil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>dishVariation</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_21">
+      <text>Ground beef is an ingredient in Bakso.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>ingredient</rel>
+          <obj>Ground_beef</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_22">
+      <text>Paul Ryan is a leader in United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Paul_Ryan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_23">
+      <text>Italy is the country Amatriciana sauce comes from.</text>
+      <triples>
+        <triple>
+          <sub>Amatriciana_sauce</sub>
+          <rel>country</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_24">
+      <text>The leader of France is Gérard Larcher.</text>
+      <triples>
+        <triple>
+          <sub>France</sub>
+          <rel>leader</rel>
+          <obj>Gérard_Larcher</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_25">
+      <text>An ingredient of bakewell tart is shortcrust pastry.</text>
+      <triples>
+        <triple>
+          <sub>Bakewell_tart</sub>
+          <rel>ingredient</rel>
+          <obj>Shortcrust_pastry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_26">
+      <text>Susana Díaz is a leader of Andalusia.</text>
+      <triples>
+        <triple>
+          <sub>Andalusia</sub>
+          <rel>leader</rel>
+          <obj>Susana_Díaz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Settlement</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_dev_27">
+      <text>Ketchup can be an ingredient in a bacon sandwich.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Ketchup</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Condiment</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

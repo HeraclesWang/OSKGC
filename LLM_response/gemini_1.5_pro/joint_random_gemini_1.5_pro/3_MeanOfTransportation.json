@@ -1,0 +1,257 @@
+[
+    {
+        "id": "3_MeanOfTransportation_test_1",
+        "input_text": "AIDAluna is powered by United States based Caterpillar Inc. Douglas R. Oberhelman is a key person at Caterpillar Inc.",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [Caterpillar Inc., location, United States]:(Company, location, Country), [Caterpillar Inc., keyPerson, Douglas R. Oberhelman]:(Company, keyPerson, BusinessPerson)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_2",
+        "input_text": "Made by Dodge, the 1955 Dodge has a V8 engine and a 120 inch wheelbase.",
+        "response": "[1955 Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Manufacturer), [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, wheelbase, 120]:(Automobile, wheelbase, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_3",
+        "input_text": "The 1955 Dodge, also called the Dodge Suburban, has a V8 engine and a 3-speed automatic transmission.",
+        "response": "[1955 Dodge, alternativeName, Dodge Suburban]:(Automobile, alternativeName, Automobile), [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_4",
+        "input_text": "The Acura TLX is related to the Honda Accord which is made by Honda. Acura is a division of the Honda.",
+        "response": "[Acura TLX, relatedMeanOfTransportation, Honda Accord]:(Automobile, relatedMeanOfTransportation, Automobile), [Honda Accord, manufacturer, Honda]:(Automobile, manufacturer, Company), [Acura, division, Honda]:(Company, division, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_5",
+        "input_text": "The 1955 Dodge has a V8 engine, a hardtop and is also called the Dodge Custom Royal.",
+        "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle), [1955 Dodge, alternativeName, Dodge Custom Royal]:(Automobile, alternativeName, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_6",
+        "input_text": "Finland is the builder if the icebreaker called the Aleksey Chirikov. Both Sauli Niinistö and Juha Sipilä are leaders in Finland.",
+        "response": "[Finland, builder, Aleksey Chirikov]:(Country, builder, Ship), [Aleksey Chirikov, class, icebreaker]:(Ship, class, Type), [Sauli Niinistö, leader, Finland]:(President, leader, Country), [Juha Sipilä, leader, Finland]:(PrimeMinister, leader, Country)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_7",
+        "input_text": "The AIDAstella is 253260 mm long with a 32.2 length ship beam. Its maiden voyage was 3/17/2013.",
+        "response": "[AIDAstella, length, 253260]:(Ship, length, number), [AIDAstella, shipBeam, 32.2]:(Ship, shipBeam, number), [AIDAstella, maidenVoyage, 3/17/2013]:(Ship, maidenVoyage, Date)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_8",
+        "input_text": "Delta II, which is comparable with the rocket Antares, originates from the United States and took off from Cape Canaveral Air Force Station Space Launch Complex 17.",
+        "response": "[Delta II, comparable, Antares]:(Rocket, comparable, Rocket), [Delta II, countryOrigin, United States]:(Rocket, countryOrigin, Country), [Delta II, launchSite, Cape Canaveral Air Force Station Space Launch Complex 17]:(Rocket, launchSite, LaunchPad)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_9",
+        "input_text": "The icebreaker, Aleksey Chirikov, built by Finland, has a ship beam of 21.2 m, and the builder is in Helsinki.",
+        "response": "[Aleksey Chirikov, builder, Finland]:(Ship, builder, Country), [Aleksey Chirikov, shipBeam, 21.2]:(Ship, shipBeam, number), [Finland, city, Helsinki]:(Country, city, City)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_10",
+        "input_text": "Acura is a division of the Honda who manufactured the Acura TLX which has a V6 engine.",
+        "response": "[Acura, division, Honda]:(Company, division, Company), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company), [Acura TLX, engine, V6 engine]:(Automobile, engine, AutomobileEngine)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_11",
+        "input_text": "Honda is the manufacturer of the Acura TLX which has a Honda K engine. Acura is a division of the Honda.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Manufacturer), [Acura TLX, engine, Honda K engine]:(Automobile, engine, AutomobileEngine), [Acura, parentCompany, Honda]:(Company, parentCompany, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_12",
+        "input_text": "The Honda Accord is related to the Acura TLX which is made by Honda which has an Acura division.",
+        "response": "[Honda Accord, relatedMeanOfTransportation, Acura TLX]:(Automobile, relatedMeanOfTransportation, Automobile), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company), [Honda, division, Acura]:(Company, division, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_13",
+        "input_text": "Acura is a division of the Honda. which manufactures the Honda K engine used in the Acura TLX.",
+        "response": "[Acura, division, Honda]:(Company, division, Company), [Honda K engine, manufacturer, Honda]:(AutomobileEngine, manufacturer, Company), [Acura TLX, engine, Honda K engine]:(Automobile, engine, AutomobileEngine)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_14",
+        "input_text": "Acura is a division of Honda which makes the Acura TLX. The engine size of the Acura TLX is 3.5 litres.",
+        "response": "[Acura, division, Honda]:(Company, division, Company), [Acura TLX, manufacturer, Acura]:(Automobile, manufacturer, Company), [Acura TLX, engineSize, 3.5]:(Automobile, engineSize, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_15",
+        "input_text": "The Acura TLX has a Honda J engine which is manufactured by Honda, a division of which, is Acura.",
+        "response": "[Acura TLX, engine, Honda J engine]:(Automobile, engine, AutomobileEngine), [Honda J engine, manufacturer, Honda]:(AutomobileEngine, manufacturer, Company), [Honda, division, Acura]:(Company, division, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_16",
+        "input_text": "Acura is a division of the Honda. Honda is the manufacturer of the Acura TLX which has a 2.4 litre engine.",
+        "response": "[Acura, division, Honda]:(Company, division, Company), [Honda, manufacturer, Acura TLX]:(Company, manufacturer, Automobile), [Acura TLX, engine, 2.4 litre engine]:(Automobile, engine, AutomobileEngine)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_17",
+        "input_text": "Acura is a division of the manufacturer, Honda, who produced the Acura TLX with an Inline-four engine.",
+        "response": "[Acura, division, Honda]:(Company, division, Company), [Honda, manufacturer, Acura TLX]:(Company, manufacturer, Automobile), [Acura TLX, engine, Inline-four engine]:(Automobile, engine, AutomobileEngine)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_18",
+        "input_text": "Honda makes the Acura TLX which holds a Honda J engine. A division of Honda is Acura.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Manufacturer), [Acura TLX, engine, Honda J engine]:(Automobile, engine, AutomobileEngine), [Acura, parentCompany, Honda]:(Company, parentCompany, Company), [Honda, division, Acura]:(Company, division, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_19",
+        "input_text": "Honda makes the Acura TLX which has a Honda K engine and is related to the Honda Accord.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Manufacturer), [Acura TLX, engine, Honda K engine]:(Automobile, engine, AutomobileEngine), [Acura TLX, relatedMeanOfTransportation, Honda Accord]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_20",
+        "input_text": "The DeSoto Custom is related to the Dodge Coronet and 1955 Dodge, and is made by the DeSoto co.",
+        "response": "[DeSoto Custom, relatedMeanOfTransportation, Dodge Coronet]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, manufacturer, DeSoto co]:(Automobile, manufacturer, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_21",
+        "input_text": "The 1955 Dodge, also called the Dodge Coronet, has a hardtop and a V8 engine.",
+        "response": "[1955 Dodge, alternativeName, Dodge Coronet]:(Automobile, alternativeName, Automobile), [1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle), [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_22",
+        "input_text": "The 1955 Dodge is manufactured by Dodge and related to the Plymouth Plaza and the DeSoto Custom.",
+        "response": "[1955 Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Manufacturer), [1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_23",
+        "input_text": "The 1955 Dodge and the Plymouth Plaza and the DeSoto Custom are related means of transport in that they are all cars. Plymouth are the manufacturers of the Plymouth Plaza.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [Plymouth Plaza, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [Plymouth Plaza, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile), [Plymouth, manufacturer, Plymouth Plaza]:(Company, manufacturer, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_24",
+        "input_text": "The 1955 Dodge was manufactured by Dodge and the DeSoto Custom which was related to the Dodge Coronet, was a related means of transportation.",
+        "response": "[1955 Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Manufacturer), [DeSoto Custom, relatedMeanOfTransportation, Dodge Coronet]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_25",
+        "input_text": "The 1955 Dodge, with an alternative name of Dodge coronet, has a V8 engine and 3-speed automatic transmission.",
+        "response": "[1955 Dodge, alternativeName, Dodge coronet]:(Automobile, alternativeName, Automobile), [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_26",
+        "input_text": "The 1955 Dodge also known as the Dodge Custom Royal has a 3-speed automatic transmission and a V8 engine.",
+        "response": "[Dodge Custom Royal, alternativeName, 1955 Dodge]:(Automobile, alternativeName, Automobile), [Dodge Custom Royal, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [Dodge Custom Royal, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_27",
+        "input_text": "The 1955 Dodge is related to the DeSoto Custom which is made by the DeSoto Co. Two related vehicles are the 1955 Dodge and the Plymouth Plaza.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, manufacturer, DeSoto Co.]:(Automobile, manufacturer, Company), [1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_28",
+        "input_text": "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a hardtop.",
+        "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission), [1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_29",
+        "input_text": "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a station wagon style body.",
+        "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission), [1955 Dodge, bodyStyle, station wagon]:(Automobile, bodyStyle, CarBodyStyle)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_30",
+        "input_text": "The 1955 Dodge is manufactured by Dodge and is a related means of transport to the DeSoto Custom and the Chrysler Newport.",
+        "response": "[1955 Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Manufacturer), [1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, relatedMeanOfTransportation, Chrysler Newport]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_31",
+        "input_text": "The DeSoto Custom was manufactured at DeSoto and is a related means of transport to the 1955 Dodge and the Chrysler Newport.",
+        "response": "[DeSoto Custom, manufacturer, DeSoto]:(Automobile, manufacturer, Organisation), [DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, relatedMeanOfTransportation, Chrysler Newport]:(Automobile, relatedMeanOfTransportation, Automobile)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_32",
+        "input_text": "Caterpillar Inc. was founded in the United States and is located in Peoria (Illinois) and their engine powers the AIDAluna.",
+        "response": "[Caterpillar Inc., foundedBy, United States]:(Company, foundedBy, Country), [Caterpillar Inc., location, Peoria]:(Company, location, City), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_33",
+        "input_text": "Rostock based AIDA Cruises owns the AIDAluna which has a Caterpillar Inc. engine.",
+        "response": "[AIDA Cruises, location, Rostock]:(Company, city, City), [AIDA Cruises, owner, AIDAluna]:(Company, owner, Ship), [AIDAluna, engine, Caterpillar Inc. engine]:(Ship, engine, Engine), [Caterpillar Inc., engine, Caterpillar Inc. engine]:(Company, division, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_34",
+        "input_text": "Caterpillar Inc. of Peoria (Illinois) includes key figure Douglas R. Oberhelman and powers AIDAluna.",
+        "response": "[Caterpillar Inc., location, Peoria]:(Company, city, City), [Caterpillar Inc., location, Illinois]:(Company, country, State), [Caterpillar Inc., keyPerson, Douglas R. Oberhelman]:(Company, keyPerson, Person), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_35",
+        "input_text": "Located in Illinois with a key person called Douglas R. Oberhelman is the Caterpillar Co. AIDAluna is powered by Caterpillar Inc.",
+        "response": "[Caterpillar Co., location, Illinois]:(Company, location, State), [Caterpillar Co., keyPerson, Douglas R. Oberhelman]:(Company, keyPerson, Person), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_36",
+        "input_text": "AIDAluna is powered by Caterpillar Inc., who are from Peoria (Illinois). AIDA Cruises is the owner of the AIDAluna.",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [Caterpillar Inc., location, Peoria (Illinois)]:(Company, location, City), [AIDAluna, owner, AIDA Cruises]:(Ship, owner, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_37",
+        "input_text": "The AIDAluna had its maiden voyage on the 22nd of March 2009. It is powered by a Caterpillar Inc. engine and is 252000 mm in length.",
+        "response": "[AIDAluna, maidenVoyage, 22nd of March 2009]:(Ship, maidenVoyage, Date), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [AIDAluna, length, 252000]:(Ship, length, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_38",
+        "input_text": "AIDAluna is powered by Caterpillar Inc. which was founded in California and is located in Peoria (Illinois).",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [Caterpillar Inc., foundedBy, California]:(Company, foundedBy, State), [Caterpillar Inc., location, Peoria]:(Company, location, City)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_39",
+        "input_text": "Caterpillar Inc. was founded in California, United States That company's engine powered the AIDAluna.",
+        "response": "[Caterpillar Inc., foundationPlace, California]:(Company, foundationPlace, State), [Caterpillar Inc., country, United States]:(Company, country, Country), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_40",
+        "input_text": "AIDA Cruises, located in Germany, is the owner of the AIDAluna which is powered by Caterpillar Inc.",
+        "response": "[AIDA Cruises, location, Germany]:(Company, country, Country), [AIDA Cruises, owner, AIDAluna]:(Company, owner, Ship), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_41",
+        "input_text": "The AIDAluna, christened on April 4, 2009, is 252000 millimetres long and powered by the Caterpillar Inc. engine.",
+        "response": "[AIDAluna, christeningDate, April 4, 2009]:(Ship, christeningDate, Date), [AIDAluna, length, 252000]:(Ship, length, number), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_42",
+        "input_text": "AIDA Cruises is the owner of the AIDAluna which is powered by Caterpillar Inc. found in the United States.",
+        "response": "[AIDA Cruises, owner, AIDAluna]:(Company, owner, Ship), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [Caterpillar Inc., location, United States]:(Company, location, Country)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_43",
+        "input_text": "The AIDAluna service began March 22, 2009. The AIDAluna is powered by Caterpillar Inc. and has a length of 252000 millimetres.",
+        "response": "[AIDAluna, maidenVoyage, 22 March 2009]:(Ship, maidenVoyage, Date), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [AIDAluna, length, 252000]:(Ship, length, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_44",
+        "input_text": "The Alvis Speed 25, with a straight-six engine, was made by the Alvis Car and Engineering Company founded in Coventry.",
+        "response": "[Alvis Speed 25, engine, straight-six engine]:(Automobile, engine, AutomobileEngine), [Alvis Speed 25, manufacturer, Alvis Car and Engineering Company]:(Automobile, manufacturer, Manufacturer), [Alvis Car and Engineering Company, foundationPlace, Coventry]:(Company, foundationPlace, City)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_45",
+        "input_text": "Pontiac makes the Pontiac Rageous coupé at its plant in Detroit.",
+        "response": "[Pontiac Rageous, manufacturer, Pontiac]:(Automobile, manufacturer, Company), [Pontiac Rageous, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle), [Pontiac, location, Detroit]:(Company, location, City)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_46",
+        "input_text": "The wheelbase of the Abarth 1000 GT Coupé is 2160 millimetres. Its production started in the Year 1958.",
+        "response": "[Abarth 1000 GT Coupé, wheelbase, 2160]:(Automobile, wheelbase, number), [Abarth 1000 GT Coupé, productionStartYear, 1958]:(Automobile, productionStartYear, Year)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_47",
+        "input_text": "The Abarth 1000 GT Coupé has a Coupé body style with a straight-four engine and a wheelbase of 2160 millimetres.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, engine, straight-four engine]:(Automobile, engine, AutomobileEngine), [Abarth 1000 GT Coupé, wheelbase, 2160]:(Automobile, wheelbase, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_48",
+        "input_text": "The Pontiac Rageous coupé was last assembled in Michigan in 1997.",
+        "response": "[Pontiac Rageous coupé, assembly, Michigan]:(Automobile, assembly, State), [Pontiac Rageous coupé, productionEndYear, 1997]:(Automobile, productionEndYear, Year), [Pontiac Rageous coupé, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_49",
+        "input_text": "The Abarth 1000 GT, which ended production in 1958, has a Coupé body style and a wheelbase of 2160 mms.",
+        "response": "[Abarth 1000 GT, productionEndYear, 1958]:(Automobile, productionEndYear, Year), [Abarth 1000 GT, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT, wheelbase, 2160]:(Automobile, wheelbase, number)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_50",
+        "input_text": "The A-Rosa Luna is powered by an MTU Friedrichshafen engine. Rolls-Royce Power Systems is the parent company of MTU Friedrichshafen, and Rolls-Royce Holdings is its owner.",
+        "response": "[A-Rosa Luna, poweredBy, MTU Friedrichshafen]:(Ship, poweredBy, Company), [MTU Friedrichshafen, parentCompany, Rolls-Royce Power Systems]:(Company, parentCompany, Company), [MTU Friedrichshafen, owner, Rolls-Royce Holdings]:(Company, owner, Company)\n"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_51",
+        "input_text": "MTU Friedrichshafen of Friedrichshafen, owned by Rolls-Royce Holdings, manufactures the A-Rosa Luna engine.",
+        "response": "[MTU Friedrichshafen, location, Friedrichshafen]:(Company, city, City), [MTU Friedrichshafen, owner, Rolls-Royce Holdings]:(Company, owner, Company), [A-Rosa Luna engine, manufacturer, MTU Friedrichshafen]:(Engine, manufacturer, Company)\n"
+    }
+]

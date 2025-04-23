@@ -1,0 +1,67 @@
+[
+  {
+    "id": "2_University_test_1",
+    "input_text": "There are 16800 undergraduate with 1299 doctoral students at the University of Burgundy.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[University of Burgundy, numberOfUndergraduateStudents, 16800]\n[University of Burgundy, numberOfDoctoralStudents, 1299]\n\nNote that the output follows the format of the example, with no additional text or explanations. The triples are extracted based on the given ontology schema, specifically the relations \"numberOfUndergraduateStudents\" and \"numberOfDoctoralStudents\" for the entity type \"University\"."
+  },
+  {
+    "id": "2_University_test_2",
+    "input_text": "There are 16800 undergraduate with 9400 post-graduate students at the University of Burgundy.",
+    "response": "[University of Burgundy, numberOfUndergraduateStudents, 16800], (University of Burgundy, numberOfPostgraduateStudents, 9400)"
+  },
+  {
+    "id": "2_University_test_3",
+    "input_text": "The University of Burgundy is located in the city of Dijon and has 9400 postgraduate students.",
+    "response": "[University of Burgundy, numberOfPostgraduateStudents, 9400]:(University of Burgundy, numberOfPostgraduateStudents, number) [University of Burgundy, location, Dijon]:(University, location, City)"
+  },
+  {
+    "id": "2_University_test_4",
+    "input_text": "The leader of Denmark is Lars Løkke Rasmussen. Denmark is the home of the Aarhus University.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Aarhus University, leader, Lars Løkke Rasmussen]:(University, leader, Person)\n[Denmark, leader, Lars Løkke Rasmussen]:(Country, leader, Person)"
+  },
+  {
+    "id": "2_University_test_5",
+    "input_text": "The Aarhus University which was established in 1928, is affiliated with the European University Association.",
+    "response": "[Aarhus University, affiliation, European University Association]\n[Aarhus University, established, 1928]"
+  },
+  {
+    "id": "2_University_test_6",
+    "input_text": "The type of government in Aarhus is that of magistrate. The city of Aarhus is where the Aarhus University is located.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Aarhus, governmentType, magistrate]:(Place, governmentType, GovernmentType)\n[Aarhus, city, Aarhus]:(Place, city, Place)\n[Aarhus, location, Aarhus University]:(Place, location, Organisation)\n[Aarhus University, location, Aarhus]:(Organisation, location, Place)"
+  },
+  {
+    "id": "2_University_test_7",
+    "input_text": "Mols is situated to the northeast of Aarhus where the Aarhus University is located.",
+    "response": "[Mols, hasToItsNortheast, Aarhus]:(Place, hasToItsNortheast, Place), [Aarhus, location, Aarhus University]:(Place, location, Organisation), [Aarhus University, location, Aarhus]:(Organisation, location, Place)"
+  },
+  {
+    "id": "2_University_test_8",
+    "input_text": "The Aarhus University is located in Aarhus, Denmark.",
+    "response": "[Aarhus University, location, Aarhus]:(University, location, Place), [Aarhus University, country, Denmark]:(University, country, Country)"
+  },
+  {
+    "id": "2_University_test_9",
+    "input_text": "The Aarhus University is located in the country of Denmark which has the religion The Church of Denmark.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Aarhus University, location, Denmark]:(University, location, Place)\n[Denmark, country, Country]\n[Denmark, religion, The Church of Denmark]:(Place, religion, Organisation)\n[The Church of Denmark, IsA, ReligiousOrganisation]:(ReligiousOrganisation, IsA, Organisation)"
+  },
+  {
+    "id": "2_University_test_10",
+    "input_text": "Universitas Aarhusiensis is the latin name of the Aarhus University which is affiliated to the European University Association.",
+    "response": "[Universitas Aarhusiensis, latinName, Aarhus University]:(Organisation, latinName, Organisation)\n[Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)"
+  },
+  {
+    "id": "2_University_test_11",
+    "input_text": "The Aarhus University is affiliated to the European University Association which has its headquarters in Brussels.",
+    "response": "[Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)\n[European University Association, headquarter, Brussels]:(Organisation, headquarter, Place)"
+  },
+  {
+    "id": "2_University_test_12",
+    "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio in Switzerland.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]\n[Mendrisio, country, Switzerland]\n[Accademia di Architettura di Mendrisio, country, Switzerland]"
+  },
+  {
+    "id": "2_University_test_13",
+    "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio; the neighboring municipality of Mendrisio is Meride.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Accademia di Architettura di Mendrisio, location, Mendrisio]\n[Mendrisio, hasToItsNortheast, Meride]\n[Mendrisio, city, City]\n[Accademia di Architettura di Mendrisio, city, Mendrisio]\n\nNote: Since the input text does not provide any information about the country, leader, or government type, these relations are not included in the output."
+  }
+]

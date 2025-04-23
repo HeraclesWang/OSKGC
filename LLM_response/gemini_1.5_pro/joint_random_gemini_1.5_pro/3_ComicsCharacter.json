@@ -1,0 +1,87 @@
+[
+    {
+        "id": "3_ComicsCharacter_test_1",
+        "input_text": "Larry Bolatinsky is the alternative name for the comic character, Bolt who was created by Ernie Colón and Paris Cullins.",
+        "response": "[Bolt, alternativeName, Larry Bolatinsky]:(ComicsCharacter, alternativeName, ComicsCharacter), [Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Paris Cullins]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_2",
+        "input_text": "The comic character Blockbuster is also known as Roland Desmond and was created by Gardner Fox and Carmine Infantino.",
+        "response": "[Blockbuster, alternativeName, Roland Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Carmine Infantino]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_3",
+        "input_text": "The comic character Bolt was created by Gary Cohn and Ernie Colón, the latter of whom is a national of Puerto Rico.",
+        "response": "[Bolt, creator, Gary Cohn]:(ComicsCharacter, creator, Person), [Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, Person), [Ernie Colón, nationality, Puerto Rico]:(Person, nationality, Country)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_4",
+        "input_text": "Bolt is a comic character created by Paris Cullins and Ernie Colón, who is a national of Puerto Rico.",
+        "response": "[Bolt, creator, Paris Cullins]:(ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Ernie Colón, nationality, Puerto Rico]:(ComicsCreator, nationality, Country)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_5",
+        "input_text": "Marv Wolfman and Walt Simonson created the comic book character Auron, whose full name is Lambien.",
+        "response": "[Marv Wolfman, creator, Auron]:(ComicsCreator, creator, ComicsCharacter), [Walt Simonson, creator, Auron]:(ComicsCreator, creator, ComicsCharacter), [Auron, fullName, Lambien]:(ComicsCharacter, fullName, FictionalCharacter)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_6",
+        "input_text": "The comic character of Balder has the alternative name of Balder Odinson and was created by Jack Kirby and Stan Lee.",
+        "response": "[Balder, alternativeName, Balder Odinson]:(ComicsCharacter, alternativeName, ComicsCharacter), [Balder, creator, Jack Kirby]:(ComicsCharacter, creator, ComicsCreator), [Balder, creator, Stan Lee]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_7",
+        "input_text": "\"Mark Desmond\", also known as Blockbuster, is a comic character created by Roger Stern and Carmine Infantino.",
+        "response": "[Blockbuster, alternativeName, Mark Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, Writer), [Blockbuster, creator, Carmine Infantino]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_8",
+        "input_text": "The comic book character Blockbuster, aka Mark Desmond, was created by Gardner Fox and Tom Lyle.",
+        "response": "[Blockbuster, alternativeName, Mark Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_9",
+        "input_text": "\"Mark Desmond\" is also known as the comic character Blockbuster who was created by Roger Stern and Tom Lyle.",
+        "response": "[Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, Writer), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, Writer), [Mark Desmond, alternativeName, Blockbuster]:(Person, alternativeName, ComicsCharacter)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_10",
+        "input_text": "Tom Lyle and Gardner Fox created the comic book character of Blockbuster who has the alternative name of Roland Desmond.",
+        "response": "[Tom Lyle, creator, Blockbuster]:(ComicsCreator, creator, ComicsCharacter), [Gardner Fox, creator, Blockbuster]:(ComicsCreator, creator, ComicsCharacter), [Blockbuster, alternativeName, Roland Desmond]:(ComicsCharacter, alternativeName, FictionalCharacter)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_11",
+        "input_text": "The comic character Blockbuster, also known as Roland Desmond, was created by Roger Stern and Tom Lyle.",
+        "response": "[Blockbuster, alternativeName, Roland Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_12",
+        "input_text": "The comic character Blockbuster is also known as Mark Desmond and was created by Roger Stern and Gardner Fox.",
+        "response": "[Blockbuster, alternativeName, Mark Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_13",
+        "input_text": "\"Mark Desmond,\" also known as the comic character Blockbuster, was created by Carmine Infantino and Tom Lyle.",
+        "response": "[Blockbuster, alternativeName, Mark Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Carmine Infantino]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_14",
+        "input_text": "The comic character, Blockbuster's alternative name is Roland Desmond and was created by Gardner Fox and Roger Stern.",
+        "response": "[Blockbuster, alternativeName, Roland Desmond]:(ComicsCharacter, alternativeName, ComicsCharacter), [Blockbuster, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_15",
+        "input_text": "The comic character Bolt has the alternative name of Larry Bolatinsky and was created by Ernie Colón and Dan Mishkin.",
+        "response": "[Bolt, alternativeName, Larry Bolatinsky]:(ComicsCharacter, alternativeName, FictionalCharacter), [Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Dan Mishkin]:(ComicsCharacter, creator, ComicsCreator)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_16",
+        "input_text": "Ernie Colón, a national of Puerto Rico, created Bolt along with Dan Mishkin.",
+        "response": "[Ernie Colón, nationality, Puerto Rico]:(ComicsCreator, nationality, Country), [Ernie Colón, creator, Bolt]:(ComicsCreator, creator, ComicsCharacter)\n"
+    },
+    {
+        "id": "3_ComicsCharacter_test_17",
+        "input_text": "Ernie Colón and Paris Cullins created the comic character Bolt. Cullins is from the US.",
+        "response": "[Ernie Colón, creator, Bolt]:(ComicsCreator, creator, ComicsCharacter), [Paris Cullins, creator, Bolt]:(ComicsCreator, creator, ComicsCharacter), [Paris Cullins, nationality, US]:(ComicsCreator, nationality, Country)\n"
+    }
+]

@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<hierarchy>
+  <entity_type name="PersonFunction">
+    <entity_type name="Profession"/>
+    <entity_type name="PoliticalFunction"/>
+    <entity_type name="AthleticFunction"/>
+  </entity_type>
+  <entity_type name="ArchitecturalStructure">
+    <entity_type name="Runway"/>
+    <entity_type name="Monument"/>
+    <entity_type name="Airport"/>
+    <entity_type name="LaunchBase"/>
+    <entity_type name="MilitaryStructure"/>
+    <entity_type name="LaunchPad"/>
+    <entity_type name="Building">
+      <entity_type name="Factory"/>
+      <entity_type name="Venue">
+        <entity_type name="Stadium"/>
+      </entity_type>
+      <entity_type name="Hotel"/>
+      <entity_type name="Museum"/>
+    </entity_type>
+    <entity_type name="Road"/>
+  </entity_type>
+  <entity_type name="Species">
+    <entity_type name="Fungus"/>
+    <entity_type name="Virus"/>
+    <entity_type name="Animal">
+      <entity_type name="Bird"/>
+      <entity_type name="Mollusca"/>
+      <entity_type name="Crustacean"/>
+    </entity_type>
+    <entity_type name="Plant"/>
+  </entity_type>
+  <entity_type name="Organisation">
+    <entity_type name="Hospital"/>
+    <entity_type name="GovernmentAgency"/>
+    <entity_type name="Company">
+      <entity_type name="RecordLabel"/>
+      <entity_type name="Manufacturer"/>
+      <entity_type name="Airline"/>
+      <entity_type name="ProductionCompany"/>
+      <entity_type name="Publisher"/>
+    </entity_type>
+    <entity_type name="MilitaryUnit"/>
+    <entity_type name="SportsTeam">
+      <entity_type name="BasketballTeam"/>
+      <entity_type name="AmericanFootballTeam"/>
+      <entity_type name="HockeyTeam"/>
+    </entity_type>
+    <entity_type name="ReligiousOrganisation"/>
+    <entity_type name="PoliticalParty"/>
+    <entity_type name="Legislature"/>
+    <entity_type name="EducationalInstitution">
+      <entity_type name="School"/>
+      <entity_type name="University"/>
+    </entity_type>
+    <entity_type name="TelevisionStation"/>
+    <entity_type name="SportsLeague">
+      <entity_type name="IceHockeyLeague"/>
+      <entity_type name="BasketballLeague"/>
+      <entity_type name="SoccerLeague"/>
+    </entity_type>
+    <entity_type name="SportsClub">
+      <entity_type name="SoccerClub"/>
+    </entity_type>
+    <entity_type name="Group">
+      <entity_type name="Band"/>
+    </entity_type>
+  </entity_type>
+  <entity_type name="ChemicalSubstance">
+    <entity_type name="ChemicalCompound"/>
+    <entity_type name="Mineral"/>
+  </entity_type>
+  <entity_type name="Person">
+    <entity_type name="Athlete">
+      <entity_type name="SoccerPlayer"/>
+      <entity_type name="AmericanFootballPlayer"/>
+      <entity_type name="IceHockeyPlayer"/>
+      <entity_type name="BasketballPlayer"/>
+      <entity_type name="MartialArtist"/>
+    </entity_type>
+    <entity_type name="PoliticianSpouse"/>
+    <entity_type name="MovieDirector"/>
+    <entity_type name="Politician">
+      <entity_type name="SecretaryOfState"/>
+      <entity_type name="President"/>
+      <entity_type name="Senator"/>
+      <entity_type name="ChiefMinister"/>
+      <entity_type name="VicePrimeMinister"/>
+      <entity_type name="MemberOfParliament"/>
+      <entity_type name="PrimeMinister"/>
+      <entity_type name="Minister"/>
+      <entity_type name="ViceChancellor"/>
+      <entity_type name="Representative"/>
+      <entity_type name="LieutenantGovernor"/>
+      <entity_type name="Governor"/>
+      <entity_type name="DeputyMinister"/>
+      <entity_type name="ChiefJustice"/>
+      <entity_type name="Chief"/>
+      <entity_type name="Secretary"/>
+      <entity_type name="Ambassador"/>
+      <entity_type name="Chancellor"/>
+      <entity_type name="Clerk"/>
+      <entity_type name="VicePresident"/>
+      <entity_type name="Mayor"/>
+    </entity_type>
+    <entity_type name="Academic"/>
+    <entity_type name="Astronaut"/>
+    <entity_type name="BusinessPerson"/>
+    <entity_type name="Writer">
+      <entity_type name="MusicComposer"/>
+      <entity_type name="ScreenWriter"/>
+    </entity_type>
+    <entity_type name="MilitaryPerson"/>
+    <entity_type name="Coach">
+      <entity_type name="AmericanFootballCoach"/>
+    </entity_type>
+    <entity_type name="Artist">
+      <entity_type name="ComicsCreator"/>
+      <entity_type name="Cinematographer"/>
+      <entity_type name="Designer"/>
+      <entity_type name="Actor"/>
+      <entity_type name="MusicalArtist">
+        <entity_type name="Guitarist"/>
+      </entity_type>
+      <entity_type name="MovieEditor"/>
+      <entity_type name="Sculptor"/>
+      <entity_type name="Comedian"/>
+      <entity_type name="Photographer"/>
+    </entity_type>
+    <entity_type name="SportsManager">
+      <entity_type name="SoccerManager"/>
+    </entity_type>
+    <entity_type name="Engineer"/>
+    <entity_type name="Royalty"/>
+    <entity_type name="Saint"/>
+    <entity_type name="Scientist">
+      <entity_type name="Professor"/>
+      <entity_type name="Botanist"/>
+      <entity_type name="Architect"/>
+      <entity_type name="Mathematician"/>
+      <entity_type name="Astronomer"/>
+      <entity_type name="Economist"/>
+      <entity_type name="Physicist"/>
+    </entity_type>
+  </entity_type>
+  <entity_type name="Device">
+    <entity_type name="Engine">
+      <entity_type name="AutomobileEngine"/>
+    </entity_type>
+    <entity_type name="Instrument"/>
+    <entity_type name="Transmission"/>
+    <entity_type name="Weapon"/>
+  </entity_type>
+  <entity_type name="Event">
+    <entity_type name="SocietalEvent">
+      <entity_type name="SpaceMission"/>
+      <entity_type name="MilitaryConflict"/>
+    </entity_type>
+  </entity_type>
+  <entity_type name="MeanOfTransportation">
+    <entity_type name="Rocket"/>
+    <entity_type name="Automobile"/>
+    <entity_type name="Aircraft"/>
+    <entity_type name="Ship"/>
+    <entity_type name="Locomotive"/>
+  </entity_type>
+  <entity_type name="FictionalCharacter">
+    <entity_type name="Mascot"/>
+    <entity_type name="ComicsCharacter"/>
+  </entity_type>
+  <entity_type name="Food">
+    <entity_type name="Sauce"/>
+    <entity_type name="Ingredient"/>
+    <entity_type name="Cuisine"/>
+    <entity_type name="Course"/>
+    <entity_type name="Dish">
+      <entity_type name="Soup"/>
+      <entity_type name="Fritter"/>
+      <entity_type name="Sandwich"/>
+      <entity_type name="Snack"/>
+      <entity_type name="MainCourse"/>
+      <entity_type name="Dessert"/>
+      <entity_type name="Appetiser"/>
+    </entity_type>
+    <entity_type name="Condiment"/>
+  </entity_type>
+  <entity_type name="Work">
+    <entity_type name="Project">
+      <entity_type name="ResearchProject"/>
+    </entity_type>
+    <entity_type name="Film"/>
+    <entity_type name="Software"/>
+    <entity_type name="MusicalWork">
+      <entity_type name="NationalAnthem"/>
+      <entity_type name="Song"/>
+      <entity_type name="Album"/>
+    </entity_type>
+    <entity_type name="WrittenWork">
+      <entity_type name="AcademicJournal"/>
+      <entity_type name="Book"/>
+    </entity_type>
+  </entity_type>
+  <entity_type name="Place">
+    <entity_type name="NaturalPlace">
+      <entity_type name="River"/>
+      <entity_type name="Mountain"/>
+      <entity_type name="Sea"/>
+    </entity_type>
+    <entity_type name="ProtectedArea"/>
+    <entity_type name="PopulatedPlace">
+      <entity_type name="State"/>
+      <entity_type name="Island"/>
+      <entity_type name="Continent"/>
+      <entity_type name="AdministrativeRegion">
+        <entity_type name="District"/>
+        <entity_type name="Canton"/>
+        <entity_type name="Prefecture"/>
+        <entity_type name="OverseasDepartment"/>
+        <entity_type name="Province"/>
+      </entity_type>
+      <entity_type name="HistoricalRegion"/>
+      <entity_type name="Country"/>
+      <entity_type name="Settlement">
+        <entity_type name="Village"/>
+        <entity_type name="County"/>
+        <entity_type name="City">
+          <entity_type name="CapitalCity"/>
+        </entity_type>
+        <entity_type name="CityDistrict"/>
+        <entity_type name="Town"/>
+      </entity_type>
+    </entity_type>
+  </entity_type>
+  <entity_type name="TopicalConcept">
+    <entity_type name="AcademicSubject"/>
+    <entity_type name="Background"/>
+    <entity_type name="ArchitecturalStyle"/>
+    <entity_type name="CarBodyStyle"/>
+    <entity_type name="Type">
+      <entity_type name="UniversityType"/>
+      <entity_type name="CarType"/>
+      <entity_type name="ShipClass"/>
+      <entity_type name="RunwaySurfaceType"/>
+      <entity_type name="VirusType"/>
+      <entity_type name="MediaType"/>
+      <entity_type name="AlbumType"/>
+      <entity_type name="GovernmentType"/>
+      <entity_type name="MonumentType"/>
+      <entity_type name="CompanyType"/>
+      <entity_type name="PlantType">
+        <entity_type name="Order"/>
+        <entity_type name="Family"/>
+        <entity_type name="Class"/>
+        <entity_type name="Genus"/>
+      </entity_type>
+    </entity_type>
+    <entity_type name="TimeZone"/>
+    <entity_type name="Genre">
+      <entity_type name="MusicGenre"/>
+      <entity_type name="LiteraryGenre"/>
+    </entity_type>
+    <entity_type name="Status"/>
+    <entity_type name="Product"/>
+    <entity_type name="Service"/>
+    <entity_type name="Industry"/>
+  </entity_type>
+</hierarchy>

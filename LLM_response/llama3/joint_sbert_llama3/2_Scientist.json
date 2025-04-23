@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2_Scientist_test_1",
+    "input_text": "British national Lady Anne Monson lived in the Kingdom of England whose capital was Winchester.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Lady Anne Monson, nationality, England]:(Person, nationality, Country)\n[Winchester, capital, England]:(Place, capital, Place)\n[Kingdom of England, leader, Lady Anne Monson]:(Place, leader, PersonFunction)\n[Kingdom of England, leaderTitle, Politician]:(Place, leaderTitle, PersonFunction)"
+  },
+  {
+    "id": "2_Scientist_test_2",
+    "input_text": "Lady Anne Monson was born in Darlington which is located in Kingdom of England.",
+    "response": "Here is the output based on the input text:\n\n[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Place)\n[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Place)\n[Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Country)"
+  },
+  {
+    "id": "2_Scientist_test_3",
+    "input_text": "Kingdom of England is a unitary state form of government which is also Lady Anne Monson's nationality.",
+    "response": "Here is the extracted knowledge graph in the required format:\n\n[Lady Anne Monson, nationality, Kingdom of England]\n[Kingdom of England, governmentType, Unitary state]\n\nNote: I assume \"Lady Anne Monson\" is a person, and \"Kingdom of England\" is a country. The relation \"nationality\" is used to link Lady Anne Monson to her nationality, which is the Kingdom of England. The relation \"governmentType\" is used to link the Kingdom of England to its government type, which is a unitary state."
+  },
+  {
+    "id": "2_Scientist_test_4",
+    "input_text": "Lady Anne Monson, who was born in Darlington, died on 1776-02-18.",
+    "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Place)\n[Lady Anne Monson, deathDate, 1776-02-18]:(Person, deathDate, Date)"
+  },
+  {
+    "id": "2_Scientist_test_5",
+    "input_text": "India, at one time led by T. S. Thakur, was also where Lady Anne Monson lived most of her life.",
+    "response": "[T. S. Thakur, leader, India], [India, leader, T. S. Thakur], [Lady Anne Monson, residence, India]"
+  },
+  {
+    "id": "2_Scientist_test_6",
+    "input_text": "The Kingdom of England, the place where Lady Anne Monson was born, was a unitary state.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Lady Anne Monson, birthPlace, The Kingdom of England]\n[The Kingdom of England, governmentType, Unitary state]"
+  },
+  {
+    "id": "2_Scientist_test_7",
+    "input_text": "Lady Anne Monson lived from January 1, 1726 to February 18, 1776.",
+    "response": "[Lady Anne Monson, birthDate, 1726-01-01]:(Scientist, birthDate, Date)\n[Lady Anne Monson, birthDate, 1776-02-18]:(Scientist, deathDate, Date)"
+  },
+  {
+    "id": "2_Scientist_test_8",
+    "input_text": "Darlington, population 106000, was the birthplace of Lady Anne Monson.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Lady Anne Monson, birthPlace, Darlington]\n[Darlington, populationTotal, 106000]\n[Person, birthPlace, Place]\n[Place, populationTotal, number]\n[Person, birthPlace, Place]\n[Lady Anne Monson, birthPlace, Place]\n[Place, leader, Person]"
+  },
+  {
+    "id": "2_Scientist_test_9",
+    "input_text": "Lady Anne Monson was born in the Kingdom of England whose capital was previously Winchester.",
+    "response": "[Lady Anne Monson, birthPlace, Kingdom of England]:(Scientist, birthPlace, Country), [Kingdom of England, capital, Winchester]:(Place, capital, Settlement), [Kingdom of England, leader, Lady Anne Monson]:(Place, leader, Person)"
+  },
+  {
+    "id": "2_Scientist_test_10",
+    "input_text": "Lady Anne Monson was born in Darlington, England making her nationality English.",
+    "response": "Here is the output:\n\n[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Place)\n[Lady Anne Monson, nationality, England]:(Person, nationality, Country)"
+  },
+  {
+    "id": "2_Scientist_test_11",
+    "input_text": "Lady Anne Monson was born in Darlington on January 1st, 1726.",
+    "response": "[Lady Anne Monson, birthDate, 1726-01-01]:(Scientist, birthDate, Date), [Lady Anne Monson, birthPlace, Darlington]:(Scientist, birthPlace, Town)"
+  }
+]

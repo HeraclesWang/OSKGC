@@ -1,0 +1,47 @@
+[
+    {
+        "id": "2_Monument_test_1",
+        "sent": "The inauguration date for the Atatürk Monument (İzmir) in Turkey is 1932-07-27.",
+        "response": "{Atatürk Monument}:[ArchitecturalStructure:Monument], {İzmir}:[Place:PopulatedPlace:City], {Turkey}:[Place:PopulatedPlace:Country], {1932-07-27}:[Date]"
+    },
+    {
+        "id": "2_Monument_test_2",
+        "sent": "Frederick County (Maryland) is southwest of Adams County (Pennsylvania) which is home to the 11th Mississippi Infantry Monument.",
+        "response": "Entities: [11th Mississippi Infantry Monument], [Adams County], [Frederick County]\nOutput: {Adams County}:[Place]:{PopulatedPlace}:{County}, {Frederick County}:[Place]:{PopulatedPlace}:{County}, {11th Mississippi Infantry Monument}:[ArchitecturalStructure]:{Monument}"
+    },
+    {
+        "id": "2_Monument_test_3",
+        "sent": "The 11th Mississippi Infantry Monument stands in Adams County (Pennsylvania), Pennsylvania.",
+        "response": "{11th Mississippi Infantry Monument}:[ArchitecturalStructure], {Adams County}:[Place], {Pennsylvania}:[Place]"
+    },
+    {
+        "id": "2_Monument_test_4",
+        "sent": "The inauguration date for the Atatürk Monument (İzmir), made of bronze, is 1932-07-27.",
+        "response": "{Atatürk Monument}:[ArchitecturalStructure], {İzmir}:[Place], {1932-07-27}:[Date]"
+    },
+    {
+        "id": "2_Monument_test_5",
+        "sent": "Pietro Canonica is the designer of the Atatürk Monument (İzmir), which is made of bronze.",
+        "response": "{Pietro Canonica}:[Person:Artist:Sculptor]\n{Atatürk Monument}:[ArchitecturalStructure:Monument]\n{İzmir}:[Place:PopulatedPlace:City]"
+    },
+    {
+        "id": "2_Monument_test_6",
+        "sent": "The Atatürk Monument (İzmir) is located in Izmir, Turkey, where the capital is Ankara.",
+        "response": "{Atatürk Monument}:[ArchitecturalStructure:Monument], {İzmir}:[Place:PopulatedPlace:City], {Izmir}:[Place:PopulatedPlace:City], {Turkey}:[Place:PopulatedPlace:Country], {Ankara}:[Place:PopulatedPlace:City:CapitalCity]"
+    },
+    {
+        "id": "2_Monument_test_7",
+        "sent": "The Atatürk Monument (İzmir) is found in Turkey where the currency is the Turkish Lira.",
+        "response": "{Atatürk Monument}:[ArchitecturalStructure], {Turkish Lira}:[Currency], {Turkey}:[Place]"
+    },
+    {
+        "id": "2_Monument_test_8",
+        "sent": "The Atatürk Monument (İzmir) is in Turkey which largest city is Istanbul.",
+        "response": "{Atatürk Monument}:[ArchitecturalStructure:Monument], {İzmir}:[Place:PopulatedPlace:City], {Istanbul}:[Place:PopulatedPlace:City], {Türkiye}:[Place:PopulatedPlace:Country]"
+    },
+    {
+        "id": "2_Monument_test_9",
+        "sent": "The 14th New Jersey Volunteer Infantry Monument is found in the Monocacy National Battlefield which is located in Frederick County (Maryland).",
+        "response": "{14th New Jersey Volunteer Infantry Monument}:[ArchitecturalStructure:Monument], {Monocacy National Battlefield}:[Place:ProtectedArea], {Frederick County}:[Place:PopulatedPlace:County], {Maryland}:[Place:PopulatedPlace:State]"
+    }
+]

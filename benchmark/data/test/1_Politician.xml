@@ -1,0 +1,1161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Politician" id="1_Politician_test_1">
+      <text>Abraham A. Ribicoff died in New York City.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>deathPlace</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_2">
+      <text>Among the battles that Aaron S. Daggett fought in was the Battle of White Oak Swamp.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_White_Oak_Swamp</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_3">
+      <text>Aaron S. Daggett fought in the Battle of Gettysburg.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Gettysburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_4">
+      <text>Abraham A. Ribicoff died in New York.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>deathPlace</rel>
+          <obj>New_York</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_5">
+      <text>Abraham A. Ribicoff's spouse was Casey Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>spouse</rel>
+          <obj>Casey_Ribicoff</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>spouse</rel>
+          <obj>PoliticianSpouse</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_6">
+      <text>Aaron S. Daggett fought in battles in the American Civil War.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>American_Civil_War</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_7">
+      <text>New Britain (Connecticut) was the birthplace of Abraham A. Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>birthPlace</rel>
+          <obj>New_Britain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_8">
+      <text>Aaron S. Daggett fought during the Battle of Garnett's &amp; Golding's Farm.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Garnett's_&amp;_Golding's_Farm</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_9">
+      <text>Ab Klink worked at the Senate (Netherlands).</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>office</rel>
+          <obj>Senate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Senator</sub>
+          <rel>office</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_10">
+      <text>Abraham A. Ribicoff is a member of the United States Democratic Party.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>party</rel>
+          <obj>Democratic_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>party</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_11">
+      <text>Aaron S. Daggett was awarded the Purple Heart.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>award</rel>
+          <obj>Purple_Heart</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_12">
+      <text>One of the battles Aaron S. Daggett fought in, was the Second Battle of Rappahannock Station.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Second_Battle_of_Rappahannock_Station</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_13">
+      <text>Ab Klink was born in the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>birthPlace</rel>
+          <obj>Netherlands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_14">
+      <text>Alfred Moore Scales began his career on January 21st 1885.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Moore_Scales</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>1885-01-21</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_15">
+      <text>Abel Caballero worked at the Ministry of Public Works and Transport in Spain.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Caballero</sub>
+          <rel>office</rel>
+          <obj>Ministry_of_Public_Works_and_Transport</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Minister</sub>
+          <rel>office</rel>
+          <obj>GovernmentAgency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_16">
+      <text>Adonis Georgiadis was a member of the New Democracy party in Greece.</text>
+      <triples>
+        <triple>
+          <sub>Adonis_Georgiadis</sub>
+          <rel>party</rel>
+          <obj>New_Democracy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Minister</sub>
+          <rel>party</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_17">
+      <text>The commander at the Battle of Fredericksburg was Robert E. Lee.</text>
+      <triples>
+        <triple>
+          <sub>Battle_of_Fredericksburg</sub>
+          <rel>commander</rel>
+          <obj>Robert_E._Lee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryConflict</sub>
+          <rel>commander</rel>
+          <obj>MilitaryPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_18">
+      <text>Alfred Moore Scales took part in the Battle of Chancellorsville.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Moore_Scales</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Chancellorsville</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_19">
+      <text>New York City, United States is the death place of Abraham A. Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>deathPlace</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_20">
+      <text>The United States is the birthplace of Abraham A. Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>birthPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_21">
+      <text>Abraham A. Ribicoff spouse is Ruth Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>spouse</rel>
+          <obj>Ruth_Ribicoff</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>spouse</rel>
+          <obj>PoliticianSpouse</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_22">
+      <text>Abraham A. Ribicoff worked as Governor of Connecticut.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>office</rel>
+          <obj>Governor_of_Connecticut</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_23">
+      <text>Abraham A. Ribicoff once worked for the United States Secretary of Health, Education, and Welfare office.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>office</rel>
+          <obj>United_States_Secretary_of_Health,_Education,_and_Welfare</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Secretary</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_24">
+      <text>John N. Dempsey was preceded by Abraham A. Ribicoff.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>successor</rel>
+          <obj>John_N._Dempsey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>successor</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_25">
+      <text>The successor to Abraham A. Ribicoff is Anthony J. Celebrezze.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>successor</rel>
+          <obj>Anthony_J._Celebrezze</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Secretary</sub>
+          <rel>successor</rel>
+          <obj>Secretary</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_26">
+      <text>Abraham A. Ribicoff died in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>deathPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>deathPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_27">
+      <text>Abraham A. Ribicoff is a United States national.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_28">
+      <text>Abraham A. Ribicoff's place of birth was Connecticut.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>birthPlace</rel>
+          <obj>Connecticut</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_29">
+      <text>Abraham A. Ribicoff was in office while John F. Kennedy was president.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>inOfficeWhilePresident</rel>
+          <obj>John_F._Kennedy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>inOfficeWhilePresident</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_30">
+      <text>Abraham A. Ribicoff's nationality is that of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Abraham_A._Ribicoff</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_31">
+      <text>Aaron S. Daggett fought in the Battle of South Mountain.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_South_Mountain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_32">
+      <text>Aaron S. Daggett was born in Greene (Maine).</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>birthPlace</rel>
+          <obj>Greene</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_33">
+      <text>Aaron S. Daggett was born in Maine.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>birthPlace</rel>
+          <obj>Maine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_34">
+      <text>Aaron S. Daggett was in the Battle of Antietam.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Antietam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_35">
+      <text>Aaron S. Daggett fought in the Battle of Salem Church.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Salem_Church</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_36">
+      <text>One of Aaron S. Daggett's battles was the Battle of the Wilderness.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_the_Wilderness</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_37">
+      <text>Aaron S. Daggett took part on the Battle of Cold Harbor.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Cold_Harbor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_38">
+      <text>Aaron S. Daggett's place of death was Massachusetts.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>deathPlace</rel>
+          <obj>Massachusetts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>deathPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_39">
+      <text>Aaron S. Daggett died in West Roxbury.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>deathPlace</rel>
+          <obj>West_Roxbury</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>deathPlace</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_40">
+      <text>The Battle of Mine Run was one fought by Aaron S. Daggett.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Mine_Run</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_41">
+      <text>Aaron S. Daggett fought in the Battle of Fredericksburg.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_S._Daggett</sub>
+          <rel>battle</rel>
+          <obj>Battle_of_Fredericksburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_42">
+      <text>Isaac Rojas was the successor to Alberto Teisaire.</text>
+      <triples>
+        <triple>
+          <sub>Alberto_Teisaire</sub>
+          <rel>successor</rel>
+          <obj>Isaac_Rojas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>VicePresident</sub>
+          <rel>successor</rel>
+          <obj>VicePresident</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_43">
+      <text>Alfred N. Phillips was born in Connecticut.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_N._Phillips</sub>
+          <rel>birthPlace</rel>
+          <obj>Connecticut</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_44">
+      <text>Alfons Gorbach was born in Austria.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>birthPlace</rel>
+          <obj>Austria</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_45">
+      <text>Alfons Gorbach was born in Austria-Hungary.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>birthPlace</rel>
+          <obj>Austria-Hungary</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_46">
+      <text>Alfons Gorbach was a politician from the Austrian People's Party.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>party</rel>
+          <obj>Austrian_People's_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>party</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_47">
+      <text>Alfons Gorbach's place of birth was the state, Tyrol.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>birthPlace</rel>
+          <obj>Tyrol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_48">
+      <text>Alfons Gorbach was born in the County of Tyrol.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>birthPlace</rel>
+          <obj>County_of_Tyrol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>birthPlace</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_49">
+      <text>Josef Klaus succeeded Alfons Gorbach.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>successor</rel>
+          <obj>Josef_Klaus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>successor</rel>
+          <obj>Chancellor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_50">
+      <text>Alfons Gorbach died in Graz.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>deathPlace</rel>
+          <obj>Graz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_51">
+      <text>Alfons Gorbach was in office during President Adolf Schärf's reign.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>inOfficeWhilePresident</rel>
+          <obj>Adolf_Schärf</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>inOfficeWhilePresident</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_52">
+      <text>Alfons Gorbach was born in Imst.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>birthPlace</rel>
+          <obj>Imst</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_53">
+      <text>Alfons Gorbach died in Styria.</text>
+      <triples>
+        <triple>
+          <sub>Alfons_Gorbach</sub>
+          <rel>deathPlace</rel>
+          <obj>Styria</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Chancellor</sub>
+          <rel>deathPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_54">
+      <text>Agnes Kant's country is the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>nationality</rel>
+          <obj>Netherlands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_55">
+      <text>Agnes Kant is a national of the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>nationality</rel>
+          <obj>Netherlands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_56">
+      <text>The currency in the Netherlands is the euro.</text>
+      <triples>
+        <triple>
+          <sub>Netherlands</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_57">
+      <text>Agnes Kant lives in the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>residence</rel>
+          <obj>Netherlands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>residence</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_58">
+      <text>Ab Klink is a national of the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>nationality</rel>
+          <obj>Netherlands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_59">
+      <text>Ab Klink worked as a member of the senate.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>office</rel>
+          <obj>Member_of_the_Senate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Senator</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_60">
+      <text>The date of birth of Ab Klink is 1958-11-02.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>birthDate</rel>
+          <obj>1958-11-02</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_61">
+      <text>Stellendam was the birthplace of Ab Klink.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>birthPlace</rel>
+          <obj>Stellendam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>birthPlace</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_62">
+      <text>The alma mater of Ab Klink is Leiden University.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>almaMater</rel>
+          <obj>Leiden_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_63">
+      <text>Ab Klink worked at the Ministry of Health, Welfare and Sport in Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>office</rel>
+          <obj>Ministry_of_Health,_Welfare_and_Sport</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Minister</sub>
+          <rel>office</rel>
+          <obj>GovernmentAgency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_64">
+      <text>Ab Klink worked at the House of Representatives (Netherlands).</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>office</rel>
+          <obj>House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>office</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_65">
+      <text>Khadija Arib is the leader of the House of Representatives (Netherlands).</text>
+      <triples>
+        <triple>
+          <sub>House_of_Representatives</sub>
+          <rel>leader</rel>
+          <obj>Khadija_Arib</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Legislature</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_66">
+      <text>Agnes Kant worked at the House of Representatives (Netherlands).</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>office</rel>
+          <obj>House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>office</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_67">
+      <text>Ab Klink worked as a Member of the House of Representatives.</text>
+      <triples>
+        <triple>
+          <sub>Ab_Klink</sub>
+          <rel>office</rel>
+          <obj>Member_of_the_House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_test_68">
+      <text>Agnes Kant worked as a member of the House of Representatives.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>office</rel>
+          <obj>Member_of_the_House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

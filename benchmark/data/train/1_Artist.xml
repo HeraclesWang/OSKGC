@@ -1,0 +1,3847 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Artist" id="1_Artist_train_1">
+      <text>Aaron Bertram's birth date is 1981-04-03.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Bertram</sub>
+          <rel>birthDate</rel>
+          <obj>1981-04-03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_2">
+      <text>The Labour Party is the leader of Manchester.</text>
+      <triples>
+        <triple>
+          <sub>Manchester</sub>
+          <rel>leader</rel>
+          <obj>Labour_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_3">
+      <text>Kashubians are an ethnic group of Poland.</text>
+      <triples>
+        <triple>
+          <sub>Poland</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Kashubians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_4">
+      <text>Alison O'Donnell was a member of the Flibbertigibbet band.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>Flibbertigibbet</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_5">
+      <text>Drum and bass is a derivative of Hip hop music.</text>
+      <triples>
+        <triple>
+          <sub>Hip_hop_music</sub>
+          <rel>derivative</rel>
+          <obj>Drum_and_bass</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_6">
+      <text>Suburban Legends performs Ska music.</text>
+      <triples>
+        <triple>
+          <sub>Suburban_Legends</sub>
+          <rel>genre</rel>
+          <obj>Ska</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_7">
+      <text>Al Anderson (NRBQ) performs rock music.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>genre</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_8">
+      <text>Rock music has its stylistic origins in folk music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Folk_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_9">
+      <text>The singer Andra is associated with the band CRBL.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>associatedBand</rel>
+          <obj>CRBL</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_10">
+      <text>The Banjo instrument is closely associated with country music.</text>
+      <triples>
+        <triple>
+          <sub>Country_music</sub>
+          <rel>instrument</rel>
+          <obj>Banjo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_11">
+      <text>The population density of Israel is 387.63.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>populationDensity</rel>
+          <obj>387.63</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_12">
+      <text>Synthpop is derived from house music.</text>
+      <triples>
+        <triple>
+          <sub>Synthpop</sub>
+          <rel>derivative</rel>
+          <obj>House_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_13">
+      <text>Agustín Barboza is signed to Philips Records.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>recordLabel</rel>
+          <obj>Philips_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_14">
+      <text>One of the official languages of Israel Is Modern Standard Arabic.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>officialLanguage</rel>
+          <obj>Modern_Standard_Arabic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_15">
+      <text>Alison O'Donnell genre is Psychedelic folk.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>genre</rel>
+          <obj>Psychedelic_folk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_16">
+      <text>Alex Day performs electronic music.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>genre</rel>
+          <obj>Electronic_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_17">
+      <text>The stylistic origin of electropop is disco.</text>
+      <triples>
+        <triple>
+          <sub>Electropop</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Disco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_18">
+      <text>The birth place of Agustín Barboza was Paraguay.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>deathPlace</rel>
+          <obj>Paraguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>deathPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_19">
+      <text>Aleksandra Kovač began her musical career in 1990.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1990</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_20">
+      <text>Ahmet Ertegun died in New York City.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>deathPlace</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_21">
+      <text>Aaron Deer collaborates with The Horns of Happiness.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>associatedBand</rel>
+          <obj>The_Horns_of_Happiness</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_22">
+      <text>Allen Forrest was born in Fort Campbell.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>birthPlace</rel>
+          <obj>Fort_Campbell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>MilitaryStructure</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_23">
+      <text>Alfredo Zitarrosa performs Zamba music.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>genre</rel>
+          <obj>Zamba</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_24">
+      <text>Nu metal is a music fusion genre of alternative rock.</text>
+      <triples>
+        <triple>
+          <sub>Alternative_rock</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Nu_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_25">
+      <text>The language in Paraguay is Spanish.</text>
+      <triples>
+        <triple>
+          <sub>Paraguay</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_26">
+      <text>The leader of Paraguay is called Juan Afara.</text>
+      <triples>
+        <triple>
+          <sub>Paraguay</sub>
+          <rel>leader</rel>
+          <obj>Juan_Afara</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_27">
+      <text>Anders Osborne is associated with Phil Lesh and Friends.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedBand</rel>
+          <obj>Phil_Lesh_and_Friends</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_28">
+      <text>Deram Records is based in London.</text>
+      <triples>
+        <triple>
+          <sub>Deram_Records</sub>
+          <rel>location</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_29">
+      <text>Andra began her career as a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_30">
+      <text>Disco is a derivative of rhythm and blues.</text>
+      <triples>
+        <triple>
+          <sub>Rhythm_and_blues</sub>
+          <rel>derivative</rel>
+          <obj>Disco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_31">
+      <text>Albennie Jones is a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_32">
+      <text>Andrew Rayel was a string instrumentalist.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>instrument</rel>
+          <obj>String_instrument</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_33">
+      <text>Andrew Rayel is associated with the musical artist, Bobina.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Bobina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_34">
+      <text>The Arabs is an ethnic group in Israel.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Arabs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_35">
+      <text>Alison O'Donnell is an artist for the band Mellow Candle.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>Mellow_Candle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_36">
+      <text>The leader of the United Kingdom is Elizabeth II.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_37">
+      <text>Aaron Deer plays the piano.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>instrument</rel>
+          <obj>Piano</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_38">
+      <text>Hip hop music has its origins in Disco.</text>
+      <triples>
+        <triple>
+          <sub>Hip_hop_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Disco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_39">
+      <text>Aaron deer plays the bass guitar.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>instrument</rel>
+          <obj>Bass_guitar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_40">
+      <text>Anders Osborne is a singer.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_41">
+      <text>Synthpop is derived from New wave music.</text>
+      <triples>
+        <triple>
+          <sub>Synthpop</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>New_wave_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_42">
+      <text>Death metal is a musical fusion of black metal.</text>
+      <triples>
+        <triple>
+          <sub>Black_metal</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Death_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_43">
+      <text>Albennie Jones is a performer of rhythm and blues.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>genre</rel>
+          <obj>Rhythm_and_blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_44">
+      <text>Alfred Garth Jones was born in Manchester.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>birthPlace</rel>
+          <obj>Manchester</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_45">
+      <text>Deram Records deal with the pop music genre.</text>
+      <triples>
+        <triple>
+          <sub>Deram_Records</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_46">
+      <text>Abradab has a background as a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_47">
+      <text>Abradab is an artist for the band Kaliber 44.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>associatedBand</rel>
+          <obj>Kaliber_44</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_48">
+      <text>London is the capital of the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>capital</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_49">
+      <text>Andrew White is a musician signed to Polydor Records.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>recordLabel</rel>
+          <obj>Polydor_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_50">
+      <text>Aleksandra Kovač was born in Serbia.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>birthPlace</rel>
+          <obj>Serbia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_51">
+      <text>Anders Osborne is a guitarist.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>occupation</rel>
+          <obj>Guitarist</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_52">
+      <text>Aleksandra Kovač was born in Belgrade.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>birthPlace</rel>
+          <obj>Belgrade</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_53">
+      <text>African Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_54">
+      <text>Aaron Bertram plays for the Suburban Legends band.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Bertram</sub>
+          <rel>associatedBand</rel>
+          <obj>Suburban_Legends</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_55">
+      <text>Liselotte Grschebina died in Petah Tikva.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>deathPlace</rel>
+          <obj>Petah_Tikva</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>deathPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_56">
+      <text>The musician Abradab originates from Katowice.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>origin</rel>
+          <obj>Katowice</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_57">
+      <text>Disco music is a fusion genre of pop music.</text>
+      <triples>
+        <triple>
+          <sub>Pop_music</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Disco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_58">
+      <text>Liselotte Grschebina died on June 14, 1994.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>deathDate</rel>
+          <obj>1994-06-14</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>deathDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_59">
+      <text>Albennie Jones played blues music.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>genre</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_60">
+      <text>Aaron Bertram's musical genre is Ska punk.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Bertram</sub>
+          <rel>genre</rel>
+          <obj>Ska_punk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_61">
+      <text>Anders Osborne has collaborated with Kirk Joseph.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Kirk_Joseph</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_62">
+      <text>The music genre for Ahmet Ertegun is blues.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>genre</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_63">
+      <text>Albennie Jones was born in 1914.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>birthYear</rel>
+          <obj>1914</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_64">
+      <text>Alfred Garth Jones makes a living as an Illustrator.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>occupation</rel>
+          <obj>Illustrator</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_65">
+      <text>Aaron Deer was born in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>origin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_66">
+      <text>The German Empire's currency is the South German gulden.</text>
+      <triples>
+        <triple>
+          <sub>German_Empire</sub>
+          <rel>currency</rel>
+          <obj>South_German_gulden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_67">
+      <text>Indie rock has its stylistic origins in Garage rock.</text>
+      <triples>
+        <triple>
+          <sub>Indie_rock</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Garage_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_68">
+      <text>Aleksandra Kovač is a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_69">
+      <text>The alternative name of Ahmet Ertegun is A. Nugetre.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>alternativeName</rel>
+          <obj>A._Nugetre</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>alternativeName</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_70">
+      <text>Karlsruhe has an elevation of 115 metres above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Karlsruhe</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>115</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_71">
+      <text>Alison O'Donnell is associated with Plastik Mak.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>Plastik_Mak</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_72">
+      <text>Ahmet Ertegun originates from Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>origin</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_73">
+      <text>Alison O'Donnell's record label is Fruits de Mer Records.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Fruits_de_Mer_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_74">
+      <text>Alison O'Donnell is musically associated with the band Head South By Weaving.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>Head_South_By_Weaving</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_75">
+      <text>Andra is a singer associated with the singer Puya.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Puya</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_76">
+      <text>A music genre for Allen Forrest is acoustic.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>genre</rel>
+          <obj>Acoustic_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_77">
+      <text>Alfred Garth Jones was born in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>nationality</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_78">
+      <text>The band Kaiser Chiefs included the member Andrew White (musician).</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>associatedBand</rel>
+          <obj>Kaiser_Chiefs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_79">
+      <text>The musical genre of Aleksandra Kovač is pop music.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_80">
+      <text>Ahmet Ertegun is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>origin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_81">
+      <text>Alligator Records main genre of music is the blues.</text>
+      <triples>
+        <triple>
+          <sub>Alligator_Records</sub>
+          <rel>genre</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_82">
+      <text>Allen Forrest plays pop music.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_83">
+      <text>Aaron Deer comes from Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>origin</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_84">
+      <text>Alfredo Zitarrosa died in Montevideo.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>deathPlace</rel>
+          <obj>Montevideo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_85">
+      <text>The musical genre of the band NRBQ is country music.</text>
+      <triples>
+        <triple>
+          <sub>NRBQ</sub>
+          <rel>genre</rel>
+          <obj>Country_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_86">
+      <text>Aaron Deer's instrument is the keyboard.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>instrument</rel>
+          <obj>Keyboard_instrument</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_87">
+      <text>Alison O'Donnell is signed with the record label Deram Records.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Deram_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_88">
+      <text>Aaron Deer is a musician for the band John Wilkes Booze.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>associatedBand</rel>
+          <obj>John_Wilkes_Booze</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_89">
+      <text>Al Anderson (NRBQ) was born on the 13/03/1947.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>birthDate</rel>
+          <obj>1947-03-13</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_90">
+      <text>The leader of London is the European Parliament.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leaderTitle</rel>
+          <obj>European_Parliament</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_91">
+      <text>Alfredo Zitarrosa is signed with the record label Odeon Records.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>recordLabel</rel>
+          <obj>Odeon_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_92">
+      <text>The currency of the German Empire is German Papiermark.</text>
+      <triples>
+        <triple>
+          <sub>German_Empire</sub>
+          <rel>currency</rel>
+          <obj>German_Papiermark</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_93">
+      <text>Karlsruhe's leader is Oberbürgermeister.</text>
+      <triples>
+        <triple>
+          <sub>Karlsruhe</sub>
+          <rel>leaderTitle</rel>
+          <obj>Oberbürgermeister</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_94">
+      <text>Anders Osborne has worked with Tab Benoit.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Tab_Benoit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_95">
+      <text>Albennie Jones stopped performing in 1950.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>activeYearsEndYear</rel>
+          <obj>1950</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsEndYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_96">
+      <text>The singer called Andra became active in the year 2000.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>2000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_97">
+      <text>Trance music has its origins in Pop music.</text>
+      <triples>
+        <triple>
+          <sub>Trance_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_98">
+      <text>Andra is a singer associated with Andreea Bălan.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Andreea_Bălan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_99">
+      <text>Andrew White started his musical career in 2003.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>2003</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_100">
+      <text>Albennie Jones began his musical career in 1930.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1930</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_101">
+      <text>The musician Andrew White's record label is the (now defunct) Universal Records.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>recordLabel</rel>
+          <obj>Universal_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_102">
+      <text>Alfredo Zitarrosa is musically associated with Hilario Pérez.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Hilario_Pérez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_103">
+      <text>The band Suburban Legends' genre is Rock music.</text>
+      <triples>
+        <triple>
+          <sub>Suburban_Legends</sub>
+          <rel>genre</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_104">
+      <text>Alex Day was born in the London Borough of Havering.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>birthPlace</rel>
+          <obj>London_Borough_of_Havering</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_105">
+      <text>Al Anderson (NRBQ) was born in Windsor (Connecticut).</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>birthPlace</rel>
+          <obj>Windsor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_106">
+      <text>London is governed by the Greater London Authority.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>governingBody</rel>
+          <obj>Greater_London_Authority</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>governingBody</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_107">
+      <text>Alfredo Zitarrosa belongs to the Orfeo record label.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>recordLabel</rel>
+          <obj>Orfeo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_108">
+      <text>Andrew Rayel is associated with Mark Sixma.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Mark_Sixma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_109">
+      <text>Armin van Buuren plays House music.</text>
+      <triples>
+        <triple>
+          <sub>Armin_van_Buuren</sub>
+          <rel>genre</rel>
+          <obj>House_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_110">
+      <text>Anders Osborne started performing in 1989.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1989</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_111">
+      <text>Anders Osborne is associated with the musical artist Theresa Andersson.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Theresa_Andersson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_112">
+      <text>Aaron Deer is an artist for the band Wee Giant.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>associatedBand</rel>
+          <obj>Wee_Giant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_113">
+      <text>Synthpop originated from Disco.</text>
+      <triples>
+        <triple>
+          <sub>Synthpop</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Disco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_114">
+      <text>Aaron Bertram started performing in 1998.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Bertram</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1998</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_115">
+      <text>Alison O'Donnell started performing in 1963.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1963</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_116">
+      <text>Aaron Deer plays the guitar.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>instrument</rel>
+          <obj>Guitar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_117">
+      <text>Allen Forrest started his career in 2005.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>2005</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_118">
+      <text>The official language of Canada is French.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>officialLanguage</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_119">
+      <text>Alternative rock has the sub genre Christian alternative rock.</text>
+      <triples>
+        <triple>
+          <sub>Alternative_rock</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Christian_alternative_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_120">
+      <text>One of the leaders of Petah Tikva is Itzik Braverman.</text>
+      <triples>
+        <triple>
+          <sub>Petah_Tikva</sub>
+          <rel>leader</rel>
+          <obj>Itzik_Braverman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_121">
+      <text>Al Anderson (NRBQ) was a member of The Wildweeds.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>associatedBand</rel>
+          <obj>The_Wildweeds</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_122">
+      <text>Aleksandra Kovač was born in 1972.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>birthYear</rel>
+          <obj>1972</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_123">
+      <text>Liselotte Grschebina was born on May 2nd, 1908.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>birthDate</rel>
+          <obj>1908-05-02</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_124">
+      <text>Alfred Garth Jones died in around 1944.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>deathYear</rel>
+          <obj>1944</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>deathYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_125">
+      <text>Alex Day was born in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>birthPlace</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_126">
+      <text>Andra sings for a living.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_127">
+      <text>Jwaydan Moyine is associated with the musical artist John Digweed.</text>
+      <triples>
+        <triple>
+          <sub>Jwaydan_Moyine</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>John_Digweed</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_128">
+      <text>The musical genre of Andrew Rayel is trance music.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>genre</rel>
+          <obj>Trance_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_129">
+      <text>The guitar is played in indie rock music.</text>
+      <triples>
+        <triple>
+          <sub>Indie_rock</sub>
+          <rel>instrument</rel>
+          <obj>Guitar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_130">
+      <text>The singer Andra's birth place is Câmpia Turzii.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>birthPlace</rel>
+          <obj>Câmpia_Turzii</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_131">
+      <text>Abradab started performing in 1994.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1994</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_132">
+      <text>Al Anderson (NRBQ) plays with the band NRBQ.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>associatedBand</rel>
+          <obj>NRBQ</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_133">
+      <text>Rock music originated from blues music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_134">
+      <text>Alternative rock originated from new wave music.</text>
+      <triples>
+        <triple>
+          <sub>Alternative_rock</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>New_wave_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_135">
+      <text>Alison O'Donnell is a musician for the band United Bible Studies.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>United_Bible_Studies</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_136">
+      <text>Alex Day is associated with the musical artist Charlie McDonnell.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Charlie_McDonnell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_137">
+      <text>Agustín Barboza started out as a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_138">
+      <text>Christian Burns performs house music.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Burns</sub>
+          <rel>genre</rel>
+          <obj>House_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_139">
+      <text>Country music originated from blues music.</text>
+      <triples>
+        <triple>
+          <sub>Country_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_140">
+      <text>Christian Burns performs pop music.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Burns</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_141">
+      <text>Andrew Rayel is associated with the musical artist Armin van Buuren.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Armin_van_Buuren</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_142">
+      <text>Ska punk originated from punk rock music.</text>
+      <triples>
+        <triple>
+          <sub>Ska_punk</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Punk_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_143">
+      <text>Suburban Legends' genre is pop music.</text>
+      <triples>
+        <triple>
+          <sub>Suburban_Legends</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_144">
+      <text>Albennie Jones was born in Errata (Mississippi).</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>birthPlace</rel>
+          <obj>Errata</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_145">
+      <text>The record label of Anders Osborne is Okeh records.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>recordLabel</rel>
+          <obj>Okeh_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_146">
+      <text>Al Anderson (NRBQ) was born in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>birthPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_147">
+      <text>The musical genre of the band Twilight is black metal.</text>
+      <triples>
+        <triple>
+          <sub>Twilight</sub>
+          <rel>genre</rel>
+          <obj>Black_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_148">
+      <text>Al Anderson (NRBQ) was born in Windsor (Connecticut).</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>birthPlace</rel>
+          <obj>Windsor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_149">
+      <text>Ahmet Ertegun was born in 1923.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>birthYear</rel>
+          <obj>1923</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_150">
+      <text>The founding date of the German Empire was the first of January 1871.</text>
+      <triples>
+        <triple>
+          <sub>German_Empire</sub>
+          <rel>foundingDate</rel>
+          <obj>1871-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_151">
+      <text>Al Anderson (NRBQ) performs country music.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>genre</rel>
+          <obj>Country_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_152">
+      <text>Alfred Garth Jones died in Sidcup.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>deathPlace</rel>
+          <obj>Sidcup</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>deathPlace</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_153">
+      <text>Paraguay has a ethnic group called the Mestizo.</text>
+      <triples>
+        <triple>
+          <sub>Paraguay</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Mestizo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_154">
+      <text>One of the leaders of Israel is Reuven Rivlin.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>leader</rel>
+          <obj>Reuven_Rivlin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_155">
+      <text>Boris Johnson is a leader in London.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leader</rel>
+          <obj>Boris_Johnson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_156">
+      <text>Aleksandra Kovač performs funk music.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>genre</rel>
+          <obj>Funk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_157">
+      <text>Aaron Bertram is an artist with the band Kids Imagine Nation.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Bertram</sub>
+          <rel>associatedBand</rel>
+          <obj>Kids_Imagine_Nation</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_158">
+      <text>The musical genre of Alfredo Zitarrosa is Milonga.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>genre</rel>
+          <obj>Milonga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_159">
+      <text>Andrew Rayel is associated with the musician Jwaydan Moyine.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Jwaydan_Moyine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_160">
+      <text>Abradab originated from Poland.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>origin</rel>
+          <obj>Poland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_161">
+      <text>People from the United Kingdom are called British people.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>demonym</rel>
+          <obj>British_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_162">
+      <text>Al Anderson (NRBQ) started his career in 1966.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1966</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_163">
+      <text>Agustín Barboza died in Asunción.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>deathPlace</rel>
+          <obj>Asunción</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_164">
+      <text>Allen Forrest performs hip hop music.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>genre</rel>
+          <obj>Hip_hop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_165">
+      <text>The birth place of Agustín Barboza is Paraguay.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>birthPlace</rel>
+          <obj>Paraguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_166">
+      <text>Universal Music group is the parent company of Philips Records.</text>
+      <triples>
+        <triple>
+          <sub>Philips_Records</sub>
+          <rel>parentCompany</rel>
+          <obj>Universal_Music_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>parentCompany</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_167">
+      <text>Andra (singer) was born in 1986.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>birthYear</rel>
+          <obj>1986</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_168">
+      <text>Hip hop music has the sub genre Gangsta rap.</text>
+      <triples>
+        <triple>
+          <sub>Hip_hop_music</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Gangsta_rap</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_169">
+      <text>Aaron Deer is from Indianapolis.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>origin</rel>
+          <obj>Indianapolis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_170">
+      <text>Legacy Recordings is the distributing company for RCA Records.</text>
+      <triples>
+        <triple>
+          <sub>RCA_Records</sub>
+          <rel>distributingCompany</rel>
+          <obj>Legacy_Recordings</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>distributingCompany</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_171">
+      <text>Alex Day is a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_172">
+      <text>Petah Tikva is a city in Israel.</text>
+      <triples>
+        <triple>
+          <sub>Petah_Tikva</sub>
+          <rel>country</rel>
+          <obj>Israel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_173">
+      <text>Al Anderson (NRBQ) plays the guitar.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>instrument</rel>
+          <obj>Guitar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_174">
+      <text>Kill Rock Stars is located in Portland (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Kill_Rock_Stars</sub>
+          <rel>location</rel>
+          <obj>Portland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_175">
+      <text>The total area of Karlsruhe |is 173.46.</text>
+      <triples>
+        <triple>
+          <sub>Karlsruhe</sub>
+          <rel>areaTotal</rel>
+          <obj>173.46</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_176">
+      <text>Alfred Garth Jones was born in England.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>birthPlace</rel>
+          <obj>England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_177">
+      <text>The musician Andrew White's genre is alternative rock.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>genre</rel>
+          <obj>Alternative_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_178">
+      <text>Asunción is a part of Gran Asunción.</text>
+      <triples>
+        <triple>
+          <sub>Asunción</sub>
+          <rel>isPartOf</rel>
+          <obj>Gran_Asunción</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>isPartOf</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_179">
+      <text>Alfred Garth Jones was born in 1872.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>birthYear</rel>
+          <obj>1872</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_180">
+      <text>Liselotte Grschebina was a professional photographer.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>profession</rel>
+          <obj>Photographer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>profession</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_181">
+      <text>The politician, Daniel Martínez, is Montevideo's leader.</text>
+      <triples>
+        <triple>
+          <sub>Montevideo</sub>
+          <rel>leader</rel>
+          <obj>Daniel_Martínez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_182">
+      <text>Brian Robertson plays the trombone in the band Suburban Legends.</text>
+      <triples>
+        <triple>
+          <sub>Suburban_Legends</sub>
+          <rel>bandMember</rel>
+          <obj>Brian_Robertson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>bandMember</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_183">
+      <text>Alfred Garth Jones died in London.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Garth_Jones</sub>
+          <rel>deathPlace</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Artist</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_184">
+      <text>The musical genre of Alfredo Zitarrosa is Taquirari.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>genre</rel>
+          <obj>Taquirari</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_185">
+      <text>Anders Osborne was signed to the record label 'Alligator Records'.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>recordLabel</rel>
+          <obj>Alligator_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_186">
+      <text>Anders Osborne is associated with Voice of the Wetlands All-Stars.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedBand</rel>
+          <obj>Voice_of_the_Wetlands_All-Stars</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_187">
+      <text>A musical fusion of rock music is bhangra music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Bhangra</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_188">
+      <text>Post-metal music uses the cello.</text>
+      <triples>
+        <triple>
+          <sub>Post-metal</sub>
+          <rel>instrument</rel>
+          <obj>Cello</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_189">
+      <text>Alison O'Donnell plays the bodhrán.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>instrument</rel>
+          <obj>Bodhrán</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_190">
+      <text>Aaron Deer is a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_191">
+      <text>Agustín Barboza was born in Asunción.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>birthPlace</rel>
+          <obj>Asunción</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_192">
+      <text>Anders Osborne is signed to Shanachie Records.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>recordLabel</rel>
+          <obj>Shanachie_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_193">
+      <text>Alison O'Donnell is signed to Kissing Spell Records.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Kissing_Spell_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_194">
+      <text>Alison O'Donnell performs folk music.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>genre</rel>
+          <obj>Folk_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_195">
+      <text>Ahmet Ertegun performs rock and roll music.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>genre</rel>
+          <obj>Rock_and_roll</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_196">
+      <text>The musical genre of Aaron Deer is indie rock.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>genre</rel>
+          <obj>Indie_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_197">
+      <text>Aleksandra Kovač is musically involved with Kristina Kovač.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Kristina_Kovač</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_198">
+      <text>Agustín Barboza was born on the 5th May 1913.</text>
+      <triples>
+        <triple>
+          <sub>Agustín_Barboza</sub>
+          <rel>birthDate</rel>
+          <obj>1913-05-05</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_199">
+      <text>Alison O'Donnell can play the autoharp.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>instrument</rel>
+          <obj>Autoharp</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_200">
+      <text>Folk music of Ireland is the genre performed by Alison O'Donnell.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>genre</rel>
+          <obj>Folk_music_of_Ireland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_201">
+      <text>Rock music originated from country music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Country_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_202">
+      <text>Alex Day was born in Hornchurch.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>birthPlace</rel>
+          <obj>Hornchurch</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_203">
+      <text>Abradab is associated with Magik (rapper).</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Magik</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_204">
+      <text>Allen Forrest performs rhythm and blues music.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>genre</rel>
+          <obj>Rhythm_and_blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_205">
+      <text>Aleksandra Kovač is an artist for the band K2.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>associatedBand</rel>
+          <obj>K2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_206">
+      <text>Ahmet Ertegun died in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>deathPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>deathPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_207">
+      <text>Alfredo Zitarrosa's musical genre is Candombe.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>genre</rel>
+          <obj>Candombe</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_208">
+      <text>Alison O'Donnell has collaborated with the band The Owl Service.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>The_Owl_Service</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_209">
+      <text>Anders Osborne is signed to the record label Rabadash Records.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>recordLabel</rel>
+          <obj>Rabadash_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_210">
+      <text>Anders Osborne has worked with the band Galactic.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedBand</rel>
+          <obj>Galactic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_211">
+      <text>Aleksandra Kovač is associated with Kornelije Kovač.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Kornelije_Kovač</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_212">
+      <text>Anders Osborne's genre is rock music.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>genre</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_213">
+      <text>Aleksandra Kovač's genre is soul music.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>genre</rel>
+          <obj>Soul_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_214">
+      <text>Funk is a derivative of rhythm and blues.</text>
+      <triples>
+        <triple>
+          <sub>Rhythm_and_blues</sub>
+          <rel>derivative</rel>
+          <obj>Funk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_215">
+      <text>The singer Andra was born in Romania.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>birthPlace</rel>
+          <obj>Romania</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_216">
+      <text>Afrobeat is a fusion of funk music.</text>
+      <triples>
+        <triple>
+          <sub>Funk</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Afrobeat</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_217">
+      <text>Allen Forrest was born in Dothan (Alabama).</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>birthPlace</rel>
+          <obj>Dothan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_218">
+      <text>Alfredo Zitarrosa is associated with Yamandú Palacios.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Yamandú_Palacios</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_219">
+      <text>The French language is spoken in Canada.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>language</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_220">
+      <text>Acoustic music is Alex Day’s genre.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>genre</rel>
+          <obj>Acoustic_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_221">
+      <text>Alison O'Donnell is signed with Osmosys Records.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Osmosys_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_222">
+      <text>Aaron Deer performs Psychedelia music.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>genre</rel>
+          <obj>Psychedelia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_223">
+      <text>The London government is known as the Parliament of the United Kingdom</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leaderTitle</rel>
+          <obj>Parliament_of_the_United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_224">
+      <text>Rhythm and blues music originated from the blues.</text>
+      <triples>
+        <triple>
+          <sub>Rhythm_and_blues</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_225">
+      <text>Alfredo Zitarrosa is associated with the musical artist Ciro Pérez.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Ciro_Pérez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_train_226">
+      <text>Ska punk originated from ska music.</text>
+      <triples>
+        <triple>
+          <sub>Ska_punk</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Ska</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

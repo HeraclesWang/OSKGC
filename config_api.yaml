@@ -1,0 +1,20 @@
+# config_api.yaml
+api_provider: "gemini"  # gemini or claude or openai
+
+gemini:
+  api_key: "your_gemini_api_key"
+  model_name: "gemini-1.5-pro"
+  temperature: 0.7
+  max_tokens: 1024
+
+claude:
+  api_key: "your_claude_api_key"
+  model_name: "claude-3-5-sonnet-20240620"
+  temperature: 0.7
+  max_tokens: 1024
+
+openai:
+  api_key: "your_openai_api_key"
+  model_name: "gpt-4o"
+  temperature: 0.7
+  max_tokens: 1024

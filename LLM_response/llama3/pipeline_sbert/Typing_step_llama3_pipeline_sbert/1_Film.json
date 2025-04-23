@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1_Film_test_1",
+        "sent": "English Without Tears was released on 1944-07-28.",
+        "response": "Entities: [English Without Tears], [1944-07-28]\nOutput: {English Without Tears}:[Work], {1944-07-28}:[Date]"
+    },
+    {
+        "id": "1_Film_test_2",
+        "sent": "Terence Rattigan died on the 30th of November in the year 1977.",
+        "response": "{Terence Rattigan}:[Writer], {30th}:[Date], {November}:[Month], {1977}:[Year]"
+    },
+    {
+        "id": "1_Film_test_3",
+        "sent": "Anatole de Grunwald was born in Saint Petersburg.",
+        "response": "Entities: [Anatole de Grunwald], [Saint Petersburg]\nOutput: {Anatole de Grunwald}:[Person], {Saint Petersburg}:[Place]"
+    },
+    {
+        "id": "1_Film_test_4",
+        "sent": "John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956.",
+        "response": "{It's Great to Be Young}:[Work], {John Mills}:[Person], {1956}:[Date]"
+    },
+    {
+        "id": "1_Film_test_5",
+        "sent": "English Without Tears is written by Anatole de Grunwald.",
+        "response": "Entities: [Anatole de Grunwald], [English Without Tears]\nOutput: {Anatole de Grunwald}:[Writer], {English Without Tears}:[Work]"
+    },
+    {
+        "id": "1_Film_test_6",
+        "sent": "The music of the film English Without Tears is composed by Nicholas Brodszky.",
+        "response": "{Nicholas Brodszky}:[MusicComposer], {English Without Tears}:[Film]"
+    },
+    {
+        "id": "1_Film_test_7",
+        "sent": "\"English Without Tears\" was produced by Anatole de Grunwald.",
+        "response": "{Anatole de Grunwald}:[PersonFunction], {English Without Tears}:[Work]"
+    },
+    {
+        "id": "1_Film_test_8",
+        "sent": "The cinematography of English Without Tears was done by Bernard Knowles.",
+        "response": "{English Without Tears}:[Work], {Bernard Knowles}:[PersonFunction]"
+    },
+    {
+        "id": "1_Film_test_9",
+        "sent": "The editing of the movie English Without Tears was done by Alan Jaggs.",
+        "response": "Entities: [English Without Tears], [Alan Jaggs]\nOutput: {English Without Tears}:[Work], {Alan Jaggs}:[PersonFunction]"
+    },
+    {
+        "id": "1_Film_test_10",
+        "sent": "'English Without Tears' was written by Terence Rattigan.",
+        "response": "{Terence Rattigan}:[Writer]"
+    },
+    {
+        "id": "1_Film_test_11",
+        "sent": "English Without Tears is 89 minutes long.",
+        "response": "Entities: [89], [English Without Tears]\nOutput: {English Without Tears}:[Work], {89}:[number]"
+    },
+    {
+        "id": "1_Film_test_12",
+        "sent": "English Without Tears is a film directed by Harold French.",
+        "response": "Entities: [Film], [Harold French]\nOutput: {Harold French}:[MovieDirector], {English Without Tears}:[Film]"
+    },
+    {
+        "id": "1_Film_test_13",
+        "sent": "Anatole de Grunwald died in London.",
+        "response": "Entities: [Anatole de Grunwald], [London]\nOutput: {Anatole de Grunwald}:[Person], {London}:[Place]"
+    },
+    {
+        "id": "1_Film_test_14",
+        "sent": "Michael Rooker was born in the year 1955.",
+        "response": "{Michael Rooker}:[Actor], {1955}:[Year]"
+    },
+    {
+        "id": "1_Film_test_15",
+        "sent": "Michael Rooker was born on April 6th 1955.",
+        "response": "Entities: [Michael Rooker], [1955-04-06]\nOutput: {Michael Rooker}:[BusinessPerson], {1955-04-06}:[Date]"
+    },
+    {
+        "id": "1_Film_test_16",
+        "sent": "Super Capers is a film starring Michael Rooker.",
+        "response": "Entities: [Super Capers], [Michael Rooker]\nOutput: {Super Capers}:[Work], {Michael Rooker}:[Person]"
+    }
+]

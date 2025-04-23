@@ -1,0 +1,52 @@
+[
+    {
+        "id": "3_Scientist_test_1",
+        "input_text": "Before her death on February 18, 1776, Lady Anne Monson was a resident of India married to George Monson.",
+        "response": "Here is the constructed knowledge graph based on the input text and the given ontology schema:\n\n[Lady Anne Monson, deathDate, February 18, 1776]\n[Lady Anne Monson, residence, India]\n[Lady Anne Monson, spouse, George Monson]\n[George Monson, spouse, Lady Anne Monson]"
+    },
+    {
+        "id": "3_Scientist_test_2",
+        "input_text": "Lady Anne Monson was born on January 1, 1726 in Darlington, the Kingdom of England.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Lady Anne Monson, birthDate, January 1, 1726]:(Lady Anne Monson, birthDate, Date)\n[Lady Anne Monson, birthPlace, Darlington]:(Lady Anne Monson, birthPlace, Place)\n[Lady Anne Monson, birthPlace, Kingdom of England]:(Lady Anne Monson, birthPlace, Country)"
+    },
+    {
+        "id": "3_Scientist_test_3",
+        "input_text": "George Monson was married to Lady Anne Monson, a botanist, who died on February 18, 1776.",
+        "response": "Here is the output based on the given ontology schema:\n\n[George Monson, spouse, Lady Anne Monson]\n[Lady Anne Monson, knownFor, Botanist]\n[Lady Anne Monson, deathDate, February 18, 1776]\n[George Monson, birthDate, unknown]"
+    },
+    {
+        "id": "3_Scientist_test_4",
+        "input_text": "Lady Anne Monson, born on January 1, 1726 in the Kingdom of England, studied botany.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Lady Anne Monson, birthDate, January 1, 1726]:(Person, birthDate, Date)\n[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Place)\n[Lady Anne Monson, birthName, Lady Anne Monson]:(Person, birthName, Person)\n[Lady Anne Monson, studied, Botanist]:(Person, knownFor, TopicalConcept)"
+    },
+    {
+        "id": "3_Scientist_test_5",
+        "input_text": "Lady Anne Monson was born in Darlington on January 1, 1726, and died on February 18, 1776.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Lady Anne Monson, birthPlace, Darlington]\n[Lady Anne Monson, birthDate, January 1, 1726]\n[Lady Anne Monson, deathDate, February 18, 1776]"
+    },
+    {
+        "id": "3_Scientist_test_6",
+        "input_text": "Lady Anne Monson was born in the Kingdom of England in a town called Darlington which is in the United Kingdom.",
+        "response": "Here is the constructed knowledge graph based on the input text:\n\n[Lady Anne Monson, birthPlace, Darlington]:(Lady Anne Monson, birthPlace, Town)\n[Lady Anne Monson, birthPlace, United Kingdom]:(Lady Anne Monson, birthPlace, Country)\n[United Kingdom, country, Place]:(Country, country, Place)\n[United Kingdom, demonym, English]:(Place, demonym, EthnicGroup)\n[United Kingdom, language, English]:(Country, language, Language)\n[Darlington, country, United Kingdom]:(Place, country, Country)\n[Darlington, place, Town]:(Town, place, Place)\n[Lady Anne Monson, birthDate,?]:(Person, birthDate, Date)"
+    },
+    {
+        "id": "3_Scientist_test_7",
+        "input_text": "Lady Anne Monson, who was born in the Kingdom of England, lived there, and held British nationality, died on February 18th, 1776.",
+        "response": "[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Place)\n[Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Country)\n[Lady Anne Monson, deathDate, 1776-02-18]:(Person, deathDate, Date)\n[Lady Anne Monson, deathPlace, Kingdom of England]:(Person, deathPlace, Place)"
+    },
+    {
+        "id": "3_Scientist_test_8",
+        "input_text": "Born in Darlington on January 1st, 1726, Lady Anne Monson lived in the Kingdom of England holding British nationality.",
+        "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Place), [Lady Anne Monson, birthDate, January 1st, 1726]:(Person, birthDate, Date), [Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Place), [Lady Anne Monson, nationality, United Kingdom]:(Person, nationality, Country)"
+    },
+    {
+        "id": "3_Scientist_test_9",
+        "input_text": "Lady Anne Monson is from the Kingdom of England. She resided in India and was married to George Monson.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Place)\n[Lady Anne Monson, residence, India]:(Person, residence, Place)\n[Lady Anne Monson, spouse, George Monson]:(Person, spouse, Person)\n[Kingdom of England, country, Country]:(Place, country, Place)\n[India, country, Country]:(Place, country, Place)"
+    },
+    {
+        "id": "3_Scientist_test_10",
+        "input_text": "Lady Anne Monson whose nationality was with the Kingdom of England, had a residence in India and died on February 18, 1776.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Country)\n[Lady Anne Monson, residence, India]:(Person, residence, Place)\n[Lady Anne Monson, deathDate, February 18, 1776]:(Person, deathDate, Date)"
+    }
+]

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Film" id="1_Film_dev_1">
+      <text>Juliet Mills is the daughter of John Mills.</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>child</rel>
+          <obj>Juliet_Mills</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>child</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_2">
+      <text>Lionsgate offers broadcast programming service.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>service</rel>
+          <obj>Broadcast_programming</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>service</rel>
+          <obj>Service</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_3">
+      <text>One key person of Lionsgate is Jon Feltheimer.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>keyPerson</rel>
+          <obj>Jon_Feltheimer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_4">
+      <text>Max Benedict died in London.</text>
+      <triples>
+        <triple>
+          <sub>Max_Benedict</sub>
+          <rel>deathPlace</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieEditor</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_5">
+      <text>Max Benedict began his career in 1947.</text>
+      <triples>
+        <triple>
+          <sub>Max_Benedict</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1947</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieEditor</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_6">
+      <text>It's Great to Be Young is a 1956 film directed by Cyril Frankel.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>director</rel>
+          <obj>Cyril_Frankel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_dev_7">
+      <text>Hayley Mills is the child of John Mills.</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>child</rel>
+          <obj>Hayley_Mills</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>child</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_1">
+      <text>Nie Haisheng was born on October 13, 1964 in Zaoyang.</text>
+      <triples>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>birthPlace</rel>
+          <obj>Zaoyang</obj>
+        </triple>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>birthDate</rel>
+          <obj>1964-10-13</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_2">
+      <text>Alan Shepard, born in New Hampshire, spent 13017 minutes in space.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>timeInSpace</rel>
+          <obj>13017</obj>
+        </triple>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>birthPlace</rel>
+          <obj>New_Hampshire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>timeInSpace</rel>
+          <obj>number</obj>
+        </schema>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_3">
+      <text>Nie Haisheng was born on the 13th of October, 1964 and is from the People's Republic of China.</text>
+      <triples>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>nationality</rel>
+          <obj>People's_Republic_of_China</obj>
+        </triple>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>birthDate</rel>
+          <obj>1964-10-13</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_4">
+      <text>Buzz Aldrin graduated from Massachusetts Institute of Technology with a Sc.D in 1963 and was a crew member of Apollo 11.</text>
+      <triples>
+        <triple>
+          <sub>Buzz_Aldrin</sub>
+          <rel>mission</rel>
+          <obj>Apollo_11</obj>
+        </triple>
+        <triple>
+          <sub>Buzz_Aldrin</sub>
+          <rel>almaMater</rel>
+          <obj>Massachusetts_Institute_of_Technology</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>mission</rel>
+          <obj>SpaceMission</obj>
+        </schema>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_5">
+      <text>Leader, Joe Biden, and Buzz Aldrin are both American.</text>
+      <triples>
+        <triple>
+          <sub>Buzz_Aldrin</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Joe_Biden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Astronaut" id="2_Astronaut_dev_6">
+      <text>Alan Shepard died in California, the common place to find the gem Benitoite.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>gemstone</rel>
+          <obj>Benitoite</obj>
+        </triple>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>deathPlace</rel>
+          <obj>California</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>gemstone</rel>
+          <obj>Mineral</obj>
+        </schema>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>deathPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

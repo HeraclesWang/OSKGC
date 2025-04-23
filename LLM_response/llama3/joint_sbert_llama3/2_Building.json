@@ -1,0 +1,202 @@
+[
+  {
+    "id": "2_Building_test_1",
+    "input_text": "The College of William & Mary is the owner of the Alan B. Miller Hall, whose address is \"101 Ukrop Way\".",
+    "response": "[Alan B. Miller Hall, address, 101 Ukrop Way]:(ArchitecturalStructure, address, Place)\n[The College of William & Mary, owner, Alan B. Miller Hall]:(Organisation, owner, ArchitecturalStructure)"
+  },
+  {
+    "id": "2_Building_test_2",
+    "input_text": "103 Colmore Row, located at Colmore Row, was designed by the architect, John Madin.",
+    "response": "[103 Colmore Row, location, Colmore Row]:(Building, location, Place), [103 Colmore Row, architect, John Madin]:(Building, architect, Person)"
+  },
+  {
+    "id": "2_Building_test_3",
+    "input_text": "The College of WIlliam & Mary is the current owner of Alan B. Miller Hall and the Mason School of Business is the current tenants.",
+    "response": "Here is the output:\n\n[Alan B. Miller Hall, owner, The College of William & Mary]\n[The College of William & Mary, currentTenants, Mason School of Business]\n[Mason School of Business, location, Alan B. Miller Hall]"
+  },
+  {
+    "id": "2_Building_test_4",
+    "input_text": "Alan B. Miller Hall is owned by The College of William & Mary and located in Williamsburg (Virginia).",
+    "response": "[Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, Organisation)\n[Alan B. Miller Hall, location, Williamsburg]:(Building, location, Place)"
+  },
+  {
+    "id": "2_Building_test_5",
+    "input_text": "The construction of Alan B. Miller Hall, 101 Ukrop Way, began on 30th March 2007.",
+    "response": "[Alan B. Miller Hall, buildingStartDate, 2007-03-30]:(ArchitecturalStructure, buildingStartDate, Date)\n[Alan B. Miller Hall, address, 101 Ukrop Way]:(ArchitecturalStructure, address, Place)"
+  },
+  {
+    "id": "2_Building_test_6",
+    "input_text": "103 Colmore Row, designed by the architect John Madin is located in Birmingham.",
+    "response": "[103 Colmore Row, architect, John Madin]:(ArchitecturalStructure, architect, Person), [103 Colmore Row, location, Birmingham]:(ArchitecturalStructure, location, Place)"
+  },
+  {
+    "id": "2_Building_test_7",
+    "input_text": "Asser Levy Public Baths is located in Manhattan, which is a part of New York.",
+    "response": "[Asser Levy Public Baths, location, Manhattan]:(Building, location, Place), [Manhattan, isPartOf, New York]:(CityDistrict, isPartOf, City)"
+  },
+  {
+    "id": "2_Building_test_8",
+    "input_text": "300 North LaSalle is in Chicago part of DuPage County.",
+    "response": "[300 North LaSalle, location, Chicago]:(Building, location, City), [Chicago, isPartOf, DuPage County]:(City, isPartOf, County)"
+  },
+  {
+    "id": "2_Building_test_9",
+    "input_text": "Asser Levy Public Baths located at Avenue A, Manhattan. and constructed in 1904.",
+    "response": "[Asser Levy Public Baths, location, Manhattan]\n[Asser Levy Public Baths, address, Avenue A]\n[Asser Levy Public Baths, yearOfConstruction, 1904]"
+  },
+  {
+    "id": "2_Building_test_10",
+    "input_text": "20 Fenchurch Street, which has a floor count of 34, was completed in April 2014.",
+    "response": "[20 Fenchurch Street, floorCount, 34]:(Building, floorCount, number), [20 Fenchurch Street, completionDate, 2014-04]:(Building, completionDate, Date)"
+  },
+  {
+    "id": "2_Building_test_11",
+    "input_text": "The Mason School of Business is a tenant of Alan B. Miller Hall in the United States.",
+    "response": "[Alan B. Miller Hall, tenant, The Mason School of Business]\n[The Mason School of Business, location, Alan B. Miller Hall]\n[Alan B. Miller Hall, location, United States]"
+  },
+  {
+    "id": "2_Building_test_12",
+    "input_text": "Asilomar Conference Grounds is located at Asilomar Blvd and was constructed in 1913.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Asilomar Conference Grounds, location, Asilomar Blvd]\n[Asilomar Conference Grounds, yearOfConstruction, 1913]\n[Asilomar Conference Grounds, location, Building]\n\nNote: Since the input text does not provide the country information, I did not include it in the output. Also, the location of the building is mentioned as \"Asilomar Blvd\", which is a street address, so I used the \"location\" relation to link the building to the street address."
+  },
+  {
+    "id": "2_Building_test_13",
+    "input_text": "3Arena at the North Wall Quay is owned by Live Nation Entertainment.",
+    "response": "[3Arena, location, North Wall Quay]:(Venue, location, Place)\n[3Arena, owner, Live Nation Entertainment]:(Venue, owner, Company)"
+  },
+  {
+    "id": "2_Building_test_14",
+    "input_text": "Adisham Hall's architectural style is Tudor and Jacabian and the building is located in Haputale.",
+    "response": "[Adisham Hall, architecturalStyle, Tudor Revival architecture]:(Building, architecturalStyle, ArchitecturalStyle), [Adisham Hall, location, Haputale]:(Building, location, Town)"
+  },
+  {
+    "id": "2_Building_test_15",
+    "input_text": "Addis Ababa City Hall is located in the country of Ethiopia which is led by Hailemariam Desalegn.",
+    "response": "[Addis Ababa City Hall, location, Addis Ababa]:(Building, location, CapitalCity), [Addis Ababa, country, Ethiopia]:(CapitalCity, country, Country), [Ethiopia, leader, Hailemariam Desalegn]:(Place, leader, Person)"
+  },
+  {
+    "id": "2_Building_test_16",
+    "input_text": "Robert A. M. Stern is the architect of the Alan B. Miller Hall where the Mason School of Business is located.",
+    "response": "[Alan B. Miller Hall, architect, Robert A. M. Stern]:(Building, architect, Person)\n[Robert A. M. Stern, significantBuilding, Alan B. Miller Hall]:(Person, significantBuilding, Building)"
+  },
+  {
+    "id": "2_Building_test_17",
+    "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall, which was completed on June 1, 2009.",
+    "response": "[Mason School of Business, currentTenants, Alan B. Miller Hall]:(Organisation, currentTenants, ArchitecturalStructure), [Alan B. Miller Hall, completionDate, June 1, 2009]:(ArchitecturalStructure, completionDate, Date)"
+  },
+  {
+    "id": "2_Building_test_18",
+    "input_text": "The Mason School of Business is located in the United States, and are the current tenants of Alan B. Miller Hall.",
+    "response": "[Mason School of Business, location, United States]\n[Mason School of Business, currentTenants, Alan B. Miller Hall]\n[Alan B. Miller Hall, location,?] (Note: The location of Alan B. Miller Hall is not specified in the input text, so it cannot be determined.)"
+  },
+  {
+    "id": "2_Building_test_19",
+    "input_text": "Alan B. Miller Hall in Virginia is owned by The College of William & Mary.",
+    "response": "[AAlan B. Miller Hall, location, Virginia]:(Building, location, State), [Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, Organisation)"
+  },
+  {
+    "id": "2_Building_test_20",
+    "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall which is located in Virginia.",
+    "response": "Here is the output based on the input text:\n\n[Alan B. Miller Hall, location, Virginia]\n[Alan B. Miller Hall, tenant, The Mason School of Business]\n[The Mason School of Business, currentTenants, Alan B. Miller Hall]\n\nNote that I've followed the ontology schema and extracted triples based on the given relations and entity types. Let me know if you have any further questions or concerns!"
+  },
+  {
+    "id": "2_Building_test_21",
+    "input_text": "Robert A. M. Stern is the architect of Alan B. Miller Hall of which The Mason School of Business is the current tenant.",
+    "response": "[Alan B. Miller Hall, architect, Robert A. M. Stern]:(ArchitecturalStructure, architect, Person)\n[Alan B. Miller Hall, currentTenants, The Mason School of Business]:(ArchitecturalStructure, currentTenants, Organisation)\n[The Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, ArchitecturalStructure)"
+  },
+  {
+    "id": "2_Building_test_22",
+    "input_text": "Alan B. Miller Hall is at 101 Ukrop Way and was completed on 1 June 2009.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Alan B. Miller Hall, location, 101 Ukrop Way]\n[Alan B. Miller Hall, completionDate, 1 June 2009]\n\nNote: I assumed \"Alan B. Miller Hall\" is an ArchitecturalStructure, \"101 Ukrop Way\" is a Place, and \"1 June 2009\" is a Date."
+  },
+  {
+    "id": "2_Building_test_23",
+    "input_text": "Alan B. Miller Hall, which was inaugurated on 2009-10-02, has the address \"101 Ukrop Way\".",
+    "response": "Here is the output:\n\n[Alan B. Miller Hall, address, 101 Ukrop Way]:(Building, address, Place)\n[Alan B. Miller Hall, inaugurationDate, 2009-10-02]:(ArchitecturalStructure, inaugurationDate, Date)"
+  },
+  {
+    "id": "2_Building_test_24",
+    "input_text": "Alan B. Miller Hall which is owned by the College of William & Mary was completed on 1st June 2009.",
+    "response": "Here is the output in the required format:\n\n[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, Organisation)\n[Alan B. Miller Hall, completionDate, 1st June 2009]:(ArchitecturalStructure, completionDate, Date)"
+  },
+  {
+    "id": "2_Building_test_25",
+    "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall in Williamsburg (Virginia).",
+    "response": "[Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, Organisation), [Alan B. Miller Hall, location, Williamsburg]:(ArchitecturalStructure, location, City), [Williamsburg, country, Country]:(Place, country, Country)"
+  },
+  {
+    "id": "2_Building_test_26",
+    "input_text": "The College of William & Mary owns the Alan B. Miller Hall and the Chancellor of the College is Robert Gates.",
+    "response": "[Alan B. Miller Hall, owner, College of William & Mary]\n[College of William & Mary, chancellor, Robert Gates]"
+  },
+  {
+    "id": "2_Building_test_27",
+    "input_text": "Alan B. Miller Hall in Virginia was completed on 1st June 2009.",
+    "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, State), [Alan B. Miller Hall, completionDate, 1st June 2009]:(Building, completionDate, Date)"
+  },
+  {
+    "id": "2_Building_test_28",
+    "input_text": "Ampara Hospital is located in Eastern Province (Sri Lanka), Sri Lanka.",
+    "response": "[Ampara Hospital, location, Eastern Province]\n[Eastern Province, country, Sri Lanka]\n[Sri Lanka, capital, Sri Jayawardenepura Kotte]\n\nNote: The output is generated based on the ontology schema and the input text. The relations used are \"location\" and \"country\" from the schema, and \"capital\" is inferred from the hierarchy."
+  },
+  {
+    "id": "2_Building_test_29",
+    "input_text": "Ampara Hospital is in Sri Lanka, whose leader is Ranil Wickremesinghe.",
+    "response": "[Ampara Hospital, location, Sri Lanka]\n[Sri Lanka, leader, Ranil Wickremesinghe]"
+  },
+  {
+    "id": "2_Building_test_30",
+    "input_text": "Ampara Hospital is located in the Ampara District in Sri Lanka.",
+    "response": "[Ampara Hospital, location, Ampara District], [Ampara District, country, Sri Lanka], [Sri Lanka, capital, Sri Jayawardenepura Kotte]"
+  },
+  {
+    "id": "2_Building_test_31",
+    "input_text": "Ampara Hospital, with a bed count of 476, is located in Sri Lanka.",
+    "response": "[Ampara Hospital, bedCount, 476]:(Hospital, bedCount, number)\n[Ampara Hospital, location, Sri Lanka]:(Hospital, location, Country)"
+  },
+  {
+    "id": "2_Building_test_32",
+    "input_text": "The Ampara Hospital is located in Ampara, Sri Lanka.",
+    "response": "[Ampara Hospital, location, Ampara]:(Building, location, Place), [Ampara, country, Sri Lanka]:(Place, country, Country)"
+  },
+  {
+    "id": "2_Building_test_33",
+    "input_text": "Sri Jayawardenepura Kotte is the capital of Sri Lanka, where Ampara Hospital is located.",
+    "response": "[Sri Jayawardenepura Kotte, capital, Sri Lanka]\n[Sri Lanka, capital, Sri Jayawardenepura Kotte]\n[Ampara Hospital, location, Sri Jayawardenepura Kotte]\n[Sri Lanka, country, Sri Lanka]"
+  },
+  {
+    "id": "2_Building_test_34",
+    "input_text": "103 Colmore Row actually on Colmore Row has 23 floors.",
+    "response": "[103 Colmore Row, location, Colmore Row]:(Building, location, Place), [103 Colmore Row, floorCount, 23]:(Building, floorCount, number)"
+  },
+  {
+    "id": "2_Building_test_35",
+    "input_text": "103 Colmore Row was designed by John Madin, born in Birmingham.",
+    "response": "[103 Colmore Row, architect, John Madin]:(ArchitecturalStructure, architect, Person), [John Madin, birthPlace, Birmingham]:(Person, birthPlace, Place)"
+  },
+  {
+    "id": "2_Building_test_36",
+    "input_text": "103 Colmore Row at Colmore Row was completed in 1976.",
+    "response": "[103 Colmore Row, completionYear, 1976]\n[103 Colmore Row, location, Colmore Row]\n[Colmore Row, location, 103 Colmore Row]\nNote: The output format is based on the ontology schema provided, where the subject is the ArchitecturalStructure (103 Colmore Row), and the object is the Year (1976) for the relation \"completionYear\". The second triple is an instance of the relation \"location\" between the ArchitecturalStructure 103 Colmore Row and the Place Colmore Row. The third triple is an instance of the relation \"location\" between the Place Colmore Row and the ArchitecturalStructure 103 Colmore Row, which is an inverse of the second triple."
+  },
+  {
+    "id": "2_Building_test_37",
+    "input_text": "Architect John Madin, designed 103 Colmore Row, located on Colmore Row, in Birmingham, England.",
+    "response": "[103 Colmore Row, architect, John Madin]:(Building, architect, Architect)\n[103 Colmore Row, location, Colmore Row]:(ArchitecturalStructure, location, Place)\n[103 Colmore Row, location, Birmingham]:(ArchitecturalStructure, location, Place)\n[103 Colmore Row, location, England]:(ArchitecturalStructure, country, Place)"
+  },
+  {
+    "id": "2_Building_test_38",
+    "input_text": "103 Colmore Row, Birmingham is a building with 23 floors.",
+    "response": "[103 Colmore Row, Birmingham, height, null]:(Building, height, null)\n[103 Colmore Row, Birmingham, floorCount, 23]:(Building, floorCount, number)"
+  },
+  {
+    "id": "2_Building_test_39",
+    "input_text": "John Madin was an architect from Birmingham who designed 103 Colmore Row.",
+    "response": "[103 Colmore Row, architect, John Madin]:(ArchitecturalStructure, architect, Person)\n[103 Colmore Row, location, Birmingham]:(ArchitecturalStructure, location, Place)"
+  },
+  {
+    "id": "2_Building_test_40",
+    "input_text": "There are 23 floors at 103 Colmore Row, Birmingham, England.",
+    "response": "[103 Colmore Row, Birmingham, England, floorCount, 23]:(Building, floorCount, number)"
+  }
+]

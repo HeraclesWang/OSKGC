@@ -1,0 +1,257 @@
+[
+    {
+        "id": "3_MeanOfTransportation_test_1",
+        "input_text": "AIDAluna is powered by United States based Caterpillar Inc. Douglas R. Oberhelman is a key person at Caterpillar Inc.",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]\n[United States, country, Country]\n[Caterpillar Inc., country, United States]\n[Caterpillar Inc., keyPerson, Douglas R. Oberhelman]\n[AIDAluna, poweredBy, Organisation]\n[Caterpillar Inc., keyPerson, Person]\nNote: The output is in the format of [Entity, relation, Entity/Object]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_2",
+        "input_text": "Made by Dodge, the 1955 Dodge has a V8 engine and a 120 inch wheelbase.",
+        "response": "[Dodge, manufacturer, Company], [1955 Dodge, engine, V8], [1955 Dodge, wheelbase, 120]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_3",
+        "input_text": "The 1955 Dodge, also called the Dodge Suburban, has a V8 engine and a 3-speed automatic transmission.",
+        "response": "[Dodge Suburban, engine, V8 engine]:(Automobile, engine, Engine), [Dodge Suburban, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_4",
+        "input_text": "The Acura TLX is related to the Honda Accord which is made by Honda. Acura is a division of the Honda.",
+        "response": "[Acura TLX, relatedMeanOfTransportation, Honda Accord]:(Automobile, relatedMeanOfTransportation, Automobile),(Acura TLX, manufacturer, Honda),(Automobile, manufacturer, Company),(Acura, owner, Honda),(Company, division, Company),(Acura TLX, bodyStyle, TopicalConcept),(Acura TLX, class, TopicalConcept),(Acura TLX, modelYears, Year),(Acura TLX, country, Place),(Automobile, country, Place),(Acura TLX, assembly, Place),(Automobile, assembly, Place),(Acura TLX, transmission, Device),(Automobile, transmission, Device),(Acura TLX, engine, Device),(Automobile, engine, Device),(Acura TLX, engineSize, number),(Automobile, engineSize, number),(Acura TLX, length, number),(Automobile, length, number),(Acura TLX, shipDraft, number),(Automobile, shipDraft, number),(Acura TLX, shipBeam, number),(Automobile, shipBeam, number),(Acura TLX, diameter, number),(Automobile, diameter, number),(Acura TLX, cylinderCount, number),(Automobile, cylinderCount, number),("
+    },
+    {
+        "id": "3_MeanOfTransportation_test_5",
+        "input_text": "The 1955 Dodge has a V8 engine, a hardtop and is also called the Dodge Custom Royal.",
+        "response": "[Dodge, bodyStyle, TopicalConcept], [Dodge, modelYears, 1955], [Dodge, engine, AutomobileEngine], [Dodge, alternativeName, Dodge Custom Royal]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_6",
+        "input_text": "Finland is the builder if the icebreaker called the Aleksey Chirikov. Both Sauli Niinistö and Juha Sipilä are leaders in Finland.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Aleksey Chirikov, builder, Finland]\n[Finland, leader, Sauli Niinistö]\n[Finland, leader, Juha Sipilä]\n[Aleksey Chirikov, countryOrigin, Finland]\n\nNote that the output is in the same format as the example, with each triple consisting of a subject, a relation, and an object. The subject and object are entities from the ontology schema, and the relation is a relation from the ontology schema that connects the subject and object."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_7",
+        "input_text": "The AIDAstella is 253260 mm long with a 32.2 length ship beam. Its maiden voyage was 3/17/2013.",
+        "response": "[AIDAstella, length, 253260]:(MeanOfTransportation, length, number), [AIDAstella, shipBeam, 32.2]:(MeanOfTransportation, shipBeam, number), [AIDAstella, maidenVoyage, 2013-03-17]:(MeanOfTransportation, maidenVoyage, Date)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_8",
+        "input_text": "Delta II, which is comparable with the rocket Antares, originates from the United States and took off from Cape Canaveral Air Force Station Space Launch Complex 17.",
+        "response": "Here is the output based on the input text:\n\n[Delta II, comparable, Antares]:(MeanOfTransportation, comparable, MeanOfTransportation)\n[Delta II, countryOrigin, United States]:(MeanOfTransportation, countryOrigin, Country)\n[Delta II, launchSite, Cape Canaveral Air Force Station Space Launch Complex 17]:(MeanOfTransportation, launchSite, ArchitecturalStructure)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_9",
+        "input_text": "The icebreaker, Aleksey Chirikov, built by Finland, has a ship beam of 21.2 m, and the builder is in Helsinki.",
+        "response": "[Aleksey Chirikov, shipBeam, 21.2]:(MeanOfTransportation, shipBeam, number), [Aleksey Chirikov, builder, Helsinki]:(MeanOfTransportation, builder, Place), [Aleksey Chirikov, countryOrigin, Finland]:(MeanOfTransportation, countryOrigin, Place)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_10",
+        "input_text": "Acura is a division of the Honda who manufactured the Acura TLX which has a V6 engine.",
+        "response": "[Acura, manufacturer, Honda]:(Company, division, Organisation), [Acura TLX, manufacturer, Honda]:(MeanOfTransportation, manufacturer, Organisation), [Acura TLX, engine, V6]:(MeanOfTransportation, engine, Device)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_11",
+        "input_text": "Honda is the manufacturer of the Acura TLX which has a Honda K engine. Acura is a division of the Honda.",
+        "response": "[Honda, manufacturer, Acura TLX]:(Automobile, manufacturer, Organisation), [Acura TLX, engine, Honda K engine]:(Automobile, engine, Engine), [Acura, parentCompany, Honda]:(Organisation, parentCompany, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_12",
+        "input_text": "The Honda Accord is related to the Acura TLX which is made by Honda which has an Acura division.",
+        "response": "[Honda Accord, relatedMeanOfTransportation, Acura TLX]\n[Honda Accord, manufacturer, Honda]\n[Acura TLX, manufacturer, Honda]\n[Honda, division, Acura]\n\nNote: I've only extracted the triples that match the given ontology schema and the example output format."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_13",
+        "input_text": "Acura is a division of the Honda. which manufactures the Honda K engine used in the Acura TLX.",
+        "response": "[Acura, manufacturer, Honda]:(Company, division, Organisation)\n[Honda K, manufacturer, Honda]:(Engine, manufacturer, Organisation)\n[Acura TLX, engine, Honda K]:(MeanOfTransportation, engine, Device)\n[Honda K, usedIn, Acura TLX]:(Engine, usedIn, MeanOfTransportation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_14",
+        "input_text": "Acura is a division of Honda which makes the Acura TLX. The engine size of the Acura TLX is 3.5 litres.",
+        "response": "[Acura, division, Honda]:(Company, division, Organisation)\n[Acura, makes, Acura TLX]:(Company, makes, MeanOfTransportation)\n[Acura TLX, engineSize, 3.5]:(MeanOfTransportation, engineSize, number)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_15",
+        "input_text": "The Acura TLX has a Honda J engine which is manufactured by Honda, a division of which, is Acura.",
+        "response": "Here is the output based on the input text:\n\n[Acura TLX, manufacturer, Honda]\n[Acura TLX, engine, Honda J]\n[Acura TLX, manufacturer, Acura]\n\nNote that the output format follows the example, with no additional text or explanations."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_16",
+        "input_text": "Acura is a division of the Honda. Honda is the manufacturer of the Acura TLX which has a 2.4 litre engine.",
+        "response": "[Acura, manufacturer, Honda]:(Automobile, manufacturer, Company), [Acura TLX, engine, 2.4 litre]:(Automobile, engine, Engine), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_17",
+        "input_text": "Acura is a division of the manufacturer, Honda, who produced the Acura TLX with an Inline-four engine.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company), [Acura TLX, engine, Inline-four]:(Automobile, engine, Engine), [Honda, division, Acura]:(Company, division, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_18",
+        "input_text": "Honda makes the Acura TLX which holds a Honda J engine. A division of Honda is Acura.",
+        "response": "Here is the constructed knowledge graph based on the input text:\n\n[Honda, manufacturer, Acura TLX]:(Automobile, manufacturer, Company)\n[Acura TLX, engine, Honda J]:(Automobile, engine, Device)\n[Acura, division, Honda]:(Organisation, division, Organisation)\n\nNote that I followed the example output format, and the triples are constructed based on the given ontology schema and the input text."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_19",
+        "input_text": "Honda makes the Acura TLX which has a Honda K engine and is related to the Honda Accord.",
+        "response": "[Honda, manufacturer, Organisation], [Acura TLX, manufacturer, Organisation], [Acura TLX, engine, Honda K], [Acura TLX, relatedMeanOfTransportation, Honda Accord]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_20",
+        "input_text": "The DeSoto Custom is related to the Dodge Coronet and 1955 Dodge, and is made by the DeSoto co.",
+        "response": "[DeSoto Custom, relatedMeanOfTransportation, Dodge Coronet]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile), [DeSoto Custom, manufacturer, DeSoto co]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_21",
+        "input_text": "The 1955 Dodge, also called the Dodge Coronet, has a hardtop and a V8 engine.",
+        "response": "[Dodge Coronet, bodyStyle, TopicalConcept], [Dodge Coronet, engine, Device], [Dodge Coronet, engineSize, number]\n\nNote: The ontology schema provided is quite extensive, and it's not possible to cover all the possible relationships and entities that can be extracted from the input text. However, the provided example text and output serve as a starting point for this task."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_22",
+        "input_text": "The 1955 Dodge is manufactured by Dodge and related to the Plymouth Plaza and the DeSoto Custom.",
+        "response": "Here is the output:\n\n[Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Company)\n[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)\n\nLet me know if you have any further questions or if you'd like me to explain my reasoning!"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_23",
+        "input_text": "The 1955 Dodge and the Plymouth Plaza and the DeSoto Custom are related means of transport in that they are all cars. Plymouth are the manufacturers of the Plymouth Plaza.",
+        "response": "[1955 Dodge, manufacturer, Plymouth]:(Automobile, manufacturer, Company)\n[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)\n[Plymouth Plaza, manufacturer, Plymouth]:(Automobile, manufacturer, Company)\n[Plymouth Plaza, bodyStyle, CarBodyStyle]:(Automobile, bodyStyle, TopicalConcept)\n[DeSoto Custom, bodyStyle, CarBodyStyle]:(Automobile, bodyStyle, TopicalConcept)\n[DeSoto Custom, manufacturer, Plymouth]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_24",
+        "input_text": "The 1955 Dodge was manufactured by Dodge and the DeSoto Custom which was related to the Dodge Coronet, was a related means of transportation.",
+        "response": "[Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Company), [1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(MeanOfTransportation, relatedMeanOfTransportation, MeanOfTransportation), [DeSoto Custom, relatedMeanOfTransportation, Dodge Coronet]:(MeanOfTransportation, relatedMeanOfTransportation, MeanOfTransportation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_25",
+        "input_text": "The 1955 Dodge, with an alternative name of Dodge coronet, has a V8 engine and 3-speed automatic transmission.",
+        "response": "[1955 Dodge, alternativeName, Dodge Coronet]\n[1955 Dodge, engine, V8]\n[1955 Dodge, transmission, 3-speed automatic]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_26",
+        "input_text": "The 1955 Dodge also known as the Dodge Custom Royal has a 3-speed automatic transmission and a V8 engine.",
+        "response": "[Dodge Custom Royal, transmission, 3-speed automatic]:(MeanOfTransportation, transmission, Transmission), [Dodge Custom Royal, engine, V8]:(MeanOfTransportation, engine, Engine)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_27",
+        "input_text": "The 1955 Dodge is related to the DeSoto Custom which is made by the DeSoto Co. Two related vehicles are the 1955 Dodge and the Plymouth Plaza.",
+        "response": "[Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [Dodge, manufacturer, DeSoto Co.]:(Automobile, manufacturer, Company), [Dodge, bodyStyle, TopicalConcept]:(Automobile, bodyStyle, CarBodyStyle), [Dodge, modelYears, 1955]:(Automobile, modelYears, Year), [Dodge, comparable, Plymouth Plaza]:(Automobile, comparable, Automobile)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_28",
+        "input_text": "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a hardtop.",
+        "response": "Here is the output based on the input text:\n\n[1955 Dodge, engine, V8 engine]:(Automobile, engine, Engine)\n[1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)\n[1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_29",
+        "input_text": "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a station wagon style body.",
+        "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, Engine)\n[1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Transmission)\n[1955 Dodge, bodyStyle, station wagon]:(Automobile, bodyStyle, CarBodyStyle)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_30",
+        "input_text": "The 1955 Dodge is manufactured by Dodge and is a related means of transport to the DeSoto Custom and the Chrysler Newport.",
+        "response": "[1955 Dodge, manufacturer, Dodge]:(Automobile, manufacturer, Company)\n[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)\n[1955 Dodge, relatedMeanOfTransportation, Chrysler Newport]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_31",
+        "input_text": "The DeSoto Custom was manufactured at DeSoto and is a related means of transport to the 1955 Dodge and the Chrysler Newport.",
+        "response": "[DeSoto Custom, manufacturer, DeSoto]:(Automobile, manufacturer, Company)\n[DeSoto Custom, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile)\n[DeSoto Custom, relatedMeanOfTransportation, Chrysler Newport]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_32",
+        "input_text": "Caterpillar Inc. was founded in the United States and is located in Peoria (Illinois) and their engine powers the AIDAluna.",
+        "response": "[Caterpillar Inc., foundedBy, Person], [Caterpillar Inc., location, Peoria], [Caterpillar Inc., country, United States], [AIDAluna, poweredBy, Caterpillar Inc.]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_33",
+        "input_text": "Rostock based AIDA Cruises owns the AIDAluna which has a Caterpillar Inc. engine.",
+        "response": "Here is the output based on the input text:\n\n[AIDAluna, manufacturer, AIDA Cruises]:(Ship, manufacturer, Organisation)\n[AIDAluna, engine, Caterpillar Inc.]:(Ship, engine, Device)\n[AIDAluna, owner, AIDA Cruises]:(Ship, owner, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_34",
+        "input_text": "Caterpillar Inc. of Peoria (Illinois) includes key figure Douglas R. Oberhelman and powers AIDAluna.",
+        "response": "[Caterpillar Inc., keyPerson, Douglas R. Oberhelman]:(Company, keyPerson, Person), [Caterpillar Inc., location, Peoria]:(Company, location, Place), [Caterpillar Inc., powers, AIDAluna]:(Company, powers, MeanOfTransportation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_35",
+        "input_text": "Located in Illinois with a key person called Douglas R. Oberhelman is the Caterpillar Co. AIDAluna is powered by Caterpillar Inc.",
+        "response": "[Caterpillar Co., keyPerson, Douglas R. Oberhelman]:(Company, keyPerson, Person), [Caterpillar Co., location, Illinois]:(Company, location, Place), [AIDAluna, poweredBy, Caterpillar Inc.]:(MeanOfTransportation, poweredBy, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_36",
+        "input_text": "AIDAluna is powered by Caterpillar Inc., who are from Peoria (Illinois). AIDA Cruises is the owner of the AIDAluna.",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]\n[AIDAluna, manufacturer, AIDA Cruises]\n[AIDAluna, countryOrigin, Illinois]\n[AIDAluna, location, Peoria]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_37",
+        "input_text": "The AIDAluna had its maiden voyage on the 22nd of March 2009. It is powered by a Caterpillar Inc. engine and is 2520000 mm in length.",
+        "response": "Here is the output:\n\n[AIDAluna, maidenVoyage, 2009-03-22]:(MeanOfTransportation, maidenVoyage, Date)\n[AIDAluna, poweredBy, Caterpillar Inc.]:(MeanOfTransportation, poweredBy, Organisation)\n[AIDAluna, length, 2520000]:(MeanOfTransportation, length, number)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_38",
+        "input_text": "AIDAluna is powered by Caterpillar Inc. which was founded in California and is located in Peoria (Illinois).",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]\n[California, foundedBy, Caterpillar Inc.]\n[Caterpillar Inc., location, Peoria]\n[Caterpillar Inc., foundedIn, California]\n[Peoria, location, Caterpillar Inc.]\n\nNote: The output format is in the format of [Entity, relation, Entity] and [Entity, relation, Entity] as per the example provided."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_39",
+        "input_text": "Caterpillar Inc. was founded in California, United States That company's engine powered the AIDAluna.",
+        "response": "[Caterpillar Inc., location, California]:(Company, location, Place), [Caterpillar Inc., country, United States]:(Company, country, Country), [AIDAluna, engine, Caterpillar Inc.]:(MeanOfTransportation, engine, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_40",
+        "input_text": "AIDA Cruises, located in Germany, is the owner of the AIDAluna which is powered by Caterpillar Inc.",
+        "response": "[AIDAluna, owner, AIDA Cruises]:(Ship, owner, Organisation), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_41",
+        "input_text": "The AIDAluna, christened on April 4, 2004, is 252000 millimetres long and powered by the Caterpillar Inc. engine.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[AIDAluna, length, 252000]:(MeanOfTransportation, length, number)\n[AIDAluna, poweredBy, Caterpillar Inc.]:(MeanOfTransportation, poweredBy, Organisation)\n[AIDAluna, christeningDate, 2004-04-04]:(MeanOfTransportation, christeningDate, Date)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_42",
+        "input_text": "AIDA Cruises is the owner of the AIDAluna which is powered by Caterpillar Inc. found in the United States.",
+        "response": "[AIDAluna, owner, AIDA Cruises]:(Ship, owner, Organisation), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Organisation), [AIDAluna, country, United States]:(Ship, country, Place)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_43",
+        "input_text": "The AIDAluna service began March 22, 2009. The AIDAluna is powered by Caterpillar Inc. and has a length of 252000 millimetres.",
+        "response": "Here is the output in the required format:\n\n[AIDAluna, poweredBy, Caterpillar Inc.]\n[AIDAluna, length, 252000]\n[AIDAluna, activeYearsStartDate, 2009-03-22]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_44",
+        "input_text": "The Alvis Speed 25, with a straight-six engine, was made by the Alvis Car and Engineering Company founded in Coventry.",
+        "response": "Here is the output based on the input text:\n\n[Alvis Speed 25, manufacturer, Alvis Car and Engineering Company]:(Automobile, manufacturer, Company)\n[Alvis Speed 25, engine, Engine]\n[Alvis Speed 25, engineType, straight-six]\n[Alvis Speed 25, founded, Alvis Car and Engineering Company]\n[Alvis Car and Engineering Company, location, Coventry]\n[Alvis Car and Engineering Company, founded,?]\n\nNote: The founded date of Alvis Car and Engineering Company is not specified in the input text, so it is represented as a question mark in the output."
+    },
+    {
+        "id": "3_MeanOfTransportation_test_45",
+        "input_text": "Pontiac makes the Pontiac Rageous coupé at its plant in Detroit.",
+        "response": "[Pontiac, manufacturer, Organisation], [Pontiac Rageous, manufacturer, Organisation], [Pontiac Rageous, bodyStyle, CarBodyStyle], [Pontiac Rageous, assembly, Place], [Pontiac Rageous, countryOrigin, Country]"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_46",
+        "input_text": "The wheelbase of the Abarth 1000 GT Coupé is 2160 millimetres. Its production started in the Year 1958.",
+        "response": "[Abarth 1000 GT Coupé, wheelbase, 2160 millimetres]:(Automobile, wheelbase, number), [Abarth 1000 GT Coupé, productionStartYear, 1958]:(Automobile, productionStartYear, Year)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_47",
+        "input_text": "The Abarth 1000 GT Coupé has a Coupé body style with a straight-four engine and a wheelbase of 2160 millimetres.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, engine, straight-four]:(Automobile, engine, Engine), [Abarth 1000 GT Coupé, wheelbase, 2160]:(Automobile, wheelbase, number)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_48",
+        "input_text": "The Pontiac Rageous coupé was last assembled in Michigan in 1997.",
+        "response": "[Pontiac Rageous, assembly, Michigan]:(Automobile, assembly, Place), [Pontiac Rageous, modelYears, 1997]:(Automobile, modelYears, Year)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_49",
+        "input_text": "The Abarth 1000 GT, which ended production in 1958, has a Coupé body style and a wheelbase of 2160 mms.",
+        "response": "[Abarth 1000 GT, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT, modelYears, 1958]:(Automobile, modelYears, Year), [Abarth 1000 GT, wheelbase, 2160]:(Automobile, wheelbase, number)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_50",
+        "input_text": "The A-Rosa Luna is powered by an MTU Friedrichshafen engine. Rolls-Royce Power Systems is the parent company of MTU Friedrichshafen, and Rolls-Royce Holdings is its owner.",
+        "response": "[A-Rosa Luna, poweredBy, MTU Friedrichshafen]:(MeanOfTransportation, poweredBy, Organisation), [A-Rosa Luna, engine, MTU Friedrichshafen]:(MeanOfTransportation, engine, Device), [MTU Friedrichshafen, owner, Rolls-Royce Holdings]:(Organisation, owner, Organisation), [MTU Friedrichshafen, parentCompany, Rolls-Royce Power Systems]:(Organisation, parentCompany, Organisation)"
+    },
+    {
+        "id": "3_MeanOfTransportation_test_51",
+        "input_text": "MTU Friedrichshafen of Friedrichshafen, owned by Rolls-Royce Holdings, manufactures the A-Rosa Luna engine.",
+        "response": "Here is the output in the required format:\n\n[A-Rosa Luna engine, manufacturer, MTU Friedrichshafen]:(Engine, manufacturer, Organisation)\n[A-Rosa Luna engine, owner, Rolls-Royce Holdings]:(Engine, owner, Organisation)"
+    }
+]

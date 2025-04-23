@@ -1,0 +1,282 @@
+[
+    {
+        "id": "3_WrittenWork_test_1",
+        "sent": "John Cowper Powys, born in Shirley (Derbyshire), is known for works such as Wolf Solent and A Glastonbury Romance.",
+        "response": "{birthPlace}{John Cowper Powys, {Shirley, {Derbyshire}}"
+    },
+    {
+        "id": "3_WrittenWork_test_2",
+        "sent": "Native Americans and Alcatraz Versus the Evil Librarians are part of the United States; which Barack Obama is the president of.",
+        "response": "[partOf]{Native Americans, United States}, [partOf]{Alcatraz Versus the Evil Librarians, United States}, [president]{United States, Barack Obama}"
+    },
+    {
+        "id": "3_WrittenWork_test_3",
+        "sent": "The printed book Alcatraz Versus the Evil Librarians has 320 pages and an OCLC number of 78771100.",
+        "response": "{Alcatraz Versus the Evil Librarians}, [numberOfPages]{Alcatraz Versus the Evil Librarians, 320}, {oclcNumber}{Alcatraz Versus the Evil Librarians, {78771100}}"
+    },
+    {
+        "id": "3_WrittenWork_test_4",
+        "sent": "Brandon Sanderson, born in Lincoln (Nebraska), authored Alcatraz Versus the Evil Librarians and Alcatraz Versus the Scrivener's Bones.",
+        "response": "[author]{Brandon Sanderson, Alcatraz Versus the Evil Librarians}, [author]{Brandon Sanderson, Alcatraz Versus the Scrivener's Bones}, [birthPlace]{Brandon Sanderson, Lincoln}"
+    },
+    {
+        "id": "3_WrittenWork_test_5",
+        "sent": "John Cowper Powys was born in Shirley (Derbyshire) and is the author of Wolf Solent which preceded A Glastonbury Romance.",
+        "response": "[author]{John Cowper Powys, Wolf Solent}, [author]{John Cowper Powys, A Glastonbury Romance}, [precededBy]{A Glastonbury Romance, Wolf Solent}"
+    },
+    {
+        "id": "3_WrittenWork_test_6",
+        "sent": "Alcatraz Versus the Evil Librarians is from The United States where one of the ethnic groups are African Americans and the language used is English.",
+        "response": "[location]{Alcatraz, The United States}, [author]{Alcatraz Versus the Evil Librarians}, [language]{Alcatraz Versus the Evil Librarians, English}, [ethnicGroup]{The United States, African Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_7",
+        "sent": "A Long Long Way was written in Ireland and published by Penguin Random House, the parent company of Viking Press.",
+        "response": "[author]{A Long Long Way, Penguin Random House}, [parentCompany]{Penguin Random House, Viking Press}"
+    },
+    {
+        "id": "3_WrittenWork_test_8",
+        "sent": "Native Americans are one of the ethnic groups of the United States where A Wizard of Mars, which is published in English, originates from.",
+        "response": "[ethnicGroup]{Native Americans, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_9",
+        "sent": "In the United States, English is the language spoken and one of the ethnic groups is Asian Americans. It is also the country where A Fortress of Grey Ice is from.",
+        "response": "[originFrom]{A Fortress of Grey Ice, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_10",
+        "sent": "In the United States, English is the language, Asian Americans are an ethnic group and the book Alcatraz versus the Evil Librarians was written.",
+        "response": "Here is the output:\n\n[writtenBy]{Alcatraz versus the Evil Librarians, [author]}\n[locatedIn]{United States, [author]}\n[referentOf]{Asian Americans, [EthnicGroup]}"
+    },
+    {
+        "id": "3_WrittenWork_test_11",
+        "sent": "A Wizard of Mars originates from the United States where the leader is called President and Native Americans live.",
+        "response": "[location]{A Wizard of Mars, United States}, [leaderTitle]{A Wizard of Mars, President}"
+    },
+    {
+        "id": "3_WrittenWork_test_12",
+        "sent": "The book \"Alcatraz Versus the Evil Librarians\" is printed with 320 pages and has an ISBN number of 0-439-92550-9.",
+        "response": "[isbnNumber]{0-439-92550-9}, [numberOfPages]{320}"
+    },
+    {
+        "id": "3_WrittenWork_test_13",
+        "sent": "John Cowper Powys was born in Shirley (Derbyshire). He wrote Owen Glendower and A Glastonbury Romance.",
+        "response": "[bornIn]{John Cowper Powys, Shirley}, [author]{Owen Glendower, John Cowper Powys}, [author]{A Glastonbury Romance, John Cowper Powys}, [residence]{John Cowper Powys, Derbyshire}"
+    },
+    {
+        "id": "3_WrittenWork_test_14",
+        "sent": "In the United States the title of the leader is the President. In this country Native Americans are one of the ethnic groups and A severed Wasp originates from.",
+        "response": "[originatesFrom]{A severed Wasp, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_15",
+        "sent": "A Fortress of Grey Ice was written by J. V. Jones and is found in hardcover with the OCLC number 51969173.",
+        "response": "[author]{A Fortress of Grey Ice, J. V. Jones}, [oclcNumber]{A Fortress of Grey Ice, OCLC 51969173}"
+    },
+    {
+        "id": "3_WrittenWork_test_16",
+        "sent": "1634: The Ram Rebellion was preceded by 1634: The Galileo Affair, which is available in English. English is spoken in Great Britain.",
+        "response": "[precededBy]{1634: The Ram Rebellion, 1634: The Galileo Affair}"
+    },
+    {
+        "id": "3_WrittenWork_test_17",
+        "sent": "Administrative Science Quarterly is abbreviated to Admin. Sci. Q. and has the LCCN number 57059226. It comes under the academic discipline of Management.",
+        "response": "[abbreviation]{Administrative Science Quarterly, Admin. Sci. Q.}, [academicDiscipline]{Administrative Science Quarterly, Management}, [LCCN_number]{Administrative Science Quarterly, 57059226}"
+    },
+    {
+        "id": "3_WrittenWork_test_18",
+        "sent": "A Severed Wasp is from the United States where English is the primary language. Additionally, the United states has an ethnic group called Asian Americans.",
+        "response": "[location]{A Severed Wasp, [United States]}\n[language]{A Severed Wasp, English}"
+    },
+    {
+        "id": "3_WrittenWork_test_19",
+        "sent": "The Administrative Science Quarterly, or Admin. Sci. Q., is in the management discipline with ISSN number 0001-8392.",
+        "response": "{The Administrative Science Quarterly}, {{0001-8392}, [issnNumber]"
+    },
+    {
+        "id": "3_WrittenWork_test_20",
+        "sent": "A Glastonbury Romance has the ISBN number 0-7156-3648-0, can be found in hardcover and has 1174 pages.",
+        "response": "[isbnNumber]{A Glastonbury Romance, 0-7156-3648-0}, [mediaType]{A Glastonbury Romance, hardcover}, [numberOfPages]{A Glastonbury Romance, 1174}"
+    },
+    {
+        "id": "3_WrittenWork_test_21",
+        "sent": "Eric Flint was influenced by Robert A. Heinlein and is the author of 1634: The Bavarian Crisis, that was preceded by Grantville Gazette II.",
+        "response": "[influencedBy]{Eric Flint, Robert A. Heinlein}, [author]{Eric Flint, 1634: The Bavarian Crisis}, [precededBy]{1634: The Bavarian Crisis, Grantville Gazette II}"
+    },
+    {
+        "id": "3_WrittenWork_test_22",
+        "sent": "A severed Wasp originates from the United States, where the language is English and the Native Americans are an ethnic group.",
+        "response": "Based on the given text and entities, the output is:\n\n{Wasp}, {United States}\n{language}, {Wasp, English}\n{ethnicGroup}, {Wasp, Native Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_23",
+        "sent": "Aenir, written by Garth Nix, was produced in print and has the OCLC number 45644811.",
+        "response": "[author]{Aenir, Garth Nix}, [oclcNumber]{Aenir, 45644811}"
+    },
+    {
+        "id": "3_WrittenWork_test_24",
+        "sent": "The Administrative Science Quarterly, OCLC 1461102, is published by SAGE Publications founded by Sara Miller McCune.",
+        "response": "{The Administrative Science Quarterly}, {{SAGE Publications}, [publisher]}"
+    },
+    {
+        "id": "3_WrittenWork_test_25",
+        "sent": "Published in hardcover, A Wizard of Mars has 560 pages and was written by Diane Duane.",
+        "response": "[author]{A Wizard of Mars, Diane Duane}, [numberOfPages]{A Wizard of Mars, 560}"
+    },
+    {
+        "id": "3_WrittenWork_test_26",
+        "sent": "The book Alcatraz Versus the Evil Librarians comes from the United States where one of the ethnic groups are African Americans and one of the leaders is Joe Biden.",
+        "response": "[author]{Alcatraz Versus the Evil Librarians}, [residence]{Alcatraz Versus the Evil Librarians, United States}, [ethnicGroup]{United States, African Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_27",
+        "sent": "Above the Veil, from Australia, is the third book in a series after Aenir and Castle.",
+        "response": "{location}{Above the Veil, Australia}, {precededBy}{Above the Veil, Aenir}, {precededBy}{Above the Veil, Castle}"
+    },
+    {
+        "id": "3_WrittenWork_test_28",
+        "sent": "A Long Long Way, the prequel to The Secret Scripture, was published in Ireland by Viking Press.",
+        "response": "[author]{A Long Long Way, {Viking Press}, [author]{The Secret Scripture, {Viking Press}}, [precededBy]{A Long Long Way, {The Secret Scripture}}"
+    },
+    {
+        "id": "3_WrittenWork_test_29",
+        "sent": "The novel A Long Long Way, followed by The Secret Scripture, was published by Viking Press whose parent company is Penguin Random House.",
+        "response": "[parentCompany]{Viking Press, Penguin Random House}, [publisher]{A Long Long Way, Viking Press}, [publisher]{The Secret Scripture, Viking Press}, [followedBy]{A Long Long Way, The Secret Scripture}"
+    },
+    {
+        "id": "3_WrittenWork_test_30",
+        "sent": "A Long Long Way, published by Viking Press, comes from Ireland where the ethnic group is White people.",
+        "response": "{A Long Long Way}, {{Viking Press}, [publisher], {Ireland}, [country]}"
+    },
+    {
+        "id": "3_WrittenWork_test_31",
+        "sent": "A Long Long Way is published by Viking Press from the United States, parent company Penguin Random House.",
+        "response": "[author]{A Long Long Way, Viking Press}, [parentCompany]{Viking Press, Penguin Random House}, [location]{Viking Press, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_32",
+        "sent": "Viking Press in the United States published A Long Long Way which was followed by The Secret Scripture.",
+        "response": "[publisher]{Viking Press, A Long Long Way}, [publishedFollowedBy]{A Long Long Way, The Secret Scripture}"
+    },
+    {
+        "id": "3_WrittenWork_test_33",
+        "sent": "Written in English, the book Alcatraz Versus the Evil Librarians is from The United States where one of the ethnic groups is Asian Americans.",
+        "response": "[origin]{Alcatraz Versus the Evil Librarians, The United States}, [setOfMembers]{The United States, Asian Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_34",
+        "sent": "Alcatraz Versus the Evil Librarians is from The United States, where the leader is Barack Obama and Asian Americans is one of the ethnic groups.",
+        "response": "[ethnicGroup]{Asian Americans}, [residence]{Alcatraz, The United States}, [leader]{Barack Obama}"
+    },
+    {
+        "id": "3_WrittenWork_test_35",
+        "sent": "Alcatraz Versus the Evil Librarians was written by Brandon Sanderson from Lincoln (Nebraska) and followed by Alcatraz Versus the Scrivener's Bones.",
+        "response": "[author]{Alcatraz Versus the Evil Librarians, Brandon Sanderson}\n[location]{Brandon Sanderson, Lincoln}\n[state]{Brandon Sanderson, Nebraska}\n[followedBy]{Alcatraz Versus the Scrivener's Bones, Alcatraz Versus the Evil Librarians}"
+    },
+    {
+        "id": "3_WrittenWork_test_36",
+        "sent": "Alcatraz Versus the Evil Librarians is from the United States where they speak English and White Americans live.",
+        "response": "[location]{Alcatraz Versus the Evil Librarians, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_37",
+        "sent": "Alcatraz Versus the Evil Librarians is written in the English language and it comes from the United States, where there is and ethnic group of African Americans.",
+        "response": "[writtenIn]{Alcatraz Versus the Evil Librarians, English language}, [originatesFrom]{Alcatraz Versus the Evil Librarians, United States}, [about]{Alcatraz Versus the Evil Librarians, African Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_38",
+        "sent": "The book Alcatraz Versus the Evil Librarians comes from the United States, where Joe Biden is a leader and Asian Americans are one of its ethnic groups.",
+        "response": "{Alcatraz Versus the Evil Librarians}, {{United States}, [location], {Joe Biden}, [leader]}"
+    },
+    {
+        "id": "3_WrittenWork_test_39",
+        "sent": "The book Alcatraz Versus the Evil Librarians is written in the English language and comes from the United States One of the ethnic groups in the United States are White Americans.",
+        "response": "[writtenBy]{Alcatraz Versus the Evil Librarians, [Book]}, [from]{Alcatraz Versus the Evil Librarians, United States}"
+    },
+    {
+        "id": "3_WrittenWork_test_40",
+        "sent": "The book Alcatraz Versus the Evil Librarians comes from the United States and is written in English. One of the ethnic groups in the United States are the Native Americans.",
+        "response": "[originFrom]{Alcatraz Versus the Evil Librarians, [United States]}, [writtenIn]{Alcatraz Versus the Evil Librarians, English}, [locatedIn]{Native Americans, [United States]}"
+    },
+    {
+        "id": "3_WrittenWork_test_41",
+        "sent": "Alcatraz Versus the Evil Librarians is published in Hardcover, has the OCLC number of 78771100 and the ISBN number 0-439-92550-9.",
+        "response": "[isbnNumber]{Alcatraz Versus the Evil Librarians, 0-439-92550-9}, [oclcNumber]{Alcatraz Versus the Evil Librarians, OCLC 78771100}"
+    },
+    {
+        "id": "3_WrittenWork_test_42",
+        "sent": "Alcatraz Versus the Evil Librarians, a 320 page hardcover book, has a ISBN number of 0-439-92550-9.",
+        "response": "{Alcatraz Versus the Evil Librarians}, {{0-439-92550-9}"
+    },
+    {
+        "id": "3_WrittenWork_test_43",
+        "sent": "The book Alcatraz Versus the Evil Librarians is in print and has the ISBN number 0-439-92550-9 as well as the OCLC number of 78771100.",
+        "response": "{Alcatraz Versus the Evil Librarians}, {{0-439-92550-9}, {78771100}"
+    },
+    {
+        "id": "3_WrittenWork_test_44",
+        "sent": "Alcatraz Versus the Evil Librarians is from The United States where the English language is spoken and one of the ethnic groups are the Native Americans.",
+        "response": "[residence]{Alcatraz Versus the Evil Librarians, The United States}, [nationality]{Alcatraz Versus the Evil Librarians, The United States}, [ethnicGroup]{Alcatraz Versus the Evil Librarians, Native Americans}"
+    },
+    {
+        "id": "3_WrittenWork_test_45",
+        "sent": "Alcatraz Versus the Evil Librarians is a fantasy literature hardcover book. The OCLC number is 78771100.",
+        "response": "{Alcatraz Versus the Evil Librarians}, {{mediaType, hardcover}, {oclcNumber, 78771100}, {literaryGenre, fantasy}}"
+    },
+    {
+        "id": "3_WrittenWork_test_46",
+        "sent": "John Cowper Powys was born in Shirley (Derbyshire). His notable work includes Porius: A Romance of the Dark Ages and A Glastonbury Romance.",
+        "response": "[author]{John Cowper Powys, Porius: A Romance of the Dark Ages}, [author]{John Cowper Powys, A Glastonbury Romance}, [birthPlace]{John Cowper Powys, Shirley}, [residence]{John Cowper Powys, Derbyshire}"
+    },
+    {
+        "id": "3_WrittenWork_test_47",
+        "sent": "A Glastonbury Romance, the sequel to Wolf Solent was written by John Cowper Powys who was from Shirley (Derbyshire).",
+        "response": "[author]{A Glastonbury Romance, John Cowper Powys}, [precededBy]{A Glastonbury Romance, Wolf Solent}, [birthPlace]{John Cowper Powys, Shirley}, [residence]{John Cowper Powys, Derbyshire}"
+    },
+    {
+        "id": "3_WrittenWork_test_48",
+        "sent": "John Cowper Powys is the author of A Glastonbury Romance which was followed by Weymouth Sands and Maiden Castle.",
+        "response": "[author]{A Glastonbury Romance, John Cowper Powys}, [followedBy]{A Glastonbury Romance, Weymouth Sands}, [followedBy]{A Glastonbury Romance, Maiden Castle}"
+    },
+    {
+        "id": "3_WrittenWork_test_49",
+        "sent": "Weymouth Sands, written by John Cowper Powys, is a prequel to Maiden Castle and a sequel to A Glastonbury Romance.",
+        "response": "[author]{Weymouth Sands, John Cowper Powys}, [precededBy]{Weymouth Sands, A Glastonbury Romance}, [followedBy]{Weymouth Sands, Maiden Castle}"
+    },
+    {
+        "id": "3_WrittenWork_test_50",
+        "sent": "The Acta Mathematica Hungarica ISSN number is \"0236-5294\" and the abbreviation is Acta Math. Hungar. It comes under the academic discipline of mathematics.",
+        "response": "{AcademicDiscipline}{Acta Mathematica Hungarica, mathematics}"
+    },
+    {
+        "id": "3_WrittenWork_test_51",
+        "sent": "The American Journal of Mathematics, abbreviated to Am. J. Math., whose academic discipline is mathematics has ISSN No. 1080-6377.",
+        "response": "[abbreviation]{The American Journal of Mathematics, Am. J. Math.}, [issnNumber]{The American Journal of Mathematics, 1080-6377}, [academicDiscipline]{The American Journal of Mathematics, mathematics}"
+    },
+    {
+        "id": "3_WrittenWork_test_52",
+        "sent": "The American Journal of Mathematics, which comes under the academic discipline of mathematics, was first published in 1878 and has the abbreviated title of Am. J. Math.",
+        "response": "{The American Journal of Mathematics}, [academicDiscipline]{The American Journal of Mathematics, mathematics}, [firstPublicationYear]{The American Journal of Mathematics, 1878}, [abbreviation]{The American Journal of Mathematics, Am. J. Math.}"
+    },
+    {
+        "id": "3_WrittenWork_test_53",
+        "sent": "The Acta Mathematica Hungarica, abbreviated to Acta Math. Hungar., covers the academic discipline of mathematics. Its ISSN number is 1588-2632.",
+        "response": "{abbreviation}{Acta Mathematica Hungarica, Acta Math. Hungar.}, [issnNumber]{Acta Mathematica Hungarica, 1588-2632}, [academicDiscipline]{Acta Mathematica Hungarica, mathematics}"
+    },
+    {
+        "id": "3_WrittenWork_test_54",
+        "sent": "The discipline of The American Journal of Mathematics, also known by the abbreviated title of Am. J. Math., is mathematics. The journal has an ISSN number of 0002-9327.",
+        "response": "{The American Journal of Mathematics}, {{Am. J. Math.}, [issnNumber]{0002-9327}"
+    },
+    {
+        "id": "3_WrittenWork_test_55",
+        "sent": "Acta Mathematica Hungarica, or Acta Math. Hungar., focuses on mathematics and has a LCCN number of 83646315.",
+        "response": "[LCCN_number]{Acta Mathematica Hungarica, LCCN 83646315}"
+    },
+    {
+        "id": "3_WrittenWork_test_56",
+        "sent": "American Journal of Mathematics (discipline mathematics) is published by the Johns Hopkins University Press, which is based in the United States.",
+        "response": "[publisher]{American Journal of Mathematics, Johns Hopkins University Press}, [location]{American Journal of Mathematics, United States}"
+    }
+]

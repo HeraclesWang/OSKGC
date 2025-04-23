@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_MusicalWork" id="2_MusicalWork_dev_1">
+      <text>Expect a Miracle by Brian Kelly, an album of the easy listening genre, was preceded by the album Pools of Light.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>genre</rel>
+          <obj>Easy_listening</obj>
+        </triple>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>precededBy</rel>
+          <obj>Pools_of_Light</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_MusicalWork" id="2_MusicalWork_dev_2">
+      <text>Bootleg Series Volume 1: The Quine Tapes, which was recorded in San Francisco, was preceded by the album Squeeze.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>precededBy</rel>
+          <obj>Squeeze</obj>
+        </triple>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>recordedIn</rel>
+          <obj>San_Francisco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordedIn</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_MusicalWork" id="2_MusicalWork_dev_3">
+      <text>Punk blues, which usually uses a drum kit, is the genre of the album Turn Me On.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>genre</rel>
+          <obj>Punk_blues</obj>
+        </triple>
+        <triple>
+          <sub>Punk_blues</sub>
+          <rel>instrument</rel>
+          <obj>Drum_kit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_MusicalWork" id="2_MusicalWork_dev_4">
+      <text>Expect a Miracle, with a runtime of 54.56 minutes, was preceded by Pools of Light by Brian Kelly.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>runtime</rel>
+          <obj>54.56</obj>
+        </triple>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>precededBy</rel>
+          <obj>Pools_of_Light</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

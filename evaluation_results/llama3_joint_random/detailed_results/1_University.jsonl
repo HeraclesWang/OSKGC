@@ -1,0 +1,15 @@
+{"id": "1_University_test_1", "response": "[Aarhus University, location, Denmark]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_2", "response": "Here is the extracted triple:\n\n[University of Burgundy, numberOfUndergraduateStudents, 16800]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_University_test_3", "response": "(University, numberOfStaff, 2900)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_4", "response": "[University of Burgundy, location, France]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_5", "response": "[Dijon, elevationAboveTheSeaLevel, 245]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_University_test_6", "response": "Here is the output:\n\n[University of Burgundy, numberOfPostgraduateStudents, 9400]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_University_test_7", "response": "[University of Burgundy, location, Dijon]\n\nNote: The ontology schema provides the relation \"location\" between an Organisation and a Place, which matches the given input text.", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_8", "response": "[France, longName, French Republic]\n\nNote: The output follows the format [Entity, relation, value], where Entity is the subject of the triple, relation is the predicate, and value is the object.", "precision": 0.5, "recall": 1.0, "f1": 0.667}
+{"id": "1_University_test_9", "response": "[Place, postalCode, 21000], (Dijon, postalCode, 21000)", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_10", "response": "Here is the output based on the given ontology schema and input text:\n\n(University of Burgundy, numberOfDoctoralStudents, 1299)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_11", "response": "[Aarhus University, affiliation, European University Association]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_University_test_12", "response": "[Aarhus University, location, Aarhus]\n[University, location, City]\n[Aarhus, city, Aarhus]\n[City, city, City]\n[Aarhus, isPartOf, Place]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_13", "response": "[Aarhus University, established, 1928]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_University_test_14", "response": "[Universitas Aarhusiensis, latinName, Aarhus University]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_University_test_15", "response": "Here is the output:\n\n[Accademia di Architettura di Mendrisio, location, Mendrisio]\n[Accademia di Architettura di Mendrisio, location, Place]\n\nNote: The output is in the format of [Entity, relation, value], where Entity is an instance of an entity type from the ontology schema, relation is a relation from the ontology schema, and value is the corresponding value for that relation.", "precision": 0.0, "recall": 0.0, "f1": 0}

@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1_Film_test_1",
+        "input_text": "English Without Tears was released on 1944-07-28.",
+        "response": "Here is the extracted triple:\n\nEnglish Without Tears, releaseDate, 1944-07-28"
+    },
+    {
+        "id": "1_Film_test_2",
+        "input_text": "Terence Rattigan died on the 30th of November in the year 1977.",
+        "response": "[Terence Rattigan, deathDate, 1977]\n[Terence Rattigan, deathYear, 1977]\n[Terence Rattigan, deathPlace, unknown]\n(Terence Rattigan, deathDate, 1977) and (Terence Rattigan, deathYear, 1977) are redundant triples, so I removed the second one."
+    },
+    {
+        "id": "1_Film_test_3",
+        "input_text": "Anatole de Grunwald was born in Saint Petersburg.",
+        "response": "[Anatole de Grunwald, birthPlace, Saint Petersburg]\n[Anatole de Grunwald, birthYear,?]\n[Anatole de Grunwald, IsA, Person]\n\nNote: The year of birth is not provided in the input text, so it is left as a variable (?)."
+    },
+    {
+        "id": "1_Film_test_4",
+        "input_text": "John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\nIt's Great to Be Young, starring, John Mills\n(It's Great to Be Young, starring, Actor)\n(Film, starring, Person)\n\nLet me explain the process:\n\n1. Identified the entities: John Mills (Person), It's Great to Be Young (Film)\n2. Identified the relation: John Mills is playing the lead in the movie It's Great to Be Young, which corresponds to the relation \"starring\" between a Film and a Person.\n3. Constructed the triples based on the ontology schema:\n\t* (It's Great to Be Young, starring, John Mills) - Film, starring, Person\n\t* (Film, starring, Person) - This is a generalization of the specific relation between It's Great to Be Young and John Mills.\n\nNote that the output format follows the example, with no additional text or explanations."
+    },
+    {
+        "id": "1_Film_test_5",
+        "input_text": "English Without Tears is written by Anatole de Grunwald.",
+        "response": "English Without Tears, writer, Anatole de Grunwald"
+    },
+    {
+        "id": "1_Film_test_6",
+        "input_text": "The music of the film English Without Tears is composed by Nicholas Brodszky.",
+        "response": "English Without Tears, musicComposer, Nicholas Brodszky"
+    },
+    {
+        "id": "1_Film_test_7",
+        "input_text": "\"English Without Tears\" was produced by Anatole de Grunwald.",
+        "response": "English Without Tears, producer, Anatole de Grunwald"
+    },
+    {
+        "id": "1_Film_test_8",
+        "input_text": "The cinematography of English Without Tears was done by Bernard Knowles.",
+        "response": "English Without Tears, cinematography, Bernard Knowles"
+    },
+    {
+        "id": "1_Film_test_9",
+        "input_text": "The editing of the movie English Without Tears was done by Alan Jaggs.",
+        "response": "English Without Tears, editor, Alan Jaggs"
+    },
+    {
+        "id": "1_Film_test_10",
+        "input_text": "'English Without Tears' was written by Terence Rattigan.",
+        "response": "English Without Tears, writer, Terence Rattigan"
+    },
+    {
+        "id": "1_Film_test_11",
+        "input_text": "English Without Tears is 89 minutes long.",
+        "response": "English Without Tears, runtime, 89"
+    },
+    {
+        "id": "1_Film_test_12",
+        "input_text": "English Without Tears is a film directed by Harold French.",
+        "response": "English Without Tears, director, Harold French"
+    },
+    {
+        "id": "1_Film_test_13",
+        "input_text": "Anatole de Grunwald died in London.",
+        "response": "Here is the extracted triple based on the given ontology schema:\n\nAnatole de Grunwald, deathPlace, London"
+    },
+    {
+        "id": "1_Film_test_14",
+        "input_text": "Michael Rooker was born in the year 1955.",
+        "response": "(Michael Rooker, birthDate, 1955)"
+    },
+    {
+        "id": "1_Film_test_15",
+        "input_text": "Michael Rooker was born on April 6th 1955.",
+        "response": "Here is the output:\n\n(Michael Rooker, birthDate, 1955-04-06)"
+    },
+    {
+        "id": "1_Film_test_16",
+        "input_text": "Super Capers is a film starring Michael Rooker.",
+        "response": "Here is the output:\n\nSuper Capers, starring, Michael Rooker\n(Film, starring, Actor)"
+    }
+]

@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Athlete" id="1_Athlete_dev_1">
+      <text>The leader of Brandon (Manitoba) is the Conservative Party of Canada.</text>
+      <triples>
+        <triple>
+          <sub>Brandon</sub>
+          <rel>leader</rel>
+          <obj>Conservative_Party_of_Canada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_2">
+      <text>Akeem Adams club is Ferencvárosi TC.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>Ferencvárosi_TC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_3">
+      <text>The league FC Tom Tomsk plays in the Russian Football National League.</text>
+      <triples>
+        <triple>
+          <sub>FC_Tom_Tomsk</sub>
+          <rel>league</rel>
+          <obj>Russian_Football_National_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_4">
+      <text>Aaron Boogaard was born in 1986.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>birthYear</rel>
+          <obj>1986</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_5">
+      <text>Alaa Abdul-Zahra played for the club Al-Zawra'a SC.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al-Zawra'a_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_6">
+      <text>The leader of Brandon (Manitoba) is Larry Maguire.</text>
+      <triples>
+        <triple>
+          <sub>Brandon</sub>
+          <rel>leader</rel>
+          <obj>Larry_Maguire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_7">
+      <text>Los Angeles Rams are based in LA.</text>
+      <triples>
+        <triple>
+          <sub>Los_Angeles_Rams</sub>
+          <rel>location</rel>
+          <obj>Los_Angeles</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_8">
+      <text>Aleksandr Prudnikov is 185 cm tall.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>height</rel>
+          <obj>185</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_9">
+      <text>Mike Mularkey is the coach of the Tennessee Titans.</text>
+      <triples>
+        <triple>
+          <sub>Tennessee_Titans</sub>
+          <rel>coach</rel>
+          <obj>Mike_Mularkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_10">
+      <text>Footballer, Abner plays for the club, Real Madrid Castilla.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>Real_Madrid_Castilla</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_11">
+      <text>Aaron Boogaard was born in Saskatchewan.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>birthPlace</rel>
+          <obj>Saskatchewan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_12">
+      <text>St. Louis is part of the Kingdom of France.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>isPartOf</rel>
+          <obj>Kingdom_of_France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_13">
+      <text>The Chairman of A.C. Milan is Silvio Berlusconi.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Milan</sub>
+          <rel>chairman</rel>
+          <obj>Silvio_Berlusconi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_14">
+      <text>Alex Tyus had been drafted in 2011.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>draftYear</rel>
+          <obj>2011</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>draftYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_15">
+      <text>Black Canadians are one of the ethnic groups of Canada.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Black_Canadians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_16">
+      <text>Aleksander Barkov, Jr. was born in 1995.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>birthYear</rel>
+          <obj>1995</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_17">
+      <text>The general manager of Florida Panthers is Dale Tallon.</text>
+      <triples>
+        <triple>
+          <sub>Florida_Panthers</sub>
+          <rel>generalManager</rel>
+          <obj>Dale_Tallon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>HockeyTeam</sub>
+          <rel>generalManager</rel>
+          <obj>IceHockeyPlayer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_18">
+      <text>Budapest is a city in Hungary.</text>
+      <triples>
+        <triple>
+          <sub>Budapest</sub>
+          <rel>country</rel>
+          <obj>Hungary</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_19">
+      <text>The United Petrotrin F.C. is playing in Palo Seco Velodrome.</text>
+      <triples>
+        <triple>
+          <sub>United_Petrotrin_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Palo_Seco_Velodrome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_20">
+      <text>Alessio Romagnoli plays for A.C. Milan.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>club</rel>
+          <obj>A.C._Milan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_21">
+      <text>Alan Martin played football for Accrington Stanley F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Accrington_Stanley_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_22">
+      <text>C.D. FAS play in the Salvadoran Primera División.</text>
+      <triples>
+        <triple>
+          <sub>C.D._FAS</sub>
+          <rel>league</rel>
+          <obj>Salvadoran_Primera_División</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_23">
+      <text>Pallacanestro Cantù is in the Lega Basket Serie A league.</text>
+      <triples>
+        <triple>
+          <sub>Pallacanestro_Cantù</sub>
+          <rel>league</rel>
+          <obj>Lega_Basket_Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballTeam</sub>
+          <rel>league</rel>
+          <obj>BasketballLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_24">
+      <text>Aleksandr Chumakov died in Moscow, in Russia.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>deathPlace</rel>
+          <obj>Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_25">
+      <text>Thomas Doll is the manager for Ferencvárosi TC.</text>
+      <triples>
+        <triple>
+          <sub>Ferencvárosi_TC</sub>
+          <rel>manager</rel>
+          <obj>Thomas_Doll</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_26">
+      <text>Gdynia city in Poland has time zone of UTC +2 .</text>
+      <triples>
+        <triple>
+          <sub>Gdynia</sub>
+          <rel>utcOffset</rel>
+          <obj>+2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_27">
+      <text>Alex Plante was born in Manitoba.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>birthPlace</rel>
+          <obj>Manitoba</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_28">
+      <text>Ricky Sbragia is the coach of the Scotland national under-21 football team.</text>
+      <triples>
+        <triple>
+          <sub>Scotland_national_under-21_football_team</sub>
+          <rel>coach</rel>
+          <obj>Ricky_Sbragia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>coach</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_29">
+      <text>Aleksandr Prudnikov played for FC Spartak Moscow's youth team.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>youthclub</rel>
+          <obj>FC_Spartak_Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>youthclub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_30">
+      <text>Aleksandr Prudnikov plays for the Russia national football B team.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>Russia_national_football_B_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_31">
+      <text>Steel Azin F.C. play in Iran Football's 3rd Division.</text>
+      <triples>
+        <triple>
+          <sub>Steel_Azin_F.C.</sub>
+          <rel>league</rel>
+          <obj>Iran_Football's_3rd_Division</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_dev_32">
+      <text>The owner of the Atlanta Falcons is Arthur Blank.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta_Falcons</sub>
+          <rel>owner</rel>
+          <obj>Arthur_Blank</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>owner</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

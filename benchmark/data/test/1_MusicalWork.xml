@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_1">
+      <text>Nord is an album in the post metal genre by Year of No Light.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>genre</rel>
+          <obj>Post-metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_2">
+      <text>Nord is an album by Year of No Light in the sludge metal genre.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>genre</rel>
+          <obj>Sludge_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_3">
+      <text>"Let It Breed" was followed by the album "Turn Me On".</text>
+      <triples>
+        <triple>
+          <sub>Let_It_Breed</sub>
+          <rel>followedBy</rel>
+          <obj>Turn_Me_On</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_4">
+      <text>Noise pop is a fusion genre, having elements from noise rock, among other things.</text>
+      <triples>
+        <triple>
+          <sub>Noise_rock</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Noise_pop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_5">
+      <text>The Velvet Underground band drew occasional musical artists from an associated group called Theatre of Eternal Music.</text>
+      <triples>
+        <triple>
+          <sub>The_Velvet_Underground</sub>
+          <rel>associatedBand</rel>
+          <obj>Theatre_of_Eternal_Music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_6">
+      <text>Hip hop music is a derivative of reggae.</text>
+      <triples>
+        <triple>
+          <sub>Reggae</sub>
+          <rel>derivative</rel>
+          <obj>Hip_hop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_7">
+      <text>Reggae's stylistic origin is rhythm and blues.</text>
+      <triples>
+        <triple>
+          <sub>Reggae</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Rhythm_and_Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_8">
+      <text>Year of No Light made an album called Nord, which was released by the record label Crucial blast.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>recordLabel</rel>
+          <obj>Crucial_Blast</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_9">
+      <text>The release date of Nord, Year of No Light Album, is 06-09-2006.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>releaseDate</rel>
+          <obj>2006-09-06</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>releaseDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_10">
+      <text>The Nord album was preceded by the Demo 2004 album.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>precededBy</rel>
+          <obj>Demo_2004</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_11">
+      <text>The Year of No Light album Nord's record label is E-Vinyl.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>recordLabel</rel>
+          <obj>E-Vinyl</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_12">
+      <text>Year of No Light followed their album Nord with the album Live at Roadburn 2008.</text>
+      <triples>
+        <triple>
+          <sub>Nord</sub>
+          <rel>followedBy</rel>
+          <obj>Live_at_Roadburn_2008</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_13">
+      <text>The genre of Turn Me On is punk blues.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>genre</rel>
+          <obj>Punk_blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_14">
+      <text>The album Turn Me On is an example of the musical genre known as noise rock.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>genre</rel>
+          <obj>Noise_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_15">
+      <text>The album Turn Me On is by the American band The Honeymoon Killers.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>producer</rel>
+          <obj>The_Honeymoon_Killers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_16">
+      <text>The total length of the Turn Me On album is 35.1 minutes.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>runtime</rel>
+          <obj>35.1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_17">
+      <text>The Turn Me On album was followed by the Take it Off! album.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>followedBy</rel>
+          <obj>Take_It_Off!</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_18">
+      <text>The Honeymoon Killers is the producer of the Turn Me On album.</text>
+      <triples>
+        <triple>
+          <sub>Turn_Me_On</sub>
+          <rel>producer</rel>
+          <obj>The_Honeymoon_Killers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_test_19">
+      <text>The album Take It Off! is preceded by the album Turn Me On.</text>
+      <triples>
+        <triple>
+          <sub>Take_It_Off!</sub>
+          <rel>precededBy</rel>
+          <obj>Turn_Me_On</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

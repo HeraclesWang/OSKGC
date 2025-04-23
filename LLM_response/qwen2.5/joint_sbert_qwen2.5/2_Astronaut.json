@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2_Astronaut_test_1",
+    "input_text": "Elliot See was born on July 23rd, 1927, and was a student at University of Texas at Austin.",
+    "response": "[Elliot See, birthDate, 1927-07-23]:(Astronaut, birthDate, Date), [Elliot See, almaMater, University of Texas at Austin]:(Astronaut, almaMater, University)"
+  },
+  {
+    "id": "2_Astronaut_test_2",
+    "input_text": "Alan Shepard died in California on July 21, 1998.",
+    "response": "[Alan Shepard, deathPlace, California]:(Astronaut, deathPlace, Place), [Alan Shepard, deathDate, 1998-07-21]:(Astronaut, deathDate, Date)"
+  },
+  {
+    "id": "2_Astronaut_test_3",
+    "input_text": "Alan Shepard was born in New Hampshire but died in California.",
+    "response": "[Alan Shepard, birthPlace, New Hampshire]:(Astronaut, birthPlace, State), [Alan Shepard, deathPlace, California]:((Person), deathPlace, Place)"
+  },
+  {
+    "id": "2_Astronaut_test_4",
+    "input_text": "The Apollo 11 program was organized by NASA and included Buzz Aldrin as one of its crew members.",
+    "response": "[Apollo 11, operator, NASA]:(SpaceMission, operator, Organisation), [Buzz Aldrin, crewMembers, Apollo 11]:(Person, crewMembers, Person)"
+  },
+  {
+    "id": "2_Astronaut_test_5",
+    "input_text": "Alan Shepard was born in New Hampshire and he served as the Chief of the Astronaut Office.",
+    "response": "[Alan Shepard, birthPlace, New Hampshire], [Alan Shepard, servedAsChiefOfTheAstronautOfficeIn, Year]"
+  },
+  {
+    "id": "2_Astronaut_test_6",
+    "input_text": "Nie Haisheng from the People's Republic of China was part of the mission Shenzhou 10.",
+    "response": "[Nie Haisheng, mission, Shenzhou 10]:(Astronaut, mission, SpaceMission), [Nie Haisheng, nationality, People's Republic of China]:(Astronaut, nationality, Country)"
+  },
+  {
+    "id": "2_Astronaut_test_7",
+    "input_text": "Alan Shepard is an American citizen who was born in New Hampshire.",
+    "response": "[Alan Shepard, nationality, United States]:(Person, nationality, Country), [Alan Shepard, birthPlace, New Hampshire]:(Astronaut, birthPlace, State)"
+  },
+  {
+    "id": "2_Astronaut_test_8",
+    "input_text": "William Anders is a fighter pilot and member of Apollo 8's crew.",
+    "response": "[William Anders, occupation, Astronaut):(Person, occupation, PersonFunction), [William Anders, mission, Apollo 8]:(Astronaut, mission, SpaceMission)"
+  },
+  {
+    "id": "2_Astronaut_test_9",
+    "input_text": "Elliot See died in St. Louis.",
+    "response": "[Elliot See, deathPlace, St. Louis]:(Person, deathPlace, Place)"
+  },
+  {
+    "id": "2_Astronaut_test_10",
+    "input_text": "Elliot See, who worked for NASA beginning in 1962, died in St. Louis.",
+    "response": "[Elliot See, selectedByNasa, 1962], [Elliot See, deathPlace, St. Louis]"
+  },
+  {
+    "id": "2_Astronaut_test_11",
+    "input_text": "Elliot See died in St. Louis, the Kingdom of France.",
+    "response": "[Elliott See, deathPlace, St. Louis]:(Person, deathPlace, Place), [St. Louis, isPartOf, Kingdom of France]:(Place, isPartOf, Place)"
+  },
+  {
+    "id": "2_Astronaut_test_12",
+    "input_text": "Elliot See died on February 28, 1966, in St. Louis.",
+    "response": "[Elliott See, deathDate, 1966]:([Person, deathDate, Year]), [Elliott See, deathPlace, St. Louis]:([Person, deathPlace, City])"
+  },
+  {
+    "id": "2_Astronaut_test_13",
+    "input_text": "Elliot See was was born in Dallas and was a student at University of Texas at Austin.",
+    "response": "[Elliot See, birthPlace, Dallas]:(Person, birthPlace, Place), [Elliot See, almaMater, University of Texas at Austin]:(Person, almaMater, Organisation)"
+  },
+  {
+    "id": "2_Astronaut_test_14",
+    "input_text": "Elliot See graduated from the University of Texas at Austin, affiliated to the university of Texas system.",
+    "response": "[Elliot See, almaMater, University of Texas at Austin]:(Person, almaMater, Organisation), [University of Texas at Austin, affiliation, University of Texas system]:(EducationalInstitution, affiliation, EducationalInstitution)"
+  },
+  {
+    "id": "2_Astronaut_test_15",
+    "input_text": "Elliot See, who is now dead, was born in Dallas.",
+    "response": "[Elliot See, deathDate, \"now\"], [Elliot See, birthPlace, Dallas]:(Person, deathDate, Date), (Astronaut, birthPlace, Place)"
+  }
+]

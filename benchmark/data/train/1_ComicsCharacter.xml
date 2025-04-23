@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_1">
+      <text>Bill Everett has won the Eisner Award.</text>
+      <triples>
+        <triple>
+          <sub>Bill_Everett</sub>
+          <rel>award</rel>
+          <obj>Eisner_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_2">
+      <text>The comic book writer, Roger McKenzie, is the creator of Ben Urich.</text>
+      <triples>
+        <triple>
+          <sub>Ben_Urich</sub>
+          <rel>creator</rel>
+          <obj>Roger_McKenzie</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_3">
+      <text>The creator of Bolt (comics character) is Paris Cullins.</text>
+      <triples>
+        <triple>
+          <sub>Bolt</sub>
+          <rel>creator</rel>
+          <obj>Paris_Cullins</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_4">
+      <text>Bill Oddie stars in Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>starring</rel>
+          <obj>Bill_Oddie</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>starring</rel>
+          <obj>Comedian</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_5">
+      <text>Bozo the Iron Man’s full name is Hugh Hazzard.</text>
+      <triples>
+        <triple>
+          <sub>Bozo_the_Iron_Man</sub>
+          <rel>fullName</rel>
+          <obj>Hugh_Hazzard</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>fullName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_6">
+      <text>Rona Fairhead is the key person for BBC.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>keyPerson</rel>
+          <obj>Rona_Fairhead</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_7">
+      <text>Dane Whitman, alter ego Dane Whitman Black Knight, was created by John Buscema.</text>
+      <triples>
+        <triple>
+          <sub>Dane_Whitman_Black_Knight</sub>
+          <rel>creator</rel>
+          <obj>John_Buscema</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_8">
+      <text>Albert Uderzo is the creator of the comic character, Asterix.</text>
+      <triples>
+        <triple>
+          <sub>Asterix</sub>
+          <rel>creator</rel>
+          <obj>Albert_Uderzo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_9">
+      <text>Len Wein won the Inkpot Award.</text>
+      <triples>
+        <triple>
+          <sub>Len_Wein</sub>
+          <rel>award</rel>
+          <obj>Inkpot_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_10">
+      <text>Sheldon Moldoff is the creator of Black Pirate.</text>
+      <triples>
+        <triple>
+          <sub>Black_Pirate</sub>
+          <rel>creator</rel>
+          <obj>Sheldon_Moldoff</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_11">
+      <text>Jill Shilling stared in Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>starring</rel>
+          <obj>Jill_Shilling</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_12">
+      <text>Doug Moench won the Eagle Award (comics).</text>
+      <triples>
+        <triple>
+          <sub>Doug_Moench</sub>
+          <rel>award</rel>
+          <obj>Eagle_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_13">
+      <text>Sheldon Moldoff won the Inkpot Award.</text>
+      <triples>
+        <triple>
+          <sub>Sheldon_Moldoff</sub>
+          <rel>award</rel>
+          <obj>Inkpot_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_14">
+      <text>Dick Dillin is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Dick_Dillin</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_15">
+      <text>Asterix was created by René Goscinny.</text>
+      <triples>
+        <triple>
+          <sub>Asterix</sub>
+          <rel>creator</rel>
+          <obj>René_Goscinny</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_16">
+      <text>Len Wein collected an award from the Academy of Comic Book Arts.</text>
+      <triples>
+        <triple>
+          <sub>Len_Wein</sub>
+          <rel>awardedBy</rel>
+          <obj>Academy_of_Comic_Book_Arts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>awardedBy</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_17">
+      <text>The comic character, Dane Whitman Black Knight was created by Roy Thomas.</text>
+      <triples>
+        <triple>
+          <sub>Dane_Whitman_Black_Knight</sub>
+          <rel>creator</rel>
+          <obj>Roy_Thomas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_18">
+      <text>The comic character Auron was created by Marv Wolfman.</text>
+      <triples>
+        <triple>
+          <sub>Auron</sub>
+          <rel>creator</rel>
+          <obj>Marv_Wolfman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_19">
+      <text>A key person at the BBC is Baron Hall of Birkenhead, Tony Hall.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>keyPerson</rel>
+          <obj>Tony_Hall,_Baron_Hall_of_Birkenhead</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_20">
+      <text>Tim Brooke-Taylor was born in England.</text>
+      <triples>
+        <triple>
+          <sub>Tim_Brooke-Taylor</sub>
+          <rel>birthPlace</rel>
+          <obj>England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Comedian</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_21">
+      <text>Steve Bright is the creator of Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>creator</rel>
+          <obj>Steve_Bright</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_22">
+      <text>John Buscema won the Inkpot Award.</text>
+      <triples>
+        <triple>
+          <sub>John_Buscema</sub>
+          <rel>award</rel>
+          <obj>Inkpot_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_23">
+      <text>Stan Lee created the comic character Balder.</text>
+      <triples>
+        <triple>
+          <sub>Balder</sub>
+          <rel>creator</rel>
+          <obj>Stan_Lee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_24">
+      <text>One of the products of BBC is BBC radio.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>product</rel>
+          <obj>BBC_Radio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Product</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_25">
+      <text>Dane Whitman is the alternative name for the comic character, Dane Whitman Black Knight.</text>
+      <triples>
+        <triple>
+          <sub>Dane_Whitman_Black_Knight</sub>
+          <rel>alternativeName</rel>
+          <obj>Dane_Whitman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_26">
+      <text>The comic character, Auron, was created by Walt Simonson.</text>
+      <triples>
+        <triple>
+          <sub>Auron</sub>
+          <rel>creator</rel>
+          <obj>Walt_Simonson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_27">
+      <text>The comic character Ballistic was created by Doug Moench.</text>
+      <triples>
+        <triple>
+          <sub>Ballistic</sub>
+          <rel>creator</rel>
+          <obj>Doug_Moench</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_28">
+      <text>The comic character, Arion, is also known by he name Ahri'ahn.</text>
+      <triples>
+        <triple>
+          <sub>Arion</sub>
+          <rel>alternativeName</rel>
+          <obj>Ahri'ahn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_29">
+      <text>Gene Colan created Ben Urich.</text>
+      <triples>
+        <triple>
+          <sub>Ben_Urich</sub>
+          <rel>creator</rel>
+          <obj>Gene_Colan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_30">
+      <text>Jerry Ordway's nationality is that of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Jerry_Ordway</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_31">
+      <text>Jan Duursema has won the Eisner Award.</text>
+      <triples>
+        <triple>
+          <sub>Jan_Duursema</sub>
+          <rel>award</rel>
+          <obj>Eisner_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_32">
+      <text>Rick Parker, is the alternative name for the comic character, the Arrow.</text>
+      <triples>
+        <triple>
+          <sub>The_Arrow</sub>
+          <rel>alternativeName</rel>
+          <obj>Rick_Parker</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_33">
+      <text>Tim Brooke-Taylor starred in Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>starring</rel>
+          <obj>Tim_Brooke-Taylor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>starring</rel>
+          <obj>Comedian</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_34">
+      <text>The nationality of Duncan Rouleau is that of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Duncan_Rouleau</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_35">
+      <text>"Drake Stevens" is known as the comic character Airman.</text>
+      <triples>
+        <triple>
+          <sub>Airman</sub>
+          <rel>alternativeName</rel>
+          <obj>Drake_Stevens</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_36">
+      <text>Gene Colan is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Gene_Colan</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_37">
+      <text>Marv Wolfman was the creator of Bibbo Bibbowski.</text>
+      <triples>
+        <triple>
+          <sub>Bibbo_Bibbowski</sub>
+          <rel>creator</rel>
+          <obj>Marv_Wolfman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_38">
+      <text>Jack Kirby is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Jack_Kirby</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_39">
+      <text>Bill Everett is the creator of the comic character, Amazing-Man.</text>
+      <triples>
+        <triple>
+          <sub>Amazing-Man</sub>
+          <rel>creator</rel>
+          <obj>Bill_Everett</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_40">
+      <text>The comic character, Airman, was created by Harry Sahle.</text>
+      <triples>
+        <triple>
+          <sub>Airman</sub>
+          <rel>creator</rel>
+          <obj>Harry_Sahle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_41">
+      <text>John Geering is the creator of Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>creator</rel>
+          <obj>John_Geering</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_42">
+      <text>The comic character Ballistic was created by Michael Manley.</text>
+      <triples>
+        <triple>
+          <sub>Ballistic</sub>
+          <rel>creator</rel>
+          <obj>Michael_Manley</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_43">
+      <text>Graeme Garden was born in Aberdeen.</text>
+      <triples>
+        <triple>
+          <sub>Graeme_Garden</sub>
+          <rel>birthPlace</rel>
+          <obj>Aberdeen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Comedian</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_44">
+      <text>Graeme Garden stars in Bananaman.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>starring</rel>
+          <obj>Graeme_Garden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>starring</rel>
+          <obj>Comedian</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_45">
+      <text>Bananaman last aired on April 15th 1986.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>lastAired</rel>
+          <obj>1986-04-15</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>lastAired</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_46">
+      <text>Paul Kupperberg is the creator of the comic character, Arion.</text>
+      <triples>
+        <triple>
+          <sub>Arion</sub>
+          <rel>creator</rel>
+          <obj>Paul_Kupperberg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_47">
+      <text>An alternative name for the comic character Bolt is Larry Bolatinsky.</text>
+      <triples>
+        <triple>
+          <sub>Bolt</sub>
+          <rel>alternativeName</rel>
+          <obj>Larry_Bolatinsky</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_48">
+      <text>Dan Mishkin is one of the creators of the comic character, Bolt.</text>
+      <triples>
+        <triple>
+          <sub>Bolt</sub>
+          <rel>creator</rel>
+          <obj>Dan_Mishkin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_49">
+      <text>Doug Moench won the Inkpot Award.</text>
+      <triples>
+        <triple>
+          <sub>Doug_Moench</sub>
+          <rel>award</rel>
+          <obj>Inkpot_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_50">
+      <text>René Goscinny is a French national.</text>
+      <triples>
+        <triple>
+          <sub>René_Goscinny</sub>
+          <rel>nationality</rel>
+          <obj>French_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_51">
+      <text>John Aman, is the alternative name for the comic character, Amazing-Man.</text>
+      <triples>
+        <triple>
+          <sub>Amazing-Man</sub>
+          <rel>alternativeName</rel>
+          <obj>John_Aman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_52">
+      <text>The Arrow is otherwise known as Ralph Payne.</text>
+      <triples>
+        <triple>
+          <sub>The_Arrow</sub>
+          <rel>alternativeName</rel>
+          <obj>Ralph_Payne</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>alternativeName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_53">
+      <text>Tim Brooke-Taylor was born in Derbyshire.</text>
+      <triples>
+        <triple>
+          <sub>Tim_Brooke-Taylor</sub>
+          <rel>birthPlace</rel>
+          <obj>Derbyshire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Comedian</sub>
+          <rel>birthPlace</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_54">
+      <text>Sheldon Moldoff was a national of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Sheldon_Moldoff</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_55">
+      <text>John Buscema won the Alley Award.</text>
+      <triples>
+        <triple>
+          <sub>John_Buscema</sub>
+          <rel>award</rel>
+          <obj>Alley_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_56">
+      <text>John Buscema was awarded an award by the Academy of Comic Book Arts.</text>
+      <triples>
+        <triple>
+          <sub>John_Buscema</sub>
+          <rel>awardedBy</rel>
+          <obj>Academy_of_Comic_Book_Arts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>awardedBy</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_57">
+      <text>The character, Aurakles, was created by Len Wein.</text>
+      <triples>
+        <triple>
+          <sub>Aurakles</sub>
+          <rel>creator</rel>
+          <obj>Len_Wein</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_58">
+      <text>The location of the BBC is the Broadcasting House in London.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>location</rel>
+          <obj>Broadcasting_House</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_59">
+      <text>The comic character, Arion, was created by Jan Duursema.</text>
+      <triples>
+        <triple>
+          <sub>Arion</sub>
+          <rel>creator</rel>
+          <obj>Jan_Duursema</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_60">
+      <text>The full name of Auron (comics character) is "Lambien".</text>
+      <triples>
+        <triple>
+          <sub>Auron</sub>
+          <rel>fullName</rel>
+          <obj>Lambien</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>fullName</rel>
+          <obj>ComicsCharacter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_61">
+      <text>Marv Wolfman won the Inkpot Award.</text>
+      <triples>
+        <triple>
+          <sub>Marv_Wolfman</sub>
+          <rel>award</rel>
+          <obj>Inkpot_Award</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_62">
+      <text>Paul Gustavson created The Arrow.</text>
+      <triples>
+        <triple>
+          <sub>The_Arrow</sub>
+          <rel>creator</rel>
+          <obj>Paul_Gustavson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_63">
+      <text>BBC is located in London.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>location</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_64">
+      <text>BBC was founded by John Reith, 1st Baron Reith.</text>
+      <triples>
+        <triple>
+          <sub>BBC</sub>
+          <rel>foundedBy</rel>
+          <obj>John_Reith,_1st_Baron_Reith</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundedBy</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_65">
+      <text>Tim Brooke-Taylor was born in Buxton.</text>
+      <triples>
+        <triple>
+          <sub>Tim_Brooke-Taylor</sub>
+          <rel>birthPlace</rel>
+          <obj>Buxton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Comedian</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_66">
+      <text>Bananaman first aired on 3rd October 1983.</text>
+      <triples>
+        <triple>
+          <sub>Bananaman</sub>
+          <rel>firstAired</rel>
+          <obj>1983-10-03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>firstAired</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_67">
+      <text>Scott Adsit does the voice for Baymax.</text>
+      <triples>
+        <triple>
+          <sub>Baymax</sub>
+          <rel>voice</rel>
+          <obj>Scott_Adsit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>voice</rel>
+          <obj>Comedian</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_68">
+      <text>Steven T. Seagle is the creator of Baymax.</text>
+      <triples>
+        <triple>
+          <sub>Baymax</sub>
+          <rel>creator</rel>
+          <obj>Steven_T._Seagle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_69">
+      <text>Baymax was created by Duncan Rouleau.</text>
+      <triples>
+        <triple>
+          <sub>Baymax</sub>
+          <rel>creator</rel>
+          <obj>Duncan_Rouleau</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_70">
+      <text>The nationality of John Buscema was that of the United States.</text>
+      <triples>
+        <triple>
+          <sub>John_Buscema</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_71">
+      <text>Marv Wolfman won an award at the Academy of Comic Book Arts.</text>
+      <triples>
+        <triple>
+          <sub>Marv_Wolfman</sub>
+          <rel>awardedBy</rel>
+          <obj>Academy_of_Comic_Book_Arts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>awardedBy</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_72">
+      <text>The creator of Airman, (comics character) is George Kapitan.</text>
+      <triples>
+        <triple>
+          <sub>Airman</sub>
+          <rel>creator</rel>
+          <obj>George_Kapitan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_73">
+      <text>Tim Brooke-Taylor's birth place is the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Tim_Brooke-Taylor</sub>
+          <rel>birthPlace</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Comedian</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_74">
+      <text>Dick Dillin is the creator of Aurakles.</text>
+      <triples>
+        <triple>
+          <sub>Aurakles</sub>
+          <rel>creator</rel>
+          <obj>Dick_Dillin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_75">
+      <text>The creator of Auron (comics character) is Karl Kesel.</text>
+      <triples>
+        <triple>
+          <sub>Auron</sub>
+          <rel>creator</rel>
+          <obj>Karl_Kesel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_76">
+      <text>Hergé was the creator of the character Bianca Castafiore.</text>
+      <triples>
+        <triple>
+          <sub>Bianca_Castafiore</sub>
+          <rel>creator</rel>
+          <obj>Hergé</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCharacter</sub>
+          <rel>creator</rel>
+          <obj>ComicsCreator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_ComicsCharacter" id="1_ComicsCharacter_train_77">
+      <text>The comic book writer, Roger McKenzie, is a United States national.</text>
+      <triples>
+        <triple>
+          <sub>Roger_McKenzie</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ComicsCreator</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

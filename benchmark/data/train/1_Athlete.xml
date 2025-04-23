@@ -1,0 +1,3881 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Athlete" id="1_Athlete_train_1">
+      <text>Aleksandr Chumakov was born in 1948.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>birthYear</rel>
+          <obj>1948</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_2">
+      <text>The coach of the Los Angeles Rams is Jeff Fisher.</text>
+      <triples>
+        <triple>
+          <sub>Los_Angeles_Rams</sub>
+          <rel>coach</rel>
+          <obj>Jeff_Fisher</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_3">
+      <text>Ahmad Kadhim Assad was born on the 01-07-1976.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>birthDate</rel>
+          <obj>1976-07-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_4">
+      <text>Alex Tyus started playing in 2011.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>2011</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_5">
+      <text>Akeem Dent used to play for Houston Texans.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>formerTeam</rel>
+          <obj>Houston_Texans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>formerTeam</rel>
+          <obj>AmericanFootballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_6">
+      <text>Steve Spagnuolo is the coach of the St. Louis Rams.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis_Rams</sub>
+          <rel>coach</rel>
+          <obj>Steve_Spagnuolo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_7">
+      <text>Abel Hernández's club is U.S. Città di Palermo.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>U.S._Città_di_Palermo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_8">
+      <text>Gadzhi Gadzhiyev is the manager of FC Amkar Perm.</text>
+      <triples>
+        <triple>
+          <sub>FC_Amkar_Perm</sub>
+          <rel>manager</rel>
+          <obj>Gadzhi_Gadzhiyev</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_9">
+      <text>Akeem Adams' club is Central F.C.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>Central_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_10">
+      <text>Alaa Abdul-Zahra is in the Al-Khor Sports Club.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al-Khor_Sports_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_11">
+      <text>Ahmad Kadhim Assad played for the club PAS Tehran F.C.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>PAS_Tehran_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_12">
+      <text>The manager of the Orange County Blues FC is Oliver Wyss.</text>
+      <triples>
+        <triple>
+          <sub>Orange_County_Blues_FC</sub>
+          <rel>manager</rel>
+          <obj>Oliver_Wyss</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_13">
+      <text>Montreal Canadiens have won the National Hockey League the most times.</text>
+      <triples>
+        <triple>
+          <sub>National_Hockey_League</sub>
+          <rel>mostChampions</rel>
+          <obj>Montreal_Canadiens</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyLeague</sub>
+          <rel>mostChampions</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_14">
+      <text>Akeem Adams played for United Petrotrin F.C.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>United_Petrotrin_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_15">
+      <text>Ahmad Kadhim Assad's birthplace is Iraq.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>birthPlace</rel>
+          <obj>Iraq</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_16">
+      <text>Alaa Abdul-Zahra's football position is Forward.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>position</rel>
+          <obj>Forward</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>position</rel>
+          <obj>AthleticFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_17">
+      <text>Alaa Abdul-Zahra's club is Shabab Al-Ordon Club.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Shabab_Al-Ordon_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_18">
+      <text>New Douglas Park is the home of Hamilton Academical F.C.</text>
+      <triples>
+        <triple>
+          <sub>Hamilton_Academical_F.C.</sub>
+          <rel>ground</rel>
+          <obj>New_Douglas_Park</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_19">
+      <text>Alex Tyus weighs 99.792 kg.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>weight</rel>
+          <obj>99.792</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>weight</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_20">
+      <text>Akeem Adams plays for the Trinidad and Tobago national football team.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>Trinidad_and_Tobago_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_21">
+      <text>Alex Tyus played for the college Florida Gators men's basketball team.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>club</rel>
+          <obj>Florida_Gators_men's_basketball</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>club</rel>
+          <obj>BasketballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_22">
+      <text>Amar Osim is the manager of Al Kharaitiyat SC.</text>
+      <triples>
+        <triple>
+          <sub>Al_Kharaitiyat_SC</sub>
+          <rel>manager</rel>
+          <obj>Amar_Osim</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_23">
+      <text>Alaa Abdul-Zahra plays for the Al-Wakrah Sport Club.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al-Wakrah_Sport_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_24">
+      <text>Abel Hernández was born in Uruguay.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>birthPlace</rel>
+          <obj>Uruguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_25">
+      <text>Adam McQuaid weighs 94.8024 kilograms.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>weight</rel>
+          <obj>94.8024</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>weight</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_26">
+      <text>The Russian leader's name is Sergey Naryshkin.</text>
+      <triples>
+        <triple>
+          <sub>Russia</sub>
+          <rel>leader</rel>
+          <obj>Sergey_Naryshkin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_27">
+      <text>Francis G. Slay is the leader of St. Louis.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>leader</rel>
+          <obj>Francis_G._Slay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_28">
+      <text>Barry Ferguson is the manager for Clyde F.C.</text>
+      <triples>
+        <triple>
+          <sub>Clyde_F.C.</sub>
+          <rel>manager</rel>
+          <obj>Barry_Ferguson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_29">
+      <text>St. Louis is a part of greater St. Louis.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>isPartOf</rel>
+          <obj>Greater_St._Louis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_30">
+      <text>Adam McQuaid played for the club Boston Bruins.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>club</rel>
+          <obj>Boston_Bruins</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>club</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_31">
+      <text>Ahmad Kadhim Assad's club is Al Shorta SC.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Al_Shorta_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_32">
+      <text>Alaa Abdul-Zahra plays for the Iraq national under-20 football team.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Iraq_national_under-20_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_33">
+      <text>Alex Plante is 1.9304 m tall.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>height</rel>
+          <obj>1.9304</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_34">
+      <text>The manager of SV Werder Bremen is Viktor Skrypnyk.</text>
+      <triples>
+        <triple>
+          <sub>SV_Werder_Bremen</sub>
+          <rel>manager</rel>
+          <obj>Viktor_Skrypnyk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_35">
+      <text>Aleksandr Prudnikov's club is called Sparta Prague.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>Sparta_Prague</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_36">
+      <text>Aleksander Barkov, Jr. was born in Finland.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>birthPlace</rel>
+          <obj>Finland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_37">
+      <text>Dan Quinn is the coach of the American football team the Atlanta Falcons.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta_Falcons</sub>
+          <rel>coach</rel>
+          <obj>Dan_Quinn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_38">
+      <text>Alex Tyus' club is Pallacanestro Cantù.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>club</rel>
+          <obj>Pallacanestro_Cantù</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>club</rel>
+          <obj>BasketballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_39">
+      <text>Ahmad Kadhim Assad played for Esteghlal Ahvaz F.C.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Esteghlal_Ahvaz_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_40">
+      <text>The footballer Abner belongs to the club C.D. FAS.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>C.D._FAS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_41">
+      <text>Jamaica's leader is Elizabeth II.</text>
+      <triples>
+        <triple>
+          <sub>Jamaica</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_42">
+      <text>Aaron Boogaard's club is Wichita Thunder.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>club</rel>
+          <obj>Wichita_Thunder</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>club</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_43">
+      <text>Akeem Adams' birthplace was Point Fortin, Trinidad and Tobago.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>birthPlace</rel>
+          <obj>Point_Fortin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_44">
+      <text>Akeem Priestley plays for Orange County Blues FC.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>Orange_County_Blues_FC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_45">
+      <text>SV Werder Bremen play in the Bundesliga.</text>
+      <triples>
+        <triple>
+          <sub>SV_Werder_Bremen</sub>
+          <rel>league</rel>
+          <obj>Bundesliga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_46">
+      <text>Akeem Adams plays for T&amp;TEC Sports Club.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>T&amp;TEC_Sports_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_47">
+      <text>Aleksandr Chumakov died in Russia.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>deathPlace</rel>
+          <obj>Russia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>deathPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_48">
+      <text>Abner is a footballer with the Real Madrid Castilla club.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>Real_Madrid_Castilla</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_49">
+      <text>Valery Petrakov is the manager of FC Torpedo Moscow.</text>
+      <triples>
+        <triple>
+          <sub>FC_Torpedo_Moscow</sub>
+          <rel>manager</rel>
+          <obj>Valery_Petrakov</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_50">
+      <text>Abel Hernández's club is the Uruguay National football team.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Uruguay_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_51">
+      <text>Akeem Dent is a player number 50.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>playerNumber</rel>
+          <obj>50</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>playerNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_52">
+      <text>The total area for Gdynia is 135000000 square m.</text>
+      <triples>
+        <triple>
+          <sub>Gdynia</sub>
+          <rel>areaTotal</rel>
+          <obj>135000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_53">
+      <text>Akeem Dent was born in the Year 1987.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>birthYear</rel>
+          <obj>1987</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_54">
+      <text>Abel Hernández's club is Peñarol.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Peñarol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_55">
+      <text>Chuck Fletcher is the general manager of the Minnesota Wild.</text>
+      <triples>
+        <triple>
+          <sub>Minnesota_Wild</sub>
+          <rel>generalManager</rel>
+          <obj>Chuck_Fletcher</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>HockeyTeam</sub>
+          <rel>generalManager</rel>
+          <obj>SportsManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_56">
+      <text>C.D. FAS's league is the Salvadoran Primera División.</text>
+      <triples>
+        <triple>
+          <sub>C.D._FAS</sub>
+          <rel>league</rel>
+          <obj>Salvadoran_Primera_División</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_57">
+      <text>Aaron Boogaard's birthplace is Canada.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>birthPlace</rel>
+          <obj>Canada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_58">
+      <text>Aleksandr Prudnikov plays for FC Anzhi Makhachkala.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Anzhi_Makhachkala</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_59">
+      <text>Bob McNair is the owner of the Houston Texans.</text>
+      <triples>
+        <triple>
+          <sub>Houston_Texans</sub>
+          <rel>owner</rel>
+          <obj>Bob_McNair</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>owner</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_60">
+      <text>A.S. Roma's position is the Serie A.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Roma</sub>
+          <rel>league</rel>
+          <obj>Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_61">
+      <text>Aaron Boogaard was born 11/08/1986.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>birthDate</rel>
+          <obj>1986-08-11</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_62">
+      <text>Adam McQuaid was born on Prince Edward Island.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>birthPlace</rel>
+          <obj>Prince_Edward_Island</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_63">
+      <text>Aleksandr Prudnikov plays for FC Rubin Kazan.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Rubin_Kazan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_64">
+      <text>Akeem Dent's club is the Houston Texans.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>club</rel>
+          <obj>Houston_Texans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>club</rel>
+          <obj>AmericanFootballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_65">
+      <text>Finns is a demonym of Finland.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>demonym</rel>
+          <obj>Finns</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_66">
+      <text>Alex Tyus plays for Anadolu Efes S.K.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>club</rel>
+          <obj>Anadolu_Efes_S.K.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>club</rel>
+          <obj>BasketballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_67">
+      <text>Alessio Romagnoli plays for the club U.C. Sampdoria.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>club</rel>
+          <obj>U.C._Sampdoria</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_68">
+      <text>Alan Martin is a footballer for Ayr United F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Ayr_United_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_69">
+      <text>Akeem Dent was born in Atlanta.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>birthPlace</rel>
+          <obj>Atlanta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_70">
+      <text>Akeem Adams played in the Trinidad and Tobago national under-20 football team.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>Trinidad_and_Tobago_national_under-20_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_71">
+      <text>Aaron Boogaard is 1.905 m high.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>height</rel>
+          <obj>1.905</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_72">
+      <text>Piotr Hallmann's height is 175.26 cm.</text>
+      <triples>
+        <triple>
+          <sub>Piotr_Hallmann</sub>
+          <rel>height</rel>
+          <obj>175.26</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MartialArtist</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_73">
+      <text>The footballer Alan Martin plays for Barrow A.F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Barrow_A.F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_74">
+      <text>The leader of Canada is Elizabeth II.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_75">
+      <text>Aleksandr Prudnikov's club is FC Spartak Moscow.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Spartak_Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_76">
+      <text>Adam McQuaid was born in Charlottetown.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>birthPlace</rel>
+          <obj>Charlottetown</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_77">
+      <text>Abel Hernández's club is Hull City A.F.C.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Hull_City_A.F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_78">
+      <text>Aleksander Barkov, Jr. previously played for the team Tappara.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>formerTeam</rel>
+          <obj>Tappara</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>formerTeam</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_79">
+      <text>Aaron Boogaard's draft team is Minnesota Wild.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>draftTeam</rel>
+          <obj>Minnesota_Wild</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>draftTeam</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_80">
+      <text>Iraq is the birth place of Alaa Abdul-Zahra.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>birthPlace</rel>
+          <obj>Iraq</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_81">
+      <text>The Jacksonville University team is known as the Jacksonville Dolphins.</text>
+      <triples>
+        <triple>
+          <sub>Jacksonville_University</sub>
+          <rel>universityTeam</rel>
+          <obj>Jacksonville_Dolphins</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>universityTeam</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_82">
+      <text>Peñarol plays in the Uruguayan Primera División.</text>
+      <triples>
+        <triple>
+          <sub>Peñarol</sub>
+          <rel>league</rel>
+          <obj>Uruguayan_Primera_División</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_83">
+      <text>Aleksander Barkov, Jr. played in the National Hockey League.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>league</rel>
+          <obj>National_Hockey_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>league</rel>
+          <obj>IceHockeyLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_84">
+      <text>One of the languages in Canada is French.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>language</rel>
+          <obj>French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_85">
+      <text>Abel Hernández's club is the Uruguay national under-20 football team.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Uruguay_national_under-20_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_86">
+      <text>Akeem Priestley's birth place was Kingston (Jamaica).</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>birthPlace</rel>
+          <obj>Kingston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_87">
+      <text>The U.S. Città di Palermo are in the Serie A League.</text>
+      <triples>
+        <triple>
+          <sub>U.S._Città_di_Palermo</sub>
+          <rel>league</rel>
+          <obj>Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_88">
+      <text>Adam McQuaid was born in October 12th 1986.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>birthDate</rel>
+          <obj>1986-10-12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_89">
+      <text>The leader of Russia is Vladimir Putin.</text>
+      <triples>
+        <triple>
+          <sub>Russia</sub>
+          <rel>leader</rel>
+          <obj>Vladimir_Putin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_90">
+      <text>Accrington Stanley F.C.'s ground is Accrington.</text>
+      <triples>
+        <triple>
+          <sub>Accrington_Stanley_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Accrington</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_91">
+      <text>Adnan Hamad is the manager of Esteghlal Ahvaz F.C.</text>
+      <triples>
+        <triple>
+          <sub>Esteghlal_Ahvaz_F.C.</sub>
+          <rel>manager</rel>
+          <obj>Adnan_Hamad</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_92">
+      <text>Alex Tyus plays in the Euroleague.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>league</rel>
+          <obj>Euroleague</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>league</rel>
+          <obj>BasketballLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_93">
+      <text>The Legislative Assembly of Saskatchewan governs Regina (Saskatchewan).</text>
+      <triples>
+        <triple>
+          <sub>Regina</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislative_Assembly_of_Saskatchewan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_94">
+      <text>The footballer Alan Martin plays in the Scotland National under-21 football team.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Scotland_national_under-21_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_95">
+      <text>Alaa Abdul-Zahra has played for Al-Merrikh SC.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al-Merrikh_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_96">
+      <text>Jeff Fisher is the coach of the St. Louis Rams.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis_Rams</sub>
+          <rel>coach</rel>
+          <obj>Jeff_Fisher</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_97">
+      <text>Adam McQuaid's draft team was the Columbus Blue Jackets.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>draftTeam</rel>
+          <obj>Columbus_Blue_Jackets</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>draftTeam</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_98">
+      <text>Alessio Romagnoli played for the Italy national under-16 football team.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>club</rel>
+          <obj>Italy_national_under-16_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_99">
+      <text>Alex Tyus's club is Maccabi Ashdod B.C.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>club</rel>
+          <obj>Maccabi_Ashdod_B.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>club</rel>
+          <obj>BasketballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_100">
+      <text>The Boston Bruins are from Boston.</text>
+      <triples>
+        <triple>
+          <sub>Boston_Bruins</sub>
+          <rel>location</rel>
+          <obj>Boston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>HockeyTeam</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_101">
+      <text>Aleksandr Prudnikov played for the Russia national under-21 football team.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>Russia_national_under-21_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_102">
+      <text>Alex Plante was born in 1989.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>birthYear</rel>
+          <obj>1989</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_103">
+      <text>St. Louis is part of the French First Republic.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>isPartOf</rel>
+          <obj>French_First_Republic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_104">
+      <text>Alessio Romagnoli's current club is A.C. Milan.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>currentClub</rel>
+          <obj>A.C._Milan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>currentClub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_105">
+      <text>The home of the Houston Texans is the city of Houston.</text>
+      <triples>
+        <triple>
+          <sub>Houston_Texans</sub>
+          <rel>city</rel>
+          <obj>Houston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_106">
+      <text>Al-Wakrah Sport Club position is in the Qatar Stars League.</text>
+      <triples>
+        <triple>
+          <sub>Al-Wakrah_Sport_Club</sub>
+          <rel>league</rel>
+          <obj>Qatar_Stars_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_107">
+      <text>Al Kharaitiyat SC's ground is Al Khor.</text>
+      <triples>
+        <triple>
+          <sub>Al_Kharaitiyat_SC</sub>
+          <rel>ground</rel>
+          <obj>Al_Khor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_108">
+      <text>Aleksander Barkov, Jr.'s weight is 96.1632 kg.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>weight</rel>
+          <obj>96.1632</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>weight</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_109">
+      <text>Alan Martin is a footballer for Aldershot Town F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Aldershot_Town_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_110">
+      <text>Central Español play in the Uruguayan Segunda División.</text>
+      <triples>
+        <triple>
+          <sub>Central_Español</sub>
+          <rel>league</rel>
+          <obj>Uruguayan_Segunda_División</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_111">
+      <text>Alex Plante was born on 1989-05-09.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>birthDate</rel>
+          <obj>1989-05-09</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_112">
+      <text>The footballer Abner plays for the Brazil national under-17 football team.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>Brazil_national_under-17_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_113">
+      <text>Jacksonville Dolphins play in Jacksonville.</text>
+      <triples>
+        <triple>
+          <sub>Jacksonville_Dolphins</sub>
+          <rel>location</rel>
+          <obj>Jacksonville</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_114">
+      <text>Alaa Abdul-Zahra's club is Tractor Sazi F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Tractor_Sazi_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_115">
+      <text>Olympique Lyonnais play their home games at the Parc Olympique Lyonnais.</text>
+      <triples>
+        <triple>
+          <sub>Olympique_Lyonnais</sub>
+          <rel>ground</rel>
+          <obj>Parc_Olympique_Lyonnais</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_116">
+      <text>Footballer, Steve Davis, manages Crewe Alexandra F.C.</text>
+      <triples>
+        <triple>
+          <sub>Crewe_Alexandra_F.C.</sub>
+          <rel>manager</rel>
+          <obj>Steve_Davis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_117">
+      <text>Aleksandr Chumakov died in Moscow.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>deathPlace</rel>
+          <obj>Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_118">
+      <text>Luis Miguel Ramis is the manager for Real Madrid Castilla.</text>
+      <triples>
+        <triple>
+          <sub>Real_Madrid_Castilla</sub>
+          <rel>manager</rel>
+          <obj>Luis_Miguel_Ramis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_119">
+      <text>Alan Martin is a footballer for Leeds United F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Leeds_United_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_120">
+      <text>The ground of Hamilton Academical F.C. is located in Hamilton (South Lanarkshire).</text>
+      <triples>
+        <triple>
+          <sub>Hamilton_Academical_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Hamilton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_121">
+      <text>Columbus Blue Jackets' general manager is Jarmo Kekäläinen.</text>
+      <triples>
+        <triple>
+          <sub>Columbus_Blue_Jackets</sub>
+          <rel>generalManager</rel>
+          <obj>Jarmo_Kekäläinen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>HockeyTeam</sub>
+          <rel>generalManager</rel>
+          <obj>IceHockeyPlayer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_122">
+      <text>Alex Tyus was born in St. Louis.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>birthPlace</rel>
+          <obj>St._Louis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_123">
+      <text>Alex Tyus was born on the 8th January 1988.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>birthDate</rel>
+          <obj>1988-01-08</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_124">
+      <text>Ahmad Kadhim Assad's club is Steel Azin F.C.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Steel_Azin_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_125">
+      <text>Aleksander Barkov, Jr. was born in Tampere.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>birthPlace</rel>
+          <obj>Tampere</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_126">
+      <text>Abel Hernández is in the Uruguay Olympic football team.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Uruguay_Olympic_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_127">
+      <text>Alex Tyus is 232 m tall.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>height</rel>
+          <obj>232</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_128">
+      <text>Jean-Michel Aulas is the chairman of Olympique Lyonnais.</text>
+      <triples>
+        <triple>
+          <sub>Olympique_Lyonnais</sub>
+          <rel>chairman</rel>
+          <obj>Jean-Michel_Aulas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_129">
+      <text>The leader of Jamaica is Patrick Allen.</text>
+      <triples>
+        <triple>
+          <sub>Jamaica</sub>
+          <rel>leader</rel>
+          <obj>Patrick_Allen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_130">
+      <text>The club Aleksandr Chumakov plays for is FC Torpedo Moscow.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>club</rel>
+          <obj>FC_Torpedo_Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_131">
+      <text>The language in Russia is Russian.</text>
+      <triples>
+        <triple>
+          <sub>Russia</sub>
+          <rel>language</rel>
+          <obj>Russian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_132">
+      <text>Akeem Dent's position is a linebacker.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>position</rel>
+          <obj>Linebacker</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>position</rel>
+          <obj>AthleticFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_133">
+      <text>The timezone in Gdynia is Central European Time.</text>
+      <triples>
+        <triple>
+          <sub>Gdynia</sub>
+          <rel>timeZone</rel>
+          <obj>Central_European_Time</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_134">
+      <text>Akeem Dent's place of birth is Atlanta.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>birthPlace</rel>
+          <obj>Atlanta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_135">
+      <text>Alessio Romagnoli's club is the Italy national under-19 football team.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>club</rel>
+          <obj>Italy_national_under-19_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_136">
+      <text>The leader of Brandon (Manitoba) is Drew Caldwell.</text>
+      <triples>
+        <triple>
+          <sub>Brandon</sub>
+          <rel>leader</rel>
+          <obj>Drew_Caldwell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_137">
+      <text>Levan Khomeriki is the manager of FC Dinamo Batumi.</text>
+      <triples>
+        <triple>
+          <sub>FC_Dinamo_Batumi</sub>
+          <rel>manager</rel>
+          <obj>Levan_Khomeriki</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_138">
+      <text>Adam McQuaid's year of birth is 1986.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>birthYear</rel>
+          <obj>1986</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_139">
+      <text>Aleksander Barkov, Jr. has played for the Florida Panthers.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>club</rel>
+          <obj>Florida_Panthers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>club</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_140">
+      <text>Al-Khor Sports Club is in the Qatar Stars League.</text>
+      <triples>
+        <triple>
+          <sub>Al-Khor_Sports_Club</sub>
+          <rel>league</rel>
+          <obj>Qatar_Stars_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_141">
+      <text>The footballer Abner has represented the Brazil national under-20 football team.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>Brazil_national_under-20_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_142">
+      <text>The footballer Abner was born on 30/05/1996.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>birthDate</rel>
+          <obj>1996-05-30</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_143">
+      <text>Ahmad Kadhim Assad is in the Al-Naft club.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Al-Naft</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_144">
+      <text>Alan Martin is a footballer for the Clyde F.C. club.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Clyde_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_145">
+      <text>Footballer Alessio Romagnoli plays as a Defender.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>position</rel>
+          <obj>Defender</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>position</rel>
+          <obj>AthleticFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_146">
+      <text>Footballer, Alan Martin, plays for the club Crewe Alexandra F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Crewe_Alexandra_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_147">
+      <text>Ahmad Kadhim Assad's club is Al-Zawra'a SC.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Al-Zawra'a_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_148">
+      <text>Alaa Abdul-Zahra's club is Al Shorta SC.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al_Shorta_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_149">
+      <text>Valentina Matviyenko is a leader in Russia.</text>
+      <triples>
+        <triple>
+          <sub>Russia</sub>
+          <rel>leader</rel>
+          <obj>Valentina_Matviyenko</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_150">
+      <text>Akeem Adams is in the W Connection F.C. club.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>W_Connection_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_151">
+      <text>Budapest is the death place of Akeem Adams.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>deathPlace</rel>
+          <obj>Budapest</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_152">
+      <text>In his youth, Abel Hernández played for Peñarol.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>youthclub</rel>
+          <obj>Peñarol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>youthclub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_153">
+      <text>Aleksandr Prudnikov plays for FC Alania Vladikavkaz.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Alania_Vladikavkaz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_154">
+      <text>Akeem Priestley's youth club was the Connecticut Huskies.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>youthclub</rel>
+          <obj>Connecticut_Huskies</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>youthclub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_155">
+      <text>Aleksander Barkov, Jr.'s draft team is the Florida Panthers.</text>
+      <triples>
+        <triple>
+          <sub>Aleksander_Barkov,_Jr.</sub>
+          <rel>draftTeam</rel>
+          <obj>Florida_Panthers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>draftTeam</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_156">
+      <text>Alan Martin's football club is Motherwell F.C.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>club</rel>
+          <obj>Motherwell_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_157">
+      <text>Adam McQuaid's height is 1.9558.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>height</rel>
+          <obj>1.9558</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_158">
+      <text>Piotr Hallmann was born on August 25, 1987.</text>
+      <triples>
+        <triple>
+          <sub>Piotr_Hallmann</sub>
+          <rel>birthDate</rel>
+          <obj>1987-08-25</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MartialArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_159">
+      <text>Aaron Boogaard's birthplace is Regina (Saskatchewan).</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Boogaard</sub>
+          <rel>birthPlace</rel>
+          <obj>Regina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_160">
+      <text>Abel Hernández played youth football for Central Español.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>youthclub</rel>
+          <obj>Central_Español</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>youthclub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_161">
+      <text>Adam Maher's birthplace is Diemen.</text>
+      <triples>
+        <triple>
+          <sub>Adam_Maher</sub>
+          <rel>birthPlace</rel>
+          <obj>Diemen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_162">
+      <text>Akeem Dent was born on 27/09/1987.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>birthDate</rel>
+          <obj>1987-09-27</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_163">
+      <text>Al-Khor Sports Club is located in Al Khor.</text>
+      <triples>
+        <triple>
+          <sub>Al-Khor_Sports_Club</sub>
+          <rel>ground</rel>
+          <obj>Al_Khor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_164">
+      <text>The leader in Finland is Sauli Niinistö.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>leader</rel>
+          <obj>Sauli_Niinistö</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_165">
+      <text>Aleksandr Chumakov was born in Moscow.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>birthPlace</rel>
+          <obj>Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_166">
+      <text>Abner plays for the Coritiba Football Club.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>club</rel>
+          <obj>Coritiba_Football_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_167">
+      <text>Akeem Priestley plays for FK Mughan.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>FK_Mughan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_168">
+      <text>Phillip Cocu is the manager of PSV Eindhoven.</text>
+      <triples>
+        <triple>
+          <sub>PSV_Eindhoven</sub>
+          <rel>manager</rel>
+          <obj>Phillip_Cocu</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_169">
+      <text>Dušan Ivković is the coach of Anadolu Efes S.K.</text>
+      <triples>
+        <triple>
+          <sub>Anadolu_Efes_S.K.</sub>
+          <rel>coach</rel>
+          <obj>Dušan_Ivković</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballTeam</sub>
+          <rel>coach</rel>
+          <obj>BasketballPlayer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_170">
+      <text>Alaa Abdul-Zahra's club is AL Kharaitiyat SC.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Al_Kharaitiyat_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_171">
+      <text>Akeem Priestley plays for Jacksonville Dolphins.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>Jacksonville_Dolphins</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_172">
+      <text>Alaa Abdul-Zahra's club is Duhok SC.</text>
+      <triples>
+        <triple>
+          <sub>Alaa_Abdul-Zahra</sub>
+          <rel>club</rel>
+          <obj>Duhok_SC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_173">
+      <text>Alessandro Dal Canto is the coach of the Italy national under-17 football team.</text>
+      <triples>
+        <triple>
+          <sub>Italy_national_under-17_football_team</sub>
+          <rel>coach</rel>
+          <obj>Alessandro_Dal_Canto</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>coach</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_174">
+      <text>Adam Maher's club is AZ Alkmaar.</text>
+      <triples>
+        <triple>
+          <sub>Adam_Maher</sub>
+          <rel>club</rel>
+          <obj>AZ_Alkmaar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_175">
+      <text>Aleksandr Prudnikov's current club is FC Amkar Perm.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>currentClub</rel>
+          <obj>FC_Amkar_Perm</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>currentClub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_176">
+      <text>Texas is the home of Houston Texans.</text>
+      <triples>
+        <triple>
+          <sub>Houston_Texans</sub>
+          <rel>location</rel>
+          <obj>Texas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>location</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_177">
+      <text>Aleksandr Prudnikov's club is FC Dynamo Moscow.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Dynamo_Moscow</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_178">
+      <text>Akeem Priestley played for Sheikh Russel KC.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>Sheikh_Russel_KC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_179">
+      <text>Joe Vitt is the coach for the St. Louis Rams.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis_Rams</sub>
+          <rel>coach</rel>
+          <obj>Joe_Vitt</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>coach</rel>
+          <obj>AmericanFootballCoach</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_180">
+      <text>Maccabi Tel Aviv B.C.'s coach is Žan Tabak.</text>
+      <triples>
+        <triple>
+          <sub>Maccabi_Tel_Aviv_B.C.</sub>
+          <rel>coach</rel>
+          <obj>Žan_Tabak</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballTeam</sub>
+          <rel>coach</rel>
+          <obj>BasketballPlayer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_181">
+      <text>The official language in Finland is Finnish.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>officialLanguage</rel>
+          <obj>Finnish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_182">
+      <text>The chairman of FC Torpedo Moscow is Aleksandr Tukmanov.</text>
+      <triples>
+        <triple>
+          <sub>FC_Torpedo_Moscow</sub>
+          <rel>chairman</rel>
+          <obj>Aleksandr_Tukmanov</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_183">
+      <text>The chairman of FC Spartak Moscow is Sergey Rodionov.</text>
+      <triples>
+        <triple>
+          <sub>FC_Spartak_Moscow</sub>
+          <rel>chairman</rel>
+          <obj>Sergey_Rodionov</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_184">
+      <text>Point Fortin is in Trinidad.</text>
+      <triples>
+        <triple>
+          <sub>Point_Fortin</sub>
+          <rel>country</rel>
+          <obj>Trinidad</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_185">
+      <text>Asian Canadians are one of the ethnic groups in Canada.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Asian_Canadians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_186">
+      <text>The Euro is the currency in Finland.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_187">
+      <text>Alessio Romagnoli was born in Anzio.</text>
+      <triples>
+        <triple>
+          <sub>Alessio_Romagnoli</sub>
+          <rel>birthPlace</rel>
+          <obj>Anzio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_188">
+      <text>The Columbus Blue Jackets' city is Columbus (Ohio).</text>
+      <triples>
+        <triple>
+          <sub>Columbus_Blue_Jackets</sub>
+          <rel>city</rel>
+          <obj>Columbus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>HockeyTeam</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_189">
+      <text>Los Angeles Rams play at the Los Angeles Memorial Coliseum.</text>
+      <triples>
+        <triple>
+          <sub>Los_Angeles_Rams</sub>
+          <rel>location</rel>
+          <obj>Los_Angeles_Memorial_Coliseum</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballTeam</sub>
+          <rel>location</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_190">
+      <text>O Canada is the national anthem of Canada.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>anthem</rel>
+          <obj>O_Canada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>anthem</rel>
+          <obj>NationalAnthem</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_191">
+      <text>Abner (a footballer) was born in Londrina.</text>
+      <triples>
+        <triple>
+          <sub>Abner</sub>
+          <rel>birthPlace</rel>
+          <obj>Londrina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_192">
+      <text>The leader in Moscow is Sergey Sobyanin.</text>
+      <triples>
+        <triple>
+          <sub>Moscow</sub>
+          <rel>leader</rel>
+          <obj>Sergey_Sobyanin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_193">
+      <text>John Sessions Stadium is the home of the Jacksonville Dolphins.</text>
+      <triples>
+        <triple>
+          <sub>Jacksonville_Dolphins</sub>
+          <rel>stadium</rel>
+          <obj>John_Sessions_Stadium</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>stadium</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_194">
+      <text>United Petrotrin F.C.'s ground is Palo Seco.</text>
+      <triples>
+        <triple>
+          <sub>United_Petrotrin_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Palo_Seco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_195">
+      <text>Abel Hernández's birthplace is Pando (Uruguay).</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>birthPlace</rel>
+          <obj>Pando</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_196">
+      <text>The leader of Gdynia is called the Mayor.</text>
+      <triples>
+        <triple>
+          <sub>Gdynia</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_197">
+      <text>Footballer, Alan Martin is 185.42 metres tall.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Martin</sub>
+          <rel>height</rel>
+          <obj>185.42</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_198">
+      <text>FC Torpedo Moscow played in the 2014–15 Russian Premier League.</text>
+      <triples>
+        <triple>
+          <sub>FC_Torpedo_Moscow</sub>
+          <rel>season</rel>
+          <obj>2014–15_Russian_Premier_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_199">
+      <text>Piotr Hallmann weighs 70.308 kilograms.</text>
+      <triples>
+        <triple>
+          <sub>Piotr_Hallmann</sub>
+          <rel>weight</rel>
+          <obj>70.308</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MartialArtist</sub>
+          <rel>weight</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_200">
+      <text>Alex Plante was born in Brandon (Manitoba).</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>birthPlace</rel>
+          <obj>Brandon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_201">
+      <text>Akeem Dent's first team were the Atlanta Falcons.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Dent</sub>
+          <rel>debutTeam</rel>
+          <obj>Atlanta_Falcons</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AmericanFootballPlayer</sub>
+          <rel>debutTeam</rel>
+          <obj>AmericanFootballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_202">
+      <text>FC Spartak Moscow's grounds are the Otkrytiye Arena.</text>
+      <triples>
+        <triple>
+          <sub>FC_Spartak_Moscow</sub>
+          <rel>ground</rel>
+          <obj>Otkrytiye_Arena</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_203">
+      <text>Hamburger SV compete in the Bundesliga.</text>
+      <triples>
+        <triple>
+          <sub>Hamburger_SV</sub>
+          <rel>league</rel>
+          <obj>Bundesliga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_204">
+      <text>Ahmad Kadhim Assad is in the Al-Quwa Al-Jawiya club.</text>
+      <triples>
+        <triple>
+          <sub>Ahmad_Kadhim_Assad</sub>
+          <rel>club</rel>
+          <obj>Al-Quwa_Al-Jawiya</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_205">
+      <text>Inuktitut is a language spoken in Canada.</text>
+      <triples>
+        <triple>
+          <sub>Canada</sub>
+          <rel>language</rel>
+          <obj>Inuktitut</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_206">
+      <text>Akeem Priestley's club is Dayton Dutch Lions.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>Dayton_Dutch_Lions</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_207">
+      <text>The current club that Adam Maher plays for is PSV Eindhoven.</text>
+      <triples>
+        <triple>
+          <sub>Adam_Maher</sub>
+          <rel>currentClub</rel>
+          <obj>PSV_Eindhoven</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>currentClub</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_208">
+      <text>Adam McQuaid was born in Canada.</text>
+      <triples>
+        <triple>
+          <sub>Adam_McQuaid</sub>
+          <rel>birthPlace</rel>
+          <obj>Canada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_209">
+      <text>Aleksandr Chumakov was born in the Soviet Union.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>birthPlace</rel>
+          <obj>Soviet_Union</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_210">
+      <text>Shabab Al-Ordon Club is in the Jordan Premier League.</text>
+      <triples>
+        <triple>
+          <sub>Shabab_Al-Ordon_Club</sub>
+          <rel>league</rel>
+          <obj>Jordan_Premier_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_211">
+      <text>Adam Maher was born in Ait Ikkou, Morocco.</text>
+      <triples>
+        <triple>
+          <sub>Adam_Maher</sub>
+          <rel>birthPlace</rel>
+          <obj>Ait_Ikkou</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_212">
+      <text>RoPS plays in the Veikkausliiga.</text>
+      <triples>
+        <triple>
+          <sub>RoPS</sub>
+          <rel>league</rel>
+          <obj>Veikkausliiga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_213">
+      <text>Akeem Priestley represented the Jamaica national football team.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>Jamaica_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_214">
+      <text>The languages of Finland are Sami languages.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>language</rel>
+          <obj>Sami</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_215">
+      <text>Alex Tyus plays for the club, Maccabi Tel Aviv B.C.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Tyus</sub>
+          <rel>club</rel>
+          <obj>Maccabi_Tel_Aviv_B.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BasketballPlayer</sub>
+          <rel>club</rel>
+          <obj>BasketballTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_216">
+      <text>Akeem Adams's club is the Trinidad and Tobago national under-17 football team.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Adams</sub>
+          <rel>club</rel>
+          <obj>Trinidad_and_Tobago_national_under-17_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_217">
+      <text>Aleksandr Chumakov plays for the Soviet Union national football team.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Chumakov</sub>
+          <rel>club</rel>
+          <obj>Soviet_Union_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_218">
+      <text>Abel Hernández's club is Central Español.</text>
+      <triples>
+        <triple>
+          <sub>Abel_Hernández</sub>
+          <rel>club</rel>
+          <obj>Central_Español</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_219">
+      <text>Alex Plante has played for the club Anyang Halla.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Plante</sub>
+          <rel>club</rel>
+          <obj>Anyang_Halla</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>IceHockeyPlayer</sub>
+          <rel>club</rel>
+          <obj>HockeyTeam</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_220">
+      <text>Aleksandr Prudnikov plays for FC Kuban Krasnodar.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Kuban_Krasnodar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_221">
+      <text>Akeem Priestley’s club is RoPS.</text>
+      <triples>
+        <triple>
+          <sub>Akeem_Priestley</sub>
+          <rel>club</rel>
+          <obj>RoPS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_222">
+      <text>Giuseppe Iachini is the manager of U.S. Città di Palermo.</text>
+      <triples>
+        <triple>
+          <sub>U.S._Città_di_Palermo</sub>
+          <rel>manager</rel>
+          <obj>Giuseppe_Iachini</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_223">
+      <text>Scot Gemmill is the coach of the Scotland national under-19 football team.</text>
+      <triples>
+        <triple>
+          <sub>Scotland_national_under-19_football_team</sub>
+          <rel>coach</rel>
+          <obj>Scot_Gemmill</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>coach</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_224">
+      <text>Al-Khor Sports Club plays in the Qatar Stars League.</text>
+      <triples>
+        <triple>
+          <sub>Al-Khor_Sports_Club</sub>
+          <rel>league</rel>
+          <obj>Qatar_Stars_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_225">
+      <text>Gdynia follows the Central European Summer Time timezone.</text>
+      <triples>
+        <triple>
+          <sub>Gdynia</sub>
+          <rel>timeZone</rel>
+          <obj>Central_European_Summer_Time</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_226">
+      <text>Al-Wakrah Sport Club is in the Qatar Stars League.</text>
+      <triples>
+        <triple>
+          <sub>Al-Wakrah_Sport_Club</sub>
+          <rel>league</rel>
+          <obj>Qatar_Stars_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_227">
+      <text>Aleksandr Prudnikov plays for FC Tom Tomsk.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandr_Prudnikov</sub>
+          <rel>club</rel>
+          <obj>FC_Tom_Tomsk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Athlete" id="1_Athlete_train_228">
+      <text>Hull City A.F.C.'s manager is Steve Bruce.</text>
+      <triples>
+        <triple>
+          <sub>Hull_City_A.F.C.</sub>
+          <rel>manager</rel>
+          <obj>Steve_Bruce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

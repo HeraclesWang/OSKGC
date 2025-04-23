@@ -1,0 +1,57 @@
+[
+    {
+        "id": "3_MusicalWork_test_1",
+        "input_text": "The album titled Year of No Light was released on September 6, 2006 by the sludge metal and post metal band, Nord.",
+        "response": "[Year of No Light, releaseDate, 2006-09-06]:(Album, releaseDate, Date), [Year of No Light, musicalBand, Nord]:(Album, musicalBand, Band), [Nord, genre, Sludge Metal]:(Band, genre, MusicGenre), [Nord, genre, Post-Metal]:(Band, genre, MusicGenre)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_2",
+        "input_text": "Nord, an album produced by Year of No Light, is in the sludge metal genre and was followed with the album Live at Roadburn 2008.",
+        "response": "[Nord, producer, Year of No Light]:(Album, producer, Band), [Nord, genre, sludge metal]:(Album, genre, MusicGenre), [Nord, followedBy, Live at Roadburn 2008]:(Album, followedBy, Album)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_3",
+        "input_text": "Nord is an album by Year of No Light, released on September 6, 2006. It was followed by the album Live at Roadburn 2008.",
+        "response": "[Nord, album, Year of No Light]:(Album, artist, Band), [Nord, releaseDate, September 6, 2006]:(Album, releaseDate, Date), [Nord, followedBy, Live at Roadburn 2008]:(Album, followedBy, Album)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_4",
+        "input_text": "The total length of the Turn Me On punk blues album by the American band The Honeymoon Killers is 35.1 minutes.",
+        "response": "[Turn Me On, runtime, 35.1]:(Album, runtime, number), [Turn Me On, genre, Punk Blues]:(Album, genre, MusicGenre), [Turn Me On, musicalBand, The Honeymoon Killers]:(Album, musicalBand, Band)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_5",
+        "input_text": "Expect a Miracle by Brian Kelly is an instrumental album. It is preceded by Pools of Light and followed by Afterplay.",
+        "response": "[Expect a Miracle, artist, Brian Kelly]:(Album, artist, MusicalArtist), [Expect a Miracle, type, instrumental album]:(Album, type, AlbumType), [Expect a Miracle, precededBy, Pools of Light]:(Album, precededBy, Album), [Expect a Miracle, followedBy, Afterplay]:(Album, followedBy, Album)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_6",
+        "input_text": "The album Nord by the band Year of No Light, was released by the record label Crucial blast on the E-Vinyl record label.",
+        "response": "[Nord, musicalBand, Year of No Light]:(Album, musicalBand, Band), [Nord, recordLabel, Crucial blast]:(Album, recordLabel, RecordLabel), [Nord, recordLabel, E-Vinyl]:(Album, recordLabel, RecordLabel)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_7",
+        "input_text": "Nord is a post metal album by Year of No Light and was released by Crucial Blast record label.",
+        "response": "[Nord, type, Post Metal]:(Album, type, MusicGenre), [Nord, musicalBand, Year of No Light]:(Album, musicalBand, Band), [Nord, recordLabel, Crucial Blast]:(Album, recordLabel, RecordLabel)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_8",
+        "input_text": "Nord, an album in the post metal genre was released on 06-09-2006 by the band Year of No Light.",
+        "response": "[Nord, genre, post metal]:(Album, genre, MusicGenre), [Nord, releaseDate, 06-09-2006]:(Album, releaseDate, Date), [Nord, musicalBand, Year of No Light]:(Album, musicalBand, Band)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_9",
+        "input_text": "The Year of No Light's sludge metal album Nord was released on 2006-09-06, followed by Live at Roadburn 2008.",
+        "response": "[Nord, album, Nord]:(Album, album, Album), [Nord, genre, Sludge Metal]:(Album, genre, MusicGenre), [Nord, releaseDate, 2006-09-06]:(Album, releaseDate, Date), [Nord, followedBy, Live at Roadburn 2008]:(Album, followedBy, Album), [Year of No Light, musicalBand, Nord]:(Band, musicalBand, Album)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_10",
+        "input_text": "The record labels of the Year of No Light album Nord's in post-metal genre are Crucial Blast and E-Vinyl.",
+        "response": "[Year of No Light, recordLabel, Crucial Blast]:(Album, recordLabel, RecordLabel), [Year of No Light, recordLabel, E-Vinyl]:(Album, recordLabel, RecordLabel), [Nord, genre, post-metal]:(Album, genre, MusicGenre)\n"
+    },
+    {
+        "id": "3_MusicalWork_test_11",
+        "input_text": "Year of No Light by the band Nord, was released by Crucial Blast and is available on E-Vinyl.",
+        "response": "[Year of No Light, musicalBand, Nord]:(Album, musicalBand, Band), [Year of No Light, recordLabel, Crucial Blast]:(Album, recordLabel, RecordLabel)\n"
+    }
+]

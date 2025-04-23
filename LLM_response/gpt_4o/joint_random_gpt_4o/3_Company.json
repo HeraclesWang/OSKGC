@@ -1,0 +1,107 @@
+[
+    {
+        "id": "3_Company_test_1",
+        "input_text": "Chinabank is a public company that was founded at the Insular Government of the Philippine Islands in Manila.",
+        "response": "[Chinabank, foundationPlace, Insular Government of the Philippine Islands]:(Organisation, foundationPlace, Place), [Chinabank, location, Manila]:(Organisation, location, Place)"
+    },
+    {
+        "id": "3_Company_test_2",
+        "input_text": "Chinabank is a public company that was founded in Manila with 295 branches.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place), [Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number)"
+    },
+    {
+        "id": "3_Company_test_3",
+        "input_text": "Chinabank, founded in the insular Government of the Philippine islands at Manila has 295 locations.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place)"
+    },
+    {
+        "id": "3_Company_test_4",
+        "input_text": "Chinabank, a banking service with 295 branches, was founded 1920-08-16.",
+        "response": "[Chinabank, service, Banking]:(Organisation, service, TopicalConcept), [Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, foundingDate, 1920-08-16]:(Organisation, foundingDate, Date)"
+    },
+    {
+        "id": "3_Company_test_5",
+        "input_text": "Chinabank, founded on 08-16-1920, offers banking services as well as having a net income of 15100000000.",
+        "response": "[Chinabank, foundingDate, 08-16-1920]:(Organisation, foundingDate, Date), [Chinabank, service, Banking]:(Organisation, service, TopicalConcept), [Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "3_Company_test_6",
+        "input_text": "AmeriGas serves the population of the United States, which is 324720797.",
+        "response": "[AmeriGas, serves, United States]:(Organisation, serves, Place), [United States, populationTotal, 324720797]:(Place, populationTotal, number)"
+    },
+    {
+        "id": "3_Company_test_7",
+        "input_text": "Chinabank is a public company which has 295 branches, and whose current net income is 15100000000.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "3_Company_test_8",
+        "input_text": "Chinabank is a public company located in the Philippines with 295 locations.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, location, Philippines]:(Organisation, location, Place)"
+    },
+    {
+        "id": "3_Company_test_9",
+        "input_text": "Chinabank, a company that was founded on the August 16th,1920, has 5594 workers and a net income of 15100000000.",
+        "response": "[Chinabank, foundingDate, August 16th, 1920]:(Organisation, foundingDate, Date), [Chinabank, numberOfEmployees, 5594]:(Organisation, numberOfEmployees, number), [Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "3_Company_test_10",
+        "input_text": "Chinabank was founded in Manila at the Insular Government of the Philippine Islands which was established on July 11901.",
+        "response": "[Chinabank, foundingDate, July 11901]:(Organisation, foundingDate, Date), [Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place), [Manila, country, Insular Government of the Philippine Islands]:(Place, country, Place)"
+    },
+    {
+        "id": "3_Company_test_11",
+        "input_text": "Chinabank was founded in Manila in the insular government of the Philippine islands and remains located there.",
+        "response": "```plaintext\n[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place), [Chinabank, location, Manila]:(Organisation, location, Place)\n```"
+    },
+    {
+        "id": "3_Company_test_12",
+        "input_text": "Chinabank is a bank with 5594 employees that was founded on Aug. 16, 1920.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Organisation, numberOfEmployees, number), [Chinabank, foundingDate, Aug. 16, 1920]:(Organisation, foundingDate, Date), [Chinabank, type, Bank]:(Organisation, type, Type)"
+    },
+    {
+        "id": "3_Company_test_13",
+        "input_text": "Chinabank, whose place of foundation was Manila, has 295 locations and a net income of 15100000000.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place), [Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number), [Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "3_Company_test_14",
+        "input_text": "Chinabank was founded in Manila which is the insular government of the Philippine Islands located in Metro Manila.",
+        "response": "[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place), [Manila, location, Metro Manila]:(Place, location, Place)"
+    },
+    {
+        "id": "3_Company_test_15",
+        "input_text": "Trane, founded in La Crosse, Wisconsin, is located in Swords (Dublin).",
+        "response": "[Trane, foundationPlace, La Crosse]:(Organisation, foundationPlace, Place), [Trane, foundationPlace, Wisconsin]:(Organisation, foundationPlace, Place), [Trane, location, Swords]:(Organisation, location, Place), [Swords, location, Dublin]:(Place, location, Place)"
+    },
+    {
+        "id": "3_Company_test_16",
+        "input_text": "Trane located in Swords (Dublin) produces building management systems also located in Ireland.",
+        "response": "```plaintext\n[Trane, location, Swords]:(Organisation, location, Place), [Swords, isPartOf, Dublin]:(Place, isPartOf, Place), [Trane, location, Ireland]:(Organisation, location, Place), [Trane, product, Building management systems]:(Organisation, product, TopicalConcept)\n```"
+    },
+    {
+        "id": "3_Company_test_17",
+        "input_text": "Trane, which manufactures building management systems, is located in Swords (Dublin), and has a net income of $ 556300000.",
+        "response": "[Trane, netIncome, 556300000]:(Company, netIncome, number), [Trane, product, Building management systems]:(Company, product, Product), [Trane, location, Swords]:(Organisation, location, Place)"
+    },
+    {
+        "id": "3_Company_test_18",
+        "input_text": "Trane, a company located in Swords (Dublin) has a revenue of $ 10264000000, with a net income of $ 556300000.",
+        "response": "[Trane, location, Swords]:(Organisation, location, Place), [Trane, revenue, 10264000000]:(Organisation, revenue, number), [Trane, netIncome, 556300000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "3_Company_test_19",
+        "input_text": "Trane, a subsidiary company located in Swords (Dublin), has a net income of $ 556300000.",
+        "response": "[Trane, netIncome, 556300000]:(Organisation, netIncome, number), [Trane, location, Swords]:(Organisation, location, Place), [Swords, location, Dublin]:(Place, location, Place)"
+    },
+    {
+        "id": "3_Company_test_20",
+        "input_text": "Trane, a company in the building materials industry, is located in Swords (Dublin), Ireland.",
+        "response": "[Trane, industry, Building materials]:(Company, industry, Industry), [Trane, location, Swords]:(Organisation, location, Place), [Swords, isPartOf, Dublin]:(Place, isPartOf, Place), [Dublin, country, Ireland]:(Place, country, Place)"
+    },
+    {
+        "id": "3_Company_test_21",
+        "input_text": "With a revenue of 10264000000 and operating out of Swords (Dublin), Trane specializes in building management systems.",
+        "response": "[Trane, revenue, 10264000000]:(Company, revenue, number), [Trane, location, Swords (Dublin)]:(Organisation, location, Place), [Trane, industry, Building management systems]:(Company, industry, Industry)"
+    }
+]

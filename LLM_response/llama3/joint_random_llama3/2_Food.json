@@ -1,0 +1,282 @@
+[
+    {
+        "id": "2_Food_test_1",
+        "input_text": "Brown sauce is an ingredient in a bacon sandwich which has a variation known as the BLT.",
+        "response": "[Brown sauce, ingredient, Ingredient], [Bacon sandwich, ingredient, Brown sauce], [Bacon sandwich, dishVariation, BLT], [Bacon sandwich, course, Course]"
+    },
+    {
+        "id": "2_Food_test_2",
+        "input_text": "Sago is the main ingredient in binignit but sweet potatoes are also used in it.",
+        "response": "[Sago, mainIngredient, binignit], [binignit, ingredient, sweet potatoes]"
+    },
+    {
+        "id": "2_Food_test_3",
+        "input_text": "Bacon and sausage make up a bacon explosion.",
+        "response": "[Bacon, mainIngredient, Sausage]:(Food, mainIngredient, Food), [Bacon, dishVariation, Bacon Explosion]:(Food, dishVariation, Food), [Bacon Explosion, course, MainCourse]:(Food, course, Food)"
+    },
+    {
+        "id": "2_Food_test_4",
+        "input_text": "Binignit and sandesh (confectionery) are both dessert.",
+        "response": "Here is the output based on the input text:\n\n[Binignit, dessert, yes], [sandesh, dessert, yes], [Binignit, isA, Dessert], [sandesh, isA, Dessert], [sandesh, type, Confectionery], [Binignit, type, Dessert]\n\nNote: The output includes the original input text, followed by the corresponding ontology schema triples."
+    },
+    {
+        "id": "2_Food_test_5",
+        "input_text": "Beef kway teow is a dish of Singapore where Tony Tan is a leader.",
+        "response": "[Beef kway teow, country, Singapore]:(Dish, country, Country)\n[Beef kway teow, leader, Tony Tan]:(Dish, leader, Person)\n[Beef kway teow, leader, Tony Tan]:(Dish, leader, Politician)"
+    },
+    {
+        "id": "2_Food_test_6",
+        "input_text": "Bacon Explosion is a main course and features the ingredient of sausage among many others.",
+        "response": "[Bacon Explosion, course, MainCourse], [Bacon Explosion, mainIngredient, Sausage]"
+    },
+    {
+        "id": "2_Food_test_7",
+        "input_text": "The leader of Indonesia is Joko Widodo which commonly serves Arem-arem.",
+        "response": "[Joko Widodo, leader, Indonesia]:(Person, leader, Country), [Arem-arem, servedBy, Joko Widodo]:(Food, servedBy, Person), [Arem-arem, region, Indonesia]:(Food, region, Country)"
+    },
+    {
+        "id": "2_Food_test_8",
+        "input_text": "The dish Binignit can be found in the Philippines, its main ingredient is Taro.",
+        "response": "[Binignit, country, Philippines]\n[Binignit, mainIngredient, Taro]"
+    },
+    {
+        "id": "2_Food_test_9",
+        "input_text": "Arem-arem is a food which comes from Indonesia, whose leader is Joko Widodo.",
+        "response": "[Arem-arem, country, Indonesia]:(Food, country, Country)\n[Arem-arem, leader, Joko Widodo]:(Food, leader, Person)"
+    },
+    {
+        "id": "2_Food_test_10",
+        "input_text": "Binignit is a dish from the Philippines, where English is spoken.",
+        "response": "Here is the output:\n\n[Binignit, country, Philippines]:(Dish, country, Country)\n[Binignit, language, English]:(Dish, language, Language)"
+    },
+    {
+        "id": "2_Food_test_11",
+        "input_text": "Banana leaf is an ingredient of Arem-arem which originates from Indonesia.",
+        "response": "[Arem-arem, ingredient, Banana leaf]\n[Arem-arem, originates from, Indonesia]"
+    },
+    {
+        "id": "2_Food_test_12",
+        "input_text": "The Philippine dish of Binignit contains banana as an ingredient.",
+        "response": "[Binignit, ingredient, banana]:(Dish, ingredient, Food), [Binignit, dishVariation, Species]:(Dish, dishVariation, Species)"
+    },
+    {
+        "id": "2_Food_test_13",
+        "input_text": "A sausage is used when making a Bacon Explosion which has The United states to thank for inventing it.",
+        "response": "[Bacon Explosion, country, The United States]:(Dish, country, Country), [Bacon Explosion, ingredient, sausage]:(Dish, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_14",
+        "input_text": "Beef kway teow, containing sesame oil, is a dish in Indonesia.",
+        "response": "Here is the output based on the input text:\n\n[Beef kway teow, country, Indonesia]\n[Beef kway teow, ingredient, sesame oil]\n[Dish, ingredient, Beef kway teow]\n[Dish, region, Country]\n\nNote: The ontology schema is used to extract the relevant information from the input text and generate the triples. The output follows the format specified in the example."
+    },
+    {
+        "id": "2_Food_test_15",
+        "input_text": "Oyster sauce is an ingredient in the Indonesian dish of Beef kway teow.",
+        "response": "Here is the constructed knowledge graph based on the input text:\n\n[Oyster sauce, ingredient, Beef kway teow]\n[Oyster sauce, ingredient, Ingredient]\n[Beef kway teow, dish, Dish]\n[Beef kway teow, country, Indonesia]\n[Indonesia, country, Country]\n\nNote that the ontology schema provided includes a hierarchy, which is not explicitly used in this example. However, if the hierarchy is used, it would allow for more nuanced relationships between entities, such as \"Beef kway teow\" being a type of \"Dish\" or \"Oyster sauce\" being a type of \"Sauce\"."
+    },
+    {
+        "id": "2_Food_test_16",
+        "input_text": "Brown sauce is an ingredient in a bacon sandwich which are popular in the United Kingdom.",
+        "response": "[Bacon sandwich, ingredient, Brown sauce]:(Sandwich, ingredient, Food)\n[Brown sauce, ingredient, Bacon]:(Sauce, ingredient, Food)\n[Bacon sandwich, region, United Kingdom]:(Sandwich, region, Country)"
+    },
+    {
+        "id": "2_Food_test_17",
+        "input_text": "Arem-arem comes from Indonesia where the language is known as Indonesian.",
+        "response": "[Arem-arem, country, Indonesia]:(Food, country, Country)\n[Arem-arem, language, Indonesian]:(Food, language, Language)\n\nNote: The ontology schema does not include a direct relation between Food and language, but the hierarchy indicates that Place is a parent of Country, and Place has a relation with language. Therefore, I used the transitive property to infer the relation between Food and language."
+    },
+    {
+        "id": "2_Food_test_18",
+        "input_text": "Arem-arem uses the ingredient banana leaf, it is a common dish in Indonesia.",
+        "response": "[Arem-arem, ingredient, banana leaf]\n[Arem-arem, region, Indonesia]\n[Arem-arem, dishVariation, Arem-arem]\n[Arem-arem, cuisine, Cuisine]\n[Arem-arem, course, Dish]\n[Arem-arems, isA, Food]"
+    },
+    {
+        "id": "2_Food_test_19",
+        "input_text": "Jusuf Kalla is the leader of Indonesia where you will find Arem-arem.",
+        "response": "[Jusuf Kalla, leader, Indonesia]:(Person, leader, Place)\n[Arem-arem, region, Indonesia]:(Food, region, Place)"
+    },
+    {
+        "id": "2_Food_test_20",
+        "input_text": "Arem-arem originates from the country of Indonesia where the Indonesian language is spoken.",
+        "response": "[Arem-arem, country, Indonesia]:(Food, country, Country)\n[Arem-arem, language, Indonesian]:(Food, language, Language)"
+    },
+    {
+        "id": "2_Food_test_21",
+        "input_text": "Banana leaf is an ingredient in Arem-arem, a dish from Java.",
+        "response": "[Arem-arem, dishVariation, Banana leaf]:(Dish, dishVariation, Food), [Arem-arem, region, Java]:(Dish, region, Place)"
+    },
+    {
+        "id": "2_Food_test_22",
+        "input_text": "Arem-arem originates from the country of Indonesia which has the currency of the Indonesian rupiah.",
+        "response": "[Arem-arem, country, Indonesia]:(Food, country, Country)\n[Arem-arem, currency, Indonesian rupiah]:(Food, currency, Currency)"
+    },
+    {
+        "id": "2_Food_test_23",
+        "input_text": "Arabic is one of the languages in the Philippines where Binignit comes from.",
+        "response": "[Philippines, language, Arabic]:(Place, language, Language), [Binignit, origin, Philippines]:(Food, region, Place)"
+    },
+    {
+        "id": "2_Food_test_24",
+        "input_text": "One of the main ingredients of binignit is coconut milk and this dish can be found in the Philippines.",
+        "response": "Here is the output based on the input text:\n\n[Binignit, mainIngredient, Coconut milk]:(Dish, mainIngredient, Food)\n[Binignit, region, Philippines]:(Dish, region, Country)"
+    },
+    {
+        "id": "2_Food_test_25",
+        "input_text": "Sago is one of the ingredients used to make Binignit, which can be found in the Philippines.",
+        "response": "Here is the output based on the input text:\n\n[Binignit, ingredient, Sago]\n[Binignit, region, Philippines]\n\nNote: I have used the ontology schema to extract the relevant information from the input text. The output is in the same format as the example, with the entity types and relations from the ontology schema."
+    },
+    {
+        "id": "2_Food_test_26",
+        "input_text": "Binignit, a dish found in the Philippines, contains sago as one of its main ingredients.",
+        "response": "Here is the output based on the input text:\n\n[Binignit, mainIngredient, sago]\n[Binignit, region, Philippines]\n[Binignit, dishVariation, Dish]\n\nNote: I assume that \"Binignit\" is a type of dish, and \"sago\" is a type of ingredient. I also assume that \"Philippines\" is a country and \"Binignit\" is a dish found in that country."
+    },
+    {
+        "id": "2_Food_test_27",
+        "input_text": "Binignit is an ingredient of Sweet potato and sweet potato belongs to Solanales order of plants.",
+        "response": "[Binignit, ingredient, Sweet potato]\n[Sweet potato, order, Solanales]\n[Sweet potato, order, PlantType]\n[Binignit, ingredient, Sweet potato]\n[Binignit, ingredient, Solanales]"
+    },
+    {
+        "id": "2_Food_test_28",
+        "input_text": "Two ingredients for Binignit is Taro and sweet potato.",
+        "response": "Here is the constructed knowledge graph based on the given ontology schema and the input text:\n\n[Taro, ingredient, Ingredient]\n[Binignit, ingredient, Taro]\n[Binignit, ingredient, sweet potato]\n[sweet potato, ingredient, Ingredient]"
+    },
+    {
+        "id": "2_Food_test_29",
+        "input_text": "Binignit includes the sweet potato as a main ingredient, and sago.",
+        "response": "[Binignit, mainIngredient, Sweet potato]:(Food, mainIngredient, Food)\n[Binignit, ingredient, Sago]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_30",
+        "input_text": "The dessert, Binignit, comes from the Philippines.",
+        "response": "[Binignit, comes from, Philippines]:(Dessert, region, Country)\n\n[Binignit, is a, Dessert]:(Dessert, IsA, Type)\n\nNote: The output is generated based on the given ontology schema and the input text. The first triple is extracted from the relation \"Food, region, Place\" and the input text, where Binignit is a dessert and Philippines is a country. The second triple is inferred from the hierarchy \"Dessert, IsA, Food\"."
+    },
+    {
+        "id": "2_Food_test_31",
+        "input_text": "An ingredient of Binignit is sweet potato, and one of the main ingredients is the banana.",
+        "response": "[Binignit, mainIngredient, sweet potato]:(Food, mainIngredient, Food), [Binignit, ingredient, banana]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_32",
+        "input_text": "The main ingredients of Binignit are the sweet potato and coconut milk.",
+        "response": "[Binignit, mainIngredient, sweet potato]:(Food, mainIngredient, Species)\n[Binignit, mainIngredient, coconut milk]:(Food, mainIngredient, Food)"
+    },
+    {
+        "id": "2_Food_test_33",
+        "input_text": "Sweet potatoes, which belongs to the division of flowering plant, are used in binignit recipes.",
+        "response": "[Sweet potatoes, class, Flowering plant]:(Food, class, Species), [Sweet potatoes, division, Flowering plant]:(Food, division, Species)"
+    },
+    {
+        "id": "2_Food_test_34",
+        "input_text": "Sweet potato is an ingredient in Binignit which comes from the Philippines.",
+        "response": "[Sweet potato, ingredient, Sweet potato], [Binignit, region, Philippines]"
+    },
+    {
+        "id": "2_Food_test_35",
+        "input_text": "Binignit is a dish from the Philippines, whose ingredients include taro.",
+        "response": "Here is the constructed knowledge graph based on the input text:\n\n[Binignit, dish, Dish]\n[Binignit, country, Philippines]\n[Binignit, ingredient, Taro]\n\nNote: The ontology schema is used to determine the entity types and relationships in the output triples. In this case, \"Binignit\" is classified as a \"Dish\", \"Philippines\" is classified as a \"Country\", and \"Taro\" is classified as an \"Ingredient\". The relationships between these entities are inferred based on the ontology schema and the input text."
+    },
+    {
+        "id": "2_Food_test_36",
+        "input_text": "Binignit is a dish from the Philippines that contains coconut milk.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Binignit, country, Philippines]\n[Binignit, contains, coconut milk]\n\nNote that I extracted the country of origin as \"Philippines\" and the ingredient \"coconut milk\" as a chemical substance."
+    },
+    {
+        "id": "2_Food_test_37",
+        "input_text": "Sweet potatoes are the main ingredient of binignit and the potatoes are part of the order of Solanales.",
+        "response": "Here is the output based on the input text and the given ontology schema:\n\n[Sweet potatoes, mainIngredient, binignit]\n[binignit, ingredient, Sweet potatoes]\n[Sweet potatoes, order, Solanales]\n\nNote: I assumed that \"binignit\" is a type of dish, as it is the main ingredient of \"Sweet potatoes\". If \"binignit\" is not a dish, please provide more context or clarify its meaning."
+    },
+    {
+        "id": "2_Food_test_38",
+        "input_text": "Binignit and cookies are both a type of dessert.",
+        "response": "[Binignit, type, Dessert], [Binignit, related, cookies], [cookies, type, Dessert]"
+    },
+    {
+        "id": "2_Food_test_39",
+        "input_text": "The binignit dish can be found in the Philippines and one of the main ingredients is the sweet potato.",
+        "response": "[binignit, country, Philippines]:(Dish, country, Country)\n[binignit, mainIngredient, sweet potato]:(Dish, mainIngredient, Food)"
+    },
+    {
+        "id": "2_Food_test_40",
+        "input_text": "Binignit is made of sweet potato and coconut milk.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Binignit, mainIngredient, sweet potato]:(Food, mainIngredient, Species)\n[Binignit, mainIngredient, coconut milk]:(Food, mainIngredient, Species)\n[Binignit, ingredient, sweet potato]:(Food, ingredient, Species)\n[Binignit, ingredient, coconut milk]:(Food, ingredient, ChemicalSubstance)"
+    },
+    {
+        "id": "2_Food_test_41",
+        "input_text": "Binignits main ingredient is sweet potato and also taro.",
+        "response": "[Binignits, mainIngredient, sweet potato]:(Food, mainIngredient, Food)\n[Binignits, ingredient, taro]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_42",
+        "input_text": "Beef kway teow is a dish of Singapore and the country's leader is Halimah Yacob.",
+        "response": "[Beef kway teow, country, Singapore]\n[Beef kway teow, leader, Halimah Yacob]"
+    },
+    {
+        "id": "2_Food_test_43",
+        "input_text": "English is one of the languages spoken in Singapore where Beef kway teow is a dish.",
+        "response": "Here is the output:\n\n[Beef kway teow, dishVariation, English]\n[Beef kway teow, cuisine, Cuisine]\n[Beef kway teow, course, Course]\n[Beef kway teow, country, Singapore]\n[Beef kway teow, language, Language]\n[Beef kway teow, place, Singapore]"
+    },
+    {
+        "id": "2_Food_test_44",
+        "input_text": "Beef kway teow originates from Singapore, where Standard Chinese is spoken.",
+        "response": "[Beef kway teow, originatesFrom, Singapore]:(Food, originatesFrom, Place)\n[Beef kway teow, spokenLanguage, Standard Chinese]:(Food, spokenLanguage, Language)"
+    },
+    {
+        "id": "2_Food_test_45",
+        "input_text": "Palm sugar is an ingredient of Beef kway teow which is an Indonesian dish.",
+        "response": "[Palm sugar, ingredient, Beef kway teow]\n[Beef kway teow, ingredient, Palm sugar]\n[Beef kway teow, cuisine, Cuisine]\n[Beef kway teow, dishVariation, Species]\n[Beef kway teow, country, Indonesia]\n[Cuisine, region, Indonesia]"
+    },
+    {
+        "id": "2_Food_test_46",
+        "input_text": "Beef kway teow comes from Singapore region where the English language is spoken.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Beef kway teow, region, Singapore]:(Food, region, AdministrativeRegion), [Beef kway teow, country, Singapore]:(Food, country, Country), [Singapore, language, English]:(Place, language, Language)"
+    },
+    {
+        "id": "2_Food_test_47",
+        "input_text": "Beef kway teow is found in the countries of Indonesia and Singapore.",
+        "response": "[Beef kway teow, country, Indonesia]:(Food, country, Country)\n[Beef kway teow, country, Singapore]:(Food, country, Country)"
+    },
+    {
+        "id": "2_Food_test_48",
+        "input_text": "Oyster sauce is an ingredient in the popular Singapore dish of Beef kway teow.",
+        "response": "Here is the constructed knowledge graph based on the input text:\n\n[Beef kway teow, ingredient, Oyster sauce]:(Dish, ingredient, Food)\n[Beef kway teow, region, Singapore]:(Dish, region, Place)\n[Oyster sauce, ingredient, Food]:(Food, ingredient, Food)\n[Oyster sauce, dishVariation, Beef kway teow]:(Food, dishVariation, Dish)\n[Oyster sauce, cuisine, Food]:(Food, cuisine, Cuisine)"
+    },
+    {
+        "id": "2_Food_test_49",
+        "input_text": "Standard Chinese is a language spoken in Singapore where Beef kway teow is a popular dish.",
+        "response": "Here is the output:\n\n[Beef kway teow, region, Singapore]:(Dish, region, Place)\n[Beef kway teow, cuisine, Standard Chinese]:(Dish, cuisine, Cuisine)\n[Standard Chinese, language, Standard Chinese]:(Language, language, Language)\n[Standard Chinese, spokenIn, Singapore]:(Language, spokenIn, Place)\n[Standard Chinese, spokenIn, Country]:(Language, spokenIn, Place)"
+    },
+    {
+        "id": "2_Food_test_50",
+        "input_text": "Tony Tan is the leader of Singapore where Beef kway teow is a popular dish.",
+        "response": "[Tony Tan, leader, Singapore]:(Person, leader, Place)\n[Beef kway teow, dish, TopicalConcept]:(Food, dish, Dish)\n[Beef kway teow, region, Singapore]:(Food, region, Place)\n[Beef kway teow, country, Singapore]:(Food, country, Place)"
+    },
+    {
+        "id": "2_Food_test_51",
+        "input_text": "Sesame oil is an ingredient in beef kway teow, which is a dish popular in Singapore.",
+        "response": "Here is the output based on the input text:\n\n[beef kway teow, ingredient, Sesame oil]:(Food, ingredient, ChemicalSubstance)\n[beef kway teow, region, Singapore]:(Food, region, Place)\n[beef kway teow, dishVariation, Food]:(Food, dishVariation, Food)\n[Sesame oil, ingredient, Food]:(Food, ingredient, Food)\n\nLet me know if this is accurate!"
+    },
+    {
+        "id": "2_Food_test_52",
+        "input_text": "The main ingredients in a bacon explosion are bacon and sausage.",
+        "response": "[Bacon explosion, mainIngredient, Bacon]:(Food, mainIngredient, Food)\n[Bacon explosion, mainIngredient, Sausage]:(Food, mainIngredient, Food)"
+    },
+    {
+        "id": "2_Food_test_53",
+        "input_text": "Bacon Explosion includes sausage and bacon.",
+        "response": "[Bacon Explosion, mainIngredient, Bacon]:(Food, mainIngredient, Food), [Bacon Explosion, ingredient, Sausage]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_54",
+        "input_text": "Sausage is a main ingredient in the dish 'Bacon Explosion', which also contains bacon.",
+        "response": "[Bacon Explosion, mainIngredient, Sausage]:(Dish, mainIngredient, Food), [Bacon Explosion, ingredient, Bacon]:(Dish, ingredient, Food)"
+    },
+    {
+        "id": "2_Food_test_55",
+        "input_text": "Sausage in an ingredient in bacon explosion, originating from the Kansas City metropolitan area.",
+        "response": "[Sausage, ingredient, bacon explosion]:(Food, ingredient, Food)\n[Sausage, origin, Kansas City metropolitan area]:(Food, origin, Place)\n[Sausage, type, Sausage]:(Food, type, Food)"
+    },
+    {
+        "id": "2_Food_test_56",
+        "input_text": "Asam pedas is an Indonesia dish popular with Joko Widodo.",
+        "response": "Here is the output based on the input text:\n\n[Asam pedas, dishVariation, Asam pedas]:(Dish, dishVariation, Dish)\n[Asam pedas, country, Indonesia]:(Dish, country, Country)\n[Joko Widodo, leader, Person]:(Person, leader, Person)"
+    }
+]

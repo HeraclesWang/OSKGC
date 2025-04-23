@@ -1,0 +1,416 @@
+{
+    "title": "2_Company",
+    "id": "2_Company",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "CompanyType",
+            "label": "CompanyType"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentAgency",
+            "label": "GovernmentAgency"
+        },
+        {
+            "id": "Industry",
+            "label": "Industry"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Product",
+            "label": "Product"
+        },
+        {
+            "id": "Profession",
+            "label": "Profession"
+        },
+        {
+            "id": "Representative",
+            "label": "Representative"
+        },
+        {
+            "id": "Service",
+            "label": "Service"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Software",
+            "label": "Software"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "netIncome",
+            "label": "netIncome",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "numberOfEmployees",
+            "label": "numberOfEmployees",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "revenue",
+            "label": "revenue",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "numberOfLocations",
+            "label": "numberOfLocations",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "service",
+            "label": "service",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "industry",
+            "label": "industry",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "city",
+            "label": "city",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "type",
+            "label": "type",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "serves",
+            "label": "serves",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "foundationPlace",
+            "label": "foundationPlace",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "foundingDate",
+            "label": "foundingDate",
+            "domain": "Place",
+            "range": "Date"
+        },
+        {
+            "id": "parentCompany",
+            "label": "parentCompany",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "product",
+            "label": "product",
+            "domain": "Organisation",
+            "range": "Work"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "product",
+            "label": "product",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "operatingIncome",
+            "label": "operatingIncome",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "foundingDate",
+            "label": "foundingDate",
+            "domain": "Organisation",
+            "range": "Date"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "PersonFunction"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CompanyType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Service",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Software",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentAgency",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Profession",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Representative",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Product",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Industry",
+            "range": "TopicalConcept"
+        }
+    ]
+}

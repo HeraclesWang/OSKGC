@@ -1,0 +1,39 @@
+# General configuration
+general:
+  approach: "joint"  # "pipeline" or "joint"
+  example_selection: "sbert"  # "sbert" or "random"
+  
+# Path configurations
+paths:
+  train: "benchmark/data/train"
+  test: "benchmark/data/test"
+  ontology: "benchmark/ontology"
+  hierarchy_xml: "benchmark/hierarchy.xml"
+  example: "example"  # Only needed if example_selection is "sbert"
+  
+# Model configurations
+models:
+  entity_recognition:
+    name: ""  # Model path
+    params:
+      torch_dtype: "auto"
+      device_map: "cuda"
+  entity_typing:
+    name: ""
+    params:
+      torch_dtype: "auto"
+      device_map: "cuda"
+  relation_selection:
+    name: ""
+    params:
+      torch_dtype: "auto"
+      device_map: "cuda"
+  joint_extraction:
+    name: ""
+    params:
+      torch_dtype: "auto"
+      device_map: "cuda"
+  
+evaluation:
+  output_dir: "evaluation_results"  # Base output directory for evaluation results
+  detailed_results: True    # Whether to save detailed per-entry results

@@ -1,0 +1,287 @@
+[
+    {
+        "id": "1_SportsTeam_test_1",
+        "input_text": "A.S. Roma competed in the 2014 season.",
+        "response": "[A.S. Roma, competedIn, 2014 season]:(SoccerClub, competedIn, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_2",
+        "input_text": "John van den Brom is in the Jong Ajax club.",
+        "response": "[John van den Brom, club, Jong Ajax]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_3",
+        "input_text": "Serie A is based in Italy.",
+        "response": "(Serie A, country, Italy)"
+    },
+    {
+        "id": "1_SportsTeam_test_4",
+        "input_text": "Verona is the home to A.C. Chievo Verona.",
+        "response": "[A.C. Chievo Verona, tenant, Verona]:(Organisation, tenant, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_5",
+        "input_text": "Christian Panucci plays at the A.S. Roma.",
+        "response": "[Christian Panucci, playsAt, A.S. Roma]:(SoccerPlayer, playsAt, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_6",
+        "input_text": "Rome is the capital of Italy.",
+        "response": "[Rome, isPartOf, Italy]:(CapitalCity, isPartOf, Country)"
+    },
+    {
+        "id": "1_SportsTeam_test_7",
+        "input_text": "A.F.C. Fylde's ground is Kellamergh Park.",
+        "response": "[A.F.C. Fylde, ground, Kellamergh Park]:(SoccerClub, ground, Venue)"
+    },
+    {
+        "id": "1_SportsTeam_test_8",
+        "input_text": "John van den Brom plays for De Graafschap.",
+        "response": "[John van den Brom, club, De Graafschap]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_9",
+        "input_text": "Rolando Maran used to be at Varese Calcio S.S.D.",
+        "response": "[Rolando Maran, wasAt, Varese Calcio S.S.D.]:(SoccerManager, wasAt, Organisation)"
+    },
+    {
+        "id": "1_SportsTeam_test_10",
+        "input_text": "John van den Brom has been manager of AZ Alkmaar.",
+        "response": "[John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "1_SportsTeam_test_11",
+        "input_text": "Michele Marcolini owns Torino F.C.",
+        "response": "[Michele Marcolini, owns, Torino F.C.]:(Person, owns, SoccerClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_12",
+        "input_text": "A.C. Cesena has 23900 members.",
+        "response": "[AC Cesena, numberOfMembers, 23900]"
+    },
+    {
+        "id": "1_SportsTeam_test_13",
+        "input_text": "Frank de Boer played for the Netherlands national football team.",
+        "response": "[Frank de Boer, club, Netherlands national football team]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_14",
+        "input_text": "A.S. Gubbio 1910 competed in the 2014 season.",
+        "response": "[A.S. Gubbio 1910, season, 2014]:(Organisation, season, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_15",
+        "input_text": "The \"Associazione Sportiva Roma S.p.A.\" is the non-abbreviated name of A.S. Roma.",
+        "response": "[\"Associazione Sportiva Roma S.p.A.\", fullName, \"A.S. Roma\"]:(Organization, fullName, Organization)"
+    },
+    {
+        "id": "1_SportsTeam_test_16",
+        "input_text": "A.C. Chievo Verona played the 2014–15 Serie A.",
+        "response": "[AC Chievo Verona, season, 2014-15 Serie A]:(Organisation, season, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_17",
+        "input_text": "The footballer Stuart Parker is attached to Irlam Town F.C.",
+        "response": "[Stuart Parker, club, Irlam Town F.C.]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_18",
+        "input_text": "The ground of A.S. Gubbio 1910 is called Stadio Pietro Barbetti.",
+        "response": "[A.S. Gubbio 1910, ground, Stadio Pietro Barbetti]:(Organisation, ground, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_19",
+        "input_text": "The first club Jens Härtel played for was 1. FC Lokomotive Leipzig.",
+        "response": "[Jens Härtel, birthPlace, Leipzig]\n[Jens Härtel, club, 1. FC Lokomotive Leipzig]\n[1. FC Lokomotive Leipzig, location, Leipzig]"
+    },
+    {
+        "id": "1_SportsTeam_test_20",
+        "input_text": "Rolando Maran plays at the Carrarese Calcio.",
+        "response": "[Rolando Maran, club, Carrarese Calcio]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_21",
+        "input_text": "A.S. Roma play in the Serie A league.",
+        "response": "[A.S. Roma, league, Serie A]:(SoccerClub, league, SportsLeague)"
+    },
+    {
+        "id": "1_SportsTeam_test_22",
+        "input_text": "Dave Challinor is at Colwyn Bay F.C.",
+        "response": "[Dave Challinor, club, Colwyn Bay F.C.]:(Person, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_23",
+        "input_text": "Stuart Parker (footballer) plays for Blackpool F.C.",
+        "response": "[Stuart Parker (footballer), club, Blackpool F.C.]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_24",
+        "input_text": "John van den Brom plays for ADO Den Haag.",
+        "response": "[John van den Brom, club, ADO Den Haag]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_25",
+        "input_text": "Serie D champions include S.S. Robur Siena.",
+        "response": "[Serie D, champions, S.S. Robur Siena]:(FootballLeagueSeason, champions, Organisation)"
+    },
+    {
+        "id": "1_SportsTeam_test_26",
+        "input_text": "AEK Athens F.C. played in the 2014 season.",
+        "response": "[AEK Athens F.C., season, 2014]:(SoccerClub, season, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_27",
+        "input_text": "Massimo Drago plays for S.S. Chieti Calcio.",
+        "response": "[Massimo Drago, club, S.S. Chieti Calcio]"
+    },
+    {
+        "id": "1_SportsTeam_test_28",
+        "input_text": "Michele Marcolini is attached to the club A.C. Lumezzane.",
+        "response": "[Michele Marcolini, tenant, A.C. Lumezzane]:(Person, tenant, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_29",
+        "input_text": "Greece is inhabited by Greeks.",
+        "response": "[Greece, isInhabitedBy, Greeks]:(Country, isInhabitedBy, EthnicGroup)"
+    },
+    {
+        "id": "1_SportsTeam_test_30",
+        "input_text": "John van den Brom is a player in İstanbulspor A.Ş.",
+        "response": "[John van den Brom, club, İstanbulspor A.Ş.]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_31",
+        "input_text": "John van den Brom plays at the AZ Alkmaar club.",
+        "response": "[John van den Brom, club, AZ Alkmaar]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_32",
+        "input_text": "John van den Brom plays for R.S.C. Anderlecht.",
+        "response": "[John van den Brom, club, R.S.C. Anderlecht]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_33",
+        "input_text": "John van den Brom played for the Netherlands national football team.",
+        "response": "[John van den Brom, club, Netherlands national football team]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_34",
+        "input_text": "John van den Brom plays for AFC Ajax.",
+        "response": "[John van den Brom, club, AFC Ajax]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_35",
+        "input_text": "John van den Brom is in Vitesse Arnhem.",
+        "response": "[John van den Brom, club, Vitesse Arnhem]:(SoccerManager, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_36",
+        "input_text": "The home ground of A.C. Chievo Verona is Stadio Marc'Antonio Bentegodi.",
+        "response": "[A.C. Chievo Verona, ground, Stadio Marc'Antonio Bentegodi]:(Organisation, ground, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_37",
+        "input_text": "Michele Marcolini plays for A.C. Chievo Verona.",
+        "response": "[Michele Marcolini, club, A.C. Chievo Verona]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_38",
+        "input_text": "A.C. Chievo Verona competed in the 2014 season.",
+        "response": "[AC Chievo Verona, season, 2014]:(SoccerClub, season, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_39",
+        "input_text": "A.C. Chievo Verona has 39371 members.",
+        "response": "[AC Chievo Verona, numberOfMembers, 39371]:(Organization, numberOfMembers, number)"
+    },
+    {
+        "id": "1_SportsTeam_test_40",
+        "input_text": "The full name of A.C. Chievo Verona is \"Associazione Calcio ChievoVerona S.r.l.\"",
+        "response": "[Associazione Calcio ChievoVerona S.r.l., fullName, Associazione Calcio ChievoVerona S.r.l.]"
+    },
+    {
+        "id": "1_SportsTeam_test_41",
+        "input_text": "A.C. Chievo Verona play in the Serie A league.",
+        "response": "[AC Chievo Verona, league, Serie A]:(SoccerClub, league, SportsLeague)"
+    },
+    {
+        "id": "1_SportsTeam_test_42",
+        "input_text": "A.C. Chievo Verona is playing in his ground at Verona.",
+        "response": "[AC Chievo Verona, ground, Verona]:(SoccerClub, ground, Place)"
+    },
+    {
+        "id": "1_SportsTeam_test_43",
+        "input_text": "Rolando Maran is attached to A.C. Chievo Verona .",
+        "response": "[Rolando Maran, operator, A.C. Chievo Verona]:(SportsManager, operator, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_44",
+        "input_text": "Luciano Spalletti is in the A.S. Roma club.",
+        "response": "[Luciano Spalletti, club, A.S. Roma]:(Person, club, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_45",
+        "input_text": "The chairman of the A.S. Roma is James Pallotta.",
+        "response": "[The chairman of the A.S. Roma, chairman, James Pallotta]:(PersonFunction, chairmanTitle, Person) (A.S. Roma, chairman, James Pallotta) :(Organisation, chairman, Person)"
+    },
+    {
+        "id": "1_SportsTeam_test_46",
+        "input_text": "A.S. Roma's manager is Luciano Spalletti.",
+        "response": "[A.S. Roma, manager, Luciano Spalletti]:(SoccerClub, manager, SportsManager)"
+    },
+    {
+        "id": "1_SportsTeam_test_47",
+        "input_text": "A.S. Roma ground is Stadio Olimpico.",
+        "response": "[A.S. Roma, ground, Stadio Olimpico]:(Organisation, ground, ArchitecturalStructure)"
+    },
+    {
+        "id": "1_SportsTeam_test_48",
+        "input_text": "A.S. Roma's ground is in Rome.",
+        "response": "[A.S. Roma, ground, Stadio Olimpico]\n\n[Stadio Olimpico, location, Rome]:(ArchitecturalStructure, location, City)"
+    },
+    {
+        "id": "1_SportsTeam_test_49",
+        "input_text": "A.S. Roma has 70634 members.",
+        "response": "[A.S. Roma, numberOfMembers, 70634]:(Organization, numberOfMembers, number)"
+    },
+    {
+        "id": "1_SportsTeam_test_50",
+        "input_text": "A.S. Roma have a ground in Rome.",
+        "response": "[A.S. Roma, ground, Stadio Olimpico]\n\n[Stadio Olimpico, location, Roma]:(ArchitecturalStructure, location, City)"
+    },
+    {
+        "id": "1_SportsTeam_test_51",
+        "input_text": "A.S. Roma were in 2014–15 Serie A.",
+        "response": "[A.S. Roma, season, 2014–15 Serie A]:(Organisation, season, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_52",
+        "input_text": "Michele Marcolini has been manager of A.C. Lumezzane.",
+        "response": "[Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_53",
+        "input_text": "Michele Marcolini played youth football for Torino F.C.",
+        "response": "[Michele Marcolini, youthclub, Torino F.C.]:(SoccerPlayer, youthclub, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_54",
+        "input_text": "Michele Marcolini has been associated with F.C. Bari 1908.",
+        "response": "[Michele Marcolini, hasBeenAssociatedWith, F.C. Bari 1908]:(Person, hasBeenAssociatedWith, SportsClub)"
+    },
+    {
+        "id": "1_SportsTeam_test_55",
+        "input_text": "Michele Marcolini was born in Italy.",
+        "response": "[Michele Marcolini, birthPlace, Italy]:(Person, birthPlace, Country)"
+    },
+    {
+        "id": "1_SportsTeam_test_56",
+        "input_text": "Juventus F.C. have been Serie A champions.",
+        "response": "[Juventus F.C., champions, Serie A champions]:(SoccerClub, champions, FootballLeagueSeason)"
+    },
+    {
+        "id": "1_SportsTeam_test_57",
+        "input_text": "ACF Fiorentina play in Serie A.",
+        "response": "[ACF Fiorentina, league, Serie A]:(SoccerClub, league, SportsLeague)"
+    }
+]

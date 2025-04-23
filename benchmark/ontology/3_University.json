@@ -1,0 +1,628 @@
+{
+    "title": "3_University",
+    "id": "3_University",
+    "entity type": [
+        {
+            "id": "Academic",
+            "label": "Academic"
+        },
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Architect",
+            "label": "Architect"
+        },
+        {
+            "id": "Canton",
+            "label": "Canton"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentType",
+            "label": "GovernmentType"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "MusicalWork",
+            "label": "MusicalWork"
+        },
+        {
+            "id": "NationalAnthem",
+            "label": "NationalAnthem"
+        },
+        {
+            "id": "NaturalPlace",
+            "label": "NaturalPlace"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "ReligiousOrganisation",
+            "label": "ReligiousOrganisation"
+        },
+        {
+            "id": "River",
+            "label": "River"
+        },
+        {
+            "id": "Saint",
+            "label": "Saint"
+        },
+        {
+            "id": "School",
+            "label": "School"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Sea",
+            "label": "Sea"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Sport",
+            "label": "Sport"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "numberOfDoctoralStudents",
+            "label": "numberOfDoctoralStudents",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "patronSaint",
+            "label": "patronSaint",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "religion",
+            "label": "religion",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "legislature",
+            "label": "legislature",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "numberOfUndergraduateStudents",
+            "label": "numberOfUndergraduateStudents",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "established",
+            "label": "established",
+            "domain": "Organisation",
+            "range": "Year"
+        },
+        {
+            "id": "hasToItsNortheast",
+            "label": "hasToItsNortheast",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "city",
+            "label": "city",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "governmentType",
+            "label": "governmentType",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "latinName",
+            "label": "latinName",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "founder",
+            "label": "founder",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "state",
+            "label": "state",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "numberOfStudents",
+            "label": "numberOfStudents",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "hasToItsWest",
+            "label": "hasToItsWest",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "numberOfPostgraduateStudents",
+            "label": "numberOfPostgraduateStudents",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "rector",
+            "label": "rector",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "sportsOffered",
+            "label": "sportsOffered",
+            "domain": "Organisation",
+            "range": "Sport"
+        },
+        {
+            "id": "elevationAboveTheSeaLevel",
+            "label": "elevationAboveTheSeaLevel",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "river",
+            "label": "river",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "president",
+            "label": "president",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "anthem",
+            "label": "anthem",
+            "domain": "Place",
+            "range": "Work"
+        },
+        {
+            "id": "staff",
+            "label": "staff",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "hasToItsNorthwest",
+            "label": "hasToItsNorthwest",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "sportGoverningBody",
+            "label": "sportGoverningBody",
+            "domain": "Sport",
+            "range": "Organisation"
+        },
+        {
+            "id": "director",
+            "label": "director",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "dean",
+            "label": "dean",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "wasGivenTheTechnicalCampusStatusBy",
+            "label": "wasGivenTheTechnicalCampusStatusBy",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "academicStaffSize",
+            "label": "academicStaffSize",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "nickname",
+            "label": "nickname",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "campus",
+            "label": "campus",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "neighboringMunicipality",
+            "label": "neighboringMunicipality",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "affiliation",
+            "label": "affiliation",
+            "domain": "Organisation",
+            "range": "Organisation"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Academic",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "School",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Canton",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ReligiousOrganisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "NationalAnthem",
+            "range": "MusicalWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "River",
+            "range": "NaturalPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Saint",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicalWork",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Sea",
+            "range": "NaturalPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Architect",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "NaturalPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        }
+    ]
+}

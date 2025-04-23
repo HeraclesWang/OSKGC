@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1_Company_test_1",
+        "input_text": "GMA New Media is in the mass media industry.",
+        "response": "[GMA New Media, industry, Mass Media Industry]:(Company, industry, Industry)"
+    },
+    {
+        "id": "1_Company_test_2",
+        "input_text": "Chinabank has a net income of 15100000000.",
+        "response": "[Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)"
+    },
+    {
+        "id": "1_Company_test_3",
+        "input_text": "AmeriGas was founded on 01-01-1959.",
+        "response": "[AmeriGas, foundingDate, 01-01-1959]"
+    },
+    {
+        "id": "1_Company_test_4",
+        "input_text": "The President is the leader title of the Philippines.",
+        "response": "([The President], leaderTitle, [Philippines]):(Place, leaderTitle, Organisation)"
+    },
+    {
+        "id": "1_Company_test_5",
+        "input_text": "Michel Temer is the leader of Brazil.",
+        "response": "[Michel Temer, leader, Brazil]:(Person, leaderTitle, Country)"
+    },
+    {
+        "id": "1_Company_test_6",
+        "input_text": "Donabate is part of Swords (Dublin).",
+        "response": "[Donabate, isPartOf, Swords]:(Donabate, isPartOf, Dublin)"
+    },
+    {
+        "id": "1_Company_test_7",
+        "input_text": "Chinabank was founded on 08-16-1920.",
+        "response": "[Chinabank, foundingDate, 08-16-1920]:(Organisation, foundingDate, Date)"
+    },
+    {
+        "id": "1_Company_test_8",
+        "input_text": "Philippine Entertainment Portal's parent company is Summit Media.",
+        "response": "[Philippine Entertainment Portal, parentCompany, Summit Media]:(Organization, parentCompany, Organization)"
+    },
+    {
+        "id": "1_Company_test_9",
+        "input_text": "Chinabank is a public company.",
+        "response": "[Chinabank, type, PublicCompany]:(Company, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_10",
+        "input_text": "Chinabank's location is the Philippines.",
+        "response": "[Chinabank, location, Philippines]:(Organization, location, Country)"
+    },
+    {
+        "id": "1_Company_test_11",
+        "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, foundingDate, Date]:(\"Insular Government of the Philippine Islands\", type, GovernmentType)\n[Chinabank, foundationPlace, Place]:(\"Insular Government of the Philippine Islands\", isPartOf, Country)"
+    },
+    {
+        "id": "1_Company_test_12",
+        "input_text": "Chinabank has 5594 employees.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Organisation, numberOfEmployees, number)"
+    },
+    {
+        "id": "1_Company_test_13",
+        "input_text": "Chinabank offers banking service.",
+        "response": "[Chinabank, service, BankingService]:(Company, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_14",
+        "input_text": "Manila is Chinabank’s founding place.",
+        "response": "[Chinabank, foundingPlace, Manila]:(Organization, foundingPlace, Place)"
+    },
+    {
+        "id": "1_Company_test_15",
+        "input_text": "Chinabank has 295 locations.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number)"
+    },
+    {
+        "id": "1_Company_test_16",
+        "input_text": "The net income of AmeriGas is 211200000.",
+        "response": "[AmeriGas, netIncome, 211200000]"
+    },
+    {
+        "id": "1_Company_test_17",
+        "input_text": "AmeriGas is located in King of Prussia (Pennsylvania).",
+        "response": "[AmeriGas, location, King of Prussia]:(Company, location, Settlement)\n[AmeriGas, location, Pennsylvania]:(Company, location, State)"
+    },
+    {
+        "id": "1_Company_test_18",
+        "input_text": "AmeriGas is in the energy industry.",
+        "response": "[AmeriGas, industry, EnergyIndustry]:(Company, industry, TopicalConcept)"
+    },
+    {
+        "id": "1_Company_test_19",
+        "input_text": "AmeriGas works in the country of the United States.",
+        "response": "[AmeriGas, serves, United States]:(Country, isPartOf, Continent)"
+    },
+    {
+        "id": "1_Company_test_20",
+        "input_text": "AmeriGas has 8500 employees.",
+        "response": "[AmeriGas, numberOfEmployees, 8500]:(Organisation, numberOfEmployees, number)"
+    },
+    {
+        "id": "1_Company_test_21",
+        "input_text": "AmeriGas provides its services in the United States.",
+        "response": "[AmeriGas, serves, United States]:(Company, serves, Country)"
+    },
+    {
+        "id": "1_Company_test_22",
+        "input_text": "AmeriGas has an operating income of $ 380700000.",
+        "response": "[AmeriGas, operatingIncome, 380700000]:(Company, operatingIncome, number)"
+    }
+]

@@ -1,0 +1,462 @@
+{
+    "title": "1_City",
+    "id": "1_City",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Code",
+            "label": "Code"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentType",
+            "label": "GovernmentType"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Representative",
+            "label": "Representative"
+        },
+        {
+            "id": "Road",
+            "label": "Road"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TimeZone",
+            "label": "TimeZone"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "elevationAboveTheSeaLevelInMetres",
+            "label": "elevationAboveTheSeaLevelInMetres",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "areaOfLand",
+            "label": "areaOfLand",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "utcOffset",
+            "label": "utcOffset",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "populationDensity",
+            "label": "populationDensity",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "areaCode",
+            "label": "areaCode",
+            "domain": "Place",
+            "range": "Code"
+        },
+        {
+            "id": "timeZone",
+            "label": "timeZone",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "governmentType",
+            "label": "governmentType",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "elevationAboveTheSeaLevel",
+            "label": "elevationAboveTheSeaLevel",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "populationTotal",
+            "label": "populationTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "countySeat",
+            "label": "countySeat",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "chairman",
+            "label": "chairman",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "areaOfWater",
+            "label": "areaOfWater",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "populationMetro",
+            "label": "populationMetro",
+            "domain": "Place",
+            "range": "number"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Representative",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Road",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "TimeZone",
+            "range": "TopicalConcept"
+        }
+    ]
+}

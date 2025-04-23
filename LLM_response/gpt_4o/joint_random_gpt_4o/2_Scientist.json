@@ -1,0 +1,57 @@
+[
+    {
+        "id": "2_Scientist_test_1",
+        "input_text": "British national Lady Anne Monson lived in the Kingdom of England whose capital was Winchester.",
+        "response": "[Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Country), [Kingdom of England, capital, Winchester]:(Country, capital, City)"
+    },
+    {
+        "id": "2_Scientist_test_2",
+        "input_text": "Lady Anne Monson was born in Darlington which is located in Kingdom of England.",
+        "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, City), [Darlington, capital, Kingdom of England]:(City, capital, Country)"
+    },
+    {
+        "id": "2_Scientist_test_3",
+        "input_text": "Kingdom of England is a unitary state form of government which is also Lady Anne Monson's nationality.",
+        "response": "[Kingdom of England, governmentType, unitary state]:(Country, governmentType, TopicalConcept), [Lady Anne Monson, nationality, Kingdom of England]:(Person, nationality, Country)"
+    },
+    {
+        "id": "2_Scientist_test_4",
+        "input_text": "Lady Anne Monson, who was born in Darlington, died on 1776-02-18.",
+        "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Settlement), [Lady Anne Monson, deathDate, 1776-02-18]:(Person, deathDate, Date)"
+    },
+    {
+        "id": "2_Scientist_test_5",
+        "input_text": "India, at one time led by T. S. Thakur, was also where Lady Anne Monson lived most of her life.",
+        "response": "[T. S. Thakur, leader, India]:(Person, leader, Country), [Lady Anne Monson, residence, India]:(Person, residence, Country)"
+    },
+    {
+        "id": "2_Scientist_test_6",
+        "input_text": "The Kingdom of England, the place where Lady Anne Monson was born, was a unitary state.",
+        "response": "[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Country), [Kingdom of England, governmentType, unitary state]:(Country, governmentType, TopicalConcept)"
+    },
+    {
+        "id": "2_Scientist_test_7",
+        "input_text": "Lady Anne Monson lived from January 1, 1726 to February 18, 1776.",
+        "response": "```plaintext\n[Lady Anne Monson, birthDate, January 1, 1726]:(Person, birthDate, Date), [Lady Anne Monson, deathDate, February 18, 1776]:(Person, deathDate, Date)\n```"
+    },
+    {
+        "id": "2_Scientist_test_8",
+        "input_text": "Darlington, population 106000, was the birthplace of Lady Anne Monson.",
+        "response": "[Darlington, populationTotal, 106000]:(Town, populationTotal, number), [Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, Town)"
+    },
+    {
+        "id": "2_Scientist_test_9",
+        "input_text": "Lady Anne Monson was born in the Kingdom of England whose capital was previously Winchester.",
+        "response": "[Lady Anne Monson, birthPlace, Kingdom of England]:(Person, birthPlace, Country), [Kingdom of England, capital, Winchester]:(Country, capital, City)"
+    },
+    {
+        "id": "2_Scientist_test_10",
+        "input_text": "Lady Anne Monson was born in Darlington, England making her nationality English.",
+        "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, City), [Lady Anne Monson, nationality, England]:(Person, nationality, Country)"
+    },
+    {
+        "id": "2_Scientist_test_11",
+        "input_text": "Lady Anne Monson was born in Darlington on January 1st, 1726.",
+        "response": "[Lady Anne Monson, birthPlace, Darlington]:(Person, birthPlace, City), [Lady Anne Monson, birthDate, January 1st, 1726]:(Person, birthDate, Date)"
+    }
+]

@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_1">
+      <text>The Olympic Stadium (Athens) is located in the city of Athens.</text>
+      <triples>
+        <triple>
+          <sub>Olympic_Stadium</sub>
+          <rel>location</rel>
+          <obj>Athens</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_2">
+      <text>The full name of AFC Ajax (amateurs) is "Amsterdamsche Football Club Ajax Amateurs".</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>fullName</rel>
+          <obj>Amsterdamsche_Football_Club_Ajax_Amateurs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_3">
+      <text>Luciano Spalletti plays for Empoli F.C.</text>
+      <triples>
+        <triple>
+          <sub>Luciano_Spalletti</sub>
+          <rel>club</rel>
+          <obj>Empoli_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_4">
+      <text>Estádio Municipal Coaracy da Mata Fonseca is located in Alagoas.</text>
+      <triples>
+        <triple>
+          <sub>Estádio_Municipal_Coaracy_da_Mata_Fonseca</sub>
+          <rel>location</rel>
+          <obj>Alagoas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_5">
+      <text>AEK Athens F.C.'s ground is in Greece.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Greece</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_6">
+      <text>The mayor of Athens is Giorgos Kaminis.</text>
+      <triples>
+        <triple>
+          <sub>Athens</sub>
+          <rel>mayor</rel>
+          <obj>Giorgos_Kaminis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>mayor</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_7">
+      <text>The Agremiação Sportiva Arapiraquense is nicknamed Asa Gigante.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>nickname</rel>
+          <obj>Asa_Gigante</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>nickname</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_8">
+      <text>A.F.C. Fylde has 3180 members.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>numberOfMembers</rel>
+          <obj>3180</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_9">
+      <text>A.E Dimitra Efxeinoupolis is in the league, A EPSTH 2nd GROUP.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>league</rel>
+          <obj>A_EPSTH_2nd_GROUP</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_10">
+      <text>Rolando Maran is in the Unione Triestina 2012 S.S.D. club.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>Unione_Triestina_2012_S.S.D.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_11">
+      <text>Estádio Municipal Coaracy da Mata Fonseca is in Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Estádio_Municipal_Coaracy_da_Mata_Fonseca</sub>
+          <rel>location</rel>
+          <obj>Brazil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_12">
+      <text>Dave Challinor is affiliated with Tranmere Rovers F.C.</text>
+      <triples>
+        <triple>
+          <sub>Dave_Challinor</sub>
+          <rel>club</rel>
+          <obj>Tranmere_Rovers_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_13">
+      <text>The ground of A.E Dimitra Efxeinoupolis is located in the town of Efxeinoupoli.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>ground</rel>
+          <obj>Efxeinoupoli</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_14">
+      <text>Peter Stöger was at the club SK Rapid Wien.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>SK_Rapid_Wien</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_15">
+      <text>Peter Stöger's club is the FC Admira Wacker Mödling.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>FC_Admira_Wacker_Mödling</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_16">
+      <text>AZAL PFK competed in the season 2014.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_17">
+      <text>Rolando Maran is attached to the club Calcio Catania.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>Calcio_Catania</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_18">
+      <text>A.F.C. Blackpool play in the North West Counties Football League.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>league</rel>
+          <obj>North_West_Counties_Football_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_19">
+      <text>Akron Summit Assault's ground is St. Vincent–St. Mary High School.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>ground</rel>
+          <obj>St._Vincent–St._Mary_High_School</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>School</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_20">
+      <text>AZAL PFK play their home matches at the AZAL Arena.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>ground</rel>
+          <obj>AZAL_Arena</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_21">
+      <text>Jorge Humberto Rodríguez plays for the C.D. FAS.</text>
+      <triples>
+        <triple>
+          <sub>Jorge_Humberto_Rodríguez</sub>
+          <rel>club</rel>
+          <obj>C.D._FAS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_22">
+      <text>AEK Athens F.C. had the manager Gus Poyet.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>manager</rel>
+          <obj>Gus_Poyet</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_23">
+      <text>AFC Ajax (Amateurs) competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_24">
+      <text>AFC Ajax has 53502 members.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>numberOfMembers</rel>
+          <obj>53502</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_25">
+      <text>Paulo Sousa is the manager of the ACF Fiorentina.</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>manager</rel>
+          <obj>Paulo_Sousa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_26">
+      <text>Max Huiberts is associated with the club AZ Alkmaar.</text>
+      <triples>
+        <triple>
+          <sub>Max_Huiberts</sub>
+          <rel>club</rel>
+          <obj>AZ_Alkmaar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_27">
+      <text>A.F.C. Blackpool played in the 2014–15 North West Counties Football League.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>season</rel>
+          <obj>2014–15_North_West_Counties_Football_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_dev_28">
+      <text>AFC Ajax (amateurs) has the nickname "Lucky Ajax".</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>nickname</rel>
+          <obj>Lucky_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>nickname</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

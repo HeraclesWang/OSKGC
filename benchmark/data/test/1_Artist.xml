@@ -1,0 +1,1127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Artist" id="1_Artist_test_1">
+      <text>Aaron Turner performs ambient music.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Ambient_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_2">
+      <text>Aaron Turner is an exponent of Doom metal.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Doom_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_3">
+      <text>Aaron Turner played for Old Man Gloom.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Old_Man_Gloom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_4">
+      <text>Aaron Turner originates from Boston.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>origin</rel>
+          <obj>Boston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_5">
+      <text>Uruguay's leader is Tabaré Vázquez.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>leader</rel>
+          <obj>Tabaré_Vázquez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_6">
+      <text>Albennie Jones is a jazz artist.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>genre</rel>
+          <obj>Jazz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_7">
+      <text>Hip Hop music has its stylistic origins in Jazz.</text>
+      <triples>
+        <triple>
+          <sub>Hip_hop_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Jazz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_8">
+      <text>Aaron Turner falls in the genre of avant-garde metal music.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Avant-garde_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_9">
+      <text>Ace Wilder's occupation is a singer.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_10">
+      <text>The record label of Ace Wilder is Warner Music Group.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>recordLabel</rel>
+          <obj>Warner_Music_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_11">
+      <text>The official language of Israel is modern Hebrew.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>officialLanguage</rel>
+          <obj>Modern_Hebrew</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_12">
+      <text>Andra sings pop music.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_13">
+      <text>Anders Osborne is associated with the musical artist Billy Iuso.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Billy_Iuso</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_14">
+      <text>Trance music originated from house music.</text>
+      <triples>
+        <triple>
+          <sub>Trance_music</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>House_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_15">
+      <text>Alan Frew was born in Scotland.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>birthPlace</rel>
+          <obj>Scotland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_16">
+      <text>Alex Day plays with the band Chameleon Circuit.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>associatedBand</rel>
+          <obj>Chameleon_Circuit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_17">
+      <text>Alternative rock has its stylistic origins in Punk rock.</text>
+      <triples>
+        <triple>
+          <sub>Alternative_rock</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Punk_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_18">
+      <text>The musical genre of the singer Andra is dance pop.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>genre</rel>
+          <obj>Dance-pop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_19">
+      <text>Sweden is the birthplace of Ace Wilder.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>birthPlace</rel>
+          <obj>Sweden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_20">
+      <text>Aaron Turner performs for Mamiffer.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Mamiffer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_21">
+      <text>Aaron Turner started performing in 1995.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1995</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_22">
+      <text>Aaron Turner was born in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>origin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_23">
+      <text>Drone music is a genre of Aaron Turner.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Drone_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_24">
+      <text>Aaron Turner is from Massachusetts.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>origin</rel>
+          <obj>Massachusetts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_25">
+      <text>Aaron Turner performed with the band Sumac.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Sumac</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_26">
+      <text>Aaron Turner plays the electric guitar.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>instrument</rel>
+          <obj>Electric_guitar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_27">
+      <text>Aaron Turner performs black metal music.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Black_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_28">
+      <text>Aaron Turner is closely associated with the genre sludge metal.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Sludge_metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_29">
+      <text>Aaron Turner plays electroacoustic music.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Electroacoustic_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_30">
+      <text>Aaron Turner performed for House of Low Culture.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>House_of_Low_Culture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_31">
+      <text>Aaron Turner is an artist for the band Isis.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Isis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_32">
+      <text>Aaron Turner played with the band Twilight.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Twilight</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_33">
+      <text>Aaron Turner's genre is post-metal.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>genre</rel>
+          <obj>Post-metal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_34">
+      <text>Aaron Turner is a musician in the Lotus Eaters band.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Lotus_Eaters</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_35">
+      <text>Aaron Turner is associated with the group Greymachine.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>associatedBand</rel>
+          <obj>Greymachine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_36">
+      <text>Aaron Turner sings for a living.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Turner</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_37">
+      <text>Afrobeat is a fusion genre of Jazz.</text>
+      <triples>
+        <triple>
+          <sub>Jazz</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Afrobeat</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_38">
+      <text>Jazz originated its style from Blues music.</text>
+      <triples>
+        <triple>
+          <sub>Jazz</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_39">
+      <text>The clarinet is used in Jazz music.</text>
+      <triples>
+        <triple>
+          <sub>Jazz</sub>
+          <rel>instrument</rel>
+          <obj>Clarinet</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_40">
+      <text>Jazz has its stylistic origins in folk music.</text>
+      <triples>
+        <triple>
+          <sub>Jazz</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Folk_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_41">
+      <text>Funk is a derivative of Jazz.</text>
+      <triples>
+        <triple>
+          <sub>Jazz</sub>
+          <rel>derivative</rel>
+          <obj>Funk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_42">
+      <text>The Uruguayan currency is the Uruguayan peso.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>currency</rel>
+          <obj>Uruguayan_peso</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_43">
+      <text>Raúl Fernando Sendic Rodríguez is Uruguay's leader.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>leader</rel>
+          <obj>Raúl_Fernando_Sendic_Rodríguez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>VicePresident</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_44">
+      <text>Spanish is spoken in Uruguay.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_45">
+      <text>Alfredo Zitarrosa was born in Uruguay.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>birthPlace</rel>
+          <obj>Uruguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_46">
+      <text>Montevideo is in the country of Uruguay.</text>
+      <triples>
+        <triple>
+          <sub>Montevideo</sub>
+          <rel>country</rel>
+          <obj>Uruguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_47">
+      <text>Uruguay’s national anthem is called the National Anthem of Uruguay.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>anthem</rel>
+          <obj>National_Anthem_of_Uruguay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>anthem</rel>
+          <obj>NationalAnthem</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_48">
+      <text>People in Uruguay are known as Uruguayans.</text>
+      <triples>
+        <triple>
+          <sub>Uruguay</sub>
+          <rel>demonym</rel>
+          <obj>Uruguayans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_49">
+      <text>Alan Frew is from Newmarket (Ontario).</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>origin</rel>
+          <obj>Newmarket</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_50">
+      <text>Alan Frew comes from Canada.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>origin</rel>
+          <obj>Canada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>origin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_51">
+      <text>Alan Frew plays with Glass Tiger.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>associatedBand</rel>
+          <obj>Glass_Tiger</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_52">
+      <text>Alan Frew was born in 1956.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>birthYear</rel>
+          <obj>1956</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_53">
+      <text>The birth place of Alan Frew is Coatbridge.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>birthPlace</rel>
+          <obj>Coatbridge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_54">
+      <text>Alan Frew's background is that of solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_55">
+      <text>Alan Frew performs alternative rock music.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>genre</rel>
+          <obj>Alternative_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_56">
+      <text>Alan Frew is a musician.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>occupation</rel>
+          <obj>Musician</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_57">
+      <text>Alan Frew was born in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>birthPlace</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_58">
+      <text>Alan Frew started performing in 1983.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Frew</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1983</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_59">
+      <text>Ace Wilder performs electropop music.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>genre</rel>
+          <obj>Electropop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_60">
+      <text>Ace Wilder was born on July 23, 1982.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>birthDate</rel>
+          <obj>1982-07-23</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_61">
+      <text>Ace Wilder is a songwriter.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>occupation</rel>
+          <obj>Songwriter</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_62">
+      <text>Ace Wilder is signed to the record label EMI Records.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>recordLabel</rel>
+          <obj>EMI_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_63">
+      <text>Ace Wilder has a background as a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_64">
+      <text>Ace Wilder is an exponent of Hip hop music.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>genre</rel>
+          <obj>Hip_hop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_65">
+      <text>Ace Wilder was born in Stockholm.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>birthPlace</rel>
+          <obj>Stockholm</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_test_66">
+      <text>Ace Wilder was born in 1982.</text>
+      <triples>
+        <triple>
+          <sub>Ace_Wilder</sub>
+          <rel>birthYear</rel>
+          <obj>1982</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

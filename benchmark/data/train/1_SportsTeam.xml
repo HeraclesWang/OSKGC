@@ -1,0 +1,3371 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_1">
+      <text>Livorno is the location of the ground of A.S. Livorno Calcio.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>ground</rel>
+          <obj>Livorno</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_2">
+      <text>Gus Poyet played for Chelsea F.C.</text>
+      <triples>
+        <triple>
+          <sub>Gus_Poyet</sub>
+          <rel>club</rel>
+          <obj>Chelsea_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_3">
+      <text>The Olympic Stadium (Athens) is the home ground of AEK Athens F.C.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>ground</rel>
+          <obj>Olympic_Stadium</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_4">
+      <text>The Left Ecology Freedom are the leading party in Gubbio.</text>
+      <triples>
+        <triple>
+          <sub>Gubbio</sub>
+          <rel>leaderParty</rel>
+          <obj>Left_Ecology_Freedom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>leaderParty</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_5">
+      <text>St. Vincent–St. Mary High School is located in the state of Ohio.</text>
+      <triples>
+        <triple>
+          <sub>St._Vincent–St._Mary_High_School</sub>
+          <rel>state</rel>
+          <obj>Ohio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>School</sub>
+          <rel>state</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_6">
+      <text>The title of the chairman of Agremiação Sportiva Arapiraquense is President.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>chairmanTitle</rel>
+          <obj>President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairmanTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_7">
+      <text>Jens Härtel is attached to the club FSV Zwickau.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>FSV_Zwickau</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_8">
+      <text>A.F.C. Fylde competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_9">
+      <text>A.C. Lumezzane has 4150 members.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>numberOfMembers</rel>
+          <obj>4150</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_10">
+      <text>Massimo Drago played for S.S.D. Potenza Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>S.S.D._Potenza_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_11">
+      <text>The official language of Italy is the Italian language.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>officialLanguage</rel>
+          <obj>Italian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_12">
+      <text>Paulo Sousa once played for Inter Milan.</text>
+      <triples>
+        <triple>
+          <sub>Paulo_Sousa</sub>
+          <rel>club</rel>
+          <obj>Inter_Milan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_13">
+      <text>Jorge Humberto Rodríguez has been manager of A.D. Isidro Metapán.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>manager</rel>
+          <obj>Jorge_Humberto_Rodríguez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_14">
+      <text>The full name of ACF Fiorentina is "ACF Fiorentina S.p.A."</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>fullName</rel>
+          <obj>ACF_Fiorentina_S.p.A.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_15">
+      <text>Footballer, Peter Stöger, plays for the Austria National Football team.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>Austria_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_16">
+      <text>The AZAL Arena is located in Azerbaijan.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_Arena</sub>
+          <rel>location</rel>
+          <obj>Azerbaijan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_17">
+      <text>The ground of A.D. Isidro Metapán is located in Metapán.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>ground</rel>
+          <obj>Metapán</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_18">
+      <text>St. Vincent–St. Mary High School is located in the city of Akron.</text>
+      <triples>
+        <triple>
+          <sub>St._Vincent–St._Mary_High_School</sub>
+          <rel>city</rel>
+          <obj>Akron</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>School</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_19">
+      <text>AZ Alkmaar full name is "Alkmaar Zaanstreek".</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>fullName</rel>
+          <obj>Alkmaar_Zaanstreek</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_20">
+      <text>A.S. Gubbio 1910 was a part of the 2014–15 Lega Pro season.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>season</rel>
+          <obj>2014–15_Lega_Pro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_21">
+      <text>Sportpark De Toekomst is operated by AFC Ajax.</text>
+      <triples>
+        <triple>
+          <sub>Sportpark_De_Toekomst</sub>
+          <rel>operator</rel>
+          <obj>AFC_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>operator</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_22">
+      <text>The leader of Blackpool is the Conservative Party.</text>
+      <triples>
+        <triple>
+          <sub>Blackpool</sub>
+          <rel>leader</rel>
+          <obj>Conservative_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_23">
+      <text>Peter Stöger played for the club LASK Linz.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>LASK_Linz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_24">
+      <text>The leader of Greece is Nikos Voutsis.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>leader</rel>
+          <obj>Nikos_Voutsis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_25">
+      <text>Jorge Humberto Rodríguez plays for the Alianza F.C. club.</text>
+      <triples>
+        <triple>
+          <sub>Jorge_Humberto_Rodríguez</sub>
+          <rel>club</rel>
+          <obj>Alianza_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_26">
+      <text>The ground of A.S. Gubbio 1910 is located in Italy.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>ground</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_27">
+      <text>Jorge Humberto Rodríguez is a member of the El Salvador national football team.</text>
+      <triples>
+        <triple>
+          <sub>Jorge_Humberto_Rodríguez</sub>
+          <rel>club</rel>
+          <obj>El_Salvador_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_28">
+      <text>A.F.C. Fylde's ground is located in Warton (Fylde).</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>Warton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_29">
+      <text>ACF Fiorentina competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_30">
+      <text>1. FC Magdeburg has 27250 members.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Magdeburg</sub>
+          <rel>numberOfMembers</rel>
+          <obj>27250</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_31">
+      <text>A.F.C. Blackpool has 1500 members.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>numberOfMembers</rel>
+          <obj>1500</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_32">
+      <text>ACF Fiorentina played the 2014–15 Serie A.</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>season</rel>
+          <obj>2014–15_Serie_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_33">
+      <text>Massimo Drago is attached to the club Delfino Pescara 1936.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>Delfino_Pescara_1936</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_34">
+      <text>AFC Ajax has 5000 Members.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>numberOfMembers</rel>
+          <obj>5000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_35">
+      <text>A.D. Isidro Metapán's full name is "Asociación Deportiva".</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>fullName</rel>
+          <obj>Asociación_Deportiva</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_36">
+      <text>Paulo Sousa plays for the Portugal national football team.</text>
+      <triples>
+        <triple>
+          <sub>Paulo_Sousa</sub>
+          <rel>club</rel>
+          <obj>Portugal_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_37">
+      <text>The Akron Summit Assault team is based in Akron.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>ground</rel>
+          <obj>Akron</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_38">
+      <text>A.C. Cesena's ground is located in Italy.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>ground</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_39">
+      <text>The Olympic Stadium (Athens) is located at Marousi.</text>
+      <triples>
+        <triple>
+          <sub>Olympic_Stadium</sub>
+          <rel>location</rel>
+          <obj>Marousi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_40">
+      <text>Athens is the capital of Greece.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>capital</rel>
+          <obj>Athens</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_41">
+      <text>Stuart Parker was a footballer for Chesterfield F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Chesterfield_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_42">
+      <text>The owner of AFC Ajax is AFC Ajax N.V.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>owner</rel>
+          <obj>AFC_Ajax_N.V.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_43">
+      <text>ACF Fiorentina has 47290 members.</text>
+      <triples>
+        <triple>
+          <sub>ACF_Fiorentina</sub>
+          <rel>numberOfMembers</rel>
+          <obj>47290</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_44">
+      <text>Jens Härtel is in the RB Leipzig club.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>RB_Leipzig</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_45">
+      <text>The Fylde is the home ground of A.F.C. Fylde.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>The_Fylde</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_46">
+      <text>A.E Dimitra Efxeinoupolis's full name is A.E Dimitra Efxeinoupolis.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>fullName</rel>
+          <obj>A.E_Dimitra_Efxeinoupolis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_47">
+      <text>A.F.C. Fylde are based at Warton (Fylde).</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>Warton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_48">
+      <text>A.D. Isidro Metapán has 10000 members.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>numberOfMembers</rel>
+          <obj>10000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_49">
+      <text>Massimo Drago was at the club A.S.D. Licata 1931.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>A.S.D._Licata_1931</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_50">
+      <text>The full name of A.S. Gubbio 1910 is "Associazione Sportiva Gubbio 1910 Srl".</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>fullName</rel>
+          <obj>Associazione_Sportiva_Gubbio_1910_Srl</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_51">
+      <text>Agremiação Sportiva Arapiraquense's full name is "Agremiação Sportiva Arapiraquense".</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>fullName</rel>
+          <obj>Agremiação_Sportiva_Arapiraquense</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_52">
+      <text>Akron Summit Assault play in the Premier Development League.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>league</rel>
+          <obj>Premier_Development_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_53">
+      <text>Stuart Parker (footballer) once played for Stockport County F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Stockport_County_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_54">
+      <text>Frank de Boer manages the AFC Ajax team.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>manager</rel>
+          <obj>Frank_de_Boer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_55">
+      <text>Associazione Sportiva Livorno Calcio is the full name of A.S. Livorno Calcio.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>fullName</rel>
+          <obj>Associazione_Sportiva</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_56">
+      <text>1. FC Köln were in the 2014–15 Bundesliga season.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Köln</sub>
+          <rel>season</rel>
+          <obj>2014–15_Bundesliga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_57">
+      <text>Agremiação Sportiva Arapiraquense competed in the 2015 Campeonato Brasileiro Série C.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>season</rel>
+          <obj>2015_Campeonato_Brasileiro_Série_C</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_58">
+      <text>Dave Challinor is a player at the A.F.C. Fylde .</text>
+      <triples>
+        <triple>
+          <sub>Dave_Challinor</sub>
+          <rel>club</rel>
+          <obj>A.F.C._Fylde</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_59">
+      <text>The A.S. Gubbio 1910 football club play in Serie D.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Gubbio_1910</sub>
+          <rel>league</rel>
+          <obj>Serie_D</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_60">
+      <text>Vila Nova Futebol Clube have been champions of Campeonato Brasileiro Série C.</text>
+      <triples>
+        <triple>
+          <sub>Campeonato_Brasileiro_Série_C</sub>
+          <rel>champions</rel>
+          <obj>Vila_Nova_Futebol_Clube</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_61">
+      <text>Frank de Boer played for Al-Shamal Sports Club.</text>
+      <triples>
+        <triple>
+          <sub>Frank_de_Boer</sub>
+          <rel>club</rel>
+          <obj>Al-Shamal_Sports_Club</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_62">
+      <text>AZ Alkmaar played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_63">
+      <text>Akron is part of Summit County.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>isPartOf</rel>
+          <obj>Summit_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_64">
+      <text>Gus Poyet is in AEK Athens F.C.</text>
+      <triples>
+        <triple>
+          <sub>Gus_Poyet</sub>
+          <rel>club</rel>
+          <obj>AEK_Athens_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_65">
+      <text>Agremiação Sportiva Arapiraquense has 17000 members.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>numberOfMembers</rel>
+          <obj>17000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_66">
+      <text>AFC Ajax (amateurs) have the nickname "Joden, Godenzonen".</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>nickname</rel>
+          <obj>Joden,_Godenzonen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>nickname</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_67">
+      <text>A.S. Livorno Calcio ground is in Livorno.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>ground</rel>
+          <obj>Livorno</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_68">
+      <text>A.C. Lumezzane played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_69">
+      <text>Akron Summit Assault play in the 2011 PDL season.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>season</rel>
+          <obj>2011_PDL_season</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_70">
+      <text>Jens Härtel plays for SV Germania Schöneiche.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>SV_Germania_Schöneiche</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_71">
+      <text>A.F.C. Blackpool competed in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_72">
+      <text>A.F.C. Fylde's manager is Dave Challinor.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>manager</rel>
+          <obj>Dave_Challinor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_73">
+      <text>The currency in Greece is the euro.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_74">
+      <text>Barrow A.F.C. are previous champions of the National League North.</text>
+      <triples>
+        <triple>
+          <sub>National_League_North</sub>
+          <rel>champions</rel>
+          <obj>Barrow_A.F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_75">
+      <text>AZ Alkmaar has 17023 members.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>numberOfMembers</rel>
+          <obj>17023</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_76">
+      <text>Olympiacos F.C. are previous champions of the Superleague Greece.</text>
+      <triples>
+        <triple>
+          <sub>Superleague_Greece</sub>
+          <rel>champions</rel>
+          <obj>Olympiacos_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_77">
+      <text>Massimo Drago is in club Calcio Catania.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>Calcio_Catania</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_78">
+      <text>Greek is the language of Greece.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>language</rel>
+          <obj>Greek</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_79">
+      <text>Stuart Parker plays at the Sparta Rotterdam club.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Sparta_Rotterdam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_80">
+      <text>A.S. Livorno Calcio played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_81">
+      <text>Rolando Maran was born in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>birthPlace</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_82">
+      <text>A.F.C. Fylde are based at Bryning Lane.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>Bryning_Lane</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_83">
+      <text>Carpi F.C. 1909 are previous champions of Serie B.</text>
+      <triples>
+        <triple>
+          <sub>Serie_B</sub>
+          <rel>champions</rel>
+          <obj>Carpi_F.C._1909</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_84">
+      <text>Stuart Parker has represented the club KV Mechelen.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>KV_Mechelen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_85">
+      <text>Gus Poyet is associated with the Real Zaragoza, a football club.</text>
+      <triples>
+        <triple>
+          <sub>Gus_Poyet</sub>
+          <rel>club</rel>
+          <obj>Real_Zaragoza</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_86">
+      <text>The name of the championship football team in the Azerbaijan Premier League Os the Qarabağ FK.</text>
+      <triples>
+        <triple>
+          <sub>Azerbaijan_Premier_League</sub>
+          <rel>champions</rel>
+          <obj>Qarabağ_FK</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_87">
+      <text>A.E Dimitra Efxeinoupolis has 1500 members.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>numberOfMembers</rel>
+          <obj>1500</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_88">
+      <text>AFC Ajax (amateurs) played in the 2014–15 Topklasse.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>season</rel>
+          <obj>2014–15_Topklasse</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_89">
+      <text>AEK Athens F.C. compete in the Superleague Greece.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>league</rel>
+          <obj>Superleague_Greece</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_90">
+      <text>AZAL PFK stands for "AZAL Peşəkar Futbol Klubu".</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>fullName</rel>
+          <obj>AZAL_Peşəkar_Futbol_Klubu</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_91">
+      <text>A.F.C. Blackpool play in the English Football League system.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>league</rel>
+          <obj>English_football_league_system</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_92">
+      <text>Amsterdam-Noord is part of Amsterdam.</text>
+      <triples>
+        <triple>
+          <sub>Amsterdam-Noord</sub>
+          <rel>isPartOf</rel>
+          <obj>Amsterdam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>isPartOf</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_93">
+      <text>Jens Härtel is part of the club 1. FC Union Berlin.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>1._FC_Union_Berlin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_94">
+      <text>The "Associazione Calcio Lumezzane SpA" is the full name of A.C. Lumezzane.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>fullName</rel>
+          <obj>Associazione_Calcio_Lumezzane_SpA</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_95">
+      <text>Massimo Drago was once a player for U.S. Castrovillari Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>U.S._Castrovillari_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_96">
+      <text>Italy is inhabited by Italians.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>demonym</rel>
+          <obj>Italians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_97">
+      <text>Akron Summit Assault chairman is Dave Laughlin.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>chairman</rel>
+          <obj>Dave_Laughlin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_98">
+      <text>A.C. Lumezzane is in the Lega Pro/A league.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>league</rel>
+          <obj>Lega_Pro/A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_99">
+      <text>Ajax Youth Academy is a tenant of Sportpark De Toekomst.</text>
+      <triples>
+        <triple>
+          <sub>Sportpark_De_Toekomst</sub>
+          <rel>tenant</rel>
+          <obj>Ajax_Youth_Academy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>tenant</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_100">
+      <text>A.C. Lumezzane play in the Lega Pro league.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>league</rel>
+          <obj>Lega_Pro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_101">
+      <text>A.S. Livorno Calcio's home ground is the Stadio Armando Picchi.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>ground</rel>
+          <obj>Stadio_Armando_Picchi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_102">
+      <text>A.C. Cesena's ground is Stadio Dino Manuzzi.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>ground</rel>
+          <obj>Stadio_Dino_Manuzzi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_103">
+      <text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>league</rel>
+          <obj>Campeonato_Brasileiro_Série_C</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_104">
+      <text>Blackpool is led by Gordon Marsden.</text>
+      <triples>
+        <triple>
+          <sub>Blackpool</sub>
+          <rel>leader</rel>
+          <obj>Gordon_Marsden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_105">
+      <text>The language spoken in italy is Italian language.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>language</rel>
+          <obj>Italian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_106">
+      <text>Frank de Boer is in the Ajax Youth Academy.</text>
+      <triples>
+        <triple>
+          <sub>Frank_de_Boer</sub>
+          <rel>club</rel>
+          <obj>Ajax_Youth_Academy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_107">
+      <text>The leader of Blackpool council is the Labour Party.</text>
+      <triples>
+        <triple>
+          <sub>Blackpool</sub>
+          <rel>leader</rel>
+          <obj>Labour_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_108">
+      <text>Akron Summit Assault has 3000 members.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>numberOfMembers</rel>
+          <obj>3000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_109">
+      <text>There are 3500 members of AZAL PFK.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>numberOfMembers</rel>
+          <obj>3500</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_110">
+      <text>Estádio Municipal Coaracy da Mata Fonseca is located in Arapiraca.</text>
+      <triples>
+        <triple>
+          <sub>Estádio_Municipal_Coaracy_da_Mata_Fonseca</sub>
+          <rel>location</rel>
+          <obj>Arapiraca</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_111">
+      <text>Luciano Spalletti was at the club Virtus Entella.</text>
+      <triples>
+        <triple>
+          <sub>Luciano_Spalletti</sub>
+          <rel>club</rel>
+          <obj>Virtus_Entella</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_112">
+      <text>Campeonato Brasileiro Série C is from Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Campeonato_Brasileiro_Série_C</sub>
+          <rel>country</rel>
+          <obj>Brazil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_113">
+      <text>The full name of AFC Ajax is "Amsterdamsche Football Club Ajax".</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>fullName</rel>
+          <obj>Amsterdamsche_Football_Club_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_114">
+      <text>Antonis Milionis is chairman of A.E Dimitra Efxeinoupolis.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>chairman</rel>
+          <obj>Antonis_Milionis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>chairman</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_115">
+      <text>Jens Härtel is a member of the 1. FC Magdeburg.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>1._FC_Magdeburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_116">
+      <text>1. FC Magdeburg played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Magdeburg</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_117">
+      <text>Stuart Parker played football for Bury F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Bury_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_118">
+      <text>Stuart Parker (footballer) was a player for Runcorn F.C. Halton.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Runcorn_F.C._Halton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_119">
+      <text>Stuart Parker is a footballer in the A.F.C. Blackpool club.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>A.F.C._Blackpool</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_120">
+      <text>Dave Challinor played football for Bury F.C.</text>
+      <triples>
+        <triple>
+          <sub>Dave_Challinor</sub>
+          <rel>club</rel>
+          <obj>Bury_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_121">
+      <text>The manager of 1. FC Magdeburg is Jens Härtel.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Magdeburg</sub>
+          <rel>manager</rel>
+          <obj>Jens_Härtel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_122">
+      <text>Akron Summit Assault played in the 2011 season.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>season</rel>
+          <obj>2011</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_123">
+      <text>AFC Ajax N.V. own Sportpark De Toekomst.</text>
+      <triples>
+        <triple>
+          <sub>Sportpark_De_Toekomst</sub>
+          <rel>owner</rel>
+          <obj>AFC_Ajax_N.V.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_124">
+      <text>Amsterdam-Centrum is part of Amsterdam.</text>
+      <triples>
+        <triple>
+          <sub>Amsterdam-Centrum</sub>
+          <rel>isPartOf</rel>
+          <obj>Amsterdam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>isPartOf</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_125">
+      <text>Peter Stöger is affiliated with the SC Wiener Neustadt club.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>SC_Wiener_Neustadt</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_126">
+      <text>The league that A.S. Livorno Calcio play in is Serie B.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>league</rel>
+          <obj>Serie_B</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_127">
+      <text>AZ Alkmaar's ground is the AFAS Stadion.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>ground</rel>
+          <obj>AFAS_Stadion</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_128">
+      <text>Christian Panucci played for the Italy national football team.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Panucci</sub>
+          <rel>club</rel>
+          <obj>Italy_national_football_team</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_129">
+      <text>Agremiação Sportiva Arapiraquense played in the 2015 season.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>season</rel>
+          <obj>2015</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_130">
+      <text>K-W United FC have been champions of the Premier Development League.</text>
+      <triples>
+        <triple>
+          <sub>Premier_Development_League</sub>
+          <rel>champions</rel>
+          <obj>K-W_United_FC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerLeague</sub>
+          <rel>champions</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_131">
+      <text>Stuart Parker is a footballer with the Drogheda United F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Drogheda_United_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_132">
+      <text>Paulo Sousa plays for ACF Fiorentina.</text>
+      <triples>
+        <triple>
+          <sub>Paulo_Sousa</sub>
+          <rel>club</rel>
+          <obj>ACF_Fiorentina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_133">
+      <text>Jens Härtel played for Berliner AK 07.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>Berliner_AK_07</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_134">
+      <text>A.D. Isidro Metapán are at Estadio Jorge Calero Suárez.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>ground</rel>
+          <obj>Estadio_Jorge_Calero_Suárez</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_135">
+      <text>A.C. Cesena ground is in Cesena.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>ground</rel>
+          <obj>Cesena</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_136">
+      <text>A.S. Livorno Calcio has the full name of "Livorno Calcio S.p.A.".</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>fullName</rel>
+          <obj>Livorno_Calcio_S.p.A.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_137">
+      <text>Rolando Maran plays at the Vicenza Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Rolando_Maran</sub>
+          <rel>club</rel>
+          <obj>Vicenza_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_138">
+      <text>The full name of the A.F.C. Fylde is "Association Football Club Fylde".</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>fullName</rel>
+          <obj>Association_Football_Club_Fylde</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_139">
+      <text>Massimo Drago is attached to the club Vigor Lamezia.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>Vigor_Lamezia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_140">
+      <text>Peter Stöger is attached to the club First Vienna FC.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>First_Vienna_FC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_141">
+      <text>A.D. Isidro Metapán's ground is in Metapán.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>ground</rel>
+          <obj>Metapán</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_142">
+      <text>Alvinegro is the nickname of Agremiação Sportiva Arapiraquense.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>nickname</rel>
+          <obj>Alvinegro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>nickname</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_143">
+      <text>Greece's leader is Alexis Tsipras.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>leader</rel>
+          <obj>Alexis_Tsipras</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_144">
+      <text>Massimo Drago is in the A.C. Cesena club.</text>
+      <triples>
+        <triple>
+          <sub>Massimo_Drago</sub>
+          <rel>club</rel>
+          <obj>A.C._Cesena</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_145">
+      <text>A.S. Livorno Calcio is managed by Christian Panucci.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>manager</rel>
+          <obj>Christian_Panucci</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_146">
+      <text>Jepson Way is the grounds for A.F.C. Blackpool.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>ground</rel>
+          <obj>Jepson_Way</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_147">
+      <text>1. FC Köln has 50000 members.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Köln</sub>
+          <rel>numberOfMembers</rel>
+          <obj>50000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_148">
+      <text>1. FC Magdeburg played in the 2014–15 Regionalliga.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Magdeburg</sub>
+          <rel>season</rel>
+          <obj>2014–15_Regionalliga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_149">
+      <text>Jorge Humberto Rodríguez's club is A.D. Isidro Metapán.</text>
+      <triples>
+        <triple>
+          <sub>Jorge_Humberto_Rodríguez</sub>
+          <rel>club</rel>
+          <obj>A.D._Isidro_Metapán</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_150">
+      <text>Jorge Humberto Rodríguez is attached to the club C.D. Águila.</text>
+      <triples>
+        <triple>
+          <sub>Jorge_Humberto_Rodríguez</sub>
+          <rel>club</rel>
+          <obj>C.D._Águila</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_151">
+      <text>A.E Dimitra Efxeinoupolis were in the 2014–15 A EPSTH, Greece season.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>season</rel>
+          <obj>2014–15_A_EPSTH,_Greece</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_152">
+      <text>Akron is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_153">
+      <text>Jens Härtel is part of the SV Babelsberg 03 club.</text>
+      <triples>
+        <triple>
+          <sub>Jens_Härtel</sub>
+          <rel>club</rel>
+          <obj>SV_Babelsberg_03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_154">
+      <text>Dave Challinor plays at the Stockport County F.C.</text>
+      <triples>
+        <triple>
+          <sub>Dave_Challinor</sub>
+          <rel>club</rel>
+          <obj>Stockport_County_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_155">
+      <text>Peter Stöger is a member of the FK Austria Wien soccer club.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>FK_Austria_Wien</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_156">
+      <text>A.C. Cesena are in the Serie B league.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>league</rel>
+          <obj>Serie_B</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_157">
+      <text>A.C. Lumezzane played in the 2014–15 Lega Pro.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>season</rel>
+          <obj>2014–15_Lega_Pro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_158">
+      <text>Christian Panucci has been manager of A.S. Livorno Calcio.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Panucci</sub>
+          <rel>club</rel>
+          <obj>A.S._Livorno_Calcio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_159">
+      <text>AFC Ajax is based in Amsterdam.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>ground</rel>
+          <obj>Amsterdam</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_160">
+      <text>AZAL PFK is located at Shuvalan.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>location</rel>
+          <obj>Shuvalan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>location</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_161">
+      <text>A.F.C. Fylde is a member of the National League North.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>league</rel>
+          <obj>National_League_North</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_162">
+      <text>Paulo Sousa played for Juventus F.C.</text>
+      <triples>
+        <triple>
+          <sub>Paulo_Sousa</sub>
+          <rel>club</rel>
+          <obj>Juventus_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_163">
+      <text>Christian Panucci was attached to the Real Madrid C.F. club.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Panucci</sub>
+          <rel>club</rel>
+          <obj>Real_Madrid_C.F.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_164">
+      <text>Estádio Municipal Coaracy da Mata Fonseca is the name of the ground of Agremiação Sportiva Arapiraquense.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>ground</rel>
+          <obj>Estádio_Municipal_Coaracy_da_Mata_Fonseca</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_165">
+      <text>A.S. Livorno Calcio has 19238 members.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>numberOfMembers</rel>
+          <obj>19238</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_166">
+      <text>A.E Dimitra Efxeinoupolis played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_167">
+      <text>Paulo Sousa played for Maccabi Tel Aviv F.C.</text>
+      <triples>
+        <triple>
+          <sub>Paulo_Sousa</sub>
+          <rel>club</rel>
+          <obj>Maccabi_Tel_Aviv_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerManager</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_168">
+      <text>A.S. Livorno Calcio played season 2014–15 Serie B.</text>
+      <triples>
+        <triple>
+          <sub>A.S._Livorno_Calcio</sub>
+          <rel>season</rel>
+          <obj>2014–15_Serie_B</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_169">
+      <text>Greece's leader is Prokopis Pavlopoulos.</text>
+      <triples>
+        <triple>
+          <sub>Greece</sub>
+          <rel>leader</rel>
+          <obj>Prokopis_Pavlopoulos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_170">
+      <text>The AZAL Arena is located in Shuvalan.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_Arena</sub>
+          <rel>location</rel>
+          <obj>Shuvalan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>location</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_171">
+      <text>1. FC Köln played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Köln</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_172">
+      <text>AZ Alkmaar is owned by Robert Eenhoorn.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>owner</rel>
+          <obj>Robert_Eenhoorn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>owner</rel>
+          <obj>SportsManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_173">
+      <text>The A.E Dimitra Efxeinoupolis club is located in Greece.</text>
+      <triples>
+        <triple>
+          <sub>A.E_Dimitra_Efxeinoupolis</sub>
+          <rel>location</rel>
+          <obj>Greece</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_174">
+      <text>Akron is led by Dan Horrigan.</text>
+      <triples>
+        <triple>
+          <sub>Akron</sub>
+          <rel>leader</rel>
+          <obj>Dan_Horrigan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_175">
+      <text>The ground of A.F.C. Fylde can be found in the county of Lancashire.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>ground</rel>
+          <obj>Lancashire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_176">
+      <text>Max Huiberts is the owner of AZ Alkmaar.</text>
+      <triples>
+        <triple>
+          <sub>AZ_Alkmaar</sub>
+          <rel>owner</rel>
+          <obj>Max_Huiberts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>owner</rel>
+          <obj>SoccerPlayer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_177">
+      <text>Boston is the birthplace of James Pallotta.</text>
+      <triples>
+        <triple>
+          <sub>James_Pallotta</sub>
+          <rel>birthPlace</rel>
+          <obj>Boston</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>BusinessPerson</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_178">
+      <text>A.F.C. Fylde played in the 2014–15 Football Conference.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Fylde</sub>
+          <rel>season</rel>
+          <obj>2014–15_Football_Conference</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_179">
+      <text>A.C. Lumezzane play in italy.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Lumezzane</sub>
+          <rel>ground</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_180">
+      <text>Christian Panucci played football for Genoa C.F.C.</text>
+      <triples>
+        <triple>
+          <sub>Christian_Panucci</sub>
+          <rel>club</rel>
+          <obj>Genoa_C.F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_181">
+      <text>Peter Stöger played football for SK Vorwärts Steyr.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>SK_Vorwärts_Steyr</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_182">
+      <text>AEK Athens F.C. has 69618 members.</text>
+      <triples>
+        <triple>
+          <sub>AEK_Athens_F.C.</sub>
+          <rel>numberOfMembers</rel>
+          <obj>69618</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>numberOfMembers</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_183">
+      <text>1. FC Magdeburg is in the 3. Liga league.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Magdeburg</sub>
+          <rel>league</rel>
+          <obj>3._Liga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_184">
+      <text>AFC Ajax were in the 2014–15 Eredivisie.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>season</rel>
+          <obj>2014–15_Eredivisie</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_185">
+      <text>AFC Ajax (amateurs)'s ground is Sportpark De Toekomst.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>ground</rel>
+          <obj>Sportpark_De_Toekomst</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>ground</rel>
+          <obj>Stadium</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_186">
+      <text>AFC Ajax played in the 2014 season.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>season</rel>
+          <obj>2014</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_187">
+      <text>AZAL PFK Bakou is playing in 2014–15 Azerbaijan Premier League.</text>
+      <triples>
+        <triple>
+          <sub>AZAL_PFK</sub>
+          <rel>season</rel>
+          <obj>2014–15_Azerbaijan_Premier_League</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>season</rel>
+          <obj>FootballLeagueSeason</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_188">
+      <text>Peter Stöger plays for Favoritner AC.</text>
+      <triples>
+        <triple>
+          <sub>Peter_Stöger</sub>
+          <rel>club</rel>
+          <obj>Favoritner_AC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_189">
+      <text>Italy's leader is Pietro Grasso.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>leader</rel>
+          <obj>Pietro_Grasso</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_190">
+      <text>Stuart Parker (footballer) was at Blackburn Rovers F.C.</text>
+      <triples>
+        <triple>
+          <sub>Stuart_Parker</sub>
+          <rel>club</rel>
+          <obj>Blackburn_Rovers_F.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_191">
+      <text>Denzil Antonio was the manager of Akron Summit Assault.</text>
+      <triples>
+        <triple>
+          <sub>Akron_Summit_Assault</sub>
+          <rel>manager</rel>
+          <obj>Denzil_Antonio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_192">
+      <text>Peter Stöger is the manager of 1. FC Köln.</text>
+      <triples>
+        <triple>
+          <sub>1._FC_Köln</sub>
+          <rel>manager</rel>
+          <obj>Peter_Stöger</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_193">
+      <text>Frank de Boer played for AFC Ajax.</text>
+      <triples>
+        <triple>
+          <sub>Frank_de_Boer</sub>
+          <rel>club</rel>
+          <obj>AFC_Ajax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerPlayer</sub>
+          <rel>club</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_194">
+      <text>Agremiação Sportiva Arapiraquense are managed by Vica.</text>
+      <triples>
+        <triple>
+          <sub>Agremiação_Sportiva_Arapiraquense</sub>
+          <rel>manager</rel>
+          <obj>Vica</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_195">
+      <text>A.F.C. Blackpool have had Stuart Parker as their manager.</text>
+      <triples>
+        <triple>
+          <sub>A.F.C._Blackpool</sub>
+          <rel>manager</rel>
+          <obj>Stuart_Parker</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_196">
+      <text>Massimo Drago has been the manager of A.C. Cesena.</text>
+      <triples>
+        <triple>
+          <sub>A.C._Cesena</sub>
+          <rel>manager</rel>
+          <obj>Massimo_Drago</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>manager</rel>
+          <obj>SoccerManager</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_197">
+      <text>AFC Ajax (amateurs) play in the Hoofdklasse league.</text>
+      <triples>
+        <triple>
+          <sub>AFC_Ajax</sub>
+          <rel>league</rel>
+          <obj>Hoofdklasse</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>league</rel>
+          <obj>SoccerLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_SportsTeam" id="1_SportsTeam_train_198">
+      <text>The full name of A.D. Isidro Metapán is Isidro Metapán.</text>
+      <triples>
+        <triple>
+          <sub>A.D._Isidro_Metapán</sub>
+          <rel>fullName</rel>
+          <obj>Isidro_Metapán</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SoccerClub</sub>
+          <rel>fullName</rel>
+          <obj>SoccerClub</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

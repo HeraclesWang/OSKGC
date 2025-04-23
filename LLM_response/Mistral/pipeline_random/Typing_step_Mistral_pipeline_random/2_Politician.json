@@ -1,0 +1,287 @@
+[
+    {
+        "id": "2_Politician_test_1",
+        "sent": "Alfons Gorbach's birthplace is Imst, in the state of Tyrol.",
+        "response": "{Alfons Gorbach}:[Person], [Imst]:[PopulatedPlace], [Tyrol]:[HistoricalRegion]"
+    },
+    {
+        "id": "2_Politician_test_2",
+        "sent": "Abraham A. Ribicoff, is from the United States, his wife is Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Casey Ribicoff}:[Person], {United States}:[Place:[Country]]"
+    },
+    {
+        "id": "2_Politician_test_3",
+        "sent": "Alfons Gorbach, who was born in the county of Tyrol was in office while Adolf Schärf was President.",
+        "response": "{Alfons Gorbach}:[Politician], {Adolf Schärf}:[Politician], {Tyrol}:[PopulatedPlace], {county of Tyrol}:[HistoricalRegion]"
+    },
+    {
+        "id": "2_Politician_test_4",
+        "sent": "Aaron S. Daggett fought in the Battle of Fredericksburg and received the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], [Battle of Fredericksburg]:[MilitaryConflict], [Purple Heart]:[Award]"
+    },
+    {
+        "id": "2_Politician_test_5",
+        "sent": "Alfons Gorbach was born in Imst, in Austria-Hungary.",
+        "response": "{Alfons Gorbach}:[Person], {Imst}:[PopulatedPlace], {Austria-Hungary}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_6",
+        "sent": "Aaron S. Daggett fought at the Battle of Gettysburg and was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], [Battle of Gettysburg]:[MilitaryConflict], [Purple Heart]:[Award]"
+    },
+    {
+        "id": "2_Politician_test_7",
+        "sent": "Aaron S. Daggett fought in the American Civil War. He was given the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], [American Civil War]:[SocietalEvent]:{ [MilitaryConflict] }, [Purple Heart]:[Award]"
+    },
+    {
+        "id": "2_Politician_test_8",
+        "sent": "Abraham A. Ribicoff, who was born in the United States is married to Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Casey Ribicoff}:[Person], {United States}:[Place]"
+    },
+    {
+        "id": "2_Politician_test_9",
+        "sent": "Aaron S. Daggett fought in the Battle of Salem Church and was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], [Battle of Salem Church]:[MilitaryConflict], [Purple Heart]:[Award]"
+    },
+    {
+        "id": "2_Politician_test_10",
+        "sent": "Abraham A. Ribicoff was born in New Britain (Connecticut) and was married to Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {New Britain}:[PopulatedPlace], {Connecticut}:[State], {Casey Ribicoff}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_11",
+        "sent": "Aaron S. Daggett fought in the Battle of Fredericksburg where Robert E. Lee was as a commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Fredericksburg}:[MilitaryConflict], {Robert E. Lee}:[MilitaryPerson], {Fredericksburg}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Politician_test_12",
+        "sent": "Abraham A. Ribicoff's birthplace is New Britain (Connecticut). He was married to Ruth Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person:[Politician]], {New Britain (Connecticut)}:[Place:[Settlement:[City]]], {Ruth Ribicoff}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_13",
+        "sent": "Abraham A. Ribicoff was born in New Britain (Connecticut) and died in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Politician]}\n{New Britain (Connecticut)}:[Place]:{[Settlement]:{[City]}}\n{United States}:[Place]:{[Country]}"
+    },
+    {
+        "id": "2_Politician_test_14",
+        "sent": "Alfons Gorbach was born in Austria, where Austrian German is the language spoken.",
+        "response": "{Alfons Gorbach}:[Person], {Austria}:[PopulatedPlace], {Austrian German}:[Language]"
+    },
+    {
+        "id": "2_Politician_test_15",
+        "sent": "Alfons Gorbach, who was born in Imst, was in office during President Adolf Schärf's reign.",
+        "response": "{Alfons Gorbach}:[Person], {Imst}:[PopulatedPlace], {Adolf Schärf}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_16",
+        "sent": "Alfred N. Phillips was in the United States Army. That army fought in the Korean War.",
+        "response": "{Alfred N. Phillips}:[MilitaryPerson], {United States Army}:[MilitaryUnit], {Korean War}:[MilitaryConflict]"
+    },
+    {
+        "id": "2_Politician_test_17",
+        "sent": "Alvah Sabin, represented Vermont's 3rd Congressional District, ended his career on 1857-03-03.",
+        "response": "{Alvah Sabin}:[Politician], {Vermont's 3rd Congressional District}:[Legislature], {1857-03-03}:[Date]"
+    },
+    {
+        "id": "2_Politician_test_18",
+        "sent": "Alfons Gorbach's place of birth was Tyrol state, Austria-Hungary.",
+        "response": "{Alfons Gorbach}:[Person], {Tyrol state}:[PopulatedPlace], {Austria-Hungary}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_19",
+        "sent": "Abraham A. Ribicoff was born in Connecticut and died in New York City.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Governor], [Senator]}\n{Connecticut}:[Place]:{[State]}\n{New York City}:[Place]:{[City]:{[CapitalCity]}}"
+    },
+    {
+        "id": "2_Politician_test_20",
+        "sent": "Faversham was the birthplace of Adam Holloway, who resided in Gravesend.",
+        "response": "{Faversham}:[PopulatedPlace], {Adam Holloway}:[Person], {Gravesend}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Politician_test_21",
+        "sent": "Abraham A. Ribicoff, born in the United States, was married to Ruth Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Ruth Ribicoff}:[Person], {United States}:[Place]"
+    },
+    {
+        "id": "2_Politician_test_22",
+        "sent": "Abraham A. Ribicoff was born in Connecticut and is married to Ruth Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Connecticut}:[Place], {Ruth Ribicoff}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_23",
+        "sent": "Abraham A. Ribicoff, who was born in New Britain (Connecticut), died in New York City.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Politician]}\n{New Britain (Connecticut)}:[Place]:{[Settlement]:{[City]}}\n{New York City}:[Place]:{[Settlement]:{[City]}}"
+    },
+    {
+        "id": "2_Politician_test_24",
+        "sent": "Abraham A. Ribicoff's birthplace was Connecticut. He died in New York City in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Governor]}\n{Connecticut}:[Place]:{[State]}\n{New York City}:[Place]:{[City]}\n{United States}:[Place]:{[Country]}"
+    },
+    {
+        "id": "2_Politician_test_25",
+        "sent": "Abraham A. Ribicoff was born in Connecticut and died in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Politician]}\n{Connecticut}:[Place]:{[State]}\n{United States}:[Place]:{[Country]}"
+    },
+    {
+        "id": "2_Politician_test_26",
+        "sent": "United States born Abraham A. Ribicoff died in New York.",
+        "response": "{United States}:[Country], {Abraham A. Ribicoff}:[Person], {New York}:[PopulatedPlace]:{[City]}"
+    },
+    {
+        "id": "2_Politician_test_27",
+        "sent": "Born in Connecticut, Abraham A. Ribicoff was the spouse of, Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Connecticut}:[Place], {Casey Ribicoff}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_28",
+        "sent": "Abraham A. Ribicoff was born and raised in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Person], {United States}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_29",
+        "sent": "Abraham A. Ribicoff birthplace is the United States and he died in New York City.",
+        "response": "{Abraham A. Ribicoff}:[Person]:{[Politician]}\n{United States}:[Place]:{[Country]}\n{New York City}:[Place]:{[City]}"
+    },
+    {
+        "id": "2_Politician_test_30",
+        "sent": "Abraham A. Ribicoff's spouse was Casey Ribicoff, who was born in Chicago.",
+        "response": "{Abraham A. Ribicoff}:[Person], {Casey Ribicoff}:[Person], {Chicago}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Politician_test_31",
+        "sent": "Abraham A. Ribicoff is from the United States and is a member of the Democratic Party in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Politician], [United States]:[Country], [Democratic Party]:[PoliticalParty]"
+    },
+    {
+        "id": "2_Politician_test_32",
+        "sent": "Casey Ribicoff is the spouse of Abraham A. Ribicoff, a former United States Secretary of Health, Education, and Welfare.",
+        "response": "{Casey Ribicoff}:[Person], {Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Secretary of Health, Education, and Welfare}:[PoliticalFunction]"
+    },
+    {
+        "id": "2_Politician_test_33",
+        "sent": "Abraham A. Ribicoff was in office at the same time as John F. Kennedy was president who had been preceded by Dwight D. Eisenhower.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {John F. Kennedy}:[Politician], {Dwight D. Eisenhower}:[Politician]"
+    },
+    {
+        "id": "2_Politician_test_34",
+        "sent": "Casey Ribicoff was the wife of citizen of the United States, Abraham A. Ribicoff.",
+        "response": "{Casey Ribicoff}:[Person:[PoliticianSpouse]], {Abraham A. Ribicoff}:[Person:[Politician]], {United States}:[Place:[Country]]"
+    },
+    {
+        "id": "2_Politician_test_35",
+        "sent": "Aaron S. Daggett fought in the Battle of the Wilderness and was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], [Battle of the Wilderness]:[MilitaryConflict], [Purple Heart]:[Award]"
+    },
+    {
+        "id": "2_Politician_test_36",
+        "sent": "Robert E. Lee was a commander in the Battle of Salem Church where Aaron S. Daggett also fought.",
+        "response": "{Robert E. Lee}:[MilitaryPerson], {Aaron S. Daggett}:[MilitaryPerson], {Battle of Salem Church}:[Event]:{[MilitaryConflict]}"
+    },
+    {
+        "id": "2_Politician_test_37",
+        "sent": "Aaron S. Daggett fought in battles in the American Civil War, a war Robert E. Lee was part of, as a commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {American Civil War}:[SocietalEvent]:{[MilitaryConflict]}, {Robert E. Lee}:[MilitaryPerson]"
+    },
+    {
+        "id": "2_Politician_test_38",
+        "sent": "Aaron S. Daggett fought in the American Civil War, where Abraham Lincoln was a commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {American Civil War}:[SocietalEvent]:{[MilitaryConflict]}, {Abraham Lincoln}:[Politician]:{[President]}"
+    },
+    {
+        "id": "2_Politician_test_39",
+        "sent": "Aaron S. Daggett fought in the American Civil War where Jefferson Davis was a commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {American Civil War}:[SocietalEvent]:{[MilitaryConflict]}, {Jefferson Davis}:[MilitaryPerson]"
+    },
+    {
+        "id": "2_Politician_test_40",
+        "sent": "Aaron S. Daggett fought in the Battle of Cold Harbor where Robert E. Lee was the commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Cold Harbor}:[Event:SocietalEvent:MilitaryConflict], {Robert E. Lee}:[MilitaryPerson]"
+    },
+    {
+        "id": "2_Politician_test_41",
+        "sent": "Aaron S. Daggett participated in the Battle of Gettysburg and Robert E. Lee was a commander in that war.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Gettysburg}:[SocietalEvent]{[MilitaryConflict]}, {Robert E. Lee}:[MilitaryPerson], {Robert E. Lee (as a commander in the war)}:[MilitaryFunction]"
+    },
+    {
+        "id": "2_Politician_test_42",
+        "sent": "Both Aaron S. Daggett and Robert E. Lee (commander) were at the Battle of Antietam.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Robert E. Lee}:[MilitaryPerson], {Battle of Antietam}:[Event]:{[MilitaryConflict]}"
+    },
+    {
+        "id": "2_Politician_test_43",
+        "sent": "Alberto Teisaire was born in Mendoza (Argentina) and his successor was Isaac Rojas.",
+        "response": "{Alberto Teisaire}:[Person], {Mendoza}:[PopulatedPlace], {Argentina}:[Country], {Isaac Rojas}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_44",
+        "sent": "Alfred N. Phillips was born in Connecticut and was a Member of the U.S. House of Representatives from Connecticut's 4th district.",
+        "response": "{Alfred N. Phillips}:[Politician]:{[Representative]}, [Connecticut]:[Place]:{[State]}, [U.S. House of Representatives]:[Organisation]:{[Legislature]}, [Connecticut's 4th district]:[Place]:{[Settlement]:{[CityDistrict]}}"
+    },
+    {
+        "id": "2_Politician_test_45",
+        "sent": "Alfred N. Phillips was born in Connecticut and later became the Mayor of Stamford.",
+        "response": "{Alfred N. Phillips}:[Person]:{[Mayor]}\n{Connecticut}:[Place]:{[State]}\n{Stamford}:[Place]:{[City]}"
+    },
+    {
+        "id": "2_Politician_test_46",
+        "sent": "Alfons Gorbach, born in Austria, was in office while Adolf Schärf was President.",
+        "response": "{Alfons Gorbach}:[Politician], {Adolf Schärf}:[Politician], {Austria}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_47",
+        "sent": "Alfons Gorbach was born in Imst, Austria.",
+        "response": "{Alfons Gorbach}:[Person], {Imst}:[PopulatedPlace], {Austria}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_48",
+        "sent": "Alfons Gorbach was suceeded by Josef Klaus who graduated the University of Vienna.",
+        "response": "{Alfons Gorbach}:[Person], {Josef Klaus}:[Person], {University of Vienna}:[EducationalInstitution]"
+    },
+    {
+        "id": "2_Politician_test_49",
+        "sent": "Alfons Gorbach was born in the state of Tyrol, in Austria.",
+        "response": "{Alfons Gorbach}:[Person], {Tyrol}:[PopulatedPlace], {Austria}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_50",
+        "sent": "Adolf Schärf, born in Austria-Hungary, was president while Alfons Gorbach was in office.",
+        "response": "{Adolf Schärf}:[Politician], {Alfons Gorbach}:[Politician], {Austria-Hungary}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_51",
+        "sent": "Alfons Gorbach was born in Austria-Hungary and was in office during President Adolf Schärf's reign.",
+        "response": "{Alfons Gorbach}:[Politician], {Austria-Hungary}:[Country], {Adolf Schärf}:[Politician]"
+    },
+    {
+        "id": "2_Politician_test_52",
+        "sent": "Adolf Schärf was born in Mikulov and served in office with President Alfons Gorbach.",
+        "response": "{Adolf Schärf}:[Person], {Mikulov}:[PopulatedPlace], {Alfons Gorbach}:[Person]"
+    },
+    {
+        "id": "2_Politician_test_53",
+        "sent": "Alfons Gorbach, who was born in the state of Tyrol, was in office during President Adolf Schärf's reign.",
+        "response": "{Alfons Gorbach}:[Politician], {Adolf Schärf}:[Politician], {Tyrol}:[PopulatedPlace], {state of Tyrol}:[HistoricalRegion]"
+    },
+    {
+        "id": "2_Politician_test_54",
+        "sent": "Alfons Gorbach was born in Imst, in Tyrol.",
+        "response": "{Alfons Gorbach}:[Person], {Imst}:[PopulatedPlace], {Tyrol}:[HistoricalRegion]"
+    },
+    {
+        "id": "2_Politician_test_55",
+        "sent": "Alfons Gorbach was born in Tyrol, in Austria.",
+        "response": "{Alfons Gorbach}:[Person], {Tyrol}:[PopulatedPlace], {Austria}:[Country]"
+    },
+    {
+        "id": "2_Politician_test_56",
+        "sent": "Alfons Gorbach died in Austria, the country led by, Doris Bures.",
+        "response": "[Alfons Gorbach]:[Person], [Doris Bures]:[Person], [Austria]:[Country]"
+    },
+    {
+        "id": "2_Politician_test_57",
+        "sent": "Evangelos Venizelos is Prime Minister Antonis Samaras' deputy while Adonis Georgiadis was under office.",
+        "response": "{Evangelos Venizelos}:[Politician], {Antonis Samaras}:[Politician], {Adonis Georgiadis}:[Politician]"
+    }
+]

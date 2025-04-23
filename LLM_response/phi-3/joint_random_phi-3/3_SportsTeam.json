@@ -1,0 +1,207 @@
+[
+    {
+        "id": "3_SportsTeam_test_1",
+        "input_text": "John van den Brom is the manager of AZ Alkmaar. He plays for Vitesse Arnhem and ADO Den Haag.",
+        "response": "[John van den Brom, club, Vitesse Arnhem]:(Person, club, Organisation), [John van den Brom, club, ADO Den Haag]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_2",
+        "input_text": "John van den Brom manages the AZ Alkmaar and plays for both R.S.C. Anderlecht and De Graafschap.",
+        "response": "[John van den Brom, club, AZ Alkmaar]:(Person, club, Organisation), [John van den Brom, club, R.S.C. Anderlecht]:(Person, club, Organisation), [John van den Brom, club, De Graafschap]:(Person, club, Organisation), [AZ Alkmaar, manager, John van den Brom]:(Organisation, manager, Person)"
+    },
+    {
+        "id": "3_SportsTeam_test_3",
+        "input_text": "A.S. Livorno Calcio are managed by Christian Panucci who plays for A.S. Roma and is attached to the club Genoa C.F.C.",
+        "response": "[A.S. Livorno Calcio, manager, Christian Panucci]:(SoccerClub, manager, SportsManager), [Christian Panucci, club, A.S. Livorno Calcio]:(Person, club, Organisation), [Christian Panucci, club, A.S. Roma]:(Person, club, Organisation), [Christian Panucci, club, Genoa C.F.C.]:(Person, club, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_4",
+        "input_text": "Verona is the home to A.C. Chievo Verona which has 39371 members and the full name of \"Associazione Calcio ChievoVerona S.r.l.\"",
+        "response": "[Verona, location, A.C. Chievo Verona]:(Place, location, Organisation), [A.C. Chievo Verona, fullName, Associazione Calcio ChievoVerona S.r.l.]:(Organisation, fullName, Organisation), [A.C. Chievo Verona, numberOfMembers, 39371]:(Organisation, numberOfMembers, number)"
+    },
+    {
+        "id": "3_SportsTeam_test_5",
+        "input_text": "The manager of A.S. Roma, Luciano Spalletti, plays for Udinese Calcio and was at the club Virtus Entella.",
+        "response": "[[A.S. Roma, manager, Luciano Spalletti]]:(SoccerClub, manager, SportsManager), [[Luciano Spalletti, club, Udinese Calcio]]:(Person, club, Organisation), [[Luciano Spalletti, club, Virtus Entella]]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_6",
+        "input_text": "A.S. Roma, who have a ground in Rome, play in Serie A alongside Juventus F.C. who are former champions.",
+        "response": "[A.S. Roma, ground, Stadio Olimpico]:(SoccerClub, ground, ArchitecturalStructure), [A.S. Roma, league, Serie A]:(SoccerClub, league, SportsLeague), [Juventus F.C., league, Serie A]:(SoccerClub, league, SportsLeague), [Juventus F.C., champions, Juventus F.C.]:(SoccerClub, champions, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_7",
+        "input_text": "A.S. Roma play at the Stadio Olimpico, have 70634 members and their full name is Associazione Sportiva Roma S.p.A.",
+        "response": "[Associazione Sportiva Roma S.p.A., fullName, Associazione Sportiva Roma S.p.A.]:(Organisation, fullName, Organisation), [Associazione Sportiva Roma S.p.A., ground, Stadio Olimpico]:(Organisation, ground, Venue), [Associazione Sportiva Roma S.p.A., numberOfMembers, 70634]:(Organisation, numberOfMembers, number), [Associazione Sportiva Roma S.p.A., location, Stadio Olimpico]:(Organisation, location, ArchitecturalStructure)"
+    },
+    {
+        "id": "3_SportsTeam_test_8",
+        "input_text": "A.C. Chievo Verona is managed by Rolando Maran, who is a member of the Calcio Catania and plays at the Carrarese Calcio.",
+        "response": "[A.C. Chievo Verona, manager, Rolando Maran]:(SoccerClub, manager, SportsManager), [Rolando Maran, club, Calcio Catania]:(Person, club, Organisation), [A.C. Chievo Verona, ground, Carrarese Calcio]:(SoccerClub, ground, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_9",
+        "input_text": "The manager of A.C. Lumezzane is Michele Marcolini who was at F.C. Bari 1908 but currently plays for A.C. Chievo Verona.",
+        "response": "[[A.C. Lumezzane, manager, Michele Marcolini]]:(SoccerClub, manager, SportsManager), [[Michele Marcolini, formerClub, F.C. Bari 1908]]:(Person, club, Organisation), [[Michele Marcolini, currentClub, A.C. Chievo Verona]]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_10",
+        "input_text": "Peter Stöger is manager of 1. FC Köln and has played for SC Wiener Neustadt and the Austria national football team.",
+        "response": "[Peter Stöger, club, 1. FC Köln]:(Person, club, Organisation), [Peter Stöger, manager, 1. FC Köln]:(Person, manager, Organisation), [Peter Stöger, club, SC Wiener Neustadt]:(Person, club, Organisation), [Peter Stöger, nationalTeam, Austria national football team]:(Person, club, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_11",
+        "input_text": "John van den Brom plays for Vitesse Arnhem and in the Jong Ajax club. He is also the manager of AZ Alkmaar.",
+        "response": "[John van den Brom, club, Vitesse Arnhem]:(Person, club, Organisation), [John van den Brom, club, Jong Ajax]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_12",
+        "input_text": "John van den Brom is the manager of AZ Alkmaar as well as a player for ADO Den Haag and De Graafschap.",
+        "response": "[John van den Brom, club, ADO Den Haag]:(Person, club, Organisation), [John van den Brom, club, De Graafschap]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_13",
+        "input_text": "John van den Brom played for the Netherlands national football team. He now plays for R.S.C. Anderlecht and is manager of AZ Alkmaar.",
+        "response": "[John van den Brom, club, Netherlands national football team]:(SoccerPlayer, club, Organisation), [John van den Brom, club, R.S.C. Anderlecht]:(SoccerPlayer, club, Organisation), [John van den Brom, club, AZ Alkmaar]:(SoccerPlayer, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_14",
+        "input_text": "John van den Brom plays for AFC Ajax and R.S.C. Anderlecht. He is also the manager of AZ Alkmaar.",
+        "response": "[John van den Brom, club, AFC Ajax]:(Person, club, Organisation), [John van den Brom, club, R.S.C. Anderlecht]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation), [AFC Ajax, manager, John van den Brom]:(Organisation, manager, Person), [R.S.C. Anderlecht, manager, John van den Brom]:(Organisation, manager, Person), [AZ Alkmaar, manager, John van den Brom]:(Organisation, manager, Person)"
+    },
+    {
+        "id": "3_SportsTeam_test_15",
+        "input_text": "John van den Brom is a player in İstanbulspor A.Ş. but also manages the AZ Alkmaar and plays for R.S.C. Anderlecht.",
+        "response": "[John van den Brom, club, İstanbulspor A.Ş.]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation), [John van den Brom, club, R.S.C. Anderlecht]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_16",
+        "input_text": "John van den Brom manages the AZ Alkmaar and plays for Vitesse Arnhem and De Graafschap.",
+        "response": "[John van den Brom, club, AZ Alkmaar]:(Person, club, Organisation), [John van den Brom, club, Vitesse Arnhem]:(Person, club, Organisation), [John van den Brom, club, De Graafschap]:(Person, club, Organisation), [John van den Brom, manager, AZ Alkmaar]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_17",
+        "input_text": "John van den Brom has been manager of AZ Alkmaar, he is in Vitesse Arnhem and plays for AFC Ajax.",
+        "response": "[John van den Brom, club, AZ Alkmaar]:(SportsManager, club, Organisation), [John van den Brom, club, Vitesse Arnhem]:(SportsManager, club, Organisation), [John van den Brom, club, AFC Ajax]:(SportsManager, club, Organisation), [AZ Alkmaar, manager, John van den Brom]:(Organisation, manager, Person), [Vitesse Arnhem, manager, John van den Brom]:(Organisation, manager, Person), [AFC Ajax, manager, John van den Brom]:(Organisation, manager, Person)"
+    },
+    {
+        "id": "3_SportsTeam_test_18",
+        "input_text": "John van den Brom was manager of AZ Alkmaar and now plays for AFC Ajax and Jong Ajax.",
+        "response": "[John van den Brom, formerManager, AZ Alkmaar]:(SportsManager, formerManager, Organisation), [John van den Brom, club, AFC Ajax]:(Person, club, Organisation), [John van den Brom, club, Jong Ajax]:(Person, club, Organisation), [AZ Alkmaar, manager, John van den Brom]:(Organisation, manager, SportsManager)"
+    },
+    {
+        "id": "3_SportsTeam_test_19",
+        "input_text": "Associazione Calcio ChievoVerona S.r.l., or shortly A.C. Chievo Verona, is at the ground Verona and has 39371 members.",
+        "response": "[Associazione Calcio ChievoVerona S.r.l., ground, Verona]:(SoccerClub, ground, Place), [Associazione Calcio ChievoVerona S.r.l., numberOfMembers, 39371]:(SoccerClub, numberOfMembers, number)"
+    },
+    {
+        "id": "3_SportsTeam_test_20",
+        "input_text": "Michele Marcolini has managed A.C. Lumezzane and played for Atalanta B.C. and A.C. Chievo Verona.",
+        "response": "[Michele Marcolini, club, A.C. Lumezzane]:(Person, club, Organisation), [Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, SportsManager), [Michele Marcolini, club, Atalanta B.C.]:(Person, club, Organisation), [Michele Marcolini, club, A.C. Chievo Verona]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_21",
+        "input_text": "The manager of A.C. Lumezzane is Michele Marcolini. He plays for A.C. Chievo Verona and is at Torino F.C. club.",
+        "response": "[[A.C. Lumezzane, manager, Michele Marcolini]]:(SoccerClub, manager, SportsManager), [[Michele Marcolini, club, A.C. Chievo Verona]]:(Person, club, Organisation), [[Michele Marcolini, club, Torino F.C.]]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_22",
+        "input_text": "With grounds in Verona, A.C. Chievo Verona play in the Serie A league, of which Juventus F.C. have been champions.",
+        "response": "[A.C. Chievo Verona, ground, Verona]:(SoccerClub, ground, Place), [A.C. Chievo Verona, league, Serie A]:(SoccerClub, league, SoccerLeague), [Juventus F.C., champions, Serie A]:(Organisation, champions, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_23",
+        "input_text": "The manager of A.C. Chievo Verona is Rolando Maran, who is in Varese Calcio S.S.D. club and plays for Carrarese Calcio.",
+        "response": "[Rolando Maran, club, Varese Calcio S.S.D.]:(Person, club, Organisation), [Rolando Maran, manager, A.C. Chievo Verona]:(Person, manager, Organisation), [Carrarese Calcio, manager, Rolando Maran]:(Organisation, manager, Person)"
+    },
+    {
+        "id": "3_SportsTeam_test_24",
+        "input_text": "The full name of A.C. Chievo Verona is Associazione Calcio ChievoVerona S.r.l. and they have 39371 members while their home ground is Stadio Marc'Antonio Bentegodi.",
+        "response": "[Associazione Calcio ChievoVerona S.r.l., fullName, Associazione Calcio ChievoVerona S.r.l.]:(Organisation, fullName, Organisation), [Associazione Calcio ChievoVerona S.r.l., numberOfMembers, 39371]:(Organisation, numberOfMembers, number), [Associazione Calcio ChievoVerona S.r.l., ground, Stadio Marc'Antonio Bentegodi]:(Organisation, ground, Venue)"
+    },
+    {
+        "id": "3_SportsTeam_test_25",
+        "input_text": "Verona is the home to A.C. Chievo Verona who played in Serie A where the champions were Juventus F.C.",
+        "response": "[Verona, location, A.C. Chievo Verona]:(Place, location, Organisation), [A.C. Chievo Verona, league, Serie A]:(Organisation, league, SportsLeague), [Serie A, champions, Juventus F.C.]:(SportsLeague, champions, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_26",
+        "input_text": "A.C. Chievo Verona is managed by Rolando Maran, who plays for Unione Triestina 2012 S.S.D. at the Carrarese Calcio.",
+        "response": "[A.C. Chievo Verona, manager, Rolando Maran]:(SoccerClub, manager, SportsManager), [Rolando Maran, club, Unione Triestina 2012 S.S.D.]:(Person, club, Organisation), [Unione Triestina 2012 S.S.D., ground, Carrarese Calcio]:(Organisation, ground, Place)"
+    },
+    {
+        "id": "3_SportsTeam_test_27",
+        "input_text": "Michele Marcolini has been manager of A.C. Lumezzane he is part of A.C. Chievo Verona and plays for Vicenza Calcio.",
+        "response": "[Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, SportsClub), [Michele Marcolini, club, A.C. Chievo Verona]:(Person, club, Organisation), [Michele Marcolini, club, Vicenza Calcio]:(Person, club, Organisation)]"
+    },
+    {
+        "id": "3_SportsTeam_test_28",
+        "input_text": "A.C. Chievo Verona's home ground is Stadio Marc'Antonio Bentegodi. They play in the Serie A league of which Juventus F.C. have been champions.",
+        "response": "[A.C. Chievo Verona, ground, Stadio Marc'Antonio Bentegodi]:(SoccerClub, ground, Stadium), [Serie A, champions, Juventus F.C.]:(SportsLeague, champions, SportsClub)"
+    },
+    {
+        "id": "3_SportsTeam_test_29",
+        "input_text": "A.C. Chievo Verona is managed by Rolando Maran, who was born in Italy and is in the Carrarese Calcio club.",
+        "response": "[A.C. Chievo Verona, manager, Rolando Maran]:(SoccerClub, manager, SportsManager), [Rolando Maran, birthPlace, Italy]:(Person, birthPlace, Country), [Rolando Maran, club, Carrarese Calcio]:(Person, club, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_30",
+        "input_text": "A.C. Chievo Verona is managed by Rolando Maran, who has previously worked at F.C. Bari 1908 and Carrarese Calcio.",
+        "response": "[A.C. Chievo Verona, manager, Rolando Maran]:(SoccerClub, manager, SportsManager), [Rolando Maran, previousClub, F.C. Bari 1908]:(Person, club, Organisation), [Rolando Maran, previousClub, Carrarese Calcio]:(Person, club, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_31",
+        "input_text": "A.S. Roma, whose ground is the Stadio Olimpico play in the Serie A League of which Juventus F.C. are former champions.",
+        "response": "[A.S. Roma, ground, Stadio Olimpico]:(SoccerClub, ground, Stadium), [A.S. Roma, league, Serie A League]:(SoccerClub, league, SportsLeague), [Juventus F.C., champions, Serie A League]:(SoccerClub, champions, SportsLeague), [Stadio Olimpico, location, A.S. Roma]:(Stadium, location, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_32",
+        "input_text": "A.S. Roma's full name is Associazione Sportiva Roma S.p.A. They have 70634 members and their ground is located in Rome.",
+        "response": "[Associazione Sportiva Roma S.p.A., fullName, Associazione Sportiva Roma S.p.A.]:(Company, fullName, Organisation), [Associazione Sportiva Roma S.p.A., numberOfMembers, 70634]:(Company, numberOfMembers, number), [Associazione Sportiva Roma S.p.A., ground, Rome]:(Company, ground, Place)"
+    },
+    {
+        "id": "3_SportsTeam_test_33",
+        "input_text": "A.S. Livorno Calcio are managed by Christian Panucci who plays for A.S. Roma and was attached to the Real Madrid C.F. club.",
+        "response": "[A.S. Livorno Calcio, manager, Christian Panucci]:(SoccerClub, manager, SportsManager), [Christian Panucci, club, A.S. Roma]:(Person, club, Organisation), [Christian Panucci, formerClub, Real Madrid C.F.]:(Person, formerClub, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_34",
+        "input_text": "Christian Panucci was a former player for the Italy national football team, now plays for A.S. Roma as well as manages A.S. Livorno Calcio.",
+        "response": "[Christian Panucci, club, Italy national football team]:(Person, club, Organisation), [Christian Panucci, club, A.S. Roma]:(Person, club, Organisation), [Christian Panucci, club, A.S. Livorno Calcio]:(Person, club, Organisation), [Christian Panucci, manager, A.S. Livorno Calcio]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_35",
+        "input_text": "A.S. Roma plays in the Serie A league in Rome but the Serie A champions are Juventus F.C.",
+        "response": "[A.S. Roma, league, Serie A]:(SoccerClub, league, SoccerLeague), [A.S. Roma, location, Rome]:(SoccerClub, location, City), [Juventus F.C., league, Serie A]:(SoccerClub, league, SoccerLeague), [Juventus F.C., champions, Juventus F.C.]:(FootballClub, champions, FootballClub)"
+    },
+    {
+        "id": "3_SportsTeam_test_36",
+        "input_text": "The \"Associazione Sportiva Roma S.p.A.\" is the non-abbreviated name of A.S. Roma which has 70634 members and a home ground in Rome.",
+        "response": "[Associazione Sportiva Roma S.p.A., fullName, Associazione Sportiva Roma]:(Organisation, fullName, Organisation), [Associazione Sportiva Roma S.p.A., numberOfMembers, 70634]:(Organisation, numberOfMembers, number), [Associazione Sportiva Roma S.p.A., ground, Rome]:(Organisation, ground, Place)"
+    },
+    {
+        "id": "3_SportsTeam_test_37",
+        "input_text": "Luciano Spalletti played for Empoli F.C. and Virtus Entella. He has also been manager of A.S. Roma.",
+        "response": "[Luciano Spalletti, club, Empoli F.C.]:(Person, club, Organisation), [Luciano Spalletti, club, Virtus Entella]:(Person, club, Organisation), [Luciano Spalletti, manager, Empoli F.C.]:(Person, manager, Organisation), [Luciano Spalletti, manager, Virtus Entella]:(Person, manager, Organisation), [Luciano Spalletti, manager, A.S. Roma]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_38",
+        "input_text": "Michele Marcolini has played for Atalanta B.C. He now manages the A.C. Lumezzane and is at the Torino F.C. club.",
+        "response": "[Michele Marcolini, club, Atalanta B.C.]:(Person, club, Organisation), [Michele Marcolini, club, A.C. Lumezzane]:(Person, club, Organisation), [Michele Marcolini, club, Torino F.C.]:(Person, club, Organisation), [Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, Organisation), [Torino F.C., manager, Michele Marcolini]:(Organisation, manager, Person)"
+    },
+    {
+        "id": "3_SportsTeam_test_39",
+        "input_text": "Michele Marcolini manages the A.C. Lumezzane but also plays for Torino F.C. and Vicenza Calcio.",
+        "response": "[Michele Marcolini, club, A.C. Lumezzane]:(Person, club, Organisation), [Michele Marcolini, club, Torino F.C.]:(Person, club, Organisation), [Michele Marcolini, club, Vicenza Calcio]:(Person, club, Organisation), [Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, Organisation)"
+    },
+    {
+        "id": "3_SportsTeam_test_40",
+        "input_text": "Michele Marcolini manages the A.C. Lumezzane, plays for F.C. Bari 1908 and once played for Vicenza Calcio.",
+        "response": "[Michele Marcolini, club, A.C. Lumezzane]:(Person, club, Organisation), [Michele Marcolini, manager, A.C. Lumezzane]:(Person, manager, SportsManager), [F.C. Bari 1908, club, Michele Marcolini]:(Organisation, club, Person), [F.C. Bari 1908, club, Michele Marcolini]:(SoccerClub, club, Athlete), [Vicenza Calcio, club, Michele Marcolini]:(Organisation, club, Athlete)]:(SoccerClub, club, Athlete)"
+    },
+    {
+        "id": "3_SportsTeam_test_41",
+        "input_text": "The manager of A.C. Lumezzane is Michele Marcolini who plays for Torino F.C. and as been associated with F.C. Bari 1908.",
+        "response": "[[A.C. Lumezzane, manager, Michele Marcolini]]:(SoccerClub, manager, SportsManager), [[Michele Marcolini, club, Torino F.C.]]:(Person, club, Organisation), [[Michele Marcolini, club, F.C. Bari 1908]]:(Person, club, Organisation)]"
+    }
+]

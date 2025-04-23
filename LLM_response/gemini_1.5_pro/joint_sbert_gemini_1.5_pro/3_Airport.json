@@ -1,0 +1,237 @@
+[
+    {
+        "id": "3_Airport_test_1",
+        "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York) which is part of Harrietstown and Essex County (New York).",
+        "response": "[Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City), [Saranac Lake, isPartOf, Harrietstown]:(City, isPartOf, Town), [Saranac Lake, isPartOf, Essex County]:(City, isPartOf, County)\n"
+    },
+    {
+        "id": "3_Airport_test_2",
+        "input_text": "05L/23R is the name of the runway at Angola International airport in Ícolo e Bengo, Angola.",
+        "response": "[05L/23R, runwayName, Angola International airport]:(Runway, runwayName, Airport), [Angola International airport, location, Ícolo e Bengo]:(Airport, location, Place), [Ícolo e Bengo, isPartOf, Angola]:(Place, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_3",
+        "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York) which is part of Essex County (New York), in the United States.",
+        "response": "[Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City), [Saranac Lake, isPartOf, Essex County]:(City, isPartOf, County), [Essex County, isPartOf, New York]:(County, isPartOf, State), [New York, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_4",
+        "input_text": "Allama Iqbal International airport which is located in Pakistan has a runway length of 3360.12. The runway name is 18L/36R.",
+        "response": "[Allama Iqbal International airport, location, Pakistan]:(Airport, location, Country), [Allama Iqbal International airport, runwayLength, 3360.12]:(Airport, runwayLength, number), [Allama Iqbal International airport, runwayName, 18L/36R]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "3_Airport_test_5",
+        "input_text": "With a runway length of 4000 metres, Athens International Airport is located in Spata and serves the city of Athens.",
+        "response": "[Athens International Airport, runwayLengthMetre, 4000]:(Airport, runwayLengthMetre, number), [Athens International Airport, location, Spata]:(Airport, location, Town), [Athens International Airport, serves, Athens]:(Airport, serves, CapitalCity)\n"
+    },
+    {
+        "id": "3_Airport_test_6",
+        "input_text": "Turkmenistan Airlines is operated by Ashgabat International Airport, whose headquarters are located in Ashgabat, Turkmenistan.",
+        "response": "[Ashgabat International Airport, location, Ashgabat]:(Airport, location, City), [Ashgabat International Airport, location, Turkmenistan]:(Airport, location, Country), [Ashgabat International Airport, operatingOrganisation, Turkmenistan Airlines]:(Airport, operatingOrganisation, Airline)\n"
+    },
+    {
+        "id": "3_Airport_test_7",
+        "input_text": "At the Ardmore airport in New Zealand, the 3rd runway is made from Poaceae which belongs to the flowering plants division and is in the class of Monocotyledon.",
+        "response": "[Ardmore Airport, 3rdRunwaySurfaceType, Poaceae]:(Airport, 3rdRunwaySurfaceType, Family), [Poaceae, division, Flowering plant]:(Family, division, Species), [Poaceae, class, Monocotyledon]:(Family, class, Class)\n"
+    },
+    {
+        "id": "3_Airport_test_8",
+        "input_text": "Adolfo Suárez Madrid–Barajas Airport in Madrid, which is operated by ENAIRE, has an elevation of 610 metres above sea level.",
+        "response": "[Adolfo Suárez Madrid–Barajas Airport, operatingOrganisation, ENAIRE]:(Airport, operatingOrganisation, Company), [Adolfo Suárez Madrid–Barajas Airport, elevationAboveTheSeaLevelInMetres, 610]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Adolfo Suárez Madrid–Barajas Airport, location, Madrid]:(Airport, location, CapitalCity)\n"
+    },
+    {
+        "id": "3_Airport_test_9",
+        "input_text": "The Dutch language is spoken in Antwerp, Belgium in which Antwerp International Airport is located.",
+        "response": "[Antwerp, language, Dutch]:(City, language, Language), [Antwerp, country, Belgium]:(City, country, Country), [Antwerp International Airport, location, Antwerp]:(Airport, location, City)\n"
+    },
+    {
+        "id": "3_Airport_test_10",
+        "input_text": "The runway length at Adolfo Suárez Madrid–Barajas airport in Madrid is 3500 m and named 14L/32R.",
+        "response": "[Adolfo Suárez Madrid–Barajas airport, runwayLengthMetre, 3500]:(Airport, runwayLengthMetre, number), [Adolfo Suárez Madrid–Barajas airport, location, Madrid]:(Airport, location, CapitalCity), [Adolfo Suárez Madrid–Barajas airport, runwayName, 14L/32R]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "3_Airport_test_11",
+        "input_text": "The runway length at the Bedford Aerodrome in Thurleigh is 1095 and the aerodrome serves the Bedford Autodrome.",
+        "response": "[Bedford Aerodrome, runwayLength, 1095]:(Airport, runwayLength, number), [Bedford Aerodrome, serves, Bedford Autodrome]:(Airport, serves, Place), [Bedford Aerodrome, location, Thurleigh]:(Airport, location, Village)\n"
+    },
+    {
+        "id": "3_Airport_test_12",
+        "input_text": "Al Asad airbase is operated by the United States Air Force, which was involved in the United States invasion of Panama, and who use an aircraft fighter called McDonnell Douglas F-15 Eagle.",
+        "response": "[Al Asad airbase, operatingOrganisation, United States Air Force]:(Airport, operatingOrganisation, MilitaryUnit), [United States Air Force, battle, United States invasion of Panama]:(MilitaryUnit, battle, MilitaryConflict), [United States Air Force, aircraftFighter, McDonnell Douglas F-15 Eagle]:(MilitaryUnit, aircraftFighter, Aircraft)\n"
+    },
+    {
+        "id": "3_Airport_test_13",
+        "input_text": "Ashgabat is the location of Ashgabat International Airport which is elevated 211 metres above sea level, and has a runway that is 2989 metres long.",
+        "response": "[Ashgabat International Airport, location, Ashgabat]:(Airport, location, CapitalCity), [Ashgabat International Airport, elevationAboveTheSeaLevelInMetres, 211]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Ashgabat International Airport, runwayLengthMetre, 2989]:(Airport, runwayLengthMetre, number)\n"
+    },
+    {
+        "id": "3_Airport_test_14",
+        "input_text": "Aarhus airport has a runway length of 2777 metres and is operated by Aarhus Lufthavn A/S. The name of the runway is 10L/28R.",
+        "response": "[Aarhus airport, runwayLengthMetre, 2777]:(Airport, runwayLengthMetre, number), [Aarhus airport, operatingOrganisation, Aarhus Lufthavn A/S]:(Airport, operatingOrganisation, Organisation), [Aarhus airport, runwayName, 10L/28R]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "3_Airport_test_15",
+        "input_text": "The Athens International Airport serves the city of Athens, in Greece where Alexis Tsipras is the leader.",
+        "response": "[Athens International Airport, serves, Athens]:(Airport, serves, CapitalCity), [Athens, country, Greece]:(CapitalCity, country, Country), [Greece, leader, Alexis Tsipras]:(Country, leader, PrimeMinister)\n"
+    },
+    {
+        "id": "3_Airport_test_16",
+        "input_text": "Appleton International Airport located in Greenville (Wisconsin), has an elevation of 280 meters above sea level as well as a runway length of 2439.",
+        "response": "[Appleton International Airport, location, Greenville]:(Airport, location, Village), [Appleton International Airport, elevationAboveTheSeaLevelInMetres, 280]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Appleton International Airport, runwayLength, 2439]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "3_Airport_test_17",
+        "input_text": "The United States Air Force operates the Al Asad airbase and previously fought in the Invasion of Grenada and the bombing of Libya in 1986.",
+        "response": "[United States Air Force, operatingOrganisation, Al Asad airbase]:(MilitaryUnit, operatingOrganisation, Airport), [United States Air Force, battle, Invasion of Grenada]:(MilitaryUnit, battle, MilitaryConflict), [United States Air Force, battle, bombing of Libya in 1986]:(MilitaryUnit, battle, MilitaryConflict)\n"
+    },
+    {
+        "id": "3_Airport_test_18",
+        "input_text": "Alpena County Regional Airport has a runway length is 2744 metres and is located in Maple Ridge Township (Alpena County, Michigan) in the United States.",
+        "response": "[Alpena County Regional Airport, runwayLengthMetre, 2744]:(Airport, runwayLengthMetre, number), [Alpena County Regional Airport, location, Maple Ridge Township]:(Airport, location, Town), [Maple Ridge Township, isPartOf, Alpena County]:(Town, isPartOf, County), [Alpena County, isPartOf, Michigan]:(County, isPartOf, State), [Michigan, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_19",
+        "input_text": "With its capital of Austin (Texas), Andrews County Airport is located in Texas where there are Texans.",
+        "response": "[Andrews County Airport, location, Texas]:(Airport, location, State), [Texas, capital, Austin]:(State, capital, City), [Texas, demonym, Texans]:(State, demonym, EthnicGroup)\n"
+    },
+    {
+        "id": "3_Airport_test_20",
+        "input_text": "Angola International Airport is located at Ícolo e Bengo in Angola and the runway is named \"south runway\".",
+        "response": "[Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place), [Angola International Airport, runwayName, south runway]:(Airport, runwayName, Runway)\n"
+    },
+    {
+        "id": "3_Airport_test_21",
+        "input_text": "Al-Taqaddum Air Base serves the city of Fallujah which is in Iraq, where they speak Arabic.",
+        "response": "[Al-Taqaddum Air Base, serves, Fallujah]:(Airport, serves, City), [Fallujah, country, Iraq]:(City, country, Country), [Iraq, language, Arabic]:(Country, language, Language)\n"
+    },
+    {
+        "id": "3_Airport_test_22",
+        "input_text": "Adolfo Suárez Madrid–Barajas Airport is found in Alcobendas which is part of the community of Madrid. The leader party at Alcobendas is the People's Party (Spain).",
+        "response": "[Adolfo Suárez Madrid–Barajas Airport, location, Alcobendas]:(Airport, location, City), [Alcobendas, isPartOf, Community of Madrid]:(City, isPartOf, AdministrativeRegion), [Alcobendas, leaderParty, People's Party (Spain)]:(City, leaderParty, PoliticalParty)\n"
+    },
+    {
+        "id": "3_Airport_test_23",
+        "input_text": "The 18L/36R runway in Allama Iqbal International airport in Pakistan, has a length of 3310.",
+        "response": "[18L/36R, location, Allama Iqbal International airport]:(Runway, location, Airport), [Allama Iqbal International airport, location, Pakistan]:(Airport, location, Country), [18L/36R, runwayLength, 3310]:(Runway, runwayLength, number)\n"
+    },
+    {
+        "id": "3_Airport_test_24",
+        "input_text": "Antwerp International Airport serves the city of Antwerp, Belgium, where French is spoken.",
+        "response": "[Antwerp International Airport, serves, Antwerp]:(Airport, serves, City), [Belgium, language, French]:(Country, language, Language), [Antwerp, country, Belgium]:(City, country, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_25",
+        "input_text": "The Al-Taqaddum air base serves the city of Fallujah in Iraq. Haider al-Abadi is the leader of Iraq.",
+        "response": "[Al-Taqaddum air base, serves, Fallujah]:(Airport, serves, City), [Fallujah, country, Iraq]:(City, country, Country), [Iraq, leader, Haider al-Abadi]:(Country, leader, PrimeMinister)\n"
+    },
+    {
+        "id": "3_Airport_test_26",
+        "input_text": "With an elevation of 610 metres above sea level, Adolfo Suárez Madrid–Barajas Airport is located in Alcobendas, in Spain.",
+        "response": "[Adolfo Suárez Madrid–Barajas Airport, elevationAboveTheSeaLevel, 610]:(Airport, elevationAboveTheSeaLevel, number), [Adolfo Suárez Madrid–Barajas Airport, location, Alcobendas]:(Airport, location, City), [Alcobendas, country, Spain]:(City, country, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_27",
+        "input_text": "Appleton International Airport can be found in Greenville (Wisconsin) which is part of Ellington (Wisconsin), in the United States.",
+        "response": "[Appleton International Airport, location, Greenville]:(Airport, location, Village), [Ellington, country, United States]:(Town, country, Country), [Greenville, isPartOf, Ellington]:(Village, isPartOf, Town)\n"
+    },
+    {
+        "id": "3_Airport_test_28",
+        "input_text": "The runway length of Alpena County Regional Airport is 1533 and it is located at Maple Ridge Township (Alpena County, Michigan), United States.",
+        "response": "[Alpena County Regional Airport, runwayLength, 1533]:(Airport, runwayLength, number), [Alpena County Regional Airport, location, Maple Ridge Township]:(Airport, location, Town), [Maple Ridge Township, isPartOf, Alpena County]:(Town, isPartOf, County), [Alpena County, isPartOf, Michigan]:(County, isPartOf, State), [Michigan, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_29",
+        "input_text": "Located in Wilson Township (Alpena County, Michigan), Alpena County Regional Airport has an elevation of 210 metres above sea level and a runway length of 1533 metres.",
+        "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Alpena County Regional Airport, elevationAboveTheSeaLevelInMetres, 210]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Alpena County Regional Airport, runwayLength, 1533]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "3_Airport_test_30",
+        "input_text": "Adirondack Regional Airport is located in Saranac Lake (New York) Harrietstown, United States.",
+        "response": "[Adirondack Regional Airport, location, Saranac Lake]:(Airport, location, City), [Adirondack Regional Airport, location, Harrietstown]:(Airport, location, Town), [Adirondack Regional Airport, location, New York]:(Airport, location, State), [Adirondack Regional Airport, location, United States]:(Airport, location, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_31",
+        "input_text": "Saranac Lake (New York), part of Harrietstown, United States, is served by Adirondack Regional Airport.",
+        "response": "[Saranac Lake, isPartOf, Harrietstown]:(Village, isPartOf, Town), [Saranac Lake, country, United States]:(Village, country, Country), [Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, Village)\n"
+    },
+    {
+        "id": "3_Airport_test_32",
+        "input_text": "Adirondack Regional Airport has a runway length of 1219 and serves the cities of Saranac Lake (New York) and Lake Placid (New York).",
+        "response": "[Adirondack Regional Airport, runwayLengthFeet, 1219]:(Airport, runwayLengthFeet, number), [Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City), [Adirondack Regional Airport, serves, Lake Placid]:(Airport, serves, City)\n"
+    },
+    {
+        "id": "3_Airport_test_33",
+        "input_text": "Lake Placid (New York) is served by the Adirondack Regional Airport. This airport is 507 metres above sea level and serves the city of Saranac Lake (New York).",
+        "response": "[Adirondack Regional Airport, elevationAboveTheSeaLevelInMetres, 507]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Adirondack Regional Airport, serves, Saranac Lake (New York)]:(Airport, serves, City), [Lake Placid (New York), isPartOf, New York]:(Town, isPartOf, State), [Saranac Lake (New York), isPartOf, New York]:(City, isPartOf, State)\n"
+    },
+    {
+        "id": "3_Airport_test_34",
+        "input_text": "Saranac Lake (New York) is part of Harrietstown, New York and has an airport called Adirondack Regional airport.",
+        "response": "[Saranac Lake, isPartOf, Harrietstown]:(Village, isPartOf, Town), [Saranac Lake, location, New York]:(Village, isPartOf, State), [Harrietstown, location, New York]:(Town, isPartOf, State), [Adirondack Regional airport, location, Saranac Lake]:(Airport, location, Village)\n"
+    },
+    {
+        "id": "3_Airport_test_35",
+        "input_text": "The Pakistan Civil Aviation Authority runs Allama Iqbal International Airport in Punjab (Pakistan) which is led by the Provincial Assembly of the Punjab (Pakistan).",
+        "response": "[Pakistan Civil Aviation Authority, operates, Allama Iqbal International Airport]:(GovernmentAgency, operatingOrganisation, Airport), [Allama Iqbal International Airport, location, Punjab (Pakistan)]:(Airport, location, Province), [Punjab (Pakistan), leader, Provincial Assembly of the Punjab (Pakistan)]:(Province, leader, Legislature)\n"
+    },
+    {
+        "id": "3_Airport_test_36",
+        "input_text": "Allama Iqbal International airport is located in Punjab (Pakistan) and is operated by Pakistan Civil Aviation Authority headquartered at Jinnah International Airport.",
+        "response": "[Allama Iqbal International airport, location, Punjab]:(Airport, location, Province), [Punjab, isPartOf, Pakistan]:(Province, isPartOf, Country), [Allama Iqbal International airport, operatingOrganisation, Pakistan Civil Aviation Authority]:(Airport, operatingOrganisation, GovernmentAgency), [Pakistan Civil Aviation Authority, headquarter, Jinnah International Airport]:(GovernmentAgency, headquarter, Airport)\n"
+    },
+    {
+        "id": "3_Airport_test_37",
+        "input_text": "The 18L/36R runway of the Allama Iqbal International airport is located in Punjab (Pakistan) and has a length of 3310.",
+        "response": "[Allama Iqbal International airport, runwayName, 18L/36R]:(Airport, runwayName, Runway), [Allama Iqbal International airport, location, Punjab (Pakistan)]:(Airport, location, Province), [Allama Iqbal International airport, runwayLength, 3310]:(Airport, runwayLength, number)\n"
+    },
+    {
+        "id": "3_Airport_test_38",
+        "input_text": "Found in Wilson Township (Alpena County, Michigan), is Alpena County Regional Airport. This airport is 210 metres above sea level and has a runway length of 2744 metres.",
+        "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Alpena County Regional Airport, elevationAboveTheSeaLevelInMetres, 210]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Alpena County Regional Airport, runwayLengthMetre, 2744]:(Airport, runwayLengthMetre, number)\n"
+    },
+    {
+        "id": "3_Airport_test_39",
+        "input_text": "Alpena County Regional Airport is located in Wilson Township (Alpena County, Michigan) in the United States. It has a runway length of 1533.",
+        "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Alpena County Regional Airport, runwayLength, 1533]:(Airport, runwayLength, number), [Wilson Township, isPartOf, Alpena County]:(Town, isPartOf, County), [Alpena County, isPartOf, Michigan]:(County, isPartOf, State), [Michigan, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_40",
+        "input_text": "The location of Alpena County Regional Airport is Wilson Township (Alpena County, Michigan), United States, and has a runway length of 2744.",
+        "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Alpena County Regional Airport, runwayLength, 2744]:(Airport, runwayLength, number), [Wilson Township, isPartOf, Alpena County]:(Town, isPartOf, County), [Alpena County, isPartOf, Michigan]:(County, isPartOf, State), [Michigan, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_41",
+        "input_text": "With an elevation of 210 metres above sea level, Alpena County Regional Airport is located in the Wilson Township (Alpena County, Michigan), in the United States.",
+        "response": "[Alpena County Regional Airport, elevationAboveTheSeaLevelInMetres, 210]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Wilson Township, isPartOf, Alpena County]:(Town, isPartOf, County), [Alpena County, isPartOf, Michigan]:(County, isPartOf, State), [Michigan, isPartOf, United States]:(State, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_42",
+        "input_text": "At 159 meters above sea level, Angola International airport is located in Ícolo e Bengo, in Angola.",
+        "response": "[Angola International airport, elevationAboveTheSeaLevelInMetres, 159]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Angola International airport, location, Ícolo e Bengo]:(Airport, location, Place), [Ícolo e Bengo, isPartOf, Angola]:(Place, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_43",
+        "input_text": "Located at Ícolo e Bengo, Angola International Airport is 159 metres above the sea level and has a runway length of 3800 metres.",
+        "response": "[Angola International Airport, runwayLengthMetre, 3800]:(Airport, runwayLengthMetre, number), [Angola International Airport, elevationAboveTheSeaLevelInMetres, 159]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place)\n"
+    },
+    {
+        "id": "3_Airport_test_44",
+        "input_text": "With a runway length of 3800 metres, Angola International Airport is located at Ícolo e Bengo, in Angola.",
+        "response": "[Angola International Airport, runwayLengthMetre, 3800]:(Airport, runwayLengthMetre, number), [Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place), [Ícolo e Bengo, isPartOf, Angola]:(Place, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_45",
+        "input_text": "Angola International Airport is located in Ícolo e Bengo, Luanda Province, Angola.",
+        "response": "[Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Town), [Ícolo e Bengo, isPartOf, Luanda Province]:(Town, isPartOf, Province), [Luanda Province, isPartOf, Angola]:(Province, isPartOf, Country)\n"
+    },
+    {
+        "id": "3_Airport_test_46",
+        "input_text": "Located in Ícolo e Bengo, Angola International Airport is 159 meters above sea level and has a runway length of 4000 ft.",
+        "response": "[Angola International Airport, runwayLengthFeet, 4000]:(Airport, runwayLengthFeet, number), [Angola International Airport, elevationAboveTheSeaLevelInMetres, 159]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place)\n"
+    },
+    {
+        "id": "3_Airport_test_47",
+        "input_text": "Angola International airport is located in Ícolo e Bengo, Angola, it has a runway length of 4000 ft.",
+        "response": "[Angola International airport, runwayLengthFeet, 4000]:(Airport, runwayLengthFeet, number), [Angola International airport, location, Ícolo e Bengo]:(Airport, location, Place), [Ícolo e Bengo, isPartOf, Angola]:(Place, isPartOf, Country)\n"
+    }
+]

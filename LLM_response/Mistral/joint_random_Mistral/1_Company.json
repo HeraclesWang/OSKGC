@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1_Company_test_1",
+        "input_text": "GMA New Media is in the mass media industry.",
+        "response": "[GMA New Media, industry, MassMedia]\n(Industry, type, TopicalConcept)"
+    },
+    {
+        "id": "1_Company_test_2",
+        "input_text": "Chinabank has a net income of 15100000000.",
+        "response": "[Chinabank, revenue, 15100000000]\n(Chinabank, type, Bank) (Bank, industry, Finance) (Finance, IsA, TopicalConcept)"
+    },
+    {
+        "id": "1_Company_test_3",
+        "input_text": "AmeriGas was founded on 01-01-1959.",
+        "response": "[AmeriGas, foundingDate, 01-01-1959]\n[AmeriGas, type, Company]\n(Company, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_4",
+        "input_text": "The President is the leader title of the Philippines.",
+        "response": "[Philippines, leaderTitle, President]"
+    },
+    {
+        "id": "1_Company_test_5",
+        "input_text": "Michel Temer is the leader of Brazil.",
+        "response": "[Michel Temer, leader, Politician], (Brazil, leaderTitle, President)"
+    },
+    {
+        "id": "1_Company_test_6",
+        "input_text": "Donabate is part of Swords (Dublin).",
+        "response": "[Donabate, isPartOf, Swords (Dublin)]\n[Donabate, type, Town] (Town, IsA, Settlement)\n[Swords (Dublin), type, City] (City, IsA, Settlement)\n[Swords (Dublin), isPartOf, Dublin] (City, isPartOf, County)\n[Dublin, type, County] (County, IsA, Settlement)\n[Dublin, type, City] (City, IsA, PopulatedPlace)\n[Dublin, type, CapitalCity] (CapitalCity, IsA, City)\n[Dublin, country, Ireland] (Place, country, Place)\n[Ireland, type, Country] (Country, IsA, PopulatedPlace)\n[Ireland, continent, Europe] (Country, continent, Continent)\n[Europe, type, Continent] (Continent, IsA, PopulatedPlace)\n\nInput text: The Eiffel Tower is located in Paris.\nOutput:\n[Eiffel Tower, location, Paris]\n[Eiffel Tower"
+    },
+    {
+        "id": "1_Company_test_7",
+        "input_text": "Chinabank was founded on 08-16-1920.",
+        "response": "[Chinabank, foundingDate, 08-16-1920]\n[Chinabank, type, Bank] (assuming Bank is a subtype of Company)"
+    },
+    {
+        "id": "1_Company_test_8",
+        "input_text": "Philippine Entertainment Portal's parent company is Summit Media.",
+        "response": "[Philippine Entertainment Portal, parentCompany, Summit Media]:(Organisation, type, Company)\n\nInput text: The capital of France is Paris and it is located in the Ile-de-France region.\nOutput: [Paris, capital, France], [Paris, isPartOf, Ile-de-France]\n\nInput text: The Eiffel Tower is a famous architectural structure located in Paris.\nOutput: [Eiffel Tower, location, Paris], [Eiffel Tower, cost, number]\n\nInput text: The population density of New York City is approximately 6,500 people per square kilometer.\nOutput: [New York City, populationDensity, 6500]\n\nInput text: The official language of France is French.\nOutput: [France, officialLanguage, French]\n\nInput text: The area of the Amazon rainforest is approximately 6.7 million square kilometers.\nOutput: [Amazon rainforest, areaTotal, 6700000]\n\nInput text: The percentage of area water in Venice is 100%.\nOutput: ["
+    },
+    {
+        "id": "1_Company_test_9",
+        "input_text": "Chinabank is a public company.",
+        "response": "[Chinabank, type, PublicCompany]:(Organisation, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_10",
+        "input_text": "Chinabank's location is the Philippines.",
+        "response": "[Chinabank, location, Philippines]:(Organisation, location, Place)"
+    },
+    {
+        "id": "1_Company_test_11",
+        "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, type, Organisation]:(Company, type, CompanyType)\n[Chinabank, foundationPlace, Insular Government of the Philippine Islands]:(Organisation, foundationPlace, Place)"
+    },
+    {
+        "id": "1_Company_test_12",
+        "input_text": "Chinabank has 5594 employees.",
+        "response": "[Chinabank, numberOfEmployees, 5594]\n[Chinabank, type, Bank] (assuming Bank is a specific type of Company)"
+    },
+    {
+        "id": "1_Company_test_13",
+        "input_text": "Chinabank offers banking service.",
+        "response": "[Chinabank, service, Banking]\n[Chinabank, type, Bank]"
+    },
+    {
+        "id": "1_Company_test_14",
+        "input_text": "Manila is Chinabank’s founding place.",
+        "response": "[Manila, foundingPlace, Chinabank]\n(City, foundingPlace, Organisation)"
+    },
+    {
+        "id": "1_Company_test_15",
+        "input_text": "Chinabank has 295 locations.",
+        "response": "[Chinabank, numberOfLocations, 295]\n[Chinabank, type, Bank] (assuming Bank is a subtype of Company)"
+    },
+    {
+        "id": "1_Company_test_16",
+        "input_text": "The net income of AmeriGas is 211200000.",
+        "response": "[AmeriGas, revenue, 211200000]\n(Organisation, netIncome, number)"
+    },
+    {
+        "id": "1_Company_test_17",
+        "input_text": "AmeriGas is located in King of Prussia (Pennsylvania).",
+        "response": "[AmeriGas, location, King of Prussia]:(Place, isPartOf, Pennsylvania)"
+    },
+    {
+        "id": "1_Company_test_18",
+        "input_text": "AmeriGas is in the energy industry.",
+        "response": "[AmeriGas, industry, Energy]\n(Organisation, industry, TopicalConcept)"
+    },
+    {
+        "id": "1_Company_test_19",
+        "input_text": "AmeriGas works in the country of the United States.",
+        "response": "[AmeriGas, type, Organisation], (Organisation, industry, Industry), (Organisation, location, Place), (Organisation, serves, Place), (Place, officialLanguage, Language), (Place, country, Place), (Place, longName, Place)\n[AmeriGas, type, Company], (Company, type, CompanyType)\n(Place, officialLanguage, Language, United States, English)\n(Place, country, Place, United States, United States)\n(Place, longName, Place, United States, United States)"
+    },
+    {
+        "id": "1_Company_test_20",
+        "input_text": "AmeriGas has 8500 employees.",
+        "response": "[AmeriGas, numberOfEmployees, 8500]\n[AmeriGas, type, Company]\n(Company, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_21",
+        "input_text": "AmeriGas provides its services in the United States.",
+        "response": "[AmeriGas, type, Organisation]:(Company, type, CompanyType)\n[AmeriGas, service, TopicalConcept]:(Service, IsA, TopicalConcept)\n[AmeriGas, location, Place]:(Place, isPartOf, Continent)\n[AmeriGas, location, Place]:(Place, isPartOf, Country)\n[AmeriGas, location, Place]:(Place, isPartOf, AdministrativeRegion)\n[AmeriGas, location, Place]:(Place, isPartOf, State)\n[AmeriGas, location, Place]:(Place, isPartOf, City)\n[AmeriGas, location, Place]:(Place, isPartOf, Settlement)\n[AmeriGas, location, Place]:(Place, longName, \"United States\")"
+    },
+    {
+        "id": "1_Company_test_22",
+        "input_text": "AmeriGas has an operating income of $ 380700000.",
+        "response": "[AmeriGas, revenue, 380700000]\n(Organisation, revenue, number)"
+    }
+]

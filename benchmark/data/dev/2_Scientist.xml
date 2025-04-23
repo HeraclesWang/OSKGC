@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_Scientist" id="2_Scientist_dev_1">
+      <text>Brandon Carter, who was born on January 1st, 1942, is a graduate from the University of Cambridge.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>birthDate</rel>
+          <obj>1942-01-01</obj>
+        </triple>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>almaMater</rel>
+          <obj>University_of_Cambridge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Scientist" id="2_Scientist_dev_2">
+      <text>Nurhan Atasoy lives in Istanbul where one of the leaders is titled Mayor.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>residence</rel>
+          <obj>Istanbul</obj>
+        </triple>
+        <triple>
+          <sub>Istanbul</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>residence</rel>
+          <obj>City</obj>
+        </schema>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Scientist" id="2_Scientist_dev_3">
+      <text>Nurhan Atasoy, born in Reşadiye, has been awarded the State Award for Superior Achievement.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>birthPlace</rel>
+          <obj>Reşadiye</obj>
+        </triple>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>award</rel>
+          <obj>State_Award_for_Superior_Achievement</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Scientist" id="2_Scientist_dev_4">
+      <text>Nurhan Atasoy was born in Turkey, a country that has an area total of 783356 km^2.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>birthPlace</rel>
+          <obj>Turkey</obj>
+        </triple>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>areaTotal</rel>
+          <obj>783356</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Scientist" id="2_Scientist_dev_5">
+      <text>Influenced by Andrzej Piotr Ruszczyński, Darinka Dentcheva became a professional in the field of mathematical optimization.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>influencedBy</rel>
+          <obj>Andrzej_Piotr_Ruszczyński</obj>
+        </triple>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>professionalField</rel>
+          <obj>Mathematical_optimization</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>influencedBy</rel>
+          <obj>Mathematician</obj>
+        </schema>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>professionalField</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

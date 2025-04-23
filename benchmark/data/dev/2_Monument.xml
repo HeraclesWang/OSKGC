@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_Monument" id="2_Monument_dev_1">
+      <text>Baku Turkish Martyrs' Memorial's designer was Hüseyin Bütüner and Hilmi Güner.</text>
+      <triples>
+        <triple>
+          <sub>Baku_Turkish_Martyrs'_Memorial</sub>
+          <rel>designer</rel>
+          <obj>Hüseyin_Bütüner</obj>
+        </triple>
+        <triple>
+          <sub>Baku_Turkish_Martyrs'_Memorial</sub>
+          <rel>designer</rel>
+          <obj>Hilmi_Güner</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>designer</rel>
+          <obj>Architect</obj>
+        </schema>
+        <schema>
+          <sub>Monument</sub>
+          <rel>designer</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Monument" id="2_Monument_dev_2">
+      <text>Franklin County (Pennsylvania) is found to the west of Adams County (Pennsylvania), where the 11th Mississippi Infantry Monument is located.</text>
+      <triples>
+        <triple>
+          <sub>Adams_County</sub>
+          <rel>hasToItsWest</rel>
+          <obj>Franklin_County</obj>
+        </triple>
+        <triple>
+          <sub>11th_Mississippi_Infantry_Monument</sub>
+          <rel>location</rel>
+          <obj>Adams_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>hasToItsWest</rel>
+          <obj>County</obj>
+        </schema>
+        <schema>
+          <sub>Monument</sub>
+          <rel>location</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_Monument" id="2_Monument_dev_3">
+      <text>The 11th Mississippi Infantry Monument was established in 2000 in the United States.</text>
+      <triples>
+        <triple>
+          <sub>11th_Mississippi_Infantry_Monument</sub>
+          <rel>established</rel>
+          <obj>2000</obj>
+        </triple>
+        <triple>
+          <sub>11th_Mississippi_Infantry_Monument</sub>
+          <rel>location</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>established</rel>
+          <obj>Year</obj>
+        </schema>
+        <schema>
+          <sub>Monument</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

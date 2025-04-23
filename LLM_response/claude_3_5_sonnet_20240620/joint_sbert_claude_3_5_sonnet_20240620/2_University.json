@@ -1,0 +1,67 @@
+[
+    {
+        "id": "2_University_test_1",
+        "input_text": "There are 16800 undergraduate with 1299 doctoral students at the University of Burgundy.",
+        "response": "[University of Burgundy, numberOfUndergraduateStudents, 16800]:(University, numberOfUndergraduateStudents, number), [University of Burgundy, numberOfDoctoralStudents, 1299]:(University, numberOfDoctoralStudents, number)"
+    },
+    {
+        "id": "2_University_test_2",
+        "input_text": "There are 16800 undergraduate with 9400 post-graduate students at the University of Burgundy.",
+        "response": "[University of Burgundy, numberOfUndergraduateStudents, 16800]:(University, numberOfUndergraduateStudents, number), [University of Burgundy, numberOfPostgraduateStudents, 9400]:(University, numberOfPostgraduateStudents, number)"
+    },
+    {
+        "id": "2_University_test_3",
+        "input_text": "The University of Burgundy is located in the city of Dijon and has 9400 postgraduate students.",
+        "response": "[University of Burgundy, location, Dijon]:(University, location, City), [University of Burgundy, numberOfPostgraduateStudents, 9400]:(University, numberOfPostgraduateStudents, number)"
+    },
+    {
+        "id": "2_University_test_4",
+        "input_text": "The leader of Denmark is Lars Løkke Rasmussen. Denmark is the home of the Aarhus University.",
+        "response": "[Denmark, leader, Lars Løkke Rasmussen]:(Country, leader, Politician), [Aarhus University, country, Denmark]:(University, country, Country)"
+    },
+    {
+        "id": "2_University_test_5",
+        "input_text": "The Aarhus University which was established in 1928, is affiliated with the European University Association.",
+        "response": "[Aarhus University, established, 1928]:(University, established, Year), [Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)"
+    },
+    {
+        "id": "2_University_test_6",
+        "input_text": "The type of government in Aarhus is that of magistrate. The city of Aarhus is where the Aarhus University is located.",
+        "response": "[Aarhus, governmentType, magistrate]:(City, governmentType, TopicalConcept), [Aarhus University, city, Aarhus]:(University, city, City)"
+    },
+    {
+        "id": "2_University_test_7",
+        "input_text": "Mols is situated to the northeast of Aarhus where the Aarhus University is located.",
+        "response": "[Mols, hasToItsNortheast, Aarhus]:(Place, hasToItsNortheast, Place), [Aarhus University, location, Aarhus]:(University, location, City)"
+    },
+    {
+        "id": "2_University_test_8",
+        "input_text": "The Aarhus University is located in Aarhus, Denmark.",
+        "response": "[Aarhus University, location, Aarhus]:(University, location, City), [Aarhus University, country, Denmark]:(University, country, Country)"
+    },
+    {
+        "id": "2_University_test_9",
+        "input_text": "The Aarhus University is located in the country of Denmark which has the religion The Church of Denmark.",
+        "response": "[Aarhus University, country, Denmark]:(University, country, Country), [Denmark, religion, The Church of Denmark]:(Country, religion, ReligiousOrganisation)"
+    },
+    {
+        "id": "2_University_test_10",
+        "input_text": "Universitas Aarhusiensis is the latin name of the Aarhus University which is affiliated to the European University Association.",
+        "response": "[Aarhus University, latinName, Universitas Aarhusiensis]:(Organisation, latinName, Organisation), [Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)"
+    },
+    {
+        "id": "2_University_test_11",
+        "input_text": "The Aarhus University is affiliated to the European University Association which has its headquarters in Brussels.",
+        "response": "[Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation), [European University Association, headquarter, Brussels]:(Organisation, headquarter, City)"
+    },
+    {
+        "id": "2_University_test_12",
+        "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio in Switzerland.",
+        "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(University, location, City), [Accademia di Architettura di Mendrisio, country, Switzerland]:(University, country, Country), [Mendrisio, isPartOf, Switzerland]:(City, isPartOf, Country)"
+    },
+    {
+        "id": "2_University_test_13",
+        "input_text": "The Accademia di Architettura di Mendrisio is located in the city of Mendrisio; the neighboring municipality of Mendrisio is Meride.",
+        "response": "[Accademia di Architettura di Mendrisio, city, Mendrisio]:(University, city, City), [Mendrisio, neighboringMunicipality, Meride]:(City, neighboringMunicipality, City)"
+    }
+]

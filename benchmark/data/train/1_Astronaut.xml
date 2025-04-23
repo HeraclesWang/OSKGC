@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Astronaut" id="1_Astronaut_train_1">
+      <text>William Anders was the backup pilot on Apollo 11.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_11</sub>
+          <rel>backupPilot</rel>
+          <obj>William_Anders</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>backupPilot</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_2">
+      <text>Nie Haisheng was born in Hubei.</text>
+      <triples>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>birthPlace</rel>
+          <obj>Hubei</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_3">
+      <text>Alan Bean's full name was "Alan LaVern Bean".</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>birthName</rel>
+          <obj>Alan_LaVern_Bean</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthName</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_4">
+      <text>Elliot See was a student at University of Texas at Austin.</text>
+      <triples>
+        <triple>
+          <sub>Elliot_See</sub>
+          <rel>almaMater</rel>
+          <obj>University_of_Texas_at_Austin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_5">
+      <text>Frank Borman was a member of the crew on Apollo 8.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_8</sub>
+          <rel>crewMembers</rel>
+          <obj>Frank_Borman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>crewMembers</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_6">
+      <text>NASA selected Alan Shepard in 1959.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>selectedByNasa</rel>
+          <obj>1959</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>selectedByNasa</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_7">
+      <text>Joe Biden is the United States leader.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Joe_Biden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_8">
+      <text>St. Louis was situated in the Kingdom of France.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>isPartOf</rel>
+          <obj>Kingdom_of_France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_9">
+      <text>William Anders has a nationality that is of the United States.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_10">
+      <text>Elliot See was a test pilot.</text>
+      <triples>
+        <triple>
+          <sub>Elliot_See</sub>
+          <rel>occupation</rel>
+          <obj>Test_pilot</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_11">
+      <text>William Anders retired on September 1st, 1969.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>1969-09-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_12">
+      <text>William Anders was selected by NASA in 1963.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>selectedByNasa</rel>
+          <obj>1963</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>selectedByNasa</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_13">
+      <text>William Anders is retired.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>status</rel>
+          <obj>Retired</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>status</rel>
+          <obj>Status</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_14">
+      <text>University of Texas at Austin is affiliated with University of Texas System.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Texas_at_Austin</sub>
+          <rel>affiliation</rel>
+          <obj>University_of_Texas_System</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>affiliation</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_15">
+      <text>Alan Bean was a part of the crew of Apollo 12.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>mission</rel>
+          <obj>Apollo_12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>mission</rel>
+          <obj>SpaceMission</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_16">
+      <text>Alfred Worden was a backup pilot of Apollo 12.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_12</sub>
+          <rel>backupPilot</rel>
+          <obj>Alfred_Worden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>backupPilot</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_17">
+      <text>Zaoyang city is a part of Hubei province.</text>
+      <triples>
+        <triple>
+          <sub>Zaoyang</sub>
+          <rel>isPartOf</rel>
+          <obj>Hubei</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_18">
+      <text>The Apollo 8 operator is NASA.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_8</sub>
+          <rel>operator</rel>
+          <obj>NASA</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>operator</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_19">
+      <text>The Distinguished service medal from the Navy is higher than the department of commerce gold medal.</text>
+      <triples>
+        <triple>
+          <sub>Distinguished_Service_Medal</sub>
+          <rel>higher</rel>
+          <obj>Department_of_Commerce_Gold_Medal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Award</sub>
+          <rel>higher</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_20">
+      <text>The Apollo 14 was operated by NASA.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_14</sub>
+          <rel>operator</rel>
+          <obj>NASA</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>operator</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_21">
+      <text>The purple finch is a native bird to New Hampshire.</text>
+      <triples>
+        <triple>
+          <sub>New_Hampshire</sub>
+          <rel>bird</rel>
+          <obj>Purple_finch</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>bird</rel>
+          <obj>Bird</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_22">
+      <text>Alan Bean was selected by Nasa in 1963.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>selectedByNasa</rel>
+          <obj>1963</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>selectedByNasa</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_23">
+      <text>In 1962, William Anders received an M.S. from his alma mater AFIT.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>almaMater</rel>
+          <obj>AFIT</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_24">
+      <text>The Senator representing California was Dianne Feinstein.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>senator</rel>
+          <obj>Dianne_Feinstein</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>senator</rel>
+          <obj>Senator</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_25">
+      <text>Alan Shepard's occupation was a test pilot.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>occupation</rel>
+          <obj>Test_pilot</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_26">
+      <text>Alan Shepard is dead.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>status</rel>
+          <obj>Deceased</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>status</rel>
+          <obj>Status</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_27">
+      <text>Apollo 11 was operated by NASA.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_11</sub>
+          <rel>operator</rel>
+          <obj>NASA</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>operator</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_28">
+      <text>William Anders was born on October 17th, 1933.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>birthDate</rel>
+          <obj>1933-10-17</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_29">
+      <text>Alan Bean is retired.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>status</rel>
+          <obj>Retired</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>status</rel>
+          <obj>Status</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_30">
+      <text>The name of St. Louis' leader is Francis G. Slay.</text>
+      <triples>
+        <triple>
+          <sub>St._Louis</sub>
+          <rel>leader</rel>
+          <obj>Francis_G._Slay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_31">
+      <text>Alan Bean retired on June 1981.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>1981-06</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_32">
+      <text>The COSPAR ID of Shenzhou 10 is 2013-029A.</text>
+      <triples>
+        <triple>
+          <sub>Shenzhou_10</sub>
+          <rel>cosparId</rel>
+          <obj>2013-029A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>cosparId</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_33">
+      <text>Nie Haisheng was born on October 13, 1964.</text>
+      <triples>
+        <triple>
+          <sub>Nie_Haisheng</sub>
+          <rel>birthDate</rel>
+          <obj>1964-10-13</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_34">
+      <text>Glen Ridge (New Jersey) is in the Essex County (New Jersey).</text>
+      <triples>
+        <triple>
+          <sub>Glen_Ridge</sub>
+          <rel>isPartOf</rel>
+          <obj>Essex_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_35">
+      <text>Alan Bean was born in Wheeler (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>birthPlace</rel>
+          <obj>Wheeler</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_36">
+      <text>Zaoyang time zone is UTC +8.</text>
+      <triples>
+        <triple>
+          <sub>Zaoyang</sub>
+          <rel>utcOffset</rel>
+          <obj>+8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_37">
+      <text>William Anders serves as United States Ambassador to Norway.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>title</rel>
+          <obj>United_States_Ambassador_to_Norway</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>title</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_38">
+      <text>Alan Shepard died in California.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>deathPlace</rel>
+          <obj>California</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>deathPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_39">
+      <text>The University of Texas at Austin is competing in the Big 12 Conference.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Texas_at_Austin</sub>
+          <rel>competeIn</rel>
+          <obj>Big_12_Conference</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>competeIn</rel>
+          <obj>SportsLeague</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_40">
+      <text>Zaoyang is part of Xiangyang.</text>
+      <triples>
+        <triple>
+          <sub>Zaoyang</sub>
+          <rel>isPartOf</rel>
+          <obj>Xiangyang</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_41">
+      <text>Dallas is in Collin County.</text>
+      <triples>
+        <triple>
+          <sub>Dallas</sub>
+          <rel>location</rel>
+          <obj>Collin_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>location</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_42">
+      <text>Gregory L. Fenves is the President of University of Texas at Austin.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Texas_at_Austin</sub>
+          <rel>president</rel>
+          <obj>Gregory_L._Fenves</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>president</rel>
+          <obj>Chancellor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_43">
+      <text>William Anders was born in British Hong Kong.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>birthPlace</rel>
+          <obj>British_Hong_Kong</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>PopulatedPlace</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_44">
+      <text>The University of Texas at Austin's mascot is called Hook 'em.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Texas_at_Austin</sub>
+          <rel>mascot</rel>
+          <obj>Hook_'em</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>mascot</rel>
+          <obj>Mascot</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_45">
+      <text>Smilodon is a fossil from California.</text>
+      <triples>
+        <triple>
+          <sub>California</sub>
+          <rel>fossil</rel>
+          <obj>Smilodon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>fossil</rel>
+          <obj>Animal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_46">
+      <text>The United States Navy awarded the Distinguished Service Medal to Alan Shepard.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>award</rel>
+          <obj>Distinguished_Service_Medal</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_47">
+      <text>Alan Shepard died on the 21st of July, 1998.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>deathDate</rel>
+          <obj>1998-07-21</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>deathDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_48">
+      <text>Frank Borman was an Apollo 8 Commander.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_8</sub>
+          <rel>commander</rel>
+          <obj>Frank_Borman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>commander</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_49">
+      <text>Alan Shepard's birth place was New Hampshire.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>birthPlace</rel>
+          <obj>New_Hampshire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_50">
+      <text>Chris Patten served as a representative of British Hong Kong.</text>
+      <triples>
+        <triple>
+          <sub>British_Hong_Kong</sub>
+          <rel>representative</rel>
+          <obj>Chris_Patten</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PopulatedPlace</sub>
+          <rel>representative</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_51">
+      <text>William Anders served as Chief of the Astronaut Office in 1976.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>servedAsChiefOfTheAstronautOfficeIn</rel>
+          <obj>1976</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>servedAsChiefOfTheAstronautOfficeIn</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_52">
+      <text>Alan Shepard was the Chief of the Astronaut Office in 1963.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>servedAsChiefOfTheAstronautOfficeIn</rel>
+          <obj>1963</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>servedAsChiefOfTheAstronautOfficeIn</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_53">
+      <text>William anders spent 8820 minutes in space.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>timeInSpace</rel>
+          <obj>8820</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>timeInSpace</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_54">
+      <text>Alan Bean was a test pilot.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>occupation</rel>
+          <obj>Test_pilot</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_55">
+      <text>Alan Shepard was awarded the american defense service ribbon.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>ribbonAward</rel>
+          <obj>American_Defense_Service_ribbon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>ribbonAward</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_56">
+      <text>Alan Shepard graduated from NWC with an M.A. in 1957.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>almaMater</rel>
+          <obj>NWC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_57">
+      <text>Alan Shepard retired on 1974-08-01.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>1974-08-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>dateOfRetirement</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_58">
+      <text>Alan Bean spent 100305 minutes in Space.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Bean</sub>
+          <rel>timeInSpace</rel>
+          <obj>100305</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>timeInSpace</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_59">
+      <text>Alan Shepard's time in space amounted to 13017 minutes.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>timeInSpace</rel>
+          <obj>13017</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>timeInSpace</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_train_60">
+      <text>The nationality of Alan Shepard is United States.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

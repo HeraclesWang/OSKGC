@@ -1,0 +1,3048 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Building" id="1_Building_train_1">
+      <text>The architect of Adare Manor is George Richard Pain.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>architect</rel>
+          <obj>George_Richard_Pain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_2">
+      <text>The leader of Japan is Shinzō Abe.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>leader</rel>
+          <obj>Shinzō_Abe</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_3">
+      <text>The birth place of Julia Morgan is California.</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>birthPlace</rel>
+          <obj>California</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>birthPlace</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_4">
+      <text>The architect of Adare Manor was James Pain.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>architect</rel>
+          <obj>James_Pain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_5">
+      <text>Margrethe II of Denmark is the leader of Denmark.</text>
+      <triples>
+        <triple>
+          <sub>Denmark</sub>
+          <rel>leader</rel>
+          <obj>Margrethe_II_of_Denmark</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_6">
+      <text>The leader of the Republic of Ireland is Enda Kenny.</text>
+      <triples>
+        <triple>
+          <sub>Republic_of_Ireland</sub>
+          <rel>leader</rel>
+          <obj>Enda_Kenny</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_7">
+      <text>The 3Arena is located at the North Wall Quay.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>location</rel>
+          <obj>North_Wall_Quay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>location</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_8">
+      <text>Dublin is part of the Republic of Ireland.</text>
+      <triples>
+        <triple>
+          <sub>Dublin</sub>
+          <rel>country</rel>
+          <obj>Republic_of_Ireland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_9">
+      <text>Ethiopia's currency is the Ethiopian Birr.</text>
+      <triples>
+        <triple>
+          <sub>Ethiopia</sub>
+          <rel>currency</rel>
+          <obj>Ethiopian_birr</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_10">
+      <text>The leader of the United States was Barack Obama.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Barack_Obama</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_11">
+      <text>The construction of Adare Manor was completed in 1862.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>completionYear</rel>
+          <obj>1862</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_12">
+      <text>Perth is located in Australia.</text>
+      <triples>
+        <triple>
+          <sub>Perth</sub>
+          <rel>country</rel>
+          <obj>Australia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_13">
+      <text>Addis Ababa City Hall has a height of 42 metres.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>height</rel>
+          <obj>42</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_14">
+      <text>Copenhagen is the capital of Denmark.</text>
+      <triples>
+        <triple>
+          <sub>Denmark</sub>
+          <rel>capital</rel>
+          <obj>Copenhagen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_15">
+      <text>The Akita Museum of Art has 3 floors.</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>floorCount</rel>
+          <obj>3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_16">
+      <text>The leader of Manhattan is Gale Brewer.</text>
+      <triples>
+        <triple>
+          <sub>Manhattan</sub>
+          <rel>leader</rel>
+          <obj>Gale_Brewer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_17">
+      <text>Gujarat's leader is known as the Gujarat Legislative Assembly.</text>
+      <triples>
+        <triple>
+          <sub>Gujarat</sub>
+          <rel>leaderTitle</rel>
+          <obj>Gujarat_Legislative_Assembly</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_18">
+      <text>Building started on the Addis Ababa City Hall in 1961.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>buildingStartYear</rel>
+          <obj>1961</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_19">
+      <text>Addis Ababa City Hall is located in the country of Ethiopia.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>country</rel>
+          <obj>Ethiopia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_20">
+      <text>Akita (Akita) is found in the country of Japan.</text>
+      <triples>
+        <triple>
+          <sub>Akita</sub>
+          <rel>country</rel>
+          <obj>Japan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_21">
+      <text>Adare Manor's building start was in 1700.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>buildingStartYear</rel>
+          <obj>1700</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_22">
+      <text>Akita Museum of Art is an art museum in the city of Akita (Akita).</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>location</rel>
+          <obj>Akita</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_23">
+      <text>250 Delaware Avenue is a location in Buffalo (New York).</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>location</rel>
+          <obj>Buffalo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_24">
+      <text>Asser Levy Public Baths has the reference number 80002709 in the National Register of Historic Places.</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>NationalRegisterOfHistoricPlacesReferenceNumber</rel>
+          <obj>80002709</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>NationalRegisterOfHistoricPlacesReferenceNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_25">
+      <text>The Akita Prefecture is located in Japan.</text>
+      <triples>
+        <triple>
+          <sub>Akita_Prefecture</sub>
+          <rel>country</rel>
+          <obj>Japan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Prefecture</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_26">
+      <text>200 Public Square is located in Cleveland.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>location</rel>
+          <obj>Cleveland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_27">
+      <text>320 South Boston Building was formerly called the Exchange National Bank Building.</text>
+      <triples>
+        <triple>
+          <sub>320_South_Boston_Building</sub>
+          <rel>formerName</rel>
+          <obj>Exchange_National_Bank_Building</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>formerName</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_28">
+      <text>Asher and Mary Isabelle Richardson House is located in Asherton.</text>
+      <triples>
+        <triple>
+          <sub>Asher_and_Mary_Isabelle_Richardson_House</sub>
+          <rel>location</rel>
+          <obj>Asherton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_29">
+      <text>Asherton is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Asherton</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_30">
+      <text>Chicago is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Chicago</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_31">
+      <text>The completion date of 3Arena is December 2008.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>completionDate</rel>
+          <obj>2008-12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>completionDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_32">
+      <text>There are 22 floors in 320 South Boston Building.</text>
+      <triples>
+        <triple>
+          <sub>320_South_Boston_Building</sub>
+          <rel>floorCount</rel>
+          <obj>22</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_33">
+      <text>One of the ethnic groups in Japan is the Brazilians.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Brazilians</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_34">
+      <text>The currency of the Republic of Ireland is the euro.</text>
+      <triples>
+        <triple>
+          <sub>Republic_of_Ireland</sub>
+          <rel>currency</rel>
+          <obj>Euro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_35">
+      <text>There is an ethnic group of Chinese people in Japan.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Chinese_people_in_Japan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_36">
+      <text>Amdavad ni Gufa was completed in 1995.</text>
+      <triples>
+        <triple>
+          <sub>Amdavad_ni_Gufa</sub>
+          <rel>completionYear</rel>
+          <obj>1995</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_37">
+      <text>Amdavad ni Gufa is located in India.</text>
+      <triples>
+        <triple>
+          <sub>Amdavad_ni_Gufa</sub>
+          <rel>country</rel>
+          <obj>India</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_38">
+      <text>One of the ethnic groups in Japan is the Filipinos.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Filipinos</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_39">
+      <text>Dublin is led by the European Parliament.</text>
+      <triples>
+        <triple>
+          <sub>Dublin</sub>
+          <rel>leaderTitle</rel>
+          <obj>European_Parliament</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_40">
+      <text>Lars Løkke Rasmussen is Denmark's leader.</text>
+      <triples>
+        <triple>
+          <sub>Denmark</sub>
+          <rel>leader</rel>
+          <obj>Lars_Løkke_Rasmussen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_41">
+      <text>The Riverside Art Museum is one of Julia Morgan's significant buildings.</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>significantBuilding</rel>
+          <obj>Riverside_Art_Museum</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>significantBuilding</rel>
+          <obj>Museum</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_42">
+      <text>Cape Town is the capital of South Africa.</text>
+      <triples>
+        <triple>
+          <sub>South_Africa</sub>
+          <rel>capital</rel>
+          <obj>Cape_Town</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_43">
+      <text>20 Fenchurch Street is located in London.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>location</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_44">
+      <text>250 Delaware Avenue has a floor area of 30843.8 square metres.</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>floorArea</rel>
+          <obj>30843.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorArea</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_45">
+      <text>The Akita Museum of Art was inaugurated on 28th September 2013.</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>inaugurationDate</rel>
+          <obj>2013-09-28</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>inaugurationDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_46">
+      <text>Cleveland is located within Ohio.</text>
+      <triples>
+        <triple>
+          <sub>Cleveland</sub>
+          <rel>isPartOf</rel>
+          <obj>Ohio</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_47">
+      <text>11 Diagonal Street was completed in 1983.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>completionYear</rel>
+          <obj>1983</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_48">
+      <text>The height of 3Arena is 28 metres.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>height</rel>
+          <obj>28</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>height</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_49">
+      <text>250 Delaware Avenue has 12 floors.</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>floorCount</rel>
+          <obj>12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_50">
+      <text>The governing body of the Eastern Province (Sri Lanka) is the Eastern Provincial Council.</text>
+      <triples>
+        <triple>
+          <sub>Eastern_Province</sub>
+          <rel>governingBody</rel>
+          <obj>Eastern_Provincial_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Province</sub>
+          <rel>governingBody</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_51">
+      <text>20 Fenchurch Street was designed by the architect Rafael Viñoly.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>architect</rel>
+          <obj>Rafael_Viñoly</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_52">
+      <text>The Parliament of the United Kingdom is the leader of London.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leaderTitle</rel>
+          <obj>Parliament_of_the_United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_53">
+      <text>Asher and Mary Isabelle Richardson House was built in 1911.</text>
+      <triples>
+        <triple>
+          <sub>Asher_and_Mary_Isabelle_Richardson_House</sub>
+          <rel>yearOfConstruction</rel>
+          <obj>1911</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>yearOfConstruction</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_54">
+      <text>The English language is spoken in Illinois.</text>
+      <triples>
+        <triple>
+          <sub>Illinois</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_55">
+      <text>The architect of 11 Diagonal Street is Helmut Jahn.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>architect</rel>
+          <obj>Helmut_Jahn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_56">
+      <text>The United Kingdom's currency is Pound sterling.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>currency</rel>
+          <obj>Pound_sterling</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_57">
+      <text>200 Public Square is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>location</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_58">
+      <text>Manhattan is part of New York City.</text>
+      <triples>
+        <triple>
+          <sub>Manhattan</sub>
+          <rel>isPartOf</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>isPartOf</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_59">
+      <text>One of the languages in Denmark is German.</text>
+      <triples>
+        <triple>
+          <sub>Denmark</sub>
+          <rel>language</rel>
+          <obj>German</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_60">
+      <text>Alfred Giles was the architect of Asher and Mary Isabelle Richardson House.</text>
+      <triples>
+        <triple>
+          <sub>Asher_and_Mary_Isabelle_Richardson_House</sub>
+          <rel>architect</rel>
+          <obj>Alfred_Giles</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_61">
+      <text>Boris Johnson is the leader in London.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leader</rel>
+          <obj>Boris_Johnson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_62">
+      <text>Andrew Mitchell is the leader of Birmingham.</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>leader</rel>
+          <obj>Andrew_Mitchell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_63">
+      <text>Addis Ababa is located in Ethiopia.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa</sub>
+          <rel>country</rel>
+          <obj>Ethiopia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_64">
+      <text>Asher and Mary Isabelle Richardson House is located at U.S. Route 83.</text>
+      <triples>
+        <triple>
+          <sub>Asher_and_Mary_Isabelle_Richardson_House</sub>
+          <rel>location</rel>
+          <obj>U.S._Route_83</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Road</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_65">
+      <text>Asser Levy Public Baths is located at 23rd Street (Manhattan).</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>location</rel>
+          <obj>23rd_Street</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Road</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_66">
+      <text>Addis Ababa City Hall was completed in 1964.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>completionYear</rel>
+          <obj>1964</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_67">
+      <text>Sri Lanka's currency is the Sri Lankan rupee.</text>
+      <triples>
+        <triple>
+          <sub>Sri_Lanka</sub>
+          <rel>currency</rel>
+          <obj>Sri_Lankan_rupee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_68">
+      <text>Dublin is part of Leinster.</text>
+      <triples>
+        <triple>
+          <sub>Dublin</sub>
+          <rel>isPartOf</rel>
+          <obj>Leinster</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>isPartOf</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_69">
+      <text>New York City is part of New York.</text>
+      <triples>
+        <triple>
+          <sub>New_York_City</sub>
+          <rel>isPartOf</rel>
+          <obj>New_York</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_70">
+      <text>Cleveland is part of Cuyahoga County.</text>
+      <triples>
+        <triple>
+          <sub>Cleveland</sub>
+          <rel>isPartOf</rel>
+          <obj>Cuyahoga_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_71">
+      <text>The architect B. V. Doshi designed Amdavad Ni Gufa.</text>
+      <triples>
+        <triple>
+          <sub>Amdavad_ni_Gufa</sub>
+          <rel>architect</rel>
+          <obj>B._V._Doshi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_72">
+      <text>South Africa's leader is called Jacob Zuma.</text>
+      <triples>
+        <triple>
+          <sub>South_Africa</sub>
+          <rel>leader</rel>
+          <obj>Jacob_Zuma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_73">
+      <text>Asser Levy Public Baths was added to the National Register of Historic Places on 1980-04-23.</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>addedToTheNationalRegisterOfHistoricPlaces</rel>
+          <obj>1980-04-23</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>addedToTheNationalRegisterOfHistoricPlaces</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_74">
+      <text>The leader of Ethiopia is Hailemariam Desalegn.</text>
+      <triples>
+        <triple>
+          <sub>Ethiopia</sub>
+          <rel>leader</rel>
+          <obj>Hailemariam_Desalegn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_75">
+      <text>Adisham Hall was completed in 1931.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>completionYear</rel>
+          <obj>1931</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_76">
+      <text>108 St Georges Terrace was completed in 1988.</text>
+      <triples>
+        <triple>
+          <sub>108_St_Georges_Terrace</sub>
+          <rel>completionYear</rel>
+          <obj>1988</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_77">
+      <text>One of the significant buildings designed by Augustus Pugin is the Palace Of Westminster.</text>
+      <triples>
+        <triple>
+          <sub>Augustus_Pugin</sub>
+          <rel>significantBuilding</rel>
+          <obj>Palace_of_Westminster</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>significantBuilding</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_78">
+      <text>Cleveland's governing body is Cleveland City Council.</text>
+      <triples>
+        <triple>
+          <sub>Cleveland</sub>
+          <rel>governingBody</rel>
+          <obj>Cleveland_City_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>governingBody</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_79">
+      <text>Adare Manor is located in Adare.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>location</rel>
+          <obj>Adare</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_80">
+      <text>There are 34 floors at 20 Fenchurch Street.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>floorCount</rel>
+          <obj>34</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_81">
+      <text>The building at 20 Fenchurch Street was started in January 2009.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>buildingStartDate</rel>
+          <obj>2009-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_82">
+      <text>Labour politician, John Clancy is the leader of Birmingham.</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>leader</rel>
+          <obj>John_Clancy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_83">
+      <text>Asser Levy Public Baths is located in Manhattan.</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>location</rel>
+          <obj>Manhattan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_84">
+      <text>The construction of 250 Delaware Avenue began in January 2014.</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>buildingStartDate</rel>
+          <obj>2014-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_85">
+      <text>The leader of the Eastern Province (Sri Lanka) is Austin Fernando.</text>
+      <triples>
+        <triple>
+          <sub>Eastern_Province</sub>
+          <rel>leader</rel>
+          <obj>Austin_Fernando</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Province</sub>
+          <rel>leader</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_86">
+      <text>Redefine Properties Limited is the owner of 11 Diagonal Street.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>owner</rel>
+          <obj>Redefine_Properties_Limited</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_87">
+      <text>Akita Museum of Art is located in Akita Prefecture.</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>location</rel>
+          <obj>Akita_Prefecture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>location</rel>
+          <obj>Prefecture</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_88">
+      <text>Dáil Éireann is a leader in Dublin.</text>
+      <triples>
+        <triple>
+          <sub>Dublin</sub>
+          <rel>leaderTitle</rel>
+          <obj>Dáil_Éireann</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_89">
+      <text>The construction of 108 St Georges Terrace began in 1981.</text>
+      <triples>
+        <triple>
+          <sub>108_St_Georges_Terrace</sub>
+          <rel>buildingStartYear</rel>
+          <obj>1981</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_90">
+      <text>The Mason School of Business is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Mason_School_of_Business</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_91">
+      <text>The capital of the United Kingdom is London.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>capital</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_92">
+      <text>Joe Biden is a leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Joe_Biden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_93">
+      <text>200 Public Square has a floor area of 111484 square metres.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>floorArea</rel>
+          <obj>111484</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorArea</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_94">
+      <text>108 St Georges Terrace cost 120000000 Australian dollars.</text>
+      <triples>
+        <triple>
+          <sub>108_St_Georges_Terrace</sub>
+          <rel>cost</rel>
+          <obj>120000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>cost</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_95">
+      <text>11 Diagonal Street has 20 floors.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>floorCount</rel>
+          <obj>20</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_96">
+      <text>The leader of Japan is Tarō Asō.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>leader</rel>
+          <obj>Tarō_Asō</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_97">
+      <text>Pickard Chilton is the architect of 300 North LaSalle.</text>
+      <triples>
+        <triple>
+          <sub>300_North_LaSalle</sub>
+          <rel>architect</rel>
+          <obj>Pickard_Chilton</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_98">
+      <text>The 200 Public Square was completed in 1985.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>completionYear</rel>
+          <obj>1985</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_99">
+      <text>The architect of 3Arena was the company Populous.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>architect</rel>
+          <obj>Populous</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>architect</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_100">
+      <text>Asilomar Conference Grounds has the reference number 87000823 in the National Register of Historic Places.</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>NationalRegisterOfHistoricPlacesReferenceNumber</rel>
+          <obj>87000823</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>NationalRegisterOfHistoricPlacesReferenceNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_101">
+      <text>Buffalo (New York) is part of New York.</text>
+      <triples>
+        <triple>
+          <sub>Buffalo</sub>
+          <rel>isPartOf</rel>
+          <obj>New_York</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_102">
+      <text>The Asser Levy Public Baths have the Romanesque Revival style of architecture.</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>architecturalStyle</rel>
+          <obj>Romanesque_Revival_architecture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architecturalStyle</rel>
+          <obj>ArchitecturalStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_103">
+      <text>Virginia is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Virginia</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_104">
+      <text>The Akita Museum of Art has a floor area of 3746.66 (square metres).</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>floorArea</rel>
+          <obj>3746.66</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>floorArea</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_105">
+      <text>Chicago is part of Cook County.</text>
+      <triples>
+        <triple>
+          <sub>Chicago</sub>
+          <rel>isPartOf</rel>
+          <obj>Cook_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_106">
+      <text>The capital of Illinois is Springfield (Illinois).</text>
+      <triples>
+        <triple>
+          <sub>Illinois</sub>
+          <rel>capital</rel>
+          <obj>Springfield</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_107">
+      <text>Hearst Castle was a significant building of Julia Morgan.</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>significantBuilding</rel>
+          <obj>Hearst_Castle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>significantBuilding</rel>
+          <obj>Building</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_108">
+      <text>There is an ethnic group of Vietnamese people in Japan.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Vietnamese_people_in_Japan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_109">
+      <text>The architect of Adare Manor is Augustus Pugin.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>architect</rel>
+          <obj>Augustus_Pugin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_110">
+      <text>The United States of America`s Chief Justice is John Roberts.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>John_Roberts</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_111">
+      <text>The construction of 320 South Boston Building was completed in 1929.</text>
+      <triples>
+        <triple>
+          <sub>320_South_Boston_Building</sub>
+          <rel>completionYear</rel>
+          <obj>1929</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_112">
+      <text>Addis Ababa City Hall is located in Addis Ababa.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>location</rel>
+          <obj>Addis_Ababa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_113">
+      <text>20 Fenchurch Street is located in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>location</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_114">
+      <text>Frank G. Jackson is a leader in Cleveland.</text>
+      <triples>
+        <triple>
+          <sub>Cleveland</sub>
+          <rel>leader</rel>
+          <obj>Frank_G._Jackson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_115">
+      <text>Robert Gates is the chancellor of the College of William &amp; Mary.</text>
+      <triples>
+        <triple>
+          <sub>College_of_William_&amp;_Mary</sub>
+          <rel>chancellor</rel>
+          <obj>Robert_Gates</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>chancellor</rel>
+          <obj>Minister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_116">
+      <text>One of the significant buildings designed by Julia Morgan is the Asilomar State Beach.</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>significantBuilding</rel>
+          <obj>Asilomar_State_Beach</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>significantBuilding</rel>
+          <obj>ProtectedArea</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_117">
+      <text>Pacific Grove (California) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Pacific_Grove</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_118">
+      <text>The floor area of 300 North LaSalle is 120770 square metres.</text>
+      <triples>
+        <triple>
+          <sub>300_North_LaSalle</sub>
+          <rel>floorArea</rel>
+          <obj>120770</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorArea</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_119">
+      <text>Cleveland is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Cleveland</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_120">
+      <text>The 108 St Georges Terrace is located in Perth.</text>
+      <triples>
+        <triple>
+          <sub>108_St_Georges_Terrace</sub>
+          <rel>location</rel>
+          <obj>Perth</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_121">
+      <text>There are 60 floors at 300 North LaSalle.</text>
+      <triples>
+        <triple>
+          <sub>300_North_LaSalle</sub>
+          <rel>floorCount</rel>
+          <obj>60</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_122">
+      <text>Adisham Hall is located at Haputale.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>location</rel>
+          <obj>Haputale</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_123">
+      <text>An ethnic group of the United States is Asian Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Asian_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_124">
+      <text>Julia Morgan was born in San Francisco.</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>birthPlace</rel>
+          <obj>San_Francisco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_125">
+      <text>Adisham Hall is located in Sri Lanka.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>location</rel>
+          <obj>Sri_Lanka</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_126">
+      <text>Asilomar Conference Grounds has the architectural style of the Arts and Crafts Movement.</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>architecturalStyle</rel>
+          <obj>Arts_and_Crafts_movement</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architecturalStyle</rel>
+          <obj>ArchitecturalStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_127">
+      <text>20 Fenchurch Street was completed in April of 2014.</text>
+      <triples>
+        <triple>
+          <sub>20_Fenchurch_Street</sub>
+          <rel>completionDate</rel>
+          <obj>2014-04</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_128">
+      <text>Japan has an ethnic group called Koreans in Japan.</text>
+      <triples>
+        <triple>
+          <sub>Japan</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Koreans_in_Japan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_129">
+      <text>Asser Levy Public Baths is located in Avenue A, Manhattan.</text>
+      <triples>
+        <triple>
+          <sub>Asser_Levy_Public_Baths</sub>
+          <rel>location</rel>
+          <obj>Avenue_A</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Road</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_130">
+      <text>Birmingham's governing body is Birmingham City Council.</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>governingBody</rel>
+          <obj>Birmingham_City_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>governingBody</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_131">
+      <text>J. P. McManus is the owner of Adare Manor.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>owner</rel>
+          <obj>J._P._McManus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>owner</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_132">
+      <text>Construction of Adisham Hall began in 1927.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>buildingStartYear</rel>
+          <obj>1927</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_133">
+      <text>Anandiben Patel is the leader of Gujarat.</text>
+      <triples>
+        <triple>
+          <sub>Gujarat</sub>
+          <rel>leader</rel>
+          <obj>Anandiben_Patel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>leader</rel>
+          <obj>Governor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_134">
+      <text>Birmingham Council is led by the Labour Party (UK).</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>leader</rel>
+          <obj>Labour_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_135">
+      <text>The Asilomar Conference Grounds have the architectural style of American Craftsman.</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>architecturalStyle</rel>
+          <obj>American_Craftsman</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architecturalStyle</rel>
+          <obj>ArchitecturalStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_136">
+      <text>The Government of Addis Ababa is the current tenant of the Addis Ababa City Hall.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_City_Hall</sub>
+          <rel>currentTenants</rel>
+          <obj>Government_of_Addis_Ababa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>currentTenants</rel>
+          <obj>GovernmentAgency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_137">
+      <text>Bill Marriott is the key person at Marriott International.</text>
+      <triples>
+        <triple>
+          <sub>Marriott_International</sub>
+          <rel>keyPerson</rel>
+          <obj>Bill_Marriott</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_138">
+      <text>Addis Ababa Stadium is part of Addis Ababa.</text>
+      <triples>
+        <triple>
+          <sub>Addis_Ababa_Stadium</sub>
+          <rel>isPartOf</rel>
+          <obj>Addis_Ababa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Stadium</sub>
+          <rel>isPartOf</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_139">
+      <text>Julia Morgan designed significant buildings in Chinatown (San Francisco).</text>
+      <triples>
+        <triple>
+          <sub>Julia_Morgan</sub>
+          <rel>significantBuilding</rel>
+          <obj>Chinatown</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>significantBuilding</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_140">
+      <text>Sumitra Mahajan is an Indian leader.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>Sumitra_Mahajan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_141">
+      <text>George Winkler is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>George_Winkler</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_142">
+      <text>Akita (Akita) is part of Akita Prefecture.</text>
+      <triples>
+        <triple>
+          <sub>Akita</sub>
+          <rel>isPartOf</rel>
+          <obj>Akita_Prefecture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Prefecture</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_143">
+      <text>Adare Manor is located in County Limerick.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>location</rel>
+          <obj>County_Limerick</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_144">
+      <text>Rahm Emanuel is a leader in Chicago.</text>
+      <triples>
+        <triple>
+          <sub>Chicago</sub>
+          <rel>leader</rel>
+          <obj>Rahm_Emanuel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Ambassador</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_145">
+      <text>Amdavad ni Gufa is located in Gujarat.</text>
+      <triples>
+        <triple>
+          <sub>Amdavad_ni_Gufa</sub>
+          <rel>location</rel>
+          <obj>Gujarat</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>location</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_146">
+      <text>Susana Mendoza is the leader of Chicago.</text>
+      <triples>
+        <triple>
+          <sub>Chicago</sub>
+          <rel>leader</rel>
+          <obj>Susana_Mendoza</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Clerk</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_147">
+      <text>Birmingham is the home town of John Madin.</text>
+      <triples>
+        <triple>
+          <sub>John_Madin</sub>
+          <rel>origin</rel>
+          <obj>Birmingham</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>origin</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_148">
+      <text>Adare is part of Munster.</text>
+      <triples>
+        <triple>
+          <sub>Adare</sub>
+          <rel>isPartOf</rel>
+          <obj>Munster</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Village</sub>
+          <rel>isPartOf</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_149">
+      <text>Asilomar Conference Grounds is located at Asilomar Blvd.</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>location</rel>
+          <obj>Asilomar_Blvd</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_150">
+      <text>Marriott International was founded in Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>Marriott_International</sub>
+          <rel>foundationPlace</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_151">
+      <text>The 3Arena is located in Dublin.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>location</rel>
+          <obj>Dublin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_152">
+      <text>The architect Alfred Giles was born in England.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Giles</sub>
+          <rel>birthPlace</rel>
+          <obj>England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_153">
+      <text>The birth place of Augustus Pugin is Bloomsbury.</text>
+      <triples>
+        <triple>
+          <sub>Augustus_Pugin</sub>
+          <rel>birthPlace</rel>
+          <obj>Bloomsbury</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>birthPlace</rel>
+          <obj>CityDistrict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_154">
+      <text>The owner of 3Arena is Live Nation Entertainment.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>owner</rel>
+          <obj>Live_Nation_Entertainment</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_155">
+      <text>Irish people are the inhabitants of the Republic of Ireland.</text>
+      <triples>
+        <triple>
+          <sub>Republic_of_Ireland</sub>
+          <rel>demonym</rel>
+          <obj>Irish_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_156">
+      <text>Ranil Wickremesinghe is a leader of Sri Lanka.</text>
+      <triples>
+        <triple>
+          <sub>Sri_Lanka</sub>
+          <rel>leader</rel>
+          <obj>Ranil_Wickremesinghe</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_157">
+      <text>The architect of 200 Public Square is HOK.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>architect</rel>
+          <obj>HOK</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_158">
+      <text>108 St Georges Terrace has a floor count of 50.</text>
+      <triples>
+        <triple>
+          <sub>108_St_Georges_Terrace</sub>
+          <rel>floorCount</rel>
+          <obj>50</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_159">
+      <text>Cyril Ramaphosa is the leader of South Africa.</text>
+      <triples>
+        <triple>
+          <sub>South_Africa</sub>
+          <rel>leader</rel>
+          <obj>Cyril_Ramaphosa</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_160">
+      <text>Greenlandic is one of the languages of Denmark.</text>
+      <triples>
+        <triple>
+          <sub>Denmark</sub>
+          <rel>language</rel>
+          <obj>Greenlandic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_161">
+      <text>T. S. Thakur is a leader in India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>T._S._Thakur</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>ChiefJustice</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_162">
+      <text>The 11 Diagonal Street originated in 1978.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>buildingStartYear</rel>
+          <obj>1978</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>buildingStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_163">
+      <text>3Arena is located at North Wall (Dublin).</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>location</rel>
+          <obj>North_Wall</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>location</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_164">
+      <text>The language of Sri Lanka is the Tamil language.</text>
+      <triples>
+        <triple>
+          <sub>Sri_Lanka</sub>
+          <rel>language</rel>
+          <obj>Tamil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_165">
+      <text>200 Public square is in Cleveland.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>location</rel>
+          <obj>Cleveland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_166">
+      <text>Washington, D.C. is the capital of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>capital</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_167">
+      <text>Asherton is part of Dimmit County.</text>
+      <triples>
+        <triple>
+          <sub>Asherton</sub>
+          <rel>isPartOf</rel>
+          <obj>Dimmit_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_168">
+      <text>There are 45 floors at 200 Public Square.</text>
+      <triples>
+        <triple>
+          <sub>200_Public_Square</sub>
+          <rel>floorCount</rel>
+          <obj>45</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_169">
+      <text>Philip Charles Hardwick was the architect of Adare Manor.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>architect</rel>
+          <obj>Philip_Charles_Hardwick</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_170">
+      <text>250 Delaware Avenue is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>location</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_171">
+      <text>Khalid Mahmood (British politician) is one of the leaders of Birmingham.</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>leader</rel>
+          <obj>Khalid_Mahmood</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>MemberOfParliament</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_172">
+      <text>Native Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_173">
+      <text>11 Diagonal Street has a floor area of 1200 square metres.</text>
+      <triples>
+        <triple>
+          <sub>11_Diagonal_Street</sub>
+          <rel>floorArea</rel>
+          <obj>1200</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>floorArea</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_174">
+      <text>The 3Arena is located at East Link Bridge.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>location</rel>
+          <obj>East_Link_Bridge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>location</rel>
+          <obj>Place</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_175">
+      <text>The Asilomar Conference Grounds were added to the National Register of Historic Places on 27 February 1987.</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>addedToTheNationalRegisterOfHistoricPlaces</rel>
+          <obj>1987-02-27</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>addedToTheNationalRegisterOfHistoricPlaces</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_176">
+      <text>One United States ethnic group is White Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_177">
+      <text>Republic of Ireland official language is English.</text>
+      <triples>
+        <triple>
+          <sub>Republic_of_Ireland</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_178">
+      <text>One of the ethnic groups of the United States are the African Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_train_179">
+      <text>Adare Manor was designed by the architect Lewis Nockalls Cottingham.</text>
+      <triples>
+        <triple>
+          <sub>Adare_Manor</sub>
+          <rel>architect</rel>
+          <obj>Lewis_Nockalls_Cottingham</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

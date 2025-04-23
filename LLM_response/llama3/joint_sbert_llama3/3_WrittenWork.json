@@ -1,0 +1,282 @@
+[
+  {
+    "id": "3_WrittenWork_test_1",
+    "input_text": "John Cowper Powys, born in Shirley (Derbyshire), is known for works such as Wolf Solent and A Glastonbury Romance.",
+    "response": "Here is the output:\n\n[Wolf Solent, author, John Cowper Powys]:(Work, author, Person)\n[A Glastonbury Romance, author, John Cowper Powys]:(Work, author, Person)\n[John Cowper Powys, birthPlace, Shirley]:(Person, birthPlace, Place)\n[John Cowper Powys, nationality, United Kingdom]:(Person, nationality, Place)\n[Shirley, location, Derbyshire]:(Place, location, Place)\n[Derbyshire, country, United Kingdom]:(Place, country, Place)"
+  },
+  {
+    "id": "3_WrittenWork_test_2",
+    "input_text": "Native Americans and Alcatraz Versus the Evil Librarians are part of the United States; which Barack Obama is the president of.",
+    "response": "[United States, serves, Native Americans]:(Country, serves, EthnicGroup)\n[United States, serves, Alcatraz Versus the Evil Librarians]:(Country, serves, WrittenWork)\n[United States, leader, Barack Obama]:(Country, leader, PersonFunction)"
+  },
+  {
+    "id": "3_WrittenWork_test_3",
+    "input_text": "The printed book Alcatraz Versus the Evil Librarians has 320 pages and an OCLC number of 78771100.",
+    "response": "[Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(Book, numberOfPages, number), [Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(Book, oclcNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_4",
+    "input_text": "Brandon Sanderson, born in Lincoln (Nebraska), authored Alcatraz Versus the Evil Librarians and Alcatraz Versus the Scrivener's Bones.",
+    "response": "Here is the output:\n\n[Alcatraz Versus the Evil Librarians, author, Brandon Sanderson]:(Book, author, Writer)\n[Brandon Sanderson, birthPlace, Lincoln]:(Writer, birthPlace, City)\n[Alcatraz Versus the Evil Librarians, author, Brandon Sanderson]:(Book, author, Writer)\n[Brandon Sanderson, authored, Alcatraz Versus the Evil Librarians]:(Writer, authored, Work)\n[Brandon Sanderson, authored, Alcatraz Versus the Scrivener's Bones]:(Writer, authored, Work)"
+  },
+  {
+    "id": "3_WrittenWork_test_5",
+    "input_text": "John Cowper Powys was born in Shirley (Derbyshire) and is the author of Wolf Solent which preceded A Glastonbury Romance.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and the input text:\n\n[Wolf Solent, author, John Cowper Powys]:(Work, author, Person)\n[Wolf Solent, precededBy, A Glastonbury Romance]:(Work, precededBy, Work)\n[A Glastonbury Romance, precededBy, Wolf Solent]:(Work, precededBy, Work)\n[John Cowper Powys, birthPlace, Shirley]:(Person, birthPlace, Place)\n[Shirley, location, Derbyshire]:(Place, location, Place)\n[Derbyshire, country, England]:(Place, country, Place)\n\nNote that the hierarchy is not explicitly mentioned in the input text, so the hierarchy relationships are not included in the output."
+  },
+  {
+    "id": "3_WrittenWork_test_6",
+    "input_text": "Alcatraz Versus the Evil Librarians is from The United States where one of the ethnic groups are African Americans and the language used is English.",
+    "response": "[Alcatraz Versus the Evil Librarians, country, The United States]:(Work, country, Country), [The United States, language, English]:(Country, language, Language), [The United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_7",
+    "input_text": "A Long Long Way was written in Ireland and published by Penguin Random House, the parent company of Viking Press.",
+    "response": "[A Long Long Way, country, Ireland]:(Book, country, Country)\n[A Long Long Way, publisher, Penguin Random House]:(Book, publisher, Organisation)\n[A Long Long House, parentCompany, Penguin Random House]:(Penguin Random House, parentCompany, Organisation)\n[A Long Long Way, publisher, Viking Press]:(Book, publisher, Organisation)\n[A Long Long House, serves, Ireland]:(Penguin Random House, serves, Place)"
+  },
+  {
+    "id": "3_WrittenWork_test_8",
+    "input_text": "Native Americans are one of the ethnic groups of the United States where A Wizard of Mars, which is published in English, originates from.",
+    "response": "[United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup), [A Wizard of Mars, country, United States]:(Book, country, Country), [A Wizard of Mars, language, English]:(Work, language, Language)"
+  },
+  {
+    "id": "3_WrittenWork_test_9",
+    "input_text": "In the United States, English is the language spoken and one of the ethnic groups is Asian Americans. It is also the country where A Fortress of Grey Ice is from.",
+    "response": "Here is the output based on the given ontology schema:\n\n[United States, language, English]\n[United States, ethnicGroup, Asian Americans]\n[A Fortress of Grey Ice, country, United States]"
+  },
+  {
+    "id": "3_WrittenWork_test_10",
+    "input_text": "In the United States, English is the language, Asian Americans are an ethnic group and the book Alcatraz versus the Evil Librarians was written.",
+    "response": "Here is the output based on the input text and the given ontology schema:\n\n[Alcatraz versus the Evil Librarians, language, English]:(Work, language, Language)\n[United States, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup)\n[Alcatraz versus the Evil Librarians, country, United States]:(Work, country, Place)\n\nLet me know if you have any further requests!"
+  },
+  {
+    "id": "3_WrittenWork_test_11",
+    "input_text": "A Wizard of Mars originates from the United States where the leader is called President and Native Americans live.",
+    "response": "[United States, capital, Washington, D.C.]\n(Country, capital, CapitalCity)\n[United States, leader, President]\n(United States, ethnicGroup, Native Americans)"
+  },
+  {
+    "id": "3_WrittenWork_test_12",
+    "input_text": "The book \"Alcatraz Versus the Evil Librarians\" is printed with 320 pages and has an ISBN number of 0-439-92550-9.",
+    "response": "[Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(Book, numberOfPages, number)\n[Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(Book, isbnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_13",
+    "input_text": "John Cowper Powys was born in Shirley (Derbyshire). He wrote Owen Glendower and A Glastonbury Romance.",
+    "response": "[John Cowper Powys, birthPlace, Shirley (Derbyshire)]:(Person, birthPlace, Place)\n[John Cowper Powys, wrote, Owen Glendower]:(Person, wrote, Work)\n[John Cowper Powys, wrote, A Glastonbury Romance]:(Person, wrote, Work)\n[Owen Glendower, author, John Cowper Powys]:(Work, author, Person)\n[A Glastonbury Romance, author, John Cowper Powys]:(Work, author, Person)"
+  },
+  {
+    "id": "3_WrittenWork_test_14",
+    "input_text": "In the United States the title of the leader is the President. In this country Native Americans are one of the ethnic groups and A severed Wasp originates from.",
+    "response": "[United States, leaderTitle, President]:(Country, leaderTitle, PersonFunction)\n[United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)\n[A severed Wasp, country, United States]:(Work, country, Country)"
+  },
+  {
+    "id": "3_WrittenWork_test_15",
+    "input_text": "A Fortress of Grey Ice was written by J. V. Jones and is found in hardcover with the OCLC number 51969173.",
+    "response": "[A Fortress of Grey Ice, author, J. V. Jones]:(Book, author, Writer)\n[A Fortress of Grey Ice, releaseDate,?]:(Work, releaseDate, Date)\n[A Fortress of Grey Ice, mediaType, Hardcover]:(Book, mediaType, MediaType)\n[A Fortress of Grey Ice, oclcNumber, 51969173]:(Book, oclcNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_16",
+    "input_text": "1634: The Ram Rebellion was preceded by 1634: The Galileo Affair, which is available in English. English is spoken in Great Britain.",
+    "response": "Here is the constructed knowledge graph based on the input text:\n\n[1634: The Ram Rebellion, precededBy, 1634: The Galileo Affair]:(Book, precededBy, Book)\n[1634: The Ram Rebellion, language, English]:(Work, language, Language)\n[English, spokenIn, Great Britain]:(Language, spokenIn, Place)\n\nNote: I've used the ontology schema to map the input text to the corresponding entity types and relations. I've also used the hierarchy to infer the correct type for the entities (e.g. \"1634: The Ram Rebellion\" is a \"Work\" and \"English\" is a \"Language\"). Let me know if you have any further questions or if you'd like me to explain any of the inferences I made!"
+  },
+  {
+    "id": "3_WrittenWork_test_17",
+    "input_text": "Administrative Science Quarterly is abbreviated to Admin. Sci. Q. and has the LCCN number 57059226. It comes under the academic discipline of Management.",
+    "response": "Here is the output in the required format:\n\n[Administrative Science Quarterly, abbreviation, Admin. Sci. Q.]:(AcademicJournal, abbreviation, Work), [Administrative Science Quarterly, LCCN_number, 57059226]:(AcademicJournal, LCCN_number, number), [Administrative Science Quarterly, academicDiscipline, Management]:(AcademicJournal, academicDiscipline, TopicalConcept)"
+  },
+  {
+    "id": "3_WrittenWork_test_18",
+    "input_text": "A Severed Wasp is from the United States where English is the primary language. Additionally, the United states has an ethnic group called Asian Americans.",
+    "response": "[United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup), [United States, language, English]:(Country, language, Language), [A Severed Wasp, country, United States]:(Book, country, Country)"
+  },
+  {
+    "id": "3_WrittenWork_test_19",
+    "input_text": "The Administrative Science Quarterly, or Admin. Sci. Q., is in the management discipline with ISSN number 0001-8392.",
+    "response": "[The Administrative Science Quarterly, academicDiscipline, Management]:(AcademicJournal, academicDiscipline, AcademicSubject), [The Administrative Science Quarterly, issnNumber, 0001-8392]:(AcademicJournal, issnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_20",
+    "input_text": "A Glastonbury Romance has the ISBN number 0-7156-3648-0, can be found in hardcover and has 1174 pages.",
+    "response": "[A Glastonbury Romance, mediaType, Hardcover]:(Book, mediaType, MediaType)\n[A Glastonbury Romance, numberOfPages, 1174]:(Book, numberOfPages, number)\n[A Glastonbury Romance, isbnNumber, 0-7156-3648-0]:(Book, isbnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_21",
+    "input_text": "Eric Flint was influenced by Robert A. Heinlein and is the author of 1634: The Bavarian Crisis, that was preceded by Grantville Gazette II.",
+    "response": "[Eric Flint, influencedBy, Robert A. Heinlein]:(Writer, influencedBy, Writer)\n[1634: The Bavarian Crisis, author, Eric Flint]:(Book, author, Writer)\n[1634: The Bavarian Crisis, precededBy, Grantville Gazette II]:(Book, precededBy, Work)"
+  },
+  {
+    "id": "3_WrittenWork_test_22",
+    "input_text": "A severed Wasp originates from the United States, where the language is English and the Native Americans are an ethnic group.",
+    "response": "[A severed Wasp, country, United States]\n(A severed Wasp, language, English)\n(United States, ethnicGroup, Native Americans)"
+  },
+  {
+    "id": "3_WrittenWork_test_23",
+    "input_text": "Aenir, written by Garth Nix, was produced in print and has the OCLC number 45644811.",
+    "response": "[Aenir, releaseDate, unknown]:(Work, releaseDate, Date), [Aenir, author, Garth Nix]:(Work, author, Person), [Aenir, oclcNumber, 45644811]:(Work, oclcNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_24",
+    "input_text": "The Administrative Science Quarterly, OCLC 1461102, is published by SAGE Publications founded by Sara Miller McCune.",
+    "response": "[SAGE Publications, founder, Sara Miller McCune]\n[The Administrative Science Quarterly, publisher, SAGE Publications]\n[The Administrative Science Quarterly, OCLC_number, 1461102]"
+  },
+  {
+    "id": "3_WrittenWork_test_25",
+    "input_text": "Published in hardcover, A Wizard of Mars has 560 pages and was written by Diane Duane.",
+    "response": "[A Wizard of Mars, mediaType, Print]:(Book, mediaType, MediaType)\n[A Wizard of Mars, numberOfPages, 560]:(Book, numberOfPages, number)\n[A Wizard of Mars, author, Diane Duane]:(Book, author, Writer)"
+  },
+  {
+    "id": "3_WrittenWork_test_26",
+    "input_text": "The book Alcatraz Versus the Evil Librarians comes from the United States where one of the ethnic groups are African Americans and one of the leaders is Joe Biden.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Alcatraz Versus the Evil Librarians, country, United States]\n[United States, ethnicGroup, African Americans]\n[United States, leader, Joe Biden]\n\nNote that I have only extracted triples that match the given ontology schema, and the output is in the exact format specified in the example."
+  },
+  {
+    "id": "3_WrittenWork_test_27",
+    "input_text": "Above the Veil, from Australia, is the third book in a series after Aenir and Castle.",
+    "response": "[Above the Veil, country, Australia]:(Book, country, Country), [Above the Veil, precededBy, Aenir]:(Book, precededBy, Book), [Aenir, precededBy, Castle]:(Book, precededBy, Book)"
+  },
+  {
+    "id": "3_WrittenWork_test_28",
+    "input_text": "A Long Long Way, the prequel to The Secret Scripture, was published in Ireland by Viking Press.",
+    "response": "[A Long Long Way, country, Ireland]:(Book, country, Country)\n[A Long Long Way, publisher, Viking Press]:(Book, publisher, Publisher)\n[A Long Long Way, followedBy, The Secret Scripture]:(Book, followedBy, Book)"
+  },
+  {
+    "id": "3_WrittenWork_test_29",
+    "input_text": "The novel A Long Long Way, followed by The Secret Scripture, was published by Viking Press whose parent company is Penguin Random House.",
+    "response": "[The novel, precededBy, The Secret Scripture]:(WrittenWork, precededBy, WrittenWork)\n[The novel, publisher, Viking Press]:(Work, publisher, Organisation)\n[Viking Press, parentCompany, Penguin Random House]:(Organisation, parentCompany, Organisation)"
+  },
+  {
+    "id": "3_WrittenWork_test_30",
+    "input_text": "A Long Long Way, published by Viking Press, comes from Ireland where the ethnic group is White people.",
+    "response": "[A Long Long Way, author,?]:(Book, author, Person)\n[A Long Long Way, publisher, Viking Press]:(Book, publisher, Organisation)\n[A Long Long Way, country, Ireland]:(Book, country, Place)\n[A Long Long Way, ethnicGroup, White people]:(Place, ethnicGroup, EthnicGroup)\n\nNote: The author of the book \"A Long Long Way\" is not specified in the input text, so the output does not include the author."
+  },
+  {
+    "id": "3_WrittenWork_test_31",
+    "input_text": "A Long Long Way is published by Viking Press from the United States, parent company Penguin Random House.",
+    "response": "[A Long Long Way, publisher, Viking Press]:(Book, publisher, Organisation), [A Long Long House, country, United States]:(Book, country, Place), [Viking Press, parentCompany, Penguin Random House]:(Organisation, parentCompany, Organisation)"
+  },
+  {
+    "id": "3_WrittenWork_test_32",
+    "input_text": "Viking Press in the United States published A Long Long Way which was followed by The Secret Scripture.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[A Long Long Way, publisher, Viking Press]:(Book, publisher, Organisation)\n[Viking Press, location, United States]:(Organisation, location, Place)\n[A Long Long Way, precededBy, The Secret Scripture]:(Work, precededBy, Work)\n\nNote: The output is in the format specified in the example, with no additional text or explanations."
+  },
+  {
+    "id": "3_WrittenWork_test_33",
+    "input_text": "Written in English, the book Alcatraz Versus the Evil Librarians is from The United States where one of the ethnic groups is Asian Americans.",
+    "response": "Here is the output in the required format:\n\n[Alcatraz Versus the Evil Librarians, language, English]:(Book, language, Language), [The United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup), [Alcatraz Versus the Evil Librarians, country, The United States]:(Book, country, Country)"
+  },
+  {
+    "id": "3_WrittenWork_test_34",
+    "input_text": "Alcatraz Versus the Evil Librarians is from The United States, where the leader is Barack Obama and Asian Americans is one of the ethnic groups.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Alcatraz Versus the Evil Librarians, country, The United States]:(Work, country, Country)\n[The United States, leader, Barack Obama]:(Country, leader, President)\n[The United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_35",
+    "input_text": "Alcatraz Versus the Evil Librarians was written by Brandon Sanderson from Lincoln (Nebraska) and followed by Alcatraz Versus the Scrivener's Bones.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Alcatraz Versus the Evil Librarians, author, Brandon Sanderson]:(Work, author, Person)\n[Alcatraz Versus the Evil Librarians, mediaType, WrittenWork]:(Work, mediaType, Type)\n[Alcatraz Versus the Evil Librarians, followedBy, Alcatraz Versus the Scrivener's Bones]:(Work, followedBy, Work)\n[Alcatraz Versus the Evil Librarians, releaseDate,?]:(Work, releaseDate, Date)\n[Alcatraz Versus the Evil Librarians, country, Nebraska]:(Work, country, Place)\n[Alcatraz Versus the Evil Librarians, location, Lincoln]:(Work, location, Place)"
+  },
+  {
+    "id": "3_WrittenWork_test_36",
+    "input_text": "Alcatraz Versus the Evil Librarians is from the United States where they speak English and White Americans live.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Alcatraz Versus the Evil Librarians, country, United States]:(Work, country, Country)\n[United States, language, English]:(Country, language, Language)\n[United States, ethnicGroup, White Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_37",
+    "input_text": "Alcatraz Versus the Evil Librarians is written in the English language and it comes from the United States, where there is and ethnic group of African Americans.",
+    "response": "Here is the output:\n\n[Alcatraz Versus the Evil Librarians, language, English]:(Work, language, Language)\n[Alcatraz Versus the Evil Librarians, country, United States]:(Work, country, Country)\n[United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_38",
+    "input_text": "The book Alcatraz Versus the Evil Librarians comes from the United States, where Joe Biden is a leader and Asian Americans are one of its ethnic groups.",
+    "response": "[Alcatraz Versus the Evil Librarians, country, United States]:(Book, country, Country), [United States, leader, Joe Biden]:(Place, leader, Person), [United States, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_39",
+    "input_text": "The book Alcatraz Versus the Evil Librarians is written in the English language and comes from the United States One of the ethnic groups in the United States are White Americans.",
+    "response": "Here is the output:\n\n[Alcatraz Versus the Evil Librarians, language, English]:(Book, language, Language)\n[Alcatraz Versus the Evil Librarians, country, United States]:(Book, country, Country)\n[United States, ethnicGroup, White Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_40",
+    "input_text": "The book Alcatraz Versus the Evil Librarians comes from the United States and is written in English. One of the ethnic groups in the United States are the Native Americans.",
+    "response": "[United States, country, Country], [Alcatraz Versus the Evil Librarians, country, United States], [United States, ethnicGroup, Native Americans], [Alcatraz Versus the Evil Librarians, language, English]"
+  },
+  {
+    "id": "3_WrittenWork_test_41",
+    "input_text": "Alcatraz Versus the Evil Librarians is published in Hardcover, has the OCLC number of 78771100 and the ISBN number 0-439-92550-9.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Alcatraz Versus the Evil Librarians, publisher,?]: (Work, publisher, Organisation)\n[Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(Work, oclcNumber, number)\n[Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(Work, isbnNumber, number)\n[Alcatraz Versus the Evil Librarians, mediaType,?]: (Work, mediaType, TopicalConcept)\n\nNote: The \"publisher\" and \"mediaType\" relations are not explicitly mentioned in the input text, but based on the ontology schema, we can infer these relationships."
+  },
+  {
+    "id": "3_WrittenWork_test_42",
+    "input_text": "Alcatraz Versus the Evil Librarians, a 320 page hardcover book, has a ISBN number of 0-439-92550-9.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(Book, numberOfPages, number)\n[Alcatraz Versus the Evil Librarians, mediaType, Hardcover]:(Book, mediaType, MediaType)\n[Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(Book, isbnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_43",
+    "input_text": "The book Alcatraz Versus the Evil Librarians is in print and has the ISBN number 0-439-92550-9 as well as the OCLC number of 78771100.",
+    "response": "[Alcatraz Versus the Evil Librarians, mediaType, Print]:(Book, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(Book, isbnNumber, number), [Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(Book, oclcNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_44",
+    "input_text": "Alcatraz Versus the Evil Librarians is from The United States where the English language is spoken and one of the ethnic groups are the Native Americans.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Alcatraz Versus the Evil Librarians, country, The United States]:(Work, country, Country)\n[The United States, language, English]:(Country, language, Language)\n[The United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_WrittenWork_test_45",
+    "input_text": "Alcatraz Versus the Evil Librarians is a fantasy literature hardcover book. The OCLC number is 78771100.",
+    "response": "Here is the output based on the input text:\n\n[Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(Book, oclcNumber, number), [Alcatraz Versus the Evil Librarians, author,?]:(Book, author, Writer), [Alcatraz Versus the Evil Librarians, genre,?]:(Book, genre, LiteraryGenre)\n\nNote that the author and genre are unknown in this case, so I've left them as question marks. If more information is provided, I can try to fill in the missing values."
+  },
+  {
+    "id": "3_WrittenWork_test_46",
+    "input_text": "John Cowper Powys was born in Shirley (Derbyshire). His notable work includes Porius: A Romance of the Dark Ages and A Glastonbury Romance.",
+    "response": "Here is the constructed knowledge graph based on the input text:\n\n[John Cowper Powys, birthPlace, Shirley]:(Person, birthPlace, Place)\n[John Cowper Powys, notableWork, Porius: A Romance of the Dark Ages]:(Person, notableWork, Work)\n[John Cowper Powys, notableWork, A Glastonbury Romance]:(Person, notableWork, Work)\n\nNote: The output is in the format specified in the example, with no additional text or explanations."
+  },
+  {
+    "id": "3_WrittenWork_test_47",
+    "input_text": "A Glastonbury Romance, the sequel to Wolf Solent was written by John Cowper Powys who was from Shirley (Derbyshire).",
+    "response": "[A Glastonbury Romance, author, John Cowper Powys]:(Work, author, Person), [John Cowper Powys, birthPlace, Shirley]:(Person, birthPlace, Place), [Shirley, location, Place]:(Place, location, Place)"
+  },
+  {
+    "id": "3_WrittenWork_test_48",
+    "input_text": "John Cowper Powys is the author of A Glastonbury Romance which was followed by Weymouth Sands and Maiden Castle.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and the input text:\n\n[A Glastonbury Romance, author, John Cowper Powys]:(Work, author, Person)\n[A Glastonbury Romance, followedBy, Weymouth Sands]:(Work, followedBy, Work)\n[Weymouth Sands, followedBy, Maiden Castle]:(Work, followedBy, Work)\n[A Glastonbury Romance, precededBy, Wolf Solent]:(Work, precededBy, Work)"
+  },
+  {
+    "id": "3_WrittenWork_test_49",
+    "input_text": "Weymouth Sands, written by John Cowper Powys, is a prequel to Maiden Castle and a sequel to A Glastonbury Romance.",
+    "response": "[Weymouth Sands, precededBy, A Glastonbury Romance]:(Book, precededBy, Book), [Weymouth Sands, followedBy, Maiden Castle]:(Book, followedBy, Book)"
+  },
+  {
+    "id": "3_WrittenWork_test_50",
+    "input_text": "The Acta Mathematica Hungarica ISSN number is \"0236-5294\" and the abbreviation is Acta Math. Hungar. It comes under the academic discipline of mathematics.",
+    "response": "Here is the output:\n\n[Acta Mathematica Hungarica, issnNumber, 0236-5294]:(AcademicJournal, issnNumber, number)\n[Acta Mathematica Hungarica, abbreviation, Acta Math. Hungar.]:(AcademicJournal, abbreviation, AcademicJournal)\n[Acta Mathematica Hungarica, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept)"
+  },
+  {
+    "id": "3_WrittenWork_test_51",
+    "input_text": "The American Journal of Mathematics, abbreviated to Am. J. Math., whose academic discipline is mathematics has ISSN No. 1080-6377.",
+    "response": "[The American Journal of Mathematics, abbreviation, Am. J. Math.]:(AcademicJournal, abbreviation, Work), [The American Journal of Mathematics, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept), [The American Journal of Mathematics, issnNumber, 1080-6377]:(AcademicJournal, issnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_52",
+    "input_text": "The American Journal of Mathematics, which comes under the academic discipline of mathematics, was first published in 1878 and has the abbreviated title of Am. J. Math.",
+    "response": "[The American Journal of Mathematics, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept), [The American Journal of Mathematics, firstPublicationYear, 1878]:(AcademicJournal, firstPublicationYear, Year), [The American Journal of Mathematics, abbreviation, Am. J. Math.]:(AcademicJournal, abbreviation, Work)"
+  },
+  {
+    "id": "3_WrittenWork_test_53",
+    "input_text": "The Acta Mathematica Hungarica, abbreviated to Acta Math. Hungar., covers the academic discipline of mathematics. Its ISSN number is 1588-2632.",
+    "response": "[Acta Mathematica Hungarica, abbreviation, Acta Math. Hungar.]:(AcademicJournal, abbreviation, AcademicJournal), [Acta Mathematica Hungarica, issnNumber, 1588-2632]:(AcademicJournal, issnNumber, number), [Acta Mathematica Hungarica, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept)"
+  },
+  {
+    "id": "3_WrittenWork_test_54",
+    "input_text": "The discipline of The American Journal of Mathematics, also known by the abbreviated title of Am. J. Math., is mathematics. The journal has an ISSN number of 0002-9327.",
+    "response": "[The American Journal of Mathematics, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept), [The American Journal of Mathematics, abbreviation, Am. J. Math.]:(AcademicJournal, abbreviation, Work), [The American Journal of Mathematics, issnNumber, 0002-9327]:(AcademicJournal, issnNumber, number)"
+  },
+  {
+    "id": "3_WrittenWork_test_55",
+    "input_text": "Acta Mathematica Hungarica, or Acta Math. Hungar., focuses on mathematics and has a LCCN number of 83646315.",
+    "response": "[Acta Mathematica Hungarica, LCCN_number, 83646315]:(AcademicJournal, LCCN_number, number)\n[Acta Mathematica Hungarica, academicDiscipline, mathematics]:(AcademicJournal, academicDiscipline, TopicalConcept)"
+  },
+  {
+    "id": "3_WrittenWork_test_56",
+    "input_text": "American Journal of Mathematics (discipline mathematics) is published by the Johns Hopkins University Press, which is based in the United States.",
+    "response": "[American Journal of Mathematics, publisher, Johns Hopkins University Press]\n[Johns Hopkins University Press, country, United States]\n[American Journal of Mathematics, academicDiscipline, mathematics]\n[American Journal of Mathematics, publisher, Johns Hopkins University Press]\n[Johns Hopkins University Press, location, United States]\n[American Journal of Mathematics, oclcNumber,?]"
+  }
+]

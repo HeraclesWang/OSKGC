@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Politician" id="1_Politician_dev_1">
+      <text>Abner W. Sibal's successor was Donald J. Irwin.</text>
+      <triples>
+        <triple>
+          <sub>Abner_W._Sibal</sub>
+          <rel>successor</rel>
+          <obj>Donald_J._Irwin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>successor</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_2">
+      <text>The branch of military Albert Jennings Fountain belonged to was 1st Regiment New Mexico Volunteer Cavalry.</text>
+      <triples>
+        <triple>
+          <sub>Albert_Jennings_Fountain</sub>
+          <rel>militaryBranch</rel>
+          <obj>1st_Regiment_New_Mexico_Volunteer_Cavalry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LieutenantGovernor</sub>
+          <rel>militaryBranch</rel>
+          <obj>MilitaryUnit</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_3">
+      <text>Robert E. Lee was a commander in the Battle of Gettysburg.</text>
+      <triples>
+        <triple>
+          <sub>Battle_of_Gettysburg</sub>
+          <rel>commander</rel>
+          <obj>Robert_E._Lee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryConflict</sub>
+          <rel>commander</rel>
+          <obj>MilitaryPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_4">
+      <text>Airey Neave's unit was the Royal Artillery.</text>
+      <triples>
+        <triple>
+          <sub>Airey_Neave</sub>
+          <rel>militaryBranch</rel>
+          <obj>Royal_Artillery</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>militaryBranch</rel>
+          <obj>MilitaryUnit</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_5">
+      <text>Operation Enduring Freedom is a battle of the United States Army.</text>
+      <triples>
+        <triple>
+          <sub>United_States_Army</sub>
+          <rel>battle</rel>
+          <obj>Operation_Enduring_Freedom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryUnit</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_6">
+      <text>Airey Neave dies at Westminster Hospital, London.</text>
+      <triples>
+        <triple>
+          <sub>Airey_Neave</sub>
+          <rel>deathPlace</rel>
+          <obj>Westminster_Hospital</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>deathPlace</rel>
+          <obj>Hospital</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_7">
+      <text>Allan Shivers started his active career on July 11th 1949.</text>
+      <triples>
+        <triple>
+          <sub>Allan_Shivers</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>1949-07-11</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_8">
+      <text>Alfred N. Phillips retired on the date 1939-01-03.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_N._Phillips</sub>
+          <rel>activeYearsEndDate</rel>
+          <obj>1939-01-03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>activeYearsEndDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_9">
+      <text>Spanish is the official language in Argentina.</text>
+      <triples>
+        <triple>
+          <sub>Argentina</sub>
+          <rel>officialLanguage</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_10">
+      <text>Albert B. White finished his career on March 4th 1905.</text>
+      <triples>
+        <triple>
+          <sub>Albert_B._White</sub>
+          <rel>activeYearsEndDate</rel>
+          <obj>1905-03-04</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>activeYearsEndDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_11">
+      <text>Aermacchi MB-339 is a trainer Aircraft used by the Nigerian Air Force.</text>
+      <triples>
+        <triple>
+          <sub>Nigerian_Air_Force</sub>
+          <rel>trainerAircraft</rel>
+          <obj>Aermacchi_MB-339</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryUnit</sub>
+          <rel>trainerAircraft</rel>
+          <obj>Aircraft</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_12">
+      <text>Alfred Moore Scales came from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Moore_Scales</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_13">
+      <text>Airey Neave began his military career in 1935.</text>
+      <triples>
+        <triple>
+          <sub>Airey_Neave</sub>
+          <rel>serviceStartYear</rel>
+          <obj>1935</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryPerson</sub>
+          <rel>serviceStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_14">
+      <text>Juan Perón was a member of the Labour Party in Argentina.</text>
+      <triples>
+        <triple>
+          <sub>Juan_Perón</sub>
+          <rel>party</rel>
+          <obj>Labour_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>President</sub>
+          <rel>party</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_15">
+      <text>Juan Carlos I of Spain's predecessor was Alfonso XIII of Spain.</text>
+      <triples>
+        <triple>
+          <sub>Juan_Carlos_I_of_Spain</sub>
+          <rel>predecessor</rel>
+          <obj>Alfonso_XIII_of_Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Royalty</sub>
+          <rel>predecessor</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_16">
+      <text>Agnes Kant was a resident of Doesburg.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>residence</rel>
+          <obj>Doesburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>residence</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_17">
+      <text>New York City was the birthplace of Albert Jennings Fountain.</text>
+      <triples>
+        <triple>
+          <sub>Albert_Jennings_Fountain</sub>
+          <rel>birthPlace</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LieutenantGovernor</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_18">
+      <text>Abdul Taib Mahmud's date of birth is 1936-05-21.</text>
+      <triples>
+        <triple>
+          <sub>Abdul_Taib_Mahmud</sub>
+          <rel>birthDate</rel>
+          <obj>1936-05-21</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ChiefMinister</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_19">
+      <text>Alfred Moore Scales is a member of the Democratic Party in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Moore_Scales</sub>
+          <rel>party</rel>
+          <obj>Democratic_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>party</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_20">
+      <text>Queen Sofía of Spain is the wife of Juan Carlos I of Spain.</text>
+      <triples>
+        <triple>
+          <sub>Juan_Carlos_I_of_Spain</sub>
+          <rel>spouse</rel>
+          <obj>Queen_Sofía_of_Spain</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Royalty</sub>
+          <rel>spouse</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_21">
+      <text>Alfred Moore Scales was Governor of North Carolina.</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Moore_Scales</sub>
+          <rel>office</rel>
+          <obj>Governor_of_North_Carolina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_22">
+      <text>Alvah Sabin worked as the secretary of State of Vermont.</text>
+      <triples>
+        <triple>
+          <sub>Alvah_Sabin</sub>
+          <rel>office</rel>
+          <obj>Secretary_of_State_of_Vermont</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Secretary</sub>
+          <rel>office</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_23">
+      <text>Albert B. White was born in Cleveland.</text>
+      <triples>
+        <triple>
+          <sub>Albert_B._White</sub>
+          <rel>birthPlace</rel>
+          <obj>Cleveland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Governor</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_24">
+      <text>One of the languages spoken in New York is Arabic.</text>
+      <triples>
+        <triple>
+          <sub>New_York</sub>
+          <rel>language</rel>
+          <obj>Arabic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_25">
+      <text>Agnes Kant worked at the Socialist Party in the Netherlands.</text>
+      <triples>
+        <triple>
+          <sub>Agnes_Kant</sub>
+          <rel>office</rel>
+          <obj>Socialist_Party</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>office</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_26">
+      <text>The colour of the New Democracy in Greece is blue.</text>
+      <triples>
+        <triple>
+          <sub>New_Democracy</sub>
+          <rel>colour</rel>
+          <obj>Blue</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PoliticalParty</sub>
+          <rel>colour</rel>
+          <obj>Colour</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_27">
+      <text>Daniel Webster was a leader of the Whig Party in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Whig_Party</sub>
+          <rel>leader</rel>
+          <obj>Daniel_Webster</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>PoliticalParty</sub>
+          <rel>leader</rel>
+          <obj>SecretaryOfState</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_28">
+      <text>The United States Army has battled in the Invasion of Grenada.</text>
+      <triples>
+        <triple>
+          <sub>United_States_Army</sub>
+          <rel>battle</rel>
+          <obj>Invasion_of_Grenada</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryUnit</sub>
+          <rel>battle</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_29">
+      <text>The Polish–Soviet War was a conflict within the Russian Civil War.</text>
+      <triples>
+        <triple>
+          <sub>Polish–Soviet_War</sub>
+          <rel>isPartOf</rel>
+          <obj>Russian_Civil_War</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MilitaryConflict</sub>
+          <rel>isPartOf</rel>
+          <obj>MilitaryConflict</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_30">
+      <text>The Kashubian language is spoken in Poland.</text>
+      <triples>
+        <triple>
+          <sub>Poland</sub>
+          <rel>language</rel>
+          <obj>Kashubian_language</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_31">
+      <text>Abner W. Sibal served in the United States Army.</text>
+      <triples>
+        <triple>
+          <sub>Abner_W._Sibal</sub>
+          <rel>militaryBranch</rel>
+          <obj>United_States_Army</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Representative</sub>
+          <rel>militaryBranch</rel>
+          <obj>MilitaryUnit</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_32">
+      <text>In Austria, the language is Austrian German.</text>
+      <triples>
+        <triple>
+          <sub>Austria</sub>
+          <rel>language</rel>
+          <obj>Austrian_German</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Politician" id="1_Politician_dev_33">
+      <text>In the United States one of the ethnic groups is the Native Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Building" id="1_Building_dev_1">
+      <text>Ahmedabad is in India.</text>
+      <triples>
+        <triple>
+          <sub>Ahmedabad</sub>
+          <rel>country</rel>
+          <obj>India</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_2">
+      <text>Chicago is part of Illinois.</text>
+      <triples>
+        <triple>
+          <sub>Chicago</sub>
+          <rel>isPartOf</rel>
+          <obj>Illinois</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_3">
+      <text>Dublin is in the Republic of Ireland.</text>
+      <triples>
+        <triple>
+          <sub>Dublin</sub>
+          <rel>country</rel>
+          <obj>Republic_of_Ireland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_4">
+      <text>The architect Alfred Giles died in Kendall County (Texas).</text>
+      <triples>
+        <triple>
+          <sub>Alfred_Giles</sub>
+          <rel>deathPlace</rel>
+          <obj>Kendall_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>deathPlace</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_5">
+      <text>The leader of the United States is known as the President of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_6">
+      <text>John Madin was born in Birmingham.</text>
+      <triples>
+        <triple>
+          <sub>John_Madin</sub>
+          <rel>birthPlace</rel>
+          <obj>Birmingham</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Architect</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_7">
+      <text>One of South Africa's ethnic groups are the Coloured.</text>
+      <triples>
+        <triple>
+          <sub>South_Africa</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Coloured</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_8">
+      <text>Paul Ryan is the leader of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Paul_Ryan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Representative</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_9">
+      <text>Brooklyn is part of New York City.</text>
+      <triples>
+        <triple>
+          <sub>Brooklyn</sub>
+          <rel>isPartOf</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CityDistrict</sub>
+          <rel>isPartOf</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_10">
+      <text>250 Delaware Avenue cost 110000000 dollars.</text>
+      <triples>
+        <triple>
+          <sub>250_Delaware_Avenue</sub>
+          <rel>cost</rel>
+          <obj>110000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>cost</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_11">
+      <text>London is led via the European Parliament.</text>
+      <triples>
+        <triple>
+          <sub>London</sub>
+          <rel>leaderTitle</rel>
+          <obj>European_Parliament</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>CapitalCity</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_12">
+      <text>In the Republic of Ireland they speak Irish.</text>
+      <triples>
+        <triple>
+          <sub>Republic_of_Ireland</sub>
+          <rel>language</rel>
+          <obj>Irish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_13">
+      <text>Adisham Hall has the Tudor Revival architectural style.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>architecturalStyle</rel>
+          <obj>Tudor_Revival_architecture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architecturalStyle</rel>
+          <obj>ArchitecturalStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_14">
+      <text>Tadao Ando is the architect who designed the Akita Museum of Art.</text>
+      <triples>
+        <triple>
+          <sub>Akita_Museum_of_Art</sub>
+          <rel>architect</rel>
+          <obj>Tadao_Ando</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Museum</sub>
+          <rel>architect</rel>
+          <obj>Architect</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_15">
+      <text>The Asilomar Conference Grounds is located at Pacific Grove (California).</text>
+      <triples>
+        <triple>
+          <sub>Asilomar_Conference_Grounds</sub>
+          <rel>location</rel>
+          <obj>Pacific_Grove</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_16">
+      <text>HOK SVE was the architect of 3Arena.</text>
+      <triples>
+        <triple>
+          <sub>3Arena</sub>
+          <rel>architect</rel>
+          <obj>HOK_SVE</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Venue</sub>
+          <rel>architect</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_17">
+      <text>Narendra Modi leads India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>Narendra_Modi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_18">
+      <text>The demonym for natives of the United kingdom is British people.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>demonym</rel>
+          <obj>British_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_19">
+      <text>County Limerick is governed by the Limerick City and County Council.</text>
+      <triples>
+        <triple>
+          <sub>County_Limerick</sub>
+          <rel>governingBody</rel>
+          <obj>Limerick_City_and_County_Council</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>governingBody</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_20">
+      <text>Marriott International is based in Bethesda (Maryland).</text>
+      <triples>
+        <triple>
+          <sub>Marriott_International</sub>
+          <rel>location</rel>
+          <obj>Bethesda</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_21">
+      <text>In South Africa there is an ethnic group of Asian South Africans.</text>
+      <triples>
+        <triple>
+          <sub>South_Africa</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Asian_South_Africans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_22">
+      <text>300 North LaSalle was completed in 2009.</text>
+      <triples>
+        <triple>
+          <sub>300_North_LaSalle</sub>
+          <rel>completionYear</rel>
+          <obj>2009</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>completionYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_23">
+      <text>The Liberal Democrats are the leaders of Birmingham.</text>
+      <triples>
+        <triple>
+          <sub>Birmingham</sub>
+          <rel>leader</rel>
+          <obj>Liberal_Democrats</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>PoliticalParty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_24">
+      <text>Adisham Halls Architectural style`is Tudor and Jacabian.</text>
+      <triples>
+        <triple>
+          <sub>Adisham_Hall</sub>
+          <rel>architecturalStyle</rel>
+          <obj>Tudor_and_Jacabian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>architecturalStyle</rel>
+          <obj>ArchitecturalStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Building" id="1_Building_dev_25">
+      <text>300 North LaSalle is in Illinois.</text>
+      <triples>
+        <triple>
+          <sub>300_North_LaSalle</sub>
+          <rel>location</rel>
+          <obj>Illinois</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Building</sub>
+          <rel>location</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

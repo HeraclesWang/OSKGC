@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1_Monument_test_1",
+        "input_text": "The Atatürk Monument (İzmir) was designed by Pietro Canonica.",
+        "response": "Here is the output:\n\nAtatürk Monument, designed, Pietro Canonica\nAtatürk Monument, location, İzmir\nAtatürk Monument, category, Monument\n\nNote that the output follows the ontology schema's relations and entity types."
+    },
+    {
+        "id": "1_Monument_test_2",
+        "input_text": "The Atatürk Monument (İzmir) is made of bronze.",
+        "response": "[Atatürk Monument, material, bronze], (Monument, material, ChemicalSubstance)"
+    },
+    {
+        "id": "1_Monument_test_3",
+        "input_text": "The Baku Turkish Martyrs' Memorial is located in Azerbaijan.",
+        "response": "[Baku Turkish Martyrs' Memorial, location, Azerbaijan]"
+    },
+    {
+        "id": "1_Monument_test_4",
+        "input_text": "The Atatürk Monument (İzmir) was inaugurated on 27th July, 1932.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\nAtatürk Monument, location, İzmir\nAtatürk Monument, inaugurationDate, 1932-07-27"
+    },
+    {
+        "id": "1_Monument_test_5",
+        "input_text": "The Atatürk Monument (İzmir) is located in Turkey.",
+        "response": "Here is the output:\n\nAtatürk Monument, location, Turkey"
+    },
+    {
+        "id": "1_Monument_test_6",
+        "input_text": "Frederick County (Maryland) is to the southwest of Adams County (Pennsylvania).",
+        "response": "Here is the output based on the given ontology schema:\n\nFrederick County (Maryland), hasToItsSouthwest, Adams County (Pennsylvania)"
+    },
+    {
+        "id": "1_Monument_test_7",
+        "input_text": "Monocacy National Battlefield is located in Frederick County (Maryland).",
+        "response": "Monocacy National Battlefield, location, Frederick County\nMonocacy National Battlefield, location, Maryland\nMonocacy National Battlefield, location, Place\nMonocacy National Battlefield, location, PopulatedPlace"
+    },
+    {
+        "id": "1_Monument_test_8",
+        "input_text": "The 14th New Jersey Volunteer Infantry Monument is located in the district of the Monocacy National Battlefield.",
+        "response": "Here is the output:\n\n[14th New Jersey Volunteer Infantry Monument, location, Monocacy National Battlefield]\n[14th New Jersey Volunteer Infantry Monument, location, Place]\n[Monocacy National Battlefield, location, Place]\n[Monocacy National Battlefield, district, 14th New Jersey Volunteer Infantry Monument]\n[14th New Jersey Volunteer Infantry Monument, category, Monument]\n[14th New Jersey Volunteer Infantry Monument, dedicatedTo,?]"
+    },
+    {
+        "id": "1_Monument_test_9",
+        "input_text": "The city nearest to Monocacy National Battlefield is Frederick (Maryland).",
+        "response": "[Monocacy National Battlefield, nearestCity, Frederick]"
+    }
+]

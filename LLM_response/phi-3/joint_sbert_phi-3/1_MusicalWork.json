@@ -1,0 +1,97 @@
+[
+    {
+        "id": "1_MusicalWork_test_1",
+        "input_text": "Nord is an album in the post metal genre by Year of No Light.",
+        "response": "[Year of No Light, musicalBand, Nord]:(MusicalArtist, musicalBand, MusicalWork)\n[Year of No Light, album, Nord]:(Work, album, Work)\n[Nord, genre, post metal]:(Work, genre, TopicalConcept)"
+    },
+    {
+        "id": "1_MusicalWork_test_2",
+        "input_text": "Nord is an album by Year of No Light in the sludge metal genre.",
+        "response": "[Nord, genre, sludge metal]:(Album, genre, MusicGenre)"
+    },
+    {
+        "id": "1_MusicalWork_test_3",
+        "input_text": "\"Let It Breed\" was followed by the album \"Turn Me On\".",
+        "response": "[Let It Breed, followedBy, Turn Me On]:(Album, followedBy, Album)"
+    },
+    {
+        "id": "1_MusicalWork_test_4",
+        "input_text": "Noise pop is a fusion genre, having elements from noise rock, among other things.",
+        "response": "[Noise pop, musicFusionGenre, Noise rock]:(MusicGenre, musicFusionGenre, MusicGenre)\n[Noise pop, musicFusionGenre, Other things]:(MusicGenre, musicFusionGenre, TopicalConcept)"
+    },
+    {
+        "id": "1_MusicalWork_test_5",
+        "input_text": "The Velvet Underground band drew occasional musical artists from an associated group called Theatre of Eternal Music.",
+        "response": "[The Velvet Underground, associatedBand, Theatre of Eternal Music]:(Band, associatedBand, Organisation)"
+    },
+    {
+        "id": "1_MusicalWork_test_6",
+        "input_text": "Hip hop music is a derivative of reggae.",
+        "response": "[Hip hop music, derivative, Reggae]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "1_MusicalWork_test_7",
+        "input_text": "Reggae's stylistic origin is rhythm and blues.",
+        "response": "[Reggae, stylisticOrigin, Rhythm and Blues]:(MusicGenre, stylisticOrigin, MusicGenre)"
+    },
+    {
+        "id": "1_MusicalWork_test_8",
+        "input_text": "Year of No Light made an album called Nord, which was released by the record label Crucial blast.",
+        "response": "[Year of No Light, album, Nord]:(MusicalArtist, album, MusicalWork)\n[Nord, recordLabel, Crucial Blast]:(MusicalWork, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "1_MusicalWork_test_9",
+        "input_text": "The release date of Nord, Year of No Light Album, is 06-09-2006.",
+        "response": "[Nord, releaseDate, 06-09-2006]:(Album, releaseDate, Date)"
+    },
+    {
+        "id": "1_MusicalWork_test_10",
+        "input_text": "The Nord album was preceded by the Demo 2004 album.",
+        "response": "[Nord album, precededBy, Demo 2004 album]:(Album, precededBy, Album)"
+    },
+    {
+        "id": "1_MusicalWork_test_11",
+        "input_text": "The Year of No Light album Nord's record label is E-Vinyl.",
+        "response": "[The Year of No Light album Nord, recordLabel, E-Vinyl]:(Album, recordLabel, Organisation)"
+    },
+    {
+        "id": "1_MusicalWork_test_12",
+        "input_text": "Year of No Light followed their album Nord with the album Live at Roadburn 2008.",
+        "response": "[Year of No Light, followedBy, Live at Roadburn 2008]:(Album, followedBy, Album)"
+    },
+    {
+        "id": "1_MusicalWork_test_13",
+        "input_text": "The genre of Turn Me On is punk blues.",
+        "response": "[Turn Me On, genre, Punk blues]:(MusicalWork, genre, MusicGenre)"
+    },
+    {
+        "id": "1_MusicalWork_test_14",
+        "input_text": "The album Turn Me On is an example of the musical genre known as noise rock.",
+        "response": "[Turn Me On, genre, Noise rock]:(MusicalWork, genre, MusicGenre)"
+    },
+    {
+        "id": "1_MusicalWork_test_15",
+        "input_text": "The album Turn Me On is by the American band The Honeymoon Killers.",
+        "response": "[Turn Me On, artist, The Honeymoon Killers]:(Album, artist, Band)"
+    },
+    {
+        "id": "1_MusicalWork_test_16",
+        "input_text": "The total length of the Turn Me On album is 35.1 minutes.",
+        "response": "[Turn Me On, runtime, 35.1]:(Album, runtime, number)"
+    },
+    {
+        "id": "1_MusicalWork_test_17",
+        "input_text": "The Turn Me On album was followed by the Take it Off! album.",
+        "response": "[The Turn Me On, followedBy, Take it Off!]:(MusicalWork, followedBy, MusicalWork)"
+    },
+    {
+        "id": "1_MusicalWork_test_18",
+        "input_text": "The Honeymoon Killers is the producer of the Turn Me On album.",
+        "response": "[Turn Me On, producer, The Honeymoon Killers]:(Album, producer, Band)"
+    },
+    {
+        "id": "1_MusicalWork_test_19",
+        "input_text": "The album Take It Off! is preceded by the album Turn Me On.",
+        "response": "[Take It Off!, precededBy, Turn Me On]:(Album, precededBy, Album)"
+    }
+]

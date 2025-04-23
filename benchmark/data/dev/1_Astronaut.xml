@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_1">
+      <text>Alan Shepard was a crew member of Apollo 14.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>mission</rel>
+          <obj>Apollo_14</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>mission</rel>
+          <obj>SpaceMission</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_2">
+      <text>William Anders was a Fighter pilot.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>occupation</rel>
+          <obj>Fighter_pilot</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_3">
+      <text>Apollo 12 was commanded by David Scott.</text>
+      <triples>
+        <triple>
+          <sub>Apollo_12</sub>
+          <rel>commander</rel>
+          <obj>David_Scott</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>SpaceMission</sub>
+          <rel>commander</rel>
+          <obj>Astronaut</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_4">
+      <text>NASA selected Elliot See in 1962.</text>
+      <triples>
+        <triple>
+          <sub>Elliot_See</sub>
+          <rel>selectedByNasa</rel>
+          <obj>1962</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>selectedByNasa</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_5">
+      <text>Elliot See was born in Dallas.</text>
+      <triples>
+        <triple>
+          <sub>Elliot_See</sub>
+          <rel>birthPlace</rel>
+          <obj>Dallas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_6">
+      <text>Elliot See was born on the 23rd of July 1927.</text>
+      <triples>
+        <triple>
+          <sub>Elliot_See</sub>
+          <rel>birthDate</rel>
+          <obj>1927-07-23</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_7">
+      <text>Alan Shepard was the Chief of the Astronaut Office.</text>
+      <triples>
+        <triple>
+          <sub>Alan_Shepard</sub>
+          <rel>title</rel>
+          <obj>Chief_of_the_Astronaut_Office</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>title</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Astronaut" id="1_Astronaut_dev_8">
+      <text>William Anders served as a crew member on Apollo 8.</text>
+      <triples>
+        <triple>
+          <sub>William_Anders</sub>
+          <rel>mission</rel>
+          <obj>Apollo_8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Astronaut</sub>
+          <rel>mission</rel>
+          <obj>SpaceMission</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

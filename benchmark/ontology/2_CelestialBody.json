@@ -1,0 +1,310 @@
+{
+    "title": "2_CelestialBody",
+    "id": "2_CelestialBody",
+    "entity type": [
+        {
+            "id": "Asteroid",
+            "label": "Asteroid"
+        },
+        {
+            "id": "Astronomer",
+            "label": "Astronomer"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Project",
+            "label": "Project"
+        },
+        {
+            "id": "ResearchProject",
+            "label": "ResearchProject"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "stateOfOrigin",
+            "label": "stateOfOrigin",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "averageSpeed",
+            "label": "averageSpeed",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "formerName",
+            "label": "formerName",
+            "domain": "Asteroid",
+            "range": "Asteroid"
+        },
+        {
+            "id": "orbitalPeriod",
+            "label": "orbitalPeriod",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "surfaceArea",
+            "label": "surfaceArea",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "escapeVelocity",
+            "label": "escapeVelocity",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "maximumTemperature",
+            "label": "maximumTemperature",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "minimumTemperature",
+            "label": "minimumTemperature",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "absoluteMagnitude",
+            "label": "absoluteMagnitude",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "density",
+            "label": "density",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "discovered",
+            "label": "discovered",
+            "domain": "Asteroid",
+            "range": "Date"
+        },
+        {
+            "id": "apoapsis",
+            "label": "apoapsis",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "meanTemperature",
+            "label": "meanTemperature",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "epoch",
+            "label": "epoch",
+            "domain": "Asteroid",
+            "range": "Date"
+        },
+        {
+            "id": "discoverer",
+            "label": "discoverer",
+            "domain": "Asteroid",
+            "range": "Person"
+        },
+        {
+            "id": "discoverer",
+            "label": "discoverer",
+            "domain": "Asteroid",
+            "range": "Work"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "periapsis",
+            "label": "periapsis",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "discoverer",
+            "label": "discoverer",
+            "domain": "Asteroid",
+            "range": "Place"
+        },
+        {
+            "id": "rotationPeriod",
+            "label": "rotationPeriod",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "mass",
+            "label": "mass",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "temperature",
+            "label": "temperature",
+            "domain": "Asteroid",
+            "range": "number"
+        },
+        {
+            "id": "doctoralStudent",
+            "label": "doctoralStudent",
+            "domain": "Person",
+            "range": "Person"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Astronomer",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ResearchProject",
+            "range": "Project"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Project",
+            "range": "Work"
+        }
+    ]
+}

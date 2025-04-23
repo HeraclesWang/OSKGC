@@ -1,0 +1,866 @@
+{
+    "title": "1_Athlete",
+    "id": "1_Athlete",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "AmericanFootballCoach",
+            "label": "AmericanFootballCoach"
+        },
+        {
+            "id": "AmericanFootballPlayer",
+            "label": "AmericanFootballPlayer"
+        },
+        {
+            "id": "AmericanFootballTeam",
+            "label": "AmericanFootballTeam"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Athlete",
+            "label": "Athlete"
+        },
+        {
+            "id": "BasketballLeague",
+            "label": "BasketballLeague"
+        },
+        {
+            "id": "BasketballPlayer",
+            "label": "BasketballPlayer"
+        },
+        {
+            "id": "BasketballTeam",
+            "label": "BasketballTeam"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Coach",
+            "label": "Coach"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "FootballLeagueSeason",
+            "label": "FootballLeagueSeason"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "HockeyTeam",
+            "label": "HockeyTeam"
+        },
+        {
+            "id": "IceHockeyLeague",
+            "label": "IceHockeyLeague"
+        },
+        {
+            "id": "IceHockeyPlayer",
+            "label": "IceHockeyPlayer"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "MartialArtist",
+            "label": "MartialArtist"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MemberOfParliament",
+            "label": "MemberOfParliament"
+        },
+        {
+            "id": "MusicalWork",
+            "label": "MusicalWork"
+        },
+        {
+            "id": "NationalAnthem",
+            "label": "NationalAnthem"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Position",
+            "label": "Position"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Province",
+            "label": "Province"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "SoccerClub",
+            "label": "SoccerClub"
+        },
+        {
+            "id": "SoccerLeague",
+            "label": "SoccerLeague"
+        },
+        {
+            "id": "SoccerManager",
+            "label": "SoccerManager"
+        },
+        {
+            "id": "SoccerPlayer",
+            "label": "SoccerPlayer"
+        },
+        {
+            "id": "SportsClub",
+            "label": "SportsClub"
+        },
+        {
+            "id": "SportsLeague",
+            "label": "SportsLeague"
+        },
+        {
+            "id": "SportsManager",
+            "label": "SportsManager"
+        },
+        {
+            "id": "SportsTeam",
+            "label": "SportsTeam"
+        },
+        {
+            "id": "Stadium",
+            "label": "Stadium"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TimeZone",
+            "label": "TimeZone"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Venue",
+            "label": "Venue"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "draftRound",
+            "label": "draftRound",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "stadium",
+            "label": "stadium",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "officialLanguage",
+            "label": "officialLanguage",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "position",
+            "label": "position",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "league",
+            "label": "league",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "club",
+            "label": "club",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "draftTeam",
+            "label": "draftTeam",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "utcOffset",
+            "label": "utcOffset",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "currentTeam",
+            "label": "currentTeam",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "ground",
+            "label": "ground",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "city",
+            "label": "city",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "timeZone",
+            "label": "timeZone",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "generalManager",
+            "label": "generalManager",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "formerTeam",
+            "label": "formerTeam",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "mostChampions",
+            "label": "mostChampions",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "currentClub",
+            "label": "currentClub",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "draftYear",
+            "label": "draftYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "ground",
+            "label": "ground",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "manager",
+            "label": "manager",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "league",
+            "label": "league",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "anthem",
+            "label": "anthem",
+            "domain": "Place",
+            "range": "Work"
+        },
+        {
+            "id": "debutTeam",
+            "label": "debutTeam",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthYear",
+            "label": "birthYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "season",
+            "label": "season",
+            "domain": "Organisation",
+            "range": "FootballLeagueSeason"
+        },
+        {
+            "id": "weight",
+            "label": "weight",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "coach",
+            "label": "coach",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "universityTeam",
+            "label": "universityTeam",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "activeYearsStartYear",
+            "label": "activeYearsStartYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "draftPick",
+            "label": "draftPick",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "chairman",
+            "label": "chairman",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "playerNumber",
+            "label": "playerNumber",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "youthclub",
+            "label": "youthclub",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "height",
+            "label": "height",
+            "domain": "Person",
+            "range": "number"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SoccerPlayer",
+            "range": "Athlete"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SoccerClub",
+            "range": "SportsClub"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SportsManager",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AmericanFootballCoach",
+            "range": "Coach"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "IceHockeyPlayer",
+            "range": "Athlete"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MartialArtist",
+            "range": "Athlete"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BasketballTeam",
+            "range": "SportsTeam"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AmericanFootballTeam",
+            "range": "SportsTeam"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SportsLeague",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BasketballLeague",
+            "range": "SportsLeague"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Stadium",
+            "range": "Venue"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SportsClub",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Athlete",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Position",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Venue",
+            "range": "Building"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "NationalAnthem",
+            "range": "MusicalWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Province",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "IceHockeyLeague",
+            "range": "SportsLeague"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BasketballPlayer",
+            "range": "Athlete"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicalWork",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "TimeZone",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "HockeyTeam",
+            "range": "SportsTeam"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SoccerManager",
+            "range": "SportsManager"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MemberOfParliament",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SoccerLeague",
+            "range": "SportsLeague"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Coach",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AmericanFootballPlayer",
+            "range": "Athlete"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SportsTeam",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        }
+    ]
+}

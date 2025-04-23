@@ -1,0 +1,57 @@
+[
+    {
+        "id": "2_Scientist_test_1",
+        "input_text": "British national Lady Anne Monson lived in the Kingdom of England whose capital was Winchester.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Lady Anne Monson, nationality, England]\n[England, capital, Winchester]\n[England, governmentType, Kingdom]"
+    },
+    {
+        "id": "2_Scientist_test_2",
+        "input_text": "Lady Anne Monson was born in Darlington which is located in Kingdom of England.",
+        "response": "Here is the output:\n\n[Lady Anne Monson, birthPlace, Darlington]:(Lady Anne Monson, birthPlace, Place), [Darlington, location, Kingdom of England]:(Place, location, Place), [Kingdom of England, governmentType, State]:(Place, governmentType, TopicalConcept)"
+    },
+    {
+        "id": "2_Scientist_test_3",
+        "input_text": "Kingdom of England is a unitary state form of government which is also Lady Anne Monson's nationality.",
+        "response": "[Kingdom of England, governmentType, unitary state form of government], [Lady Anne Monson, nationality, Kingdom of England]"
+    },
+    {
+        "id": "2_Scientist_test_4",
+        "input_text": "Lady Anne Monson, who was born in Darlington, died on 1776-02-18.",
+        "response": "Here is the output based on the input text:\n\n[Lady Anne Monson, birthPlace, Darlington], [Lady Anne Monson, birthDate, 1776-02-18], [Lady Anne Monson, deathDate, 1776-02-18]\n\nNote: The ontology schema does not include a relation for birthPlace or deathDate, but since these are common and important facts about a person, I have added them to the output."
+    },
+    {
+        "id": "2_Scientist_test_5",
+        "input_text": "India, at one time led by T. S. Thakur, was also where Lady Anne Monson lived most of her life.",
+        "response": "Here is the output based on the input text:\n\n[T. S. Thakur, leader, India]\n[India, leader, T. S. Thakur]\n[Lady Anne Monson, residence, India]\n\nNote that I've extracted the following triples based on the ontology schema:\n\n1. (T. S. Thakur, leader, India) - T. S. Thakur is the leader of India.\n2. (India, leader, T. S. Thakur) - India is led by T. S. Thakur.\n3. (Lady Anne Monson, residence, India) - Lady Anne Monson lived in India."
+    },
+    {
+        "id": "2_Scientist_test_6",
+        "input_text": "The Kingdom of England, the place where Lady Anne Monson was born, was a unitary state.",
+        "response": "[The Kingdom of England, leader, State], [The Kingdom of England, governmentType, GovernmentType], [Lady Anne Monson, birthPlace, The Kingdom of England], (State, IsA, PopulatedPlace), (GovernmentType, IsA, Type), (The Kingdom of England, IsA, PopulatedPlace)"
+    },
+    {
+        "id": "2_Scientist_test_7",
+        "input_text": "Lady Anne Monson lived from January 1, 1726 to February 18, 1776.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Lady Anne Monson, birthDate, January 1, 1726]\n[Lady Anne Monson, deathDate, February 18, 1776]"
+    },
+    {
+        "id": "2_Scientist_test_8",
+        "input_text": "Darlington, population 106000, was the birthplace of Lady Anne Monson.",
+        "response": "Here is the output based on the input text:\n\n[Lady Anne Monson, birthPlace, Darlington]\n[Darlington, populationTotal, 106000]\n[Lady Anne Monson, birthPlace, Town]\n[Town, IsA, Settlement]\n[Settlement, IsA, PopulatedPlace]\n[PopulatedPlace, IsA, Place]\n[Place, IsA, Thing]"
+    },
+    {
+        "id": "2_Scientist_test_9",
+        "input_text": "Lady Anne Monson was born in the Kingdom of England whose capital was previously Winchester.",
+        "response": "Here is the output based on the input text:\n\n[Lady Anne Monson, birthPlace, Kingdom of England]\n[Kingdom of England, capital, Winchester]\n[Kingdom of England, leader, Lady Anne Monson]\n(Lady Anne Monson, IsA, Person)\n(Kingdom of England, IsA, PopulatedPlace)"
+    },
+    {
+        "id": "2_Scientist_test_10",
+        "input_text": "Lady Anne Monson was born in Darlington, England making her nationality English.",
+        "response": "Here is the output:\n\n[Lady Anne Monson, birthPlace, Darlington], [Lady Anne Monson, nationality, England], [Lady Anne Monson, birthDate,?], [England, capital,?]"
+    },
+    {
+        "id": "2_Scientist_test_11",
+        "input_text": "Lady Anne Monson was born in Darlington on January 1st, 1726.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Lady Anne Monson, birthDate, January 1st, 1726]\n[Lady Anne Monson, birthPlace, Darlington]\n(Lady Anne Monson, IsA, Person)"
+    }
+]

@@ -1,0 +1,282 @@
+[
+    {
+        "id": "2_Artist_test_1",
+        "input_text": "Aaron Turner, a Black metal musician, is a musician in the Lotus Eaters band.",
+        "response": "[Aaron Turner, genre, Black metal], [Aaron Turner, associatedBand, Lotus Eaters]"
+    },
+    {
+        "id": "2_Artist_test_2",
+        "input_text": "Aaron Turner, who played with the band Twilight, started performing in 1995.",
+        "response": "[Aaron Turner, activeYearsStartYear, 1995], [Aaron Turner, associatedBand, Twilight]:(Person, activeYearsStartYear, Year), (Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_3",
+        "input_text": "Aaron Turner is an exponent of Doom metal and he plays the electric guitar.",
+        "response": "[Aaron Turner, genre, Doom metal], [Doom metal, instrument, Electric guitar]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_4",
+        "input_text": "Jazz music originated from blues music. Albennie Jones is a jazz performer.",
+        "response": "[Albennie Jones, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Jazz music, musicSubgenre, Blues music]:(MusicGenre, musicSubgenre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_5",
+        "input_text": "Aaron Turner is a singer whose music is Post-Metal.",
+        "response": "[Aaron Turner, genre, Post-Metal], [Post-Metal, musicSubgenre, Metal]:(MusicGenre, musicSubgenre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_6",
+        "input_text": "Aaron Turner played with the band Twilight and performed for House of Low Culture.",
+        "response": "[Twilight, associatedBand, Aaron Turner):(Organisation, associatedBand, MusicalArtist), [Aaron Turner, associatedMusicalArtist, House of Low Culture]:(MusicalArtist, associatedMusicalArtist, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_7",
+        "input_text": "Alison O'Donnell plays jazz music and the bodhrán.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Jazz music, instrument, Bodhrán]:(MusicGenre, instrument, Device)"
+    },
+    {
+        "id": "2_Artist_test_8",
+        "input_text": "Aaron Turner is a singer whose genre is Ambient music.",
+        "response": "[Aaron Turner, genre, Ambient music]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_9",
+        "input_text": "Aaron Turner, formerly of the Greymachine band, plays for Isis.",
+        "response": "[Aaron Turner, associatedBand, Greymachine):(MusicalArtist, associatedBand, Organisation), [Aaron Turner, associatedBand, Isis):(MusicalArtist, associatedBand, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_10",
+        "input_text": "Aaron Turner, an electric guitar player, plays Post-metal music.",
+        "response": "[Aaron Turner, instrument, Electric guitar], [Post-metal, genre, MusicGenre]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_11",
+        "input_text": "Aaron Turner plays the electric guitar and performs electroacoustic music.",
+        "response": "[Aaron Turner, instrument, Electric guitar]:(Person, instrument, Instrument), [Aaron Turner, genre, Electroacoustic music]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_12",
+        "input_text": "Aaron Turner performs doom metal music and played with the band Twilight.",
+        "response": "[Aaron Turner, genre, Doom metal], [Doom metal, musicSubgenre, Metal], [Aaron Turner, associatedBand, Twilight], [Aaron Turner, instrument, Instrument]"
+    },
+    {
+        "id": "2_Artist_test_13",
+        "input_text": "Aleksandra Kovač is a solo singer with the genre soul music.",
+        "response": "[Aleksandra Kovač, genre, Soul music]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_14",
+        "input_text": "Ahmet Ertegun died in the United States which is where African Americans are an ethnic group.",
+        "response": "[Ahmet Ertegun, deathPlace, United States], [United States, ethnicGroup, African Americans]"
+    },
+    {
+        "id": "2_Artist_test_15",
+        "input_text": "Aaron Turner plays electroacoustic music and is a singer.",
+        "response": "[Aaron Turner, instrument, Electroacoustic music], [Aaron Turner, profession, MusicalArtist]:(Person, occupation, PersonFunction), [Aaron Turner, background, Singer]:(Person, background, TopicalConcept)"
+    },
+    {
+        "id": "2_Artist_test_16",
+        "input_text": "Ace Wilder's musical genre is Hip hop music which has the sub genre called Gangsta rap.",
+        "response": "[Ace Wilder, genre, Hip hop music]:(MusicalArtist, genre, MusicGenre), [Hip hop music, musicSubgenre, Gangsta rap]:(MusicGenre, musicSubgenre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_17",
+        "input_text": "Alison O'Donnell is a jazz artist who plays the autoharp.",
+        "response": "[Alison O'Donnell, genre, Jazz]:([MusicalArtist, genre, MusicGenre]), [Alison O'Donnell, instrument, Autoharp]:([Person, instrument, Device])"
+    },
+    {
+        "id": "2_Artist_test_18",
+        "input_text": "Liselotte Grschebina died in Petah Tikva, Israel.",
+        "response": "[Liselotte Grschebina, deathPlace, Petah Tikva]:[Person, deathPlace, Place], [Petah Tikva, country, Israel]:[Place, country, Place], [Israel, isPartOf, Place]:[PopulatedPlace, IsA, Place]"
+    },
+    {
+        "id": "2_Artist_test_19",
+        "input_text": "Aaron Deer is an indie rock performer who plays the piano.",
+        "response": "[Aaron Deer, genre, Indie rock]:([MusicalArtist, genre, MusicGenre]), [Aaron Deer, instrument, Piano]:([Person, instrument, Device])"
+    },
+    {
+        "id": "2_Artist_test_20",
+        "input_text": "Born in Asunción, Agustín Barboza, is signed to Philips Records.",
+        "response": "[Agustín Barboza, birthPlace, Asunción], [Agustín Barboza, recordLabel, Philips Records]:(Person, birthPlace, Place), (Person, recordLabel, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_21",
+        "input_text": "Aaron Turner performs Post-metal music and played with the band Twilight.",
+        "response": "[Aaron Turner, genre, Post-metal], [Twilight, associatedBand, Aaron Turner]:(MusicalArtist, associatedBand, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_22",
+        "input_text": "Aaron Turner has played with Twilight and Isis.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:([MusicalArtist, associatedBand, Organisation]), [Aaron Turner, associatedBand, Isis]:([MusicalArtist, associatedBand, Organisation])"
+    },
+    {
+        "id": "2_Artist_test_23",
+        "input_text": "Aaron Turner is an artist for the band Isis and a musician in the Lotus Eaters band.",
+        "response": "[Aaron Turner, associatedBand, Isis], [Aaron Turner, associatedBand, Lotus Eaters], [Aaron Turner, profession, MusicalArtist], [Isis, musicalArtist, Aaron Turner], [Lotus Eaters, musicalArtist, Aaron Turner]"
+    },
+    {
+        "id": "2_Artist_test_24",
+        "input_text": "Aaron Turner has played for Old Man Gloom and Greymachine band.",
+        "response": "[Aaron Turner, associatedBand, Old Man Gloom], [Aaron Turner, associatedBand, Greymachine Band]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_25",
+        "input_text": "Aaron Turner is an artist for the band Isis and he played for Old Man Gloom.",
+        "response": "[Aaron Turner, associatedBand, Isis], [Aaron Turner, recordLabel, Organisation], [Isis, guitarist, Aaron Turner]:(MusicalArtist, associatedBand, Organisation), [Aaron Turner, musicalArtist, Artist], [Isis, musicalArtist, Artist]"
+    },
+    {
+        "id": "2_Artist_test_26",
+        "input_text": "Aaron Turner plays ambient music using an electric guitar.",
+        "response": "[Aaron Turner, genre, Ambient music], [Aaron Turner, instrument, Electric guitar]:(Person, genre, TopicalConcept), [Ambient music, instrument, Electric guitar]:(MusicGenre, instrument, Device)"
+    },
+    {
+        "id": "2_Artist_test_27",
+        "input_text": "Aaron Turner played Black Metal music with the band Twilight.",
+        "response": "[Twilight, genre, Black Metal], [Aaron Turner, associatedBand, Twilight], [Black Metal, musicSubgenre, MusicGenre]"
+    },
+    {
+        "id": "2_Artist_test_28",
+        "input_text": "Aaron Turner played for Old Man Gloom and the band Twilight.",
+        "response": "[Aaron Turner, associatedBand, Old Man Gloom]:([MusicalArtist, associatedBand, Organisation]), [Aaron Turner, associatedBand, Twilight]:([MusicalArtist, associatedBand, Organisation])"
+    },
+    {
+        "id": "2_Artist_test_29",
+        "input_text": "Aaron Turner is a musician in the Lotus Eaters band and uses the musical genre Avant-garde metal.",
+        "response": "[Aaron Turner, associatedBand, Lotus Eaters):(MusicalArtist, associatedBand, Organisation), [Aaron Turner, genre, Avant-garde metal):(MusicalArtist, genre, MusicGenre), [Avant-garde metal, musicSubgenre, Metal):(MusicGenre, musicSubgenre, MusicGenre]"
+    },
+    {
+        "id": "2_Artist_test_30",
+        "input_text": "Aaron Turner played with the band Twilight and he performs avant-garde metal music.",
+        "response": "[Twilight, associatedMusicalArtist, Aaron Turner):(Organisation, associatedMusicalArtist, Person), [Aaron Turner, genre, Avant-garde metal music]:(Person, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_31",
+        "input_text": "Aaron Turner played with the band Twilight known for performing black metal music.",
+        "response": "[Twilight, associatedBand, Aaron Turner], [Aaron Turner, associatedMusicalArtist, Aaron Turner], [Aaron Turner, instrument, Instrument], [Black metal, genre, MusicGenre], [Aaron Turner, genre, Black metal]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_32",
+        "input_text": "Aaron Turner is a musician in the Lotus Eaters band and he played for Old Man Gloom.",
+        "response": "[Aaron Turner, associatedBand, Lotus Eaters], [Aaron Turner, associatedBand, Old Man Gloom], [Lotus Eaters, genre, MusicGenre], [Old Man Gloom, genre, MusicGenre]"
+    },
+    {
+        "id": "2_Artist_test_33",
+        "input_text": "Aaron Turner played with the band Twilight and he plays progressive metal music.",
+        "response": "[Twilight, genre, Progressive metal], [Aaron Turner, associatedBand, Twilight], [Aaron Turner, genre, Progressive metal]"
+    },
+    {
+        "id": "2_Artist_test_34",
+        "input_text": "Aaron Turner played for Old Man Gloom and he also performed with the band Sumac.",
+        "response": "[Aaron Turner, associatedBand, Old Man Gloom]:([Person, associatedBand, Organisation]), [Aaron Turner, associatedBand, Sumac]:([Person, associatedBand, Organisation]), [Old Man Gloom, IsA, Band]:([Group, IsA, Organisation]), [Sumac, IsA, Band]:([Group, IsA, Organisation])"
+    },
+    {
+        "id": "2_Artist_test_35",
+        "input_text": "Electric guitarist Aaron Turner plays Black Metal.",
+        "response": "[Electric guitarist Aaron Turner, instrument, Guitar], [Black Metal, genre, MusicGenre]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_36",
+        "input_text": "Aaron Turner has played with both Twilight and the Lotus Eaters.",
+        "response": "[Aaron Turner, associatedBand, Twilight], [Aaron Turner, associatedBand, The Lotus Eaters]:(MusicalArtist, associatedBand, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_37",
+        "input_text": "Aaron Turner plays the electric guitar in avant-garde metal music.",
+        "response": "[Aaron Turner, instrument, Electric guitar]:([MusicalArtist], instrument, [Device]), [Avant-garde metal, genre, MusicGenre]:([TopicalConcept], genre, [TopicalConcept])"
+    },
+    {
+        "id": "2_Artist_test_38",
+        "input_text": "Aaron Turner played for Old Man Gloom in Aaron Turner's black metal music.",
+        "response": "[Aaron Turner, associatedBand, Old Man Gloom]:([Person, associatedBand, Organisation]), [Old Man Gloom, genre, Black metal]:([Organisation, genre, MusicGenre])"
+    },
+    {
+        "id": "2_Artist_test_39",
+        "input_text": "Aaron Turner plays the electric guitar with the band Twilight.",
+        "response": "[Aaron Turner, instrument, Electric guitar]:([MusicalArtist, instrument, Device]), [Aaron Turner, associatedBand, Twilight]:([Person, associatedBand, Organisation])"
+    },
+    {
+        "id": "2_Artist_test_40",
+        "input_text": "Aaron Turner's music genre is black metal, of which death metal is a fusion.",
+        "response": "[Aaron Turner, genre, Black metal], [Death metal, musicFusionGenre, Black metal]"
+    },
+    {
+        "id": "2_Artist_test_41",
+        "input_text": "Albennie Jones performs jazz music and one type of jazz fusion music is Afrobeat.",
+        "response": "[Albennie Jones, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Jazz music, musicFusionGenre, Afrobeat]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_42",
+        "input_text": "Albennie Jones is a jazz artist who was born in the United States.",
+        "response": "[Albennie Jones, genre, Jazz], [Albennie Jones, nationality, United States]"
+    },
+    {
+        "id": "2_Artist_test_43",
+        "input_text": "Abradab performs hip hop music which originated from jazz music.",
+        "response": "[Abradab, genre, Hip hop music], [Jazz music, musicFusionGenre, Hip hop music]"
+    },
+    {
+        "id": "2_Artist_test_44",
+        "input_text": "The musical genre Afrobeat is a fusion genre and contains elements of other genres such as Jazz, the music that Alison O'Donnell plays.",
+        "response": "[Alison O'Donnell, associatedMusicalArtist, Alison O'Donnell], [Jazz, musicFusionGenre, Afrobeat], [Alison O'Donnell, genre, Afrobeat]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_45",
+        "input_text": "Alison O'Donnell plays jazz music, of which funk is a derivative.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Funk, musicFusionGenre, Jazz music]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_46",
+        "input_text": "Alison O'Donnell performs jazz music under the record label, Static Caravan Recordings.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:([MusicalArtist, genre, MusicGenre]), [Alison O'Donnell, recordLabel, Static Caravan Recordings]:([Person, recordLabel, Organisation])"
+    },
+    {
+        "id": "2_Artist_test_47",
+        "input_text": "Alison O'Donnell's record label is Deram Records and she plays jazz music.",
+        "response": "[Alison O'Donnell, recordLabel, Deram Records]:(Person, recordLabel, Organisation), [Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre)"
+    },
+    {
+        "id": "2_Artist_test_48",
+        "input_text": "Albennie Jones, a jazz artist, is a solo singer.",
+        "response": "[Albennie Jones, genre, Jazz], [Albennie Jones, profession, MusicalArtist]"
+    },
+    {
+        "id": "2_Artist_test_49",
+        "input_text": "Alison O'Donnell plays jazz music and was once signed to the record label Fruits de Mer Records.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Alison O'Donnell, recordLabel, Fruits de Mer Records]:(Person, recordLabel, Organisation)"
+    },
+    {
+        "id": "2_Artist_test_50",
+        "input_text": "Alison O'Donnell is signed to the record label of Floating World Records and performs jazz music.",
+        "response": "[Alison O'Donnell, recordLabel, Floating World Records]:(Person, recordLabel, Organisation), [Jazz music, genre, MusicGenre]:(MusicGenre, IsA, TopicalConcept)"
+    },
+    {
+        "id": "2_Artist_test_51",
+        "input_text": "Alfredo Zitarrosa died in Montevideo in Uruguay.",
+        "response": "[Alfredo Zitarrosa, deathPlace, Montevideo], [Montevideo, country, Uruguay], [Montevideo, capital, Uruguay]:(Place, capital, Country)"
+    },
+    {
+        "id": "2_Artist_test_52",
+        "input_text": "Alfredo Zitarrosa was born in Uruguay where the leader is Raúl Fernando Sendic Rodríguez.",
+        "response": "[Alfredo Zitarrosa, birthPlace, Uruguay], [Uruguay, leader, Raúl Fernando Sendic Rodríguez]:(Place, leader, Person)"
+    },
+    {
+        "id": "2_Artist_test_53",
+        "input_text": "Alfredo Zitarrosa was born in Montevideo, Uruguay.",
+        "response": "[Alfredo Zitarrosa, birthPlace, Montevideo], [Montevideo, country, Uruguay]:(Place, country, Place)"
+    },
+    {
+        "id": "2_Artist_test_54",
+        "input_text": "Alfredo Zitarrosa died in Uruguay where the leader is Raúl Fernando Sendic Rodríguez.",
+        "response": "[Uruguay, leader, Raúl Fernando Sendic Rodríguez]:(Place, leader, Person), [Uruguay, nationality, Alfredo Zitarrosa]:(Person, nationality, Place)"
+    },
+    {
+        "id": "2_Artist_test_55",
+        "input_text": "Alfredo Zitarrosa was born in Tabaré Vázquez led Uruguay.",
+        "response": "[Tabaré Vázquez, leader, Uruguay], [Alfredo Zitarrosa, birthPlace, Uruguay]:(Person, birthPlace, Place)"
+    },
+    {
+        "id": "2_Artist_test_56",
+        "input_text": "Alfredo Zitarrosa died in Uruguay where the leader is Tabaré Vázquez.",
+        "response": "[Uruguay, leader, Tabaré Vázquez]:([Place, leader, Person]), [Alfredo Zitarrosa, deathPlace, Uruguay]:([Person, deathPlace, Place])"
+    }
+]

@@ -1,0 +1,358 @@
+{
+    "title": "3_ComicsCharacter",
+    "id": "3_ComicsCharacter",
+    "entity type": [
+        {
+            "id": "Actor",
+            "label": "Actor"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "Award",
+            "label": "Award"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Comedian",
+            "label": "Comedian"
+        },
+        {
+            "id": "ComicsCharacter",
+            "label": "ComicsCharacter"
+        },
+        {
+            "id": "ComicsCreator",
+            "label": "ComicsCreator"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "FictionalCharacter",
+            "label": "FictionalCharacter"
+        },
+        {
+            "id": "Film",
+            "label": "Film"
+        },
+        {
+            "id": "MemberOfParliament",
+            "label": "MemberOfParliament"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "TelevisionStation",
+            "label": "TelevisionStation"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "Writer",
+            "label": "Writer"
+        }
+    ],
+    "relation": [
+        {
+            "id": "firstAppearanceInFilm",
+            "label": "firstAppearanceInFilm",
+            "domain": "FictionalCharacter",
+            "range": "Work"
+        },
+        {
+            "id": "creator",
+            "label": "creator",
+            "domain": "FictionalCharacter",
+            "range": "Person"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "child",
+            "label": "child",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "voice",
+            "label": "voice",
+            "domain": "FictionalCharacter",
+            "range": "Person"
+        },
+        {
+            "id": "foundedBy",
+            "label": "foundedBy",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "award",
+            "label": "award",
+            "domain": "Person",
+            "range": "Award"
+        },
+        {
+            "id": "firstAired",
+            "label": "firstAired",
+            "domain": "FictionalCharacter",
+            "range": "Date"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "starring",
+            "label": "starring",
+            "domain": "FictionalCharacter",
+            "range": "Person"
+        },
+        {
+            "id": "starring",
+            "label": "starring",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "series",
+            "label": "series",
+            "domain": "FictionalCharacter",
+            "range": "Work"
+        },
+        {
+            "id": "distributor",
+            "label": "distributor",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "alternativeName",
+            "label": "alternativeName",
+            "domain": "FictionalCharacter",
+            "range": "FictionalCharacter"
+        },
+        {
+            "id": "lastAired",
+            "label": "lastAired",
+            "domain": "FictionalCharacter",
+            "range": "Date"
+        },
+        {
+            "id": "broadcastedBy",
+            "label": "broadcastedBy",
+            "domain": "FictionalCharacter",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "fullName",
+            "label": "fullName",
+            "domain": "FictionalCharacter",
+            "range": "FictionalCharacter"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Comedian",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ComicsCharacter",
+            "range": "FictionalCharacter"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ComicsCreator",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "TelevisionStation",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Writer",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Film",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MemberOfParliament",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Actor",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        }
+    ]
+}

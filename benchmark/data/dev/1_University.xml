@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_University" id="1_University_dev_1">
+      <text>The Swiss Psalm is the anthem of Switzerland.</text>
+      <triples>
+        <triple>
+          <sub>Switzerland</sub>
+          <rel>anthem</rel>
+          <obj>Swiss_Psalm</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>anthem</rel>
+          <obj>NationalAnthem</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_2">
+      <text>Johann Schneider-Ammann is the leader of Switzerland.</text>
+      <triples>
+        <triple>
+          <sub>Switzerland</sub>
+          <rel>leader</rel>
+          <obj>Johann_Schneider-Ammann</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_3">
+      <text>The Federal Chancellor of Switzerland helps to lead the country.</text>
+      <triples>
+        <triple>
+          <sub>Switzerland</sub>
+          <rel>leaderTitle</rel>
+          <obj>Federal_Chancellor_of_Switzerland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_4">
+      <text>Switzerland's legislature is formed in the Federal Assembly.</text>
+      <triples>
+        <triple>
+          <sub>Switzerland</sub>
+          <rel>legislature</rel>
+          <obj>Federal_Assembly</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>legislature</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_5">
+      <text>The sport Tennis has a Governing Body called the International Tennis Federation.</text>
+      <triples>
+        <triple>
+          <sub>Tennis</sub>
+          <rel>sportGoverningBody</rel>
+          <obj>International_Tennis_Federation</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sport</sub>
+          <rel>sportGoverningBody</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_6">
+      <text>The Visvesvaraya Technological University is in the city of Belgaum.</text>
+      <triples>
+        <triple>
+          <sub>Visvesvaraya_Technological_University</sub>
+          <rel>city</rel>
+          <obj>Belgaum</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_University" id="1_University_dev_7">
+      <text>The academic staff size of Accademia di Architettura di Mendrisio is 100.</text>
+      <triples>
+        <triple>
+          <sub>Accademia_di_Architettura_di_Mendrisio</sub>
+          <rel>academicStaffSize</rel>
+          <obj>100</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>academicStaffSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

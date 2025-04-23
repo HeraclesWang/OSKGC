@@ -1,0 +1,558 @@
+{
+    "title": "3_Astronaut",
+    "id": "3_Astronaut",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Animal",
+            "label": "Animal"
+        },
+        {
+            "id": "Astronaut",
+            "label": "Astronaut"
+        },
+        {
+            "id": "Award",
+            "label": "Award"
+        },
+        {
+            "id": "Bird",
+            "label": "Bird"
+        },
+        {
+            "id": "Chancellor",
+            "label": "Chancellor"
+        },
+        {
+            "id": "ChemicalSubstance",
+            "label": "ChemicalSubstance"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "CityDistrict",
+            "label": "CityDistrict"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "Event",
+            "label": "Event"
+        },
+        {
+            "id": "FictionalCharacter",
+            "label": "FictionalCharacter"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "Mascot",
+            "label": "Mascot"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "Mineral",
+            "label": "Mineral"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "Profession",
+            "label": "Profession"
+        },
+        {
+            "id": "Province",
+            "label": "Province"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "SocietalEvent",
+            "label": "SocietalEvent"
+        },
+        {
+            "id": "SpaceMission",
+            "label": "SpaceMission"
+        },
+        {
+            "id": "Species",
+            "label": "Species"
+        },
+        {
+            "id": "SportsLeague",
+            "label": "SportsLeague"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "Status",
+            "label": "Status"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "mission",
+            "label": "mission",
+            "domain": "Person",
+            "range": "Event"
+        },
+        {
+            "id": "mascot",
+            "label": "mascot",
+            "domain": "Organisation",
+            "range": "FictionalCharacter"
+        },
+        {
+            "id": "selectedByNasa",
+            "label": "selectedByNasa",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "utcOffset",
+            "label": "utcOffset",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "awards",
+            "label": "awards",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "senator",
+            "label": "senator",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "award",
+            "label": "award",
+            "domain": "Person",
+            "range": "Award"
+        },
+        {
+            "id": "commander",
+            "label": "commander",
+            "domain": "Event",
+            "range": "Person"
+        },
+        {
+            "id": "bird",
+            "label": "bird",
+            "domain": "Place",
+            "range": "Species"
+        },
+        {
+            "id": "occupation",
+            "label": "occupation",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "fossil",
+            "label": "fossil",
+            "domain": "Place",
+            "range": "Species"
+        },
+        {
+            "id": "status",
+            "label": "status",
+            "domain": "Person",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "representative",
+            "label": "representative",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "president",
+            "label": "president",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "timeInSpace",
+            "label": "timeInSpace",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "deathDate",
+            "label": "deathDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "competeIn",
+            "label": "competeIn",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "backupPilot",
+            "label": "backupPilot",
+            "domain": "Event",
+            "range": "Person"
+        },
+        {
+            "id": "gemstone",
+            "label": "gemstone",
+            "domain": "Place",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "operator",
+            "label": "operator",
+            "domain": "Event",
+            "range": "Organisation"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "servedAsChiefOfTheAstronautOfficeIn",
+            "label": "servedAsChiefOfTheAstronautOfficeIn",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "dateOfRetirement",
+            "label": "dateOfRetirement",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "higher",
+            "label": "higher",
+            "domain": "Award",
+            "range": "Award"
+        },
+        {
+            "id": "title",
+            "label": "title",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "ribbonAward",
+            "label": "ribbonAward",
+            "domain": "Person",
+            "range": "Award"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "alternativeName",
+            "label": "alternativeName",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "affiliation",
+            "label": "affiliation",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "crewMembers",
+            "label": "crewMembers",
+            "domain": "Event",
+            "range": "Person"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Chancellor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SportsLeague",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Astronaut",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Province",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Bird",
+            "range": "Animal"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CityDistrict",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SocietalEvent",
+            "range": "Event"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Profession",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Animal",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mascot",
+            "range": "FictionalCharacter"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SpaceMission",
+            "range": "SocietalEvent"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Status",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mineral",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        }
+    ]
+}

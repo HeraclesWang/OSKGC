@@ -1,0 +1,77 @@
+[
+    {
+        "id": "2_Astronaut_test_1",
+        "input_text": "Elliot See was born on July 23rd, 1927, and was a student at University of Texas at Austin.",
+        "response": "Here is the constructed knowledge graph based on the input text and the given ontology schema:\n\n[Elliot See, birthDate, 1927-07-23]:(Person, birthDate, Date)\n[Elliot See, almaMater, University of Texas at Austin]:(Person, almaMater, Organisation)"
+    },
+    {
+        "id": "2_Astronaut_test_2",
+        "input_text": "Alan Shepard died in California on July 21, 1998.",
+        "response": "[Alan Shepard, deathPlace, California]:(Person, deathPlace, Place)\n[Alan Shepard, deathDate, 1998-07-21]:(Person, deathDate, Date)"
+    },
+    {
+        "id": "2_Astronaut_test_3",
+        "input_text": "Alan Shepard was born in New Hampshire but died in California.",
+        "response": "[American, nationality, New Hampshire]:(Person, nationality, Place)\n[Alan Shepard, birthPlace, New Hampshire]:(Person, birthPlace, Place)\n[Alan Shepard, deathPlace, California]:(Person, deathPlace, Place)"
+    },
+    {
+        "id": "2_Astronaut_test_4",
+        "input_text": "The Apollo 11 program was organized by NASA and included Buzz Aldrin as one of its crew members.",
+        "response": "[Buzz Aldrin, selectedByNasa, 1969]:(Astronaut, selectedByNasa, Year), [Apollo 11 program, crewMembers, Buzz Aldrin]:(Event, crewMembers, Person)"
+    },
+    {
+        "id": "2_Astronaut_test_5",
+        "input_text": "Alan Shepard was born in New Hampshire and he served as the Chief of the Astronaut Office.",
+        "response": "Here is the constructed knowledge graph based on the given ontology schema and the input text:\n\n[Alan Shepard, birthPlace, New Hampshire]:(Person, birthPlace, Place)\n[Alan Shepard, servedAsChiefOfTheAstronautOfficeIn,?]:(Person, servedAsChiefOfTheAstronautOfficeIn, Year)\nNote: Since the year is not specified in the input text, I left it as a variable '?'."
+    },
+    {
+        "id": "2_Astronaut_test_6",
+        "input_text": "Nie Haisheng from the People's Republic of China was part of the mission Shenzhou 10.",
+        "response": "[Nie Haisheng, nationality, People's Republic of China]:(Person, nationality, Place)\n[Nie Haisheng, mission, Shenzhou 10]:(Person, mission, Event)\n[Nie Haisheng, Astronaut]:(Astronaut, IsA, Person)"
+    },
+    {
+        "id": "2_Astronaut_test_7",
+        "input_text": "Alan Shepard is an American citizen who was born in New Hampshire.",
+        "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Alan Shepard, nationality, United States]:(Person, nationality, Place)\n[Alan Shepard, birthPlace, New Hampshire]:(Person, birthPlace, Place)\n\nNote: Since the input text only mentions Alan Shepard's nationality and birthplace, the output only includes those specific relations."
+    },
+    {
+        "id": "2_Astronaut_test_8",
+        "input_text": "William Anders is a fighter pilot and member of Apollo 8's crew.",
+        "response": "Here is the output:\n\n[William Anders, occupation, fighter pilot]:(Person, occupation, PersonFunction)\n[William Anders, crewMembers, Apollo 8]:(Person, crewMembers, Event)\n[William Anders, astronaut]:(Astronaut, IsA, Person)\n[William Anders, IsA, Person]:(Astronaut, IsA, Person)"
+    },
+    {
+        "id": "2_Astronaut_test_9",
+        "input_text": "Elliot See died in St. Louis.",
+        "response": "[Elliott See, deathPlace, St. Louis]:(Person, deathPlace, Place)"
+    },
+    {
+        "id": "2_Astronaut_test_10",
+        "input_text": "Elliot See, who worked for NASA beginning in 1962, died in St. Louis.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Elliott See, birthDate, 1930-01-23]:(Astronaut, birthDate, Date)\n[Elliott See, workedFor, NASA]:(Astronaut, workedFor, Organisation)\n[Elliott See, deathPlace, St. Louis]:(Astronaut, deathPlace, Place)"
+    },
+    {
+        "id": "2_Astronaut_test_11",
+        "input_text": "Elliot See died in St. Louis, the Kingdom of France.",
+        "response": "[Elliott See, deathPlace, St. Louis]:(Person, deathPlace, Place), [Elliott See, deathPlace, St. Louis]:(Person, deathPlace, Place), [Elliott See, nationality, Kingdom of France]:(Person, nationality, Place)"
+    },
+    {
+        "id": "2_Astronaut_test_12",
+        "input_text": "Elliot See died on February 28, 1966, in St. Louis.",
+        "response": "[Elliott See, deathDate, 1966-02-28]:(Astronaut, deathDate, Date)\n[Elliott See, deathPlace, St. Louis]:(Astronaut, deathPlace, Place)"
+    },
+    {
+        "id": "2_Astronaut_test_13",
+        "input_text": "Elliot See was was born in Dallas and was a student at University of Texas at Austin.",
+        "response": "Here is the output:\n\n[Elliott See, birthPlace, Dallas]:(Person, birthPlace, Place)\n[Elliott See, almaMater, University of Texas at Austin]:(Person, almaMater, Organisation)"
+    },
+    {
+        "id": "2_Astronaut_test_14",
+        "input_text": "Elliot See graduated from the University of Texas at Austin, affiliated to the university of Texas system.",
+        "response": "Based on the given ontology schema and the input text, I extracted the following triples:\n\n[Elliott See, almaMater, University]\n[University, affiliation, Organisation]\n[University, name, University of Texas at Austin]\n[University, isPartOf, Organisation]\n[Organisation, name, University of Texas system]\n\nNote that I assumed \"University of Texas at Austin\" is a specific instance of the University entity type, and \"University of Texas system\" is an Organisation that the University is affiliated with. If this is not the correct interpretation, please let me know and I can revise the output."
+    },
+    {
+        "id": "2_Astronaut_test_15",
+        "input_text": "Elliot See, who is now dead, was born in Dallas.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Elliott See, birthPlace, Dallas]:(Person, birthPlace, Place)"
+    }
+]

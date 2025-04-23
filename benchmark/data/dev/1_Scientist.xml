@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Scientist" id="1_Scientist_dev_1">
+      <text>Darinka Dentcheva was born on January 1, 1958.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>birthDate</rel>
+          <obj>1958-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_2">
+      <text>Reşadiye is in the country of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Reşadiye</sub>
+          <rel>country</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_3">
+      <text>The time zone of Istanbul is Eastern European time.</text>
+      <triples>
+        <triple>
+          <sub>Istanbul</sub>
+          <rel>timeZone</rel>
+          <obj>Eastern_European_Time</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>timeZone</rel>
+          <obj>TimeZone</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_4">
+      <text>Humboldt University is Darinka Dentcheva's alma mater.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>almaMater</rel>
+          <obj>Humboldt_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_5">
+      <text>The long name for India is the Republic of India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>longName</rel>
+          <obj>Republic_of_India</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>longName</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_6">
+      <text>The chancellor of the University of Cambridge is David Sainsbury, Baron Sainsbury of Turville.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Cambridge</sub>
+          <rel>chancellor</rel>
+          <obj>David_Sainsbury,_Baron_Sainsbury_of_Turville</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>chancellor</rel>
+          <obj>Chancellor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_dev_7">
+      <text>The total area of water in New Jersey is 3544040000.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>areaOfWater</rel>
+          <obj>3544040000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

@@ -1,0 +1,302 @@
+[
+    {
+        "id": "3_Politician_test_1",
+        "sent": "Aaron S. Daggett was born in Maine and fought in the American Civil War. He was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[Person]\n{Maine}:[State]\n{American Civil War}:[MilitaryConflict]\n{Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_2",
+        "sent": "Aaron S. Daggett fought in the Battle of Fredericksburg during the American Civil War which had Jefferson Davis as one of its commanders.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Fredericksburg}:[MilitaryConflict], {American Civil War}:[MilitaryConflict], {Jefferson Davis}:[Politician]}"
+    },
+    {
+        "id": "3_Politician_test_3",
+        "sent": "The Battle of Salem Church, in which Aaron S. Daggett fought and in which Robert E. Lee was a commander, was part of the American Civil War.",
+        "response": "{Battle of Salem Church}:[Event]\n{Aaron S. Daggett}:[Person]\n{Robert E. Lee}:[Person]\n{American Civil War}:[MilitaryConflict]"
+    },
+    {
+        "id": "3_Politician_test_4",
+        "sent": "Aaron S. Daggett fought in the American Civil War, Battle of Fredericksburg and Abraham Lincoln was a commander in the Civil War.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {American Civil War}:[MilitaryConflict], {Battle of Fredericksburg}:[MilitaryConflict], {Abraham Lincoln}:[President]}"
+    },
+    {
+        "id": "3_Politician_test_5",
+        "sent": "Married to Ruth Ribicoff, Abraham A. Ribicoff was born in the United States, the country where Native Americans are one of the ethnic groups.",
+        "response": "{Ruth Ribicoff}:[PoliticianSpouse], {Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Native Americans}:[EthnicGroup]"
+    },
+    {
+        "id": "3_Politician_test_6",
+        "sent": "Abraham A. Ribicoff was born in the United States and was the Governor of Connecticut before being succeeded by Anthony J. Celebrezze.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Connecticut}:[State], {Anthony J. Celebrezze}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_7",
+        "sent": "Abraham A. Ribicoff was born and died in the United States of America. His wife is called Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Casey Ribicoff}:[PoliticianSpouse], {United States of America}:[Country]}"
+    },
+    {
+        "id": "3_Politician_test_8",
+        "sent": "Casey Ribicoff is the wife of the United States citizen Abraham A. Ribicoff, who was born in the United States.",
+        "response": "{Casey Ribicoff}:[PoliticianSpouse], {Abraham A. Ribicoff}:[Politician], {United States}:[Country]"
+    },
+    {
+        "id": "3_Politician_test_9",
+        "sent": "Abraham A. Ribicoff; was born in Connecticut, is married to Ruth Ribicoff, and worked as Governor of Connecticut.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Connecticut}:[State], {Ruth Ribicoff}:[PoliticianSpouse]}"
+    },
+    {
+        "id": "3_Politician_test_10",
+        "sent": "Abraham A. Ribicoff, born in New Britain (Connecticut), worked as the United States Secretary of Health, Education, and Welfare and was succeeded by Anthony J. Celebrezze.",
+        "response": "{Abraham A. Ribicoff}:[Politician:SecretaryOfState], {New Britain (Connecticut)}:[PopulatedPlace:City], {United States}:[Country], {Health, Education, and Welfare}:[GovernmentAgency], {Anthony J. Celebrezze}:[Politician:SecretaryOfState], {Connecticut}:[State]}"
+    },
+    {
+        "id": "3_Politician_test_11",
+        "sent": "The Battle of Gettysburg, where Aaron S. Daggett fought, was part of the American Civil War conflict, where Robert E. Lee was a commander.",
+        "response": "{Battle of Gettysburg}:[MilitaryConflict]\n{Aaron S. Daggett}:[MilitaryPerson]\n{American Civil War}:[MilitaryConflict]\n{Robert E. Lee}:[MilitaryPerson]"
+    },
+    {
+        "id": "3_Politician_test_12",
+        "sent": "The Battle of Cold Harbor, where Aaron S. Daggett took part, took place during the American Civil War where Jefferson Davis was a leader.",
+        "response": "{Battle of Cold Harbor}:[MilitaryConflict]\n{Aaron S. Daggett}:[MilitaryPerson]\n{American Civil War}:[MilitaryConflict]\n{Jefferson Davis}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_13",
+        "sent": "Born in Georgia (Vermont), Alvah Sabin, was a member of the Whig Party of the United States. Daniel Webster is the leader of the Whig Party in the United States.",
+        "response": "{Georgia (Vermont)}:[HistoricalRegion], {Alvah Sabin}:[Politician], {Daniel Webster}:[Politician], {Whig Party}:[PoliticalParty], {United States}:[Country]}"
+    },
+    {
+        "id": "3_Politician_test_14",
+        "sent": "The Battle of Salem Church in which Aaron S. Daggett fought occurred during the American Civil War where Robert E. Lee was a commander.",
+        "response": "{Battle of Salem Church}:[Event]\n{Aaron S. Daggett}:[Person]\n{American Civil War}:[MilitaryConflict]\n{Robert E. Lee}:[MilitaryPerson]"
+    },
+    {
+        "id": "3_Politician_test_15",
+        "sent": "Abraham A. Ribicoff, who was born in the United States worked as the United States Secretary of Health, Education, and Welfare, where he was succeded by John N. Dempsey.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {John N. Dempsey}:[Politician], {United States Secretary of Health, Education, and Welfare}:[PoliticalFunction]}"
+    },
+    {
+        "id": "3_Politician_test_16",
+        "sent": "Abraham A. Ribicoff who worked as the United States Secretary of Health, Education, and Welfare was born in Connecticut and had a wife called Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Connecticut}:[State], {Casey Ribicoff}:[PoliticianSpouse], {United States Secretary of Health, Education, and Welfare}:[PoliticalFunction]"
+    },
+    {
+        "id": "3_Politician_test_17",
+        "sent": "Abraham A. Ribicoff once worked for the United States Secretary of Health, Education, and Welfare office and was married to Chicago-born Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{United States Secretary of Health, Education, and Welfare}:[GovernmentAgency]\n{Chicago}:[City]\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_18",
+        "sent": "Abraham A. Ribicoff, born New Britain (Connecticut), once worked for the United States Secretary of Health, Education, and Welfare office and was succeeded by, John N. Dempsey.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {New Britain (Connecticut)}:[PopulatedPlace], {United States}:[Country], {Secretary of Health, Education, and Welfare}:[PoliticalFunction], {John N. Dempsey}:[Politician]}"
+    },
+    {
+        "id": "3_Politician_test_19",
+        "sent": "Born in the United States, Abraham A. Ribicoff, worked as the United States Secretary of Health, Education, and Welfare, and his wife is Casey Ribicoff.",
+        "response": "{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]:{SecretaryOfState}\n{Casey Ribicoff}:[PoliticianSpouse]\n{Abraham A. Ribicoff}:[Politician]:{SecretaryOfState}\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_20",
+        "sent": "United States born Abraham A. Ribicoff was married to Casey Ribicoff. The United States is home to Native Americans.",
+        "response": "{United States}:[Country], {Abraham A. Ribicoff}:[Politician], {Casey Ribicoff}:[PoliticianSpouse], {Native Americans}:[EthnicGroup]}"
+    },
+    {
+        "id": "3_Politician_test_21",
+        "sent": "The United States includes the ethnic group of African Americans and is the birthplace of Abraham A. Ribicoff who is married to Casey Ribicoff.",
+        "response": "{The United States}:[Country], {African Americans}:[EthnicGroup], {Abraham A. Ribicoff}:[Politician], {Casey Ribicoff}:[PoliticianSpouse]}"
+    },
+    {
+        "id": "3_Politician_test_22",
+        "sent": "In the United States, Abraham A. Ribicoff was born and later married Casey Ribicoff.",
+        "response": "{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_23",
+        "sent": "African Americans are an ethnic group in the United States, the birth place of the United States citizen Abraham A. Ribicoff.",
+        "response": "{African Americans}:[EthnicGroup]\n{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_24",
+        "sent": "New Britain (Connecticut) was the birthplace of Abraham A. Ribicoff who worked as Governor of Connecticut and was succeeded by, John N. Dempsey.",
+        "response": "{New Britain (Connecticut)}:[PopulatedPlace], {Abraham A. Ribicoff}:[Politician], {John N. Dempsey}:[Politician], {Governor of Connecticut}:[PoliticalFunction]}"
+    },
+    {
+        "id": "3_Politician_test_25",
+        "sent": "Native Americans are an ethnic group in the United States, the birthplace of Abraham A. Ribicoff was Connecticut.",
+        "response": "{Native Americans}:[EthnicGroup]\n{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]\n{Connecticut}:[State]"
+    },
+    {
+        "id": "3_Politician_test_26",
+        "sent": "United States born, Abraham A. Ribicoff, worked as the United States Secretary of Health, Education, and Welfare, and is married to Ruth Ribicoff.",
+        "response": "{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]\n{Ruth Ribicoff}:[PoliticianSpouse]\n{Secretary of Health, Education, and Welfare}:[Minister]"
+    },
+    {
+        "id": "3_Politician_test_27",
+        "sent": "Abraham A. Ribicoff was born in New Britain (Connecticut), united states where African Americans are an ethnic group.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{New Britain}:[PopulatedPlace]\n{Connecticut}:[State]\n{United States}:[Country]\n{African Americans}:[EthnicGroup]"
+    },
+    {
+        "id": "3_Politician_test_28",
+        "sent": "The United States includes the ethnic group of Native Americans and is the birthplace of Abraham A. Ribicoff, who holds the nationality of the United States.",
+        "response": "{The United States}:[Country], {Native Americans}:[EthnicGroup], {Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_29",
+        "sent": "In the United States, one of the national ethnic groups are the African Americans. The United States is where Abraham A. Ribicoff, who was married to Casey Ribicoff, died.",
+        "response": "{United States}:[Country]\n{African Americans}:[EthnicGroup]\n{Abraham A. Ribicoff}:[Politician]\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_30",
+        "sent": "Abraham A. Ribicoff was born in the United States and became Governor of Connecticut. Ruth Ribicoff is his spouse.",
+        "response": "{Abraham A. Ribicoff}:[Governor]\n{United States}:[Country]\n{Connecticut}:[State]\n{Ruth Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_31",
+        "sent": "Abraham A. Ribicoff, married to Ruth Ribicoff, was born in the United States, where African Americans are one of the ethnic groups.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{Ruth Ribicoff}:[PoliticianSpouse]\n{United States}:[Country]\n{African Americans}:[EthnicGroup]"
+    },
+    {
+        "id": "3_Politician_test_32",
+        "sent": "The Native Americans are an ethnic group in the United States where Abraham A. Ribicoff has nationality, having been born in New Britain (Connecticut).",
+        "response": "{Native Americans}:[EthnicGroup]\n{United States}:[Country]\n{Abraham A. Ribicoff}:[Politician]\n{New Britain}:[Town]\n{Connecticut}:[State]"
+    },
+    {
+        "id": "3_Politician_test_33",
+        "sent": "Casey Ribicoff, is the wife of Abraham A. Ribicoff (born in Connecticut), who, was the Governor of Connecticut.",
+        "response": "{Casey Ribicoff}:[PoliticianSpouse], {Abraham A. Ribicoff}:[Politician], {Connecticut}:[State]"
+    },
+    {
+        "id": "3_Politician_test_34",
+        "sent": "Abraham A. Ribicoff was born in the United States and worked as the United States Secretary of Health, Education, and Welfare. He was succeeded by Anthony J. Celebrezze.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {United States Secretary of Health, Education, and Welfare}:[PoliticalFunction], {Anthony J. Celebrezze}:[Politician], {United States}:[Country]}"
+    },
+    {
+        "id": "3_Politician_test_35",
+        "sent": "Abraham A. Ribicoff was born in Connecticut and worked as the United States Secretary of Health, Education, and Welfare before being succeeded by Anthony J. Celebrezze.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Connecticut}:[State], {United States Secretary of Health, Education, and Welfare}:[PoliticalFunction], {Anthony J. Celebrezze}:[Politician], {Connecticut}:[State]"
+    },
+    {
+        "id": "3_Politician_test_36",
+        "sent": "Abraham A. Ribicoff was born in the United States and was Governor of Connecticut. His successor was John N. Dempsey.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Connecticut}:[State], {John N. Dempsey}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_37",
+        "sent": "Abraham A. Ribicoff was born and died in the United States where African Americans are an ethnic group.",
+        "response": "{Abram A. Ribicoff}:[Politician], {United States}:[Country], {African Americans}:[EthnicGroup]"
+    },
+    {
+        "id": "3_Politician_test_38",
+        "sent": "Abraham A. Ribicoff was born in the United States. He was married to Casey Ribicoff and was succeeded by John N. Dempsey.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{United States}:[Country]\n{Casey Ribicoff}:[PoliticianSpouse]\n{John N. Dempsey}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_39",
+        "sent": "Abraham A. Ribicoff worked as Governor of Connecticut and his wife, Casey Ribicoff, was born in Chicago.",
+        "response": "{Abraham A. Ribicoff}:[Governor], {Connecticut}:[State], {Casey Ribicoff}:[Person], {Chicago}:[City]"
+    },
+    {
+        "id": "3_Politician_test_40",
+        "sent": "Abraham A. Ribicoff was born in Connecticut and is from the United States. His wife is Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{Connecticut}:[State]\n{United States}:[Country]\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_41",
+        "sent": "USA born Abraham A. Ribicoff was the Governor of Connecticut and was married to Casey Ribicoff.",
+        "response": "{USA}:[Country]\n{Abraham A. Ribicoff}:[Politician]\n{Connecticut}:[State]\n{Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "3_Politician_test_42",
+        "sent": "Abraham A. Ribicoff was born in the United States and was married to Casey Ribicoff. He died in New York City.",
+        "response": "{Abraham A. Ribicoff}:[Politician]\n{United States}:[Country]\n{Casey Ribicoff}:[PoliticianSpouse]\n{New York City}:[City]"
+    },
+    {
+        "id": "3_Politician_test_43",
+        "sent": "Maine born Aaron S. Daggett fought in the Battle of the Wilderness and was awarded the Purple Heart.",
+        "response": "{Maine}:[State], {Aaron S. Daggett}:[Person], {Battle of the Wilderness}:[MilitaryConflict], {Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_44",
+        "sent": "Purple Heart recipient Aaron S. Daggett was born in Maine and, most notably, fought in the Battle of Fredericksburg.",
+        "response": "{Purple Heart}:[Award]\n{Aaron S. Daggett}:[Person]\n{Maine}:[State]\n{Battle of Fredericksburg}:[MilitaryConflict]"
+    },
+    {
+        "id": "3_Politician_test_45",
+        "sent": "Aaron S. Daggett fought in the Battle of Antietam during the American Civil War which had Abraham Lincoln as one of its commanders.",
+        "response": "{Battle of Antietam}:[MilitaryConflict]\n{Aaron S. Daggett}:[Person]\n{American Civil War}:[MilitaryConflict]\n{Abraham Lincoln}:[President]"
+    },
+    {
+        "id": "3_Politician_test_46",
+        "sent": "Aaron S. Daggett took part in the Battle of Salem Church, which was part of the American Civil War, where Jefferson Davis was a commander.",
+        "response": "{Aaron S. Daggett}:[Person]\n{Battle of Salem Church}:[MilitaryConflict]\n{American Civil War}:[MilitaryConflict]\n{Jefferson Davis}:[Politician]"
+    },
+    {
+        "id": "3_Politician_test_47",
+        "sent": "The Battle of Antietam was part of the military conflict known as the American Civil War, where Aaron S. Daggett fought and Robert E. Lee was a commander.",
+        "response": "{Battle of Antietam}:[MilitaryConflict]\n{American Civil War}:[MilitaryConflict]\n{Aaron S. Daggett}:[MilitaryPerson]\n{Robert E. Lee}:[MilitaryPerson]"
+    },
+    {
+        "id": "3_Politician_test_48",
+        "sent": "Aaron S. Daggett fought in the Battle of Antietam which took place during the American civil war conflict in which Jefferson Davis was a commander.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Antietam}:[MilitaryConflict], {American Civil War}:[MilitaryConflict], {Jefferson Davis}:[Politician]}"
+    },
+    {
+        "id": "3_Politician_test_49",
+        "sent": "Born in Greene (Maine), Aaron S. Daggett, fought in the Battle of Gettysburg and was awarded the Purple Heart.",
+        "response": "{Greene (Maine)}:[PopulatedPlace]:{[City]}\n{Aaron S. Daggett}:[Person]:{[MilitaryPerson]}\n{Battle of Gettysburg}:[Event]:{[MilitaryConflict]}\n{Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_50",
+        "sent": "Abraham Lincoln was a commander during the American Civil War, which included the Battle of Cold Harbor in which Aaron S. Daggett participated.",
+        "response": "{Abraham Lincoln}:[President], {American Civil War}:[MilitaryConflict], {Battle of Cold Harbor}:[MilitaryConflict], {Aaron S. Daggett}:[MilitaryPerson]}"
+    },
+    {
+        "id": "3_Politician_test_51",
+        "sent": "Aaron S. Daggett fought in the Battle of Salem Church during the American Civil War in which Abraham Lincoln was a commander.",
+        "response": "{Battle of Salem Church}:[MilitaryConflict]\n{Aaron S. Daggett}:[Person]\n{American Civil War}:[MilitaryConflict]\n{Abraham Lincoln}:[President]"
+    },
+    {
+        "id": "3_Politician_test_52",
+        "sent": "Aaron S. Daggett fought at the Battle of Gettysburg during the American Civil War which had Jefferson Davis as one of its commanders.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Gettysburg}:[MilitaryConflict], {American Civil War}:[MilitaryConflict], {Jefferson Davis}:[Politician]}"
+    },
+    {
+        "id": "3_Politician_test_53",
+        "sent": "Aaron S. Daggett, born in Greene (Maine), fought in the American Civil War and was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[Person]\n{Greene (Maine)}:[PopulatedPlace]\n{American Civil War}:[MilitaryConflict]\n{Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_54",
+        "sent": "Robert E. Lee was a commander in the American Civil War when the Battle of Cold Harbor took place. Aaron S. Daggett fought in this battle.",
+        "response": "{Robert E. Lee}:[MilitaryPerson], {American Civil War}:[MilitaryConflict], {Battle of Cold Harbor}:[MilitaryConflict], {Aaron S. Daggett}:[MilitaryPerson]}"
+    },
+    {
+        "id": "3_Politician_test_55",
+        "sent": "The Battle of Gettysburg took place during the American Civil War which was commanded by Abraham Lincoln and had Aaron S. Daggett as one of its participants.",
+        "response": "{Gettysburg}:[Place]\n{American Civil War}:[MilitaryConflict]\n{Abraham Lincoln}:[President]\n{Aaron S. Daggett}:[MilitaryPerson]"
+    },
+    {
+        "id": "3_Politician_test_56",
+        "sent": "Greene (Maine) is the birthplace of Aaron S. Daggett who fought in the Battle of the Wilderness and was awarded the Purple Heart.",
+        "response": "{Greene (Maine)}:[PopulatedPlace], {Aaron S. Daggett}:[MilitaryPerson], {Battle of the Wilderness}:[MilitaryConflict], {Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_57",
+        "sent": "Aaron S. Daggett, who was born in Maine, fought in the Battle of Gettysburg and awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[Person]\n{Maine}:[State]\n{Battle of Gettysburg}:[MilitaryConflict]\n{Purple Heart}:[Award]"
+    },
+    {
+        "id": "3_Politician_test_58",
+        "sent": "Makis Voridis was the successor of Adonis Georgiadis, who was in office while Antonis Samaras was Prime Minister and Evangelos Venizelos was the deputy.",
+        "response": "{Makis Voridis}:[Politician], {Adonis Georgiadis}:[Politician], {Antonis Samaras}:[PrimeMinister], {Evangelos Venizelos}:[DeputyMinister]}"
+    },
+    {
+        "id": "3_Politician_test_59",
+        "sent": "Adonis Georgiadis was in office whilst Antonis Samaras, later succeeded by Konstantinos Mitsotakis, was Prime Minister and Evangelos Venizelos was his Deputy.",
+        "response": "{Adonis Georgiadis}:[Politician], {Antonis Samaras}:[PrimeMinister], {Konstantinos Mitsotakis}:[PrimeMinister], {Evangelos Venizelos}:[VicePrimeMinister]}"
+    },
+    {
+        "id": "3_Politician_test_60",
+        "sent": "Adonis Georgiadis was in office when Antonis Samaras served as Prime Minister and had Evangelos Venizelos for a Deputy. While Antonis Samaras, was in office while Konstantinos Mitsotakis was Prime Minister.",
+        "response": "{Adonis Georgiadis}:[Politician], {Antonis Samaras}:[PrimeMinister], {Evangelos Venizelos}:[Minister], {Konstantinos Mitsotakis}:[PrimeMinister]}"
+    }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2_ComicsCharacter_test_1",
+    "input_text": "Baymax is a character in the film Big Hero 6, which starred Ryan Potter.",
+    "response": "[Baymax, starring, Ryan Potter]:(FictionalCharacter, starring, Person), [Big Hero 6, firstAppearanceInFilm, Baymax]:(Work, firstAppearanceInFilm, FictionalCharacter)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_2",
+    "input_text": "The character Blockbuster was created by Tom Lyle and Carmine Infantino.",
+    "response": "[BLOCKbuster, creator, Tom Lyle]:(FictionalCharacter, creator, Person), [BLOCKbuster, creator, Carmine Infantino]:(FictionalCharacter, creator, Person)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_3",
+    "input_text": "The comic character Bolt, was created by Paris Cullins and Ernie Colón.",
+    "response": "[Bolt, creator, Paris Cullins]: (ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Ernie Colón]: (ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_4",
+    "input_text": "Dane Whitman Black Knight, was created by John Buscema, who is from the United States.",
+    "response": "[Dane Whitman Black Knight, creator, John Buscema):(ComicsCharacter, creator, ComicsCreator), [John Buscema, nationality, United States):(Person, nationality, Place)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_5",
+    "input_text": "The character Blockbuster was created by Gardner Fox and Roger Stern.",
+    "response": "[Blockbuster, creator, Gardner Fox]:(FictionalCharacter, creator, Person), [Blockbuster, creator, Roger Stern]:(FictionalCharacter, creator, Person)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_6",
+    "input_text": "The creators of Blockbuster (comics character) are Gardner Fox and Tom Lyle.",
+    "response": "[Blockbuster, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_7",
+    "input_text": "The comic book character Blockbuster was created by Roger Stern and Carmine Infantino.",
+    "response": "[Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, Person), [Blockbuster, creator, Carmine Infantino]:(ComicsCharacter, creator, Person)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_8",
+    "input_text": "The comic character Blockbuster was created by Roger Stern and Tom Lyle.",
+    "response": "[Blockbuster, creator, Roger Stern]:(ComicsCharacter, creator, ComicsCreator), [Blockbuster, creator, Tom Lyle]:(ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_9",
+    "input_text": "Blockbuster is a comic character that was created by Carmine Infantino and Gardner Fox.",
+    "response": "[BLOCKBUSTER, creator, Carmine Infantino]:(ComicsCharacter, creator, ComicsCreator), [BLOCKBUSTER, creator, Gardner Fox]:(ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_10",
+    "input_text": "The character Bolt was created by Ernie Colón and Dan Mishkin.",
+    "response": "[Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Dan Mishkin]:(ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_11",
+    "input_text": "Ernie Colón, one of the creators of the character Bolt, is a national of Puerto Rico.",
+    "response": "[Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Ernie Colón, nationality, Puerto Rico]:(ComicsCreator, nationality, Place)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_12",
+    "input_text": "Ernie Colón and Gary Cohn created the comic character Bolt.",
+    "response": "[Bolt, creator, Ernie Colón]:(ComicsCharacter, creator, ComicsCreator), [Bolt, creator, Gary Cohn]:(ComicsCharacter, creator, ComicsCreator)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_13",
+    "input_text": "Duncan Rouleau created Baymax, a character in Big Hero 6.",
+    "response": "[Baymax, creator, Duncan Rouleau]:(ComicsCharacter, creator, ComicsCreator), [Big Hero 6, starring, Baymax]:(Work, starring, FictionalCharacter)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_14",
+    "input_text": "Baymax is a character in Big Hero 6, Scott Adsit starred in the movie version of Big Hero 6.",
+    "response": "[Baymax, starring, Scott Adsit]:(FictionalCharacter, starring, Person), [Big Hero 6, firstAppearanceInFilm, Baymax]:(Work, firstAppearanceInFilm, FictionalCharacter)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_15",
+    "input_text": "Baymax is a character in the film Big Hero 6, which stars Alan Tudyk.",
+    "response": "[Baymax, starring, Alan Tudyk]:([FictionalCharacter, starring, Person]), [Big Hero 6, starring, Alan Tudyk]:([Work, starring, Person]), [Big Hero 6, firstAppearanceInFilm, Baymax]:([Work, firstAppearanceInFilm, FictionalCharacter])"
+  },
+  {
+    "id": "2_ComicsCharacter_test_16",
+    "input_text": "Baymax is a character in Big Hero 6 which also starred Maya Rudolph.",
+    "response": "[Baymax, starring, Maya Rudolph]:(FictionalCharacter, starring, Person), [Big Hero 6, starring, Baymax]:(Work, starring, FictionalCharacter)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_17",
+    "input_text": "Walt Disney Studios Motion pictures distributed Big Hero 6 film, where Baymax is a character.",
+    "response": "[Baymax, starring, Walt Disney Studios Motion pictures]:(FictionalCharacter, starring, Organisation), [Big Hero 6, distributor, Walt Disney Studios Motion pictures]:(Work, distributor, Organisation), [Baymax, firstAppearanceInFilm, Big Hero 6]:(FictionalCharacter, firstAppearanceInFilm, Work)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_18",
+    "input_text": "Baymax first appeared in Big Hero 6, starring Ryan Potter.",
+    "response": "[Baymax, firstAppearanceInFilm, Big Hero 6]:(FictionalCharacter, firstAppearanceInFilm, Film), [Big Hero 6, starring, Ryan Potter]:(Film, starring, Person)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_19",
+    "input_text": "Big Hero 6, starring Damon Wayans, Jr., features the character Baymax.",
+    "response": "[Baymax, starring, Damon Wayans, Jr.):(FictionalCharacter, starring, Person), [Big Hero 6, starring, Damon Wayans, Jr.):(Work, starring, Person)"
+  },
+  {
+    "id": "2_ComicsCharacter_test_20",
+    "input_text": "Baymax is a character in the film Big Hero 6 that starred Jamie Chung.",
+    "response": "[Baymax, starring, Jamie Chung]:(FictionalCharacter, starring, Person), [Big Hero 6, firstAppearanceInFilm, Baymax]:(Work, firstAppearanceInFilm, FictionalCharacter)"
+  }
+]

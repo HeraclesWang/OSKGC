@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1_Company_test_1",
+        "input_text": "GMA New Media is in the mass media industry.",
+        "response": "GMA New Media, industry, Mass Media"
+    },
+    {
+        "id": "1_Company_test_2",
+        "input_text": "Chinabank has a net income of 15100000000.",
+        "response": "[Chinabank, netIncome, 15100000000]"
+    },
+    {
+        "id": "1_Company_test_3",
+        "input_text": "AmeriGas was founded on 01-01-1959.",
+        "response": "[AmeriGas, foundingDate, 01-01-1959]"
+    },
+    {
+        "id": "1_Company_test_4",
+        "input_text": "The President is the leader title of the Philippines.",
+        "response": "[The President, leaderTitle, President]\n[Philippines, leaderTitle, The President]"
+    },
+    {
+        "id": "1_Company_test_5",
+        "input_text": "Michel Temer is the leader of Brazil.",
+        "response": "[Michel Temer, leader, LeaderOf]:(Person, leader, PersonFunction)\n[Michel Temer, leaderOf, Brazil]:(Person, leaderOf, Place)\n[Brazil, type, Country]:(Country, type, Type)"
+    },
+    {
+        "id": "1_Company_test_6",
+        "input_text": "Donabate is part of Swords (Dublin).",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Donabate, isPartOf, Swords]\n[Swords, isPartOf, Dublin]\n[Dublin, type, CapitalCity]"
+    },
+    {
+        "id": "1_Company_test_7",
+        "input_text": "Chinabank was founded on 08-16-1920.",
+        "response": "[Chinabank, foundingDate, 1920-08-16]:(Date, foundingDate, Date)"
+    },
+    {
+        "id": "1_Company_test_8",
+        "input_text": "Philippine Entertainment Portal's parent company is Summit Media.",
+        "response": "[Philippine Entertainment Portal, parentCompany, Summit Media]:(Organisation, parentCompany, Organisation)"
+    },
+    {
+        "id": "1_Company_test_9",
+        "input_text": "Chinabank is a public company.",
+        "response": "Here is the output:\n\n[Chinabank, type, Public]:(Company, type, CompanyType)"
+    },
+    {
+        "id": "1_Company_test_10",
+        "input_text": "Chinabank's location is the Philippines.",
+        "response": "Here is the output:\n\n[Chinabank, location, Philippines]:(Organisation, location, Place)"
+    },
+    {
+        "id": "1_Company_test_11",
+        "input_text": "Chinabank was founded in the Insular Government of the Philippine Islands.",
+        "response": "[Chinabank, foundationPlace, Insular Government of the Philippine Islands]"
+    },
+    {
+        "id": "1_Company_test_12",
+        "input_text": "Chinabank has 5594 employees.",
+        "response": "Here is the extracted triple based on the given ontology schema:\n\n[Chinabank, numberOfEmployees, 5594]\n\nNote: Chinabank is an Organisation, so the relation is based on the ontology schema's relation \"Organisation, numberOfEmployees, number\"."
+    },
+    {
+        "id": "1_Company_test_13",
+        "input_text": "Chinabank offers banking service.",
+        "response": "[Chinabank, service, Banking]"
+    },
+    {
+        "id": "1_Company_test_14",
+        "input_text": "Manila is Chinabank’s founding place.",
+        "response": "Here is the output:\n\n(Chinabank, location, Manila)"
+    },
+    {
+        "id": "1_Company_test_15",
+        "input_text": "Chinabank has 295 locations.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Chinabank, numberOfLocations, 295]"
+    },
+    {
+        "id": "1_Company_test_16",
+        "input_text": "The net income of AmeriGas is 211200000.",
+        "response": "[AmeriGas, organisation, netIncome, 211200000]"
+    },
+    {
+        "id": "1_Company_test_17",
+        "input_text": "AmeriGas is located in King of Prussia (Pennsylvania).",
+        "response": "[AmeriGas, location, King of Prussia]\n[AmeriGas, location, Pennsylvania]\n[AmeriGas, type, Company]\n[King of Prussia, type, Place]\n[King of Prussia, location, Pennsylvania]\n[King of Prussia, type, PopulatedPlace]\n[King of Prussia, type, Settlement]\n[King of Prussia, type, Town]\n[King of Prussia, type, City]\n[King of Prussia, type, CapitalCity]"
+    },
+    {
+        "id": "1_Company_test_18",
+        "input_text": "AmeriGas is in the energy industry.",
+        "response": "[AmeriGas, industry, Energy]"
+    },
+    {
+        "id": "1_Company_test_19",
+        "input_text": "AmeriGas works in the country of the United States.",
+        "response": "[AmeriGas, serves, United States]:(Company, serves, Country)"
+    },
+    {
+        "id": "1_Company_test_20",
+        "input_text": "AmeriGas has 8500 employees.",
+        "response": "[AmeriGas, numberOfEmployees, 8500]"
+    },
+    {
+        "id": "1_Company_test_21",
+        "input_text": "AmeriGas provides its services in the United States.",
+        "response": "[AmeriGas, serves, United States]\n\nNote: The output is in the format [Entity, relation, Value], where Entity is the subject, relation is the predicate, and Value is the object."
+    },
+    {
+        "id": "1_Company_test_22",
+        "input_text": "AmeriGas has an operating income of $ 380700000.",
+        "response": "[AmeriGas, operatingIncome, 380700000]"
+    }
+]

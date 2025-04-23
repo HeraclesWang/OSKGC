@@ -1,0 +1,242 @@
+[
+  {
+    "id": "2_Airport_test_1",
+    "input_text": "Located in Punjab (Pakistan), Allama Iqbal International Airport has a runway length of 3360.12 metres.",
+    "response": "[Allama Iqbal International Airport, location, Punjab], [Allama Iqbal International Airport, location, Pakistan], [Allama Iqbal International Airport, runwayLength, 3360.12]:(Airport, location, AdministrativeRegion), (Airport, location, Country), (Airport, runwayLength, number)"
+  },
+  {
+    "id": "2_Airport_test_2",
+    "input_text": "Angola International Airport is located in Ícolo e Bengo, Angola.",
+    "response": "[Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place), [Angola International Airport, location, Angola]:(Airport, location, Country)"
+  },
+  {
+    "id": "2_Airport_test_3",
+    "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York) which is part of Harrietstown.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City), [Saranac Lake, partOf, Harrietstown]:(City, partOf, Town), [Harrietstown, country, New York]:(Town, country, State), [New York, state, United States]:(State, state, Country)"
+  },
+  {
+    "id": "2_Airport_test_4",
+    "input_text": "MotorSport Vision operates the Bedford Aerodrome located in Thurleigh.",
+    "response": "[MotorSport Vision, operates, Bedford Aerodrome]:(Company, operates, ArchitecturalStructure), [Bedford Aerodrome, location, Thurleigh]:(Airport, location, Village)"
+  },
+  {
+    "id": "2_Airport_test_5",
+    "input_text": "Abilene Regional Airport, located 546 metres above sea level, has the location identifier ABI.",
+    "response": "[Abilene Regional Airport, elevationAboveTheSeaLevelInMetres, 546]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Abilene Regional Airport, locationIdentifier, ABI]:(Airport, locationIdentifier, Code)"
+  },
+  {
+    "id": "2_Airport_test_6",
+    "input_text": "The Bedford Aerodrome is located in Thurleigh and has an ICAO location identifier of EGBF.",
+    "response": "[Bedford Aerodrome, location, Thurleigh]:(Airport, location, Place)\n[Bedford Aerodrome, icaoLocationIdentifier, EGBF]:(Airport, icaoLocationIdentifier, Code)"
+  },
+  {
+    "id": "2_Airport_test_7",
+    "input_text": "Allama Iqbal International Airport in Punjab (Pakistan), is operated by Pakistan Civil Aviation Authority.",
+    "response": "Here is the output:\n\n[Allama Iqbal International Airport, location, Pakistan]:(Airport, location, Country)\n[Allama Iqbal International Airport, operatingOrganisation, Pakistan Civil Aviation Authority]:(Airport, operatingOrganisation, GovernmentAgency)\n[Allama Iqbal International Airport, location, Punjab]:(Airport, location, Province)\n[Pakistan Civil Aviation Authority, jurisdiction, Punjab]:(GovernmentAgency, jurisdiction, AdministrativeRegion)\n[Pakistan Civil Aviation Authority, headquarter, Allama Iqbal International Airport]:(GovernmentAgency, headquarter, Airport)"
+  },
+  {
+    "id": "2_Airport_test_8",
+    "input_text": "Afonso Pena International Airport serves Curitiba, which is part of Paraná state.",
+    "response": "[Afonso Pena International Airport, serves, Curitiba]:(Airport, serves, City), [Curitiba, isPartOf, Paraná]:(City, isPartOf, State)"
+  },
+  {
+    "id": "2_Airport_test_9",
+    "input_text": "Al Asad airbase is located in the Al Anbar province in Iraq and has a runway length of 3990.",
+    "response": "[Al Asad airbase, location, Al Anbar province]:(Airport, location, Place), [Al Asad airbase, runwayLength, 3990]:(Airport, runwayLength, number)"
+  },
+  {
+    "id": "2_Airport_test_10",
+    "input_text": "The Antwerp International Airport, which is 12 metres above sea level, is operated by the Flemish Government.",
+    "response": "[Antwerp International Airport, elevationAboveTheSeaLevelInMetres, 12]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Antwerp International Airport, operatingOrganisation, Flemish Government]:(Airport, operatingOrganisation, GovernmentAgency)"
+  },
+  {
+    "id": "2_Airport_test_11",
+    "input_text": "The runway length of Al-Taqaddum air base is 4019 and it serves the city of Fallujah.",
+    "response": "[Al-Taqaddum air base, runwayLength, 4019]:(Airport, runwayLength, number), [Al-Taqaddum air base, serves, Fallujah]:(Airport, serves, City)"
+  },
+  {
+    "id": "2_Airport_test_12",
+    "input_text": "The Appleton International Airport serves the city of Appleton (Wisconsin) which is part of Kimberly (Wisconsin).",
+    "response": "Here is the output:\n\n[Appleton International Airport, location, Appleton]\n[Appleton, country, United States]\n[Appleton, isPartOf, Kimberly]\n[Kimberly, country, United States]\n\nNote that the output follows the exact format specified in the example, with no additional text or explanations."
+  },
+  {
+    "id": "2_Airport_test_13",
+    "input_text": "Adirondack Regional Airport is 507 metres above sea level and the 1st runway is 6573 ft in length.",
+    "response": "[Adirondack Regional Airport, 1stRunwayLengthFeet, 6573]:(Airport, 1stRunwayLengthFeet, number), [Adirondack Regional Airport, elevationAboveTheSeaLevelInMetres, 507]:(Airport, elevationAboveTheSeaLevelInMetres, number)"
+  },
+  {
+    "id": "2_Airport_test_14",
+    "input_text": "The Adolfo Suárez Madrid–Barajas Airport which has a runway length of 3500 is located in Paracuellos de Jarama.",
+    "response": "[Adolfo Suárez Madrid–Barajas Airport, location, Paracuellos de Jarama]\n[Adolfo Suárez Madrid–Barajas Airport, runwayLength, 3500]"
+  },
+  {
+    "id": "2_Airport_test_15",
+    "input_text": "Ardmore Airport in New Zealand, is elevated 34 metres above sea level and its 3rd runway is 1960 feet long.",
+    "response": "[Ardmore Airport, elevationAboveTheSeaLevel, 34]:(Airport, elevationAboveTheSeaLevel, number), [Ardmore Airport, 3rdRunwayLengthFeet, 1960]:(Airport, 3rdRunwayLengthFeet, number)"
+  },
+  {
+    "id": "2_Airport_test_16",
+    "input_text": "Andrews County Airport is located in Texas where they speak English.",
+    "response": "[Andrews County Airport, location, Texas]:(Airport, location, State), [Texas, language, English]:(State, language, Language)"
+  },
+  {
+    "id": "2_Airport_test_17",
+    "input_text": "The ICAO location identifier for the Bedford Aerodrome is EGBF and the aerodrome has a runway surface made of concrete.",
+    "response": "[Bedford Aerodrome, icaoLocationIdentifier, EGBF]:(Airport, icaoLocationIdentifier, Code)\n[Bedford Aerodrome, runwaySurfaceType, Concrete]:(Runway, runwaySurfaceType, ChemicalSubstance)"
+  },
+  {
+    "id": "2_Airport_test_18",
+    "input_text": "Al Asad Airbase is operated by the United States Air Force and has a runway named 09L/27R.",
+    "response": "[Al Asad Airbase, runwayName, 09L/27R]:(Airport, runwayName, Runway), [Al Asad Airbase, operatingOrganisation, United States Air Force]:(Airport, operatingOrganisation, MilitaryUnit)"
+  },
+  {
+    "id": "2_Airport_test_19",
+    "input_text": "Angola International Airport is 159 metres above the sea level and the 1st runway has an asphalt surface.",
+    "response": "[Africa Angola International Airport, elevationAboveTheSeaLevelInMetres, 159]:(Airport, elevationAboveTheSeaLevelInMetres, number)\n[Africa Angola International Airport, 1stRunwaySurfaceType, Asphalt]:(Airport, 1stRunwaySurfaceType, TopicalConcept)"
+  },
+  {
+    "id": "2_Airport_test_20",
+    "input_text": "Amsterdam airport Schiphol is -3.3528 above sea level and its first runway is known as Number 18.",
+    "response": "[Amsterdam airport Schiphol, elevationAboveTheSeaLevel, -3.3528]:(Airport, elevationAboveTheSeaLevel, number)\n[Amsterdam airport Schiphol, 1stRunwayName, Number 18]:(Airport, 1stRunwayName, ArchitecturalStructure)"
+  },
+  {
+    "id": "2_Airport_test_21",
+    "input_text": "Al Asad Airbase in Iraq has a runway length of 3090.",
+    "response": "Here is the output based on the given ontology schema and example text:\n\n[Al Asad Airbase, location, Iraq]\n(Airport, location, Country)\n[Al Asad Airbase, runwayLength, 3090]\n(Airport, runwayLength, number)"
+  },
+  {
+    "id": "2_Airport_test_22",
+    "input_text": "The Schiphol Group are the operators of Amsterdam Airport Schiphol, which is -3.3528 above sea level.",
+    "response": "[Schiphol Group, hubAirport, Amsterdam Airport Schiphol]:(Organisation, hubAirport, ArchitecturalStructure), [Amsterdam Airport Schiphol, elevationAboveTheSeaLevel, -3.3528]:(Airport, elevationAboveTheSeaLevel, number)"
+  },
+  {
+    "id": "2_Airport_test_23",
+    "input_text": "The ICAO location identifier for Bedford Aerodrome is EGBF with its runway length of 1095.",
+    "response": "[Bedford Aerodrome, icaoLocationIdentifier, EGBF]:(Airport, icaoLocationIdentifier, Code)\n[Bedford Aerodrome, runwayLength, 1095]:(ArchitecturalStructure, runwayLength, number)"
+  },
+  {
+    "id": "2_Airport_test_24",
+    "input_text": "Poaceae belongs to the division of flowering plants and it is the surface type of the second runway of Ardmore Airport, New Zealand.",
+    "response": "[Ardmore Airport, 2ndRunwaySurfaceType, Poaceae]\n[Poaceae, division, Flowering plant]\n\nNote: The output follows the example format, extracting the relevant information from the input text and mapping it to the ontology schema."
+  },
+  {
+    "id": "2_Airport_test_25",
+    "input_text": "Abilene (Texas) is in Texas and is served by the Abilene regional airport.",
+    "response": "[Abilene, location, Texas]:(City, location, State), [Abilene, servedBy, Abilene Regional Airport]:(City, servedBy, Airport), [Abilene Regional Airport, location, Abilene]:(Airport, location, City)"
+  },
+  {
+    "id": "2_Airport_test_26",
+    "input_text": "Abilene Regional Airportis 546 metres above sea level and has a 1st runway made of asphalt.",
+    "response": "[Abilene Regional Airport, elevationAboveTheSeaLevel, 546]:(Abilene Regional Airport, elevationAboveTheSeaLevel, number), [Abilene Regional Airport, 1stRunwaySurfaceType, Asphalt]:(Abilene Regional Airport, 1stRunwaySurfaceType, RunwaySurfaceType)"
+  },
+  {
+    "id": "2_Airport_test_27",
+    "input_text": "Abilene (Texas) is part of Taylor County (Texas) and served by Abilene regional airport.",
+    "response": "Here is the output based on the input text:\n\n[Abilene, isPartOf, Taylor County]\n[Taylor County, isPartOf, Texas]\n[Abilene, servedBy, Abilene regional airport]\n[Abilene regional airport, location, Texas]\n\nNote: The output follows the same format as the example, with no additional text or explanations."
+  },
+  {
+    "id": "2_Airport_test_28",
+    "input_text": "The Abilene regional airport serves Abilene (Texas), Jones County (Texas).",
+    "response": "[Abilene Regional Airport, location, Abilene]:(Airport, location, City), [Abilene, isPartOf, Texas]:(City, isPartOf, State), [Abilene Regional Airport, serves, Abilene]:(Airport, serves, City), [Abilene Regional Airport, location, Texas]:(Airport, location, State), [Jones County, isPartOf, Texas]:(County, isPartOf, State)"
+  },
+  {
+    "id": "2_Airport_test_29",
+    "input_text": "Abilene Regional Airport serves the city of Abilene (Texas), United States.",
+    "response": "[Abilene Regional Airport, serves, Abilene]:(Airport, serves, City), [Abilene, isPartOf, Texas]:(City, isPartOf, State), [Texas, isPartOf, United States]:(State, isPartOf, Country)"
+  },
+  {
+    "id": "2_Airport_test_30",
+    "input_text": "546 m above sea level, the length of the 1st runway at Abilene Regional airport is 3678 feet.",
+    "response": "[Abilene Regional Airport, elevationAboveTheSeaLevelInMetres, 546]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Abilene Regional Airport, 1stRunwayLengthFeet, 3678]:(Airport, 1stRunwayLengthFeet, number)"
+  },
+  {
+    "id": "2_Airport_test_31",
+    "input_text": "The Abilene Regional Airport lies 546 metres above sea level and its third runway is 7202 feet long.",
+    "response": "[Abilene Regional Airport, elevationAboveTheSeaLevelInMetres, 546]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Abilene Regional Airport, 3rdRunwayLengthFeet, 7202]:(Airport, 3rdRunwayLengthFeet, number)"
+  },
+  {
+    "id": "2_Airport_test_32",
+    "input_text": "Lake Placid (New York) is part of New York and is served by the Adirondack Regional Airport.",
+    "response": "[Lake Placid, isPartOf, New York]:(PopulatedPlace, isPartOf, State)\n[Adirondack Regional Airport, serves, Lake Placid]:(ArchitecturalStructure, serves, PopulatedPlace)"
+  },
+  {
+    "id": "2_Airport_test_33",
+    "input_text": "Adirondack Regional Airport is 507 metres above sea level and has SLK as its location identifier.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Adirondack Regional Airport, elevationAboveTheSeaLevelInMetres, 507]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Adirondack Regional Airport, locationIdentifier, SLK]:(Airport, locationIdentifier, Code)"
+  },
+  {
+    "id": "2_Airport_test_34",
+    "input_text": "Adirondack Regional Airport serves the city of Lake Placid (New York) which is part of Essex County (New York).",
+    "response": "Here is the output:\n\n[Adirondack Regional Airport, serves, Lake Placid]:(Airport, serves, City), [Lake Placid, isPartOf, Essex County]:(City, isPartOf, County), [Essex County, country, New York]:(County, country, State)"
+  },
+  {
+    "id": "2_Airport_test_35",
+    "input_text": "Adirondack Regional Airport is 507 metres above sea level and is located in Harrietstown.",
+    "response": "Here is the output:\n\n[Adirondack Regional Airport, location, Harrietstown]:(Airport, location, Place), [Adirondack Regional Airport, elevationAboveTheSeaLevelInMetres, 507]:(Airport, elevationAboveTheSeaLevelInMetres, number)"
+  },
+  {
+    "id": "2_Airport_test_36",
+    "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York), in the United States.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Adirondack Regional Airport, serves, Saranac Lake]\n[Airport, serves, City]\n[Saranac Lake, isPartOf, United States]\n[United States, administrativeRegion, Country]\n[Adirondack Regional Airport, location, Saranac Lake]\n[Airport, location, Place]\n[Saranac Lake, city, Place]\n[United States, country, Country]\n\nNote: The output follows the same format as the example, with no additional text or explanations."
+  },
+  {
+    "id": "2_Airport_test_37",
+    "input_text": "Adirondack Regional Airport serves Lake Placid (New York) and the city of Saranac Lake (New York).",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Adirondack Regional Airport, serves, Lake Placid]\n[Adirondack Regional Airport, serves, Saranac Lake]\n[Airport, serves, PopulatedPlace]\n[Adirondack Regional Airport, location, Place]\n[Place, isPartOf, Place]\n[New York, isPartOf, Country]\n[Country, IsA, PopulatedPlace]\n[Adirondack Regional Airport, IsA, Airport]\n[Airport, IsA, ArchitecturalStructure]"
+  },
+  {
+    "id": "2_Airport_test_38",
+    "input_text": "Adirondack Regional Airport serves the city of Saranac Lake (New York), Essex County (New York).",
+    "response": "[Adirondack Regional Airport, serves, Saranac Lake]:(Airport, serves, City), [Saranac Lake, isPartOf, Essex County]:(City, isPartOf, County), [Essex County, isPartOf, New York]:(County, isPartOf, State), [New York, country, United States]:(State, country, Country)"
+  },
+  {
+    "id": "2_Airport_test_39",
+    "input_text": "Aarhus Airport is located in Tirstrup, Denmark.",
+    "response": "[Aarhus Airport, location, Tirstrup]\n[Aarhus Airport, locationIdentifier, DK AHH]\n[Tirstrup, isPartOf, Denmark]\n[Denmark, administrativeRegion, Europe]"
+  },
+  {
+    "id": "2_Airport_test_40",
+    "input_text": "The location of Aarhus Airport is Tirstrup, Denmark.",
+    "response": "[Aarhus Airport, location, Tirstrup]\n[Tirstrup, isPartOf, Denmark]\n[Denmark, IsA, Country]"
+  },
+  {
+    "id": "2_Airport_test_41",
+    "input_text": "Allama Iqbal International Airport is located in Punjab (Pakistan), which is led by the Provincial Assembly of the Punjab (Pakistan).",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Allama Iqbal International Airport, location, Punjab]:(Airport, location, Place)\n[Punjab, isPartOf, Pakistan]:(Place, isPartOf, Place)\n[Punjab, ledBy, Provincial Assembly of the Punjab]:(Place, ledBy, Organisation)\n[Provincial Assembly of the Punjab, ledBy, Pakistan]:(Organisation, ledBy, Country)\n[Allama Iqbal International Airport, serves, Punjab]:(Airport, serves, Place)\n[Allama Iqbal International Airport, location, Pakistan]:(Airport, location, Place)"
+  },
+  {
+    "id": "2_Airport_test_42",
+    "input_text": "Allama Iqbal International Airport has a runway length of 3310 and is found in Punjab (Pakistan).",
+    "response": "[Allama Iqbal International Airport, location, Pakistan]:(Airport, location, Country), [Allama Iqbal International Airport, runwayLength, 3310]:(Airport, runwayLength, number), [Allama Iqbal International Airport, location, Punjab]:(Airport, location, Place), [Punjab, isPartOf, Pakistan]:(Place, isPartOf, Place)"
+  },
+  {
+    "id": "2_Airport_test_43",
+    "input_text": "Aarhus airport serves the city of Aarhus whose leader is Jacob Bundsgaard.",
+    "response": "[Aarhus Airport, serves, Aarhus]: (Airport, serves, City), [Aarhus, leader, Jacob Bundsgaard]: (City, leader, Person)"
+  },
+  {
+    "id": "2_Airport_test_44",
+    "input_text": "Alpena County Regional Airport has an elevation of 210 metres above sea level and is located at Wilson Township (Alpena County, Michigan).",
+    "response": "[Alpena County Regional Airport, elevationAboveTheSeaLevelInMetres, 210]:(Airport, elevationAboveTheSeaLevelInMetres, number), [Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Place)"
+  },
+  {
+    "id": "2_Airport_test_45",
+    "input_text": "Alpena County Regional Airport is found in Wilson Township (Alpena County, Michigan), United States.",
+    "response": "Here is the constructed knowledge graph based on the input text and the given ontology schema:\n\n[Alpena County Regional Airport, location, Wilson Township]\n:(Airport, location, Town)\n[Wilson Township, country, United States]\n:(Town, country, Country)\n[Alpena County Regional Airport, location, Alpena County]\n:(Airport, location, County)\n[Alpena County, country, United States]\n:(County, country, Country)\n[Alpena County Regional Airport, location, Michigan]\n:(Airport, location, State)\n[Michigan, country, United States]\n:(State, country, Country)\n\nNote that I've extracted the following entities from the input text:\n\n* Alpena County Regional Airport (Airport)\n* Wilson Township (Town)\n* Alpena County (County)\n* Michigan (State)\n* United States (Country)\n\nAnd constructed the following triples based on the ontology schema:\n\n* (Airport, location, Town)\n* (Town, country, Country)\n* (Airport, location, County)\n* (County, country, Country)\n* (Airport, location, State)\n* (State, country, Country)\n\nLet me know if this is what you were expecting!"
+  },
+  {
+    "id": "2_Airport_test_46",
+    "input_text": "The location of Alpena County Regional Airport is Wilson Township (Alpena County, Michigan), United States.",
+    "response": "[Alpena County Regional Airport, location, Wilson Township]:(Airport, location, Town), [Wilson Township, country, United States]:(Town, country, Country)"
+  },
+  {
+    "id": "2_Airport_test_47",
+    "input_text": "Angola International Airport can be found in Ícolo e Bengo, which is in the Luanda Province.",
+    "response": "[Angola International Airport, location, Luanda Province]:(Airport, location, Province), [Luanda Province, isPartOf, Angola]:(Province, isPartOf, Country), [Ícolo e Bengo, isPartOf, Luanda Province]:(Place, isPartOf, Province)"
+  },
+  {
+    "id": "2_Airport_test_48",
+    "input_text": "The Angola International Airport located in Ícolo e Bengo is 159 meters above sea level.",
+    "response": "[Angola International Airport, location, Ícolo e Bengo]:(Airport, location, Place), [Angola International Airport, elevationAboveTheSeaLevelInMetres, 159]:(Airport, elevationAboveTheSeaLevelInMetres, number)"
+  }
+]

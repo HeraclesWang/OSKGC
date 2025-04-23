@@ -1,0 +1,396 @@
+{
+    "title": "2_Monument",
+    "id": "2_Monument",
+    "entity type": [
+        {
+            "id": "Architect",
+            "label": "Architect"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "ChemicalSubstance",
+            "label": "ChemicalSubstance"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentAgency",
+            "label": "GovernmentAgency"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "Mineral",
+            "label": "Mineral"
+        },
+        {
+            "id": "Monument",
+            "label": "Monument"
+        },
+        {
+            "id": "MonumentType",
+            "label": "MonumentType"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "ProtectedArea",
+            "label": "ProtectedArea"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Sculptor",
+            "label": "Sculptor"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        }
+    ],
+    "relation": [
+        {
+            "id": "state",
+            "label": "state",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "district",
+            "label": "district",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "hasToItsSouthwest",
+            "label": "hasToItsSouthwest",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "dedicatedTo",
+            "label": "dedicatedTo",
+            "domain": "ArchitecturalStructure",
+            "range": "Person"
+        },
+        {
+            "id": "material",
+            "label": "material",
+            "domain": "ArchitecturalStructure",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "legislature",
+            "label": "legislature",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "hasToItsSoutheast",
+            "label": "hasToItsSoutheast",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "designer",
+            "label": "designer",
+            "domain": "ArchitecturalStructure",
+            "range": "Person"
+        },
+        {
+            "id": "nativeName",
+            "label": "nativeName",
+            "domain": "ArchitecturalStructure",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "hasToItsWest",
+            "label": "hasToItsWest",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "established",
+            "label": "established",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "established",
+            "label": "established",
+            "domain": "ArchitecturalStructure",
+            "range": "Year"
+        },
+        {
+            "id": "inaugurationDate",
+            "label": "inaugurationDate",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "category",
+            "label": "category",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MonumentType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ProtectedArea",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentAgency",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Monument",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Architect",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mineral",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Sculptor",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        }
+    ]
+}

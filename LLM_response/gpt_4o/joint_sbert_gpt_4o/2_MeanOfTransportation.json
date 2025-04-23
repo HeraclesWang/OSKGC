@@ -1,0 +1,242 @@
+[
+    {
+        "id": "2_MeanOfTransportation_test_1",
+        "input_text": "The Acura TLX has a K engine made by Honda.",
+        "response": "[Acura TLX, engine, K engine]:(Automobile, engine, AutomobileEngine), [K engine, manufacturer, Honda]:(Device, manufacturer, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_2",
+        "input_text": "The Abarth 1000 GT Coupé has a coupé bodystyle and has a straight-four engine.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, Coupé bodystyle]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, engine, Straight-four engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_3",
+        "input_text": "The Ariane 5 is made by Arianespace and was launched at the ELA-3.",
+        "response": "[Ariane 5, manufacturer, Arianespace]:(Rocket, manufacturer, Organisation), [Ariane 5, launchSite, ELA-3]:(Rocket, launchSite, ArchitecturalStructure)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_4",
+        "input_text": "The 1955 Dodge is a sedan with a V8 engine.",
+        "response": "[Dodge, bodyStyle, Sedan]:(Automobile, bodyStyle, CarBodyStyle), [Dodge, engine, V8]:(Automobile, engine, Device)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_5",
+        "input_text": "Honda is the manufacturer of the Acura TLX, which has an engine size of 3.5 litres.",
+        "response": "[Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company), [Acura TLX, engineSize, 3.5]:(Automobile, engineSize, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_6",
+        "input_text": "The 1955 Dodge has a straight-six engine and a station wagon style body.",
+        "response": "[1955 Dodge, engine, Straight-six engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, bodyStyle, Station wagon]:(Automobile, bodyStyle, CarBodyStyle)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_7",
+        "input_text": "The 1955 Dodge and the DeSoto manufactured DeSoto Custom are related means of transportation.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_8",
+        "input_text": "Arianespace is the manufacturer of Ariane 5 and is launched from the Guiana Space Centre.",
+        "response": "[Arianespace, manufacturer, Ariane 5]:(Company, manufacturer, Rocket), [Ariane 5, launchSite, Guiana Space Centre]:(Rocket, launchSite, LaunchBase)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_9",
+        "input_text": "Caterpillar Inc. is in the United States. The power type of the AIDAluna is the Caterpillar Inc. engine.",
+        "response": "[Caterpillar Inc., location, United States]:(Company, location, Country), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_10",
+        "input_text": "The 1955 Dodge is a convertible with a 230 cubic inch engine.",
+        "response": "[1955 Dodge, bodyStyle, Convertible]:(Automobile, bodyStyle, CarBodyStyle), [1955 Dodge, engineSize, 230]:(Automobile, engineSize, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_11",
+        "input_text": "The AMC Matador is assembled in Mexico, including the 1971 model.",
+        "response": "[AMC Matador, assembly, Mexico]:(Automobile, assembly, Country), [AMC Matador, modelYears, 1971]:(Automobile, modelYears, Year)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_12",
+        "input_text": "The ALCO RS-3 was built by the American Locomotive Company which is located in the United States.",
+        "response": "[ALCO RS-3, builder, American Locomotive Company]:(Locomotive, builder, Manufacturer), [American Locomotive Company, location, United States]:(Manufacturer, location, Country)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_13",
+        "input_text": "Honda is the manufacturer of the Acura TLX and has a Honda J engine.",
+        "response": "[Honda, manufacturer, Acura TLX]:(Organisation, manufacturer, Automobile), [Acura TLX, engine, Honda J engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_14",
+        "input_text": "The Acura TLX has a Honda manufactured Honda J engine.",
+        "response": "[Acura TLX, engine, Honda J engine]:(Automobile, engine, AutomobileEngine), [Honda J engine, manufacturer, Honda]:(AutomobileEngine, manufacturer, Manufacturer)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_15",
+        "input_text": "The Acura TLX with a 2.4 l engine is produced by Honda.",
+        "response": "[Acura TLX, engine, 2.4 l engine]:(Automobile, engine, AutomobileEngine), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_16",
+        "input_text": "Honda makes the Acura TLX which has a V6 engine.",
+        "response": "[Acura TLX, engine, V6 engine]:(Automobile, engine, AutomobileEngine), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_17",
+        "input_text": "The Acura TLX has a Honda K engine and is manufactured by Honda.",
+        "response": "[Acura TLX, engine, Honda K engine]:(Automobile, engine, AutomobileEngine), [Acura TLX, manufacturer, Honda]:(Automobile, manufacturer, Company)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_18",
+        "input_text": "Honda is the manufacturer of the Acura TLX which has an Inline-four engine.",
+        "response": "[Honda, manufacturer, Acura TLX]:(Organisation, manufacturer, Automobile), [Acura TLX, engine, Inline-four engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_19",
+        "input_text": "Acura is a division of Honda which is the manufacturer of the Acura TLX.",
+        "response": "[Acura, division, Honda]:(Organisation, division, Organisation), [Honda, manufacturer, Acura TLX]:(Organisation, manufacturer, MeanOfTransportation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_20",
+        "input_text": "The 1955 Dodge, has a station wagon style body and an engine that is, 230 cubic inches.",
+        "response": "[1955 Dodge, bodyStyle, station wagon]:(Automobile, bodyStyle, CarBodyStyle), [1955 Dodge, engineSize, 230]:(Automobile, engineSize, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_21",
+        "input_text": "The 1955 Dodge and the DeSoto Custom and Plymouth Plaza are related means of transportation.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_22",
+        "input_text": "Chrysler Newport, DeSoto Custom and the 1955 Dodge are all cars.",
+        "response": "[Chrysler Newport, IsA, Automobile]:(Automobile, IsA, MeanOfTransportation), [DeSoto Custom, IsA, Automobile]:(Automobile, IsA, MeanOfTransportation), [1955 Dodge, IsA, Automobile]:(Automobile, IsA, MeanOfTransportation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_23",
+        "input_text": "The Dodge manufactured, 1955 Dodge and the DeSoto Custom are related means of transportation.",
+        "response": "[Dodge, manufacturer, Dodge]:(Organisation, manufacturer, Organisation), [1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_24",
+        "input_text": "The 1955 Dodge is station wagon with an AMC V8 engine.",
+        "response": "[1955 Dodge, engine, AMC V8]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_25",
+        "input_text": "1955 Dodge and Plymouth Plaza, made by Plymouth, are related kinds of transportation.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, manufacturer, Plymouth]:(Automobile, manufacturer, Manufacturer), [Plymouth Plaza, manufacturer, Plymouth]:(Automobile, manufacturer, Manufacturer)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_26",
+        "input_text": "The 1955 Dodge which has a station wagon style body also has a V8 engine.",
+        "response": "[Dodge, bodyStyle, StationWagon]:(Automobile, bodyStyle, CarBodyStyle), [Dodge, engine, V8]:(Automobile, engine, Engine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_27",
+        "input_text": "The 1955 Dodge has a hardtop and it engine is 230 cubic inches.",
+        "response": "[1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle), [1955 Dodge, engineSize, 230]:(Automobile, engineSize, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_28",
+        "input_text": "The 1955 Dodge has a V8 engine and a hardtop.",
+        "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine), [1955 Dodge, bodyStyle, hardtop]:(Automobile, bodyStyle, CarBodyStyle)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_29",
+        "input_text": "Dodge Coronet is the alternative name for the 1955 Dodge which has a V8 engine.",
+        "response": "[Dodge Coronet, alternativeName, 1955 Dodge]:(Automobile, alternativeName, Automobile), [1955 Dodge, engine, V8 engine]:(Automobile, engine, AutomobileEngine)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_30",
+        "input_text": "The 1955 Dodge, the DeSoto Custom, and the Dodge Coronet are similar and therefore related means of transport.",
+        "response": "[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile), [1955 Dodge, relatedMeanOfTransportation, Dodge Coronet]:(Automobile, relatedMeanOfTransportation, Automobile)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_31",
+        "input_text": "At 252000 millimetres long, the AIDAluna, is powered by Caterpillar Inc.",
+        "response": "[AIDAluna, length, 252000]:(Ship, length, number), [AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_32",
+        "input_text": "Douglas R. Oberhelman is a key person at Caterpillar Inc. where the AIDAluna is manufactured.",
+        "response": "[Douglas R. Oberhelman, keyPerson, Caterpillar Inc.]:(Person, keyPerson, Company), [AIDAluna, manufacturer, Caterpillar Inc.]:(Ship, manufacturer, Company)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_33",
+        "input_text": "The power type of the AIDAluna is the engine by Caterpillar Inc. which is located in Illinois.",
+        "response": "[AIDAluna, engine, Caterpillar Inc.]:(Ship, engine, Company), [Caterpillar Inc., location, Illinois]:(Company, location, Place)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_34",
+        "input_text": "AIDAluna, which is powered by Caterpillar Inc. is located in Peoria (Illinois).",
+        "response": "[AIDAluna, poweredBy, Caterpillar Inc.]:(Ship, poweredBy, Company), [Caterpillar Inc., location, Peoria]:(Company, location, City)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_35",
+        "input_text": "The Pontiac Rageous coupé went into production in 1997.",
+        "response": "[Pontiac Rageous, productionStartYear, 1997]:(Automobile, productionStartYear, Year)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_36",
+        "input_text": "The coupé style Pontiac Rageous is assembled in Michigan.",
+        "response": "[Pontiac Rageous, assembly, Michigan]:(Automobile, assembly, State)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_37",
+        "input_text": "The Abarth 1000 GT Coupé has a coupé body style and a 2160 millimetre wheelbase.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, wheelbase, 2160]:(Automobile, wheelbase, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_38",
+        "input_text": "With a coupé bodystyle, the last Abarth 1000 GT Coupé rolled off the production line in 1958.",
+        "response": "[Abarth 1000 GT Coupé, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle), [Abarth 1000 GT Coupé, productionEndYear, 1958]:(Automobile, productionEndYear, Year)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_39",
+        "input_text": "The Aston Martin V8 is a coupé with a 5.3 litre engine.",
+        "response": "[Aston Martin V8, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle), [Aston Martin V8, engineSize, 5.3]:(Automobile, engineSize, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_40",
+        "input_text": "The Abarth 1000 GT Coupé has a Coupé body style and its production began in 1958.",
+        "response": "[Abarth 1000 GT Coupé, productionStartYear, 1958]:(Automobile, productionStartYear, Year), [Abarth 1000 GT Coupé, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_41",
+        "input_text": "The Ariane 5 was made by European Space Agency and Arianespace.",
+        "response": "[Ariane 5, manufacturer, European Space Agency]:(Rocket, manufacturer, Organisation), [Ariane 5, manufacturer, Arianespace]:(Rocket, manufacturer, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_42",
+        "input_text": "The Ariane 5 was launched at the ELA-3, operated by Arianespace.",
+        "response": "[Ariane 5, launchSite, ELA-3]:(Rocket, launchSite, ArchitecturalStructure), [ELA-3, operator, Arianespace]:(ArchitecturalStructure, operator, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_43",
+        "input_text": "The Ariane 5 was manufactured by the European Space Agency and launched at ELA-3.",
+        "response": "[Ariane 5, manufacturer, European Space Agency]:(Rocket, manufacturer, Organisation), [Ariane 5, launchSite, ELA-3]:(Rocket, launchSite, LaunchPad)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_44",
+        "input_text": "Airbus Group is the parent company of Airbus Defence and Space; where Ariane 5 was manufactured.",
+        "response": "[Airbus Group, parentCompany, Airbus Defence and Space]:(Organisation, parentCompany, Organisation), [Ariane 5, manufacturer, Airbus Defence and Space]:(Rocket, manufacturer, Organisation)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_45",
+        "input_text": "The Ariane 5 is 5.4 m wide and has had 2 partial failures.",
+        "response": "[Ariane 5, diameter, 5.4]:(Rocket, diameter, number), [Ariane 5, partialFailures, 2]:(Rocket, partialFailures, number)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_46",
+        "input_text": "The Ariane 5 which was manufactured by Airbus Defence and Space was launched from the Guiana Space Centre.",
+        "response": "[Ariane 5, manufacturer, Airbus Defence and Space]:(Rocket, manufacturer, Organisation), [Ariane 5, launchSite, Guiana Space Centre]:(Rocket, launchSite, LaunchBase)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_47",
+        "input_text": "Ariane 5 is manufactured by the European Space Agency and launched from the Guiana Space Centre.",
+        "response": "[Ariane 5, manufacturer, European Space Agency]:(Rocket, manufacturer, Organisation), [Ariane 5, launchSite, Guiana Space Centre]:(Rocket, launchSite, LaunchBase)"
+    },
+    {
+        "id": "2_MeanOfTransportation_test_48",
+        "input_text": "The Ariane 5 was launched from the ELA-3 launchpad which is found at the Guiana Space Centre.",
+        "response": "[Ariane 5, launchSite, ELA-3]:(Rocket, launchSite, LaunchPad), [ELA-3, site, Guiana Space Centre]:(ArchitecturalStructure, site, LaunchBase)"
+    }
+]

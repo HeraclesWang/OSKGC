@@ -1,0 +1,202 @@
+[
+    {
+        "id": "2_Building_test_1",
+        "input_text": "The College of William & Mary is the owner of the Alan B. Miller Hall, whose address is \"101 Ukrop Way\".",
+        "response": "[Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, address, 101 Ukrop Way]:(Building, address, Place)"
+    },
+    {
+        "id": "2_Building_test_2",
+        "input_text": "103 Colmore Row, located at Colmore Row, was designed by the architect, John Madin.",
+        "response": "[103 Colmore Row, location, Colmore Row]:(Building, location, ArchitecturalStructure), [John Madin, significantBuilding, 103 Colmore Row]:(Architect, significantBuilding, Building)"
+    },
+    {
+        "id": "2_Building_test_3",
+        "input_text": "The College of WIlliam & Mary is the current owner of Alan B. Miller Hall and the Mason School of Business is the current tenants.",
+        "response": "[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, currentTenants, Mason School of Business]:(Building, currentTenants, EducationalInstitution)"
+    },
+    {
+        "id": "2_Building_test_4",
+        "input_text": "Alan B. Miller Hall is owned by The College of William & Mary and located in Williamsburg (Virginia).",
+        "response": "[Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, location, Williamsburg]:(Building, location, City)"
+    },
+    {
+        "id": "2_Building_test_5",
+        "input_text": "The construction of Alan B. Miller Hall, 101 Ukrop Way, began on 30th March 2007.",
+        "response": "[Alan B. Miller Hall, buildingStartDate, 30th March 2007]:(Building, buildingStartDate, Date)"
+    },
+    {
+        "id": "2_Building_test_6",
+        "input_text": "103 Colmore Row, designed by the architect John Madin is located in Birmingham.",
+        "response": "[103 Colmore Row, location, Birmingham]:(Building, location, City)"
+    },
+    {
+        "id": "2_Building_test_7",
+        "input_text": "Asser Levy Public Baths is located in Manhattan, which is a part of New York.",
+        "response": "[Asser Levy Public Baths, location, Manhattan]:(Building, location, CityDistrict), [Manhattan, isPartOf, New York]:(CityDistrict, isPartOf, City)"
+    },
+    {
+        "id": "2_Building_test_8",
+        "input_text": "300 North LaSalle is in Chicago part of DuPage County.",
+        "response": "[300 North LaSalle, location, Chicago]:(ArchitecturalStructure, location, City), [Chicago, isPartOf, DuPage County]:(City, isPartOf, County)"
+    },
+    {
+        "id": "2_Building_test_9",
+        "input_text": "Asser Levy Public Baths located at Avenue A, Manhattan. and constructed in 1904.",
+        "response": "[Asser Levy Public Baths, location, Avenue A, Manhattan]:(Building, location, Place), [Asser Levy Public Baths, completionYear, 1904]:(Building, completionYear, Year)"
+    },
+    {
+        "id": "2_Building_test_10",
+        "input_text": "20 Fenchurch Street, which has a floor count of 34, was completed in April 2014.",
+        "response": "[20 Fenchurch Street, floorCount, 34]:(Building, floorCount, number), [20 Fenchurch Street, completionDate, April 2014]:(Building, completionDate, Date)"
+    },
+    {
+        "id": "2_Building_test_11",
+        "input_text": "The Mason School of Business is a tenant of Alan B. Miller Hall in the United States.",
+        "response": "[The Mason School of Business, tenant, Alan B. Miller Hall]:(Organisation, tenant, Building), [Alan B. Miller Hall, location, United States]:(Building, location, Country)"
+    },
+    {
+        "id": "2_Building_test_12",
+        "input_text": "Asilomar Conference Grounds is located at Asilomar Blvd and was constructed in 1913.",
+        "response": "[Asilomar Conference Grounds, location, Asilomar Blvd]:(Building, location, Road), [Asilomar Conference Grounds, yearOfConstruction, 1913]:(Building, yearOfConstruction, Year)"
+    },
+    {
+        "id": "2_Building_test_13",
+        "input_text": "3Arena at the North Wall Quay is owned by Live Nation Entertainment.",
+        "response": "[3Arena, owner, Live Nation Entertainment]:(Venue, owner, Company)"
+    },
+    {
+        "id": "2_Building_test_14",
+        "input_text": "Adisham Hall's architectural style is Tudor and Jacabian and the building is located in Haputale.",
+        "response": "[Adisham Hall, architecturalStyle, Tudor]:(Building, architecturalStyle, TopicalConcept), [Adisham Hall, architecturalStyle, Jacabian]:(Building, architecturalStyle, TopicalConcept), [Adisham Hall, location, Haputale]:(Building, location, Place)"
+    },
+    {
+        "id": "2_Building_test_15",
+        "input_text": "Addis Ababa City Hall is located in the country of Ethiopia which is led by Hailemariam Desalegn.",
+        "response": "[Addis Ababa City Hall, location, Ethiopia]:(ArchitecturalStructure, location, Country), [Ethiopia, leader, Hailemariam Desalegn]:(Country, leader, Person)"
+    },
+    {
+        "id": "2_Building_test_16",
+        "input_text": "Robert A. M. Stern is the architect of the Alan B. Miller Hall where the Mason School of Business is located.",
+        "response": "[Robert A. M. Stern, architect, Alan B. Miller Hall]:(Person, architect, Building), [Mason School of Business, location, Alan B. Miller Hall]:(Organisation, location, Building)"
+    },
+    {
+        "id": "2_Building_test_17",
+        "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall, which was completed on June 1, 2009.",
+        "response": "[The Mason School of Business, currentTenants, Alan B. Miller Hall]:(EducationalInstitution, currentTenants, Building), [Alan B. Miller Hall, completionDate, June 1, 2009]:(Building, completionDate, Date)"
+    },
+    {
+        "id": "2_Building_test_18",
+        "input_text": "The Mason School of Business is located in the United States, and are the current tenants of Alan B. Miller Hall.",
+        "response": "[The Mason School of Business, location, United States]:(Organisation, location, Country), [Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, Organisation)"
+    },
+    {
+        "id": "2_Building_test_19",
+        "input_text": "Alan B. Miller Hall in Virginia is owned by The College of William & Mary.",
+        "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, State), [Alan B. Miller Hall, owner, The College of William & Mary]:(Building, owner, University)"
+    },
+    {
+        "id": "2_Building_test_20",
+        "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall which is located in Virginia.",
+        "response": "[Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, EducationalInstitution), [Alan B. Miller Hall, location, Virginia]:(Building, location, State)"
+    },
+    {
+        "id": "2_Building_test_21",
+        "input_text": "Robert A. M. Stern is the architect of Alan B. Miller Hall of which The Mason School of Business is the current tenant.",
+        "response": "[Robert A. M. Stern, architect, Alan B. Miller Hall]:(Person, architect, Building), [Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, EducationalInstitution)"
+    },
+    {
+        "id": "2_Building_test_22",
+        "input_text": "Alan B. Miller Hall is at 101 Ukrop Way and was completed on 1 June 2009.",
+        "response": "[Alan B. Miller Hall, address, 101 Ukrop Way]:(Building, address, Place), [Alan B. Miller Hall, completionDate, 1 June 2009]:(Building, completionDate, Date)"
+    },
+    {
+        "id": "2_Building_test_23",
+        "input_text": "Alan B. Miller Hall, which was inaugurated on 2009-10-02, has the address \"101 Ukrop Way\".",
+        "response": "[Alan B. Miller Hall, inaugurationDate, 2009-10-02]:(ArchitecturalStructure, inaugurationDate, Date), [Alan B. Miller Hall, address, 101 Ukrop Way]:(ArchitecturalStructure, address, Place)"
+    },
+    {
+        "id": "2_Building_test_24",
+        "input_text": "Alan B. Miller Hall which is owned by the College of William & Mary was completed on 1st June 2009.",
+        "response": "[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, University), [Alan B. Miller Hall, completionDate, 1st June 2009]:(Building, completionDate, Date)"
+    },
+    {
+        "id": "2_Building_test_25",
+        "input_text": "The Mason School of Business are the current tenants of Alan B. Miller Hall in Williamsburg (Virginia).",
+        "response": "[Alan B. Miller Hall, currentTenants, The Mason School of Business]:(Building, currentTenants, EducationalInstitution), [Alan B. Miller Hall, location, Williamsburg]:(Building, location, City)"
+    },
+    {
+        "id": "2_Building_test_26",
+        "input_text": "The College of William & Mary owns the Alan B. Miller Hall and the Chancellor of the College is Robert Gates.",
+        "response": "[Alan B. Miller Hall, owner, College of William & Mary]:(Building, owner, University), [College of William & Mary, chancellor, Robert Gates]:(University, chancellor, Person)"
+    },
+    {
+        "id": "2_Building_test_27",
+        "input_text": "Alan B. Miller Hall in Virginia was completed on 1st June 2009.",
+        "response": "[Alan B. Miller Hall, location, Virginia]:(Building, location, State), [Alan B. Miller Hall, completionDate, 1st June 2009]:(Building, completionDate, Date)"
+    },
+    {
+        "id": "2_Building_test_28",
+        "input_text": "Ampara Hospital is located in Eastern Province (Sri Lanka), Sri Lanka.",
+        "response": "[Ampara Hospital, location, Eastern Province]:(Hospital, location, Province), [Ampara Hospital, location, Sri Lanka]:(Hospital, location, Country)"
+    },
+    {
+        "id": "2_Building_test_29",
+        "input_text": "Ampara Hospital is in Sri Lanka, whose leader is Ranil Wickremesinghe.",
+        "response": "[Ampara Hospital, location, Sri Lanka]:(Hospital, location, Country), [Sri Lanka, leader, Ranil Wickremesinghe]:(Country, leader, Person)"
+    },
+    {
+        "id": "2_Building_test_30",
+        "input_text": "Ampara Hospital is located in the Ampara District in Sri Lanka.",
+        "response": "[Ampara Hospital, location, Ampara District]:(Hospital, location, District), [Ampara District, isPartOf, Sri Lanka]:(District, isPartOf, Country)"
+    },
+    {
+        "id": "2_Building_test_31",
+        "input_text": "Ampara Hospital, with a bed count of 476, is located in Sri Lanka.",
+        "response": "[Ampara Hospital, bedCount, 476]:(Hospital, bedCount, number), [Ampara Hospital, location, Sri Lanka]:(Hospital, location, Country)"
+    },
+    {
+        "id": "2_Building_test_32",
+        "input_text": "The Ampara Hospital is located in Ampara, Sri Lanka.",
+        "response": "[Ampara Hospital, location, Ampara]:(Hospital, location, City), [Ampara Hospital, country, Sri Lanka]:(Hospital, country, Country)"
+    },
+    {
+        "id": "2_Building_test_33",
+        "input_text": "Sri Jayawardenepura Kotte is the capital of Sri Lanka, where Ampara Hospital is located.",
+        "response": "[Sri Jayawardenepura Kotte, capital, Sri Lanka]:(City, capital, Country), [Ampara Hospital, location, Sri Jayawardenepura Kotte]:(Hospital, location, City)"
+    },
+    {
+        "id": "2_Building_test_34",
+        "input_text": "103 Colmore Row actually on Colmore Row has 23 floors.",
+        "response": "[103 Colmore Row, floorCount, 23]:(Building, floorCount, number)"
+    },
+    {
+        "id": "2_Building_test_35",
+        "input_text": "103 Colmore Row was designed by John Madin, born in Birmingham.",
+        "response": "[103 Colmore Row, architect, John Madin]:(Building, architect, Person), [John Madin, birthPlace, Birmingham]:(Person, birthPlace, City)"
+    },
+    {
+        "id": "2_Building_test_36",
+        "input_text": "103 Colmore Row at Colmore Row was completed in 1976.",
+        "response": "[103 Colmore Row, completionYear, 1976]:(Building, completionYear, Year)"
+    },
+    {
+        "id": "2_Building_test_37",
+        "input_text": "Architect John Madin, designed 103 Colmore Row, located on Colmore Row, in Birmingham, England.",
+        "response": "[John Madin, significantBuilding, 103 Colmore Row]:(Architect, significantBuilding, Building), [103 Colmore Row, location, Colmore Row]:(Building, location, Road), [103 Colmore Row, location, Birmingham]:(Building, location, City), [103 Colmore Row, country, England]:(Building, country, Country)"
+    },
+    {
+        "id": "2_Building_test_38",
+        "input_text": "103 Colmore Row, Birmingham is a building with 23 floors.",
+        "response": "[103 Colmore Row, floorCount, 23]:(Building, floorCount, number)"
+    },
+    {
+        "id": "2_Building_test_39",
+        "input_text": "John Madin was an architect from Birmingham who designed 103 Colmore Row.",
+        "response": "[John Madin, origin, Birmingham]:(Person, origin, Place), [John Madin, significantBuilding, 103 Colmore Row]:(Person, significantBuilding, ArchitecturalStructure)"
+    },
+    {
+        "id": "2_Building_test_40",
+        "input_text": "There are 23 floors at 103 Colmore Row, Birmingham, England.",
+        "response": "[103 Colmore Row, floorCount, 23]:(Building, floorCount, number), [103 Colmore Row, location, Birmingham]:(Building, location, City), [Birmingham, country, England]:(City, country, Country)"
+    }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1_Monument_test_1",
+    "input_text": "The Atatürk Monument (İzmir) was designed by Pietro Canonica.",
+    "response": "[Atatürk Monument, designer, Pietro Canonica]\n[Atatürk Monument, location, İzmir]\n[Atatürk Monument, category, Monument]"
+  },
+  {
+    "id": "1_Monument_test_2",
+    "input_text": "The Atatürk Monument (İzmir) is made of bronze.",
+    "response": "[Atatürk Monument, material, bronze]"
+  },
+  {
+    "id": "1_Monument_test_3",
+    "input_text": "The Baku Turkish Martyrs' Memorial is located in Azerbaijan.",
+    "response": "[Azerbaijan, location, Baku]\n(Azerbaijan, hasToItsNorth, Place)\n(Azerbaijan, capital, Baku)\n(Baku, location, Place)\n(Baku, hasToItsNorth, Place)\n(Baku, leader, Person)\n(Baku, leaderTitle, PersonFunction)\n(Baku, currency, Currency)\n(Baku, religion, Organisation)\n(Baku, legislature, Organisation)\n(Baku, language, Language)\n(Baku, ethnicGroup, EthnicGroup)\n(Baku, largestCity, Place)\n(Baku, capital, Place)\n(Baku, nearestCity, Place)\n(Baku, hasToItsWest, Place)\n(Baku, hasToItsSouthwest, Place)\n(Baku, location, Place)\n(Baku, hasToItsNorth, Place)\n(Baku, leader, Person)\n(Baku, leaderTitle, PersonFunction)\n(Baku, currency, Currency)\n(Baku, religion, Organisation)\n(Baku, legislature, Organisation)\n(Baku, language, Language)\n(Baku, ethnicGroup, EthnicGroup)\n(Baku, largestCity, Place)\n(Baku, capital, Place)\n(Baku, nearestCity, Place)\n(Baku, hasToItsWest, Place)\n(Baku, hasToItsSouthwest, Place"
+  },
+  {
+    "id": "1_Monument_test_4",
+    "input_text": "The Atatürk Monument (İzmir) was inaugurated on 27th July, 1932.",
+    "response": "[Atatürk Monument, inaugurationDate, 1932-07-27]"
+  },
+  {
+    "id": "1_Monument_test_5",
+    "input_text": "The Atatürk Monument (İzmir) is located in Turkey.",
+    "response": "[Turkey, location, Izmir]\n[Atatürk Monument, location, Turkey]\n[Atatürk Monument, category, Monument]\n[Atatürk Monument, dedicatedTo, Atatürk]\n[Atatürk Monument, material,?]\n[Atatürk Monument, designer,?]\n[Atatürk Monument, established,?]\n[Atatürk Monument, foundingDate,?]\n[Atatürk Monument, owner,?]\n[Atatürk Monument, inaugurationDate,?]\n\nNote: The output contains the extracted triples based on the given ontology schema. The triples are:\n\n* [Turkey, location, Izmir] (relation: (Place, location, Place))\n* [Atatürk Monument, location, Turkey] (relation: (ArchitecturalStructure, location, Place))\n* [Atatürk Monument, category, Monument] (relation: (ArchitecturalStructure, category, TopicalConcept))\n* [Atatürk Monument, dedicatedTo, Atatürk] (relation: (ArchitecturalStructure, dedicatedTo, Person))\n* [Atatürk Monument, material,?] (relation: (ArchitecturalStructure, material, ChemicalSubstance)) - unknown material\n* [Atatürk Monument, designer,?] (relation: (ArchitecturalStructure, designer, Person))"
+  },
+  {
+    "id": "1_Monument_test_6",
+    "input_text": "Frederick County (Maryland) is to the southwest of Adams County (Pennsylvania).",
+    "response": "Here is the output:\n\n[Frederick County, hasToItsSouthwest, Adams County]"
+  },
+  {
+    "id": "1_Monument_test_7",
+    "input_text": "Monocacy National Battlefield is located in Frederick County (Maryland).",
+    "response": "Here is the output:\n\nMonocacy National Battlefield, location, Frederick County\nMonocacy National Battlefield, location, Maryland\nMonocacy National Battlefield, category, Monument\nMonocacy National Battlefield, type, MonumentType\nMonocacy National Battlefield, IsA, ArchitecturalStructure"
+  },
+  {
+    "id": "1_Monument_test_8",
+    "input_text": "The 14th New Jersey Volunteer Infantry Monument is located in the district of the Monocacy National Battlefield.",
+    "response": "Here is the output:\n\n[14th New Jersey Volunteer Infantry Monument, location, Monocacy National Battlefield]\n[14th New Jersey Volunteer Infantry Monument, district, Monocacy National Battlefield]\n[14th New Jersey Volunteer Infantry Monument, category, Monument]\n[14th New Jersey Volunteer Infantry Monument, material,?]"
+  },
+  {
+    "id": "1_Monument_test_9",
+    "input_text": "The city nearest to Monocacy National Battlefield is Frederick (Maryland).",
+    "response": "Here is the extracted triple based on the given ontology schema:\n\nFrederick, nearestCity, Monocacy National Battlefield"
+  }
+]

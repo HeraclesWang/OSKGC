@@ -1,0 +1,378 @@
+{
+    "title": "3_Film",
+    "id": "3_Film",
+    "entity type": [
+        {
+            "id": "Actor",
+            "label": "Actor"
+        },
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "Cinematographer",
+            "label": "Cinematographer"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Code",
+            "label": "Code"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "CompanyType",
+            "label": "CompanyType"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Film",
+            "label": "Film"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "MovieDirector",
+            "label": "MovieDirector"
+        },
+        {
+            "id": "MovieEditor",
+            "label": "MovieEditor"
+        },
+        {
+            "id": "MusicComposer",
+            "label": "MusicComposer"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "ProductionCompany",
+            "label": "ProductionCompany"
+        },
+        {
+            "id": "ScreenWriter",
+            "label": "ScreenWriter"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "TelevisionStation",
+            "label": "TelevisionStation"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "Writer",
+            "label": "Writer"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "producer",
+            "label": "producer",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "releaseDate",
+            "label": "releaseDate",
+            "domain": "Work",
+            "range": "Date"
+        },
+        {
+            "id": "foundedBy",
+            "label": "foundedBy",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "type",
+            "label": "type",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "imdbId",
+            "label": "imdbId",
+            "domain": "Work",
+            "range": "Code"
+        },
+        {
+            "id": "cinematography",
+            "label": "cinematography",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "gross",
+            "label": "gross",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "musicComposer",
+            "label": "musicComposer",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "starring",
+            "label": "starring",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "editor",
+            "label": "editor",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "distributor",
+            "label": "distributor",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "broadcastedBy",
+            "label": "broadcastedBy",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "budget",
+            "label": "budget",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "runtime",
+            "label": "runtime",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Work",
+            "range": "Language"
+        },
+        {
+            "id": "director",
+            "label": "director",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "birthYear",
+            "label": "birthYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "producer",
+            "label": "producer",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "activeYearsStartYear",
+            "label": "activeYearsStartYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "writer",
+            "label": "writer",
+            "domain": "Work",
+            "range": "Person"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CompanyType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MovieDirector",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "TelevisionStation",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Writer",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ScreenWriter",
+            "range": "Writer"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Film",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ProductionCompany",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MovieEditor",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Actor",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MusicComposer",
+            "range": "Writer"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Cinematographer",
+            "range": "Artist"
+        }
+    ]
+}

@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_1">
+      <text>The impact factor of the American Journal of Mathematics is 1.337.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>impactFactor</rel>
+          <obj>1.337</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>impactFactor</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_2">
+      <text>Wolf Solent is a notable work by John Cowper Powys.</text>
+      <triples>
+        <triple>
+          <sub>John_Cowper_Powys</sub>
+          <rel>notableWork</rel>
+          <obj>Wolf_Solent</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>notableWork</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_3">
+      <text>The American Journal of Mathematics is also known by the abbreviated title of Am. J. Math.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>abbreviation</rel>
+          <obj>Am._J._Math.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>abbreviation</rel>
+          <obj>AcademicJournal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_4">
+      <text>John Cowper Powys is the author of Wolf Solent.</text>
+      <triples>
+        <triple>
+          <sub>Wolf_Solent</sub>
+          <rel>author</rel>
+          <obj>John_Cowper_Powys</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_5">
+      <text>Alcatraz Versus the Evil Librarians is published in Hardcover.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_6">
+      <text>Alcatraz Versus the Evil Librarians was written by Brandon Sanderson.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>author</rel>
+          <obj>Brandon_Sanderson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_7">
+      <text>The book Alcatraz Versus the Evil Librarians is followed by the book Alcatraz Versus the Scrivener's Bones.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>followedBy</rel>
+          <obj>Alcatraz_Versus_the_Scrivener's_Bones</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_8">
+      <text>The author of A Glastonbury Romance is John Cowper Powys.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>author</rel>
+          <obj>John_Cowper_Powys</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_9">
+      <text>The book "A Long Long Way was published by Viking Press.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>publisher</rel>
+          <obj>Viking_Press</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_10">
+      <text>AIP Advances is devoted to the study of physics.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Physics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_11">
+      <text>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg is concerned with the academic discipline of Pure Mathematics.</text>
+      <triples>
+        <triple>
+          <sub>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Pure_mathematics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_12">
+      <text>Ring of Fire II is written in English.</text>
+      <triples>
+        <triple>
+          <sub>Ring_of_Fire_II</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_13">
+      <text>Administrative Science Quarterly has the ISSN number of 0001-8392.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>issnNumber</rel>
+          <obj>0001-8392</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_14">
+      <text>The Addiction journal is published by Wiley-Blackwell on behalf of the Society for the Study of Addiction.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>publisher</rel>
+          <obj>Wiley-Blackwell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_15">
+      <text>The novel Into Battle is published by Australians.</text>
+      <triples>
+        <triple>
+          <sub>Into_Battle</sub>
+          <rel>country</rel>
+          <obj>Australia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_16">
+      <text>1634: The Bavarian Crisis was preceded by 1634: The Ram Rebellion.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>precededBy</rel>
+          <obj>1634:_The_Ram_Rebellion</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_17">
+      <text>A notable work of John Cowper Powys is Porius: A Romance of the Dark Ages.</text>
+      <triples>
+        <triple>
+          <sub>John_Cowper_Powys</sub>
+          <rel>notableWork</rel>
+          <obj>Porius:_A_Romance_of_the_Dark_Ages</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>notableWork</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_18">
+      <text>In the United States one of the ethnic groups are African Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_19">
+      <text>The Acta Palaeontologica Polonica has a LCCN number of 60040714.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>LCCN_number</rel>
+          <obj>60040714</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_20">
+      <text>The novel 1634: The Bavarian Crisis is followed by Ring of Fire II.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>followedBy</rel>
+          <obj>Ring_of_Fire_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_21">
+      <text>Viking Press is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Viking_Press</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_22">
+      <text>Penguin Random House is the parent company of Viking Press.</text>
+      <triples>
+        <triple>
+          <sub>Viking_Press</sub>
+          <rel>parentCompany</rel>
+          <obj>Penguin_Random_House</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_23">
+      <text>89646863 is the LCCN number of ACM Transactions on Information Systems.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>LCCN_number</rel>
+          <obj>89646863</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_24">
+      <text>Alcatraz Versus the Evil Librarians has the ISBN number 0-439-92550-9.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-439-92550-9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_25">
+      <text>Alcatraz Versus the Evil Librarians OCLC number is 78771100.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>oclcNumber</rel>
+          <obj>78771100</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_26">
+      <text>Alcatraz Versus the Evil Librarians is in the genre of Fantasy literature.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>genre</rel>
+          <obj>Fantasy_literature</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>genre</rel>
+          <obj>LiteraryGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_27">
+      <text>Alcatraz Versus the Evil Librarians is 320 pages long.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>numberOfPages</rel>
+          <obj>320</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_28">
+      <text>The book "Alcatraz Versus the Evil Librarians is in print.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_29">
+      <text>The literary genre of Alcatraz Versus the Evil Librarians is fantasy literature.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Evil_Librarians</sub>
+          <rel>literaryGenre</rel>
+          <obj>Fantasy_literature</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>literaryGenre</rel>
+          <obj>LiteraryGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_30">
+      <text>John Cowper Powys died in Blaenau Ffestiniog.</text>
+      <triples>
+        <triple>
+          <sub>John_Cowper_Powys</sub>
+          <rel>deathPlace</rel>
+          <obj>Blaenau_Ffestiniog</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>deathPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_31">
+      <text>Weymouth Sands' author was John Cowper Powys.</text>
+      <triples>
+        <triple>
+          <sub>Weymouth_Sands</sub>
+          <rel>author</rel>
+          <obj>John_Cowper_Powys</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_32">
+      <text>One of John Cowper Powys notable works is Owen Glendower.</text>
+      <triples>
+        <triple>
+          <sub>John_Cowper_Powys</sub>
+          <rel>notableWork</rel>
+          <obj>Owen_Glendower</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>notableWork</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_33">
+      <text>John Cowper Powys was born in Shirley (Derbyshire).</text>
+      <triples>
+        <triple>
+          <sub>John_Cowper_Powys</sub>
+          <rel>birthPlace</rel>
+          <obj>Shirley</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>birthPlace</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_34">
+      <text>The Acta Mathematica Hungarica covers the academic discipline of mathematics.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Mathematics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_35">
+      <text>The novel "Into Battle" followed "Above the Veil".</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>followedBy</rel>
+          <obj>Into_Battle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_36">
+      <text>Above the Veil is 248 pages long.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>numberOfPages</rel>
+          <obj>248</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_37">
+      <text>Above the Veil is written in English.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_38">
+      <text>The novel Aenir was followed by Above the Veil.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>followedBy</rel>
+          <obj>Above_the_Veil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_39">
+      <text>Above the Veil was preceded By Aenir.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>precededBy</rel>
+          <obj>Aenir</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_40">
+      <text>The ISBN number of Above the Veil is 0-439-17685-9.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-439-17685-9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_41">
+      <text>Above the Veil is available in hardcover.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_42">
+      <text>Above the Veil has the OCLC number 46451790.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>oclcNumber</rel>
+          <obj>46451790</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_43">
+      <text>Above the Veil is from the country of Australia.</text>
+      <triples>
+        <triple>
+          <sub>Above_the_Veil</sub>
+          <rel>country</rel>
+          <obj>Australia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_44">
+      <text>The novel Into Battle is preceded by Above the Veil.</text>
+      <triples>
+        <triple>
+          <sub>Into_Battle</sub>
+          <rel>precededBy</rel>
+          <obj>Above_the_Veil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_45">
+      <text>American Journal of Mathematics has the OCLC number 1480153.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>oclcNumber</rel>
+          <obj>1480153</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_46">
+      <text>The American Journal of Mathematics was published by Johns Hopkins University Press.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>publisher</rel>
+          <obj>Johns_Hopkins_University_Press</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_47">
+      <text>The American Journal of Mathematics EISSN number is 1080.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>eissnNumber</rel>
+          <obj>1080</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>eissnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_48">
+      <text>The ISSN number of the American Journal of Mathematics is 1080-6377.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>issnNumber</rel>
+          <obj>1080-6377</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_49">
+      <text>The American Journal of Mathematics was first published in 1878.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>firstPublicationYear</rel>
+          <obj>1878</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>firstPublicationYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_test_50">
+      <text>The American Journal of Mathematics has an ISSN number of 0002-9327.</text>
+      <triples>
+        <triple>
+          <sub>American_Journal_of_Mathematics</sub>
+          <rel>issnNumber</rel>
+          <obj>0002-9327</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

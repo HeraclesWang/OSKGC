@@ -1,0 +1,726 @@
+{
+    "title": "1_Food",
+    "id": "1_Food",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Animal",
+            "label": "Animal"
+        },
+        {
+            "id": "Appetiser",
+            "label": "Appetiser"
+        },
+        {
+            "id": "Bird",
+            "label": "Bird"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "ChemicalCompound",
+            "label": "ChemicalCompound"
+        },
+        {
+            "id": "ChemicalSubstance",
+            "label": "ChemicalSubstance"
+        },
+        {
+            "id": "ChiefJustice",
+            "label": "ChiefJustice"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "CityDistrict",
+            "label": "CityDistrict"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Condiment",
+            "label": "Condiment"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Course",
+            "label": "Course"
+        },
+        {
+            "id": "Cuisine",
+            "label": "Cuisine"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Dessert",
+            "label": "Dessert"
+        },
+        {
+            "id": "Dish",
+            "label": "Dish"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Family",
+            "label": "Family"
+        },
+        {
+            "id": "Food",
+            "label": "Food"
+        },
+        {
+            "id": "Fritter",
+            "label": "Fritter"
+        },
+        {
+            "id": "Fungus",
+            "label": "Fungus"
+        },
+        {
+            "id": "Genus",
+            "label": "Genus"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "Ingredient",
+            "label": "Ingredient"
+        },
+        {
+            "id": "Island",
+            "label": "Island"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "MainCourse",
+            "label": "MainCourse"
+        },
+        {
+            "id": "MemberOfParliament",
+            "label": "MemberOfParliament"
+        },
+        {
+            "id": "Mollusca",
+            "label": "Mollusca"
+        },
+        {
+            "id": "Order",
+            "label": "Order"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "Plant",
+            "label": "Plant"
+        },
+        {
+            "id": "PlantType",
+            "label": "PlantType"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Representative",
+            "label": "Representative"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Sandwich",
+            "label": "Sandwich"
+        },
+        {
+            "id": "Sauce",
+            "label": "Sauce"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Snack",
+            "label": "Snack"
+        },
+        {
+            "id": "Soup",
+            "label": "Soup"
+        },
+        {
+            "id": "Species",
+            "label": "Species"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "VicePresident",
+            "label": "VicePresident"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "ingredient",
+            "label": "ingredient",
+            "domain": "Food",
+            "range": "Species"
+        },
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "officialLanguage",
+            "label": "officialLanguage",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "year",
+            "label": "year",
+            "domain": "Food",
+            "range": "Year"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "related",
+            "label": "related",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "division",
+            "label": "division",
+            "domain": "Species",
+            "range": "Species"
+        },
+        {
+            "id": "dishVariation",
+            "label": "dishVariation",
+            "domain": "Food",
+            "range": "Species"
+        },
+        {
+            "id": "carbohydrate",
+            "label": "carbohydrate",
+            "domain": "Food",
+            "range": "number"
+        },
+        {
+            "id": "protein",
+            "label": "protein",
+            "domain": "Food",
+            "range": "number"
+        },
+        {
+            "id": "mainIngredient",
+            "label": "mainIngredient",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "foundationPlace",
+            "label": "foundationPlace",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "region",
+            "label": "region",
+            "domain": "Food",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Food",
+            "range": "Place"
+        },
+        {
+            "id": "family",
+            "label": "family",
+            "domain": "Species",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "ingredient",
+            "label": "ingredient",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "fat",
+            "label": "fat",
+            "domain": "Food",
+            "range": "number"
+        },
+        {
+            "id": "creator",
+            "label": "creator",
+            "domain": "Food",
+            "range": "Organisation"
+        },
+        {
+            "id": "genus",
+            "label": "genus",
+            "domain": "Species",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "mainIngredient",
+            "label": "mainIngredient",
+            "domain": "Food",
+            "range": "Species"
+        },
+        {
+            "id": "alternativeName",
+            "label": "alternativeName",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "order",
+            "label": "order",
+            "domain": "Species",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "cuisine",
+            "label": "cuisine",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "course",
+            "label": "course",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "ingredient",
+            "label": "ingredient",
+            "domain": "Food",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "dishVariation",
+            "label": "dishVariation",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "creatorOfDish",
+            "label": "creatorOfDish",
+            "domain": "Food",
+            "range": "Food"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Organisation"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Soup",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Sauce",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Plant",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Family",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Course",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Order",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Dish",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Ingredient",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Snack",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Island",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Bird",
+            "range": "Animal"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CityDistrict",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Fritter",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Fungus",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Animal",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Sandwich",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Cuisine",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MainCourse",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChiefJustice",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Representative",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Condiment",
+            "range": "Food"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChemicalCompound",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Appetiser",
+            "range": "Dish"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Genus",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MemberOfParliament",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PlantType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "VicePresident",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mollusca",
+            "range": "Animal"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Dessert",
+            "range": "Dish"
+        }
+    ]
+}

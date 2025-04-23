@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_1">
+      <text>Take it Off! is from the genre of noise rock.</text>
+      <triples>
+        <triple>
+          <sub>Take_It_Off!</sub>
+          <rel>genre</rel>
+          <obj>Noise_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_2">
+      <text>The John Lennon song Imagine is in the genre of pop music.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>genre</rel>
+          <obj>Pop_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_3">
+      <text>Wharton Tiers is the producer of Take it Off!.</text>
+      <triples>
+        <triple>
+          <sub>Take_It_Off!</sub>
+          <rel>producer</rel>
+          <obj>Wharton_Tiers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_4">
+      <text>The Velvet Underground album Squeeze is in the genre of rock music.</text>
+      <triples>
+        <triple>
+          <sub>Squeeze</sub>
+          <rel>genre</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_5">
+      <text>One of San Francisco's leaders is politician Ed Lee.</text>
+      <triples>
+        <triple>
+          <sub>San_Francisco</sub>
+          <rel>leader</rel>
+          <obj>Ed_Lee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_6">
+      <text>Expect a Miracle's genre is easy listening.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>genre</rel>
+          <obj>Easy_listening</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_7">
+      <text>John Lennon wrote the song Imagine, and then wrote Power to the People.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>precededBy</rel>
+          <obj>Power_to_the_People</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>precededBy</rel>
+          <obj>Song</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_dev_8">
+      <text>The album Live at Roadburn 2008 was followed by 'Karysun / Year of No Light'.</text>
+      <triples>
+        <triple>
+          <sub>Live_at_Roadburn_2008</sub>
+          <rel>followedBy</rel>
+          <obj>Karysun_/_Year_of_No_Light</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

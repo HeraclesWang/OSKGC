@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Artist" id="1_Artist_dev_1">
+      <text>Liselotte Grschebina was born within the German Empire.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>birthPlace</rel>
+          <obj>German_Empire</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_2">
+      <text>Alex Day performs folk music.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>genre</rel>
+          <obj>Folk_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_3">
+      <text>Aleksandra Kovač is associated with the musical artist Bebi Dol.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Bebi_Dol</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_4">
+      <text>Alison O'Donnell is associated with Bajik.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>associatedBand</rel>
+          <obj>Bajik</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_5">
+      <text>Andrew Rayel plays the piano.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>instrument</rel>
+          <obj>Piano</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_6">
+      <text>Ahmet Ertegun started out as a non performing personnel.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>background</rel>
+          <obj>non_performing_personnel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Background</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_7">
+      <text>Allen Forrest was born in 1981.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>birthYear</rel>
+          <obj>1981</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_8">
+      <text>The musician Andrew White was signed to the record label Fiction.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_White</sub>
+          <rel>recordLabel</rel>
+          <obj>Fiction</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Guitarist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_9">
+      <text>Alison O'Donnell's record label is Static Caravan Recordings.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Static_Caravan_Recordings</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_10">
+      <text>Allen Forrest is a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_11">
+      <text>Alex Day became active in music in 2006.</text>
+      <triples>
+        <triple>
+          <sub>Alex_Day</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>2006</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_12">
+      <text>Andrew Rayel is associated with the musical artist Jonathan Mendelsohn.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Jonathan_Mendelsohn</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_13">
+      <text>Alison O'Donnell's genre is folk rock.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>genre</rel>
+          <obj>Folk_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_14">
+      <text>Ahmet Ertegun's genre is rhythm and blues.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>genre</rel>
+          <obj>Rhythm_and_blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_15">
+      <text>Al Anderson (NRBQ) is a singer.</text>
+      <triples>
+        <triple>
+          <sub>Al_Anderson</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_16">
+      <text>The Israel's leader title is "Prime Minister".</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>leaderTitle</rel>
+          <obj>Prime_Minister</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_17">
+      <text>Liselotte Grschebina has Israeli nationality.</text>
+      <triples>
+        <triple>
+          <sub>Liselotte_Grschebina</sub>
+          <rel>nationality</rel>
+          <obj>Israel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Photographer</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_18">
+      <text>The full name of the country Israel is the State of Israel.</text>
+      <triples>
+        <triple>
+          <sub>Israel</sub>
+          <rel>longName</rel>
+          <obj>State_of_Israel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>longName</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_19">
+      <text>Movieplay is the record label of Alfredo Zitarrosa.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>recordLabel</rel>
+          <obj>Movieplay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_20">
+      <text>Abradab was born in Katowice.</text>
+      <triples>
+        <triple>
+          <sub>Abradab</sub>
+          <rel>birthPlace</rel>
+          <obj>Katowice</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_21">
+      <text>Aaron Deer is a singer.</text>
+      <triples>
+        <triple>
+          <sub>Aaron_Deer</sub>
+          <rel>occupation</rel>
+          <obj>Singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_22">
+      <text>Anders Osborne's genre is Blues.</text>
+      <triples>
+        <triple>
+          <sub>Anders_Osborne</sub>
+          <rel>genre</rel>
+          <obj>Blues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_23">
+      <text>The birth place of Andrew Rayel is Chișinău.</text>
+      <triples>
+        <triple>
+          <sub>Andrew_Rayel</sub>
+          <rel>birthPlace</rel>
+          <obj>Chișinău</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_24">
+      <text>The label Floating World Records signed Alison O'Donnell.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Floating_World_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_25">
+      <text>Alfredo Zitarrosa has a background as a solo singer.</text>
+      <triples>
+        <triple>
+          <sub>Alfredo_Zitarrosa</sub>
+          <rel>background</rel>
+          <obj>solo_singer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>background</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_26">
+      <text>Aleksandra Kovač's place of birth was the Socialist Republic of Serbia.</text>
+      <triples>
+        <triple>
+          <sub>Aleksandra_Kovač</sub>
+          <rel>birthPlace</rel>
+          <obj>Socialist_Republic_of_Serbia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_27">
+      <text>Istanbul was the birthplace of Ahmet Ertegun.</text>
+      <triples>
+        <triple>
+          <sub>Ahmet_Ertegun</sub>
+          <rel>birthPlace</rel>
+          <obj>Istanbul</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_28">
+      <text>Rock and roll originated from country music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_and_roll</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Country_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_29">
+      <text>Allen Forrest is associated with the band The Black Eyed Peas.</text>
+      <triples>
+        <triple>
+          <sub>Allen_Forrest</sub>
+          <rel>associatedBand</rel>
+          <obj>The_Black_Eyed_Peas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_30">
+      <text>Albennie Jones was born in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Albennie_Jones</sub>
+          <rel>birthPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_31">
+      <text>Andra (singer) is associated with Marius Moga.</text>
+      <triples>
+        <triple>
+          <sub>Andra</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>Marius_Moga</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>associatedMusicalArtist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Artist" id="1_Artist_dev_32">
+      <text>Alison O'Donnell is signed with the record label Stanyan Records.</text>
+      <triples>
+        <triple>
+          <sub>Alison_O'Donnell</sub>
+          <rel>recordLabel</rel>
+          <obj>Stanyan_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

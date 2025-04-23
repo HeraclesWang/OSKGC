@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1_Scientist_test_1",
+    "input_text": "Olga Bondareva is known for Bondareva–Shapley theorem.",
+    "response": "[Olga Bondareva, knownFor, Bondareva–Shapley theorem]:(Economist, knownFor, TopicalConcept)"
+  },
+  {
+    "id": "1_Scientist_test_2",
+    "input_text": "The birthdate of Lady Anne Monson is 1726-01-01.",
+    "response": "[Lady Anne Monson, birthDate, 1726-01-01]"
+  },
+  {
+    "id": "1_Scientist_test_3",
+    "input_text": "Olga Bondareva died in Saint Petersburg.",
+    "response": "[Saint Petersburg, deathPlace, Olga Bondareva]"
+  },
+  {
+    "id": "1_Scientist_test_4",
+    "input_text": "Lady Anne Monson's spouse was George Monson.",
+    "response": "[Lady Anne Monson, spouse, George Monson]"
+  },
+  {
+    "id": "1_Scientist_test_5",
+    "input_text": "Lady Anne Monson was born in Darlington.",
+    "response": "[Lady Anne Monson, birthPlace, Darlington]\n[Lady Anne Monson, birthDate,?]\n[Lady Anne Monson, Person,?]\n\nNote: The birthDate and PersonFunction (in this case, \"Person\") are unknown and need to be filled in."
+  },
+  {
+    "id": "1_Scientist_test_6",
+    "input_text": "Lady Anne Monson's nationality was with the Kingdom of England.",
+    "response": "Here is the output:\n\n[Lady Anne Monson, nationality, Kingdom of England]"
+  },
+  {
+    "id": "1_Scientist_test_7",
+    "input_text": "Lady Anne Monson professional field of study was botany.",
+    "response": "(Lady Anne Monson, professionalField, Botany)"
+  },
+  {
+    "id": "1_Scientist_test_8",
+    "input_text": "Lady Anne Monson died on February 18, 1776.",
+    "response": "[Lady Anne Monson, deathDate, 1776-02-18]"
+  },
+  {
+    "id": "1_Scientist_test_9",
+    "input_text": "Olga Bondareva died on December 9, 1991.",
+    "response": "[Olga Bondareva, deathDate, December 9, 1991]\n[Olga Bondareva, deathDate, 1991-12-09]\n(Death date is in the format YYYY-MM-DD, so I converted it accordingly)\n\nNote: Since there is no information about the type of PersonFunction or PersonFunction that Olga Bondareva held, we cannot infer the relation as (Person, leaderTitle, PersonFunction)"
+  },
+  {
+    "id": "1_Scientist_test_10",
+    "input_text": "Olga Bondareva's professional field is Economics.",
+    "response": "Olga Bondareva, professionalField, Economics"
+  },
+  {
+    "id": "1_Scientist_test_11",
+    "input_text": "Olga Bondareva's professional field is mathematics.",
+    "response": "Olga Bondareva, professionalField, mathematics"
+  },
+  {
+    "id": "1_Scientist_test_12",
+    "input_text": "Olga Bondareva was given the birth name \"Olga Nikolaevna Bondareva\".",
+    "response": "[Olga Bondareva, birthName, Olga Nikolaevna Bondareva]"
+  },
+  {
+    "id": "1_Scientist_test_13",
+    "input_text": "Olga Bondareva was born in Leningrad.",
+    "response": "[Leningrad, birthPlace, Olga Bondareva]"
+  },
+  {
+    "id": "1_Scientist_test_14",
+    "input_text": "Olga Bondareva was a student at Leningrad State University.",
+    "response": "[Leningrad State University, almaMater, Olga Bondareva]\n[Olga Bondareva, almaMater, Leningrad State University]\n(Leningrad State University, IsA, EducationalInstitution)\n(Olga Bondareva, IsA, Person)\n(Person, almaMater, EducationalInstitution)"
+  },
+  {
+    "id": "1_Scientist_test_15",
+    "input_text": "Olga Bondareva was born on April 27, 1937.",
+    "response": "Olga Bondareva, birthDate, 1937-04-27"
+  }
+]

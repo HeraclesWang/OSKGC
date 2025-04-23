@@ -1,0 +1,332 @@
+[
+    {
+        "id": "1_Artist_test_1",
+        "input_text": "Aaron Turner performs ambient music.",
+        "response": "[Aaron Turner, genre, ambient music]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_2",
+        "input_text": "Aaron Turner is an exponent of Doom metal.",
+        "response": "[Aaron Turner, genre, Doom metal]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_3",
+        "input_text": "Aaron Turner played for Old Man Gloom.",
+        "response": "[Aaron Turner, associatedBand, Old Man Gloom]:(MusicalArtist, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_4",
+        "input_text": "Aaron Turner originates from Boston.",
+        "response": "[Aaron Turner, origin, Boston]:(Person, origin, City)\n"
+    },
+    {
+        "id": "1_Artist_test_5",
+        "input_text": "Uruguay's leader is Tabaré Vázquez.",
+        "response": "[Uruguay, leader, Tabaré Vázquez]:(Country, leader, President)\n"
+    },
+    {
+        "id": "1_Artist_test_6",
+        "input_text": "Albennie Jones is a jazz artist.",
+        "response": "[Albennie Jones, genre, Jazz]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_7",
+        "input_text": "Hip Hop music has its stylistic origins in Jazz.",
+        "response": "[Hip Hop music, stylisticOrigin, Jazz]:(MusicGenre, stylisticOrigin, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_8",
+        "input_text": "Aaron Turner falls in the genre of avant-garde metal music.",
+        "response": "[Aaron Turner, genre, avant-garde metal music]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_9",
+        "input_text": "Ace Wilder's occupation is a singer.",
+        "response": "[Ace Wilder, occupation, singer]:(MusicalArtist, occupation, Profession)\n"
+    },
+    {
+        "id": "1_Artist_test_10",
+        "input_text": "The record label of Ace Wilder is Warner Music Group.",
+        "response": "[Ace Wilder, recordLabel, Warner Music Group]:(MusicalArtist, recordLabel, RecordLabel)\n"
+    },
+    {
+        "id": "1_Artist_test_11",
+        "input_text": "The official language of Israel is modern Hebrew.",
+        "response": "[Israel, officialLanguage, Modern Hebrew]:(Country, officialLanguage, Language)\n"
+    },
+    {
+        "id": "1_Artist_test_12",
+        "input_text": "Andra sings pop music.",
+        "response": "[Andra, genre, Pop music]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_13",
+        "input_text": "Anders Osborne is associated with the musical artist Billy Iuso.",
+        "response": "[Anders Osborne, associatedMusicalArtist, Billy Iuso]:(MusicalArtist, associatedMusicalArtist, MusicalArtist)\n"
+    },
+    {
+        "id": "1_Artist_test_14",
+        "input_text": "Trance music originated from house music.",
+        "response": "[Trance music, stylisticOrigin, house music]:(MusicGenre, stylisticOrigin, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_15",
+        "input_text": "Alan Frew was born in Scotland.",
+        "response": "[Alan Frew, birthPlace, Scotland]:(Person, birthPlace, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_16",
+        "input_text": "Alex Day plays with the band Chameleon Circuit.",
+        "response": "[Alex Day, associatedBand, Chameleon Circuit]:(Person, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_17",
+        "input_text": "Alternative rock has its stylistic origins in Punk rock.",
+        "response": "[Alternative rock, stylisticOrigin, Punk rock]:(MusicGenre, stylisticOrigin, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_18",
+        "input_text": "The musical genre of the singer Andra is dance pop.",
+        "response": "[Andra, genre, dance pop]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_19",
+        "input_text": "Sweden is the birthplace of Ace Wilder.",
+        "response": "[Sweden, birthPlace, Ace Wilder]:(Place, birthPlace, Person)\n"
+    },
+    {
+        "id": "1_Artist_test_20",
+        "input_text": "Aaron Turner performs for Mamiffer.",
+        "response": "[Aaron Turner, associatedBand, Mamiffer]:(Person, associatedBand, Organisation)\n"
+    },
+    {
+        "id": "1_Artist_test_21",
+        "input_text": "Aaron Turner started performing in 1995.",
+        "response": "[Aaron Turner, activeYearsStartYear, 1995]:(Person, activeYearsStartYear, Year)\n"
+    },
+    {
+        "id": "1_Artist_test_22",
+        "input_text": "Aaron Turner was born in the United States.",
+        "response": "[Aaron Turner, birthPlace, United States]:(Person, birthPlace, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_23",
+        "input_text": "Drone music is a genre of Aaron Turner.",
+        "response": "[Drone music, musicSubgenre, Genre]:(MusicGenre, musicSubgenre, Genre)\n[Aaron Turner, genre, Drone music]:(MusicalArtist, genre, MusicGenre)\n\n"
+    },
+    {
+        "id": "1_Artist_test_24",
+        "input_text": "Aaron Turner is from Massachusetts.",
+        "response": "[Aaron Turner, origin, Massachusetts]:(Person, origin, State)\n"
+    },
+    {
+        "id": "1_Artist_test_25",
+        "input_text": "Aaron Turner performed with the band Sumac.",
+        "response": "[Aaron Turner, associatedBand, Sumac]:(MusicalArtist, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_26",
+        "input_text": "Aaron Turner plays the electric guitar.",
+        "response": "[Aaron Turner, instrument, electric guitar]:(Person, instrument, Instrument)\n"
+    },
+    {
+        "id": "1_Artist_test_27",
+        "input_text": "Aaron Turner performs black metal music.",
+        "response": "[Aaron Turner, genre, Black metal]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_28",
+        "input_text": "Aaron Turner is closely associated with the genre sludge metal.",
+        "response": "[Aaron Turner, genre, sludge metal]:(Person, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_29",
+        "input_text": "Aaron Turner plays electroacoustic music.",
+        "response": "[Aaron Turner, genre, electroacoustic music]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_30",
+        "input_text": "Aaron Turner performed for House of Low Culture.",
+        "response": "[Aaron Turner, associatedBand, House of Low Culture]:(MusicalArtist, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_31",
+        "input_text": "Aaron Turner is an artist for the band Isis.",
+        "response": "[Aaron Turner, associatedBand, Isis]:(Artist, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_32",
+        "input_text": "Aaron Turner played with the band Twilight.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_33",
+        "input_text": "Aaron Turner's genre is post-metal.",
+        "response": "[Aaron Turner, genre, post-metal]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_34",
+        "input_text": "Aaron Turner is a musician in the Lotus Eaters band.",
+        "response": "[Aaron Turner, bandMember, Lotus Eaters]:(MusicalArtist, bandMember, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_35",
+        "input_text": "Aaron Turner is associated with the group Greymachine.",
+        "response": "[Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_36",
+        "input_text": "Aaron Turner sings for a living.",
+        "response": "[Aaron Turner, occupation, Singer]:(MusicalArtist, occupation, Profession)\n"
+    },
+    {
+        "id": "1_Artist_test_37",
+        "input_text": "Afrobeat is a fusion genre of Jazz.",
+        "response": "[Afrobeat, musicFusionGenre, Jazz]:(MusicGenre, musicFusionGenre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_38",
+        "input_text": "Jazz originated its style from Blues music.",
+        "response": "[Jazz, stylisticOrigin, Blues music]:(MusicGenre, stylisticOrigin, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_39",
+        "input_text": "The clarinet is used in Jazz music.",
+        "response": "[Jazz, instrument, clarinet]:(MusicGenre, instrument, Instrument)\n"
+    },
+    {
+        "id": "1_Artist_test_40",
+        "input_text": "Jazz has its stylistic origins in folk music.",
+        "response": "[Jazz, stylisticOrigin, folk music]:(MusicGenre, stylisticOrigin, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_41",
+        "input_text": "Funk is a derivative of Jazz.",
+        "response": "[Funk, derivative, Jazz]:(MusicGenre, derivative, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_42",
+        "input_text": "The Uruguayan currency is the Uruguayan peso.",
+        "response": "[Uruguay, currency, Uruguayan peso]:(Place, currency, Currency)\n"
+    },
+    {
+        "id": "1_Artist_test_43",
+        "input_text": "Raúl Fernando Sendic Rodríguez is Uruguay's leader.",
+        "response": "[Raúl Fernando Sendic Rodríguez, leader, Uruguay]:(Politician, leader, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_44",
+        "input_text": "Spanish is spoken in Uruguay.",
+        "response": "[Uruguay, language, Spanish]:(Place, language, Language)\n"
+    },
+    {
+        "id": "1_Artist_test_45",
+        "input_text": "Alfredo Zitarrosa was born in Uruguay.",
+        "response": "[Alfredo Zitarrosa, birthPlace, Uruguay]:(Person, birthPlace, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_46",
+        "input_text": "Montevideo is in the country of Uruguay.",
+        "response": "[Montevideo, country, Uruguay]:(City, country, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_47",
+        "input_text": "Uruguay’s national anthem is called the National Anthem of Uruguay.",
+        "response": "[Uruguay, anthem, National Anthem of Uruguay]:(Country, anthem, NationalAnthem)\n"
+    },
+    {
+        "id": "1_Artist_test_48",
+        "input_text": "People in Uruguay are known as Uruguayans.",
+        "response": "[Uruguay, demonym, Uruguayans]:(Place, demonym, EthnicGroup)\n"
+    },
+    {
+        "id": "1_Artist_test_49",
+        "input_text": "Alan Frew is from Newmarket (Ontario).",
+        "response": "[Alan Frew, origin, Newmarket (Ontario)]:(Person, origin, Place)\n"
+    },
+    {
+        "id": "1_Artist_test_50",
+        "input_text": "Alan Frew comes from Canada.",
+        "response": "[Alan Frew, origin, Canada]:(Person, origin, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_51",
+        "input_text": "Alan Frew plays with Glass Tiger.",
+        "response": "[Alan Frew, associatedBand, Glass Tiger]:(Person, associatedBand, Band)\n"
+    },
+    {
+        "id": "1_Artist_test_52",
+        "input_text": "Alan Frew was born in 1956.",
+        "response": "[Alan Frew, birthYear, 1956]:(Person, birthYear, Year)\n"
+    },
+    {
+        "id": "1_Artist_test_53",
+        "input_text": "The birth place of Alan Frew is Coatbridge.",
+        "response": "[Alan Frew, birthPlace, Coatbridge]:(Person, birthPlace, Place)\n"
+    },
+    {
+        "id": "1_Artist_test_54",
+        "input_text": "Alan Frew's background is that of solo singer.",
+        "response": "[Alan Frew, background, solo singer]:(Person, background, PersonFunction)\n"
+    },
+    {
+        "id": "1_Artist_test_55",
+        "input_text": "Alan Frew performs alternative rock music.",
+        "response": "[Alan Frew, genre, Alternative Rock]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_56",
+        "input_text": "Alan Frew is a musician.",
+        "response": "[Alan Frew, profession, Musician]:(MusicalArtist, profession, Profession)\n"
+    },
+    {
+        "id": "1_Artist_test_57",
+        "input_text": "Alan Frew was born in the United Kingdom.",
+        "response": "[Alan Frew, birthPlace, United Kingdom]:(Person, birthPlace, Country)\n"
+    },
+    {
+        "id": "1_Artist_test_58",
+        "input_text": "Alan Frew started performing in 1983.",
+        "response": "[Alan Frew, activeYearsStartYear, 1983]:(Person, activeYearsStartYear, Year)\n"
+    },
+    {
+        "id": "1_Artist_test_59",
+        "input_text": "Ace Wilder performs electropop music.",
+        "response": "[Ace Wilder, genre, electropop]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_60",
+        "input_text": "Ace Wilder was born on July 23, 1982.",
+        "response": "[Ace Wilder, birthDate, July 23, 1982]:(MusicalArtist, birthDate, Date)\n"
+    },
+    {
+        "id": "1_Artist_test_61",
+        "input_text": "Ace Wilder is a songwriter.",
+        "response": "[Ace Wilder, profession, songwriter]:(MusicalArtist, profession, Profession)\n"
+    },
+    {
+        "id": "1_Artist_test_62",
+        "input_text": "Ace Wilder is signed to the record label EMI Records.",
+        "response": "[Ace Wilder, recordLabel, EMI Records]:(MusicalArtist, recordLabel, RecordLabel)\n"
+    },
+    {
+        "id": "1_Artist_test_63",
+        "input_text": "Ace Wilder has a background as a solo singer.",
+        "response": "[Ace Wilder, background, solo singer]:(MusicalArtist, background, Profession)\n"
+    },
+    {
+        "id": "1_Artist_test_64",
+        "input_text": "Ace Wilder is an exponent of Hip hop music.",
+        "response": "[Ace Wilder, genre, Hip hop music]:(MusicalArtist, genre, MusicGenre)\n"
+    },
+    {
+        "id": "1_Artist_test_65",
+        "input_text": "Ace Wilder was born in Stockholm.",
+        "response": "[Ace Wilder, birthPlace, Stockholm]:(MusicalArtist, birthPlace, City)\n"
+    },
+    {
+        "id": "1_Artist_test_66",
+        "input_text": "Ace Wilder was born in 1982.",
+        "response": "[Ace Wilder, birthYear, 1982]:(MusicalArtist, birthYear, Year)\n"
+    }
+]

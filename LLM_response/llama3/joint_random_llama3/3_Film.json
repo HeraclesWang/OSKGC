@@ -1,0 +1,57 @@
+[
+    {
+        "id": "3_Film_test_1",
+        "input_text": "English Without Tears was edited by Alan Jaggs, produced by Anatole de Grunwald, with Bernard Knowles as the cinematographer.",
+        "response": "Here is the output based on the input text:\n\nEnglish Without Tears, editor, Alan Jaggs):(Film, editor, MovieEditor)\nEnglish Without Tears, producer, Anatole de Grunwald):(Film, producer, Person)\nEnglish Without Tears, cinematography, Bernard Knowles):(Film, cinematography, Cinematographer)"
+    },
+    {
+        "id": "3_Film_test_2",
+        "input_text": "Harold French was the director of the 89 minute film English Without Tears, where Nicholas Brodszky was the music composer.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[English Without Tears, director, Harold French]:(Film, director, MovieDirector)\n[English Without Tears, runtime, 89]:(Film, runtime, number)\n[English Without Tears, musicComposer, Nicholas Brodszky]:(Film, musicComposer, MusicComposer)"
+    },
+    {
+        "id": "3_Film_test_3",
+        "input_text": "Nicholas Brodszky composed music of the movie English Without Tears with a running time of 89 minutes and release date was 07-28-1944.",
+        "response": "Here is the output based on the input text and the given ontology schema:\n\n[English Without Tears, musicComposer, Nicholas Brodszky]:(Film, musicComposer, MusicComposer)\n[English Without Tears, runtime, 89]:(Film, runtime, number)\n[English Without Tears, releaseDate, 1944-07-28]:(Film, releaseDate, Date)"
+    },
+    {
+        "id": "3_Film_test_4",
+        "input_text": "'English Without Tears' was written by Terence Rattigan and Anatole de Grunwald, who was born in Saint Petersburg.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[English Without Tears, writer, Terence Rattigan]:(Film, writer, ScreenWriter)\n[English Without Tears, writer, Anatole de Grunwald]:(Film, writer, ScreenWriter)\n[Anatole de Grunwald, birthDate, ]:(Person, birthDate, Date)\n[Anatole de Grunwald, birthPlace, Saint Petersburg]:(Person, birthPlace, City)"
+    },
+    {
+        "id": "3_Film_test_5",
+        "input_text": "Super Capers was distributed by Roadside Attractions and Lionsgate which was founded by Frank Giustra.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Super Capers, distributor, Roadside Attractions]:(Film, distributor, ProductionCompany)\n[Super Capers, distributor, Lionsgate]:(Film, distributor, ProductionCompany)\n[Lionsgate, foundedBy, Frank Giustra]:(Company, foundedBy, Person)"
+    },
+    {
+        "id": "3_Film_test_6",
+        "input_text": "English Without Tears, written by Terence Rattigan, runs 89 minutes. The cinematography for the film was done by Bernard Knowles.",
+        "response": "Here is the output in the required format:\n\n[English Without Tears, cinematography, Bernard Knowles]:(Film, cinematography, Cinematographer)\n[English Without Tears, writer, Terence Rattigan]:(Film, writer, ScreenWriter)"
+    },
+    {
+        "id": "3_Film_test_7",
+        "input_text": "\"English Without Tears\" was produced and written by Anatole de Grunwald. The editor for the film was Alan Jaggs.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[English Without Tears, producer, Anatole de Grunwald]:(Work, producer, Person)\n[English Without Tears, writer, Anatole de Grunwald]:(Work, writer, ScreenWriter)\n[English Without Tears, editor, Alan Jaggs]:(Work, editor, MovieEditor)"
+    },
+    {
+        "id": "3_Film_test_8",
+        "input_text": "English Without Tears was produced by Anatole de Grunwald, directed by Harold French, with Nicholas Brodszky as the composer of the songs used.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[English Without Tears, producer, Anatole de Grunwald]:(Work, producer, Person)\n[English Without Tears, director, Harold French]:(Work, director, MovieDirector)\n[English Without Tears, musicComposer, Nicholas Brodszky]:(Work, musicComposer, MusicComposer)"
+    },
+    {
+        "id": "3_Film_test_9",
+        "input_text": "Anatole de Grunwald, born on December 25th 1910 is the coauthor of English Without Tears alongside Terence Rattigan.",
+        "response": "Here is the extracted knowledge graph based on the ontology schema:\n\n[Anatole de Grunwald, coauthor, Terence Rattigan]:(Work, writer, ScreenWriter)\n[Anatole de Grunwald, birthDate, December 25th 1910]:(Person, birthDate, Date)\n[Anatole de Grunwald, birthDate, 1910]:(Person, birthYear, Year)"
+    },
+    {
+        "id": "3_Film_test_10",
+        "input_text": "The 89 minute long movie English Without Tears includes music composed by Nicholas Brodszky. Alan Jaggs was in charge of the editing.",
+        "response": "Here is the output in the required format:\n\n[English Without Tears, runtime, 89]:(Film, runtime, number)\n[English Without Tears, musicComposer, Nicholas Brodszky]:(Film, musicComposer, MusicComposer)\n[English Without Tears, editor, Alan Jaggs]:(Film, editor, MovieEditor)"
+    },
+    {
+        "id": "3_Film_test_11",
+        "input_text": "Anatole de Grunwald wrote and produced English Without Tears which had Bernard Knowles as the cinematographer.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[English Without Tears, writer, Anatole de Grunwald]:(Film, writer, ScreenWriter)\n[English Without Tears, producer, Anatole de Grunwald]:(Work, producer, Person)\n[English Without Tears, cinematographer, Bernard Knowles]:(Film, cinematography, Cinematographer)"
+    }
+]

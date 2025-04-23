@@ -1,0 +1,1042 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_1">
+      <text>The band Train were signed to the record label Warner Music Group.</text>
+      <triples>
+        <triple>
+          <sub>Train</sub>
+          <rel>recordLabel</rel>
+          <obj>Warner_Music_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_2">
+      <text>Pat Monahan is the writer of the song Mermaid by the band Train.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>writer</rel>
+          <obj>Pat_Monahan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>writer</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_3">
+      <text>The song Mermaid is off the album California 37 by the band Train.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>album</rel>
+          <obj>California_37</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>album</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_4">
+      <text>Baroque pop is a fusion genre which includes some elements of pop rock.</text>
+      <triples>
+        <triple>
+          <sub>Pop_rock</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Baroque_pop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_5">
+      <text>San Francisco is in the timezone UTC -7.</text>
+      <triples>
+        <triple>
+          <sub>San_Francisco</sub>
+          <rel>utcOffset</rel>
+          <obj>-7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_6">
+      <text>The Bootleg Series Volume 1: The Quine Tapes was recorded in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>recordedIn</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordedIn</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_7">
+      <text>Expect a Miracle is in the instrumental music genre.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>genre</rel>
+          <obj>Instrumental_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_8">
+      <text>The Train song Mermaid was released on the date 2012-12-27.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>releaseDate</rel>
+          <obj>2012-12-27</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>releaseDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_9">
+      <text>Noise rock is a fusion genre of rock music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>Noise_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicFusionGenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_10">
+      <text>The Bootleg Series Volume 1: The Quine Tapes is produced by The Velvet Underground.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>producer</rel>
+          <obj>The_Velvet_Underground</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_11">
+      <text>The total area of the United States is around 9833520000000 square kilometers.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>areaTotal</rel>
+          <obj>9833520000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_12">
+      <text>Pop rock is the genre of the band Train.</text>
+      <triples>
+        <triple>
+          <sub>Train</sub>
+          <rel>genre</rel>
+          <obj>Pop_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_13">
+      <text>Mermaid is a song by Train released on the Columbia Records record label.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>recordLabel</rel>
+          <obj>Columbia_Records</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_14">
+      <text>Expect a Miracle has a runtime of 54.56 minutes.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>runtime</rel>
+          <obj>54.56</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_15">
+      <text>Monarch is a band that is associated with Year of No Light.</text>
+      <triples>
+        <triple>
+          <sub>Year_of_No_Light</sub>
+          <rel>associatedBand</rel>
+          <obj>Monarch</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_16">
+      <text>Post-hardcore is a derivative of noise rock.</text>
+      <triples>
+        <triple>
+          <sub>Noise_rock</sub>
+          <rel>derivative</rel>
+          <obj>Post-hardcore</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>derivative</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_17">
+      <text>The stylistic origin of the musical genre punk blues lies in earlier garage rock sound.</text>
+      <triples>
+        <triple>
+          <sub>Punk_blues</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Garage_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_18">
+      <text>The parent company of Polydor Records is Universal Music Group.</text>
+      <triples>
+        <triple>
+          <sub>Polydor_Records</sub>
+          <rel>parentCompany</rel>
+          <obj>Universal_Music_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>parentCompany</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_19">
+      <text>The release of the song Imagine by John Lennon was followed by the release of the song Happy Xmas (War Is Over).</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>followedBy</rel>
+          <obj>Happy_Xmas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>followedBy</rel>
+          <obj>Song</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_20">
+      <text>Stoner sludge is a subgenre of sludge metal.</text>
+      <triples>
+        <triple>
+          <sub>Sludge_metal</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Stoner_sludge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_21">
+      <text>The Mermaid song by Train has a total runtime of 3.16 minutes.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>runtime</rel>
+          <obj>3.16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_22">
+      <text>The Train song Mermaid was preceded by the song This'll be my year.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>precededBy</rel>
+          <obj>This'll_Be_My_Year</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>precededBy</rel>
+          <obj>Song</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_23">
+      <text>Squeeze was followed by the album 1969: The Velvet Underground Live.</text>
+      <triples>
+        <triple>
+          <sub>Squeeze</sub>
+          <rel>followedBy</rel>
+          <obj>1969:_The_Velvet_Underground_Live</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_24">
+      <text>The key person at Universal Music Group is Lucian Grainge.</text>
+      <triples>
+        <triple>
+          <sub>Universal_Music_Group</sub>
+          <rel>keyPerson</rel>
+          <obj>Lucian_Grainge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_25">
+      <text>The genre of the Velvet Underground is proto-punk.</text>
+      <triples>
+        <triple>
+          <sub>The_Velvet_Underground</sub>
+          <rel>genre</rel>
+          <obj>Proto-punk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_26">
+      <text>Proto-punk is a music subgenre of rock music.</text>
+      <triples>
+        <triple>
+          <sub>Rock_music</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Proto-punk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_27">
+      <text>The album Expect a miracle is of the easy listening genre.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>genre</rel>
+          <obj>Easy_listening</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_28">
+      <text>Bootleg Series Volume 1: The Quine Tapes's genre is rock.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>genre</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_29">
+      <text>The Bootleg Series Volume 1: The Quine Tapes was recorded under the Universal Music Group record label.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>recordLabel</rel>
+          <obj>Universal_Music_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_30">
+      <text>Altar of Plagues has been associated with Year of No Light.</text>
+      <triples>
+        <triple>
+          <sub>Year_of_No_Light</sub>
+          <rel>associatedBand</rel>
+          <obj>Altar_of_Plagues</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>associatedBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_31">
+      <text>The song by Train called Mermaid is on the Sony Music Entertainment record label.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>recordLabel</rel>
+          <obj>Sony_Music_Entertainment</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>recordLabel</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_32">
+      <text>Bootleg Series Volume 1: The Quine Tapes was preceded by the album Squeeze.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>precededBy</rel>
+          <obj>Squeeze</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_33">
+      <text>Post-metal music includes synthesizers among the instruments it uses.</text>
+      <triples>
+        <triple>
+          <sub>Post-metal</sub>
+          <rel>instrument</rel>
+          <obj>Synthesizer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_34">
+      <text>The album Let It Breed is preceded by the release of the album Love American Style.</text>
+      <triples>
+        <triple>
+          <sub>Let_It_Breed</sub>
+          <rel>precededBy</rel>
+          <obj>Love_American_Style</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_35">
+      <text>The Train song Mermaid is followed by the John Lennon song Imagine.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>followedBy</rel>
+          <obj>Imagine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>followedBy</rel>
+          <obj>Song</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_36">
+      <text>Expect a Miracle is preceded by the Brian Kelly album Pools of Light.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>precededBy</rel>
+          <obj>Pools_of_Light</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>precededBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_37">
+      <text>Interscope Geffen A&amp;M distributes the Polydor Records label.</text>
+      <triples>
+        <triple>
+          <sub>Polydor_Records</sub>
+          <rel>distributingLabel</rel>
+          <obj>Interscope_Geffen_A&amp;M</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>RecordLabel</sub>
+          <rel>distributingLabel</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_38">
+      <text>San Francisco's area code is 628.</text>
+      <triples>
+        <triple>
+          <sub>San_Francisco</sub>
+          <rel>areaCode</rel>
+          <obj>628</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_39">
+      <text>The album Take It Off! is produced by the American band the Honeymoon Killers.</text>
+      <triples>
+        <triple>
+          <sub>Take_It_Off!</sub>
+          <rel>producer</rel>
+          <obj>The_Honeymoon_Killers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_40">
+      <text>"Imagine" is a song by musical artist, John Lennon.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>artist</rel>
+          <obj>John_Lennon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>artist</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_41">
+      <text>Phil Spector produced John Lennon’s song Imagine.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>producer</rel>
+          <obj>Phil_Spector</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>producer</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_42">
+      <text>Live at Roadburn 2008 by Year of No Light was produced by the Roadburn Festival.</text>
+      <triples>
+        <triple>
+          <sub>Live_at_Roadburn_2008</sub>
+          <rel>producer</rel>
+          <obj>Roadburn_Festival</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>RecordLabel</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_43">
+      <text>Wharton Tiers was born on January 1, 1953.</text>
+      <triples>
+        <triple>
+          <sub>Wharton_Tiers</sub>
+          <rel>birthDate</rel>
+          <obj>1953-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicalArtist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_44">
+      <text>The Train song Mermaid was written by Amund Bjørklund.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>writer</rel>
+          <obj>Amund_Bjørklund</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>writer</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_45">
+      <text>The genre of the Honeymoon Killers is noise rock.</text>
+      <triples>
+        <triple>
+          <sub>The_Honeymoon_Killers</sub>
+          <rel>genre</rel>
+          <obj>Noise_rock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>genre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_46">
+      <text>The Velvet Underground, produced their album Bootleg Series Volume 1: The Quine Tapes.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>producer</rel>
+          <obj>The_Velvet_Underground</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_47">
+      <text>Noise music is an origin of noise rock.</text>
+      <triples>
+        <triple>
+          <sub>Noise_rock</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Noise_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_48">
+      <text>The song Mermaid is by the musical band Train.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>musicalBand</rel>
+          <obj>Train</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>musicalBand</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_49">
+      <text>Charlie Colin is a former band mate of the band Train.</text>
+      <triples>
+        <triple>
+          <sub>Train</sub>
+          <rel>formerBandMember</rel>
+          <obj>Charlie_Colin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>formerBandMember</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_50">
+      <text>Lou Reed is a former band member of the Velvet Underground.</text>
+      <triples>
+        <triple>
+          <sub>The_Velvet_Underground</sub>
+          <rel>formerBandMember</rel>
+          <obj>Lou_Reed</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Band</sub>
+          <rel>formerBandMember</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_51">
+      <text>The song Imagine by John Lennon earned the FIMI certification.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>certification</rel>
+          <obj>FIMI</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>certification</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_52">
+      <text>The location that the Bootleg Series Volume 1: The Quine Tapes was recorded in was St. Louis.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>recordedIn</rel>
+          <obj>St._Louis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>recordedIn</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_53">
+      <text>Pop rock's subgenre is indie pop.</text>
+      <triples>
+        <triple>
+          <sub>Pop_rock</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Indie_pop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_54">
+      <text>Sludge metal has a variety called southern sludge.</text>
+      <triples>
+        <triple>
+          <sub>Sludge_metal</sub>
+          <rel>musicSubgenre</rel>
+          <obj>Southern_sludge</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>musicSubgenre</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_55">
+      <text>Squeeze is an album produced by the Velvet Underground.</text>
+      <triples>
+        <triple>
+          <sub>Squeeze</sub>
+          <rel>producer</rel>
+          <obj>The_Velvet_Underground</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>producer</rel>
+          <obj>Band</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_56">
+      <text>Stargate produced the song Mermaid.</text>
+      <triples>
+        <triple>
+          <sub>Mermaid</sub>
+          <rel>writer</rel>
+          <obj>Stargate</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>writer</rel>
+          <obj>MusicalArtist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_57">
+      <text>The album Bootleg Series Volume 1: The Quine Tapes was released on 10-16-2001.</text>
+      <triples>
+        <triple>
+          <sub>Bootleg_Series_Volume_1:_The_Quine_Tapes</sub>
+          <rel>releaseDate</rel>
+          <obj>2001-10-16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>releaseDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_58">
+      <text>The drum kit is an instrument used in the punk blues genre.</text>
+      <triples>
+        <triple>
+          <sub>Punk_blues</sub>
+          <rel>instrument</rel>
+          <obj>Drum_kit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>instrument</rel>
+          <obj>Instrument</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_59">
+      <text>Expect a Miracle was followed by Afterplay by Brian Kelly.</text>
+      <triples>
+        <triple>
+          <sub>Expect_a_Miracle</sub>
+          <rel>followedBy</rel>
+          <obj>Afterplay</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Album</sub>
+          <rel>followedBy</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_60">
+      <text>A stylistic origin of pop rock is rock music.</text>
+      <triples>
+        <triple>
+          <sub>Pop_rock</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>Rock_music</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicGenre</sub>
+          <rel>stylisticOrigin</rel>
+          <obj>MusicGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MusicalWork" id="1_MusicalWork_train_61">
+      <text>The song Imagine by John Lennon was released on the album also named Imagine.</text>
+      <triples>
+        <triple>
+          <sub>Imagine</sub>
+          <rel>album</rel>
+          <obj>Imagine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Song</sub>
+          <rel>album</rel>
+          <obj>Album</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

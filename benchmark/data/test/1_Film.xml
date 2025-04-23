@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Film" id="1_Film_test_1">
+      <text>English Without Tears was released on 1944-07-28.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>releaseDate</rel>
+          <obj>1944-07-28</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>releaseDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_2">
+      <text>Terence Rattigan died on the 30th of November in the year 1977.</text>
+      <triples>
+        <triple>
+          <sub>Terence_Rattigan</sub>
+          <rel>deathDate</rel>
+          <obj>1977-11-30</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>deathDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_3">
+      <text>Anatole de Grunwald was born in Saint Petersburg.</text>
+      <triples>
+        <triple>
+          <sub>Anatole_de_Grunwald</sub>
+          <rel>birthPlace</rel>
+          <obj>Saint_Petersburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_4">
+      <text>John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>starring</rel>
+          <obj>John_Mills</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_5">
+      <text>English Without Tears is written by Anatole de Grunwald.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>writer</rel>
+          <obj>Anatole_de_Grunwald</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>writer</rel>
+          <obj>ScreenWriter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_6">
+      <text>The music of the film English Without Tears is composed by Nicholas Brodszky.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>musicComposer</rel>
+          <obj>Nicholas_Brodszky</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>musicComposer</rel>
+          <obj>MusicComposer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_7">
+      <text>"English Without Tears" was produced by Anatole de Grunwald.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>producer</rel>
+          <obj>Anatole_de_Grunwald</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>producer</rel>
+          <obj>ScreenWriter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_8">
+      <text>The cinematography of English Without Tears was done by Bernard Knowles.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>cinematography</rel>
+          <obj>Bernard_Knowles</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>cinematography</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_9">
+      <text>The editing of the movie English Without Tears was done by Alan Jaggs.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>editor</rel>
+          <obj>Alan_Jaggs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>editor</rel>
+          <obj>MovieEditor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_10">
+      <text>'English Without Tears' was written by Terence Rattigan.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>writer</rel>
+          <obj>Terence_Rattigan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>writer</rel>
+          <obj>ScreenWriter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_11">
+      <text>English Without Tears is 89 minutes long.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>runtime</rel>
+          <obj>89</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_12">
+      <text>English Without Tears is a film directed by Harold French.</text>
+      <triples>
+        <triple>
+          <sub>English_Without_Tears</sub>
+          <rel>director</rel>
+          <obj>Harold_French</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_13">
+      <text>Anatole de Grunwald died in London.</text>
+      <triples>
+        <triple>
+          <sub>Anatole_de_Grunwald</sub>
+          <rel>deathPlace</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>deathPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_14">
+      <text>Michael Rooker was born in the year 1955.</text>
+      <triples>
+        <triple>
+          <sub>Michael_Rooker</sub>
+          <rel>birthYear</rel>
+          <obj>1955</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_15">
+      <text>Michael Rooker was born on April 6th 1955.</text>
+      <triples>
+        <triple>
+          <sub>Michael_Rooker</sub>
+          <rel>birthDate</rel>
+          <obj>1955-04-06</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_test_16">
+      <text>Super Capers is a film starring Michael Rooker.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>starring</rel>
+          <obj>Michael_Rooker</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

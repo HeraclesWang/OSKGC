@@ -1,0 +1,3966 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_1">
+      <text>The AMC Matador has a hardtop.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>bodyStyle</rel>
+          <obj>Hardtop</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>bodyStyle</rel>
+          <obj>CarBodyStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_2">
+      <text>Humphrys, Tennant and Dykes is located in Deptford.</text>
+      <triples>
+        <triple>
+          <sub>Humphrys,_Tennant_and_Dykes</sub>
+          <rel>location</rel>
+          <obj>Deptford</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_3">
+      <text>General Dynamics Electric Boat is the builder of the American submarine NR-1.</text>
+      <triples>
+        <triple>
+          <sub>American_submarine_NR-1</sub>
+          <rel>builder</rel>
+          <obj>General_Dynamics_Electric_Boat</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_4">
+      <text>Arianespace is located in France.</text>
+      <triples>
+        <triple>
+          <sub>Arianespace</sub>
+          <rel>country</rel>
+          <obj>France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_5">
+      <text>The American Locomotive Company built the ALCO RS-3.</text>
+      <triples>
+        <triple>
+          <sub>ALCO_RS-3</sub>
+          <rel>builder</rel>
+          <obj>American_Locomotive_Company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Locomotive</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_6">
+      <text>An alternative name for the AMC Matador is the Rambler Matador.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>alternativeName</rel>
+          <obj>Rambler_Matador</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>alternativeName</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_7">
+      <text>The Atlas II was launched from the Spaceport Florida Launch Complex 36.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>launchSite</rel>
+          <obj>Spaceport_Florida_Launch_Complex_36</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchPad</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_8">
+      <text>Atlas II's final flight was on the 31st August 2004.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>finalFlight</rel>
+          <obj>2004-08-31</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>finalFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_9">
+      <text>Sauli Niinistö is a leader in Finland.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>leader</rel>
+          <obj>Sauli_Niinistö</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_10">
+      <text>The Alfa Romeo 164 has a Sedan body style.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>bodyStyle</rel>
+          <obj>Sedan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>bodyStyle</rel>
+          <obj>CarBodyStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_11">
+      <text>Humphrys, Tennant and Dykes are located in London.</text>
+      <triples>
+        <triple>
+          <sub>Humphrys,_Tennant_and_Dykes</sub>
+          <rel>location</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_12">
+      <text>The location of the company P&amp;O is London.</text>
+      <triples>
+        <triple>
+          <sub>P&amp;O</sub>
+          <rel>location</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_13">
+      <text>The Alfa Romeo 164 has a 6-speed manual Getrag transmission.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>transmission</rel>
+          <obj>6-speed_manual</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>transmission</rel>
+          <obj>Transmission</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_14">
+      <text>Abarth is the manufacturer of the Abarth 1000 GT Coupé.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>manufacturer</rel>
+          <obj>Abarth</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_15">
+      <text>The Fiat Croma and the Saab 9000 are related means of transport in that they are both cars.</text>
+      <triples>
+        <triple>
+          <sub>Fiat_Croma</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Saab_9000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_16">
+      <text>Juha Sipilä is a leader in Finland.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>leader</rel>
+          <obj>Juha_Sipilä</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_17">
+      <text>Lockheed Martin is located in Bethesda (Maryland).</text>
+      <triples>
+        <triple>
+          <sub>Lockheed_Martin</sub>
+          <rel>location</rel>
+          <obj>Bethesda</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_18">
+      <text>The Icebreaker, Aleksey Chirikov's ship beam is 21.2.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>shipBeam</rel>
+          <obj>21.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipBeam</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_19">
+      <text>Audi is the manufacturer of the Audi A1.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>manufacturer</rel>
+          <obj>Audi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_20">
+      <text>Arianespace is located in the city of Courcouronnes.</text>
+      <triples>
+        <triple>
+          <sub>Arianespace</sub>
+          <rel>city</rel>
+          <obj>Courcouronnes</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_21">
+      <text>The Audi A1 has a 6-speed manual gearbox.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>transmission</rel>
+          <obj>6-speed_manual</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>transmission</rel>
+          <obj>Transmission</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_22">
+      <text>The Guiana Space Centre is located in Kourou.</text>
+      <triples>
+        <triple>
+          <sub>Guiana_Space_Centre</sub>
+          <rel>location</rel>
+          <obj>Kourou</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchBase</sub>
+          <rel>location</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_23">
+      <text>Arianespace operates the ELA-3.</text>
+      <triples>
+        <triple>
+          <sub>ELA-3</sub>
+          <rel>operator</rel>
+          <obj>Arianespace</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>operator</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_24">
+      <text>The diameter of the ALV X-1 is 1.524 metres.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>diameter</rel>
+          <obj>1.524</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>diameter</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_25">
+      <text>The Abarth 1000 GT coupé was designed by Gruppo Bertone.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>designCompany</rel>
+          <obj>Gruppo_Bertone</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>designCompany</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_26">
+      <text>The AMC Matador has an AMC straight-6 engine.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>engine</rel>
+          <obj>AMC_straight-6_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_27">
+      <text>The A-Rosa Luna was built in Germany.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>builder</rel>
+          <obj>Germany</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_28">
+      <text>AMC Matador is manufactured by American Motors.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>manufacturer</rel>
+          <obj>American_Motors</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_29">
+      <text>MTU Friedrichshafen is in the city of Friedrichshafen.</text>
+      <triples>
+        <triple>
+          <sub>MTU_Friedrichshafen</sub>
+          <rel>city</rel>
+          <obj>Friedrichshafen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_30">
+      <text>The Gruppo Bertone was founded in Turin.</text>
+      <triples>
+        <triple>
+          <sub>Gruppo_Bertone</sub>
+          <rel>foundationPlace</rel>
+          <obj>Turin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_31">
+      <text>The saint of Milan is Ambrose.</text>
+      <triples>
+        <triple>
+          <sub>Milan</sub>
+          <rel>saint</rel>
+          <obj>Ambrose</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>saint</rel>
+          <obj>Saint</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_32">
+      <text>The ALCO RS-3 has a cylinder count of 12.</text>
+      <triples>
+        <triple>
+          <sub>ALCO_RS-3</sub>
+          <rel>cylinderCount</rel>
+          <obj>12</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Locomotive</sub>
+          <rel>cylinderCount</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_33">
+      <text>The Alfa Romeo 164 has a V6 engine.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>engine</rel>
+          <obj>V6_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_34">
+      <text>The Pontiac Rageous was last produced in 1997.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac_Rageous</sub>
+          <rel>productionEndYear</rel>
+          <obj>1997</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>productionEndYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_35">
+      <text>DeSoto are the manufacturers of the DeSoto Custom.</text>
+      <triples>
+        <triple>
+          <sub>DeSoto_Custom</sub>
+          <rel>manufacturer</rel>
+          <obj>DeSoto</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_36">
+      <text>The location of Meyer Werft is Papenburg.</text>
+      <triples>
+        <triple>
+          <sub>Meyer_Werft</sub>
+          <rel>location</rel>
+          <obj>Papenburg</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_37">
+      <text>The Guiana Space Centre has its headquarters at Kourou.</text>
+      <triples>
+        <triple>
+          <sub>Guiana_Space_Centre</sub>
+          <rel>headquarter</rel>
+          <obj>Kourou</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchBase</sub>
+          <rel>headquarter</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_38">
+      <text>Sergio Marchionne was the key person of the Dodge.</text>
+      <triples>
+        <triple>
+          <sub>Dodge</sub>
+          <rel>keyPerson</rel>
+          <obj>Sergio_Marchionne</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_39">
+      <text>The A-Rosa Luna is classed as a cruise ship.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>shipClass</rel>
+          <obj>Cruise_ship</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipClass</rel>
+          <obj>ShipClass</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_40">
+      <text>The AIDAstella was built by Meyer Werft.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>builder</rel>
+          <obj>Meyer_Werft</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_41">
+      <text>The Pontiac company manufactures automobile.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac</sub>
+          <rel>product</rel>
+          <obj>Automobile</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Product</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_42">
+      <text>French Guiana is the location of the Guiana Space Centre.</text>
+      <triples>
+        <triple>
+          <sub>Guiana_Space_Centre</sub>
+          <rel>location</rel>
+          <obj>French_Guiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchBase</sub>
+          <rel>location</rel>
+          <obj>OverseasDepartment</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_43">
+      <text>The Antares rocket was made by the Yuzhnoye Design Office.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>manufacturer</rel>
+          <obj>Yuzhnoye_Design_Office</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_44">
+      <text>The leader of Argentina is Mauricio Macri.</text>
+      <triples>
+        <triple>
+          <sub>Argentina</sub>
+          <rel>leader</rel>
+          <obj>Mauricio_Macri</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_45">
+      <text>The Atlas II rocket’s launch site is Vandenberg AFB Space Launch Complex 3.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>launchSite</rel>
+          <obj>Vandenberg_AFB_Space_Launch_Complex_3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchPad</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_46">
+      <text>The country of origin of the ALV X-1 is the United States.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>countryOrigin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>countryOrigin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_47">
+      <text>The final flight of the rocket, Antares was on the 18th of September 2013.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>finalFlight</rel>
+          <obj>2013-09-18</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>finalFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_48">
+      <text>The origin of the Delta II is the United States.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>countryOrigin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>countryOrigin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_49">
+      <text>The AIDAstella is a Sphinx-class cruise ship.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>shipClass</rel>
+          <obj>Sphinx-class_cruise_ship</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipClass</rel>
+          <obj>ShipClass</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_50">
+      <text>The Aleksey Chirikov (icebreaker) is in service.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>status</rel>
+          <obj>In_service</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>status</rel>
+          <obj>Status</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_51">
+      <text>Richard A. Teague is an employee of General Motors.</text>
+      <triples>
+        <triple>
+          <sub>Richard_A._Teague</sub>
+          <rel>employer</rel>
+          <obj>General_Motors</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Designer</sub>
+          <rel>employer</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_52">
+      <text>The Antares rocket first voyage was on January 9, 2014.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>maidenFlight</rel>
+          <obj>2014-01-09</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>maidenFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_53">
+      <text>The Aston Martin V8 assembly took place in Newport Pagnell.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>assembly</rel>
+          <obj>Newport_Pagnell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_54">
+      <text>The Delta II was launched at the Cape Canaveral Air Force Station.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>launchSite</rel>
+          <obj>Cape_Canaveral_Air_Force_Station</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchBase</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_55">
+      <text>The Aston Martin DBS is manufactured by Aston Martin.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_DBS</sub>
+          <rel>manufacturer</rel>
+          <obj>Aston_Martin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_56">
+      <text>Fiat Croma and Opel Vectra are related forms of transportation.</text>
+      <triples>
+        <triple>
+          <sub>Fiat_Croma</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Opel_Vectra</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_57">
+      <text>Argentines live in Argentina.</text>
+      <triples>
+        <triple>
+          <sub>Argentina</sub>
+          <rel>demonym</rel>
+          <obj>Argentines</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_58">
+      <text>The ALV X-1 was manufactured by Alliant Techsystems.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>manufacturer</rel>
+          <obj>Alliant_Techsystems</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>manufacturer</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_59">
+      <text>The American Locomotive Company was founded in Schenectady.</text>
+      <triples>
+        <triple>
+          <sub>American_Locomotive_Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>Schenectady</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_60">
+      <text>The AMC Matador is assembled by the Australian Motor Industries.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Australian_Motor_Industries</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_61">
+      <text>The AMC Matador is classed as a mid-size car.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>class</rel>
+          <obj>Mid-size_car</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_62">
+      <text>Delta II was manufactured by the United Launch Alliance.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>manufacturer</rel>
+          <obj>United_Launch_Alliance</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>manufacturer</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_63">
+      <text>The A-Rosa Luna was built in Rostock.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>builder</rel>
+          <obj>Rostock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_64">
+      <text>The Alhambra was 63800 millimetres long.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>length</rel>
+          <obj>63800</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>length</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_65">
+      <text>The rocket Antares is comparable to Delta II.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>comparable</rel>
+          <obj>Delta_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>comparable</rel>
+          <obj>Rocket</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_66">
+      <text>The Alliant Techsystems produces the XM25 CDTE.</text>
+      <triples>
+        <triple>
+          <sub>Alliant_Techsystems</sub>
+          <rel>product</rel>
+          <obj>XM25_CDTE</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>product</rel>
+          <obj>Weapon</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_67">
+      <text>The AMC Matador is assembled in Mexico City.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Mexico_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_68">
+      <text>Buick is the successor of Pontiac.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac</sub>
+          <rel>successor</rel>
+          <obj>Buick</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>successor</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_69">
+      <text>The SEAT Ibiza and the Audi A1 are similar means of transport.</text>
+      <triples>
+        <triple>
+          <sub>SEAT_Ibiza</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Audi_A1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_70">
+      <text>One of the ethnic groups in the United States is African Americans.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>African_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_71">
+      <text>The Yuzhnoye Design Office is located in Dnipropetrovsk.</text>
+      <triples>
+        <triple>
+          <sub>Yuzhnoye_Design_Office</sub>
+          <rel>location</rel>
+          <obj>Dnipropetrovsk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_72">
+      <text>The Lancia Thema is related to the Saab 9000.</text>
+      <triples>
+        <triple>
+          <sub>Lancia_Thema</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Saab_9000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_73">
+      <text>The AMC Matador has a AMC V8 engine.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>engine</rel>
+          <obj>AMC_V8_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_74">
+      <text>The AMC Matador is assembled in Mexico.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Mexico</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_75">
+      <text>American Motors was acquired by Chrysler.</text>
+      <triples>
+        <triple>
+          <sub>American_Motors</sub>
+          <rel>fate</rel>
+          <obj>Chrysler</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>fate</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_76">
+      <text>The AIDAstella is still in service to this date.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>status</rel>
+          <obj>In_service</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>status</rel>
+          <obj>Status</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_77">
+      <text>The AIDAstella was christened on the 16th of March, 2013.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>christeningDate</rel>
+          <obj>2013-03-16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>christeningDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_78">
+      <text>The A-Rosa Luna was completed on April 6, 2005.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>completionDate</rel>
+          <obj>2005-04-06</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>completionDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_79">
+      <text>The AIDAstella ship was put in service on March 17, 2013.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>shipInService</rel>
+          <obj>2013-03-17</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipInService</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_80">
+      <text>The Lancia Thema is related to the Alfa Romeo 164.</text>
+      <triples>
+        <triple>
+          <sub>Lancia_Thema</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Alfa_Romeo_164</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_81">
+      <text>The AIDAstella service began on March 17th 2013.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>2013-03-17</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>activeYearsStartDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_82">
+      <text>The Antares rocket's final flight was on the 28th October 2014.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>finalFlight</rel>
+          <obj>2014-10-28</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>finalFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_83">
+      <text>Alvis Speed 25 was manufactured by the Alvis Car and Engineering Company.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Speed_25</sub>
+          <rel>manufacturer</rel>
+          <obj>Alvis_Car_and_Engineering_Company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_84">
+      <text>French Guiana is where the headquarters of the Guiana Space Centre are located.</text>
+      <triples>
+        <triple>
+          <sub>Guiana_Space_Centre</sub>
+          <rel>headquarter</rel>
+          <obj>French_Guiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchBase</sub>
+          <rel>headquarter</rel>
+          <obj>OverseasDepartment</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_85">
+      <text>The Airbus Group is the parent company of Airbus Defence and Space.</text>
+      <triples>
+        <triple>
+          <sub>Airbus_Defence_and_Space</sub>
+          <rel>parentCompany</rel>
+          <obj>Airbus_Group</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_86">
+      <text>The successor of the Aston Martin DBS is the Aston Martin Vantage.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_DBS</sub>
+          <rel>successor</rel>
+          <obj>Aston_Martin_Vantage</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>successor</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_87">
+      <text>The manufacturer of the Atlas II is Lockheed Martin.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>manufacturer</rel>
+          <obj>Lockheed_Martin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_88">
+      <text>The Alvis Car and Engineering Company is located in Coventry.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Car_and_Engineering_Company</sub>
+          <rel>location</rel>
+          <obj>Coventry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_89">
+      <text>The natives of Finland are known as Finns.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>demonym</rel>
+          <obj>Finns</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_90">
+      <text>AIDAstella is 253260 millimetres in length.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>length</rel>
+          <obj>253260</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>length</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_91">
+      <text>The ARA Veinticinco de Mayo V-2 ship's beam measures 24.4.</text>
+      <triples>
+        <triple>
+          <sub>ARA_Veinticinco_de_Mayo</sub>
+          <rel>shipBeam</rel>
+          <obj>24.4</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipBeam</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_92">
+      <text>The Pontiac Rageous is manufactured by Pontiac.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac_Rageous</sub>
+          <rel>manufacturer</rel>
+          <obj>Pontiac</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>manufacturer</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_93">
+      <text>Atlas II had its final flight on March 16th 1998.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>finalFlight</rel>
+          <obj>1998-03-16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>finalFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_94">
+      <text>The Antares rocket was manufactured by Orbital ATK.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>manufacturer</rel>
+          <obj>Orbital_ATK</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>manufacturer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_95">
+      <text>The alternative name for AMC Matador is VAM Classic.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>alternativeName</rel>
+          <obj>VAM_Classic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>alternativeName</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_96">
+      <text>Volkswagen Polo and Audi A1 are related forms of transportation.</text>
+      <triples>
+        <triple>
+          <sub>Volkswagen_Polo</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Audi_A1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_97">
+      <text>The Alfa Romeo 164 was assembled in Milan.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>assembly</rel>
+          <obj>Milan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_98">
+      <text>The Abarth 1000 GT Coupé 's production started in 1958.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>productionStartYear</rel>
+          <obj>1958</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>productionStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_99">
+      <text>Two door coupé is the body style of the Abarth 1000 GT Coupé.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>bodyStyle</rel>
+          <obj>Two_door_coupé</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>bodyStyle</rel>
+          <obj>CarBodyStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_100">
+      <text>The A-Rosa Luna was built by Neptun Werft, Warnemünde.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>builder</rel>
+          <obj>Neptun_Werft</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_101">
+      <text>Richard A. Teague works for Chrysler.</text>
+      <triples>
+        <triple>
+          <sub>Richard_A._Teague</sub>
+          <rel>employer</rel>
+          <obj>Chrysler</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Designer</sub>
+          <rel>employer</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_102">
+      <text>The capital of Argentina is Buenos Aires.</text>
+      <triples>
+        <triple>
+          <sub>Argentina</sub>
+          <rel>capital</rel>
+          <obj>Buenos_Aires</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_103">
+      <text>Aston Martin V8 was assembled in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>assembly</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_104">
+      <text>The Audi A1 has a 1.2 litre engine.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>engineSize</rel>
+          <obj>1.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_105">
+      <text>The Mid-Atlantic Regional Spaceport Launch Pad 0 is associated with the Minotaur V rocket.</text>
+      <triples>
+        <triple>
+          <sub>Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</sub>
+          <rel>associatedRocket</rel>
+          <obj>Minotaur_V</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>associatedRocket</rel>
+          <obj>Rocket</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_106">
+      <text>The ship Alhambra was launched on the 31st May 1855.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>shipLaunch</rel>
+          <obj>1855-05-31</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipLaunch</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_107">
+      <text>The AIDAstella has a top speed of 38.892.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>topSpeed</rel>
+          <obj>38.892</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>topSpeed</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_108">
+      <text>The Alhambra is powered by a Humphrys, Tennant and Dykes engine.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>poweredBy</rel>
+          <obj>Humphrys,_Tennant_and_Dykes</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>poweredBy</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_109">
+      <text>Berlin is the capital of Germany.</text>
+      <triples>
+        <triple>
+          <sub>Germany</sub>
+          <rel>capital</rel>
+          <obj>Berlin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_110">
+      <text>The A-Rosa Luna is 125800 millimetres in length.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>length</rel>
+          <obj>125800</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>length</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_111">
+      <text>The ALV X-1 has 2 rocket stages.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>rocketStages</rel>
+          <obj>2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>rocketStages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_112">
+      <text>The American submarine NR-1 has a 3.8 m ship beam.</text>
+      <triples>
+        <triple>
+          <sub>American_submarine_NR-1</sub>
+          <rel>shipBeam</rel>
+          <obj>3.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipBeam</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_113">
+      <text>The leader of the United States has the title President of the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_114">
+      <text>The Aston Martin V8 and the Aston Martin DBS are related means of transport.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Aston_Martin_DBS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_115">
+      <text>December 16, 2004 was the launch date for the A-Rosa Luna ship.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>shipLaunch</rel>
+          <obj>2004-12-16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipLaunch</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_116">
+      <text>The total area of the city of Detroit is 370.03 square kilometers.</text>
+      <triples>
+        <triple>
+          <sub>Detroit</sub>
+          <rel>areaTotal</rel>
+          <obj>370.03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_117">
+      <text>The AMC matador was assembled in Australia.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Australia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_118">
+      <text>The AMC Matador was assembled in Kenosha.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Kenosha</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_119">
+      <text>The Antares rocket is 3.9 m in diameter.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>diameter</rel>
+          <obj>3.9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>diameter</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_120">
+      <text>The Acura TLX is made at the Marysville Auto Plant.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>assembly</rel>
+          <obj>Marysville_Auto_Plant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Factory</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_121">
+      <text>The Pontiac Rageous was assembled in Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac_Rageous</sub>
+          <rel>assembly</rel>
+          <obj>Michigan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_122">
+      <text>The Aston Martin V8 has a 5.3 litre engine.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>engineSize</rel>
+          <obj>5.3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_123">
+      <text>The Vandenberg Air Force Base is located in Lompoc (California).</text>
+      <triples>
+        <triple>
+          <sub>Vandenberg_Air_Force_Base</sub>
+          <rel>location</rel>
+          <obj>Lompoc</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchBase</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_124">
+      <text>The parent company of MTU Friedrichshafen is Rolls-Royce Power Systems.</text>
+      <triples>
+        <triple>
+          <sub>MTU_Friedrichshafen</sub>
+          <rel>parentCompany</rel>
+          <obj>Rolls-Royce_Power_Systems</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>parentCompany</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_125">
+      <text>Meyer Werft is located in Germany.</text>
+      <triples>
+        <triple>
+          <sub>Meyer_Werft</sub>
+          <rel>country</rel>
+          <obj>Germany</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_126">
+      <text>The A-Rosa Luna was ordered on the 22nd of January 2004.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>shipOrdered</rel>
+          <obj>2004-01-22</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipOrdered</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_127">
+      <text>Sergey Naryshkin is a key person at Sovcomflot.</text>
+      <triples>
+        <triple>
+          <sub>Sovcomflot</sub>
+          <rel>keyPerson</rel>
+          <obj>Sergey_Naryshkin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_128">
+      <text>White Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_129">
+      <text>The American submarine NR-1 was launched in January 25th 1969.</text>
+      <triples>
+        <triple>
+          <sub>American_submarine_NR-1</sub>
+          <rel>shipLaunch</rel>
+          <obj>1969-01-25</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipLaunch</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_130">
+      <text>American Motors successor is Eagle.</text>
+      <triples>
+        <triple>
+          <sub>American_Motors</sub>
+          <rel>successor</rel>
+          <obj>Eagle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>successor</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_131">
+      <text>The Alvis Speed 25 is classed as a full-size luxury car.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Speed_25</sub>
+          <rel>class</rel>
+          <obj>Full-size_luxury_car</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_132">
+      <text>The Wheel Horse is a subsidiary of American Motors.</text>
+      <triples>
+        <triple>
+          <sub>American_Motors</sub>
+          <rel>subsidiary</rel>
+          <obj>Wheel_Horse</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>subsidiary</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_133">
+      <text>The AMC Matador is considered a full-size car.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>class</rel>
+          <obj>Full-size_car</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_134">
+      <text>The Aston Martin DBS had the Aston Martin V8 for a successor.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_DBS</sub>
+          <rel>successor</rel>
+          <obj>Aston_Martin_V8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>successor</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_135">
+      <text>The parent company of Pontiac is General Motors.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac</sub>
+          <rel>parentCompany</rel>
+          <obj>General_Motors</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_136">
+      <text>The Delta II took off from Cape Canaveral Air Force Station Space Launch Complex 17.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>launchSite</rel>
+          <obj>Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_17</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchPad</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_137">
+      <text>The Alhambra had a top speed of 18.52 km/h.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>topSpeed</rel>
+          <obj>18.52</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>topSpeed</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_138">
+      <text>1971 is one of the model years of the AMC Matador.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>modelYears</rel>
+          <obj>1971</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>modelYears</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_139">
+      <text>1974 is one of the model years of the AMC Matador.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>modelYears</rel>
+          <obj>1974</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>modelYears</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_140">
+      <text>The Alfa Romeo 164 and the Fiat Croma are similar means of transport.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Fiat_Croma</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_141">
+      <text>The Alvis Speed 25 has a 4387 cc engine.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Speed_25</sub>
+          <rel>engineSize</rel>
+          <obj>4387</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_142">
+      <text>The rocker Antares was launched from the Mid-Atlantic Regional Spaceport.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>launchSite</rel>
+          <obj>Mid-Atlantic_Regional_Spaceport</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchPad</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_143">
+      <text>Richard A. Teague designed the AMC Matador.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>designer</rel>
+          <obj>Richard_A._Teague</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>designer</rel>
+          <obj>Designer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_144">
+      <text>The ELA-3 is located at the Guiana Space Centre.</text>
+      <triples>
+        <triple>
+          <sub>ELA-3</sub>
+          <rel>site</rel>
+          <obj>Guiana_Space_Centre</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>site</rel>
+          <obj>LaunchBase</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_145">
+      <text>The city of Detroit is in Wayne County (Michigan).</text>
+      <triples>
+        <triple>
+          <sub>Detroit</sub>
+          <rel>isPartOf</rel>
+          <obj>Wayne_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_146">
+      <text>Arctech Helsinki Shipyard built the icebreaker, Aleksey Chirikov.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>builder</rel>
+          <obj>Arctech_Helsinki_Shipyard</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_147">
+      <text>The Engine of an Alfa Romeo 164 is 2.5 litres.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>engineSize</rel>
+          <obj>2.5</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_148">
+      <text>The Alfa Romeo 164 has a Straight-four engine.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>engine</rel>
+          <obj>Straight-four_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_149">
+      <text>The Acura TLX is assembled in Marysville (Ohio).</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>assembly</rel>
+          <obj>Marysville</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_150">
+      <text>The AMC Matador is assembled at Port Melbourne.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Port_Melbourne</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_151">
+      <text>The Atlas II was launched from Cape Canaveral Air Force Station.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>launchSite</rel>
+          <obj>Cape_Canaveral_Air_Force_Station</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchBase</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_152">
+      <text>Andreas Voßkuhle is a leader of Germany.</text>
+      <triples>
+        <triple>
+          <sub>Germany</sub>
+          <rel>leader</rel>
+          <obj>Andreas_Voßkuhle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_153">
+      <text>The Audi A1 is assembled by Audi Brussels.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>assembly</rel>
+          <obj>Audi_Brussels</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_154">
+      <text>The Acura TLX has a Honda J engine.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>engine</rel>
+          <obj>Honda_J_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_155">
+      <text>Neptun Werft is located in Germany.</text>
+      <triples>
+        <triple>
+          <sub>Neptun_Werft</sub>
+          <rel>country</rel>
+          <obj>Germany</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_156">
+      <text>American Motors Co was succeeded by Eagle.</text>
+      <triples>
+        <triple>
+          <sub>American_Motors</sub>
+          <rel>fate</rel>
+          <obj>Eagle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>fate</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_157">
+      <text>The Atlas II originated from the United States.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>countryOrigin</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>countryOrigin</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_158">
+      <text>AMC Matador was assembled in the USA.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>USA</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_159">
+      <text>The Alhambra had its maiden voyage on the 7th of July 1855.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>maidenVoyage</rel>
+          <obj>1855-07-07</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>maidenVoyage</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_160">
+      <text>The Abarth company was founded in Bologna.</text>
+      <triples>
+        <triple>
+          <sub>Abarth</sub>
+          <rel>foundationPlace</rel>
+          <obj>Bologna</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_161">
+      <text>The Aston Martin V8 was succeeded by the Aston Martin Virage.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>successor</rel>
+          <obj>Aston_Martin_Virage</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>successor</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_162">
+      <text>The DeSoto Custom is related to the Dodge Coronet.</text>
+      <triples>
+        <triple>
+          <sub>DeSoto_Custom</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Dodge_Coronet</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_163">
+      <text>Saab 9000 is related to Alfa Romeo 164.</text>
+      <triples>
+        <triple>
+          <sub>Saab_9000</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Alfa_Romeo_164</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_164">
+      <text>Lamborghini is a subsidiary of Audi.</text>
+      <triples>
+        <triple>
+          <sub>Audi</sub>
+          <rel>subsidiary</rel>
+          <obj>Lamborghini</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>subsidiary</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_165">
+      <text>Sovcomflot operates the icebreaker, Aleksey Chirikov.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>operator</rel>
+          <obj>Sovcomflot</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>operator</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_166">
+      <text>The Acura TLX has a 2.4 litre engine.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>engineSize</rel>
+          <obj>2.4</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_167">
+      <text>The Delta II launch site was at Vandenberg Air Force Base.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>launchSite</rel>
+          <obj>Vandenberg_Air_Force_Base</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchBase</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_168">
+      <text>Abarth was founded in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Abarth</sub>
+          <rel>foundationPlace</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_169">
+      <text>The Honda Accord is related to the Acura TLX.</text>
+      <triples>
+        <triple>
+          <sub>Honda_Accord</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Acura_TLX</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_170">
+      <text>The ARA Veinticinco de Mayo (V-2) is 192000 millimetres long.</text>
+      <triples>
+        <triple>
+          <sub>ARA_Veinticinco_de_Mayo</sub>
+          <rel>length</rel>
+          <obj>192000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>length</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_171">
+      <text>The wheelbase of the Abarth 1000 GT Coupé, is 2160 millimetres.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>wheelbase</rel>
+          <obj>2160</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>wheelbase</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_172">
+      <text>Audi e-tron is a division of Audi.</text>
+      <triples>
+        <triple>
+          <sub>Audi</sub>
+          <rel>division</rel>
+          <obj>Audi_e-tron</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>division</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_173">
+      <text>Costa Crociere is the owner of the AIDAstella.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>owner</rel>
+          <obj>Costa_Crociere</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_174">
+      <text>The icebreaker Aleksey Chirikov has a Wärtsilä power type.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>poweredBy</rel>
+          <obj>Wärtsilä</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>poweredBy</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_175">
+      <text>Elizabeth II is the leader of the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_176">
+      <text>The ALCO RS-3 has a diesel-electric transmission.</text>
+      <triples>
+        <triple>
+          <sub>ALCO_RS-3</sub>
+          <rel>transmission</rel>
+          <obj>Diesel-electric_transmission</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Locomotive</sub>
+          <rel>transmission</rel>
+          <obj>Transmission</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_177">
+      <text>The ALV X-1 had 1 launch failure.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>failedLaunches</rel>
+          <obj>1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>failedLaunches</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_178">
+      <text>The builder of the icebreaker, Aleksey Chirikov, is in Helsinki.</text>
+      <triples>
+        <triple>
+          <sub>Aleksey_Chirikov</sub>
+          <rel>builder</rel>
+          <obj>Helsinki</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_179">
+      <text>The Abarth 1000 GT Coupé has a width of 1.55 m.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>width</rel>
+          <obj>1.55</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>width</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_180">
+      <text>The ship A-Rosa Luna weighs 1850 tonnes.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>shipDisplacement</rel>
+          <obj>1850</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipDisplacement</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_181">
+      <text>Spaceport Florida Launch Complex 36 is operated by the United States Air Force.</text>
+      <triples>
+        <triple>
+          <sub>Spaceport_Florida_Launch_Complex_36</sub>
+          <rel>operator</rel>
+          <obj>United_States_Air_Force</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>operator</rel>
+          <obj>MilitaryUnit</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_182">
+      <text>The ALCO RS-3 is 17068.8 (millimetres) in length.</text>
+      <triples>
+        <triple>
+          <sub>ALCO_RS-3</sub>
+          <rel>length</rel>
+          <obj>17068.8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Locomotive</sub>
+          <rel>length</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_183">
+      <text>The ALV X-1 rocket was launched once.</text>
+      <triples>
+        <triple>
+          <sub>ALV_X-1</sub>
+          <rel>totalLaunches</rel>
+          <obj>1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>totalLaunches</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_184">
+      <text>The leader of Germany is Stanislaw Tillich.</text>
+      <triples>
+        <triple>
+          <sub>Germany</sub>
+          <rel>leader</rel>
+          <obj>Stanislaw_Tillich</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Politician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_185">
+      <text>Alhambra is owned by the P&amp;O company.</text>
+      <triples>
+        <triple>
+          <sub>Alhambra</sub>
+          <rel>owner</rel>
+          <obj>P&amp;O</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_186">
+      <text>The operator of the Vandenberg AFB Space Launch Complex 3 is the United States Air Force.</text>
+      <triples>
+        <triple>
+          <sub>Vandenberg_AFB_Space_Launch_Complex_3</sub>
+          <rel>operator</rel>
+          <obj>United_States_Air_Force</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>operator</rel>
+          <obj>MilitaryUnit</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_187">
+      <text>Angela Merkel is the leader of Germany.</text>
+      <triples>
+        <triple>
+          <sub>Germany</sub>
+          <rel>leader</rel>
+          <obj>Angela_Merkel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Chancellor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_188">
+      <text>ARA Veinticinco de Mayo (V-2) derives from Argentina.</text>
+      <triples>
+        <triple>
+          <sub>ARA_Veinticinco_de_Mayo</sub>
+          <rel>country</rel>
+          <obj>Argentina</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_189">
+      <text>English is spoken in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_190">
+      <text>Costa Crociere is based in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Costa_Crociere</sub>
+          <rel>location</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_191">
+      <text>Rostock is in Germany.</text>
+      <triples>
+        <triple>
+          <sub>Rostock</sub>
+          <rel>country</rel>
+          <obj>Germany</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_192">
+      <text>Detroit is part of Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Detroit</sub>
+          <rel>isPartOf</rel>
+          <obj>Michigan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_193">
+      <text>Abarth was founded by Carlo Abarth.</text>
+      <triples>
+        <triple>
+          <sub>Abarth</sub>
+          <rel>foundedBy</rel>
+          <obj>Carlo_Abarth</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundedBy</rel>
+          <obj>Designer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_194">
+      <text>One of the languages in Finland is Sami.</text>
+      <triples>
+        <triple>
+          <sub>Finland</sub>
+          <rel>language</rel>
+          <obj>Sami</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_195">
+      <text>The location of AIDA Cruises is Rostock.</text>
+      <triples>
+        <triple>
+          <sub>AIDA_Cruises</sub>
+          <rel>location</rel>
+          <obj>Rostock</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_196">
+      <text>The ALCO RS-3 has a V12 engine.</text>
+      <triples>
+        <triple>
+          <sub>ALCO_RS-3</sub>
+          <rel>engine</rel>
+          <obj>V12_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Locomotive</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_197">
+      <text>General Dynamics is the parent company of the General Dynamics Electric Boat Co.</text>
+      <triples>
+        <triple>
+          <sub>General_Dynamics_Electric_Boat</sub>
+          <rel>parentCompany</rel>
+          <obj>General_Dynamics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_198">
+      <text>The Antares rocket made its first flight on October 28, 2014.</text>
+      <triples>
+        <triple>
+          <sub>Antares</sub>
+          <rel>maidenFlight</rel>
+          <obj>2014-10-28</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>maidenFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_199">
+      <text>The Yuzhnoye Design Office is located in the Ukraine.</text>
+      <triples>
+        <triple>
+          <sub>Yuzhnoye_Design_Office</sub>
+          <rel>country</rel>
+          <obj>Ukraine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_200">
+      <text>The A-Rosa Luna is powered by a MTU Friedrichshafen engine.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>poweredBy</rel>
+          <obj>MTU_Friedrichshafen</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>poweredBy</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_201">
+      <text>The American Locomotive Company was founded in the United States.</text>
+      <triples>
+        <triple>
+          <sub>American_Locomotive_Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_202">
+      <text>Atlas II last flight was on December 5, 2002.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>finalFlight</rel>
+          <obj>2002-12-05</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>finalFlight</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_203">
+      <text>The Desoto Custom's successor is the DeSoto Firedome.</text>
+      <triples>
+        <triple>
+          <sub>DeSoto_Custom</sub>
+          <rel>successor</rel>
+          <obj>DeSoto_Firedome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>successor</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_204">
+      <text>The Aston Martin V8 and Aston Martin RHAM/1 are related means of transportation.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_V8</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Aston_Martin_RHAM/1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_205">
+      <text>The AIDAstella has a beam of 32.2 m.</text>
+      <triples>
+        <triple>
+          <sub>AIDAstella</sub>
+          <rel>shipBeam</rel>
+          <obj>32.2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>shipBeam</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_206">
+      <text>Mid-Atlantic Regional Spaceport Launch Pad 0 is associated with the rocket, Minotaur IV.</text>
+      <triples>
+        <triple>
+          <sub>Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</sub>
+          <rel>associatedRocket</rel>
+          <obj>Minotaur_IV</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>associatedRocket</rel>
+          <obj>Rocket</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_207">
+      <text>The Alfa Romeo 164 is a luxury vehicle.</text>
+      <triples>
+        <triple>
+          <sub>Alfa_Romeo_164</sub>
+          <rel>class</rel>
+          <obj>Luxury_vehicle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_208">
+      <text>The Pontiac Rageous assembly line is in Detroit.</text>
+      <triples>
+        <triple>
+          <sub>Pontiac_Rageous</sub>
+          <rel>assembly</rel>
+          <obj>Detroit</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_209">
+      <text>The A-Rosa Luna has a top speed of 24 km/h.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>topSpeed</rel>
+          <obj>24</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>topSpeed</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_210">
+      <text>The Alvis Speed 25 is classed as a Full-size car.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Speed_25</sub>
+          <rel>class</rel>
+          <obj>Full-size_car</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_211">
+      <text>Mid-Atlantic Regional Spaceport Launch Pad 0 is associated with the Antares rocket.</text>
+      <triples>
+        <triple>
+          <sub>Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</sub>
+          <rel>associatedRocket</rel>
+          <obj>Antares</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>LaunchPad</sub>
+          <rel>associatedRocket</rel>
+          <obj>Rocket</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_212">
+      <text>The engine size of the Acura TLX is 3.5 litres.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>engineSize</rel>
+          <obj>3.5</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engineSize</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_213">
+      <text>The Acura TLX has a V6 engine.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>engine</rel>
+          <obj>V6_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_214">
+      <text>Neptun Werft built the A-Rosa Luna.</text>
+      <triples>
+        <triple>
+          <sub>A-Rosa_Luna</sub>
+          <rel>builder</rel>
+          <obj>Neptun_Werft</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_215">
+      <text>The AMC Matador was assembled in Thames (New Zealand).</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>assembly</rel>
+          <obj>Thames</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>assembly</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_216">
+      <text>Carnival Corporation &amp; plc is the parent company of Costa Crociere.</text>
+      <triples>
+        <triple>
+          <sub>Costa_Crociere</sub>
+          <rel>parentCompany</rel>
+          <obj>Carnival_Corporation_&amp;_plc</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_217">
+      <text>The ARA Veinticinco de Mayo (V-2) was built by Cammell Laird.</text>
+      <triples>
+        <triple>
+          <sub>ARA_Veinticinco_de_Mayo</sub>
+          <rel>builder</rel>
+          <obj>Cammell_Laird</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Ship</sub>
+          <rel>builder</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_218">
+      <text>The Abarth 1000 GT Coupé is a couple last produced in 1958.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>productionEndYear</rel>
+          <obj>1958</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>productionEndYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_219">
+      <text>London is the capital of the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>capital</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_220">
+      <text>The Acura TLX has an Inline-four engine.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>engine</rel>
+          <obj>Inline-four_engine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>engine</rel>
+          <obj>AutomobileEngine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_221">
+      <text>The Audi A1 is a hatchback.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>bodyStyle</rel>
+          <obj>Hatchback</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>bodyStyle</rel>
+          <obj>CarBodyStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_222">
+      <text>Aston Martin Virage and Aston Martin DBS are related types of transportation.</text>
+      <triples>
+        <triple>
+          <sub>Aston_Martin_Virage</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Aston_Martin_DBS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>relatedMeanOfTransportation</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_223">
+      <text>Acura TLX is a luxury vehicle.</text>
+      <triples>
+        <triple>
+          <sub>Acura_TLX</sub>
+          <rel>class</rel>
+          <obj>Luxury_vehicle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_224">
+      <text>Ducati is a subsidiary of Audi.</text>
+      <triples>
+        <triple>
+          <sub>Audi</sub>
+          <rel>subsidiary</rel>
+          <obj>Ducati</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>subsidiary</rel>
+          <obj>Manufacturer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_225">
+      <text>The Plymouth Plaza's successor is the Plymouth Satellite.</text>
+      <triples>
+        <triple>
+          <sub>Plymouth_Plaza</sub>
+          <rel>successor</rel>
+          <obj>Plymouth_Satellite</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>successor</rel>
+          <obj>Automobile</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_226">
+      <text>Gruppo Bertone was founded in Italy.</text>
+      <triples>
+        <triple>
+          <sub>Gruppo_Bertone</sub>
+          <rel>foundationPlace</rel>
+          <obj>Italy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Manufacturer</sub>
+          <rel>foundationPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_227">
+      <text>Atlas II is 34 m in diameter.</text>
+      <triples>
+        <triple>
+          <sub>Atlas_II</sub>
+          <rel>diameter</rel>
+          <obj>34</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>diameter</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_228">
+      <text>The Alvis Speed 25 has a wheelbase of 127 inches.</text>
+      <triples>
+        <triple>
+          <sub>Alvis_Speed_25</sub>
+          <rel>wheelbase</rel>
+          <obj>127</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>wheelbase</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_229">
+      <text>The AMC Matador has a station wagon style body.</text>
+      <triples>
+        <triple>
+          <sub>AMC_Matador</sub>
+          <rel>bodyStyle</rel>
+          <obj>Station_wagon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>bodyStyle</rel>
+          <obj>CarBodyStyle</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_230">
+      <text>The Abarth 1000 GT Coupé's final year of production was 1958.</text>
+      <triples>
+        <triple>
+          <sub>Abarth_1000_GT_Coupé</sub>
+          <rel>productionEndYear</rel>
+          <obj>1958</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>productionEndYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_231">
+      <text>Rome is the capital of Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>capital</rel>
+          <obj>Rome</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_232">
+      <text>The Audi A1 is classed as a supermini.</text>
+      <triples>
+        <triple>
+          <sub>Audi_A1</sub>
+          <rel>class</rel>
+          <obj>Supermini</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Automobile</sub>
+          <rel>class</rel>
+          <obj>CarType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_MeanOfTransportation" id="1_MeanOfTransportation_train_233">
+      <text>The launch site of the Delta II was at the Vandenberg AFB Space Launch Complex 2.</text>
+      <triples>
+        <triple>
+          <sub>Delta_II</sub>
+          <rel>launchSite</rel>
+          <obj>Vandenberg_AFB_Space_Launch_Complex_2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Rocket</sub>
+          <rel>launchSite</rel>
+          <obj>LaunchPad</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

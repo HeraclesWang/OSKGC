@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Monument" id="1_Monument_test_1">
+      <text>The Atatürk Monument (İzmir) was designed by Pietro Canonica.</text>
+      <triples>
+        <triple>
+          <sub>Atatürk_Monument</sub>
+          <rel>designer</rel>
+          <obj>Pietro_Canonica</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>designer</rel>
+          <obj>Sculptor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_2">
+      <text>The Atatürk Monument (İzmir) is made of bronze.</text>
+      <triples>
+        <triple>
+          <sub>Atatürk_Monument</sub>
+          <rel>material</rel>
+          <obj>Bronze</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>material</rel>
+          <obj>ChemicalSubstance</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_3">
+      <text>The Baku Turkish Martyrs' Memorial is located in Azerbaijan.</text>
+      <triples>
+        <triple>
+          <sub>Baku_Turkish_Martyrs'_Memorial</sub>
+          <rel>location</rel>
+          <obj>Azerbaijan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_4">
+      <text>The Atatürk Monument (İzmir) was inaugurated on 27th July, 1932.</text>
+      <triples>
+        <triple>
+          <sub>Atatürk_Monument</sub>
+          <rel>inaugurationDate</rel>
+          <obj>1932-07-27</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>inaugurationDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_5">
+      <text>The Atatürk Monument (İzmir) is located in Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Atatürk_Monument</sub>
+          <rel>location</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_6">
+      <text>Frederick County (Maryland) is to the southwest of Adams County (Pennsylvania).</text>
+      <triples>
+        <triple>
+          <sub>Adams_County</sub>
+          <rel>hasToItsSouthwest</rel>
+          <obj>Frederick_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>hasToItsSouthwest</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_7">
+      <text>Monocacy National Battlefield is located in Frederick County (Maryland).</text>
+      <triples>
+        <triple>
+          <sub>Monocacy_National_Battlefield</sub>
+          <rel>location</rel>
+          <obj>Frederick_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ProtectedArea</sub>
+          <rel>location</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_8">
+      <text>The 14th New Jersey Volunteer Infantry Monument is located in the district of the Monocacy National Battlefield.</text>
+      <triples>
+        <triple>
+          <sub>14th_New_Jersey_Volunteer_Infantry_Monument</sub>
+          <rel>district</rel>
+          <obj>Monocacy_National_Battlefield</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Monument</sub>
+          <rel>district</rel>
+          <obj>ProtectedArea</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Monument" id="1_Monument_test_9">
+      <text>The city nearest to Monocacy National Battlefield is Frederick (Maryland).</text>
+      <triples>
+        <triple>
+          <sub>Monocacy_National_Battlefield</sub>
+          <rel>nearestCity</rel>
+          <obj>Frederick</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ProtectedArea</sub>
+          <rel>nearestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

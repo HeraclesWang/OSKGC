@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Food" id="1_Food_test_1">
+      <text>The country Binignit comes from is the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>country</rel>
+          <obj>Philippines</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_2">
+      <text>Joko Widodo is the leader of Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Indonesia</sub>
+          <rel>leader</rel>
+          <obj>Joko_Widodo</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_3">
+      <text>Beef kway teow is a dish from the country of Singapore.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>country</rel>
+          <obj>Singapore</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_4">
+      <text>The main ingredients of binignit are sweet potatoes.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>mainIngredient</rel>
+          <obj>Sweet_potato</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>mainIngredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_5">
+      <text>White Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_6">
+      <text>Chicharrón is found in the Andalusia region.</text>
+      <triples>
+        <triple>
+          <sub>Chicharrón</sub>
+          <rel>region</rel>
+          <obj>Andalusia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>region</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_7">
+      <text>Bionico requires granola as one of its ingredients.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>ingredient</rel>
+          <obj>Granola</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_8">
+      <text>Lemon is part of genus Citrus.</text>
+      <triples>
+        <triple>
+          <sub>Lemon</sub>
+          <rel>genus</rel>
+          <obj>Citrus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>genus</rel>
+          <obj>Genus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_9">
+      <text>Rice is an ingredient in bandeja paisa.</text>
+      <triples>
+        <triple>
+          <sub>Bandeja_paisa</sub>
+          <rel>ingredient</rel>
+          <obj>Rice</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_10">
+      <text>Bionico can be found in Guadalajara.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>region</rel>
+          <obj>Guadalajara</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_11">
+      <text>Matteo Renzi is a leader from Italy.</text>
+      <triples>
+        <triple>
+          <sub>Italy</sub>
+          <rel>leader</rel>
+          <obj>Matteo_Renzi</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_12">
+      <text>An ingredient of Ajoblanco is garlic.</text>
+      <triples>
+        <triple>
+          <sub>Ajoblanco</sub>
+          <rel>ingredient</rel>
+          <obj>Garlic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Appetiser</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_13">
+      <text>The capital of Malaysia is Kuala Lumpur.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>capital</rel>
+          <obj>Kuala_Lumpur</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_14">
+      <text>Sandesh (confectionery) is a dish that can be served as a dessert.</text>
+      <triples>
+        <triple>
+          <sub>Dessert</sub>
+          <rel>dishVariation</rel>
+          <obj>Sandesh</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Course</sub>
+          <rel>dishVariation</rel>
+          <obj>Dessert</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_15">
+      <text>Noodles are an ingredient in batchoy.</text>
+      <triples>
+        <triple>
+          <sub>Batchoy</sub>
+          <rel>ingredient</rel>
+          <obj>Noodle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Soup</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_16">
+      <text>Sour cream is an ingredient of Bionico.</text>
+      <triples>
+        <triple>
+          <sub>Bionico</sub>
+          <rel>ingredient</rel>
+          <obj>Sour_cream</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_17">
+      <text>Garlic is an ingredient in arrabbiata sauce.</text>
+      <triples>
+        <triple>
+          <sub>Arrabbiata_sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Garlic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sauce</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_18">
+      <text>One dish variation called Barny Cakes is the use of milk in the recipe.</text>
+      <triples>
+        <triple>
+          <sub>Barny_Cakes</sub>
+          <rel>dishVariation</rel>
+          <obj>Milk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>dishVariation</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_19">
+      <text>Spaniards are the ethnic group of Spain.</text>
+      <triples>
+        <triple>
+          <sub>Spain</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Spaniards</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_20">
+      <text>The leader of Malaysia is Abdul Halim of Kedah.</text>
+      <triples>
+        <triple>
+          <sub>Malaysia</sub>
+          <rel>leader</rel>
+          <obj>Abdul_Halim_of_Kedah</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_21">
+      <text>The English language is spoken in Singapore.</text>
+      <triples>
+        <triple>
+          <sub>Singapore</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_22">
+      <text>Tomato belongs to the genus Solanum.</text>
+      <triples>
+        <triple>
+          <sub>Tomato</sub>
+          <rel>genus</rel>
+          <obj>Solanum</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Plant</sub>
+          <rel>genus</rel>
+          <obj>Genus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_23">
+      <text>Arem-arem is a food found in Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_24">
+      <text>Arem-arem is a dish of Javanese cuisine.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>cuisine</rel>
+          <obj>Javanese_cuisine</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>cuisine</rel>
+          <obj>Cuisine</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_25">
+      <text>Arem-arem comes from Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>region</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_26">
+      <text>Lemper is a dish variation of Arem-Arem.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>dishVariation</rel>
+          <obj>Lemper</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>dishVariation</rel>
+          <obj>Snack</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_27">
+      <text>Banana leaf is an ingredient in Arem-arem.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>ingredient</rel>
+          <obj>Banana_leaf</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_28">
+      <text>Arem-arem can be served as a main course.</text>
+      <triples>
+        <triple>
+          <sub>Arem-arem</sub>
+          <rel>course</rel>
+          <obj>Main_course</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_29">
+      <text>Binignit is a dish from the region of Visayas.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>region</rel>
+          <obj>Visayas</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_30">
+      <text>Coconut milk is an ingredient of Binignit.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>ingredient</rel>
+          <obj>Coconut_milk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_31">
+      <text>Sweet potato is and ingredient in Binignit.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>ingredient</rel>
+          <obj>Sweet_potato</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_32">
+      <text>Binignit should be served as the dessert course.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>course</rel>
+          <obj>Dessert</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>course</rel>
+          <obj>Course</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_33">
+      <text>Taro is a main ingredient of Binignit.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>mainIngredient</rel>
+          <obj>Taro</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>mainIngredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_34">
+      <text>Banana is an ingredient in binignit.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>ingredient</rel>
+          <obj>Banana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_35">
+      <text>One of the main ingredients in binignit is banana.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>mainIngredient</rel>
+          <obj>Banana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>mainIngredient</rel>
+          <obj>Plant</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_36">
+      <text>Binignit comes from the region Mindanao.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>region</rel>
+          <obj>Mindanao</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>region</rel>
+          <obj>Island</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_37">
+      <text>Sago is an ingredient of Binignit.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>ingredient</rel>
+          <obj>Sago</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_38">
+      <text>One of the main ingredients in Binignit is sago.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>mainIngredient</rel>
+          <obj>Sago</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>mainIngredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_39">
+      <text>One of the main ingredients of binignit is coconut milk.</text>
+      <triples>
+        <triple>
+          <sub>Binignit</sub>
+          <rel>mainIngredient</rel>
+          <obj>Coconut_milk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Dessert</sub>
+          <rel>mainIngredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_40">
+      <text>Sesame oil is an ingredient in beef kway teow.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>ingredient</rel>
+          <obj>Sesame_oil</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_41">
+      <text>Beef kway teow is a dish in Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_42">
+      <text>Beef kway teow comes from the Singapore region.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>region</rel>
+          <obj>Singapore</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_43">
+      <text>Oyster sauce is an ingredient in Beef kway teow.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>ingredient</rel>
+          <obj>Oyster_sauce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Sauce</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_44">
+      <text>Palm sugar is an ingredient in beef kway teow.</text>
+      <triples>
+        <triple>
+          <sub>Beef_kway_teow</sub>
+          <rel>ingredient</rel>
+          <obj>Palm_sugar</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_45">
+      <text>Sausage is a main ingredient of Bacon Explosion.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>mainIngredient</rel>
+          <obj>Sausage</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>mainIngredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_46">
+      <text>An ingredient of a bacon explosion is sausage.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_Explosion</sub>
+          <rel>ingredient</rel>
+          <obj>Sausage</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>ingredient</rel>
+          <obj>Ingredient</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_47">
+      <text>An ingredient in a bacon sandwich is brown sauce.</text>
+      <triples>
+        <triple>
+          <sub>Bacon_sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Brown_sauce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Sandwich</sub>
+          <rel>ingredient</rel>
+          <obj>Condiment</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_48">
+      <text>Jusuf Kalla is a leader in Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Indonesia</sub>
+          <rel>leader</rel>
+          <obj>Jusuf_Kalla</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>VicePresident</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_49">
+      <text>Indonesia is the country Bakso comes from.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_50">
+      <text>Indonesia is the country Asam pedas comes from.</text>
+      <triples>
+        <triple>
+          <sub>Asam_pedas</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_51">
+      <text>Batagor comes from the country of Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Batagor</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Snack</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_52">
+      <text>Bakso is a food found in Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Bakso</sub>
+          <rel>region</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>region</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_53">
+      <text>In Indonesia the currency is the Indonesian rupiah.</text>
+      <triples>
+        <triple>
+          <sub>Indonesia</sub>
+          <rel>currency</rel>
+          <obj>Indonesian_rupiah</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>currency</rel>
+          <obj>Currency</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_54">
+      <text>Ayam penyet is from Indonesia.</text>
+      <triples>
+        <triple>
+          <sub>Ayam_penyet</sub>
+          <rel>country</rel>
+          <obj>Indonesia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MainCourse</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Food" id="1_Food_test_55">
+      <text>The capital of Indonesia is Jakarta.</text>
+      <triples>
+        <triple>
+          <sub>Indonesia</sub>
+          <rel>capital</rel>
+          <obj>Jakarta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

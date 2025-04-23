@@ -1,0 +1,970 @@
+{
+    "title": "1_MeanOfTransportation",
+    "id": "1_MeanOfTransportation",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Artist",
+            "label": "Artist"
+        },
+        {
+            "id": "Automobile",
+            "label": "Automobile"
+        },
+        {
+            "id": "AutomobileEngine",
+            "label": "AutomobileEngine"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "CarBodyStyle",
+            "label": "CarBodyStyle"
+        },
+        {
+            "id": "CarType",
+            "label": "CarType"
+        },
+        {
+            "id": "Chancellor",
+            "label": "Chancellor"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Designer",
+            "label": "Designer"
+        },
+        {
+            "id": "Device",
+            "label": "Device"
+        },
+        {
+            "id": "Engine",
+            "label": "Engine"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Factory",
+            "label": "Factory"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "LaunchBase",
+            "label": "LaunchBase"
+        },
+        {
+            "id": "LaunchPad",
+            "label": "LaunchPad"
+        },
+        {
+            "id": "Locomotive",
+            "label": "Locomotive"
+        },
+        {
+            "id": "Manufacturer",
+            "label": "Manufacturer"
+        },
+        {
+            "id": "MeanOfTransportation",
+            "label": "MeanOfTransportation"
+        },
+        {
+            "id": "MilitaryUnit",
+            "label": "MilitaryUnit"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "OverseasDepartment",
+            "label": "OverseasDepartment"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Product",
+            "label": "Product"
+        },
+        {
+            "id": "Rocket",
+            "label": "Rocket"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Saint",
+            "label": "Saint"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Ship",
+            "label": "Ship"
+        },
+        {
+            "id": "ShipClass",
+            "label": "ShipClass"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "Status",
+            "label": "Status"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Transmission",
+            "label": "Transmission"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Weapon",
+            "label": "Weapon"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "topSpeed",
+            "label": "topSpeed",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "countryOrigin",
+            "label": "countryOrigin",
+            "domain": "MeanOfTransportation",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "site",
+            "label": "site",
+            "domain": "ArchitecturalStructure",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "maidenFlight",
+            "label": "maidenFlight",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "associatedRocket",
+            "label": "associatedRocket",
+            "domain": "ArchitecturalStructure",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "parentCompany",
+            "label": "parentCompany",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "cylinderCount",
+            "label": "cylinderCount",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "modelYears",
+            "label": "modelYears",
+            "domain": "MeanOfTransportation",
+            "range": "Year"
+        },
+        {
+            "id": "manufacturer",
+            "label": "manufacturer",
+            "domain": "Device",
+            "range": "Organisation"
+        },
+        {
+            "id": "width",
+            "label": "width",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "alternativeName",
+            "label": "alternativeName",
+            "domain": "MeanOfTransportation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "class",
+            "label": "class",
+            "domain": "MeanOfTransportation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "poweredBy",
+            "label": "poweredBy",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "MeanOfTransportation",
+            "range": "Place"
+        },
+        {
+            "id": "assembly",
+            "label": "assembly",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "diameter",
+            "label": "diameter",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "completionDate",
+            "label": "completionDate",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "totalProduction",
+            "label": "totalProduction",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "builder",
+            "label": "builder",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "assembly",
+            "label": "assembly",
+            "domain": "MeanOfTransportation",
+            "range": "Place"
+        },
+        {
+            "id": "activeYearsStartDate",
+            "label": "activeYearsStartDate",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "transmission",
+            "label": "transmission",
+            "domain": "MeanOfTransportation",
+            "range": "Device"
+        },
+        {
+            "id": "designer",
+            "label": "designer",
+            "domain": "MeanOfTransportation",
+            "range": "Person"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "status",
+            "label": "status",
+            "domain": "MeanOfTransportation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "failedLaunches",
+            "label": "failedLaunches",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "christeningDate",
+            "label": "christeningDate",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "builder",
+            "label": "builder",
+            "domain": "MeanOfTransportation",
+            "range": "Place"
+        },
+        {
+            "id": "extinctionDate",
+            "label": "extinctionDate",
+            "domain": "Organisation",
+            "range": "Date"
+        },
+        {
+            "id": "shipBeam",
+            "label": "shipBeam",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "shipLaidDown",
+            "label": "shipLaidDown",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "assembly",
+            "label": "assembly",
+            "domain": "MeanOfTransportation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "successor",
+            "label": "successor",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "product",
+            "label": "product",
+            "domain": "Organisation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "totalLaunches",
+            "label": "totalLaunches",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "saint",
+            "label": "saint",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "rocketStages",
+            "label": "rocketStages",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "division",
+            "label": "division",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "engine",
+            "label": "engine",
+            "domain": "MeanOfTransportation",
+            "range": "Device"
+        },
+        {
+            "id": "subsidiary",
+            "label": "subsidiary",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "successor",
+            "label": "successor",
+            "domain": "MeanOfTransportation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "relatedMeanOfTransportation",
+            "label": "relatedMeanOfTransportation",
+            "domain": "MeanOfTransportation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "city",
+            "label": "city",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "partialFailures",
+            "label": "partialFailures",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "bodyStyle",
+            "label": "bodyStyle",
+            "domain": "MeanOfTransportation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "shipClass",
+            "label": "shipClass",
+            "domain": "MeanOfTransportation",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "operator",
+            "label": "operator",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "operator",
+            "label": "operator",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "finalFlight",
+            "label": "finalFlight",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "wheelbase",
+            "label": "wheelbase",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "fate",
+            "label": "fate",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "shipLaunch",
+            "label": "shipLaunch",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "foundedBy",
+            "label": "foundedBy",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "launchSite",
+            "label": "launchSite",
+            "domain": "MeanOfTransportation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "manufacturer",
+            "label": "manufacturer",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "foundationPlace",
+            "label": "foundationPlace",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "maidenVoyage",
+            "label": "maidenVoyage",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "comparable",
+            "label": "comparable",
+            "domain": "MeanOfTransportation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "product",
+            "label": "product",
+            "domain": "Organisation",
+            "range": "Device"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "shipInService",
+            "label": "shipInService",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "length",
+            "label": "length",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "shipOrdered",
+            "label": "shipOrdered",
+            "domain": "MeanOfTransportation",
+            "range": "Date"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "productionEndYear",
+            "label": "productionEndYear",
+            "domain": "MeanOfTransportation",
+            "range": "Year"
+        },
+        {
+            "id": "employer",
+            "label": "employer",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "shipDisplacement",
+            "label": "shipDisplacement",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "designCompany",
+            "label": "designCompany",
+            "domain": "MeanOfTransportation",
+            "range": "Organisation"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "engineSize",
+            "label": "engineSize",
+            "domain": "MeanOfTransportation",
+            "range": "number"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "productionStartYear",
+            "label": "productionStartYear",
+            "domain": "MeanOfTransportation",
+            "range": "Year"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Rocket",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Chancellor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CarType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Transmission",
+            "range": "Device"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Designer",
+            "range": "Artist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Locomotive",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Factory",
+            "range": "Building"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Ship",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Engine",
+            "range": "Device"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Weapon",
+            "range": "Device"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Automobile",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Saint",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "LaunchPad",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "LaunchBase",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Product",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "OverseasDepartment",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ShipClass",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Manufacturer",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CarBodyStyle",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AutomobileEngine",
+            "range": "Engine"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Status",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Artist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryUnit",
+            "range": "Organisation"
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="2_University" id="2_University_dev_1">
+      <text>The University of Burgundy employs 2900 staff members with 1299 doctoral students.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>staff</rel>
+          <obj>2900</obj>
+        </triple>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>numberOfDoctoralStudents</rel>
+          <obj>1299</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>staff</rel>
+          <obj>number</obj>
+        </schema>
+        <schema>
+          <sub>University</sub>
+          <rel>numberOfDoctoralStudents</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_University" id="2_University_dev_2">
+      <text>The University of Burgundy campus is located in Dijon, France.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>campus</rel>
+          <obj>Dijon</obj>
+        </triple>
+        <triple>
+          <sub>Dijon</sub>
+          <rel>country</rel>
+          <obj>France</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>campus</rel>
+          <obj>City</obj>
+        </schema>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_University" id="2_University_dev_3">
+      <text>The Acharya Institute of Technology in Bangalore was established in 2000.</text>
+      <triples>
+        <triple>
+          <sub>Acharya_Institute_of_Technology</sub>
+          <rel>location</rel>
+          <obj>Bangalore</obj>
+        </triple>
+        <triple>
+          <sub>Acharya_Institute_of_Technology</sub>
+          <rel>established</rel>
+          <obj>2000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+        <schema>
+          <sub>University</sub>
+          <rel>established</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_University" id="2_University_dev_4">
+      <text>The University of Burgundy in Dijon has 27400 students.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>numberOfStudents</rel>
+          <obj>27400</obj>
+        </triple>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>location</rel>
+          <obj>Dijon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>numberOfStudents</rel>
+          <obj>number</obj>
+        </schema>
+        <schema>
+          <sub>University</sub>
+          <rel>location</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="2_University" id="2_University_dev_5">
+      <text>The University of Burgundy has a total of 16800 undergraduate students and 2900 members of staff.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>numberOfUndergraduateStudents</rel>
+          <obj>16800</obj>
+        </triple>
+        <triple>
+          <sub>University_of_Burgundy</sub>
+          <rel>staff</rel>
+          <obj>2900</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>numberOfUndergraduateStudents</rel>
+          <obj>number</obj>
+        </schema>
+        <schema>
+          <sub>University</sub>
+          <rel>staff</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

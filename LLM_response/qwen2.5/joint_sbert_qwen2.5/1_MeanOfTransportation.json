@@ -1,0 +1,337 @@
+[
+  {
+    "id": "1_MeanOfTransportation_test_1",
+    "input_text": "The AIDAluna is 252000 millimetres long.",
+    "response": "[AIDAluna, length, 252000]:(Ship, length, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_2",
+    "input_text": "The Honda Accord is made by Honda.",
+    "response": "[Honda Accord, manufacturer, Honda]:(Automobile, manufacturer, Organisation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_3",
+    "input_text": "The 1955 Dodge has an AMC V8 engine.",
+    "response": "[1955 Dodge, engine, AMC V8 engine]:(Automobile, engine, AutomobileEngine)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_4",
+    "input_text": "The AIDAluna has a top speed of 40.744.",
+    "response": "[AIDAluna, topSpeed, 40.744]:(Ship, topSpeed, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_5",
+    "input_text": "Caterpillar Inc. is located in Peoria (Illinois).",
+    "response": "[Caterpillar Inc., location, Peoria]:(Company, location, Place)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_6",
+    "input_text": "The ship AIDAluna began service on March 22nd 2009.",
+    "response": "[AIDAluna, shipInService, 2009-03-22]:(Ship, shipInService, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_7",
+    "input_text": "The Ariane 5 was launched at ELA-3.",
+    "response": "[ELA-3, associatedRocket, Ariane 5]:(LaunchPad, associatedRocket, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_8",
+    "input_text": "AIDAluna is powered by Caterpillar Inc.",
+    "response": "[AIDAluna, poweredBy, Caterpillar Inc. ]:(Ship, poweredBy, Organisation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_9",
+    "input_text": "The Ariane 5's final flight was on the 18th December 2009.",
+    "response": "[Ariane 5, finalFlight, 2009-12-18]:(Rocket, finalFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_10",
+    "input_text": "Acura is a division of the Honda.",
+    "response": "[Acura, division, Honda]:(Organisation, division, Organisation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_11",
+    "input_text": "The 1955 Dodge is manufactured by Dodge.",
+    "response": "[Dodge, product, CarType]"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_12",
+    "input_text": "The 1955 Dodge is also known as the Dodge Custom Royal.",
+    "response": "[Dodge Custom Royal, alternativeName, 1955 Dodge]:(MeanOfTransportation, alternativeName, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_13",
+    "input_text": "AIDAluna is in service.",
+    "response": "[AIDAluna, status, In service]:(Ship, status, Status)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_14",
+    "input_text": "The Pontiac Rageous was a car with a Coupé body style.",
+    "response": "[Pontiac Rageous, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_15",
+    "input_text": "Meyer Werft was the builder of the AIDAluna.",
+    "response": "[AIDAluna, builder, Meyer Werft]:(Ship, builder, Manufacturer)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_16",
+    "input_text": "The AIDAluna is a Sphinx-class cruise ship.",
+    "response": "[AIDAluna, shipClass, Sphinx-class cruise ship]:(Ship, shipClass, ShipClass)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_17",
+    "input_text": "Gruppo Bertone is located in Italy.",
+    "response": "[Gruppo Bertone, location, Italy]:(Manufacturer, location, Place)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_18",
+    "input_text": "Joachim Gauck is a leader in Germany.",
+    "response": "[Germany, leader, Joachim Gauck]:(Country, leader, President)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_19",
+    "input_text": "The American Locomotive Company is located in the United States.",
+    "response": "[American Locomotive Company, location, United States]:(Organisation, location, Place)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_20",
+    "input_text": "The icebreaker Aleksey Chirikov is 99.83 long.",
+    "response": "[Aleksey Chirikov, length, 99.83]:(Ship, length, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_21",
+    "input_text": "Ariane 5 had its maiden flight on the 4th of June, 1996.",
+    "response": "[Ariane 5, maidenFlight, 1996-06-04]:(Rocket, maidenFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_22",
+    "input_text": "The Alfa Romeo 164 is an executive car.",
+    "response": "[Alfa Romeo 164, class, Executive car]:(Automobile, class, CarType)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_23",
+    "input_text": "The transmission of the Acura TLX is a 9-speed ZF 9HP automatic (V6).",
+    "response": "[Acura TLX, transmission, 9-speed ZF 9HP automatic (V6)]:(Automobile, transmission, Transmission)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_24",
+    "input_text": "Caterpillar Inc. is located in the United States.",
+    "response": "[Caterpillar Inc., country, United States]:(Company, country, Place)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_25",
+    "input_text": "Gruppo Bertone is located in Turin.",
+    "response": "[Gruppo Bertone, location, Turin]:(Manufacturer, location, City)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_26",
+    "input_text": "The Honda J engine is made by Honda.",
+    "response": "[Honda J engine, manufacturer, Honda]:(Engine, manufacturer, Organisation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_27",
+    "input_text": "Honda is the manufacturer of the Acura TLX.",
+    "response": "[Honda, manufacturer, Acura TLX]:(Organisation, manufacturer, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_28",
+    "input_text": "Dodge Coronet is the alternative name for the 1955 Dodge.",
+    "response": "[Dodge Coronet, alternativeName, 1955 Dodge]:(Automobile, alternativeName, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_29",
+    "input_text": "The 1955 Dodge has a straight-six engine.",
+    "response": "[1955 Dodge, engine, straight-six engine]:(Automobile, engine, Engine)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_30",
+    "input_text": "Plymouth Plaza is related to the 1955 Dodge.",
+    "response": "[Plymouth Plaza, relatedMeanOfTransportation, 1955 Dodge]:(Automobile, relatedMeanOfTransportation, Automobile)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_31",
+    "input_text": "The 1955 Dodge has a hardtop.",
+    "response": "[1955 Dodge, bodyStyle, Hardtop]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_32",
+    "input_text": "1955 Dodge and Plymouth Plaza are related kinds of transportation.",
+    "response": "[1955 Dodge, relatedMeanOfTransportation, Plymouth Plaza]:(Automobile, relatedMeanOfTransportation, Automobile)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_33",
+    "input_text": "The 1955 Dodge engine is 230 cubic inches.",
+    "response": "[1955 Dodge, engineSize, 230]:(AutomobileEngine, engineSize, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_34",
+    "input_text": "The 1955 Dodge has a 3-speed automatic transmission.",
+    "response": "[1955 Dodge, transmission, 3-speed automatic transmission]:(Automobile, transmission, Device)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_35",
+    "input_text": "The 1955 Dodge is related to the DeSoto Custom.",
+    "response": "[1955 Dodge, relatedMeanOfTransportation, DeSoto Custom]:(Automobile, relatedMeanOfTransportation, Automobile)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_36",
+    "input_text": "The 1955 Dodge has a wheelbase of 120 inches.",
+    "response": "[1955 Dodge, wheelbase, 120]:(Automobile, wheelbase, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_37",
+    "input_text": "The 1955 Dodge is a convertible.",
+    "response": "[1955 Dodge, bodyStyle, Convertible]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_38",
+    "input_text": "The 1955 Dodge has a station wagon style body.",
+    "response": "[1955 Dodge, bodyStyle, Station wagon]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_39",
+    "input_text": "The 1955 Dodge is also called the Dodge Suburban.",
+    "response": "[Dodge, alternativeName, Suburban]:(\"1955 Dodge\", alternativeName, \"Dodge Suburban\")"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_40",
+    "input_text": "The 1955 Dodge has a sedan style body.",
+    "response": "[1955 Dodge, bodyStyle, Sedan]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_41",
+    "input_text": "The 1955 Dodge has a V8 engine.",
+    "response": "[1955 Dodge, engine, V8 engine]:(Automobile, engine, Engine)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_42",
+    "input_text": "Caterpillar Inc. was founded in the United States.",
+    "response": "[Caterpillar Inc., foundationPlace, United States]:(Manufacturer, foundationPlace, Country)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_43",
+    "input_text": "Caterpillar Inc. is located in Illinois.",
+    "response": "[Caterpillar Inc., location, Illinois]:(Company, location, State)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_44",
+    "input_text": "Caterpillar Inc. was founded in California.",
+    "response": "[Caterpillar Inc., location, California]:(Company, location, Place)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_45",
+    "input_text": "The key person of Caterpillar Inc. is Douglas R. Oberhelman.",
+    "response": "[Caterpillar Inc., keyPerson, Douglas R. Oberhelman]:(Organisation, keyPerson, Person)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_46",
+    "input_text": "The Aston Martin V8's body style is the Coupé.",
+    "response": "[Aston Martin V8, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_47",
+    "input_text": "The AMC Matador has a Coupé style body.",
+    "response": "[AMC Matador, bodyStyle, Coupé]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_48",
+    "input_text": "The Abarth 1000 GT Coupé has a coupé bodystyle.",
+    "response": "[Abarth 1000 GT Coupé, bodyStyle, coupé]:(Automobile, bodyStyle, CarBodyStyle)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_49",
+    "input_text": "The Audi A1 has a 5-speed manual transmission.",
+    "response": "[Audi A1, transmission, 5-speed manual]:(Automobile, transmission, Transmission)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_50",
+    "input_text": "The Alfa Romeo 164 has a 5-speed manual transmission.",
+    "response": "[Alfa Romeo 164, transmission, 5-speed manual]:(Automobile, transmission, Transmission)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_51",
+    "input_text": "The MTU Friedrichshafen is owned by Rolls-Royce Holdings.",
+    "response": "[MTU Friedrichshafen, owner, Rolls-Royce Holdings]:(Company, owner, Company)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_52",
+    "input_text": "The Ariane 5 was manufactured by Airbus Defence and Space.",
+    "response": "[Ariane 5, manufacturer, Airbus Defence and Space]:(Company, manufacturer, Organisation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_53",
+    "input_text": "The maiden flight of Ariane 5 was on the 11th December 2002.",
+    "response": "[Ariane 5, maidenFlight, 2002-12-11]:(Rocket, maidenFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_54",
+    "input_text": "Ariane 5 has a diameter of 5.4 metres.",
+    "response": "[Ariane 5, diameter, 5.4]: (Rocket, diameter, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_55",
+    "input_text": "The maiden flight of the Ariane 5 rocket was the 9th March 2008.",
+    "response": "[Ariane 5, maidenFlight, 2008-03-09]:(Rocket, maidenFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_56",
+    "input_text": "The Ariane 5 had its first voyage August 11, 2005.",
+    "response": "[Ariane 5, maidenVoyage, 2005-08-11]:(Rocket, maidenVoyage, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_57",
+    "input_text": "The final flight of the Ariane 5 was on 2003-09-27.",
+    "response": "[Ariane 5, finalFlight, 2003-09-27]:(Rocket, finalFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_58",
+    "input_text": "The European Space Agency is the manufacturer of the Ariane 5.",
+    "response": "[European Space Agency, product, Ariane 5]: (Organisation, product, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_59",
+    "input_text": "The Ariane 5's maiden flight was on the 2nd March 2004.",
+    "response": "[Ariane 5, maidenFlight, 2004-03-02]:(Rocket, maidenFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_60",
+    "input_text": "Arianespace is the manufacturer of Ariane 5.",
+    "response": "[Arianespace, manufacturer, Ariane 5]:(Company, manufacturer, MeanOfTransportation)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_61",
+    "input_text": "The Ariane 5 has had 2 partial failures.",
+    "response": "[Ariane 5, partialFailures, 2]:(Rocket, partialFailures, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_62",
+    "input_text": "December 18, 2004 was Ariane 5's final flight.",
+    "response": "[Ariane 5, finalFlight, 2004-12-18]:(Rocket, finalFlight, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_63",
+    "input_text": "The AidAluna christening date is 2009-04-04.",
+    "response": "[AidAluna, christeningDate, 2009-04-04]:(Ship, christeningDate, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_64",
+    "input_text": "The AIDAluna has a ship beam of 32.2.",
+    "response": "[AIDAluna, shipBeam, 32.2]:(Ship, shipBeam, number)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_65",
+    "input_text": "AIDAluna had its maiden voyage on the 22nd of March, 2009.",
+    "response": "[AIDAluna, maidenVoyage, 2009-03-22]:(MeanOfTransportation, maidenVoyage, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_66",
+    "input_text": "AIDAluna service was started on the 22nd of March, 2009.",
+    "response": "[AIDAluna, activeYearsStartDate, 2009-03-22]:(Ship, activeYearsStartDate, Date)"
+  },
+  {
+    "id": "1_MeanOfTransportation_test_67",
+    "input_text": "The owner of AIDAluna is AIDA Cruises.",
+    "response": "[AIDA Cruises, owner, AIDAluna]:(Company, owner, MeanOfTransportation)"
+  }
+]

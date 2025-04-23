@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1_Monument_test_1",
+        "sent": "The Atatürk Monument (İzmir) was designed by Pietro Canonica.",
+        "response": "{designer}{Atatürk, {Pietro Canonica}"
+    },
+    {
+        "id": "1_Monument_test_2",
+        "sent": "The Atatürk Monument (İzmir) is made of bronze.",
+        "response": "{Atatürk Monument}, [material]{bronze}"
+    },
+    {
+        "id": "1_Monument_test_3",
+        "sent": "The Baku Turkish Martyrs' Memorial is located in Azerbaijan.",
+        "response": "location"
+    },
+    {
+        "id": "1_Monument_test_4",
+        "sent": "The Atatürk Monument (İzmir) was inaugurated on 27th July, 1932.",
+        "response": "[institutionDate]{Atatürk Monument İzmir, 27th July 1932}"
+    },
+    {
+        "id": "1_Monument_test_5",
+        "sent": "The Atatürk Monument (İzmir) is located in Turkey.",
+        "response": "[location]{Atatürk, Turkey}, [location]{İzmir, Turkey}"
+    },
+    {
+        "id": "1_Monument_test_6",
+        "sent": "Frederick County (Maryland) is to the southwest of Adams County (Pennsylvania).",
+        "response": "[Frederick County, Adams County]"
+    },
+    {
+        "id": "1_Monument_test_7",
+        "sent": "Monocacy National Battlefield is located in Frederick County (Maryland).",
+        "response": "[location]{Monocacy National Battlefield, Frederick County}"
+    },
+    {
+        "id": "1_Monument_test_8",
+        "sent": "The 14th New Jersey Volunteer Infantry Monument is located in the district of the Monocacy National Battlefield.",
+        "response": "[location]{14th New Jersey Volunteer Infantry Monument, Monocacy National Battlefield}"
+    },
+    {
+        "id": "1_Monument_test_9",
+        "sent": "The city nearest to Monocacy National Battlefield is Frederick (Maryland).",
+        "response": "{nearestCity}{Frederick}, {{Monocacy National Battlefield}, {Maryland}}"
+    }
+]

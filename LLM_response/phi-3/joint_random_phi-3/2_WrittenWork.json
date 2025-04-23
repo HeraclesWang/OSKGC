@@ -1,0 +1,232 @@
+[
+    {
+        "id": "2_WrittenWork_test_1",
+        "input_text": "Alcatraz Versus the Evil Librarians, which is identified by ISBN 0-439-92550-9, has 320 pages.",
+        "response": "[Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(WrittenWork, isbnNumber, number), [Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(WrittenWork, numberOfPages, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_2",
+        "input_text": "Acta Mathematica Hungarica has the abbreviation of \"Acta Math. Hungar.\" and comes under the discipline of mathematics.",
+        "response": "[Acta Mathematica Hungarica, abbreviation, Acta Math. Hungar.]:(WrittenWork, abbreviation, Work), [Acta Mathematica Hungarica, academicDiscipline, mathematics]:(WrittenWork, academicDiscipline, AcademicSubject)"
+    },
+    {
+        "id": "2_WrittenWork_test_3",
+        "input_text": "A Glastonbury Romance, which was written by John Cowper Powys, is published by Simon & Schuster.",
+        "response": "[[[A Glastonbury Romance, author, John Cowper Powys]], [[A Glastonbury Romance, publisher, Simon & Schuster]], [[John Cowper Powys, nationality, United Kingdom]]]:(WrittenWork, author, Person), (WrittenWork, publisher, Organisation), (Person, nationality, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_4",
+        "input_text": "ACM Transactions on Information Systems has the abbreviation of ACM Trans. Inf. Syst. and is part of the academic discipline of computer science.",
+        "response": "[ACM Transactions on Information Systems, abbreviation, ACM Trans. Inf. Syst.]:(WrittenWork, abbreviation, Work), [ACM Transactions on Information Systems, academicDiscipline, computer science]:(WrittenWork, academicDiscipline, AcademicSubject)"
+    },
+    {
+        "id": "2_WrittenWork_test_5",
+        "input_text": "The novel A Long Long Way was followed by The Secret Scripture published by Faber and Faber.",
+        "response": "[A Long Long Way, precededBy, The Secret Scripture]:(WrittenWork, precededBy, WrittenWork), [The Secret Scripture, publisher, Faber and Faber]:(WrittenWork, publisher, Company)"
+    },
+    {
+        "id": "2_WrittenWork_test_6",
+        "input_text": "In almost unrelated facts both Asian Americans and the book Alcatraz Versus the Evil Librarians come from the United States.",
+        "response": "[Asian Americans, country, United States]:(EthnicGroup, country, Country)\n[Alcatraz Versus the Evil Librarians, country, United States]:(WrittenWork, country, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_7",
+        "input_text": "Eric Flint is the author of 1634: The Ram Rebellion, which was preceded by 1634: The Galileo Affair.",
+        "response": "[Eric Flint, notableWork, 1634: The Ram Rebellion]:(Person, notableWork, WrittenWork), [1634: The Ram Rebellion, precededBy, 1634: The Galileo Affair]:(WrittenWork, precededBy, WrittenWork), [Eric Flint, author, 1634: The Ram Rebellion]:(Person, author, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_8",
+        "input_text": "'A Glastonbury Romance' was followed by 'Weymouth Sands', the sequel to which was 'Maiden Castle'.",
+        "response": "['A Glastonbury Romance', followedBy, 'Weymouth Sands']:(WrittenWork, followedBy, WrittenWork)\n['Weymouth Sands', followedBy, 'Maiden Castle']:(WrittenWork, followedBy, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_9",
+        "input_text": "Acta Palaeontologica Polonica which is abbreviated to Acta Palaeontol. Pol. has a LCCN number of 60040714.",
+        "response": "[Acta Palaeontologica Polonica, abbreviation, Acta Palaeontol. Pol.], [Acta Palaeontologica Polonica, LCCN_number, 60040714]:(AcademicJournal, abbreviation, Work), [Acta Palaeontologica Polonica, LCCN_number, 60040714]:(AcademicJournal, LCCN_number, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_10",
+        "input_text": "Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg can be located by the ISSN number \"0025-5858\" and has the abbreviation Abh. Math. Semin. Univ. Hambg.",
+        "response": "[Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg, issnNumber, 0025-5858]:(WrittenWork, issnNumber, number), [Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg, abbreviation, Abh. Math. Semin. Univ. Hambg.]:(WrittenWork, abbreviation, Work)"
+    },
+    {
+        "id": "2_WrittenWork_test_11",
+        "input_text": "\"Abh. Math. Semin. Univ. Hambg.\" is the abbreviation for Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg and is concerned with the academic discipline of Pure Mathematics.",
+        "response": "[Abh. Math. Semin. Univ. Hambg., abbreviation, Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg]:(WrittenWork, abbreviation, WrittenWork), [Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg, academicDiscipline, Pure Mathematics]:(WrittenWork, academicDiscipline, AcademicSubject)"
+    },
+    {
+        "id": "2_WrittenWork_test_12",
+        "input_text": "Madeleine L'Engle is an author, influenced by George MacDonald, who wrote A Severed Wasp.",
+        "response": "[George MacDonald, influencedBy, Madeleine L'Engle]:(Person, influencedBy, Person), [Madeleine L'Engle, notableWork, A Severed Wasp]:(Person, notableWork, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_13",
+        "input_text": "Garth Nix is the author of \"Above the Veil,\" ISBN number 0-439-17685-9.",
+        "response": "[Garth Nix, author, Above the Veil]:(Person, author, WrittenWork), [Above the Veil, isbnNumber, 0-439-17685-9]:(WrittenWork, isbnNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_14",
+        "input_text": "A Severed Wasp is from the United States where the capital is Washington, D.C.",
+        "response": "[Severed Wasp, country, United States]:(WrittenWork, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity)"
+    },
+    {
+        "id": "2_WrittenWork_test_15",
+        "input_text": "George Allen & Unwin published The Fellowship of the Ring on July 29, 1954.",
+        "response": "[The Fellowship of the Ring, publisher, George Allen & Unwin]:(WrittenWork, publisher, Organisation), [The Fellowship of the Ring, releaseDate, 1954-07-29]:(WrittenWork, releaseDate, Date)"
+    },
+    {
+        "id": "2_WrittenWork_test_16",
+        "input_text": "The ACM Transactions on Information Systems is abbreviated to ACM Trans. Inf. Syst. and has the ISSN number 1558-2868.",
+        "response": "[ACM Transactions on Information Systems, abbreviation, ACM Trans. Inf. Syst.]:(WrittenWork, abbreviation, Work), [ACM Transactions on Information Systems, issnNumber, 1558-2868]:(WrittenWork, issnNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_17",
+        "input_text": "A Fortress of Grey Ice is from the United States where the Native Americans are an ethnic group.",
+        "response": "[A Fortress of Grey Ice, country, United States]:(WrittenWork, country, Country), [United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_WrittenWork_test_18",
+        "input_text": "A Wizard of Mars, published by Harcourt, was preceded by Wizards at War.",
+        "response": "[A Wizard of Mars, publisher, Harcourt]:(WrittenWork, publisher, Organisation), [A Wizard of Mars, precededBy, Wizards at War]:(WrittenWork, precededBy, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_19",
+        "input_text": "Above the Veil followed the book Aenir and is written in English.",
+        "response": "[Above the Veil, precededBy, Aenir]:(WrittenWork, precededBy, WrittenWork), [Above the Veil, language, English]:(WrittenWork, language, Language)"
+    },
+    {
+        "id": "2_WrittenWork_test_20",
+        "input_text": "The AIDS journal belongs to the academic discipline, HIV/AIDS, and it has the ISSN number 0269-9370.",
+        "response": "[AIDS, academicDiscipline, HIV/AIDS]:(AcademicJournal, academicDiscipline, TopicalConcept), [AIDS, issnNumber, 0269-9370]:(AcademicJournal, issnNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_21",
+        "input_text": "1634: The Ram Rebellion comes from the United States where there is an ethnic group called Asian Americans.",
+        "response": "[1634: The Ram Rebellion, country, United States]:(WrittenWork, country, Country), [United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_WrittenWork_test_22",
+        "input_text": "A Long Long Way comes from Ireland and was published by Viking Press.",
+        "response": "[[A Long Long Way, country, Ireland], [A Long Long Way, publisher, Viking Press]]:(WrittenWork, country, Country), [(WrittenWork, publisher, Organisation)](Work, publisher, Organisation)"
+    },
+    {
+        "id": "2_WrittenWork_test_23",
+        "input_text": "The book, \"A Long Long Way\" published by Viking Press, was followed by \"The Secret Scripture\".",
+        "response": "[\"A Long Long Way\", publisher, Viking Press]:(Book, publisher, Organisation), [\"A Long Long Way\", followedBy, \"The Secret Scripture\"]:(Book, followedBy, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_24",
+        "input_text": "A Long Long Way is published by Viking press in the United States.",
+        "response": "[A Long Long Way, publisher, Viking press]:(WrittenWork, publisher, Company), [Viking press, country, United States]:(Company, country, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_25",
+        "input_text": "ACM Transactions on Information Systems has the abbreviation of ACM Trans. Inf. Syst. and the LCCN number 89646863.",
+        "response": "[ACM Transactions on Information Systems, abbreviation, ACM Trans. Inf. Syst.]:(WrittenWork, abbreviation, Work), [ACM Transactions on Information Systems, LCCN_number, 89646863]:(WrittenWork, LCCN_number, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_26",
+        "input_text": "Alcatraz Versus the Evil Librarians is produced in print and has 320 pages.",
+        "response": "[Alcatraz Versus the Evil Librarians, mediaType, Print]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(WrittenWork, numberOfPages, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_27",
+        "input_text": "The book Alcatraz Versus the Evil Librarians is an example of American Literature. White Americans are a part of the United States's ethnic make-up.",
+        "response": "[[Alcatraz Versus the Evil Librarians, country, United States], [Alcatraz Versus the Evil Librarians, literaryGenre, American Literature], [American Literature, country, United States], [United States, ethnicGroup, White Americans]]"
+    },
+    {
+        "id": "2_WrittenWork_test_28",
+        "input_text": "Alcatraz Versus the Evil Librarians was written by Brandon Sanderson and was followed by Alcatraz Versus the Scrivener's Bones.",
+        "response": "[Alcatraz Versus the Evil Librarians, author, Brandon Sanderson]:(WrittenWork, author, Person), [Alcatraz Versus the Evil Librarians, followedBy, Alcatraz Versus the Scrivener's Bones]:(WrittenWork, followedBy, WrittenWork), [Alcatraz Versus the Scrivener's Bones, precededBy, Alcatraz Versus the Evil Librarians]:(WrittenWork, precededBy, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_29",
+        "input_text": "The United states is both the home of the African Americans ethnic group and the book Alcatraz Versus the Evil Librarians which is almost totally unrelated.",
+        "response": "[[[The United States, ethnicGroup, African Americans]], [[Alcatraz Versus the Evil Librarians, country, The United States]]]"
+    },
+    {
+        "id": "2_WrittenWork_test_30",
+        "input_text": "Brandon Sanderson, who was born in Lincoln (Nebraska), wrote \"Alcatraz Versus the Evil Librarians\".",
+        "response": "[Brandon Sanderson, birthPlace, Lincoln]:(Person, birthPlace, Place), [Brandon Sanderson, residence, Lincoln]:(Person, residence, Place), [\"Alcatraz Versus the Evil Librarians\", author, Brandon Sanderson]:(WrittenWork, author, Person), [Lincoln, state, Nebraska]:(Place, state, State)"
+    },
+    {
+        "id": "2_WrittenWork_test_31",
+        "input_text": "English is the language of the United States the country where the book Alcatraz Versus the Evil Librarians was written.",
+        "response": "[English, language, Language]:(Language, language, Language), [United States, language, English]:(Country, language, Language), [Alcatraz Versus the Evil Librarians, country, United States]:(WrittenWork, country, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_32",
+        "input_text": "Alcatraz Versus the Evil Librarians is published in Hardcover and has 320 pages.",
+        "response": "[Alcatraz Versus the Evil Librarians, mediaType, Hardcover]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, numberOfPages, 320]:(WrittenWork, numberOfPages, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_33",
+        "input_text": "Alcatraz Versus the Evil Librarians is from The United States where the Native Americans are an ethnic group.",
+        "response": "[Alcatraz Versus the Evil Librarians, country, United States]:(WrittenWork, country, Country), [United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_WrittenWork_test_34",
+        "input_text": "Alcatraz Versus the Evil Librarians is published in Hardcover and the OCLC number 78771100.",
+        "response": "[Alcatraz Versus the Evil Librarians, mediaType, Hardcover]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(WrittenWork, oclcNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_35",
+        "input_text": "Alcatraz Versus the Evil Librarians, written in English, is from The United States.",
+        "response": "[Alcatraz Versus the Evil Librarians, language, English]:(WrittenWork, language, Language), [Alcatraz Versus the Evil Librarians, country, The United States]:(WrittenWork, country, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_36",
+        "input_text": "Alcatraz Versus the Evil Librarians, available in print, has the ISBN number 0-439-92550-9.",
+        "response": "[Alcatraz Versus the Evil Librarians, mediaType, Print]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(WrittenWork, isbnNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_37",
+        "input_text": "Alcatraz Versus the Evil Librarians is written in English, the language originated in Great Britain.",
+        "response": "[Alcatraz Versus the Evil Librarians, language, English]:(WrittenWork, language, Language), [English, originatedIn, Great Britain]:(Language, originatedIn, Country)"
+    },
+    {
+        "id": "2_WrittenWork_test_38",
+        "input_text": "Alcatraz Versus The Evil Librarians is produced in print with OCLC number 78771100.",
+        "response": "[Alcatraz Versus The Evil Librarians, mediaType, Print]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus The Evil Librarians, oclcNumber, 78771100]:(WrittenWork, oclcNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_39",
+        "input_text": "Alcatraz Versus the Evil Librarians is published in Hardcover and has the ISBN number 0-439-92550-9.",
+        "response": "[Alcatraz Versus the Evil Librarians, mediaType, Hardcover]:(WrittenWork, mediaType, MediaType), [Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]:(WrittenWork, isbnNumber, number)"
+    },
+    {
+        "id": "2_WrittenWork_test_40",
+        "input_text": "A Glastonbury Romance was written by John Cowper Powys, who was born in Shirley (Derbyshire).",
+        "response": "[[[A Glastonbury Romance, author, John Cowper Powys]], [[John Cowper Powys, birthPlace, Shirley]], [[Shirley, state, Derbyshire]]]:(WrittenWork, author, Person), (Person, birthPlace, Place), (Place, state, State)]"
+    },
+    {
+        "id": "2_WrittenWork_test_41",
+        "input_text": "'A Glastonbury Romance' was followed by 'Weymouth Sands' which was authored by John Cowper Powys.",
+        "response": "['A Glastonbury Romance', followedBy, 'Weymouth Sands']:(WrittenWork, followedBy, WrittenWork), ['Weymouth Sands', author, 'John Cowper Powys']:(WrittenWork, author, Person)"
+    },
+    {
+        "id": "2_WrittenWork_test_42",
+        "input_text": "John Cowper Powys is the author of Wolf Solent which is followed by A Glastonbury Romance.",
+        "response": "[John Cowper Powys, notableWork, Wolf Solent]:(Person, notableWork, WrittenWork), [Wolf Solent, followedBy, A Glastonbury Romance]:(WrittenWork, followedBy, WrittenWork)"
+    },
+    {
+        "id": "2_WrittenWork_test_43",
+        "input_text": "The author of A Glastonbury Romance, published by The Bodley Head, is John Cowper Powys.",
+        "response": "[John Cowper Powys, notableWork, A Glastonbury Romance]:(Person, notableWork, WrittenWork), [A Glastonbury Romance, publisher, The Bodley Head]:(WrittenWork, publisher, Organisation)"
+    },
+    {
+        "id": "2_WrittenWork_test_44",
+        "input_text": "The novel Owen Glendower is a notable work by John Cowper Powys, who also wrote A Glastonbury Romance.",
+        "response": "[Owen Glendower, notableWork, John Cowper Powys]:(WrittenWork, notableWork, Person), [A Glastonbury Romance, notableWork, John Cowper Powys]:(WrittenWork, notableWork, Person)]"
+    },
+    {
+        "id": "2_WrittenWork_test_45",
+        "input_text": "A Glastonbury Romance is the sequel to Wolf Solent and was written by John Cowper Powys.",
+        "response": "[[A Glastonbury Romance, precededBy, Wolf Solvent]]:(WrittenWork, precededBy, WrittenWork), [[A Glastonbury Romance, author, John Cowper Powys]]:(WrittenWork, author, Person), [[Wolf Solent, author, John Cowper Powys]]:(WrittenWork, author, Person)]"
+    },
+    {
+        "id": "2_WrittenWork_test_46",
+        "input_text": "Wolf Solent and A Glastonbury Romance were both novels written by John Cowper Powys.",
+        "response": "[[Wolf Solent, author, John Cowper Powys], [A Glastonbury Romance, author, John Cowper Powys], [Wolf Solent, literaryGenre, Novel], [A Glastonbury Romance, literaryGenre, Novel], [John Cowper Powys, notableWork, Wolf Solent], [John Cowper Powys, notableWork, A Glastonbury Romance]]"
+    }
+]

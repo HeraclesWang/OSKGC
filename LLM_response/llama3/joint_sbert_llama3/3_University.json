@@ -1,0 +1,77 @@
+[
+  {
+    "id": "3_University_test_1",
+    "input_text": "In Dijon, 2900 University of Burgundy staff members service 16800 undergraduate students.",
+    "response": "[University of Burgundy, staff, 2900]:(University, staff, number), [University of Burgundy, numberOfUndergraduateStudents, 16800]:(University, numberOfUndergraduateStudents, number), [University of Burgundy, location, Dijon]:(University, location, City)"
+  },
+  {
+    "id": "3_University_test_2",
+    "input_text": "The University of Burgundy has 27400 students. The Number of doctoral students is 1299 and 16800 are undergraduate students.",
+    "response": "Here is the output:\n\n[University of Burgundy, numberOfStudents, 27400]:(University, numberOfStudents, number)\n[University of Burgundy, numberOfDoctoralStudents, 1299]:(University, numberOfDoctoralStudents, number)\n[University of Burgundy, numberOfUndergraduateStudents, 16800]:(University, numberOfUndergraduateStudents, number)"
+  },
+  {
+    "id": "3_University_test_3",
+    "input_text": "Dr. G. P. Prabhukumar is the director of Acharya Institute of Technology, which is affiliated with Visvesvaraya Technological University and located in India.",
+    "response": "[Acharya Institute of Technology, director, Dr. G. P. Prabhukumar]\n[Visvesvaraya Technological University, affiliation, Acharya Institute of Technology]\n[Acharya Institute of Technology, location, India]"
+  },
+  {
+    "id": "3_University_test_4",
+    "input_text": "Aarhus has a magistrate government. To its northeast is Mols. The Aarhus University is located in Aarhus.",
+    "response": "[Aarhus, governmentType, magistrate]:(Place, governmentType, TopicalConcept), [Aarhus, hasToItsNortheast, Mols]:(Place, hasToItsNortheast, Place), [Aarhus, location, Aarhus University]:(Place, location, Organisation), [Aarhus University, location, Aarhus]:(Organisation, location, Place)"
+  },
+  {
+    "id": "3_University_test_5",
+    "input_text": "The Aarhus University is in Aarhus. It is affiliated with the European University Association in Brussels.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Aarhus University, location, Aarhus]:(University, location, Place)\n[Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)"
+  },
+  {
+    "id": "3_University_test_6",
+    "input_text": "The Aarhus University at Arhus was established in 1928. Arhus has a Magistrate government.",
+    "response": "Here is the output based on the input text:\n\n[Aarhus University, established, 1928]:(University, established, Year)\n[Aarhus University, location, Arhus]:(University, location, Place)\n[Aarhus, governmentType, Magistrate]:(Place, governmentType, TopicalConcept)\n[Arhus, country, Denmark]:(Place, country, Country)\n\nNote: I assumed that \"Arhus\" is the name of a city, as it is often referred to as a city in the context of the Aarhus University. If \"Arhus\" is intended to be a different type of entity, please let me know and I'll adjust the output accordingly."
+  },
+  {
+    "id": "3_University_test_7",
+    "input_text": "The Aarhus University is located in Denmark. Denmark's leader is Lars Løkke Rasmussen and Denmark's religion is the Church of Denmark.",
+    "response": "Here is the output based on the given ontology schema:\n\n[Aarhus University, location, Denmark]:(University, location, Place)\n[Aarhus University, country, Denmark]:(University, country, Country)\n[Denmark, leader, Lars Løkke Rasmussen]:(Place, leader, Person)\n[Denmark, religion, Church of Denmark]:(Place, religion, Organisation)\n\nNote: I assume that \"Aarhus University\" is an instance of the \"University\" entity type, and \"Denmark\" is an instance of the \"Country\" entity type."
+  },
+  {
+    "id": "3_University_test_8",
+    "input_text": "The Aarhus University (Latin name - \"Universitas Aarhusiensis\" was established in 1928 and it is affiliated with the European University Association.",
+    "response": "[Aarhus University, latinName, Universitas Aarhusiensis]:(University, latinName, Organisation)\n[Aarhus University, established, 1928]:(University, established, Year)\n[Aarhus University, affiliation, European University Association]:(University, affiliation, Organisation)"
+  },
+  {
+    "id": "3_University_test_9",
+    "input_text": "The Accademia di Architettura di Mendrisio is in Mendrisio. It has 600 students and an academic staff of 100.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(Organisation, location, Place), [Accademia di Architettura di Mendrisio, numberOfStudents, 600]:(University, numberOfStudents, number), [Accademia di Architettura di Mendrisio, academicStaffSize, 100]:(University, academicStaffSize, number)"
+  },
+  {
+    "id": "3_University_test_10",
+    "input_text": "The Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland. Switzerland's legislature is the Federal Assembly.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(University, location, Place), [Accademia di Architettura di Mendrisio, country, Switzerland]:(University, country, Country), [Switzerland, legislature, Federal Assembly]:(Country, legislature, Legislature)"
+  },
+  {
+    "id": "3_University_test_11",
+    "input_text": "Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland and has 600 students.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(Organisation, location, Place)\n[Accademia di Architettura di Mendrisio, country, Switzerland]:(University, country, Country)\n[Accademia di Architettura di Mendrisio, numberOfStudents, 600]:(University, numberOfStudents, number)"
+  },
+  {
+    "id": "3_University_test_12",
+    "input_text": "The Accademia di Architettura di Mendrisio was established in Mendrisio in 1996. Its dean is Mario Botta.",
+    "response": "[Accademia di Architettura di Mendrisio, established, 1996]:(University, established, Year), [Accademia di Architettura di Mendrisio, location, Mendrisio]:(University, location, Place), [Accademia di Architettura di Mendrisio, dean, Mario Botta]:(University, dean, Architect)"
+  },
+  {
+    "id": "3_University_test_13",
+    "input_text": "The Accademia di Architettura di Mendrisio is located in Mendrisio and its dean is Mario Botta. The neighbouring municipality of Mendrisio is Meride.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(University, location, City)\n[Accademia di Architettura di Mendrisio, dean, Mario Botta]:(University, dean, Person)\n[Mendrisio, neighboringMunicipality, Meride]:(City, neighboringMunicipality, City)"
+  },
+  {
+    "id": "3_University_test_14",
+    "input_text": "The Accademia di Architettura di Mendrisio is located in Mendrisio. Its dean is called Mario Botta and it has 600 students.",
+    "response": "[Accademia di Architettura di Mendrisio, location, Mendrisio]:(Organisation, location, Place), [Accademia di Architettura di Mendrisio, dean, Mario Botta]:(University, dean, Person), [Accademia di Architettura di Mendrisio, numberOfStudents, 600]:(University, numberOfStudents, number)"
+  },
+  {
+    "id": "3_University_test_15",
+    "input_text": "Accademia di Architettura di Mendrisio was established in 1996. It is located in Mendrisio, which has Meride as its neighbouring municipality as Meride.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Accademia di Architettura di Mendrisio, location, Mendrisio]:(University, location, Place)\n[Accademia di Architettura di Mendrisio, established, 1996]:(University, established, Year)\n[Mendrisio, neighboringMunicipality, Meride]:(Place, neighboringMunicipality, Place)"
+  }
+]

@@ -1,0 +1,1042 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_City" id="1_City_test_1">
+      <text>Albany (Oregon) is the largest city in Linn County (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Linn_County</sub>
+          <rel>largestCity</rel>
+          <obj>Albany</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_2">
+      <text>Adams Township (Madison County, Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Adams_Township</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_3">
+      <text>Atlanta is the largest city of Fulton County (Georgia).</text>
+      <triples>
+        <triple>
+          <sub>Fulton_County</sub>
+          <rel>largestCity</rel>
+          <obj>Atlanta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_4">
+      <text>Atlanta can be found in the state of Georgia.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>isPartOf</rel>
+          <obj>Georgia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_5">
+      <text>Corvallis (Oregon) is the largest city in Benton County (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Benton_County</sub>
+          <rel>largestCity</rel>
+          <obj>Corvallis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>largestCity</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_6">
+      <text>Alexandria (Indiana) has a population density of 755.3 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>populationDensity</rel>
+          <obj>755.3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_7">
+      <text>Alexandria (Indiana) is part of the Monroe Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>isPartOf</rel>
+          <obj>Monroe_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_8">
+      <text>Ann Arbor is in Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Ann_Arbor</sub>
+          <rel>isPartOf</rel>
+          <obj>Michigan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_9">
+      <text>The United States House of Representatives is the leader of Antioch (California).</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>leaderTitle</rel>
+          <obj>United_States_House_of_Representatives</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>Legislature</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_10">
+      <text>Albany (Georgia) has a Mayor as leader.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_11">
+      <text>Attica (Indiana) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_12">
+      <text>Attica (Indiana) is part of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>isPartOf</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_13">
+      <text>Alpharetta is part of the state of Georgia.</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>isPartOf</rel>
+          <obj>Georgia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_14">
+      <text>Atlanta, is a part of the state of Georgia.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>isPartOf</rel>
+          <obj>Georgia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_15">
+      <text>Attica (Indiana) is part of Fountain County.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>isPartOf</rel>
+          <obj>Fountain_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_16">
+      <text>Antioch (California) is 13 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>13</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_17">
+      <text>Arabic is a language found in Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Michigan</sub>
+          <rel>language</rel>
+          <obj>Arabic</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_18">
+      <text>Salem (Oregon) is the capital of Oregon.</text>
+      <triples>
+        <triple>
+          <sub>Oregon</sub>
+          <rel>capital</rel>
+          <obj>Salem</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_19">
+      <text>The population density, of Attica (Indiana), is 783.1 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>populationDensity</rel>
+          <obj>783.1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_20">
+      <text>Attica (Indiana) is part of Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>isPartOf</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_21">
+      <text>Attica (Indiana) has a total area of 4.14 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>areaTotal</rel>
+          <obj>4.14</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_22">
+      <text>Attica (Indiana) is part of Logan Township (Fountain County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Attica</sub>
+          <rel>isPartOf</rel>
+          <obj>Logan_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_23">
+      <text>Albany (Oregon) is 64.008 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>64.008</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_24">
+      <text>Albany (Georgia) is a city in Dougherty County.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>isPartOf</rel>
+          <obj>Dougherty_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_25">
+      <text>Albany (Georgia) is part of the state of Georgia.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>isPartOf</rel>
+          <obj>Georgia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_26">
+      <text>Albany (Oregon) is a city in Oregon.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>isPartOf</rel>
+          <obj>Oregon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_27">
+      <text>The total area, of Albany (Georgia), is 144.7 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>areaTotal</rel>
+          <obj>144.7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_28">
+      <text>Albany (Georgia), has a population density of 535 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>populationDensity</rel>
+          <obj>535</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_29">
+      <text>Albany (Oregon) has a total area of 45.97 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>areaTotal</rel>
+          <obj>45.97</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_30">
+      <text>Albany (Georgia) is located at 62 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>62</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_31">
+      <text>Albany (Oregon) is a city in Linn County (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>isPartOf</rel>
+          <obj>Linn_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_32">
+      <text>Albany (Georgia) is part of Benton County (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>isPartOf</rel>
+          <obj>Benton_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_33">
+      <text>Albany (Georgia) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_34">
+      <text>The population density of Albany (Oregon), is 1104.1 inhabitants per square kilometre.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>populationDensity</rel>
+          <obj>1104.1</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_35">
+      <text>Albany (Oregon) is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_36">
+      <text>There is 0.54 square kilometers of water in Albany (Oregon).</text>
+      <triples>
+        <triple>
+          <sub>Albany</sub>
+          <rel>areaOfWater</rel>
+          <obj>0.54</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaOfWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_37">
+      <text>Atlanta is part of Georgia.</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>isPartOf</rel>
+          <obj>Georgia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_38">
+      <text>The capital of Georgia is Atlanta.</text>
+      <triples>
+        <triple>
+          <sub>Georgia</sub>
+          <rel>capital</rel>
+          <obj>Atlanta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_39">
+      <text>The state of Georgia is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Georgia</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_40">
+      <text>DeKalb County (Georgia) is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>DeKalb_County</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_41">
+      <text>Most of Atlanta is part of DeKalb County (Georgia).</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>isPartOf</rel>
+          <obj>DeKalb_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_42">
+      <text>Alpharetta, is part of Fulton County (Georgia).</text>
+      <triples>
+        <triple>
+          <sub>Alpharetta</sub>
+          <rel>isPartOf</rel>
+          <obj>Fulton_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_43">
+      <text>Atlanta is the county seat of Fulton County (Georgia).</text>
+      <triples>
+        <triple>
+          <sub>Fulton_County</sub>
+          <rel>countySeat</rel>
+          <obj>Atlanta</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>countySeat</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_44">
+      <text>Atlanta is a part of Fulton County (Georgia).</text>
+      <triples>
+        <triple>
+          <sub>Atlanta</sub>
+          <rel>isPartOf</rel>
+          <obj>Fulton_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_45">
+      <text>Alexandria (Indiana) is 265 above sea level.</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>265</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>elevationAboveTheSeaLevel</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_46">
+      <text>The area code for Alexandria (Indiana) is 765.</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>areaCode</rel>
+          <obj>765</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_47">
+      <text>Alexandria (Indiana) is part of Madison County (Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>isPartOf</rel>
+          <obj>Madison_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_48">
+      <text>Alexandria (Indiana) is part of Indiana.</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>isPartOf</rel>
+          <obj>Indiana</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_49">
+      <text>Alexandria (Indiana), has a total area of 6.81 square kilometres.</text>
+      <triples>
+        <triple>
+          <sub>Alexandria</sub>
+          <rel>areaTotal</rel>
+          <obj>6.81</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_50">
+      <text>The mayor is the leader of Antioch (California).</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>leaderTitle</rel>
+          <obj>Mayor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_51">
+      <text>Antioch (California) has a UTC offset of -7.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>utcOffset</rel>
+          <obj>-7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_52">
+      <text>Antioch (California) is part of California.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>isPartOf</rel>
+          <obj>California</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_53">
+      <text>The population of Antioch (California) is 102372.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>populationTotal</rel>
+          <obj>102372</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_54">
+      <text>The total area of Antioch (California) is 75.324 square km.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>areaTotal</rel>
+          <obj>75.324</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_55">
+      <text>Antioch (California) has a UTC offset of -8.</text>
+      <triples>
+        <triple>
+          <sub>Antioch</sub>
+          <rel>utcOffset</rel>
+          <obj>-8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_56">
+      <text>Anaheim is a city in Orange County (California).</text>
+      <triples>
+        <triple>
+          <sub>Anaheim</sub>
+          <rel>isPartOf</rel>
+          <obj>Orange_County</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>County</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_57">
+      <text>Orange County (California) is part of the Greater Los Angeles area.</text>
+      <triples>
+        <triple>
+          <sub>Orange_County</sub>
+          <rel>isPartOf</rel>
+          <obj>Greater_Los_Angeles_Area</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>County</sub>
+          <rel>isPartOf</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_58">
+      <text>Anderson (Indiana) is part of Adams Township (Madison County, Indiana).</text>
+      <triples>
+        <triple>
+          <sub>Anderson</sub>
+          <rel>isPartOf</rel>
+          <obj>Adams_Township</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_59">
+      <text>The English language is spoken in Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Michigan</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_60">
+      <text>Lansing is the capital of Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Michigan</sub>
+          <rel>capital</rel>
+          <obj>Lansing</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_City" id="1_City_test_61">
+      <text>Spanish is one of the languages spoken in Michigan.</text>
+      <triples>
+        <triple>
+          <sub>Michigan</sub>
+          <rel>language</rel>
+          <obj>Spanish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

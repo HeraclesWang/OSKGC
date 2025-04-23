@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2_MusicalWork_test_1",
+    "input_text": "The album Nord was produced by Year of No Light and won the album of the year in the sludge metal genre.",
+    "response": "[Nord, producer, Year of No Light]:(Album, producer, Band), [Nord, genre, Sludge metal]:(Album, genre, MusicGenre)"
+  },
+  {
+    "id": "2_MusicalWork_test_2",
+    "input_text": "The Brian Kelly album Afterplay was preceded by Pools of Light and then Expect a Miracle.",
+    "response": "[Aftplay, precededBy, Pools of Light]:(Album, precededBy, Album)\n[Aftplay, precededBy, Expect a Miracle]:(Album, precededBy, Album)\n[Expect a Miracle, producer, Brian Kelly]:(Album, producer, MusicalArtist)"
+  },
+  {
+    "id": "2_MusicalWork_test_3",
+    "input_text": "The 58.41 minutes Year of No Light album Nord was preceded by Demo 2004.",
+    "response": "[Nord, runtime, 58.41]:(Album, runtime, number), [Nord, precededBy, Demo 2004]:(Album, precededBy, Work)"
+  },
+  {
+    "id": "2_MusicalWork_test_4",
+    "input_text": "Year of No Light followed their album Nord, which was released on 06-09-2006, with the album Live at Roadburn 2008.",
+    "response": "[Live at Roadburn 2008, releaseDate, 06-09-2006]:(Work, releaseDate, Date)\n[Nord, precededBy, Year of No Light]:(Work, precededBy, Work)\n[Live at Roadburn 2008, artist, Year of No Light]:(Work, artist, MusicalArtist)"
+  },
+  {
+    "id": "2_MusicalWork_test_5",
+    "input_text": "The Year of No Light album Nord is in the sludge metal genre, one variety of which is southern sludge.",
+    "response": "[Nord, genre, Sludge metal]:(Album, genre, MusicGenre)\n[Sludge metal, musicSubgenre, Southern sludge]:(MusicGenre, musicSubgenre, MusicGenre)"
+  },
+  {
+    "id": "2_MusicalWork_test_6",
+    "input_text": "Altar of Plagues is a band associated with Year of No Light which produced the album Nord.",
+    "response": "[Altar of Plagues, associatedBand, Year of No Light]\n[Altar of Plagues, producer, Year of No Light]\n[Nord, producer, Year of No Light]"
+  },
+  {
+    "id": "2_MusicalWork_test_7",
+    "input_text": "Nord is an album by Year of No Light in the sludge metal genre, which originated from the hardcore punk genre.",
+    "response": "[Nord, genre, Sludge metal]:(Album, genre, MusicGenre), [Sludge metal, stylisticOrigin, Hardcore punk]:(MusicGenre, stylisticOrigin, MusicGenre)"
+  },
+  {
+    "id": "2_MusicalWork_test_8",
+    "input_text": "Nord, an album made by Year of No Light and released by the record label Crucial blast, belongs to the post metal genre.",
+    "response": "[Nord, producer, Year of No Light]:(Album, producer, Band)\n[Nord, genre, Post metal]:(Album, genre, MusicGenre)"
+  },
+  {
+    "id": "2_MusicalWork_test_9",
+    "input_text": "Year of No Light is a band whose members include a former guitarist for Monarch has created an album called Nord.",
+    "response": "[Nord, genre,?]:(Album, genre,?)\n[Nord, producer, Year of No Light]:(Album, producer, Band)\n\nNote: The genre of the album \"Nord\" is not specified in the input text, so it remains unknown."
+  },
+  {
+    "id": "2_MusicalWork_test_10",
+    "input_text": "The Year of No Light album Live at Roadburn 2008 was followed by their album Nord.",
+    "response": "Based on the given ontology schema and input text, I extracted the following triples:\n\nLive at Roadburn 2008, genre,?:(Album, genre,?)\nLive at Roadburn 2008, producer, The Year of No Light:(Album, producer, Band)\nLive at Roadburn 2008, precededBy,?:(Album, precededBy, Album)\nLive at Roadburn 2008, releaseDate, 2008:(Album, releaseDate, Date)\nLive at Roadburn 2008, followedBy, Nord:(Album, followedBy, Album)\nNord, genre,?:(Album, genre,?)\nNord, producer, The Year of No Light:(Album, producer, Band)\n\nNote that I used the ontology schema to determine the correct relationships and entity types. The Year of No Light is considered a Band, and Live at Roadburn 2008 and Nord are both Albums. The genre and producer relationships are inferred based on the schema."
+  },
+  {
+    "id": "2_MusicalWork_test_11",
+    "input_text": "Year of No Light created the album Live at Roadburn 2008, which was preceded by band’s self-produced album Nord.",
+    "response": "Based on the given ontology schema and the input text, I will construct the knowledge graph as follows:\n\n[Live at Roadburn 2008, genre, unknown]:(Album, genre, MusicGenre)\n[Live at Roadburn 2008, producer, Year of No Light]:(Album, producer, Band)\n[Live at Roadburn 2008, precededBy, Nord]:(Work, precededBy, Work)\n\nNote that I couldn't determine the specific music genre of the album \"Live at Roadburn 2008\" from the given text, so I left it as \"unknown\". If more information is provided, I can refine this output."
+  }
+]

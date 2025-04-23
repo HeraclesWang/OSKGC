@@ -1,0 +1,77 @@
+[
+    {
+        "id": "3_University_test_1",
+        "sent": "In Dijon, 2900 University of Burgundy staff members service 16800 undergraduate students.",
+        "response": "{University of Burgundy}:[EducationalInstitution:University], {2900}:[number], {16800}:[number], {Dijon}:[PopulatedPlace:City]"
+    },
+    {
+        "id": "3_University_test_2",
+        "sent": "The University of Burgundy has 27400 students. The Number of doctoral students is 1299 and 16800 are undergraduate students.",
+        "response": "{University of Burgundy}:[EducationalInstitution], {27400}:[number], {1299}:[number], {16800}:[number]"
+    },
+    {
+        "id": "3_University_test_3",
+        "sent": "Dr. G. P. Prabhukumar is the director of Acharya Institute of Technology, which is affiliated with Visvesvaraya Technological University and located in India.",
+        "response": "{Acharya Institute of Technology}:[EducationalInstitution:University], {Dr. G. P. Prabhukumar}:[Person:Academic], {Visvesvaraya Technological University}:[Organisation:EducationalInstitution:University], {India}:[Place:PopulatedPlace:Country]"
+    },
+    {
+        "id": "3_University_test_4",
+        "sent": "Aarhus has a magistrate government. To its northeast is Mols. The Aarhus University is located in Aarhus.",
+        "response": "{Aarhus}:[PopulatedPlace], {Aarhus University}:[EducationalInstitution], {Mols}:[NaturalPlace]"
+    },
+    {
+        "id": "3_University_test_5",
+        "sent": "The Aarhus University is in Aarhus. It is affiliated with the European University Association in Brussels.",
+        "response": "Entities: [Aarhus University], [Aarhus], [European University Association], [Brussels]\nOutput: {Aarhus University}:[EducationalInstitution], {Aarhus}:[Place], {European University Association}:[Organisation], {Brussels}:[Place]"
+    },
+    {
+        "id": "3_University_test_6",
+        "sent": "The Aarhus University at Arhus was established in 1928. Arhus has a Magistrate government.",
+        "response": "{Aarhus University}:[EducationalInstitution:University], {Arhus}:[PopulatedPlace:City], {1928}:[Year]"
+    },
+    {
+        "id": "3_University_test_7",
+        "sent": "The Aarhus University is located in Denmark. Denmark's leader is Lars Løkke Rasmussen and Denmark's religion is the Church of Denmark.",
+        "response": "{Aarhus University}:[EducationalInstitution:University], {Denmark}:[Country], {Lars Løkke Rasmussen}:[Person:Politician:PrimeMinister], {Church of Denmark}:[Organisation:ReligiousOrganisation]"
+    },
+    {
+        "id": "3_University_test_8",
+        "sent": "The Aarhus University (Latin name - \"Universitas Aarhusiensis\" was established in 1928 and it is affiliated with the European University Association.",
+        "response": "{Aarhus University}:[EducationalInstitution], {Universitas Aarhusiensis}:[EducationalInstitution], {1928}:[Year], {European University Association}:[Organisation]"
+    },
+    {
+        "id": "3_University_test_9",
+        "sent": "The Accademia di Architettura di Mendrisio is in Mendrisio. It has 600 students and an academic staff of 100.",
+        "response": "Entities: [600], [100], [Accademia di Architettura di Mendrisio], [Mendrisio]\nOutput: {Accademia di Architettura di Mendrisio}:[EducationalInstitution], {600}:[number], {100}:[number], {Mendrisio}:[PopulatedPlace]"
+    },
+    {
+        "id": "3_University_test_10",
+        "sent": "The Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland. Switzerland's legislature is the Federal Assembly.",
+        "response": "{Mendrisio}:[PopulatedPlace], {Switzerland}:[Country], {Federal Assembly}:[Legislature], {Accademia di Architettura di Mendrisio}:[EducationalInstitution]"
+    },
+    {
+        "id": "3_University_test_11",
+        "sent": "Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland and has 600 students.",
+        "response": "{Accademia di Architettura di Mendrisio}:[EducationalInstitution], {Mendrisio}:[PopulatedPlace], {Switzerland}:[Country]"
+    },
+    {
+        "id": "3_University_test_12",
+        "sent": "The Accademia di Architettura di Mendrisio was established in Mendrisio in 1996. Its dean is Mario Botta.",
+        "response": "{Mendrisio}:[City], {1996}:[Year], {Mario Botta}:[Architect], {Accademia di Architettura di Mendrisio}:[University]"
+    },
+    {
+        "id": "3_University_test_13",
+        "sent": "The Accademia di Architettura di Mendrisio is located in Mendrisio and its dean is Mario Botta. The neighbouring municipality of Mendrisio is Meride.",
+        "response": "Entities: [Mendrisio], [Mendrisio], [Mario Botta], [Accademia di Architettura di Mendrisio]\nOutput: {Mendrisio}:[PopulatedPlace], {Mendrisio}:[PopulatedPlace], {Mario Botta}:[Scientist:Architect], {Accademia di Architettura di Mendrisio}:[EducationalInstitution:University]"
+    },
+    {
+        "id": "3_University_test_14",
+        "sent": "The Accademia di Architettura di Mendrisio is located in Mendrisio. Its dean is called Mario Botta and it has 600 students.",
+        "response": "{Accademia di Architettura di Mendrisio}:[EducationalInstitution:University], {Mendrisio}:[PopulatedPlace:City], {Mario Botta}:[Person:Architect], {600}:[number]"
+    },
+    {
+        "id": "3_University_test_15",
+        "sent": "Accademia di Architettura di Mendrisio was established in 1996. It is located in Mendrisio, which has Meride as its neighbouring municipality as Meride.",
+        "response": "Entities: [Mendrisio], [1996], [Accademia di Architettura di Mendrisio], [Meride]\nOutput: {Accademia di Architettura di Mendrisio}:[EducationalInstitution], {Mendrisio}:[PopulatedPlace], {1996}:[Year], {Meride}:[PopulatedPlace]"
+    }
+]

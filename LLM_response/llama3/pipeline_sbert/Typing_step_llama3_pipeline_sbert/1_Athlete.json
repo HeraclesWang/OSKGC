@@ -1,0 +1,332 @@
+[
+    {
+        "id": "1_Athlete_test_1",
+        "sent": "Aleksandre Guruli's club is US Lesquin.",
+        "response": "{Aleksandre Guruli}:[SportsPerson], {US Lesquin}:[SportsClub]"
+    },
+    {
+        "id": "1_Athlete_test_2",
+        "sent": "Aleksandre Guruli played for the Georgia national football team.",
+        "response": "{Aleksandre Guruli}:[SoccerPlayer], {Georgia national football team}:[SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_3",
+        "sent": "The league Vfl Wolfsburg play in is Bundesliga.",
+        "response": "{Vfl Wolfsburg}:[SoccerClub], {Bundesliga}:[SoccerLeague]"
+    },
+    {
+        "id": "1_Athlete_test_4",
+        "sent": "Aleksandre Guruli played for the club AS Lyon-Duchère.",
+        "response": "{Aleksandre Guruli}:[SoccerPlayer], {AS Lyon-Duchère}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_5",
+        "sent": "Aleksandre Guruli played for FC Dinamo Batumi.",
+        "response": "{Aleksandre Guruli}:[Athlete], {FC Dinamo Batumi}:[SoccerTeam]"
+    },
+    {
+        "id": "1_Athlete_test_6",
+        "sent": "Aaron Hunt's is in the youth club SV Werder Bremen.",
+        "response": "Entities: [Aaron Hunt], [SV Werder Bremen]\nOutput: {Aaron Hunt}:[PersonFunction:Position], {SV Werder Bremen}:[Organisation:SportsTeam:SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_7",
+        "sent": "Aaron Hunt plays for SV Werder Bremen II.",
+        "response": "{Aaron Hunt}:[Person]:{Athlete}:{SoccerPlayer}, {SV Werder Bremen II}:[Organisation]:{SportsTeam}:{SoccerTeam}"
+    },
+    {
+        "id": "1_Athlete_test_8",
+        "sent": "Akeem Ayers was born July 10th, 1989.",
+        "response": "{Akeem Ayers}:[Person:Athlete:AmericanFootballPlayer], {1989-07-10}:[Date]"
+    },
+    {
+        "id": "1_Athlete_test_9",
+        "sent": "Akeem Priestley's club is Harbour View F.C.",
+        "response": "Entities: [Harbour View F.C.], [Akeem Priestley]\nOutput: {Harbour View F.C.}:[SoccerClub], {Akeem Priestley}:[SoccerPlayer]"
+    },
+    {
+        "id": "1_Athlete_test_10",
+        "sent": "Akeem Priestley's birth place is Jamaica.",
+        "response": "Entities: [Akeem Priestley], [Jamaica]\nOutput: {Akeem Priestley}:[Athlete], {Jamaica}:[Country]"
+    },
+    {
+        "id": "1_Athlete_test_11",
+        "sent": "Alessio Romagnoli is in the Italy national under-17 football team.",
+        "response": "{Alessio Romagnoli}:[SoccerPlayer], {Italy national under-17 football team}:[SoccerTeam]"
+    },
+    {
+        "id": "1_Athlete_test_12",
+        "sent": "Alex Plante was born in Canada.",
+        "response": "{Alex Plante}:[Person], {Canada}:[Country]"
+    },
+    {
+        "id": "1_Athlete_test_13",
+        "sent": "Alessio Romagnoli was born in Italy.",
+        "response": "Entities: [Alessio Romagnoli], [Italy]\nOutput: {Alessio Romagnoli}:[Person], {Italy}:[Country]"
+    },
+    {
+        "id": "1_Athlete_test_14",
+        "sent": "Alaa Abdul-Zahra was born in Baghdad.",
+        "response": "{Alaa Abdul-Zahra}:[Person], {Baghdad}:[Place]"
+    },
+    {
+        "id": "1_Athlete_test_15",
+        "sent": "Ahmad Kadhim Assad plays for Al-Talaba SC.",
+        "response": "{Ahmad Kadhim Assad}:[SoccerPlayer], {Al-Talaba SC}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_16",
+        "sent": "Clyde F.C. play at the Broadwood Stadium.",
+        "response": "{Clyde F.C.}:[SportsTeam], {Broadwood Stadium}:[ArchitecturalStructure]:[Building]:[Venue]:[Stadium]"
+    },
+    {
+        "id": "1_Athlete_test_17",
+        "sent": "Alaa Abdul-Zahra plays for the Iraq national under-23 football team.",
+        "response": "{Alaa Abdul-Zahra}:[SoccerPlayer], {Iraq national under-23 football team}:[SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_18",
+        "sent": "Aaron Hunt was born in Goslar.",
+        "response": "{Goslar}:[PopulatedPlace], {Aaron Hunt}:[Person]"
+    },
+    {
+        "id": "1_Athlete_test_19",
+        "sent": "Akeem Priestley played for Antigua GFC.",
+        "response": "{Akeem Priestley}:[Person:Athlete:SoccerPlayer], {Antigua GFC}:[Organisation:SportsTeam:BasketballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_20",
+        "sent": "A.S. Roma plays in the Serie A.",
+        "response": "{A.S. Roma}:[SoccerClub], {Serie A}:[SoccerLeague]"
+    },
+    {
+        "id": "1_Athlete_test_21",
+        "sent": "AFAS Stadion is the ground of AZ Alkmaar.",
+        "response": "Entities: [AZ Alkmaar], [AFAS Stadion]\nOutput: {AZ Alkmaar}:[SoccerClub], {AFAS Stadion}:[Stadium]"
+    },
+    {
+        "id": "1_Athlete_test_22",
+        "sent": "St. Louis is part of Spain.",
+        "response": "{St. Louis}:[Place], {Spain}:[Place]"
+    },
+    {
+        "id": "1_Athlete_test_23",
+        "sent": "Akeem Priestley's youth club was Harbour View F.C.",
+        "response": "Entities: [Akeem Priestley], [Harbour View F.C.]\nOutput: {Akeem Priestley}:[SoccerPlayer], {Harbour View F.C.}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_24",
+        "sent": "Ahmad Kadhim Assad plays for Al-Jaish SC in Syria.",
+        "response": "{Ahmad Kadhim Assad}:[SoccerPlayer], {Al-Jaish SC}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_25",
+        "sent": "Aleksandre Guruli played for AZAL PFK.",
+        "response": "{Aleksandre Guruli}:[PersonFunction: Athlete], {AZAL PFK}:[Organisation: SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_26",
+        "sent": "Siniša Mihajlović is the manager for A.C. Milan.",
+        "response": "{Siniša Mihajlović}:[SoccerManager], {A.C. Milan}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_27",
+        "sent": "A.C. Milan play in Serie A.",
+        "response": "{A.C. Milan}:[SoccerClub], {Serie A}:[SoccerLeague]"
+    },
+    {
+        "id": "1_Athlete_test_28",
+        "sent": "Alan Martin (footballer) was born on 01/01/1989.",
+        "response": "{Alan Martin}:[Person]:[Athlete]:[SoccerPlayer], {01/01/1989}:[Date]"
+    },
+    {
+        "id": "1_Athlete_test_29",
+        "sent": "Akeem Priestley played for the Jacksonville Dolphins youth team.",
+        "response": "{Akeem Priestley}:[Person:Athlete:BasketballPlayer], {Jacksonville Dolphins}:[Organisation:SportsTeam:AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_30",
+        "sent": "Erosi Manjgaladze Stadium is the ground of FC Samtredia.",
+        "response": "{FC Samtredia}:[SportsTeam], {Erosi Manjgaladze Stadium}:[Building]:[Venue]:[Stadium]"
+    },
+    {
+        "id": "1_Athlete_test_31",
+        "sent": "The league that Al Kharaitiyat SC play in is the Qatar Stars League.",
+        "response": "{Al Kharaitiyat SC}:[SportsTeam], {Qatar Stars League}:[SportsLeague]"
+    },
+    {
+        "id": "1_Athlete_test_32",
+        "sent": "Peñarol's manager is Jorge Orosmán da Silva.",
+        "response": "Entities: [Jorge Orosmán da Silva], [Peñarol]\nOutput: {Jorge Orosmán da Silva}:[SportsManager], {Peñarol}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_33",
+        "sent": "U.C. Sampdoria play in the Serie A league.",
+        "response": "Entities: [Serie A], [U.C. Sampdoria]\nOutput: {Serie A}:[SportsLeague], {U.C. Sampdoria}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_34",
+        "sent": "Aaron Hunt played for the Germany national youth football team.",
+        "response": "Entities: [Aaron Hunt], [Germany]\nOutput: {Aaron Hunt}:[Athlete:SoccerPlayer], {Germany}:[Country]"
+    },
+    {
+        "id": "1_Athlete_test_35",
+        "sent": "Aaron Hunt was born in West Germany.",
+        "response": "Entities: [Aaron Hunt], [West Germany]\nOutput: {Aaron Hunt}:[Person], {West Germany}:[Country]"
+    },
+    {
+        "id": "1_Athlete_test_36",
+        "sent": "Aaron Hunt played for the Goslarer SC 08 youth team.",
+        "response": "{Aaron Hunt}:[SoccerPlayer], {Goslarer SC 08}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_37",
+        "sent": "Aaron Hunt plays for Goslarer SC 08.",
+        "response": "{Aaron Hunt}:[SoccerPlayer], {Goslarer SC 08}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_38",
+        "sent": "Aaron Hunt plays for the club, Hamburger SV.",
+        "response": "{Hamburger SV}:[SportsClub], {Aaron Hunt}:[Athlete]"
+    },
+    {
+        "id": "1_Athlete_test_39",
+        "sent": "Aaron Hunt's club is VfL Wolfsburg.",
+        "response": "{Aaron Hunt}:[SoccerPlayer], {VfL Wolfsburg}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_40",
+        "sent": "Aaron Hunt plays for the Germany National Under-21 football team.",
+        "response": "{Aaron Hunt}:[SoccerPlayer], {Germany National Under-21 football team}:[SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_41",
+        "sent": "VfL Wolfsburg's manager is Dieter Hecking.",
+        "response": "Entities: [VfL Wolfsburg], [Dieter Hecking]\nOutput: {VfL Wolfsburg}:[SportsClub], {Dieter Hecking}:[SoccerManager]"
+    },
+    {
+        "id": "1_Athlete_test_42",
+        "sent": "The manager of SV Werder Bremen II is Alexander Nouri.",
+        "response": "{SV Werder Bremen II}:[SoccerClub], {Alexander Nouri}:[SoccerManager]"
+    },
+    {
+        "id": "1_Athlete_test_43",
+        "sent": "SV Werder Bremen II play in the 3. Liga.",
+        "response": "{SV Werder Bremen II}:[SportsTeam], {3. Liga}:[SoccerLeague]"
+    },
+    {
+        "id": "1_Athlete_test_44",
+        "sent": "Aleksandre Guruli was born in Georgian Soviet Socialist Republic.",
+        "response": "Entities: [Georgian Soviet Socialist Republic], [Aleksandre Guruli]\nOutput: {Georgian Soviet Socialist Republic}:[Country], {Aleksandre Guruli}:[Person]"
+    },
+    {
+        "id": "1_Athlete_test_45",
+        "sent": "Aleksandre Guruli plays for FC Samtredia.",
+        "response": "{Aleksandre Guruli}:[SoccerPlayer], {FC Samtredia}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_46",
+        "sent": "Aleksandre Guruli's club is FC Dila Gori.",
+        "response": "{Aleksandre Guruli}:[SoccerPlayer], {FC Dila Gori}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_47",
+        "sent": "Aleksandre Guruli played for FC Karpaty Lviv.",
+        "response": "{Aleksandre Guruli}:[SoccerPlayer], {FC Karpaty Lviv}:[SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_48",
+        "sent": "Aleksandre Guruli's club is US Boulogne.",
+        "response": "{Aleksandre Guruli}:[PersonFunction:Position], {US Boulogne}:[Organisation:SportsClub]"
+    },
+    {
+        "id": "1_Athlete_test_49",
+        "sent": "Aleksandre Guruli's club is Olympique Lyonnais.",
+        "response": "{Aleksandre Guruli}:[Person], {Olympique Lyonnais}:[SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_50",
+        "sent": "Aleksandre Guruli's height is 178 centimetres.",
+        "response": "{Aleksandre Guruli}:[Person], {178}:[number]"
+    },
+    {
+        "id": "1_Athlete_test_51",
+        "sent": "Aleksandre Guruli is in the FC Zestafoni club.",
+        "response": "{Aleksandre Guruli}:[PersonFunction:Position], {FC Zestafoni}:[Organisation:SportsTeam]"
+    },
+    {
+        "id": "1_Athlete_test_52",
+        "sent": "FC Terek Grozny's ground is based at Grozny.",
+        "response": "Entities: [FCTerek Grozny], [Grozny]\nOutput: {FCTerek Grozny}:[ArchitecturalStructure:Building:Venue:Stadium], {Grozny}:[Place:PopulatedPlace:Settlement:City]"
+    },
+    {
+        "id": "1_Athlete_test_53",
+        "sent": "Aleksandr Prudnikov plays for FC Terek Grozny.",
+        "response": "{Aleksandr Prudnikov}:[Person/SoccerPlayer], {FC Terek Grozny}:[Organisation/SoccerClub]"
+    },
+    {
+        "id": "1_Athlete_test_54",
+        "sent": "FC Terek Grozny's manager is Rashid Rakhimov.",
+        "response": "Entities: [Rashid Rakhimov], [FC Terek Grozny]\nOutput: {FC Terek Grozny}:[SportsTeam], {Rashid Rakhimov}:[SoccerManager]"
+    },
+    {
+        "id": "1_Athlete_test_55",
+        "sent": "The current team of Akeem Ayers is the Los Angeles Rams.",
+        "response": "Here is the output:\n\n{Akeem Ayers}:[AmericanFootballPlayer]\n{Los Angeles Rams}:[AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_56",
+        "sent": "Akeem Ayers's former team is the New England Patriots.",
+        "response": "Here is the output:\n\n{Akeem Ayers}:[AmericanFootballPlayer], {New England Patriots}:[AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_57",
+        "sent": "Akeem Ayers was in draft round 2.",
+        "response": "{Akeem Ayers}:[PersonFunction: Athlete], {draft round 2}:[Work]"
+    },
+    {
+        "id": "1_Athlete_test_58",
+        "sent": "Akeem Ayers used to play for the St. Louis Rams.",
+        "response": "{Akeem Ayers}:[AmericanFootballPlayer], {St. Louis Rams}:[AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_59",
+        "sent": "Akeem Ayers birth place is Raleigh.",
+        "response": "{Akeem Ayers}:[Athlete], {Raleigh}:[City]"
+    },
+    {
+        "id": "1_Athlete_test_60",
+        "sent": "Akeem Ayers plays as a linebacker.",
+        "response": "Entities: [Akeem Ayers], [Linebacker]\nOutput: {Akeem Ayers}:[AmericanFootballPlayer], {Linebacker}:[Position]"
+    },
+    {
+        "id": "1_Athlete_test_61",
+        "sent": "Akeem Ayers used to play for Tennessee Titans.",
+        "response": "Entities: [Akeem Ayers], [Tennessee Titans]\nOutput: {Akeem Ayers}:[PersonFunction:Position], {Tennessee Titans}:[Organisation:SportsTeam:AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_62",
+        "sent": "Akeem Ayers' former team was the Los Angeles Rams.",
+        "response": "{Akeem Ayers}:[AmericanFootballPlayer], {Los Angeles Rams}:[AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_63",
+        "sent": "Akeem Ayers was number 39 in the draft pick.",
+        "response": "{Akeem Ayers}:[Athlete], {39}:[number]"
+    },
+    {
+        "id": "1_Athlete_test_64",
+        "sent": "Akeem Ayers made his debut for the Tennessee Titans.",
+        "response": "Entities: [Akeem Ayers], [Tennessee Titans]\nOutput: {Akeem Ayers}:[Person: Athlete:AmericanFootballPlayer], {Tennessee Titans}:[Organisation:SportsTeam:AmericanFootballTeam]"
+    },
+    {
+        "id": "1_Athlete_test_65",
+        "sent": "Akeem Ayers was born in 1989.",
+        "response": "Entities: [Akeem Ayers], [1989]\nOutput: {Akeem Ayers}:[Person:Athlete:AmericanFootballPlayer], {1989}:[Date]"
+    },
+    {
+        "id": "1_Athlete_test_66",
+        "sent": "Akeem Ayers started his career in 2011.",
+        "response": "Entities: [Akeem Ayers], [2011]\nOutput: {Akeem Ayers}:[PersonFunction], {2011}:[Date]"
+    }
+]

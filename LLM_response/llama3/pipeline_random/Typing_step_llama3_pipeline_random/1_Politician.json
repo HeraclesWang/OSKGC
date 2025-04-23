@@ -1,0 +1,342 @@
+[
+    {
+        "id": "1_Politician_test_1",
+        "sent": "Abraham A. Ribicoff died in New York City.",
+        "response": "{Abram A. Ribicoff}:[Politician], {New York City}:[City]"
+    },
+    {
+        "id": "1_Politician_test_2",
+        "sent": "Among the battles that Aaron S. Daggett fought in was the Battle of White Oak Swamp.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of White Oak Swamp}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_3",
+        "sent": "Aaron S. Daggett fought in the Battle of Gettysburg.",
+        "response": "{Aaron S. Daggett}:[Person]:[MilitaryPerson], {Battle of Gettysburg}:[Event]:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_4",
+        "sent": "Abraham A. Ribicoff died in New York.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {New York}:[State]"
+    },
+    {
+        "id": "1_Politician_test_5",
+        "sent": "Abraham A. Ribicoff's spouse was Casey Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Casey Ribicoff}:[PoliticianSpouse]"
+    },
+    {
+        "id": "1_Politician_test_6",
+        "sent": "Aaron S. Daggett fought in battles in the American Civil War.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {American Civil War}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_7",
+        "sent": "New Britain (Connecticut) was the birthplace of Abraham A. Ribicoff.",
+        "response": "{New Britain}:[Place], {Connecticut}:[Place], {Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_8",
+        "sent": "Aaron S. Daggett fought during the Battle of Garnett's & Golding's Farm.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Garnett's & Golding's Farm}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_9",
+        "sent": "Ab Klink worked at the Senate (Netherlands).",
+        "response": "Text: Ab Klink worked at the Senate (Netherlands).\nEntities: [Ab Klink], [Senate], [Netherlands]\nOutput: {Ab Klink}:[Senator], {Senate}:[Legislature], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_10",
+        "sent": "Abraham A. Ribicoff is a member of the United States Democratic Party.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Democratic Party}:[PoliticalParty]"
+    },
+    {
+        "id": "1_Politician_test_11",
+        "sent": "Aaron S. Daggett was awarded the Purple Heart.",
+        "response": "{Aaron S. Daggett}:[Person], {Purple Heart}:[Award]"
+    },
+    {
+        "id": "1_Politician_test_12",
+        "sent": "One of the battles Aaron S. Daggett fought in, was the Second Battle of Rappahannock Station.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Second Battle of Rappahannock Station}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_13",
+        "sent": "Ab Klink was born in the Netherlands.",
+        "response": "{Ab Klink}:[Person]"
+    },
+    {
+        "id": "1_Politician_test_14",
+        "sent": "Alfred Moore Scales began his career on January 21st 1885.",
+        "response": "{Alfred Moore Scales}:[Person]:{Politician}"
+    },
+    {
+        "id": "1_Politician_test_15",
+        "sent": "Abel Caballero worked at the Ministry of Public Works and Transport in Spain.",
+        "response": "{Abel Caballero}:[Politician], {Ministry of Public Works and Transport}:[GovernmentAgency], {Spain}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_16",
+        "sent": "Adonis Georgiadis was a member of the New Democracy party in Greece.",
+        "response": "{Adonis Georgiadis}:[Politician], {New Democracy}:[PoliticalParty]"
+    },
+    {
+        "id": "1_Politician_test_17",
+        "sent": "The commander at the Battle of Fredericksburg was Robert E. Lee.",
+        "response": "{Robert E. Lee}:[PersonFunction:Politician:Governor]"
+    },
+    {
+        "id": "1_Politician_test_18",
+        "sent": "Alfred Moore Scales took part in the Battle of Chancellorsville.",
+        "response": "{Alfred Moore Scales}:[MilitaryPerson], {Battle of Chancellorsville}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_19",
+        "sent": "New York City, United States is the death place of Abraham A. Ribicoff.",
+        "response": "{New York City}:[Place], {United States}:[Place], {Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_20",
+        "sent": "The United States is the birthplace of Abraham A. Ribicoff.",
+        "response": "{United States}:[Country], {Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_21",
+        "sent": "Abraham A. Ribicoff spouse is Ruth Ribicoff.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Ruth Ribicoff}:[PersonFunction]"
+    },
+    {
+        "id": "1_Politician_test_22",
+        "sent": "Abraham A. Ribicoff worked as Governor of Connecticut.",
+        "response": "{Abram A. Ribicoff}:[Governor]"
+    },
+    {
+        "id": "1_Politician_test_23",
+        "sent": "Abraham A. Ribicoff once worked for the United States Secretary of Health, Education, and Welfare office.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country], {Secretary of Health, Education, and Welfare}:[GovernmentAgency]"
+    },
+    {
+        "id": "1_Politician_test_24",
+        "sent": "John N. Dempsey was preceded by Abraham A. Ribicoff.",
+        "response": "{John N. Dempsey}:[Politician], {Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_25",
+        "sent": "The successor to Abraham A. Ribicoff is Anthony J. Celebrezze.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Anthony J. Celebrezze}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_26",
+        "sent": "Abraham A. Ribicoff died in the United States.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {United States}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_27",
+        "sent": "Abraham A. Ribicoff is a United States national.",
+        "response": "{Abram A. Ribicoff}:[Politician], {United States}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_28",
+        "sent": "Abraham A. Ribicoff's place of birth was Connecticut.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {Connecticut}:[State]"
+    },
+    {
+        "id": "1_Politician_test_29",
+        "sent": "Abraham A. Ribicoff was in office while John F. Kennedy was president.",
+        "response": "{Abraham A. Ribicoff}:[Politician], {John F. Kennedy}:[President]"
+    },
+    {
+        "id": "1_Politician_test_30",
+        "sent": "Abraham A. Ribicoff's nationality is that of the United States.",
+        "response": "{Abraham A. Ribicoff}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_31",
+        "sent": "Aaron S. Daggett fought in the Battle of South Mountain.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of South Mountain}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_32",
+        "sent": "Aaron S. Daggett was born in Greene (Maine).",
+        "response": "{Aaron S. Daggett}:[Person], {Greene}:[Place], {Maine}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_33",
+        "sent": "Aaron S. Daggett was born in Maine.",
+        "response": "{Aaron S. Daggett}:[Person], {Maine}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_34",
+        "sent": "Aaron S. Daggett was in the Battle of Antietam.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Antietam}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_35",
+        "sent": "Aaron S. Daggett fought in the Battle of Salem Church.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Salem Church}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_36",
+        "sent": "One of Aaron S. Daggett's battles was the Battle of the Wilderness.",
+        "response": "{Aaron S. Daggett}:[Person:Politician:Senator], {Battle of the Wilderness}:[Event:SocietalEvent: MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_37",
+        "sent": "Aaron S. Daggett took part on the Battle of Cold Harbor.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Cold Harbor}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_38",
+        "sent": "Aaron S. Daggett's place of death was Massachusetts.",
+        "response": "{Aaron S. Daggett}:[Person], {Massachusetts}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_39",
+        "sent": "Aaron S. Daggett died in West Roxbury.",
+        "response": "{Aaron S. Daggett}:[Person], {West Roxbury}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_40",
+        "sent": "The Battle of Mine Run was one fought by Aaron S. Daggett.",
+        "response": "Entities: [Aaron S. Daggett], [Battle of Mine Run]\nOutput: {Aaron S. Daggett}:[MilitaryPerson], {Battle of Mine Run}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_41",
+        "sent": "Aaron S. Daggett fought in the Battle of Fredericksburg.",
+        "response": "{Aaron S. Daggett}:[MilitaryPerson], {Battle of Fredericksburg}:[MilitaryConflict]"
+    },
+    {
+        "id": "1_Politician_test_42",
+        "sent": "Isaac Rojas was the successor to Alberto Teisaire.",
+        "response": "{Isaac Rojas}:[Politician], {Alberto Teisaire}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_43",
+        "sent": "Alfred N. Phillips was born in Connecticut.",
+        "response": "Entities: [Alfred N. Phillips], [Connecticut]\nOutput: {Alfred N. Phillips}:[Person], {Connecticut}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_44",
+        "sent": "Alfons Gorbach was born in Austria.",
+        "response": "{Alfons Gorbach}:[Person], {Austria}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_45",
+        "sent": "Alfons Gorbach was born in Austria-Hungary.",
+        "response": "{Alfons Gorbach}:[Person], {Austria-Hungary}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_46",
+        "sent": "Alfons Gorbach was a politician from the Austrian People's Party.",
+        "response": "{Alfons Gorbach}:[Politician], {Austrian People's Party}:[PoliticalParty]"
+    },
+    {
+        "id": "1_Politician_test_47",
+        "sent": "Alfons Gorbach's place of birth was the state, Tyrol.",
+        "response": "{Alfons Gorbach}:[Politician], {Tyrol}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_48",
+        "sent": "Alfons Gorbach was born in the County of Tyrol.",
+        "response": "{Alfons Gorbach}:[Politician], {County of Tyrol}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_49",
+        "sent": "Josef Klaus succeeded Alfons Gorbach.",
+        "response": "{Josef Klaus}:[Politician], {Alfons Gorbach}:[Politician]"
+    },
+    {
+        "id": "1_Politician_test_50",
+        "sent": "Alfons Gorbach died in Graz.",
+        "response": "{Alfons Gorbach}:[Person], {Graz}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_51",
+        "sent": "Alfons Gorbach was in office during President Adolf Schärf's reign.",
+        "response": "{Alfons Gorbach}:[Politician], {Adolf Schärf}:[President]"
+    },
+    {
+        "id": "1_Politician_test_52",
+        "sent": "Alfons Gorbach was born in Imst.",
+        "response": "Entities: [Alfons Gorbach], [Imst]\nOutput: {Alfons Gorbach}:[Person], {Imst}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_53",
+        "sent": "Alfons Gorbach died in Styria.",
+        "response": "{Alfons Gorbach}:[Person], {Styria}:[Place]"
+    },
+    {
+        "id": "1_Politician_test_54",
+        "sent": "Agnes Kant's country is the Netherlands.",
+        "response": "{Agnes Kant}:[Person], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_55",
+        "sent": "Agnes Kant is a national of the Netherlands.",
+        "response": "{Agnes Kant}:[Person], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_56",
+        "sent": "The currency in the Netherlands is the euro.",
+        "response": "Entities: [euro], [Netherlands]\nOutput: {euro}:[Currency], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_57",
+        "sent": "Agnes Kant lives in the Netherlands.",
+        "response": "{Agnes Kant}:[Person]"
+    },
+    {
+        "id": "1_Politician_test_58",
+        "sent": "Ab Klink is a national of the Netherlands.",
+        "response": "{Ab Klink}:[Politician], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_59",
+        "sent": "Ab Klink worked as a member of the senate.",
+        "response": "Entities: Ab Klink\nOutput: {Ab Klink}:[Senator]"
+    },
+    {
+        "id": "1_Politician_test_60",
+        "sent": "The date of birth of Ab Klink is 1958-11-02.",
+        "response": "{Ab Klink}:[Person]"
+    },
+    {
+        "id": "1_Politician_test_61",
+        "sent": "Stellendam was the birthplace of Ab Klink.",
+        "response": "{Stellendam}:[Place], {Ab Klink}:[Person]"
+    },
+    {
+        "id": "1_Politician_test_62",
+        "sent": "The alma mater of Ab Klink is Leiden University.",
+        "response": "{Ab Klink}:[Person]:{Professor}\n{Leiden University}:[EducationalInstitution]:{University}"
+    },
+    {
+        "id": "1_Politician_test_63",
+        "sent": "Ab Klink worked at the Ministry of Health, Welfare and Sport in Netherlands.",
+        "response": "{Ab Klink}:[Politician], {Ministry of Health, Welfare and Sport}:[GovernmentAgency], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_64",
+        "sent": "Ab Klink worked at the House of Representatives (Netherlands).",
+        "response": "{Ab Klink}:[MemberOfParliament], {House of Representatives}:[Legislature], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_65",
+        "sent": "Khadija Arib is the leader of the House of Representatives (Netherlands).",
+        "response": "{Khadija Arib}:[Politician], {House of Representatives}:[Legislature], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_66",
+        "sent": "Agnes Kant worked at the House of Representatives (Netherlands).",
+        "response": "{Agnes Kant}:[Politician], {House of Representatives}:[Legislature], {Netherlands}:[Country]"
+    },
+    {
+        "id": "1_Politician_test_67",
+        "sent": "Ab Klink worked as a Member of the House of Representatives.",
+        "response": "{Ab Klink}:[MemberOfParliament]"
+    },
+    {
+        "id": "1_Politician_test_68",
+        "sent": "Agnes Kant worked as a member of the House of Representatives.",
+        "response": "{Agnes Kant}:[MemberOfParliament]"
+    }
+]

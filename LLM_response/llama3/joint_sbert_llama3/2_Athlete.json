@@ -1,0 +1,227 @@
+[
+  {
+    "id": "2_Athlete_test_1",
+    "input_text": "Aaron Hunt played for the club SV Werder Bremen which is managed by Viktor Skrypnyk.",
+    "response": "[Aaron Hunt, club, SV Werder Bremen]\n[Aaron Hunt, manager, Viktor Skrypnyk]\nNote: I assumed that \"played for\" implies the relation \"club\" and \"managed by\" implies the relation \"manager\"."
+  },
+  {
+    "id": "2_Athlete_test_2",
+    "input_text": "Aaron Hunt, former player for Hamburger SV, now plays for SV Werder Bremen.",
+    "response": "[Aaron Hunt, formerTeam, Hamburger SV]:(SoccerPlayer, formerTeam, SoccerClub), [Aaron Hunt, currentClub, SV Werder Bremen]:(SoccerPlayer, currentClub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_3",
+    "input_text": "Akeem Priestley was born in Jamaica, where that country's leader is Elizabeth II.",
+    "response": "[Akeem Priestley, birthPlace, Jamaica], (Akeem Priestley, birthDate,?), (Jamaica, leader, Elizabeth II), (Jamaica, country,?), (Elizabeth II, leaderTitle, Governor)"
+  },
+  {
+    "id": "2_Athlete_test_4",
+    "input_text": "Aleksandr Prudnikov played for FC Terek Grozny however he now plays for FC Alania Vladikavkaz.",
+    "response": "[Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SoccerClub)\n[Aleksandr Prudnikov, currentClub, FC Alania Vladikavkaz]:(SoccerPlayer, currentClub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_5",
+    "input_text": "Aleksandre Guruli has played for FC Samtredia, whose home ground is at the Erosi Manjgaladze Stadium.",
+    "response": "[Aleksandre Guruli, club, FC Samtredia]:(Person, club, Organisation), [FC Samtredia, ground, Erosi Manjgaladze Stadium]:(Organisation, ground, ArchitecturalStructure)"
+  },
+  {
+    "id": "2_Athlete_test_6",
+    "input_text": "Akeem Ayers was born on July 10, 1989 and made his debut for the Tennessee Titans.",
+    "response": "[Akeem Ayers, birthDate, 1989-07-10]:(AmericanFootballPlayer, birthDate, Date), [Akeem Ayers, birthPlace, unknown]:(AmericanFootballPlayer, birthPlace, unknown), [Akeem Ayers, debutTeam, Tennessee Titans]:(AmericanFootballPlayer, debutTeam, Organisation)"
+  },
+  {
+    "id": "2_Athlete_test_7",
+    "input_text": "Alex Plante was born in Brandon (Manitoba) where the leader is Drew Caldwell.",
+    "response": "[Alex Plante, birthYear, 1989]:(IceHockeyPlayer, birthYear, Year), [Alex Plante, birthPlace, Manitoba]:(IceHockeyPlayer, birthPlace, Province), [Manitoba, leader, Drew Caldwell]:(Place, leader, Person)"
+  },
+  {
+    "id": "2_Athlete_test_8",
+    "input_text": "Akeem Priestley's clubs are Harbour View F.C. and RoPS.",
+    "response": "[Akeem Priestley, club, Harbour View F.C.]\n[Akeem Priestley, club, RoPS]"
+  },
+  {
+    "id": "2_Athlete_test_9",
+    "input_text": "Aleksandr Prudnikov has played for FC Amkar Perm and for FC Spartak Moscow.",
+    "response": "[Aleksandr Prudnikov, formerTeam, FC Amkar Perm]:(SoccerPlayer, formerTeam, SoccerClub), [Aleksandr Prudnikov, formerTeam, FC Spartak Moscow]:(SoccerPlayer, formerTeam, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_10",
+    "input_text": "Aleksandr Chumakov was born in Moscow and plays for is FC Torpedo Moscow.",
+    "response": "[Aleksandr Chumakov, birthPlace, Moscow]:(SoccerPlayer, birthPlace, Place), [Aleksandr Chumakov, currentClub, FC Torpedo Moscow]:(SoccerPlayer, currentClub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_11",
+    "input_text": "Abel Hernández plays for U.S. Città di Palermo and the Uruguay national football team.",
+    "response": "[Abel Hernández, club, U.S. Città di Palermo]:(SoccerPlayer, club, SoccerClub)\n[Abel Hernández, team, Uruguay national football team]:(SoccerPlayer, team, SoccerTeam)"
+  },
+  {
+    "id": "2_Athlete_test_12",
+    "input_text": "Ahmad Kadhim Assad has played for both Steel Azin F.C. and Al-Quwa Al-Jawiya.",
+    "response": "[Ahmad Kadhim Assad, formerTeam, Steel Azin F.C.]\n[Ahmad Kadhim Assad, formerTeam, Al-Quwa Al-Jawiya]"
+  },
+  {
+    "id": "2_Athlete_test_13",
+    "input_text": "The chairman of FC Spartak Moscow is Sergey Rodionov and Aleksandr Prudnikov played for their youth team.",
+    "response": "[Aleksandr Prudnikov, formerTeam, FC Spartak Moscow]:(SoccerPlayer, formerTeam, SoccerClub), [Sergey Rodionov, chairman, FC Spartak Moscow]:(Person, chairman, Organisation), [Aleksandr Prudnikov, youthclub, FC Spartak Moscow]:(SoccerPlayer, youthclub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_14",
+    "input_text": "Akeem Ayers played for the American Football team, St. Louis Rams.",
+    "response": "[Akeem Ayers, club, St. Louis Rams]:(AmericanFootballPlayer, club, AmericanFootballTeam), [St. Louis Rams, IsA, AmericanFootballTeam]:(AmericanFootballTeam, IsA, SportsTeam), [SportsTeam, IsA, Organisation]:(SportsTeam, IsA, Organisation)"
+  },
+  {
+    "id": "2_Athlete_test_15",
+    "input_text": "Former clubs of Aleksandr Prudnikov include Sparta Prague and FC Spartak Moscow.",
+    "response": "[Aleksandr Prudnikov, formerTeam, Sparta Prague]:(Person, formerTeam, Organisation), [Aleksandr Prudnikov, formerTeam, FC Spartak Moscow]:(Person, formerTeam, Organisation)"
+  },
+  {
+    "id": "2_Athlete_test_16",
+    "input_text": "Aaron Hunt, former player for SV Werder Bremen II, now plays for Hamburger SV.",
+    "response": "[Aaron Hunt, formerTeam, SV Werder Bremen II]:(SoccerPlayer, formerTeam, SoccerClub)\n[Aaron Hunt, currentClub, Hamburger SV]:(SoccerPlayer, currentClub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_17",
+    "input_text": "Aaron Hunt played for SV Werder Bremen and his club is now VfL Wolfsburg.",
+    "response": "[Aaron Hunt, club, SV Werder Bremen]:(SoccerPlayer, club, SoccerClub)\n[Aaron Hunt, club, VfL Wolfsburg]:(SoccerPlayer, club, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_18",
+    "input_text": "Aaron Hunt plays for Vfl Wolfsburg and Hamburger SV.",
+    "response": "[Aaron Hunt, currentClub, Vfl Wolfsburg]:(Person, currentClub, SoccerClub)\n[Aaron Hunt, currentClub, Hamburger SV]:(Person, currentClub, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_19",
+    "input_text": "Aaron Hunt plays for Vfl Wolfsburg which is managed by Dieter Hecking .",
+    "response": "[Aaron Hunt, club, Vfl Wolfsburg], (Aaron Hunt, manager, Dieter Hecking)"
+  },
+  {
+    "id": "2_Athlete_test_20",
+    "input_text": "Aaron Hunt plays for the club SV Werder Bremen II managed by Alexander Nouri.",
+    "response": "[Aaron Hunt, club, SV Werder Bremen II]:(SoccerPlayer, club, SoccerClub), [Aaron Hunt, manager, Alexander Nouri]:(SoccerPlayer, manager, Person)"
+  },
+  {
+    "id": "2_Athlete_test_21",
+    "input_text": "Aaron Hunt plays for Vfl Wolfsburg and used to play for SV Werder Bremen II.",
+    "response": "[Aaron Hunt, club, Vfl Wolfsburg]\n[Aaron Hunt, formerTeam, SV Werder Bremen II]"
+  },
+  {
+    "id": "2_Athlete_test_22",
+    "input_text": "Aleksandre Guruli played for the Olympique Lyonnais club who play their home games at the Parc Olympique Lyonnais.",
+    "response": "[Aleksandre Guruli, club, Olympique Lyonnais]:(Person, club, Organisation), [Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(Organisation, ground, ArchitecturalStructure)"
+  },
+  {
+    "id": "2_Athlete_test_23",
+    "input_text": "Aleksandre Guruli played for FC Karpaty Lviv and FC Dila Gori.",
+    "response": "[Aleksandre Guruli, club, FC Karpaty Lviv], [Aleksandre Guruli, club, FC Dila Gori], [FC Karpaty Lviv, league,?], [FC Dila Gori, league,?]\n\nNote: The league information is missing in the input text, so it cannot be extracted."
+  },
+  {
+    "id": "2_Athlete_test_24",
+    "input_text": "Aleksandre Guruli played for the Olympique Lyonnais, whose chairman is Jean-Michel Aulas.",
+    "response": "[Aleksandre Guruli, club, Olympique Lyonnais], [Olympique Lyonnais, chairman, Jean-Michel Aulas]"
+  },
+  {
+    "id": "2_Athlete_test_25",
+    "input_text": "Aleksandre Guruli played for FC Karpaty Lviv and FC Zestafoni.",
+    "response": "[Aleksandre Guruli, club, FC Karpaty Lviv], (SoccerPlayer, club, SoccerClub)\n[Aleksandre Guruli, club, FC Zestafoni], (SoccerPlayer, club, SoccerClub)\n[FC Karpaty Lviv, league,?], (SoccerClub, league, SoccerLeague)\n[FC Zestafoni, league,?], (SoccerClub, league, SoccerLeague)\n\nNote: The league information is missing in the input text, so we cannot determine the exact league for FC Karpaty Lviv and FC Zestafoni."
+  },
+  {
+    "id": "2_Athlete_test_26",
+    "input_text": "Aleksandre Guruli's former clubs include FC Karpaty Lviv and AS Lyon-Duchère.",
+    "response": "[Aleksandre Guruli, formerTeam, FC Karpaty Lviv]:(Person, formerTeam, Organisation), [Aleksandre Guruli, formerTeam, AS Lyon-Duchère]:(Person, formerTeam, Organisation)"
+  },
+  {
+    "id": "2_Athlete_test_27",
+    "input_text": "Aleksandre Guruli plays for FC Karpaty Lviv club and also for US Boulogne.",
+    "response": "[Aleksandre Guruli, club, FC Karpaty Lviv]:(SoccerPlayer, club, SoccerClub), [Aleksandre Guruli, club, US Boulogne]:(SoccerPlayer, club, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_28",
+    "input_text": "Aleksandre Guruli played for FC Karpaty Lviv who is managed by Oleh Luzhny.",
+    "response": "[Aleksandre Guruli, club, FC Karpaty Lviv], [FC Karpaty Lviv, manager, Oleh Luzhny], [FC Karpaty Lviv, league,?]"
+  },
+  {
+    "id": "2_Athlete_test_29",
+    "input_text": "Aleksandre Guruli played for FC Karpaty Lviv and FC Dinamo Batumi.",
+    "response": "[Aleksandre Guruli, club, FC Karpaty Lviv]:(SoccerPlayer, club, SoccerClub), [Aleksandre Guruli, club, FC Dinamo Batumi]:(SoccerPlayer, club, SoccerClub)"
+  },
+  {
+    "id": "2_Athlete_test_30",
+    "input_text": "Aleksandr Prudnikov played for FC Terek Grozny based in Grozny.",
+    "response": "[Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SoccerClub), [FC Terek Grozny, location, Grozny]:(SoccerClub, location, Place)"
+  },
+  {
+    "id": "2_Athlete_test_31",
+    "input_text": "Aleksandr Prudnikov played for FC Terek Grozny managed by Rashid Rakhimov.",
+    "response": "[Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SoccerClub), [FC Terek Grozny, manager, Rashid Rakhimov]:(SoccerClub, manager, SoccerManager)"
+  },
+  {
+    "id": "2_Athlete_test_32",
+    "input_text": "Akeem Ayers' former team was the Los Angeles Rams and his draft round was 2.",
+    "response": "[Akeem Ayers, formerTeam, Los Angeles Rams]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam), [Akeem Ayers, draftRound, 2]:(AmericanFootballPlayer, draftRound, number)"
+  },
+  {
+    "id": "2_Athlete_test_33",
+    "input_text": "Akeem Ayers debuted for the Tennessee Titans and also played for the Los Angeles Rams.",
+    "response": "[Akeem Ayers, debutTeam, Tennessee Titans]\n[Akeem Ayers, formerTeam, Los Angeles Rams]\n[Tennessee Titans, location, Nashville]\n[Tennessee Titans, league, NFL]\n[Los Angeles Rams, location, Los Angeles]\n[Los Angeles Rams, league, NFL]\nNote: The NFL (National Football League) is a SportsLeague, and Nashville and Los Angeles are Cities."
+  },
+  {
+    "id": "2_Athlete_test_34",
+    "input_text": "Akeem Ayers, who started his career in 2011, debuted for the Tennessee Titans.",
+    "response": "[Akeem Ayers, birthYear, 2011]:(Person, birthYear, Year)\n[Akeem Ayers, debutTeam, Tennessee Titans]:(Person, debutTeam, Organisation)"
+  },
+  {
+    "id": "2_Athlete_test_35",
+    "input_text": "Akeem Ayers is 39 in the draft pick and used to play for the St. Louis Rams.",
+    "response": "[Akeem Ayers, birthYear, 39]:(Person, birthYear, Year)\n[Akeem Ayers, draftPick, 39]:(Person, draftPick, number)\n[Akeem Ayers, formerTeam, St. Louis Rams]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam)"
+  },
+  {
+    "id": "2_Athlete_test_36",
+    "input_text": "Akeem Ayers, who made his debut for the Tennessee Titans, later played for the New England Patriots.",
+    "response": "[Akeem Ayers, debutTeam, Tennessee Titans]:(AmericanFootballPlayer, debutTeam, AmericanFootballTeam), [Akeem Ayers, formerTeam, New England Patriots]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam), [Tennessee Titans, location,?]:(AmericanFootballTeam, location,?), [New England Patriots, location,?]:(AmericanFootballTeam, location,?)\n\nNote: The locations of Tennessee Titans and New England Patriots are not provided in the input text, so they are left as variables (?)."
+  },
+  {
+    "id": "2_Athlete_test_37",
+    "input_text": "Akeem Ayers once played for the Los Angeles Rams, who are located in Los Angeles.",
+    "response": "[Akeem Ayers, formerTeam, Los Angeles Rams]\n[Akeem Ayers, birthPlace, Los Angeles]\n[Los Angeles Rams, location, Los Angeles]\n[Los Angeles Rams, location, City]\n[Los Angeles, country, Country]"
+  },
+  {
+    "id": "2_Athlete_test_38",
+    "input_text": "Akeem Ayers' former team was the Los Angeles Rams who play in their home city at Los Angeles Memorial Coliseum.",
+    "response": "[Akeem Ayers, formerTeam, Los Angeles Rams]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam), [Los Angeles Rams, location, Los Angeles Memorial Coliseum]:(AmericanFootballTeam, location, Venue), [Los Angeles Memorial Coliseum, location, Los Angeles]:(ArchitecturalStructure, location, City)"
+  },
+  {
+    "id": "2_Athlete_test_39",
+    "input_text": "Akeem Ayers was drafted in round 2 and used to play for the St. Louis Rams.",
+    "response": "[Akeem Ayers, draftRound, 2]:(AmericanFootballPlayer, draftRound, number)\n[Akeem Ayers, formerTeam, St. Louis Rams]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam)"
+  },
+  {
+    "id": "2_Athlete_test_40",
+    "input_text": "Akeem Ayers' former team was Tennessee Titans who are based in Nashville.",
+    "response": "[Akeem Ayers, formerTeam, Tennessee Titans]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam), [Tennessee Titans, location, Nashville]:(AmericanFootballTeam, location, City)"
+  },
+  {
+    "id": "2_Athlete_test_41",
+    "input_text": "Akeem Ayers made his debut for the Tennessee Titans and later played for the St. Louis Rams.",
+    "response": "[Akeem Ayers, debutTeam, Tennessee Titans]:(AmericanFootballPlayer, debutTeam, AmericanFootballTeam), [Tennessee Titans, location,?]:(AmericanFootballTeam, location, City), [Akeem Ayers, formerTeam, St. Louis Rams]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam), [St. Louis Rams, location,?]:(AmericanFootballTeam, location, City)\n\nNote: The output does not include the exact city for the location of Tennessee Titans and St. Louis Rams as it is not present in the input text."
+  },
+  {
+    "id": "2_Athlete_test_42",
+    "input_text": "Akeem Ayers draft pick is 39 and he used to play for Los Angeles Rams.",
+    "response": "[Akeem Ayers, draftPick, 39]\n[Akeem Ayers, formerTeam, Los Angeles Rams]"
+  },
+  {
+    "id": "2_Athlete_test_43",
+    "input_text": "Born in 1989, Akeem Ayers began his NFL career with the Tennessee Titans.",
+    "response": "[Akeem Ayers, birthYear, 1989]:(AmericanFootballPlayer, birthYear, Year), [Akeem Ayers, debutTeam, Tennessee Titans]:(AmericanFootballPlayer, debutTeam, AmericanFootballTeam)"
+  },
+  {
+    "id": "2_Athlete_test_44",
+    "input_text": "Debuting with the Tennessee Titans, Akeem Ayers draft round was 2.",
+    "response": "[Akeem Ayers, debutTeam, Tennessee Titans]:(AmericanFootballPlayer, debutTeam, AmericanFootballTeam), [Tennessee Titans, draftRound, 2]:(AmericanFootballTeam, draftRound, number)"
+  },
+  {
+    "id": "2_Athlete_test_45",
+    "input_text": "Akeem Ayers made his debut with the Tennessee Titans who are based in Nashville.",
+    "response": "[Akeem Ayers, debutTeam, Tennessee Titans]\n[Akeem Ayers, birthPlace, unknown]\n[Tennessee Titans, location, Nashville]\n[Tennessee Titans, location, Nashville]"
+  }
+]

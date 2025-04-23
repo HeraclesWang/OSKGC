@@ -1,0 +1,267 @@
+[
+    {
+        "id": "3_Athlete_test_1",
+        "input_text": "Aleksandre Guruli's club is Olympique Lyonnais, whose home ground is the Parc Olympique Lyonnais stadium. He also plays for AZAL PFK.",
+        "response": "[Olympique Lyonnais, ground, Parc Olympique Lyonnais stadium]:(SoccerClub, ground, Stadium), [Aleksandre Guruli, club, Olympique Lyonnais]:(SoccerPlayer, club, SoccerClub), [Aleksandre Guruli, currentClub, AZAL PFK]:(SoccerPlayer, currentClub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_2",
+        "input_text": "Aleksandre Guruli plays for both FC Dinamo Batumi and FC Samtredia. The latter, play their home games at the Erosi Manjgaladze stadium.",
+        "response": "[FC Dinamo Batumi, ground, NotSpecified]:(SoccerClub, ground, Stadium), [FC Samtredia, ground, Erosi Manjgaladze stadium]:(SoccerClub, ground, Stadium), [Aleksandre Guruli, club, FC Dinamo Batumi]:(SoccerPlayer, club, SoccerClub), [Aleksandre Guruli, club, FC Samtredia]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_3",
+        "input_text": "Aaron Hunt plays for Vfl Wolfsburg and SV Werder Bremen. He was a member of the Goslarer SC 08 youth team.",
+        "response": "[Aaron Hunt, currentTeam, Vfl Wolfsburg]:(SoccerPlayer, currentTeam, SoccerClub), [Aaron Hunt, currentTeam, SV Werder Bremen]:(SoccerPlayer, currentTeam, SoccerClub), [Aaron Hunt, youthclub, Goslarer SC 08]:(SoccerPlayer, youthclub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_4",
+        "input_text": "Aleksandr Prudnikov plays for FC Amkar Perm and also FC Spartak Moscow who play at the Otkrytiye Arena.",
+        "response": "[Aleksandr Prudnikov, currentTeam, FC Amkar Perm]:(SoccerPlayer, currentTeam, SoccerClub), [Aleksandr Prudnikov, formerTeam, FC Spartak Moscow]:(SoccerPlayer, formerTeam, SoccerClub), [FC Spartak Moscow, ground, Otkrytiye Arena]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_5",
+        "input_text": "178 centimetre tall, Aleksandre Guruli, played for AZAL PFK and plays for FC Karpaty Lviv club.",
+        "response": "[Aleksandre Guruli, height, 178]:(SoccerPlayer, height, number)\n[AZAL PFK, club, Organisation]:(BasketballTeam, club, SportsTeam)\n[AZAL PFK, formerTeam, Organisation]:(BasketballPlayer, formerTeam, SportsTeam)\n[FC Karpaty Lviv, currentTeam, Organisation]:(SoccerPlayer, currentClub, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_6",
+        "input_text": "Alessio Romagnoli plays for the club U.C. Sampdoria and is in the Italy national under-17 football team coached by Alessandro Dal Canto.",
+        "response": "[Alessio Romagnoli, currentTeam, U.C. Sampdoria]:(SoccerPlayer, currentTeam, SoccerClub), [Alessio Romagnoli, club, Italy national under-17 football team]:(SoccerPlayer, club, SoccerClub), [Alessandro Dal Canto, manager, Italy national under-17 football team]:(Person, manager, SoccerTeam)"
+    },
+    {
+        "id": "3_Athlete_test_7",
+        "input_text": "Alan Martin, who plays in the Scotland National under-21 football team, also plays for his club Motherwell F.C. at Fir Park.",
+        "response": "[Alan Martin, club, Motherwell F.C.]:(SoccerPlayer, club, SoccerClub), [Fir Park, ground, Fir Park]:(SoccerClub, ground, Stadium), [Alan Martin, club, Motherwell F.C.]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_8",
+        "input_text": "Akeem Dent, who made his debut with the Atlanta Falcons, used to play for the Houston Texans based in the city of Houston.",
+        "response": "[Houston Texans, city, Houston]:(AmericanFootballTeam, city, City), [Akeem Dent, debutTeam, Atlanta Falcons]:(AmericanFootballPlayer, debutTeam, AmericanFootballTeam), [Akeem Dent, formerTeam, Houston Texans]:(AmericanFootballPlayer, formerTeam, AmericanFootballTeam)"
+    },
+    {
+        "id": "3_Athlete_test_9",
+        "input_text": "Akeem Priestley, who played for Sheikh Russel KC, is in the Jacksonville Dolphins youth club and plays for Harbour View F.C.",
+        "response": "[Akeem Priestley, formerTeam, Sheikh Russel KC]:(SoccerPlayer, formerTeam, SoccerClub), [Akeem Priestley, club, Jacksonville Dolphins]:(SoccerPlayer, club, SoccerClub), [Akeem Priestley, currentClub, Harbour View F.C.]:(SoccerPlayer, currentClub, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_10",
+        "input_text": "The league Alex Tyus plays in is the Turkish Basketball Super League. His club is Maccabi Ashdod B.C. which is coached by, Zvi Sherf.",
+        "response": "[Alex Tyus, league, Turkish Basketball Super League]:(BasketballPlayer, league, BasketballLeague)\n[Maccabi Ashdod B.C., club, Maccabi Ashdod B.C.]:(BasketballPlayer, club, BasketballTeam)\n[Maccabi Ashdod B.C., coach, Zvi Sherf]:(BasketballTeam, coach, BasketballPlayer)"
+    },
+    {
+        "id": "3_Athlete_test_11",
+        "input_text": "The footballer, Abner, was born on 30/05/1996. He played for the football club Real Madrid Castilla and is a footballer for the C.D. FAS club.",
+        "response": "[Abner, birthDate, 1996-05-30]:(SoccerPlayer, birthDate, Date)\n[Abner, club, Real Madrid Castilla]:(SoccerPlayer, club, SoccerClub)\n[Abner, club, C.D. FAS]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_12",
+        "input_text": "Aleksandre Guruli played for FC Dinamo Batumi and the Olympique Lyonnais club whose home ground is the Parc Olympique Lyonnais stadium.",
+        "response": "[FC Dinamo Batumi, currentClub, null]:(SoccerClub, currentClub, SoccerClub), [Aleksandre Guruli, formerTeam, FC Dinamo Batumi]:(SoccerPlayer, formerTeam, SoccerClub), [Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_13",
+        "input_text": "Akeem Priestley previously played for Antigua GFC and is now in the Harbour View F.C. youth club and plays for Dayton Dutch Lions.",
+        "response": "[Akeem Priestley, formerTeam, Antigua GFC]:(SoccerPlayer, formerTeam, SoccerClub), [Akeem Priestley, youthclub, Harbour View F.C.]:(SoccerPlayer, youthclub, SoccerClub), [Akeem Priestley, currentTeam, Dayton Dutch Lions]:(SoccerPlayer, currentTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_14",
+        "input_text": "Aaron Boogaard, who played for the club Wichita Thunder, was born in Saskatchewan in 1986.",
+        "response": "[Aaron Boogaard, birthYear, 1986]:(IceHockeyPlayer, birthYear, Year), [Aaron Boogaard, birthPlace, Saskatchewan]:(IceHockeyPlayer, birthPlace, Province), [Aaron Boogaard, club, Wichita Thunder]:(IceHockeyPlayer, club, HockeyTeam)"
+    },
+    {
+        "id": "3_Athlete_test_15",
+        "input_text": "Abel Hernández, whose club is Peñarol, plays for the club, U.S. Città di Palermo. Giuseppe Iachini is the manager of U.S. Città di Palermo.",
+        "response": "[Abel Hernández, club, Peñarol]:(SoccerPlayer, club, SoccerClub), [Abel Hernández, currentClub, U.S. Città di Palermo]:(SoccerPlayer, currentClub, SoccerClub), [U.S. Città di Palermo, manager, Giuseppe Iachini]:(SoccerClub, manager, SoccerManager)"
+    },
+    {
+        "id": "3_Athlete_test_16",
+        "input_text": "Iraq born Alaa Abdul-Zahra plays for the Iraq national under-23 football team and for Sanat Mes Kerman F.C.",
+        "response": "[Alaa Abdul-Zahra, birthPlace, Iraq]:(SoccerPlayer, birthPlace, Country), [Alaa Abdul-Zahra, club, Iraq national under-23 football team]:(SoccerPlayer, club, SoccerClub), [Alaa Abdul-Zahra, club, Sanat Mes Kerman F.C.]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_17",
+        "input_text": "Alex Tyus is in the Euroleague and his club is Maccabi Tel Aviv B.C., which is coached by Žan Tabak.",
+        "response": "[Alex Tyus, league, Euroleague]:(BasketballPlayer, league, BasketballLeague), [Alex Tyus, club, Maccabi Tel Aviv B.C.]:(BasketballPlayer, club, BasketballTeam), [Maccabi Tel Aviv B.C., coach, Žan Tabak]:(BasketballTeam, coach, BasketballPlayer)"
+    },
+    {
+        "id": "3_Athlete_test_18",
+        "input_text": "Akeem Ayers was born on July 10th, 1989 and he used to play for the St. Louis Rams.",
+        "response": "[Akeem Ayers, birthDate, July 10th, 1989]:(AmericanFootballPlayer, birthDate, Date), [Akeem Ayers, currentTeam, St. Louis Rams]:(AmericanFootballPlayer, currentTeam, AmericanFootballTeam)"
+    },
+    {
+        "id": "3_Athlete_test_19",
+        "input_text": "Aaron Hunt, who plays for Goslarer SC 08 and SV Werder Bremen II, previously played for the latter's youth team.",
+        "response": "[Aaron Hunt, currentClub, Goslarer SC 08]:(FootballPlayer, currentClub, SportsClub), [Aaron Hunt, currentTeam, SV Werder Bremen II]:(FootballPlayer, currentTeam, SportsTeam), [Aaron Hunt, formerTeam, SV Werder Bremen II]:(FootballPlayer, formerTeam, SportsTeam), [Aaron Hunt, youthclub, SV Werder Bremen II]:(FootballPlayer, youthclub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_20",
+        "input_text": "Aaron Hunt, who played for the SV Werder Bremen youth team, is now in the Germany national youth football team and plays for Hamburger SV.",
+        "response": "[Aaron Hunt, birthYear, <year_to_be_filled>]:(SoccerPlayer, birthYear, Year), [Aaron Hunt, birthPlace, <place_to_be_filled>]:(SoccerPlayer, birthPlace, City), [Aaron Hunt, youthclub, SV Werder Bremen]:(SoccerPlayer, youthclub, SoccerClub), [Aaron Hunt, currentTeam, Hamburger SV]:(SoccerPlayer, currentTeam, SoccerClub), [Aaron Hunt, club, Germany national youth football team]:(SoccerPlayer, club, SoccerTeam)"
+    },
+    {
+        "id": "3_Athlete_test_21",
+        "input_text": "Aaron Hunt's club is VfL Wolfsburg and is also in the youth club SV Werder Bremen, having previously played for Hamburger SV.",
+        "response": "[Aaron Hunt, currentTeam, VfL Wolfsburg]:(SoccerPlayer, currentTeam, SoccerClub), [Aaron Hunt, club, SV Werder Bremen]:(SoccerPlayer, club, SoccerClub), [Aaron Hunt, formerTeam, Hamburger SV]:(SoccerPlayer, formerTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_22",
+        "input_text": "Aaron Hunt played for SV Werder Bremen and also Vfl Wolfsburg, the latter of which is managed by Dieter Hecking.",
+        "response": "[Aaron Hunt, currentTeam, Vfl Wolfsburg]:(SoccerPlayer, currentTeam, SportsClub), [Vfl Wolfsburg, manager, Dieter Hecking]:(SoccerClub, manager, Person), [Aaron Hunt, club, SV Werder Bremen]:(SoccerPlayer, club, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_23",
+        "input_text": "Aaron Hunt has played for the SV Werder Bremen youth team and senior level for Vfl Wolfsburg and Goslarer SC 08.",
+        "response": "[Aaron Hunt, birthYear, <unknown>]:(FootballPlayer, birthYear, Year), [Aaron Hunt, birthPlace, <unknown>]:(FootballPlayer, birthPlace, City), [Aaron Hunt, youthclub, SV Werder Bremen]:(FootballPlayer, youthclub, SoccerClub), [Aaron Hunt, currentTeam, Vfl Wolfsburg]:(FootballPlayer, currentTeam, SoccerClub), [Aaron Hunt, formerTeam, Goslarer SC 08]:(FootballPlayer, formerTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_24",
+        "input_text": "Aaron Hunt's youth club was Goslarer SC 08, his club is VfL Wolfsburg and he plays for SV Werder Bremen II.",
+        "response": "[Aaron Hunt, youthclub, Goslarer SC 08]:(Athlete, youthclub, SoccerClub), [Aaron Hunt, currentClub, SV Werder Bremen II]:(Athlete, currentClub, SportsClub), [Aaron Hunt, club, VfL Wolfsburg]:(Athlete, club, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_25",
+        "input_text": "Viktor Skrypnyk is the manager of SV Werder Bremen and Aaron Hunt who plays for Hamburger SV used to play for the club.",
+        "response": "[SV Werder Bremen, manager, Viktor Skrypnyk]:(SoccerClub, manager, SoccerManager)\n[Hamburger SV, formerTeam, Aaron Hunt]:(SoccerTeam, formerTeam, SoccerPlayer)"
+    },
+    {
+        "id": "3_Athlete_test_26",
+        "input_text": "Aaron Hunt's youth club was Goslarer SC 08 and he has played for Hamburger SV and SV Werder Bremen II.",
+        "response": "[Aaron Hunt, youthclub, Goslarer SC 08]:(FootballPlayer, youthclub, SoccerClub), [Aaron Hunt, currentClub, Hamburger SV]:(FootballPlayer, currentClub, SoccerClub), [Aaron Hunt, formerTeam, SV Werder Bremen II]:(FootballPlayer, formerTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_27",
+        "input_text": "Goslarer SC 08 club member, Aaron Hunt, plays for Vfl Wolfsburg, the manager of which, is Dieter Hecking.",
+        "response": "[Aaron Hunt, club, Goslarer SC 08]:(SoccerPlayer, club, SoccerClub), [Goslarer SC 08, member, Aaron Hunt]:(SoccerClub, club, SoccerPlayer), [Vfl Wolfsburg, manager, Dieter Hecking]:(SoccerClub, manager, SoccerManager), [Aaron Hunt, currentTeam, Vfl Wolfsburg]:(SoccerPlayer, currentTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_28",
+        "input_text": "Aaron Hunt's club is the Germany national under-21 football team, his youth club was Goslarer SC 08 and he also played for SV Werder Bremen.",
+        "response": "[Aaron Hunt, currentTeam, Germany national under-21 football team]:(SoccerPlayer, club, SportsTeam), [Aaron Hunt, youthclub, Goslarer SC 08]:(SoccerPlayer, club, SoccerClub), [Aaron Hunt, formerTeam, SV Werder Bremen]:(SoccerPlayer, formerTeam, SportsClub)"
+    },
+    {
+        "id": "3_Athlete_test_29",
+        "input_text": "Aaron Hunt has played for Hamburger SV and SV Werder Bremen II, the first team of which is managed by Alexander Nouri.",
+        "response": "[Aaron Hunt, currentClub, Hamburger SV]:(SoccerPlayer, currentClub, SportsClub), [Aaron Hunt, formerTeam, SV Werder Bremen II]:(SoccerPlayer, formerTeam, SportsTeam), [Hamburger SV, manager, Alexander Nouri]:(SoccerClub, manager, Person)"
+    },
+    {
+        "id": "3_Athlete_test_30",
+        "input_text": "Aaron Hunt previously played for Hamburger SV, but now belongs to the youth club SV Werder Bremen and plays for Goslarer SC 08.",
+        "response": "[Aaron Hunt, currentClub, Goslarer SC 08]:(FootballPlayer, currentClub, SportsTeam), [Aaron Hunt, formerTeam, Hamburger SV]:(FootballPlayer, formerTeam, SoccerClub), [Aaron Hunt, youthclub, SV Werder Bremen]:(FootballPlayer, youthclub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_31",
+        "input_text": "Aaron Hunt, whose club is VfL Wolfsburg managed by Dieter Hecking, has also played for Hamburger SV.",
+        "response": "[Aaron Hunt, club, VfL Wolfsburg]:(SoccerPlayer, club, SportsClub), [VfL Wolfsburg, manager, Dieter Hecking]:(SoccerClub, manager, Person), [Aaron Hunt, formerTeam, Hamburger SV]:(SoccerPlayer, formerTeam, SportsTeam)"
+    },
+    {
+        "id": "3_Athlete_test_32",
+        "input_text": "Aaron Hunt is a member of youth club SV Werder Bremen and SV Werder Bremen II. He plays for Vfl Wolfsburg.",
+        "response": "[Aaron Hunt, youthclub, SV Werder Bremen]:(Athlete, club, SoccerClub), [Aaron Hunt, youthclub, SV Werder Bremen II]:(Athlete, club, SoccerClub), [Aaron Hunt, currentClub, Vfl Wolfsburg]:(Athlete, currentClub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_33",
+        "input_text": "Aaron Hunt plays for Goslarer SC 08 and also for SV Werder Bremen II which is managed by Alexander Nouri.",
+        "response": "[SV Werder Bremen II, manager, Alexander Nouri]:(SoccerClub, manager, SoccerManager), [Aaron Hunt, club, Goslarer SC 08]:(SoccerPlayer, club, SoccerClub), [Aaron Hunt, club, SV Werder Bremen II]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_34",
+        "input_text": "Aaron Hunt, who plays for Vfl Wolfsburg, has previously payed for both, the Goslarer SC 08 youth team and Hamburger SV.",
+        "response": "[Aaron Hunt, currentTeam, Vfl Wolfsburg]:(SoccerPlayer, currentTeam, SoccerClub), [Aaron Hunt, formerTeam, Goslarer SC 08]:(SoccerPlayer, formerTeam, SoccerClub), [Aaron Hunt, formerTeam, Hamburger SV]:(SoccerPlayer, formerTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_35",
+        "input_text": "Aleksandre Guruli's clubs are FC Karpaty Lviv and also FC Samtredia who play their home games at the Erosi Manjgaladze stadium.",
+        "response": "[FC Karpaty Lviv, club, FC Karpaty Lviv]:(SoccerClub, club, SoccerClub), [FC Samtredia, club, FC Samtredia]:(SoccerClub, club, SoccerClub), [FC Karpaty Lviv, ground, Erosi Manjgaladze stadium]:(SoccerClub, ground, Stadium), [FC Samtredia, ground, Erosi Manjgaladze stadium]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_36",
+        "input_text": "Aleksandre Guruli is 178 cm tall and his clubs are FC Karpaty Lviv and AS Lyon-Duchère.",
+        "response": "[Aleksandre Guruli, height, 178]:(SoccerPlayer, height, number)\n[Aleksandre Guruli, club, FC Karpaty Lviv]:(SoccerPlayer, club, SoccerClub)\n[Aleksandre Guruli, club, AS Lyon-Duchère]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_37",
+        "input_text": "Aleksandre Guruli's height is 178 cm, his club is FC Karpaty Lviv and he is a member of the Georgia national football team.",
+        "response": "[Aleksandre Guruli, height, 178]:(SoccerPlayer, height, number)\n[Aleksandre Guruli, currentClub, FC Karpaty Lviv]:(SoccerPlayer, currentClub, SoccerClub)\n[Aleksandre Guruli, club, FC Karpaty Lviv]:(SoccerPlayer, club, SoccerClub)\n[Aleksandre Guruli, ethnicGroup, Georgia]:(Person, ethnicGroup, EthnicGroup)\n[FC Karpaty Lviv, ground, Unknown]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_38",
+        "input_text": "Aleksandre Guruli, who plays for FC Samtredia, formerly played for Olympique Lyonnais who have their home ground at the Parc Olympique Lyonnais.",
+        "response": "[Aleksandre Guruli, currentClub, FC Samtredia]:(SoccerPlayer, currentClub, SoccerClub), [Olympique Lyonnais, formerTeam, Aleksandre Guruli]:(SoccerTeam, formerTeam, SoccerPlayer), [Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_39",
+        "input_text": "Aleksandre Guruli played for US Boulogne and his club is Olympique Lyonnais. Olympique Lyonnais play their home games at the Parc Olympique Lyonnais.",
+        "response": "[US Boulogne, club, Olympique Lyonnais]:(SoccerTeam, club, SoccerClub), [Aleksandre Guruli, formerTeam, US Boulogne]:(SoccerPlayer, formerTeam, SoccerClub), [Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_40",
+        "input_text": "Aleksandre Guruli plays for FC Dila Gori and his club is Olympique Lyonnais who play their home games at the Parc Olympique Lyonnais.",
+        "response": "[FC Dila Gori, currentClub, Olympique Lyonnais]:(SoccerClub, currentClub, SportsClub), [Aleksandre Guruli, club, FC Dila Gori]:(SoccerPlayer, club, SoccerClub), [Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_41",
+        "input_text": "Aleksandre Guruli, who plays for FC Karpaty Lviv club, formerly played for Olympique Lyonnais whose home games are played at the Parc Olympique Lyonnais.",
+        "response": "[Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium), [Aleksandre Guruli, formerTeam, Olympique Lyonnais]:(SoccerPlayer, formerTeam, SoccerClub), [Aleksandre Guruli, club, FC Karpaty Lviv]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_42",
+        "input_text": "Aleksandre Guruli, height: 178 centimetres, plays for FC Karpaty Lviv club. He has also played for FC Dinamo Batumi.",
+        "response": "[Aleksandre Guruli, height, 178]:(SoccerPlayer, height, number)\n[Aleksandre Guruli, currentClub, FC Karpaty Lviv]:(SoccerPlayer, currentClub, SoccerClub)\n[Aleksandre Guruli, formerTeam, FC Dinamo Batumi]:(SoccerPlayer, formerTeam, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_43",
+        "input_text": "Aleksandre Guruli, who is in the FC Zestafoni club, played for the Olympique Lyonnais club whose home ground is the Parc Olympique Lyonnais stadium.",
+        "response": "[Olympique Lyonnais, ground, Parc Olympique Lyonnais]:(SoccerClub, ground, Stadium), [Aleksandre Guruli, formerTeam, Olympique Lyonnais]:(SoccerPlayer, formerTeam, SoccerClub), [Aleksandre Guruli, currentClub, FC Zestafoni]:(SoccerPlayer, currentClub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_44",
+        "input_text": "Aleksandr Prudnikov played for the youth FC Spartak Moscow previously, as well as the FC Terek Grozny which is managed by Rashid Rakhimov.",
+        "response": "[FC Spartak Moscow, youthclub, null]:(SoccerClub, youthclub, SoccerClub), [Aleksandr Prudnikov, formerTeam, FC Spartak Moscow]:(SoccerPlayer, formerTeam, SoccerClub), [FC Terek Grozny, manager, Rashid Rakhimov]:(SoccerClub, manager, Person)"
+    },
+    {
+        "id": "3_Athlete_test_45",
+        "input_text": "FC Terek Grozny club member, Aleksandr Prudnikov, played for the youth football club, FC Spartak Moscow, at the Otkrytiye Arena.",
+        "response": "[FC Terek Grozny, member, Aleksandr Prudnikov]:(SoccerClub, member, Person), [Aleksandr Prudnikov, youthclub, FC Spartak Moscow]:(SoccerPlayer, youthclub, SoccerClub), [Aleksandr Prudnikov, ground, Otkrytiye Arena]:(SoccerPlayer, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_46",
+        "input_text": "Aleksandr Prudnikov was born on February 24th, 1989, played for FC Terek Grozny, managed by Rashid Rakhimov.",
+        "response": "[Aleksandr Prudnikov, birthDate, 1989-02-24]:(SoccerPlayer, birthDate, Date)\n[Aleksandr Prudnikov, birthPlace, Grozny]:(SoccerPlayer, birthPlace, Place)\n[Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SportsTeam)\n[FC Terek Grozny, manager, Rashid Rakhimov]:(SportsTeam, manager, Person)"
+    },
+    {
+        "id": "3_Athlete_test_47",
+        "input_text": "Aleksandr Prudnikov, plays for the FC Amkar Perm football club and played for FC Terek Grozny, the ground of which, is located in Grozny.",
+        "response": "[Aleksandr Prudnikov, currentClub, FC Amkar Perm]:(SoccerPlayer, currentClub, SoccerClub), [FC Amkar Perm, city, Grozny]:(SoccerClub, city, City), [FC Terek Grozny, ground, (Ground in Grozny)]:(SoccerClub, ground, Stadium), [Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SoccerClub)\n\nIn this example, I couldn't find the exact name of the stadium where FC Terek Grozny plays, so I provided a placeholder \"(Ground in Grozny)\" to represent the stadium's location in Grozny."
+    },
+    {
+        "id": "3_Athlete_test_48",
+        "input_text": "FC Terek Grozny player, Aleksandr Prudnikov, belongs to the club, FC Spartak Moscow, they play at the Otkrytiye Arena.",
+        "response": "[Aleksandr Prudnikov, formerTeam, FC Terek Grozny]:(SoccerPlayer, formerTeam, SoccerClub), [FC Spartak Moscow, ground, Otkrytiye Arena]:(SoccerClub, ground, Stadium)"
+    },
+    {
+        "id": "3_Athlete_test_49",
+        "input_text": "Aleksandr Prudnikov, who was born on 1989-02-24, plays for FC Terek Grozny who have their ground at Grozny.",
+        "response": "[Aleksandr Prudnikov, birthDate, 1989-02-24]:(SoccerPlayer, birthDate, Date)\n[Aleksandr Prudnikov, currentTeam, FC Terek Grozny]:(SoccerPlayer, currentTeam, SoccerClub)\n[FC Terek Grozny, ground, Grozny]:(SoccerClub, ground, Venue)"
+    },
+    {
+        "id": "3_Athlete_test_50",
+        "input_text": "Aleksandr Prudnikov is a member of FC Spartak Moscow youth team and FC Terek Grozny club. The latter club is based in Grozny.",
+        "response": "[Aleksandr Prudnikov, youthclub, FC Spartak Moscow]:(SoccerPlayer, youthclub, SoccerClub), [Aleksandr Prudnikov, club, FC Terek Grozny]:(SoccerPlayer, club, SoccerClub), [FC Terek Grozny, city, Grozny]:(SoccerClub, city, Place)"
+    },
+    {
+        "id": "3_Athlete_test_51",
+        "input_text": "Aleksandr Prudnikov is in the FC Terek Grozny club which is located in Grozny. He plays for the FC Kuban Krasnodar.",
+        "response": "[FC Terek Grozny, city, Grozny]:(SoccerClub, city, City), [FC Terek Grozny, location, Grozny]:(SoccerClub, location, Place), [Aleksandr Prudnikov, club, FC Terek Grozny]:(SoccerPlayer, club, SoccerClub), [Aleksandr Prudnikov, currentClub, FC Kuban Krasnodar]:(SoccerPlayer, currentClub, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_52",
+        "input_text": "Aleksandr Prudnikov plays for FC Terek Grozny. The club which has its grounds in Grozny and which is managed by Rashid Rakhimov.",
+        "response": "[FC Terek Grozny, ground, Grozny]:(SoccerClub, ground, Place), [FC Terek Grozny, manager, Rashid Rakhimov]:(SoccerClub, manager, Person)\n[Aleksandr Prudnikov, club, FC Terek Grozny]:(SoccerPlayer, club, SoccerClub)"
+    },
+    {
+        "id": "3_Athlete_test_53",
+        "input_text": "Aleksandr Prudnikov, who is 185 cm tall, once played for FC Spartak Moscow's youth team and now turns out for FC Terek Grozny.",
+        "response": "[Aleksandr Prudnikov, height, 185]:(SoccerPlayer, height, number)\n[Aleksandr Prudnikov, youthclub, FC Spartak Moscow]:(SoccerPlayer, youthclub, SoccerClub)\n[Aleksandr Prudnikov, currentClub, FC Terek Grozny]:(SoccerPlayer, currentClub, SportsClub)"
+    }
+]

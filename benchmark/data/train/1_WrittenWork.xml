@@ -1,0 +1,2980 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_1">
+      <text>A Fortress of Grey Ice is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_2">
+      <text>1634: The Ram Rebellion comes from the United States.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_3">
+      <text>" A Wizard of Mars was Published in the United States ".</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_4">
+      <text>Eric Flint is the author of 1634: The Bavarian Crisis.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>author</rel>
+          <obj>Eric_Flint</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_5">
+      <text>388 is the number of pages A severed Wasp has.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>numberOfPages</rel>
+          <obj>388</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_6">
+      <text>Paleobiology is the academic discipline of Acta Palaeontologica Polonica.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Paleobiology</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_7">
+      <text>1634: The Ram Rebellion was preceded by 1634: The Galileo Affair.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>precededBy</rel>
+          <obj>1634:_The_Galileo_Affair</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_8">
+      <text>The leader of the United States is Barack Obama.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Barack_Obama</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_9">
+      <text>The Two Towers is preceded by The Fellowship of the Ring.</text>
+      <triples>
+        <triple>
+          <sub>The_Two_Towers</sub>
+          <rel>precededBy</rel>
+          <obj>The_Fellowship_of_the_Ring</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_10">
+      <text>A Glastonbury Romance was preceded By Wolf Solent.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>precededBy</rel>
+          <obj>Wolf_Solent</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_11">
+      <text>ACM Transactions on Information Systems has the ISSN number 1558-2868.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>issnNumber</rel>
+          <obj>1558-2868</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_12">
+      <text>The Administrative Science Quarterly comes under the academic discipline of Management.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Management</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_13">
+      <text>Acta Palaeontologica Polonica has the CODEN code APGPAC.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>codenCode</rel>
+          <obj>APGPAC</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_14">
+      <text>A Loyal Character Dancer was penned by Qiu Xiaolong.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>author</rel>
+          <obj>Qiu_Xiaolong</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_15">
+      <text>A.T. Charlie Johnson is the editor of AIP Advances.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>editor</rel>
+          <obj>A.T._Charlie_Johnson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>editor</rel>
+          <obj>Physicist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_16">
+      <text>A Fortress of Grey Ice is a hardcover book.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_17">
+      <text>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg has the CODEN code AMHAAJ.</text>
+      <triples>
+        <triple>
+          <sub>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg</sub>
+          <rel>codenCode</rel>
+          <obj>AMHAAJ</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_18">
+      <text>The novel A Long Long Way was followed by The Secret Scripture.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>followedBy</rel>
+          <obj>The_Secret_Scripture</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_19">
+      <text>Grantville Gazette II is preceded by The Grantville Gazette.</text>
+      <triples>
+        <triple>
+          <sub>Grantville_Gazette_II</sub>
+          <rel>precededBy</rel>
+          <obj>The_Grantville_Gazette</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_20">
+      <text>The Fellowship of the Ring was followed by The Two Towers.</text>
+      <triples>
+        <triple>
+          <sub>The_Fellowship_of_the_Ring</sub>
+          <rel>followedBy</rel>
+          <obj>The_Two_Towers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_21">
+      <text>White Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_22">
+      <text>A Loyal Character Dancer is published by Soho Press.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>publisher</rel>
+          <obj>Soho_Press</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_23">
+      <text>A Severed Wasp has an ISBN number of "0-374-26131-8".</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-374-26131-8</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_24">
+      <text>1634: The Galileo Affair was followed by 1634: The Ram Rebellion.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Galileo_Affair</sub>
+          <rel>followedBy</rel>
+          <obj>1634:_The_Ram_Rebellion</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_25">
+      <text>Americans inhabit the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>demonym</rel>
+          <obj>Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_26">
+      <text>ATISET is the CODEN code for ACM Transactions on Information Systems.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>codenCode</rel>
+          <obj>ATISET</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_27">
+      <text>A Severed Wasp is from the United States.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_28">
+      <text>Springer Science+Business Media is the publisher of Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg.</text>
+      <triples>
+        <triple>
+          <sub>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg</sub>
+          <rel>publisher</rel>
+          <obj>Springer_Science+Business_Media</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_29">
+      <text>Elizabeth II is a leader in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>leader</rel>
+          <obj>Elizabeth_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>Royalty</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_30">
+      <text>1634: The Bavarian Crisis was preceded by Grantville Gazette II.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>precededBy</rel>
+          <obj>Grantville_Gazette_II</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_31">
+      <text>Administrative Science Quarterly has the OCLC number 1461102.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>oclcNumber</rel>
+          <obj>1461102</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_32">
+      <text>AIP Advances, ISSN number 2158-3226.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>issnNumber</rel>
+          <obj>2158-3226</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_33">
+      <text>The OCLC number of Addiction (journal) is 27367194.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>oclcNumber</rel>
+          <obj>27367194</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_34">
+      <text>Acta Mathematica Hungarica is published by Springer Science+Business Media.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>publisher</rel>
+          <obj>Springer_Science+Business_Media</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_35">
+      <text>The journal Addiction has the ISSN number 1360-0443.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>issnNumber</rel>
+          <obj>1360-0443</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_36">
+      <text>The novel Annie Dunne is followed by A Long Long Way.</text>
+      <triples>
+        <triple>
+          <sub>Annie_Dunne</sub>
+          <rel>followedBy</rel>
+          <obj>A_Long_Long_Way</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_37">
+      <text>The ISBN number of Aenir is 0-439-17684-0.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-439-17684-0</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_38">
+      <text>1634: The Bavarian Crisis is written in English.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_39">
+      <text>A Fortress of Grey Ice is written in the English language.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_40">
+      <text>The literary genre of The Hobbit is juvenile fantasy.</text>
+      <triples>
+        <triple>
+          <sub>The_Hobbit</sub>
+          <rel>literaryGenre</rel>
+          <obj>Juvenile_fantasy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>literaryGenre</rel>
+          <obj>LiteraryGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_41">
+      <text>A Loyal Character Dancer is published in the United States.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_42">
+      <text>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg has the LCCN number 32024459.</text>
+      <triples>
+        <triple>
+          <sub>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg</sub>
+          <rel>LCCN_number</rel>
+          <obj>32024459</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_43">
+      <text>1634: The Bavarian Crisis is available in print form.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_44">
+      <text>A Glastonbury Romance has 1174 pages.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>numberOfPages</rel>
+          <obj>1174</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_45">
+      <text>Aenir is a paperback.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>mediaType</rel>
+          <obj>Paperback</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_46">
+      <text>Administrative Science Quarterly is abbreviated to Admin. Sci. Q.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>abbreviation</rel>
+          <obj>Admin._Sci._Q.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>abbreviation</rel>
+          <obj>AcademicJournal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_47">
+      <text>Cornell University is nicknamed Cornell Big Red.</text>
+      <triples>
+        <triple>
+          <sub>Cornell_University</sub>
+          <rel>nickname</rel>
+          <obj>Cornell_Big_Red</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>nickname</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_48">
+      <text>AIP Advances has the impact factor 1.524.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>impactFactor</rel>
+          <obj>1.524</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>impactFactor</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_49">
+      <text>Virginia DeMarce is the author of 1634: The Bavarian Crisis.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>author</rel>
+          <obj>Virginia_DeMarce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_50">
+      <text>Brandon Sanderson was born in Lincoln (Nebraska).</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Sanderson</sub>
+          <rel>birthPlace</rel>
+          <obj>Lincoln</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_51">
+      <text>Cornell University is in the city of Ithaca (New York).</text>
+      <triples>
+        <triple>
+          <sub>Cornell_University</sub>
+          <rel>city</rel>
+          <obj>Ithaca</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>city</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_52">
+      <text>The Hobbit's genre is high fantasy.</text>
+      <triples>
+        <triple>
+          <sub>The_Hobbit</sub>
+          <rel>literaryGenre</rel>
+          <obj>High_fantasy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>literaryGenre</rel>
+          <obj>LiteraryGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_53">
+      <text>The American Institute of Physics publishes AIP Advances.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>publisher</rel>
+          <obj>American_Institute_of_Physics</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_54">
+      <text>1634: The Ram Rebellion was followed by 1635: The Cannon Law.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>followedBy</rel>
+          <obj>1635:_The_Cannon_Law</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_55">
+      <text>The largest city in Ireland is Dublin.</text>
+      <triples>
+        <triple>
+          <sub>Ireland</sub>
+          <rel>largestCity</rel>
+          <obj>Dublin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>largestCity</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_56">
+      <text>A loyal Character Dancer is 360 pages long.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>numberOfPages</rel>
+          <obj>360</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_57">
+      <text>A Severed Wasp is a hardcover book.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_58">
+      <text>The AIDS journal studies HIV/AIDS.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>academicDiscipline</rel>
+          <obj>HIV/AIDS</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Disease</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_59">
+      <text>Cornell University is affiliated with the Association of American Universities.</text>
+      <triples>
+        <triple>
+          <sub>Cornell_University</sub>
+          <rel>affiliation</rel>
+          <obj>Association_of_American_Universities</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>affiliation</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_60">
+      <text>The book "1634: The Galileo Affair is available in English.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Galileo_Affair</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_61">
+      <text>The leader of the United States is known as the President.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leaderTitle</rel>
+          <obj>President_of_the_United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_62">
+      <text>Joe Biden is a United States leader.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>leader</rel>
+          <obj>Joe_Biden</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_63">
+      <text>The OCLC number of A Long Long Way is 57392246.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>oclcNumber</rel>
+          <obj>57392246</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_64">
+      <text>Association for Computing Machinery is the publisher of ACM Transactions on information Systems.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>publisher</rel>
+          <obj>Association_for_Computing_Machinery</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Organisation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_65">
+      <text>David Weber is the author of 1634: The Baltic War.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Baltic_War</sub>
+          <rel>author</rel>
+          <obj>David_Weber</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_66">
+      <text>Wolters Kluwer is the parent company of Lippincott Williams &amp; Wilkins.</text>
+      <triples>
+        <triple>
+          <sub>Lippincott_Williams_&amp;_Wilkins</sub>
+          <rel>parentCompany</rel>
+          <obj>Wolters_Kluwer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_67">
+      <text>The novel Into Battle is followed by The Violet Keystone.</text>
+      <triples>
+        <triple>
+          <sub>Into_Battle</sub>
+          <rel>followedBy</rel>
+          <obj>The_Violet_Keystone</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_68">
+      <text>AIDS (journal) comes under the academic discipline HIV.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>academicDiscipline</rel>
+          <obj>HIV</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Virus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_69">
+      <text>The headquarters of the Polish Academy of Sciences is in Warsaw.</text>
+      <triples>
+        <triple>
+          <sub>Polish_Academy_of_Sciences</sub>
+          <rel>headquarter</rel>
+          <obj>Warsaw</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>headquarter</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_70">
+      <text>A Severed Wasp was written in the English language.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_71">
+      <text>ISSN number 0269-9370 is the AIDS journal.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>issnNumber</rel>
+          <obj>0269-9370</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_72">
+      <text>The Administrative Science Quarterly has a Coden code of "ASCQAG".</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>codenCode</rel>
+          <obj>ASCQAG</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_73">
+      <text>Wiley-Blackwell is the publisher of the journal Addiction.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>publisher</rel>
+          <obj>Wiley-Blackwell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_74">
+      <text>The journal Addiction had the ISSN number 0965-2140.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>issnNumber</rel>
+          <obj>0965-2140</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_75">
+      <text>Cornell University is the publisher of the Administrative Science Quarterly.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>publisher</rel>
+          <obj>Cornell_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_76">
+      <text>Madeleine L'Engle wrote "A Severed Wasp".</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>author</rel>
+          <obj>Madeleine_L'Engle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_77">
+      <text>AIP Advances had the EISSNnumber 2158.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>eissnNumber</rel>
+          <obj>2158</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>eissnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_78">
+      <text>George Allen &amp; Unwin published the Fellowship of the Ring.</text>
+      <triples>
+        <triple>
+          <sub>The_Fellowship_of_the_Ring</sub>
+          <rel>publisher</rel>
+          <obj>George_Allen_&amp;_Unwin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_79">
+      <text>ACM Transactions on Information Systems is part of the academic Discipline of Computer Science.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Computer_science</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_80">
+      <text>Aenir was written by Garth Nix.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>author</rel>
+          <obj>Garth_Nix</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_81">
+      <text>Ireland is located within Europe.</text>
+      <triples>
+        <triple>
+          <sub>Ireland</sub>
+          <rel>location</rel>
+          <obj>Europe</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>location</rel>
+          <obj>Continent</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_82">
+      <text>Acta Palaeontologica Polonica has the ISSN number 1732-2421.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>issnNumber</rel>
+          <obj>1732-2421</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_83">
+      <text>The ISBN number of the book A Fortress of Grey Ice is 0-7653-0633-6.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-7653-0633-6</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_84">
+      <text>Acta Mathematica Hungarica is also known as Acta Math. Hungar.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>abbreviation</rel>
+          <obj>Acta_Math._Hungar.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>abbreviation</rel>
+          <obj>AcademicJournal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_85">
+      <text>A Loyal Character Dancer can be found in hardcover.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_86">
+      <text>1634: The Bavarian crisis is the sequel to The Grantville Gazettes.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>precededBy</rel>
+          <obj>The_Grantville_Gazettes</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_87">
+      <text>The Silmarillion is one of J. R. R. Tolkien's notable works.</text>
+      <triples>
+        <triple>
+          <sub>J._R._R._Tolkien</sub>
+          <rel>notableWork</rel>
+          <obj>The_Silmarillion</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>notableWork</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_88">
+      <text>J. R. R. Tolkien was born on January 3, 1892.</text>
+      <triples>
+        <triple>
+          <sub>J._R._R._Tolkien</sub>
+          <rel>birthDate</rel>
+          <obj>1892-01-03</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_89">
+      <text>The 1634: The Ram Rebellion is a paperback.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>mediaType</rel>
+          <obj>Paperback</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_90">
+      <text>83646315 is the LCCN number for Acta Mathematica Hungarica.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>LCCN_number</rel>
+          <obj>83646315</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_91">
+      <text>The LCCN number of the Administrative Science Quarterly is 57059226.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>LCCN_number</rel>
+          <obj>57059226</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_92">
+      <text>Julius Springer is the founder of Springer Science+Business Media.</text>
+      <triples>
+        <triple>
+          <sub>Springer_Science+Business_Media</sub>
+          <rel>founder</rel>
+          <obj>Julius_Springer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>founder</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_93">
+      <text>Johns Hopkins University Press is located in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Johns_Hopkins_University_Press</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_94">
+      <text>The book Aenir was written by Australians.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>country</rel>
+          <obj>Australia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_95">
+      <text>A Long Long Way comes from Ireland.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>country</rel>
+          <obj>Ireland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_96">
+      <text>Wolf Solent was followed by A Glastonbury Romance.</text>
+      <triples>
+        <triple>
+          <sub>Wolf_Solent</sub>
+          <rel>followedBy</rel>
+          <obj>A_Glastonbury_Romance</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_97">
+      <text>The book, A Loyal Character Dancer, has the ISBN number of 1-56947-301-3.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>isbnNumber</rel>
+          <obj>1-56947-301-3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_98">
+      <text>Madeleine L'Engle was influenced by George MacDonald.</text>
+      <triples>
+        <triple>
+          <sub>Madeleine_L'Engle</sub>
+          <rel>influencedBy</rel>
+          <obj>George_MacDonald</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Writer</sub>
+          <rel>influencedBy</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_99">
+      <text>Acta Mathematica Hungarica is ISSN number 1588-2632.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>issnNumber</rel>
+          <obj>1588-2632</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_100">
+      <text>Aenir is available in print.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_101">
+      <text>A Glastonbury Romance is published by The Bodley Head.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>publisher</rel>
+          <obj>The_Bodley_Head</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_102">
+      <text>The Two Towers was followed by The Return of the King.</text>
+      <triples>
+        <triple>
+          <sub>The_Two_Towers</sub>
+          <rel>followedBy</rel>
+          <obj>The_Return_of_the_King</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_103">
+      <text>English is the language spoken in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_104">
+      <text>The AIDS journal has the LCCN number 90640840.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>LCCN_number</rel>
+          <obj>90640840</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>LCCN_number</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_105">
+      <text>Macmillan Publishers is the parent company of Tor Books.</text>
+      <triples>
+        <triple>
+          <sub>Tor_Books</sub>
+          <rel>parentCompany</rel>
+          <obj>Macmillan_Publishers</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>parentCompany</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_106">
+      <text>Administrative Science Quarterly is published by SAGE Publications for the Samuel Curtis Johnson Graduate School of Management, Cornell University.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>publisher</rel>
+          <obj>SAGE_Publications</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_107">
+      <text>1634: The Bavarian Crisis was written prior to "Ring of Fire II".</text>
+      <triples>
+        <triple>
+          <sub>Ring_of_Fire_II</sub>
+          <rel>precededBy</rel>
+          <obj>1634:_The_Bavarian_Crisis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_108">
+      <text>Alcatraz Versus the Scrivener's Bones was authored by Brandon Sanderson.</text>
+      <triples>
+        <triple>
+          <sub>Alcatraz_Versus_the_Scrivener's_Bones</sub>
+          <rel>author</rel>
+          <obj>Brandon_Sanderson</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_109">
+      <text>A Fortress of Grey Ice has 672 pages.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>numberOfPages</rel>
+          <obj>672</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_110">
+      <text>English is the language used in 1634: The Ram Rebellion.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_111">
+      <text>Cornell University is in the state of New York.</text>
+      <triples>
+        <triple>
+          <sub>Cornell_University</sub>
+          <rel>state</rel>
+          <obj>New_York</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>state</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_112">
+      <text>A Severed Wasp was assigned the OCLC number 8805735.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>oclcNumber</rel>
+          <obj>8805735</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_113">
+      <text>The HIV virus is from the genus Lentivirus.</text>
+      <triples>
+        <triple>
+          <sub>HIV</sub>
+          <rel>genus</rel>
+          <obj>Lentivirus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Virus</sub>
+          <rel>genus</rel>
+          <obj>Genus</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_114">
+      <text>1634: The Ram Rebellion was written by Virginia DeMarce.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>author</rel>
+          <obj>Virginia_DeMarce</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_115">
+      <text>A severed wasp can be found in print.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_116">
+      <text>A Wizard of Mars is published in English.</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_117">
+      <text>Annie Dunne preceded A Long Long Way.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>precededBy</rel>
+          <obj>Annie_Dunne</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_118">
+      <text>White people are an ethnic group within Ireland.</text>
+      <triples>
+        <triple>
+          <sub>Ireland</sub>
+          <rel>ethnicGroup</rel>
+          <obj>White_people</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_119">
+      <text>Addiction (Journal) has the CODEN Code ADICE5.</text>
+      <triples>
+        <triple>
+          <sub>Addiction</sub>
+          <rel>codenCode</rel>
+          <obj>ADICE5</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_120">
+      <text>HIV is part of the Orthoretrovirinae family.</text>
+      <triples>
+        <triple>
+          <sub>HIV</sub>
+          <rel>family</rel>
+          <obj>Orthoretrovirinae</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Virus</sub>
+          <rel>family</rel>
+          <obj>VirusType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_121">
+      <text>The Fellowship of the Ring was published on July 29, 1954.</text>
+      <triples>
+        <triple>
+          <sub>The_Fellowship_of_the_Ring</sub>
+          <rel>releaseDate</rel>
+          <obj>1954-07-29</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>releaseDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_122">
+      <text>Aenir is a book that has 233 pages.</text>
+      <triples>
+        <triple>
+          <sub>Aenir</sub>
+          <rel>numberOfPages</rel>
+          <obj>233</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_123">
+      <text>"AIP Adv." is the abbreviation of AIP Advances.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>abbreviation</rel>
+          <obj>AIP_Adv.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>abbreviation</rel>
+          <obj>AcademicJournal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_124">
+      <text>Alexander L. Wolf is a leader of the Association for Computing Machinery.</text>
+      <triples>
+        <triple>
+          <sub>Association_for_Computing_Machinery</sub>
+          <rel>leader</rel>
+          <obj>Alexander_L._Wolf</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Organisation</sub>
+          <rel>leader</rel>
+          <obj>Scientist</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_125">
+      <text>The book titled 1634: The Ram Rebellion is a hardcover.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Ram_Rebellion</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_126">
+      <text>A Long Long Way is 292 pages long.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>numberOfPages</rel>
+          <obj>292</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_127">
+      <text>The book "A Fortress of Grey Ice" can be found in print.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_128">
+      <text>A Wizard of Mars is available in print form.</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_129">
+      <text>A Wizard of Mars was published by Harcourt.</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>publisher</rel>
+          <obj>Harcourt</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_130">
+      <text>The coden code for AIP Advances is AAIDBI.</text>
+      <triples>
+        <triple>
+          <sub>AIP_Advances</sub>
+          <rel>codenCode</rel>
+          <obj>AAIDBI</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_131">
+      <text>A Wizard of Mars is preceded by Wizards at War.</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>precededBy</rel>
+          <obj>Wizards_at_War</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_132">
+      <text>The English language is spoken in Great Britain.</text>
+      <triples>
+        <triple>
+          <sub>Great_Britain</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_133">
+      <text>Acta Palaeontologica Polonica is academically focused on Paleontology.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>academicDiscipline</rel>
+          <obj>Paleontology</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>academicDiscipline</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_134">
+      <text>Maiden Castle (novel) was preceded by Weymouth Sands.</text>
+      <triples>
+        <triple>
+          <sub>Weymouth_Sands</sub>
+          <rel>followedBy</rel>
+          <obj>Maiden_Castle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_135">
+      <text>Native Americans are an ethnic group in the United States.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>ethnicGroup</rel>
+          <obj>Native_Americans</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>ethnicGroup</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_136">
+      <text>A.T. Charlie Johnson is a United States national.</text>
+      <triples>
+        <triple>
+          <sub>A.T._Charlie_Johnson</sub>
+          <rel>nationality</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_137">
+      <text>The Fellowship of the Ring belongs to the fantasy genre.</text>
+      <triples>
+        <triple>
+          <sub>The_Fellowship_of_the_Ring</sub>
+          <rel>literaryGenre</rel>
+          <obj>Fantasy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>literaryGenre</rel>
+          <obj>LiteraryGenre</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_138">
+      <text>London is the capital city in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>capital</rel>
+          <obj>London</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_139">
+      <text>A Loyal Character Dancer is written in English.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_140">
+      <text>AIDS (journal) was first published in 1987.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>firstPublicationYear</rel>
+          <obj>1987</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>firstPublicationYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_141">
+      <text>Johns Hopkins University is the parent company of the Johns Hopkins University Press.</text>
+      <triples>
+        <triple>
+          <sub>Johns_Hopkins_University_Press</sub>
+          <rel>parentCompany</rel>
+          <obj>Johns_Hopkins_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>parentCompany</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_142">
+      <text>David Cameron is a leader in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>United_Kingdom</sub>
+          <rel>leader</rel>
+          <obj>David_Cameron</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>PrimeMinister</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_143">
+      <text>The Polish Academy of Sciences serves Poland.</text>
+      <triples>
+        <triple>
+          <sub>Polish_Academy_of_Sciences</sub>
+          <rel>serves</rel>
+          <obj>Poland</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>serves</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_144">
+      <text>New York City is where the Association for Computing machinery headquarters is located.</text>
+      <triples>
+        <triple>
+          <sub>Association_for_Computing_Machinery</sub>
+          <rel>headquarter</rel>
+          <obj>New_York_City</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Organisation</sub>
+          <rel>headquarter</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_145">
+      <text>Stanford University is A.T. Charlie Johnson's almaMater.</text>
+      <triples>
+        <triple>
+          <sub>A.T._Charlie_Johnson</sub>
+          <rel>almaMater</rel>
+          <obj>Stanford_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_146">
+      <text>Harvard University is A.T. Charlie Johnson's almaMater.</text>
+      <triples>
+        <triple>
+          <sub>A.T._Charlie_Johnson</sub>
+          <rel>almaMater</rel>
+          <obj>Harvard_University</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>almaMater</rel>
+          <obj>University</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_147">
+      <text>A.T. Charlie Johnson resides in the United States.</text>
+      <triples>
+        <triple>
+          <sub>A.T._Charlie_Johnson</sub>
+          <rel>residence</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>residence</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_148">
+      <text>The Bodley Head was founded by Charles Elkin Mathews.</text>
+      <triples>
+        <triple>
+          <sub>The_Bodley_Head</sub>
+          <rel>founder</rel>
+          <obj>Charles_Elkin_Mathews</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>founder</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_149">
+      <text>The Hobbit is a book followed by the Lord of the Rings.</text>
+      <triples>
+        <triple>
+          <sub>The_Hobbit</sub>
+          <rel>followedBy</rel>
+          <obj>The_Lord_of_the_Rings</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>followedBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_150">
+      <text>Farrar, Straus and Giroux publish A Severed Wasp.</text>
+      <triples>
+        <triple>
+          <sub>A_Severed_Wasp</sub>
+          <rel>publisher</rel>
+          <obj>Farrar,_Straus_and_Giroux</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_151">
+      <text>The capital of the United States is Washington, D.C.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>capital</rel>
+          <obj>Washington,_D.C.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>capital</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_152">
+      <text>The ISBN number of A Long Long Way is 0-670-03380-4.</text>
+      <triples>
+        <triple>
+          <sub>A_Long_Long_Way</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-670-03380-4</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_153">
+      <text>A Wizard of Mars ISBN number is "978-0-15-204770-2".</text>
+      <triples>
+        <triple>
+          <sub>A_Wizard_of_Mars</sub>
+          <rel>isbnNumber</rel>
+          <obj>978-0-15-204770-2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_154">
+      <text>The AIDS journal is published by Lippincott Williams &amp; Wilkins.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>publisher</rel>
+          <obj>Lippincott_Williams_&amp;_Wilkins</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_155">
+      <text>The parent company of Wiley-Blackwell is John Wiley &amp; Sons.</text>
+      <triples>
+        <triple>
+          <sub>Wiley-Blackwell</sub>
+          <rel>parentCompany</rel>
+          <obj>John_Wiley_&amp;_Sons</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>parentCompany</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_156">
+      <text>1634: The Bavarian Crisis can be located by its ISBN number "978-1-4165-4253-7".</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>isbnNumber</rel>
+          <obj>978-1-4165-4253-7</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_157">
+      <text>The OCLC number of A Loyal Character Dancer is 49805501.</text>
+      <triples>
+        <triple>
+          <sub>A_Loyal_Character_Dancer</sub>
+          <rel>oclcNumber</rel>
+          <obj>49805501</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>oclcNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_158">
+      <text>Acta Palaeontologica Polonica is abbreviated to Acta Palaeontol. Pol.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Palaeontologica_Polonica</sub>
+          <rel>abbreviation</rel>
+          <obj>Acta_Palaeontol._Pol.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>abbreviation</rel>
+          <obj>AcademicJournal</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_159">
+      <text>A Glastonbury Romance has the ISBN number 0-7156-3648-0.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>isbnNumber</rel>
+          <obj>0-7156-3648-0</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>isbnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_160">
+      <text>The Acta Mathematica Hungarica CODEN code is "AMAHE9".</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>codenCode</rel>
+          <obj>AMAHE9</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>codenCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_161">
+      <text>The United States is the country of origin of Lippincott Williams &amp; Wilkins.</text>
+      <triples>
+        <triple>
+          <sub>Lippincott_Williams_&amp;_Wilkins</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Publisher</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_162">
+      <text>HIV comes under the family of Retroviruses.</text>
+      <triples>
+        <triple>
+          <sub>HIV</sub>
+          <rel>family</rel>
+          <obj>Retrovirus</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Virus</sub>
+          <rel>family</rel>
+          <obj>VirusType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_163">
+      <text>J. V. Jones authored A Fortress of Grey Ice.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>author</rel>
+          <obj>J._V._Jones</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>author</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_164">
+      <text>George Allen &amp; Unwin was the publisher of The Two Towers.</text>
+      <triples>
+        <triple>
+          <sub>The_Two_Towers</sub>
+          <rel>publisher</rel>
+          <obj>George_Allen_&amp;_Unwin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_165">
+      <text>SAGE Publications is the publisher of Administrative Science Quarterly.</text>
+      <triples>
+        <triple>
+          <sub>Administrative_Science_Quarterly</sub>
+          <rel>publisher</rel>
+          <obj>SAGE_Publications</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_166">
+      <text>A Glastonbury Romance is in print.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>mediaType</rel>
+          <obj>Print</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_167">
+      <text>A Fortress of Grey Ice is published by Tor Books.</text>
+      <triples>
+        <triple>
+          <sub>A_Fortress_of_Grey_Ice</sub>
+          <rel>publisher</rel>
+          <obj>Tor_Books</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_168">
+      <text>1634: The Bavarian Crisis has 448 pages.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>numberOfPages</rel>
+          <obj>448</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>numberOfPages</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_169">
+      <text>1634: The Bavarian Crisis was preceded by 1634: The Baltic War.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>precededBy</rel>
+          <obj>1634:_The_Baltic_War</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_170">
+      <text>The Acta Mathematica Hungarica has the ISSN number 0236-5294.</text>
+      <triples>
+        <triple>
+          <sub>Acta_Mathematica_Hungarica</sub>
+          <rel>issnNumber</rel>
+          <obj>0236-5294</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_171">
+      <text>AIDS journal has the ISSN number 1473-5571.</text>
+      <triples>
+        <triple>
+          <sub>AIDS</sub>
+          <rel>issnNumber</rel>
+          <obj>1473-5571</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_172">
+      <text>A Glastonbury Romance is published by Simon &amp; Schuster.</text>
+      <triples>
+        <triple>
+          <sub>A_Glastonbury_Romance</sub>
+          <rel>publisher</rel>
+          <obj>Simon_&amp;_Schuster</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>publisher</rel>
+          <obj>Publisher</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_173">
+      <text>A Long Long Way came before the book "The Secret Scripture".</text>
+      <triples>
+        <triple>
+          <sub>The_Secret_Scripture</sub>
+          <rel>precededBy</rel>
+          <obj>A_Long_Long_Way</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>precededBy</rel>
+          <obj>Book</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_174">
+      <text>1634: The Bavarian Crisis comes in hardcover.</text>
+      <triples>
+        <triple>
+          <sub>1634:_The_Bavarian_Crisis</sub>
+          <rel>mediaType</rel>
+          <obj>Hardcover</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Book</sub>
+          <rel>mediaType</rel>
+          <obj>MediaType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_WrittenWork" id="1_WrittenWork_train_175">
+      <text>The ISSN number of ACM Transactions on Information Systems is 1046-8188.</text>
+      <triples>
+        <triple>
+          <sub>ACM_Transactions_on_Information_Systems</sub>
+          <rel>issnNumber</rel>
+          <obj>1046-8188</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>AcademicJournal</sub>
+          <rel>issnNumber</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

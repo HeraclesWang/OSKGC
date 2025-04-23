@@ -1,0 +1,207 @@
+[
+    {
+        "id": "2_SportsTeam_test_1",
+        "sent": "A.C. Chievo Verona is managed by Rolando Maran, who is in the Unione Triestina 2012 S.S.D. club.",
+        "response": "Entities: [Unione Triestina 2012 S.S.D.], [A.C. Chievo Verona], [Rolando Maran]\nOutput: {Unione Triestina 2012 S.S.D.}:[SportsClub], {A.C. Chievo Verona}:[SportsClub], {Rolando Maran}:[SoccerManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_2",
+        "sent": "John van den Brom has been manager of AZ Alkmaar, Brom also plays for De Graafschap.",
+        "response": "Entities: [AZ Alkmaar], [De Graafschap], [John van den Brom]\nOutput: {AZ Alkmaar}:[SportsClub], {De Graafschap}:[SportsClub], {John van den Brom}:[SoccerManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_3",
+        "sent": "A.S. Roma has 70634 members and their grounds are in Rome.",
+        "response": "{A.S. Roma}:[SportsClub], {70634}:[number], {Rome}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_SportsTeam_test_4",
+        "sent": "A.C. Chievo Verona is managed by Rolando Maran who worked at F.C. Bari 1908.",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {F.C. Bari 1908}:[SportsClub], {Rolando Maran}:[SoccerManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_5",
+        "sent": "A.S. Roma, in the Serie A league, has its grounds in Stadio Olimpico.",
+        "response": "Entities: [Stadio Olimpico], [A.S. Roma]\nOutput: {Stadio Olimpico}:[Venue], {A.S. Roma}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_6",
+        "sent": "Rolando Maran is attached to the club Calcio Catania, and has also managed A.C. Chievo Verona.",
+        "response": "Here is the output:\n\n{Rolando Maran}:[SportsManager], {Calcio Catania}:[SportsClub], {A.C. Chievo Verona}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_7",
+        "sent": "Massimo Drago has been the manager of A.C. Cesena and plays for A.S.D. Licata 1931.",
+        "response": "Entities: [A.C. Cesena], [A.S.D. Licata], [1931], [Massimo Drago]\nOutput: {A.C. Cesena}:[SportsClub], {A.S.D. Licata}:[SportsClub], {1931}:[Year], {Massimo Drago}:[SoccerManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_8",
+        "sent": "Agremiação Sportiva Arapiraquense played in the 2015 season and has 17000 members.",
+        "response": "{Agremiação Sportiva Arapiraquense}:[SportsClub], {2015}:[FootballLeagueSeason], {17000}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_9",
+        "sent": "AZ Alkmaar's ground is the AFAS Stadion and it has 17023 members.",
+        "response": "{AZ Alkmaar}:[SportsClub], {AFAS Stadion}:[ArchitecturalStructure], {17023}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_10",
+        "sent": "A.F.C. Blackpool have 1500 members and the ground is located in Blackpool.",
+        "response": "Entities: [A.F.C. Blackpool], [Blackpool], [1500]\nOutput: {A.F.C. Blackpool}:[SportsClub], {Blackpool}:[Place], {1500}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_11",
+        "sent": "Italians inhabit Italy where the ground of A.S. Gubbio 1910 is located.",
+        "response": "{A.S. Gubbio}:[SoccerClub], {1910}:[Year], {Italy}:[Country]"
+    },
+    {
+        "id": "2_SportsTeam_test_12",
+        "sent": "AZAL PFK Bakou which has 3500 members is playing in the 2014–15 Azerbaijan Premier League.",
+        "response": "{AZAL PFK Bakou}:[SportsClub], {3500}:[number], {2014–15 Azerbaijan Premier League}:[FootballLeagueSeason]"
+    },
+    {
+        "id": "2_SportsTeam_test_13",
+        "sent": "A.F.C. Fylde's ground is in Warton (Fylde) and the club has 3180 members.",
+        "response": "Entities: [Warton], [A.F.C. Fylde], [3180]\nOutput: {A.F.C. Fylde}:[SportsClub], {Warton}:[Place], {3180}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_14",
+        "sent": "Michele Marcolini has been manager of A.C. Lumezzane and played for Torino F.C.",
+        "response": "{Michele Marcolini}:[SportsManager], {A.C. Lumezzane}:[SportsClub], {Torino F.C.}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_15",
+        "sent": "Frank de Boer played for the Netherlands national football team and manages the AFC Ajax team.",
+        "response": "{AFC Ajax}:[SportsClub], {Netherlands}:[Country]"
+    },
+    {
+        "id": "2_SportsTeam_test_16",
+        "sent": "Michele Marcolini's club is A.C. Chievo Verona and he manages the A.C. Lumezzane.",
+        "response": "{Michele Marcolini}:[SportsManager], {A.C. Chievo Verona}:[SportsClub], {A.C. Lumezzane}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_17",
+        "sent": "Michele Marcolini played for Vicenza Calcio and manages A.C. Lumezzane.",
+        "response": "Entities: [A.C. Lumezzane], [Vicenza Calcio], [Michele Marcolini]\nOutput: {A.C. Lumezzane}:[SportsClub], {Vicenza Calcio}:[SportsClub], {Michele Marcolini}:[SoccerPlayer]"
+    },
+    {
+        "id": "2_SportsTeam_test_18",
+        "sent": "John van den Brom plays for AFC Ajax and has previously been the manager for AZ Alkmaar.",
+        "response": "Here is the output:\n\n{John van den Brom}:[SportsManager], {AFC Ajax}:[SportsClub], {AZ Alkmaar}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_19",
+        "sent": "John van den Brom played for the Netherlands national football team and is the manager of AZ Alkmaar.",
+        "response": "{John van den Brom}:[SoccerManager], {AZ Alkmaar}:[SoccerClub], {Netherlands}:[Country]"
+    },
+    {
+        "id": "2_SportsTeam_test_20",
+        "sent": "John van den Brom has been manager of AZ Alkmaar and is a player in İstanbulspor A.Ş.",
+        "response": "{John van den Brom}:[SportsManager], {AZ Alkmaar}:[SportsClub], {İstanbulspor A.Ş.}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_21",
+        "sent": "John van den Brom, who managed AZ Alkmaar, plays for Vitesse Arnhem.",
+        "response": "Entities: [Vitesse Arnhem], [AZ Alkmaar], [John van den Brom]\nOutput: {Vitesse Arnhem}:[SportsClub], {AZ Alkmaar}:[SportsClub], {John van den Brom}:[SoccerManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_22",
+        "sent": "A.C. Chievo Verona is managed by Rolando Maran who plays for Vicenza Calcio.",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {Vicenza Calcio}:[SportsClub], {Rolando Maran}:[SoccerPlayer]"
+    },
+    {
+        "id": "2_SportsTeam_test_23",
+        "sent": "A.C. Chievo Verona play in Verona and has 39371 members.",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {Verona}:[PopulatedPlace], {39371}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_24",
+        "sent": "A.C. Chievo Verona play at Verona in Serie A.",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {Verona}:[PopulatedPlace], {Serie A}:[SportsLeague]"
+    },
+    {
+        "id": "2_SportsTeam_test_25",
+        "sent": "A.C. Chievo Verona play in the Serie A league and their home ground is Stadio Marc'Antonio Bentegodi.",
+        "response": "{Stadio Marc'Antonio Bentegodi}:[Stadium], {A.C. Chievo Verona}:[SoccerClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_26",
+        "sent": "A.C. Chievo Verona has 39371 members and its home ground is Stadio Marc'Antonio Bentegodi.",
+        "response": "{Stadio Marc'Antonio Bentegodi}:[ArchitecturalStructure:Venue:Stadium]\n{39371}:[number]\n{A.C. Chievo Verona}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_27",
+        "sent": "A.C. Chievo Verona play in Serie A where Juventus F.C. have been champions .",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {Serie A}:[SportsLeague], {Juventus F.C.}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_28",
+        "sent": "A.C. Chievo Verona is managed by Rolando Maran who plays for Carrarese Calcio.",
+        "response": "Entities: [Carrarese Calcio], [A.C. Chievo Verona], [Rolando Maran]\nOutput: {Carrarese Calcio}:[SportsClub], {A.C. Chievo Verona}:[SportsClub], {Rolando Maran}:[SoccerPlayer]"
+    },
+    {
+        "id": "2_SportsTeam_test_29",
+        "sent": "Previously owning club Varese Calcio S.S.D., Rolando Maran now manages club A.C. Chievo Verona.",
+        "response": "Entities: [A.C. Chievo Verona], [Varese Calcio S.S.D.], [Rolando Maran]\nOutput: {A.C. Chievo Verona}:[SportsClub], {Varese Calcio S.S.D.}:[SportsClub], {Rolando Maran}:[SportsManager]"
+    },
+    {
+        "id": "2_SportsTeam_test_30",
+        "sent": "Verona is the home to A.C. Chievo Verona, which is in the league, Serie A.",
+        "response": "{A.C. Chievo Verona}:[SportsClub], {Serie A}:[SportsLeague]"
+    },
+    {
+        "id": "2_SportsTeam_test_31",
+        "sent": "A.S. Roma play in the Serie A league where the champions are Juventus F.C.",
+        "response": "{A.S. Roma}:[SportsClub], {Serie A}:[SportsLeague], {Juventus F.C.}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_32",
+        "sent": "A.S. Roma play in the Serie A league and have a ground in Rome.",
+        "response": "{A.S. Roma}:[SportsClub], {Serie A}:[SportsLeague], {Rome}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_SportsTeam_test_33",
+        "sent": "Luciano Spalletti, who was at the club Virtus Entella, manages A.S. Roma.",
+        "response": "{Luciano Spalletti}:[SportsManager], {A.S. Roma}:[SportsClub], {Virtus Entella}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_34",
+        "sent": "Luciano Spalletti, who manages A.S. Roma, played for Udinese Calcio.",
+        "response": "Entities: [A.S. Roma], [Udinese Calcio], [Luciano Spalletti]\nOutput: {A.S. Roma}:[SportsClub], {Udinese Calcio}:[SportsClub], {Luciano Spalletti}:[SoccerPlayer]"
+    },
+    {
+        "id": "2_SportsTeam_test_35",
+        "sent": "A.S. Roma's chairman is James Pallotta, who was born in Boston.",
+        "response": "Entities: [James Pallotta], [A.S. Roma], [Boston]\nOutput: {James Pallotta}:[Person], {A.S. Roma}:[SportsClub], {Boston}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_SportsTeam_test_36",
+        "sent": "Grounds being in Rome, A.S. Roma to play in Serie A.",
+        "response": "{A.S. Roma}:[SportsClub], {Serie A}:[SportsLeague]"
+    },
+    {
+        "id": "2_SportsTeam_test_37",
+        "sent": "A.S. Roma ground is Stadio Olimpico and has 70634 members.",
+        "response": "{Stadio Olimpico}:[ArchitecturalStructure:Venue:Stadium], {A.S. Roma}:[Organisation:SportsClub], {70634}:[number]"
+    },
+    {
+        "id": "2_SportsTeam_test_38",
+        "sent": "A.S. Roma, which has 70634 members, have their grounds in Rome.",
+        "response": "{A.S. Roma}:[SportsClub], {70634}:[number], {Rome}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_SportsTeam_test_39",
+        "sent": "Michele Marcolini was at F.C. Bari 1908 and manages the A.C. Lumezzane.",
+        "response": "{Michele Marcolini}:[SportsManager], {F.C. Bari 1908}:[SportsClub], {A.C. Lumezzane}:[SportsClub]"
+    },
+    {
+        "id": "2_SportsTeam_test_40",
+        "sent": "Michele Marcolini manages the A.C. Lumezzane and plays for Atalanta B.C.",
+        "response": "Entities: [A.C. Lumezzane], [Atalanta B.C.], [Michele Marcolini]\nOutput: {A.C. Lumezzane}:[SportsClub], {Atalanta B.C}:[SportsClub], {Michele Marcolini}:[SoccerPlayer]"
+    },
+    {
+        "id": "2_SportsTeam_test_41",
+        "sent": "ACF Fiorentina play in Serie A which is based in Italy.",
+        "response": "{ACF Fiorentina}:[SportsClub], {Serie A}:[SportsLeague], {Italy}:[Place]"
+    }
+]

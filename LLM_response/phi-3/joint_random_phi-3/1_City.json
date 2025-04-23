@@ -1,0 +1,307 @@
+[
+    {
+        "id": "1_City_test_1",
+        "input_text": "Albany (Oregon) is the largest city in Linn County (Oregon).",
+        "response": "[Albany (Oregon), largestCity, Linn County (Oregon)]\n[Linn County (Oregon), capital, Albany (Oregon)]"
+    },
+    {
+        "id": "1_City_test_2",
+        "input_text": "Adams Township (Madison County, Indiana) is in the United States.",
+        "response": "[Adams Township (Madison County, Indiana), country, United States]:(Settlement, country, Place)"
+    },
+    {
+        "id": "1_City_test_3",
+        "input_text": "Atlanta is the largest city of Fulton County (Georgia).",
+        "response": "[Atlanta, largestCity, Fulton County (Georgia)]\n[Fulton County (Georgia), countySeat, Atlanta]\n[Fulton County (Georgia), state, Georgia]\n[Atlanta, state, Georgia]"
+    },
+    {
+        "id": "1_City_test_4",
+        "input_text": "Atlanta can be found in the state of Georgia.",
+        "response": "[Atlanta, isPartOf, Georgia]:(City, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_5",
+        "input_text": "Corvallis (Oregon) is the largest city in Benton County (Oregon).",
+        "response": "[Corvallis (Oregon), largestCity, Benton County (Oregon)]\n[Benton County (Oregon), capital, Corvallis (Oregon)]"
+    },
+    {
+        "id": "1_City_test_6",
+        "input_text": "Alexandria (Indiana) has a population density of 755.3 inhabitants per square kilometre.",
+        "response": "[Alexandria (Indiana), populationDensity, 755.3]:(Place, populationDensity, number)"
+    },
+    {
+        "id": "1_City_test_7",
+        "input_text": "Alexandria (Indiana) is part of the Monroe Township (Madison County, Indiana).",
+        "response": "[Alexandria (Indiana), isPartOf, Monroe Township]\n[Alexandria (Indiana), locatedIn, Madison County]\n[Alexandria (Indiana), locatedIn, Indiana]"
+    },
+    {
+        "id": "1_City_test_8",
+        "input_text": "Ann Arbor is in Michigan.",
+        "response": "[Ann Arbor, isPartOf, Michigan]:(City, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_9",
+        "input_text": "The United States House of Representatives is the leader of Antioch (California).",
+        "response": "[The United States House of Representatives, leader, Antioch (California)]:(Legislature, leader, Place)"
+    },
+    {
+        "id": "1_City_test_10",
+        "input_text": "Albany (Georgia) has a Mayor as leader.",
+        "response": "[Albany (Georgia), leader, Mayor]:(Place, leader, Organisation)"
+    },
+    {
+        "id": "1_City_test_11",
+        "input_text": "Attica (Indiana) is in the United States.",
+        "response": "[Attica (Indiana), isPartOf, United States]:(County, isPartOf, Place)"
+    },
+    {
+        "id": "1_City_test_12",
+        "input_text": "Attica (Indiana) is part of the United States.",
+        "response": "[Attica (Indiana), isPartOf, United States]:(County, isPartOf, Place)"
+    },
+    {
+        "id": "1_City_test_13",
+        "input_text": "Alpharetta is part of the state of Georgia.",
+        "response": "[Alpharetta, isPartOf, Georgia]:(Settlement, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_14",
+        "input_text": "Atlanta, is a part of the state of Georgia.",
+        "response": "[Atlanta, isPartOf, Georgia]:(City, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_15",
+        "input_text": "Attica (Indiana) is part of Fountain County.",
+        "response": "[Attica (Indiana), isPartOf, Fountain County]:(Settlement, isPartOf, County)"
+    },
+    {
+        "id": "1_City_test_16",
+        "input_text": "Antioch (California) is 13 above sea level.",
+        "response": "[Antioch (California), elevationAboveTheSeaLevelInMetres, 13]:(Place, elevationAboveTheSeaLevelInMetres, number)"
+    },
+    {
+        "id": "1_City_test_17",
+        "input_text": "Arabic is a language found in Michigan.",
+        "response": "[Michigan, language, Arabic]"
+    },
+    {
+        "id": "1_City_test_18",
+        "input_text": "Salem (Oregon) is the capital of Oregon.",
+        "response": "[Salem (Oregon), capital, Oregon]:(City, capital, Place)"
+    },
+    {
+        "id": "1_City_test_19",
+        "input_text": "The population density, of Attica (Indiana), is 783.1 inhabitants per square kilometre.",
+        "response": "[Attica (Indiana), populationDensity, 783.1]:(County, populationDensity, number)"
+    },
+    {
+        "id": "1_City_test_20",
+        "input_text": "Attica (Indiana) is part of Indiana.",
+        "response": "[Attica (Indiana), isPartOf, Indiana]:(County, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_21",
+        "input_text": "Attica (Indiana) has a total area of 4.14 square kilometres.",
+        "response": "[Attica (Indiana), areaTotal, 4.14]:(County, areaTotal, number)"
+    },
+    {
+        "id": "1_City_test_22",
+        "input_text": "Attica (Indiana) is part of Logan Township (Fountain County, Indiana).",
+        "response": "[Attica (Indiana), isPartOf, Logan Township (Fountain County, Indiana)]\n[Attica (Indiana), isPartOf, Fountain County (Indiana)]\n[Attica (Indiana), isPartOf, Indiana]"
+    },
+    {
+        "id": "1_City_test_23",
+        "input_text": "Albany (Oregon) is 64.008 above sea level.",
+        "response": "[Albany (Oregon), elevationAboveTheSeaLevelInMetres, 64.008]:(Place, elevationAboveTheSeaLevelInMetres, number)"
+    },
+    {
+        "id": "1_City_test_24",
+        "input_text": "Albany (Georgia) is a city in Dougherty County.",
+        "response": "[Albany (Georgia), isPartOf, Dougherty County]\n[Albany (Georgia), IsA, City]"
+    },
+    {
+        "id": "1_City_test_25",
+        "input_text": "Albany (Georgia) is part of the state of Georgia.",
+        "response": "[Albany (Georgia), isPartOf, Georgia]:(Settlement, isPartOf, State)"
+    },
+    {
+        "id": "1_City_test_26",
+        "input_text": "Albany (Oregon) is a city in Oregon.",
+        "response": "[Albany (Oregon), IsA, City]:(Settlement, IsA, PopulatedPlace)\n[Albany (Oregon), country, Oregon]:(City, country, Place)"
+    },
+    {
+        "id": "1_City_test_27",
+        "input_text": "The total area, of Albany (Georgia), is 144.7 square kilometres.",
+        "response": "[Albany (Georgia), areaOfLand, 144.7]:(City, areaOfLand, number)"
+    },
+    {
+        "id": "1_City_test_28",
+        "input_text": "Albany (Georgia), has a population density of 535 inhabitants per square kilometre.",
+        "response": "[Albany (Georgia), populationDensity, 535]:(Place, populationDensity, number)"
+    },
+    {
+        "id": "1_City_test_29",
+        "input_text": "Albany (Oregon) has a total area of 45.97 square kilometres.",
+        "response": "[Albany (Oregon), areaTotal, 45.97]:(City, areaTotal, number)"
+    },
+    {
+        "id": "1_City_test_30",
+        "input_text": "Albany (Georgia) is located at 62 above sea level.",
+        "response": "[Albany (Georgia), elevationAboveTheSeaLevel, 62]:(Place, elevationAboveTheSeaLevel, number)"
+    },
+    {
+        "id": "1_City_test_31",
+        "input_text": "Albany (Oregon) is a city in Linn County (Oregon).",
+        "response": "[Albany (Oregon), isPartOf, Linn County (Oregon)]\n[Albany (Oregon), IsA, City]\n[Linn County (Oregon), isPartOf, Oregon]\n[Oregon, IsA, State]"
+    },
+    {
+        "id": "1_City_test_32",
+        "input_text": "Albany (Georgia) is part of Benton County (Oregon).",
+        "response": "[Albany (Georgia), isPartOf, Benton County (Oregon)]\n[Benton County (Oregon), isPartOf, Albany (Georgia)]"
+    },
+    {
+        "id": "1_City_test_33",
+        "input_text": "Albany (Georgia) is in the United States.",
+        "response": "[Albany (Georgia), country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "1_City_test_34",
+        "input_text": "The population density of Albany (Oregon), is 1104.1 inhabitants per square kilometre.",
+        "response": "[Albany (Oregon), populationDensity, 1104.1]:(Settlement, populationDensity, number)"
+    },
+    {
+        "id": "1_City_test_35",
+        "input_text": "Albany (Oregon) is in the United States.",
+        "response": "[Albany (Oregon), country, United States]:(Settlement, country, Place)"
+    },
+    {
+        "id": "1_City_test_36",
+        "input_text": "There is 0.54 square kilometers of water in Albany (Oregon).",
+        "response": "[Albany (Oregon), areaOfWater, 0.54]:(Place, areaOfWater, number)"
+    },
+    {
+        "id": "1_City_test_37",
+        "input_text": "Atlanta is part of Georgia.",
+        "response": "[Atlanta, isPartOf, Georgia]:(City, isPartOf, Country)"
+    },
+    {
+        "id": "1_City_test_38",
+        "input_text": "The capital of Georgia is Atlanta.",
+        "response": "[Atlanta, capital, Georgia]:(City, capital, Place)"
+    },
+    {
+        "id": "1_City_test_39",
+        "input_text": "The state of Georgia is in the United States.",
+        "response": "[Georgia (U.S. state), isPartOf, United States]:(State, isPartOf, Place)"
+    },
+    {
+        "id": "1_City_test_40",
+        "input_text": "DeKalb County (Georgia) is located in the United States.",
+        "response": "[DeKalb County (Georgia), country, United States]:(County, country, Place)"
+    },
+    {
+        "id": "1_City_test_41",
+        "input_text": "Most of Atlanta is part of DeKalb County (Georgia).",
+        "response": "[Atlanta, isPartOf, DeKalb County]\n[Atlanta, isPartOf, Georgia]\n[DeKalb County, isPartOf, Georgia]"
+    },
+    {
+        "id": "1_City_test_42",
+        "input_text": "Alpharetta, is part of Fulton County (Georgia).",
+        "response": "[Alpharetta, isPartOf, Fulton County]\n[Alpharetta, countySeat, Fulton County]\n[Fulton County, isPartOf, Georgia]"
+    },
+    {
+        "id": "1_City_test_43",
+        "input_text": "Atlanta is the county seat of Fulton County (Georgia).",
+        "response": "[Atlanta, countySeat, Fulton County (Georgia)]\n[Atlanta, isPartOf, Georgia]"
+    },
+    {
+        "id": "1_City_test_44",
+        "input_text": "Atlanta is a part of Fulton County (Georgia).",
+        "response": "[Atlanta, isPartOf, Fulton County]:(City, isPartOf, County)\n[Atlanta, isPartOf, Georgia]:(City, isPartOf, State)\n[Fulton County, countySeat, Atlanta]:(County, countySeat, City)"
+    },
+    {
+        "id": "1_City_test_45",
+        "input_text": "Alexandria (Indiana) is 265 above sea level.",
+        "response": "[Alexandria (Indiana), elevationAboveTheSeaLevelInMetres, 265]:(Place, elevationAboveTheSeaLevelInMetres, number)"
+    },
+    {
+        "id": "1_City_test_46",
+        "input_text": "The area code for Alexandria (Indiana) is 765.",
+        "response": "[Alexandria (Indiana), areaCode, 765]:(Place, areaCode, Code)"
+    },
+    {
+        "id": "1_City_test_47",
+        "input_text": "Alexandria (Indiana) is part of Madison County (Indiana).",
+        "response": "[Alexandria (Indiana), isPartOf, Madison County (Indiana)]\n[Alexandria (Indiana), country, Indiana]\n[Madison County (Indiana), isPartOf, Indiana]"
+    },
+    {
+        "id": "1_City_test_48",
+        "input_text": "Alexandria (Indiana) is part of Indiana.",
+        "response": "[Alexandria (Indiana), isPartOf, Indiana]:(Settlement, isPartOf, Place)"
+    },
+    {
+        "id": "1_City_test_49",
+        "input_text": "Alexandria (Indiana), has a total area of 6.81 square kilometres.",
+        "response": "[Alexandria (Indiana), areaTotal, 6.81]:(Settlement, areaTotal, number)"
+    },
+    {
+        "id": "1_City_test_50",
+        "input_text": "The mayor is the leader of Antioch (California).",
+        "response": "[Antioch (California), leaderTitle, Mayor]:(Place, leaderTitle, Organisation)\n[Antioch (California), leader, Mayor]:(Place, leader, Person)"
+    },
+    {
+        "id": "1_City_test_51",
+        "input_text": "Antioch (California) has a UTC offset of -7.",
+        "response": "[Antioch (California), utcOffset, -7]:(Place, utcOffset, number)"
+    },
+    {
+        "id": "1_City_test_52",
+        "input_text": "Antioch (California) is part of California.",
+        "response": "[Antioch (California), isPartOf, California]:(Settlement, isPartOf, PopulatedPlace)"
+    },
+    {
+        "id": "1_City_test_53",
+        "input_text": "The population of Antioch (California) is 102372.",
+        "response": "[Antioch (California), populationTotal, 102372]:(Settlement, populationTotal, number)"
+    },
+    {
+        "id": "1_City_test_54",
+        "input_text": "The total area of Antioch (California) is 75.324 square km.",
+        "response": "[Antioch (California), areaOfLand, 75324]:(City, areaOfLand, number)"
+    },
+    {
+        "id": "1_City_test_55",
+        "input_text": "Antioch (California) has a UTC offset of -8.",
+        "response": "[Antioch (California), utcOffset, -8]:(Place, utcOffset, number)"
+    },
+    {
+        "id": "1_City_test_56",
+        "input_text": "Anaheim is a city in Orange County (California).",
+        "response": "[Anaheim, isPartOf, Orange County]:(City, isPartOf, County)\n[Anaheim, isPartOf, California]:(City, isPartOf, State)\n[Orange County, countySeat, Anaheim]:(County, countySeat, City)"
+    },
+    {
+        "id": "1_City_test_57",
+        "input_text": "Orange County (California) is part of the Greater Los Angeles area.",
+        "response": "[Orange County (California), isPartOf, Greater Los Angeles area]:(County, isPartOf, TopicalConcept)"
+    },
+    {
+        "id": "1_City_test_58",
+        "input_text": "Anderson (Indiana) is part of Adams Township (Madison County, Indiana).",
+        "response": "[Anderson (Indiana), isPartOf, Adams Township]\n[Anderson (Indiana), county, Madison County, Indiana]\n[Adams Township, isPartOf, Madison County, Indiana]\n[Madison County, Indiana, isPartOf, Indiana]"
+    },
+    {
+        "id": "1_City_test_59",
+        "input_text": "The English language is spoken in Michigan.",
+        "response": "[Michigan, language, English]"
+    },
+    {
+        "id": "1_City_test_60",
+        "input_text": "Lansing is the capital of Michigan.",
+        "response": "[Lansing, capital, Michigan]:(City, capital, Place)"
+    },
+    {
+        "id": "1_City_test_61",
+        "input_text": "Spanish is one of the languages spoken in Michigan.",
+        "response": "[Michigan, language, Spanish]"
+    }
+]

@@ -1,0 +1,277 @@
+[
+    {
+        "id": "1_Food_test_1",
+        "input_text": "The country Binignit comes from is the Philippines.",
+        "response": "Here is the output:\n\n[Philippines, country, Binignit]"
+    },
+    {
+        "id": "1_Food_test_2",
+        "input_text": "Joko Widodo is the leader of Indonesia.",
+        "response": "Here is the output:\n\n(Indonesia, leader, Joko Widodo)"
+    },
+    {
+        "id": "1_Food_test_3",
+        "input_text": "Beef kway teow is a dish from the country of Singapore.",
+        "response": "[Beef kway teow, dishVariation, Beef]\n[Beef kway teow, country, Singapore]\n[Beef kway teow, region, Singapore]\n[Beef kway teow, cuisine,?]\n[Beef kway teow, mainIngredient, Beef]\n[Beef kway teow, ingredient,?]\n[Beef kway teow, fat,?]\n[Beef kway teow, carbohydrate,?]\n[Beef kway teow, protein,?]\n[Beef kway teow, creator,?]\n[Beef kway teow, dishVariation,?]\n[Beef, mainIngredient, Beef kway teow]\n[Beef, ingredient,?]\n[Beef, fat,?]\n[Beef, carbohydrate,?]\n[Beef, protein,?]\n[Beef, creator,?]\n[Beef, dishVariation,?]\n[Beef, alternativeName,?]\n[Beef, cuisine,?]\n[Beef, course,?]\n[Beef, ingredient,?]\n[Beef, dishVariation,?]\n[Beef, country,?]\n[Beef, region"
+    },
+    {
+        "id": "1_Food_test_4",
+        "input_text": "The main ingredients of binignit are sweet potatoes.",
+        "response": "[binignit, mainIngredient, sweet potatoes]\n[Fruit, ingredient, sweet potatoes]"
+    },
+    {
+        "id": "1_Food_test_5",
+        "input_text": "White Americans are an ethnic group in the United States.",
+        "response": "[United States, ethnicGroup, White Americans]"
+    },
+    {
+        "id": "1_Food_test_6",
+        "input_text": "Chicharrón is found in the Andalusia region.",
+        "response": "Here is the output:\n\n[Andalusia, region, Chicharrón]\n[Chicharrón, region, Andalusia]"
+    },
+    {
+        "id": "1_Food_test_7",
+        "input_text": "Bionico requires granola as one of its ingredients.",
+        "response": "[Bionico, ingredient, granola]"
+    },
+    {
+        "id": "1_Food_test_8",
+        "input_text": "Lemon is part of genus Citrus.",
+        "response": "(Citrus, genus, Lemon)"
+    },
+    {
+        "id": "1_Food_test_9",
+        "input_text": "Rice is an ingredient in bandeja paisa.",
+        "response": "[Rice, ingredient, bandeja paisa]\n[Food, ingredient, Rice]\n[Food, dishVariation, bandeja paisa]"
+    },
+    {
+        "id": "1_Food_test_10",
+        "input_text": "Bionico can be found in Guadalajara.",
+        "response": "[Guadalajara, canBeFoundIn, Bionico]"
+    },
+    {
+        "id": "1_Food_test_11",
+        "input_text": "Matteo Renzi is a leader from Italy.",
+        "response": "Italy, leader, Matteo Renzi)"
+    },
+    {
+        "id": "1_Food_test_12",
+        "input_text": "An ingredient of Ajoblanco is garlic.",
+        "response": "[Ajoblanco, ingredient, garlic]"
+    },
+    {
+        "id": "1_Food_test_13",
+        "input_text": "The capital of Malaysia is Kuala Lumpur.",
+        "response": "Here is the output:\n\n[Kuala Lumpur, capital, Malaysia]:(Place, capital, City)\n[Malaysia, country, Kuala Lumpur]:(Place, country, Place)\n[Malaysia, leader, ]:(Country, leader, Person)"
+    },
+    {
+        "id": "1_Food_test_14",
+        "input_text": "Sandesh (confectionery) is a dish that can be served as a dessert.",
+        "response": "Here is the output in the required format:\n\n[Sandesh, IsA, Dessert]\n[Sandesh, IsA, Dish]\n[Sandesh, canBeServedAs, Dessert]\n[Sandesh, typeOf, Confectionery]\n[Dessert, IsA, Course]\n[Confectionery, IsA, Cuisine]"
+    },
+    {
+        "id": "1_Food_test_15",
+        "input_text": "Noodles are an ingredient in batchoy.",
+        "response": "Here is the output:\n\n(batchoy, ingredient, Noodles)"
+    },
+    {
+        "id": "1_Food_test_16",
+        "input_text": "Sour cream is an ingredient of Bionico.",
+        "response": "[Sour cream, ingredient, Bionico]"
+    },
+    {
+        "id": "1_Food_test_17",
+        "input_text": "Garlic is an ingredient in arrabbiata sauce.",
+        "response": "[arrabbiata sauce, ingredient, Garlic]"
+    },
+    {
+        "id": "1_Food_test_18",
+        "input_text": "One dish variation called Barny Cakes is the use of milk in the recipe.",
+        "response": "Here is the extracted triple based on the given ontology schema:\n\n[Barny Cakes, mainIngredient, Milk]\n\nNote: I assumed \"milk\" as the main ingredient in the recipe, as it is mentioned in the input text as part of the recipe."
+    },
+    {
+        "id": "1_Food_test_19",
+        "input_text": "Spaniards are the ethnic group of Spain.",
+        "response": "[Spain, ethnicGroup, Spaniards]"
+    },
+    {
+        "id": "1_Food_test_20",
+        "input_text": "The leader of Malaysia is Abdul Halim of Kedah.",
+        "response": "(Malaysia, leader, Abdul Halim of Kedah)"
+    },
+    {
+        "id": "1_Food_test_21",
+        "input_text": "The English language is spoken in Singapore.",
+        "response": "Here is the output:\n\n(Singapore, officialLanguage, English)"
+    },
+    {
+        "id": "1_Food_test_22",
+        "input_text": "Tomato belongs to the genus Solanum.",
+        "response": "[Solanum, genus, Tomato]"
+    },
+    {
+        "id": "1_Food_test_23",
+        "input_text": "Arem-arem is a food found in Indonesia.",
+        "response": "[Arem-arem, is, Food]\n[Food, is, Dish]\n[Dish, is, Arem-arem]\n[Indonesia, region, Arem-arem]\n[Arem-arem, country, Indonesia]"
+    },
+    {
+        "id": "1_Food_test_24",
+        "input_text": "Arem-arem is a dish of Javanese cuisine.",
+        "response": "[Arem-arem, cuisine, Javanese]\n[Arem-are, isA, Dish]\n[Javanese, IsA, Cuisine]"
+    },
+    {
+        "id": "1_Food_test_25",
+        "input_text": "Arem-arem comes from Indonesia.",
+        "response": "Here is the output:\n\n[Indonesia, related, Arem-arem]\n[Fungus, ingredient, Arem-arem]"
+    },
+    {
+        "id": "1_Food_test_26",
+        "input_text": "Lemper is a dish variation of Arem-Arem.",
+        "response": "[Lemper, dishVariation, Arem-Arem]"
+    },
+    {
+        "id": "1_Food_test_27",
+        "input_text": "Banana leaf is an ingredient in Arem-arem.",
+        "response": "[Arem-arem, ingredient, Banana leaf]\n[Fruit, ingredient, Banana]\n[Food, ingredient, Banana]\n[Banana, IsA, Fruit]\n\nNote: The output is in the format [object, relation, subject], as per the example provided. The ontology schema is used to extract the relevant triples based on the given input text. In this case, the text mentions \"Banana leaf\" as an ingredient in \"Arem-arem\", so the corresponding triple is generated. Additionally, since \"Banana\" is a type of fruit, the hierarchy is used to infer that \"Banana\" is an instance of \"Fruit\", resulting in another triple."
+    },
+    {
+        "id": "1_Food_test_28",
+        "input_text": "Arem-arem can be served as a main course.",
+        "response": "[Arem-arem, course, MainCourse]"
+    },
+    {
+        "id": "1_Food_test_29",
+        "input_text": "Binignit is a dish from the region of Visayas.",
+        "response": "Here is the output:\n\n[Binignit, region, Visayas]\n[Binignit, isFrom, Visayas]\n[Binignit, isA, Dish]\n[Visayas, isA, Place]\n[Visayas, region, Binignit]"
+    },
+    {
+        "id": "1_Food_test_30",
+        "input_text": "Coconut milk is an ingredient of Binignit.",
+        "response": "[Binignit, ingredient, Coconut milk]"
+    },
+    {
+        "id": "1_Food_test_31",
+        "input_text": "Sweet potato is and ingredient in Binignit.",
+        "response": "[Binignit, ingredient, Sweet potato]\n[Fruit, carbohydrate, 27]\n[Fruit, mainIngredient, Sweet potato]\n[Fruit, dishVariation, Sweet potato]\n\nNote: Since the input text does not specify the type of food, I assumed it to be a fruit based on the common usage of sweet potato as a fruit. However, if you want to consider sweet potato as a vegetable, the output would be different."
+    },
+    {
+        "id": "1_Food_test_32",
+        "input_text": "Binignit should be served as the dessert course.",
+        "response": "[Binignit, course, Dessert]\n\nNote: Binignit is a traditional Filipino dessert, and based on the given ontology schema, it is classified as a Dish, which is a subclass of Food. The relation \"course\" is a property of Food, and the ontology schema defines a hierarchy where Dessert is a subclass of Food. Therefore, the correct output is [Binignit, course, Dessert]."
+    },
+    {
+        "id": "1_Food_test_33",
+        "input_text": "Taro is a main ingredient of Binignit.",
+        "response": "[Taro, mainIngredient, Binignit]"
+    },
+    {
+        "id": "1_Food_test_34",
+        "input_text": "Banana is an ingredient in binignit.",
+        "response": "[Binignit, ingredient, Banana]"
+    },
+    {
+        "id": "1_Food_test_35",
+        "input_text": "One of the main ingredients in binignit is banana.",
+        "response": "[binignit, mainIngredient, banana]"
+    },
+    {
+        "id": "1_Food_test_36",
+        "input_text": "Binignit comes from the region Mindanao.",
+        "response": "[Binignit, region, Mindanao]"
+    },
+    {
+        "id": "1_Food_test_37",
+        "input_text": "Sago is an ingredient of Binignit.",
+        "response": "[Sago, ingredient, Binignit]"
+    },
+    {
+        "id": "1_Food_test_38",
+        "input_text": "One of the main ingredients in Binignit is sago.",
+        "response": "Here is the output:\n\n[Binignit, ingredient, sago]\n[Food, ingredient, Species]"
+    },
+    {
+        "id": "1_Food_test_39",
+        "input_text": "One of the main ingredients of binignit is coconut milk.",
+        "response": "(binignit, mainIngredient, CoconutMilk)"
+    },
+    {
+        "id": "1_Food_test_40",
+        "input_text": "Sesame oil is an ingredient in beef kway teow.",
+        "response": "[beef kway teow, ingredient, Sesame oil]\n[Sesame oil, ingredient, Sesame oil]\n[beef kway teow, mainIngredient, beef]\n[beef kway teow, region, Asia]\n[beef kway teow, country, Singapore]\n[beef kway teow, cuisine, Chinese]\n[beef kway teow, dishVariation, beef noodle dish]\n[Sesame oil, fat, number]\n[Sesame oil, creator, Organisation]"
+    },
+    {
+        "id": "1_Food_test_41",
+        "input_text": "Beef kway teow is a dish in Indonesia.",
+        "response": "[Beef kway teow, dishVariation, Beef]\n[Beef kway teow, mainIngredient, Beef]\n[Beef kway teow, cuisine, Indonesian]\n[Beef kway teow, country, Indonesia]\n[Beef, ingredient, Beef]\n[Beef, dishVariation, Beef kway teow]\n[Beef, mainIngredient, Beef]\n[Beef, protein,?]\n[Beef, carbohydrate,?]"
+    },
+    {
+        "id": "1_Food_test_42",
+        "input_text": "Beef kway teow comes from the Singapore region.",
+        "response": "[Beef kway teow, region, Singapore]\n[Fungus, division, Mollusca]\n[Fungus, genus, Genus]\n[Fungus, order, Order]\n[Fungus, family, Family]\n[Fungus, type, Type]\n[Fungus, species, Species]\n[Fungus, isA, Species]\n[Beef kway teow, dishVariation, Fungus]\n[Beef kway teow, mainIngredient, Fungus]\n[Beef kway teow, ingredient, Fungus]\n[Beef kway teow, carbohydrate, number]\n[Beef kway teow, protein, number]\n[Beef kway teow, fat, number]\n[Beef kway teow, creator, Organisation]\n[Beef kway teow, cuisine, Cuisine]\n[Beef kway teow, course, Course]\n[Beef kway teow, dishVariation, Beef kway teow]\n[Beef kway teow, mainIngredient, Beef kway teow]\n[Beef kway teow, ingredient, Beef kway teow]\n[Beef kway teow, region, Singapore]\n[Beef"
+    },
+    {
+        "id": "1_Food_test_43",
+        "input_text": "Oyster sauce is an ingredient in Beef kway teow.",
+        "response": "Here is the output:\n\n[Oyster sauce, ingredient, Beef kway teow]\n[Oyster sauce, ingredient, Food]\n[Beef kway teow, ingredient, Oyster sauce]\n[Beef kway teow, ingredient, Food]\n[Oyster sauce, isA, Sauce]\n[Beef kway teow, isA, Dish]\n[Oyster sauce, isA, Food]"
+    },
+    {
+        "id": "1_Food_test_44",
+        "input_text": "Palm sugar is an ingredient in beef kway teow.",
+        "response": "[beef kway teow, ingredient, Palm sugar]\n[Palm sugar, ingredient, ChemicalCompound]\n[beef kway teow, ingredient, Palm sugar]\n[beef kway teow, carbohydrate,?]\n[beef kway teow, protein,?]\n[beef kway teow, mainIngredient,?]\n[Palm sugar, mainIngredient, Palm sugar]\n[beef kway teow, dishVariation,?]\n[beef kway teow, cuisine,?]\n[beef kway teow, course,?]\n[Palm sugar, creator,?]\n[beef kway teow, creatorOfDish,?]\n[beef kway teow, region,?]\n[beef kway teow, country,?]\n[beef kway teow, fat,?]\nNote: The output contains the given information from the text, and the unknown values are represented by?."
+    },
+    {
+        "id": "1_Food_test_45",
+        "input_text": "Sausage is a main ingredient of Bacon Explosion.",
+        "response": "[Sausage, mainIngredient, Bacon Explosion]\n[Bacon Explosion, ingredient, Sausage]\n[Bacon Explosion, dishVariation, Sausage]\n[Sausage, isA, Food]"
+    },
+    {
+        "id": "1_Food_test_46",
+        "input_text": "An ingredient of a bacon explosion is sausage.",
+        "response": "[Bacon explosion, ingredient, Sausage]"
+    },
+    {
+        "id": "1_Food_test_47",
+        "input_text": "An ingredient in a bacon sandwich is brown sauce.",
+        "response": "[bacon sandwich, ingredient, brown sauce]\n[bacon sandwich, related, Sandwich]\n[brown sauce, IsA, Sauce]\n[Sauce, IsA, Food]\n[Food, IsA, Dish]\n[Sandwich, IsA, Dish]\n[brown sauce, ingredient, ChemicalCompound]"
+    },
+    {
+        "id": "1_Food_test_48",
+        "input_text": "Jusuf Kalla is a leader in Indonesia.",
+        "response": "(Indonesia, leader, Jusuf Kalla)"
+    },
+    {
+        "id": "1_Food_test_49",
+        "input_text": "Indonesia is the country Bakso comes from.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Indonesia, country, Country]\n[Indonesia, leader,?] (Note: The leader of Indonesia is not specified in the input text, so we cannot determine the leader. If the leader is mentioned, we would output [Indonesia, leader, Person] or [Indonesia, leader, Politician] depending on the context.)\n[Bakso, comesFrom, Indonesia]\n[Bakso, type, Dish]\n(Bakso is a type of dish, so we can infer this triple based on the hierarchy)\n\nLet me know if you have any further questions or if you'd like me to explain any of the inferences!"
+    },
+    {
+        "id": "1_Food_test_50",
+        "input_text": "Indonesia is the country Asam pedas comes from.",
+        "response": "Here is the output:\n\n[Indonesia, country, Country]\n[Asam pedas, country, Indonesia]\n[Asam pedas, related, Food]\n\nNote: Asam pedas is a type of food, and Indonesia is its country of origin, so we extract the country of origin relation."
+    },
+    {
+        "id": "1_Food_test_51",
+        "input_text": "Batagor comes from the country of Indonesia.",
+        "response": "[Indonesia, country, Batagor]\n[Country, country, Indonesia]\n[Food, country, Indonesia]\n[Food, related, Batagor]"
+    },
+    {
+        "id": "1_Food_test_52",
+        "input_text": "Bakso is a food found in Indonesia.",
+        "response": "[Indonesia, region, Bakso]\n[Bakso, dishVariation, Species]\n[Bakso, mainIngredient, Food]\n[Bakso, country, Indonesia]"
+    },
+    {
+        "id": "1_Food_test_53",
+        "input_text": "In Indonesia the currency is the Indonesian rupiah.",
+        "response": "(Indonesia, currency, Indonesian rupiah)"
+    },
+    {
+        "id": "1_Food_test_54",
+        "input_text": "Ayam penyet is from Indonesia.",
+        "response": "[Indonesia, region, Ayam penyet]"
+    },
+    {
+        "id": "1_Food_test_55",
+        "input_text": "The capital of Indonesia is Jakarta.",
+        "response": "[Indonesia, capital, Jakarta]"
+    }
+]

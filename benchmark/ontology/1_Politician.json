@@ -1,0 +1,832 @@
+{
+    "title": "1_Politician",
+    "id": "1_Politician",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Aircraft",
+            "label": "Aircraft"
+        },
+        {
+            "id": "Award",
+            "label": "Award"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "Chancellor",
+            "label": "Chancellor"
+        },
+        {
+            "id": "Chief",
+            "label": "Chief"
+        },
+        {
+            "id": "ChiefMinister",
+            "label": "ChiefMinister"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "CityDistrict",
+            "label": "CityDistrict"
+        },
+        {
+            "id": "Colour",
+            "label": "Colour"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "DeputyMinister",
+            "label": "DeputyMinister"
+        },
+        {
+            "id": "District",
+            "label": "District"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Event",
+            "label": "Event"
+        },
+        {
+            "id": "GovernmentAgency",
+            "label": "GovernmentAgency"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "HistoricalRegion",
+            "label": "HistoricalRegion"
+        },
+        {
+            "id": "Hospital",
+            "label": "Hospital"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "LieutenantGovernor",
+            "label": "LieutenantGovernor"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MeanOfTransportation",
+            "label": "MeanOfTransportation"
+        },
+        {
+            "id": "MemberOfParliament",
+            "label": "MemberOfParliament"
+        },
+        {
+            "id": "MilitaryConflict",
+            "label": "MilitaryConflict"
+        },
+        {
+            "id": "MilitaryPerson",
+            "label": "MilitaryPerson"
+        },
+        {
+            "id": "MilitaryUnit",
+            "label": "MilitaryUnit"
+        },
+        {
+            "id": "Minister",
+            "label": "Minister"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PoliticianSpouse",
+            "label": "PoliticianSpouse"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Profession",
+            "label": "Profession"
+        },
+        {
+            "id": "Representative",
+            "label": "Representative"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Secretary",
+            "label": "Secretary"
+        },
+        {
+            "id": "SecretaryOfState",
+            "label": "SecretaryOfState"
+        },
+        {
+            "id": "Senator",
+            "label": "Senator"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "SocietalEvent",
+            "label": "SocietalEvent"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "VicePresident",
+            "label": "VicePresident"
+        },
+        {
+            "id": "VicePrimeMinister",
+            "label": "VicePrimeMinister"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "inOfficeWhileMonarch",
+            "label": "inOfficeWhileMonarch",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "officialLanguage",
+            "label": "officialLanguage",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "serviceStartYear",
+            "label": "serviceStartYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "inOfficeWhileVicePresident",
+            "label": "inOfficeWhileVicePresident",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "battle",
+            "label": "battle",
+            "domain": "Person",
+            "range": "Event"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "garrison",
+            "label": "garrison",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "activeYearsStartDate",
+            "label": "activeYearsStartDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "hasDeputy",
+            "label": "hasDeputy",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "deathYear",
+            "label": "deathYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "successor",
+            "label": "successor",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "inOfficeWhileGovernor",
+            "label": "inOfficeWhileGovernor",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "award",
+            "label": "award",
+            "domain": "Person",
+            "range": "Award"
+        },
+        {
+            "id": "commander",
+            "label": "commander",
+            "domain": "Event",
+            "range": "Person"
+        },
+        {
+            "id": "spouse",
+            "label": "spouse",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "numberOfVotesAttained",
+            "label": "numberOfVotesAttained",
+            "domain": "Person",
+            "range": "number"
+        },
+        {
+            "id": "commander",
+            "label": "commander",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "place",
+            "label": "place",
+            "domain": "Event",
+            "range": "Place"
+        },
+        {
+            "id": "governingBody",
+            "label": "governingBody",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "trainerAircraft",
+            "label": "trainerAircraft",
+            "domain": "Organisation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "party",
+            "label": "party",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "deathDate",
+            "label": "deathDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "predecessor",
+            "label": "predecessor",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "office",
+            "label": "office",
+            "domain": "Person",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "battle",
+            "label": "battle",
+            "domain": "Organisation",
+            "range": "Event"
+        },
+        {
+            "id": "birthYear",
+            "label": "birthYear",
+            "domain": "Person",
+            "range": "Year"
+        },
+        {
+            "id": "colour",
+            "label": "colour",
+            "domain": "Organisation",
+            "range": "Colour"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "residence",
+            "label": "residence",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "inOfficeWhilePresident",
+            "label": "inOfficeWhilePresident",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "activeYearsEndDate",
+            "label": "activeYearsEndDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "region",
+            "label": "region",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Event",
+            "range": "Event"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "office",
+            "label": "office",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "inOfficeWhilePrimeMinister",
+            "label": "inOfficeWhilePrimeMinister",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "affiliation",
+            "label": "affiliation",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "militaryBranch",
+            "label": "militaryBranch",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "profession",
+            "label": "profession",
+            "domain": "Person",
+            "range": "PersonFunction"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Chancellor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Aircraft",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Secretary",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "LieutenantGovernor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "VicePrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "HistoricalRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Hospital",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "DeputyMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentAgency",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Minister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CityDistrict",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SocietalEvent",
+            "range": "Event"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Profession",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryConflict",
+            "range": "SocietalEvent"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Chief",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Representative",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticianSpouse",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Senator",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "District",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SecretaryOfState",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MemberOfParliament",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChiefMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "VicePresident",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryUnit",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        }
+    ]
+}

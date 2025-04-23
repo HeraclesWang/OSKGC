@@ -1,0 +1,384 @@
+{
+    "title": "2_Scientist",
+    "id": "2_Scientist",
+    "entity type": [
+        {
+            "id": "AcademicSubject",
+            "label": "AcademicSubject"
+        },
+        {
+            "id": "Award",
+            "label": "Award"
+        },
+        {
+            "id": "Botanist",
+            "label": "Botanist"
+        },
+        {
+            "id": "ChiefJustice",
+            "label": "ChiefJustice"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Economist",
+            "label": "Economist"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentType",
+            "label": "GovernmentType"
+        },
+        {
+            "id": "Mathematician",
+            "label": "Mathematician"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Physicist",
+            "label": "Physicist"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Professor",
+            "label": "Professor"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "areaTotal",
+            "label": "areaTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "doctoralAdvisor",
+            "label": "doctoralAdvisor",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "influencedBy",
+            "label": "influencedBy",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "knownFor",
+            "label": "knownFor",
+            "domain": "Person",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "governmentType",
+            "label": "governmentType",
+            "domain": "Place",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "award",
+            "label": "award",
+            "domain": "Person",
+            "range": "Award"
+        },
+        {
+            "id": "foundingDate",
+            "label": "foundingDate",
+            "domain": "Place",
+            "range": "Date"
+        },
+        {
+            "id": "birthName",
+            "label": "birthName",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "EthnicGroup",
+            "range": "Place"
+        },
+        {
+            "id": "populationTotal",
+            "label": "populationTotal",
+            "domain": "Place",
+            "range": "number"
+        },
+        {
+            "id": "deathDate",
+            "label": "deathDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "residence",
+            "label": "residence",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "affiliation",
+            "label": "affiliation",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "professionalField",
+            "label": "professionalField",
+            "domain": "Person",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "citizenship",
+            "label": "citizenship",
+            "domain": "Person",
+            "range": "Place"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mathematician",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Physicist",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChiefJustice",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Professor",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Economist",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AcademicSubject",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Botanist",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        }
+    ]
+}

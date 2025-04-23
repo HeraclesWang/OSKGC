@@ -1,0 +1,282 @@
+[
+    {
+        "id": "2_Food_test_1",
+        "sent": "Brown sauce is an ingredient in a bacon sandwich which has a variation known as the BLT.",
+        "response": "{BLT}:[Food], {Brown sauce}:[Food]"
+    },
+    {
+        "id": "2_Food_test_2",
+        "sent": "Sago is the main ingredient in binignit but sweet potatoes are also used in it.",
+        "response": "{Sago}:[Food], {binignit}:[Dish], {sweet potatoes}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_3",
+        "sent": "Bacon and sausage make up a bacon explosion.",
+        "response": "Text: Bacon and sausage make up a bacon explosion.\nEntities: [Bacon], [sausage]\nOutput: {Bacon}:[Food], {sausage}:[Food]"
+    },
+    {
+        "id": "2_Food_test_4",
+        "sent": "Binignit and sandesh (confectionery) are both dessert.",
+        "response": "{Binignit}:[Dessert], {sandesh}:[Dessert]"
+    },
+    {
+        "id": "2_Food_test_5",
+        "sent": "Beef kway teow is a dish of Singapore where Tony Tan is a leader.",
+        "response": "Text: Beef kway teow is a dish of Singapore where Tony Tan is a leader.\nEntities: [Tony Tan], [Singapore]\nOutput: {Tony Tan}:[Person], {Singapore}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Food_test_6",
+        "sent": "Bacon Explosion is a main course and features the ingredient of sausage among many others.",
+        "response": "{Bacon Explosion}:[Food], {sausage}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_7",
+        "sent": "The leader of Indonesia is Joko Widodo which commonly serves Arem-arem.",
+        "response": "{Joko Widodo}:[Person:Politician:President], {Indonesia}:[Place:PopulatedPlace:Country], {Arem-arem}:[Food:Dish:Fritter]"
+    },
+    {
+        "id": "2_Food_test_8",
+        "sent": "The dish Binignit can be found in the Philippines, its main ingredient is Taro.",
+        "response": "Based on the text and my knowledge, I select the following entity types:\n\nEntities: [Binignit], [Philippines], [Taro]\nOutput: {Binignit}:[Dish], {Philippines}:[Country], {Taro}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_9",
+        "sent": "Arem-arem is a food which comes from Indonesia, whose leader is Joko Widodo.",
+        "response": "Based on the text, I select the following entity types:\n\n{Arem-arem}:[Food], {Indonesia}:[Country], {Joko Widodo}:[Politician:President]"
+    },
+    {
+        "id": "2_Food_test_10",
+        "sent": "Binignit is a dish from the Philippines, where English is spoken.",
+        "response": "{Binignit}:[Food], {Philippines}:[Country]"
+    },
+    {
+        "id": "2_Food_test_11",
+        "sent": "Banana leaf is an ingredient of Arem-arem which originates from Indonesia.",
+        "response": "{Banana leaf}:[Ingredient], {Arem-arem}:[Food], {Indonesia}:[Country]"
+    },
+    {
+        "id": "2_Food_test_12",
+        "sent": "The Philippine dish of Binignit contains banana as an ingredient.",
+        "response": "Entities: [Binignit], [Philippine]\nOutput: {Binignit}:[Food], {Philippine}:[Place]"
+    },
+    {
+        "id": "2_Food_test_13",
+        "sent": "A sausage is used when making a Bacon Explosion which has The United states to thank for inventing it.",
+        "response": "Based on the text, I select the following entity types:\n\nEntities: [The United States], [Bacon Explosion]\nCandidate entity types: [Species]:{ [Animal]:{ [Bird], [Mollusca], [Crustacean] }, [Plant] }\n[Organisation]:{ [Company], [Legislature] }\n[ChemicalSubstance]:{ [ChemicalCompound] }\n[Person]:{ [Politician]:{ [President], [MemberOfParliament], [PrimeMinister], [Representative], [Governor], [ChiefJustice], [VicePresident] }, [Royalty] }\n[Food]:{ [Sauce], [Ingredient], [Cuisine], [Course], [Dish]:{ [Soup], [Fritter], [Sandwich], [Snack], [MainCourse], [Dessert], [Appetiser] }, [Condiment] }\n[Place]:{ [PopulatedPlace]:{ [State], [Island], [AdministrativeRegion], [Country], [Settlement]:{ [City]:{ [CapitalCity] } } } }\n[TopicalConcept]:{ [Type]:{ [PlantType]:{ [Order], [Family], [Genus] }"
+    },
+    {
+        "id": "2_Food_test_14",
+        "sent": "Beef kway teow, containing sesame oil, is a dish in Indonesia.",
+        "response": "Entities: [Beef kway teow], [Indonesia]\nOutput: {Beef kway teow}:[Dish], {Indonesia}:[Country]"
+    },
+    {
+        "id": "2_Food_test_15",
+        "sent": "Oyster sauce is an ingredient in the Indonesian dish of Beef kway teow.",
+        "response": "{Oyster sauce}:[ChemicalSubstance], {Indonesian}:[EthnicGroup], {Beef kway teow}:[Dish]"
+    },
+    {
+        "id": "2_Food_test_16",
+        "sent": "Brown sauce is an ingredient in a bacon sandwich which are popular in the United Kingdom.",
+        "response": "Entities: [Brown sauce], [United Kingdom]\nOutput: {Brown sauce}:[Food], {United Kingdom}:[Place]"
+    },
+    {
+        "id": "2_Food_test_17",
+        "sent": "Arem-arem comes from Indonesia where the language is known as Indonesian.",
+        "response": "{Arem-arem}:[Species]:[Bird]\n{Indonesia}:[Place]:[Country]\n{Indonesian}:[Language]"
+    },
+    {
+        "id": "2_Food_test_18",
+        "sent": "Arem-arem uses the ingredient banana leaf, it is a common dish in Indonesia.",
+        "response": "{Arem-arem}:[Food], {Indonesia}:[Country], {banana leaf}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_19",
+        "sent": "Jusuf Kalla is the leader of Indonesia where you will find Arem-arem.",
+        "response": "Text: Jusuf Kalla is the leader of Indonesia where you will find Arem-arem.\nEntities: [Jusuf Kalla], [Indonesia], [Arem-arem]\nOutput: {Jusuf Kalla}:[Politician], {Indonesia}:[Country], {Arem-arem}:[Food]"
+    },
+    {
+        "id": "2_Food_test_20",
+        "sent": "Arem-arem originates from the country of Indonesia where the Indonesian language is spoken.",
+        "response": "{Arem-arem}:[Species], {Indonesia}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Food_test_21",
+        "sent": "Banana leaf is an ingredient in Arem-arem, a dish from Java.",
+        "response": "{Arem-arem}:[Dish], {Java}:[Country], {Banana leaf}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_22",
+        "sent": "Arem-arem originates from the country of Indonesia which has the currency of the Indonesian rupiah.",
+        "response": "{Arem-arem}:[Species]->[Animal]->[Bird]\n{Indonesia}:[Place]->[PopulatedPlace]->[Country]\n{Indonesian rupiah}:[Currency]"
+    },
+    {
+        "id": "2_Food_test_23",
+        "sent": "Arabic is one of the languages in the Philippines where Binignit comes from.",
+        "response": "{Arabic}:[Language], {Philippines}:[PopulatedPlace], {Binignit}:[Food]"
+    },
+    {
+        "id": "2_Food_test_24",
+        "sent": "One of the main ingredients of binignit is coconut milk and this dish can be found in the Philippines.",
+        "response": "{binignit}:[Dish], {Philippines}:[Country], {coconut milk}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_25",
+        "sent": "Sago is one of the ingredients used to make Binignit, which can be found in the Philippines.",
+        "response": "{Sago}:[Ingredient], {Binignit}:[Dish], {Philippines}:[Country]"
+    },
+    {
+        "id": "2_Food_test_26",
+        "sent": "Binignit, a dish found in the Philippines, contains sago as one of its main ingredients.",
+        "response": "{Binignit}:[Dish], {Philippines}:[Country], {sago}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_27",
+        "sent": "Binignit is an ingredient of Sweet potato and sweet potato belongs to Solanales order of plants.",
+        "response": "{Sweet potato}:[Plant], {Solanales}:[Type], {Binignit}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_28",
+        "sent": "Two ingredients for Binignit is Taro and sweet potato.",
+        "response": "{Binignit}:[Food], {Taro}:[Ingredient], {sweet potato}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_29",
+        "sent": "Binignit includes the sweet potato as a main ingredient, and sago.",
+        "response": "Text: Binignit includes the sweet potato as a main ingredient, and sago.\nEntities: [Binignit], [sweet potato], [sago]\nOutput: {Binignit}:[Food], {sweet potato}:[Ingredient], {sago}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_30",
+        "sent": "The dessert, Binignit, comes from the Philippines.",
+        "response": "{Binignit}:[Dessert], {Philippines}:[Country]"
+    },
+    {
+        "id": "2_Food_test_31",
+        "sent": "An ingredient of Binignit is sweet potato, and one of the main ingredients is the banana.",
+        "response": "{Binignit}:[Food], {sweet potato}:[Ingredient], {banana}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_32",
+        "sent": "The main ingredients of Binignit are the sweet potato and coconut milk.",
+        "response": "{Binignit}:[Food], {sweet potato}:[Food], {coconut milk}:[Food]"
+    },
+    {
+        "id": "2_Food_test_33",
+        "sent": "Sweet potatoes, which belongs to the division of flowering plant, are used in binignit recipes.",
+        "response": "{Sweet potatoes}:[Food], {binignit}:[Cuisine]"
+    },
+    {
+        "id": "2_Food_test_34",
+        "sent": "Sweet potato is an ingredient in Binignit which comes from the Philippines.",
+        "response": "{Binignit}:[Food], {Philippines}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Food_test_35",
+        "sent": "Binignit is a dish from the Philippines, whose ingredients include taro.",
+        "response": "{Binignit}:[Food], {Philippines}:[Country], {taro}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_36",
+        "sent": "Binignit is a dish from the Philippines that contains coconut milk.",
+        "response": "{Binignit}:[Dish], {Philippines}:[Country]"
+    },
+    {
+        "id": "2_Food_test_37",
+        "sent": "Sweet potatoes are the main ingredient of binignit and the potatoes are part of the order of Solanales.",
+        "response": "{Sweet potatoes}:[Food], {Solanales}:[TopicalConcept], {binignit}:[Food]"
+    },
+    {
+        "id": "2_Food_test_38",
+        "sent": "Binignit and cookies are both a type of dessert.",
+        "response": "Based on the text and my knowledge, I select the following entity types:\n\nEntities: [Binignit], [cookies]\nOutput: {Binignit}:[Food], {cookies}:[Food]"
+    },
+    {
+        "id": "2_Food_test_39",
+        "sent": "The binignit dish can be found in the Philippines and one of the main ingredients is the sweet potato.",
+        "response": "Based on the text, I select the following entity types:\n\nEntities: [Philippines], [sweet potato]\nOutput: {Philippines}:[PopulatedPlace], {sweet potato}:[Food]"
+    },
+    {
+        "id": "2_Food_test_40",
+        "sent": "Binignit is made of sweet potato and coconut milk.",
+        "response": "{Binignit}:[Food], {sweet potato}:[Ingredient], {coconut milk}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_41",
+        "sent": "Binignits main ingredient is sweet potato and also taro.",
+        "response": "{Binignits}:[Food], {sweet potato}:[Ingredient], {taro}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_42",
+        "sent": "Beef kway teow is a dish of Singapore and the country's leader is Halimah Yacob.",
+        "response": "{Beef kway teow}:[Dish], {Singapore}:[Country], {Halimah Yacob}:[Politician:President]"
+    },
+    {
+        "id": "2_Food_test_43",
+        "sent": "English is one of the languages spoken in Singapore where Beef kway teow is a dish.",
+        "response": "{Singapore}:[Place], {Beef kway teow}:[Food]"
+    },
+    {
+        "id": "2_Food_test_44",
+        "sent": "Beef kway teow originates from Singapore, where Standard Chinese is spoken.",
+        "response": "Based on the given text and my knowledge, I select the following entity types:\n\nEntities: [Beef kway teow], [Singapore], [Standard Chinese]\nOutput: {Beef kway teow}:[Food], {Singapore}:[PopulatedPlace], {Standard Chinese}:[Language]"
+    },
+    {
+        "id": "2_Food_test_45",
+        "sent": "Palm sugar is an ingredient of Beef kway teow which is an Indonesian dish.",
+        "response": "{Palm sugar}:[Ingredient], {Beef kway teow}:[Dish], {Indonesian}:[EthnicGroup]"
+    },
+    {
+        "id": "2_Food_test_46",
+        "sent": "Beef kway teow comes from Singapore region where the English language is spoken.",
+        "response": "{Beef kway teow}:[Food], {Singapore}:[PopulatedPlace], {English}:[Language]"
+    },
+    {
+        "id": "2_Food_test_47",
+        "sent": "Beef kway teow is found in the countries of Indonesia and Singapore.",
+        "response": "Entities: [Indonesia], [Singapore], [Beef kway teow]\nOutput: {Indonesia}:[Place], {Singapore}:[Place], {Beef kway teow}:[Food]"
+    },
+    {
+        "id": "2_Food_test_48",
+        "sent": "Oyster sauce is an ingredient in the popular Singapore dish of Beef kway teow.",
+        "response": "{Oyster sauce}:[ChemicalSubstance], {Singapore}:[PopulatedPlace], {Beef kway teow}:[Food]"
+    },
+    {
+        "id": "2_Food_test_49",
+        "sent": "Standard Chinese is a language spoken in Singapore where Beef kway teow is a popular dish.",
+        "response": "{Standard Chinese}:[Language], {Singapore}:[PopulatedPlace], {Beef kway teow}:[Dish]"
+    },
+    {
+        "id": "2_Food_test_50",
+        "sent": "Tony Tan is the leader of Singapore where Beef kway teow is a popular dish.",
+        "response": "Based on the text, I select the following entity types:\n\nEntities: [Tony Tan], [Singapore], [Beef kway teow]\nOutput: {Tony Tan}:[Person], {Singapore}:[PopulatedPlace], {Beef kway teow}:[Food]"
+    },
+    {
+        "id": "2_Food_test_51",
+        "sent": "Sesame oil is an ingredient in beef kway teow, which is a dish popular in Singapore.",
+        "response": "{Sesame oil}:[ChemicalSubstance], {beef kway teow}:[Dish], {Singapore}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Food_test_52",
+        "sent": "The main ingredients in a bacon explosion are bacon and sausage.",
+        "response": "Text: The main ingredients in a bacon explosion are bacon and sausage.\nEntities: [bacon], [sausage]\nOutput: {bacon}:[Food:Ingredient], {sausage}:[Food:Ingredient]"
+    },
+    {
+        "id": "2_Food_test_53",
+        "sent": "Bacon Explosion includes sausage and bacon.",
+        "response": "Text: Bacon Explosion includes sausage and bacon.\nEntities: [Bacon Explosion], [sausage], [Bacon]\nOutput: {Bacon Explosion}:[Dish], {sausage}:[Ingredient], {Bacon}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_54",
+        "sent": "Sausage is a main ingredient in the dish 'Bacon Explosion', which also contains bacon.",
+        "response": "Text: Sausage is a main ingredient in the dish 'Bacon Explosion', which also contains bacon.\nEntities: [Bacon Explosion], [Bacon]\nOutput: {Bacon Explosion}:[Dish], {Bacon}:[Ingredient]"
+    },
+    {
+        "id": "2_Food_test_55",
+        "sent": "Sausage in an ingredient in bacon explosion, originating from the Kansas City metropolitan area.",
+        "response": "{Sausage}:[Ingredient], {bacon}:[Ingredient], {Kansas City}:[PopulatedPlace]"
+    },
+    {
+        "id": "2_Food_test_56",
+        "sent": "Asam pedas is an Indonesia dish popular with Joko Widodo.",
+        "response": "{Asam pedas}:[Dish], {Joko Widodo}:[Politician], {Indonesia}:[Country]"
+    }
+]

@@ -1,0 +1,746 @@
+{
+    "title": "1_WrittenWork",
+    "id": "1_WrittenWork",
+    "entity type": [
+        {
+            "id": "AcademicJournal",
+            "label": "AcademicJournal"
+        },
+        {
+            "id": "AcademicSubject",
+            "label": "AcademicSubject"
+        },
+        {
+            "id": "Book",
+            "label": "Book"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Code",
+            "label": "Code"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Continent",
+            "label": "Continent"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "Disease",
+            "label": "Disease"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Genre",
+            "label": "Genre"
+        },
+        {
+            "id": "Genus",
+            "label": "Genus"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "LiteraryGenre",
+            "label": "LiteraryGenre"
+        },
+        {
+            "id": "MediaType",
+            "label": "MediaType"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Physicist",
+            "label": "Physicist"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PlantType",
+            "label": "PlantType"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Professor",
+            "label": "Professor"
+        },
+        {
+            "id": "Publisher",
+            "label": "Publisher"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Species",
+            "label": "Species"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Virus",
+            "label": "Virus"
+        },
+        {
+            "id": "VirusType",
+            "label": "VirusType"
+        },
+        {
+            "id": "Work",
+            "label": "Work"
+        },
+        {
+            "id": "Writer",
+            "label": "Writer"
+        },
+        {
+            "id": "WrittenWork",
+            "label": "WrittenWork"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "affiliation",
+            "label": "affiliation",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "academicDiscipline",
+            "label": "academicDiscipline",
+            "domain": "Work",
+            "range": "Disease"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "publisher",
+            "label": "publisher",
+            "domain": "Work",
+            "range": "Organisation"
+        },
+        {
+            "id": "founder",
+            "label": "founder",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "impactFactor",
+            "label": "impactFactor",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "influencedBy",
+            "label": "influencedBy",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "doctoralAdvisor",
+            "label": "doctoralAdvisor",
+            "domain": "Person",
+            "range": "Person"
+        },
+        {
+            "id": "releaseDate",
+            "label": "releaseDate",
+            "domain": "Work",
+            "range": "Date"
+        },
+        {
+            "id": "author",
+            "label": "author",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "abbreviation",
+            "label": "abbreviation",
+            "domain": "Work",
+            "range": "Work"
+        },
+        {
+            "id": "city",
+            "label": "city",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "issnNumber",
+            "label": "issnNumber",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "mediaType",
+            "label": "mediaType",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "firstPublicationYear",
+            "label": "firstPublicationYear",
+            "domain": "Work",
+            "range": "Year"
+        },
+        {
+            "id": "serves",
+            "label": "serves",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "numberOfPages",
+            "label": "numberOfPages",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "oclcNumber",
+            "label": "oclcNumber",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "parentCompany",
+            "label": "parentCompany",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthDate",
+            "label": "birthDate",
+            "domain": "Person",
+            "range": "Date"
+        },
+        {
+            "id": "state",
+            "label": "state",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "genre",
+            "label": "genre",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Work",
+            "range": "Place"
+        },
+        {
+            "id": "family",
+            "label": "family",
+            "domain": "Species",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "editor",
+            "label": "editor",
+            "domain": "Work",
+            "range": "Person"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "president",
+            "label": "president",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "academicDiscipline",
+            "label": "academicDiscipline",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "precededBy",
+            "label": "precededBy",
+            "domain": "Work",
+            "range": "Work"
+        },
+        {
+            "id": "literaryGenre",
+            "label": "literaryGenre",
+            "domain": "Work",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "notableWork",
+            "label": "notableWork",
+            "domain": "Person",
+            "range": "Work"
+        },
+        {
+            "id": "LCCN_number",
+            "label": "LCCN_number",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "eissnNumber",
+            "label": "eissnNumber",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "genus",
+            "label": "genus",
+            "domain": "Species",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "founder",
+            "label": "founder",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Work",
+            "range": "Language"
+        },
+        {
+            "id": "residence",
+            "label": "residence",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isbnNumber",
+            "label": "isbnNumber",
+            "domain": "Work",
+            "range": "number"
+        },
+        {
+            "id": "almaMater",
+            "label": "almaMater",
+            "domain": "Person",
+            "range": "Organisation"
+        },
+        {
+            "id": "codenCode",
+            "label": "codenCode",
+            "domain": "Work",
+            "range": "Code"
+        },
+        {
+            "id": "nickname",
+            "label": "nickname",
+            "domain": "Organisation",
+            "range": "Organisation"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "academicDiscipline",
+            "label": "academicDiscipline",
+            "domain": "Work",
+            "range": "Species"
+        },
+        {
+            "id": "nationality",
+            "label": "nationality",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "followedBy",
+            "label": "followedBy",
+            "domain": "Work",
+            "range": "Work"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "WrittenWork",
+            "range": "Work"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Physicist",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Book",
+            "range": "WrittenWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "VirusType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "LiteraryGenre",
+            "range": "Genre"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Writer",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MediaType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Professor",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AcademicJournal",
+            "range": "WrittenWork"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Continent",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Genus",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Genre",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Publisher",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PlantType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AcademicSubject",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Virus",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        }
+    ]
+}

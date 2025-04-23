@@ -1,0 +1,107 @@
+[
+    {
+        "id": "3_Company_test_1",
+        "input_text": "Chinabank is a public company that was founded at the Insular Government of the Philippine Islands in Manila.",
+        "response": "Here is the output based on the input text:\n\n[Chinabank, type, Public Company]:(Company, type, CompanyType)\n[Chinabank, foundingDate,?]:(Company, foundingDate, Date)\n[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, Place)\n[Manila, location,?]:(Place, location, Place)\n[Manila, isPartOf,?]:(Place, isPartOf, Place)\n[Insular Government of the Philippine Islands, location, Manila]:(Place, location, Place)\n[Insular Government of the Philippine Islands, isPartOf,?]:(Place, isPartOf, Place)\n[Philippine Islands, country,?]:(Place, country, Place)\n\nNote that some values are left as? because they cannot be determined from the given text. For example, the exact founding date of Chinabank is not mentioned, so it is represented as?. Similarly, the country where the Philippine Islands are located is not specified, so it is also represented as?."
+    },
+    {
+        "id": "3_Company_test_2",
+        "input_text": "Chinabank is a public company that was founded in Manila with 295 branches.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place)\n[Chinabank, type, PublicCompany]:(Organisation, type, TopicalConcept)\n[Chinabank, numberOfLocations, 295]:(Organisation, numberOfLocations, number)"
+    },
+    {
+        "id": "3_Company_test_3",
+        "input_text": "Chinabank, founded in the insular Government of the Philippine islands at Manila has 295 locations.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number), [Chinabank, foundationPlace, Manila]:(Company, foundationPlace, Place), [Chinabank, location, Manila]:(Company, location, Place)"
+    },
+    {
+        "id": "3_Company_test_4",
+        "input_text": "Chinabank, a banking service with 295 branches, was founded 1920-08-16.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n[Chinabank, foundingDate, 1920-08-16]:(Company, foundingDate, Date)\n[Chinabank, industry, Banking service]:(Company, industry, Service)"
+    },
+    {
+        "id": "3_Company_test_5",
+        "input_text": "Chinabank, founded on 08-16-1920, offers banking services as well as having a net income of 15100000000.",
+        "response": "Here is the constructed knowledge graph based on the given ontology schema and the input text:\n\n[Chinabank, foundationDate, 08-16-1920]:(Organisation, foundingDate, Date)\n[Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)\n[Chinabank, service, Banking services]:(Organisation, service, TopicalConcept)"
+    },
+    {
+        "id": "3_Company_test_6",
+        "input_text": "AmeriGas serves the population of the United States, which is 324720797.",
+        "response": "[AmeriGas, serves, United States]:(Organisation, serves, Place), [United States, populationTotal, 324720797]:(Place, populationTotal, number)"
+    },
+    {
+        "id": "3_Company_test_7",
+        "input_text": "Chinabank is a public company which has 295 branches, and whose current net income is 15100000000.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n\nNote that the input text does not provide information about the industry, products, or key person of Chinabank, so these triples cannot be extracted."
+    },
+    {
+        "id": "3_Company_test_8",
+        "input_text": "Chinabank is a public company located in the Philippines with 295 locations.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n[Chinabank, location, Philippines]:(Company, location, Place)\n[Chinabank, type, PublicCompany]:(Company, type, CompanyType)"
+    },
+    {
+        "id": "3_Company_test_9",
+        "input_text": "Chinabank, a company that was founded on the August 16th,1920, has 5594 workers and a net income of 15100000000.",
+        "response": "Here is the output:\n\n[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number)\n[Chinabank, netIncome, 15100000000]:(Company, netIncome, number)\n[Chinabank, foundingDate, August 16th, 1920]:(Company, foundingDate, Date)"
+    },
+    {
+        "id": "3_Company_test_10",
+        "input_text": "Chinabank was founded in Manila at the Insular Government of the Philippine Islands which was established on July 11901.",
+        "response": "Here is the output in the required format:\n\n[Chinabank, foundingDate, 1901-07-01]:(Organisation, foundingDate, Date)\n[Chinabank, location, Manila]:(Organisation, location, Place)\n[Manila, foundingDate, 1901-07-01]:(Place, foundingDate, Date)\n[Insular Government of the Philippine Islands, isPartOf, Manila]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "3_Company_test_11",
+        "input_text": "Chinabank was founded in Manila in the insular government of the Philippine islands and remains located there.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Chinabank, location, Manila]:(Company, location, Place)\n[Chinabank, foundingDate,?]:(Company, foundingDate, Date)\n[Chinabank, foundationPlace, Manila]:(Company, foundationPlace, Place)\n[Manila, isPartOf,?]:(Place, isPartOf, Place)\n[Manila, country,?]:(Place, country, Place)\n[?, IsA, Country]:(Country, IsA, PopulatedPlace)\n[Philippine islands, IsA, PopulatedPlace]:(PopulatedPlace, IsA, Place)\n[Manila, IsA, City]:(City, IsA, Settlement)\n[Chinabank, type,?]:(Company, type,?)\nNote: The output is based on the given ontology schema and the input text, and it follows the example format. The? symbol indicates that the exact value is not provided in the input text."
+    },
+    {
+        "id": "3_Company_test_12",
+        "input_text": "Chinabank is a bank with 5594 employees that was founded on Aug. 16, 1920.",
+        "response": "[Chinabank, numberOfEmployees, 5594]:(Company, numberOfEmployees, number)\n[Chinabank, foundingDate, Aug. 16, 1920]:(Company, foundingDate, Date)"
+    },
+    {
+        "id": "3_Company_test_13",
+        "input_text": "Chinabank, whose place of foundation was Manila, has 295 locations and a net income of 15100000000.",
+        "response": "[Chinabank, numberOfLocations, 295]:(Company, numberOfLocations, number)\n[Chinabank, netIncome, 15100000000]:(Organisation, netIncome, number)\n[Chinabank, foundationPlace, Manila]:(Organisation, foundationPlace, Place)"
+    },
+    {
+        "id": "3_Company_test_14",
+        "input_text": "Chinabank was founded in Manila which is the insular government of the Philippine Islands located in Metro Manila.",
+        "response": "Here is the output:\n\n[Chinabank, foundingDate, Date]\n[Chinabank, location, Metro Manila]\n[Chinabank, location, Manila]\n[Manila, isPartOf, Philippine Islands]\n[Manila, isPartOf, Country]\n[Philippine Islands, isPartOf, Country]"
+    },
+    {
+        "id": "3_Company_test_15",
+        "input_text": "Trane, founded in La Crosse, Wisconsin, is located in Swords (Dublin).",
+        "response": "Here is the extracted knowledge graph in the desired format:\n\n[Trane, location, Swords]:(Company, location, Place)\n[Trane, foundingPlace, La Crosse]:(Company, foundingPlace, Place)\n[Trane, location, Dublin]:(Company, location, Place)\n\nNote that I extracted the following information:\n\n* Trane's location is Swords (Dublin), which is a Place entity.\n* Trane was founded in La Crosse, Wisconsin, which is also a Place entity.\n* Trane is also located in Dublin, which is another Place entity."
+    },
+    {
+        "id": "3_Company_test_16",
+        "input_text": "Trane located in Swords (Dublin) produces building management systems also located in Ireland.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Trane, location, Swords]:(Company, location, Place)\n[Trane, location, Dublin]:(Company, location, Place)\n[Trane, location, Ireland]:(Company, location, Country)\n[Trane, product, building management systems]:(Company, product, Product)\n\nNote: I assumed that \"Swords\" is a Place and \"Dublin\" is a City, which is part of the Country \"Ireland\"."
+    },
+    {
+        "id": "3_Company_test_17",
+        "input_text": "Trane, which manufactures building management systems, is located in Swords (Dublin), and has a net income of $ 556300000.",
+        "response": "[Trane, netIncome, 556300000]:(Company, netIncome, number), [Trane, product, Building management systems]:(Company, product, Product), [Trane, location, Swords]:(Company, location, Place), [Swords, location, Dublin]:(Place, location, Place), [Dublin, capital, CapitalCity]:(Place, capital, Place), [Dublin, country, Country]:(Place, country, Place)"
+    },
+    {
+        "id": "3_Company_test_18",
+        "input_text": "Trane, a company located in Swords (Dublin) has a revenue of $ 10264000000, with a net income of $ 556300000.",
+        "response": "Here is the output based on the input text:\n\n[Trane, revenue, 10264000000]:(Company, revenue, number)\n[Trane, netIncome, 556300000]:(Company, netIncome, number)\n\nNote that I only extracted the relevant information from the input text and matched it to the ontology schema. The output follows the exact format specified in the example."
+    },
+    {
+        "id": "3_Company_test_19",
+        "input_text": "Trane, a subsidiary company located in Swords (Dublin), has a net income of $ 556300000.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Trane, netIncome, 556300000]:(Company, netIncome, number), [Trane, location, Swords]:(Company, location, Place), [Swords, location, Dublin]:(Place, location, Place), [Dublin, capital, CapitalCity]:(Place, capital, Place)"
+    },
+    {
+        "id": "3_Company_test_20",
+        "input_text": "Trane, a company in the building materials industry, is located in Swords (Dublin), Ireland.",
+        "response": "Here is the output based on the given ontology schema:\n\n[Trane, location, Swords]:(Company, location, Place)\n[Trane, industry, Building materials]:(Company, industry, Industry)\n[Trane, country, Ireland]:(Company, country, Country)"
+    },
+    {
+        "id": "3_Company_test_21",
+        "input_text": "With a revenue of 10264000000 and operating out of Swords (Dublin), Trane specializes in building management systems.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Trane, revenue, 10264000000]:(Company, revenue, number)\n[Trane, location, Swords]:(Company, location, Place)\n[Trane, location, Dublin]:(Place, location, Place)\n[Trane, serves, Swords]:(Company, serves, Place)\n[Trane, product, building management systems]:(Company, product, TopicalConcept)\n\nNote that I've extracted the relevant information from the input text and matched it to the corresponding entities and relations in the ontology schema. Let me know if this meets your requirements!"
+    }
+]

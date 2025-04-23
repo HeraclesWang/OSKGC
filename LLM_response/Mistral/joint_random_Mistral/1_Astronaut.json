@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1_Astronaut_test_1",
+        "input_text": "Buzz Aldrin's birth name is Edwin Eugene Aldrin Jr.",
+        "response": "[Buzz Aldrin, birthName, Edwin Eugene Aldrin Jr.]:(Person, birthName, Person)"
+    },
+    {
+        "id": "1_Astronaut_test_2",
+        "input_text": "Alan Bean was born on the 15th of March 1932.",
+        "response": "[Alan Bean, birthDate, 15th of March 1932]:(Person, birthDate, Date)"
+    },
+    {
+        "id": "1_Astronaut_test_3",
+        "input_text": "The nationality of Elliot See is United States.",
+        "response": "[Elliot See, nationality, United States]:(Person, nationality, Place)"
+    },
+    {
+        "id": "1_Astronaut_test_4",
+        "input_text": "Nie Haisheng was born in Zaoyang.",
+        "response": "[Nie Haisheng, birthPlace, Zaoyang]:(Person, birthPlace, Place)"
+    },
+    {
+        "id": "1_Astronaut_test_5",
+        "input_text": "Buzz Aldrin's birth date was 1930-01-20.",
+        "response": "[Buzz Aldrin, birthDate, 1930-01-20]:(Person, birthDate, Date)"
+    },
+    {
+        "id": "1_Astronaut_test_6",
+        "input_text": "Nie Haisheng is from the People's Republic of China.",
+        "response": "[Nie Haisheng, birthPlace, People's Republic of China]:(Person, birthPlace, Place)"
+    },
+    {
+        "id": "1_Astronaut_test_7",
+        "input_text": "The operator of Apollo 12 was NASA.",
+        "response": "[Apollo 12, operator, NASA]:(SpaceMission, operator, Organisation)"
+    },
+    {
+        "id": "1_Astronaut_test_8",
+        "input_text": "The alma mater of Alan Bean is UT Austin. He graduated from it with a B.S. in 1955.",
+        "response": "[Alan Bean, almaMater, UT Austin], [Alan Bean, birthDate, 1932-03-15], [Alan Bean, graduationYear, 1955], [UT Austin, affiliation, University]"
+    },
+    {
+        "id": "1_Astronaut_test_9",
+        "input_text": "Alan Shepard was born November 18th, 1923.",
+        "response": "[Alan Shepard, birthDate, November 18th, 1923]:(Person, birthDate, Date)"
+    },
+    {
+        "id": "1_Astronaut_test_10",
+        "input_text": "Buzz Aldrin was in space for 52 minutes.",
+        "response": "[Buzz Aldrin, timeInSpace, 52]:(Person, timeInSpace, number)"
+    },
+    {
+        "id": "1_Astronaut_test_11",
+        "input_text": "Buzz Aldrin's nationality is United States.",
+        "response": "[Buzz Aldrin, nationality, United States]:(Person, nationality, Place)"
+    },
+    {
+        "id": "1_Astronaut_test_12",
+        "input_text": "Buzz Aldrin was a fighter pilot.",
+        "response": "[Buzz Aldrin, occupation, FighterPilot]:(Person, occupation, PersonFunction)"
+    },
+    {
+        "id": "1_Astronaut_test_13",
+        "input_text": "Buzz Aldrin was born in Glen Ridge (New Jersey).",
+        "response": "[Buzz Aldrin, birthPlace, Glen Ridge], [Glen Ridge, isPartOf, New Jersey]:(Person, birthPlace, Place), (Place, location, Place)"
+    },
+    {
+        "id": "1_Astronaut_test_14",
+        "input_text": "Buzz Aldrin was awarded the Legion of Merit ribbon.",
+        "response": "[Buzz Aldrin, award, Legion of Merit ribbon]:(Person, ribbonAward, Award)"
+    },
+    {
+        "id": "1_Astronaut_test_15",
+        "input_text": "Buzz Aldrin is retired.",
+        "response": "[Buzz Aldrin, dateOfRetirement, Date]\n(Person, dateOfRetirement, Date)"
+    },
+    {
+        "id": "1_Astronaut_test_16",
+        "input_text": "Edwin E. Aldrin, Jr. was commonly known as Buzz Aldrin.",
+        "response": "[Edwin E. Aldrin, Jr., alternativeName, Buzz Aldrin]:(Person, alternativeName, Person)"
+    },
+    {
+        "id": "1_Astronaut_test_17",
+        "input_text": "The number of Buzz Aldrin's awards are 20.",
+        "response": "[Buzz Aldrin, awards, 20]:(Person, awards, number)"
+    },
+    {
+        "id": "1_Astronaut_test_18",
+        "input_text": "Buzz Aldrin retired on the 1st of July 1971.",
+        "response": "[Buzz Aldrin, dateOfRetirement, 1971-07-01]:(Person, dateOfRetirement, Date)"
+    }
+]

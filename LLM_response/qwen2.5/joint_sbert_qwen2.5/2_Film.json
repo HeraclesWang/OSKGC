@@ -1,0 +1,47 @@
+[
+  {
+    "id": "2_Film_test_1",
+    "input_text": "\"English Without Tears\" was produced by Anatole de Grunwald who was born on December 25, 1910.",
+    "response": "[\"English Without Tears\", producer, Anatole de Grunwald]:(\"Work\", producer, Person), [Anatole de Grunwald, birthDate, 1910-12-25]:(\"Person\", birthDate, Date)"
+  },
+  {
+    "id": "2_Film_test_2",
+    "input_text": "English Without Tears producer Anatole de Grunwald was born in Saint Petersburg.",
+    "response": "[English Without Tears, producer, Anatole de Grunwald]:(Film, producer, Person), [Anatole de Grunwald, birthPlace, Saint Petersburg]:(Person, birthPlace, Place)"
+  },
+  {
+    "id": "2_Film_test_3",
+    "input_text": "Anatole de Grunwald is the writer and producer of 'English Without Tears'.",
+    "response": "[English Without Tears, writer, Anatole de Grunwald]:(Film, writer, Writer), [English Without Tears, producer, Anatole de Grunwald]:(Film, producer, Person)"
+  },
+  {
+    "id": "2_Film_test_4",
+    "input_text": "English Without Tears was written by Anatole de Grunwald and Terence Rattigan.",
+    "response": "[English Without Tears, writer, Anatole de Grunwald]:(Film, writer, ScreenWriter), [English Without Tears, writer, Terence Rattigan]:(Film, writer, ScreenWriter)"
+  },
+  {
+    "id": "2_Film_test_5",
+    "input_text": "Anatole de Grunwald was the producer of 'English Without Tears,' a film with a running time of 89 minutes.",
+    "response": "[English Without Tears, runtime, 89]:(Film, runtime, number), [English Without Tears, producer, Anatole de Grunwald]:(Film, producer, Person)"
+  },
+  {
+    "id": "2_Film_test_6",
+    "input_text": "Anatole de Grunwald's English Without tears cinematography was done by Bernard Knowles.",
+    "response": "[English Without tears, cinematography, Bernard Knowles]:(Film, cinematography, Cinematographer)"
+  },
+  {
+    "id": "2_Film_test_7",
+    "input_text": "\"English Without Tears\", which was written by Anatole de Grunwald, has a running time of 89 minutes.",
+    "response": "[English Without Tears, runtime, 89]:(Film, runtime, number), [English Without Tears, writer, Anatole de Grunwald]:(Film, writer, Writer)"
+  },
+  {
+    "id": "2_Film_test_8",
+    "input_text": "Tom Sizemore stars in Super Capers which starred Michael Rooker.",
+    "response": "[Super Capers, starring, Tom Sizemore]:(Film, starring, Actor), [Super Capers, starring, Michael Rooker]:(Film, starring, Actor)"
+  },
+  {
+    "id": "2_Film_test_9",
+    "input_text": "Super Capers starred Michael Rooker, who was born in Jasper (Alabama).",
+    "response": "[Super Capers, starring, Michael Rooker]:(Film, starring, Actor), [Michael Rooker, birthPlace, Jasper (Alabama)]:(Actor, birthPlace, Place)"
+  }
+]

@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Scientist" id="1_Scientist_train_1">
+      <text>The Darlington town has an area code of 01325.</text>
+      <triples>
+        <triple>
+          <sub>Darlington</sub>
+          <rel>areaCode</rel>
+          <obj>01325</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>areaCode</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_2">
+      <text>Darinka Dentcheva developed a theory influenced by Andrzej Piotr Ruszczyński.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>influencedBy</rel>
+          <obj>Andrzej_Piotr_Ruszczyński</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>influencedBy</rel>
+          <obj>Mathematician</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_3">
+      <text>In terms of nationality, Nurhan Atasoy is a person of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>nationality</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>nationality</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_4">
+      <text>Brandon Carter is a professional in the field of general relativity.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>professionalField</rel>
+          <obj>General_relativity</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>professionalField</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_5">
+      <text>Turk is the demonym for residents of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>demonym</rel>
+          <obj>Turk</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_6">
+      <text>The Kingdom of England used a unitary state form of government.</text>
+      <triples>
+        <triple>
+          <sub>Kingdom_of_England</sub>
+          <rel>governmentType</rel>
+          <obj>Unitary_state</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>governmentType</rel>
+          <obj>GovernmentType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_7">
+      <text>Pranab Mukherjee was a leader of India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leader</rel>
+          <obj>Pranab_Mukherjee</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_8">
+      <text>Nurhan Atasoy won State Award for Superior Achievement.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>award</rel>
+          <obj>State_Award_for_Superior_Achievement</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>award</rel>
+          <obj>Award</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_9">
+      <text>Darinka Dentcheva is a citizen of the United States.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>citizenship</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>citizenship</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_10">
+      <text>The Kingdom of England was founded in the year 927.</text>
+      <triples>
+        <triple>
+          <sub>Kingdom_of_England</sub>
+          <rel>foundingYear</rel>
+          <obj>927</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>foundingYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_11">
+      <text>Nurhan Atasoy's date of birth is January 1, 1934.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>birthDate</rel>
+          <obj>1934-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_12">
+      <text>Darinka Dentcheva's residence is in New Jersey.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>residence</rel>
+          <obj>New_Jersey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>residence</rel>
+          <obj>State</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_13">
+      <text>The title of the leader of Turkey is "Prime Minister".</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>leaderTitle</rel>
+          <obj>Prime_Minister</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_14">
+      <text>The demonym for people from the United States is American.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>demonym</rel>
+          <obj>American</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_15">
+      <text>Darinka Dentcheva is a mathematician working in the field of mathematical optimization.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>professionalField</rel>
+          <obj>Mathematical_optimization</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>professionalField</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_16">
+      <text>Brandon Carter is well known for Anthropic principle theory.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>knownFor</rel>
+          <obj>Anthropic_principle</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>knownFor</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_17">
+      <text>English is commonly spoken in New Jersey.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_18">
+      <text>The total population of the United States is over 324720797.</text>
+      <triples>
+        <triple>
+          <sub>United_States</sub>
+          <rel>populationTotal</rel>
+          <obj>324720797</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>populationTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_19">
+      <text>Indian is the demonym for people from India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>demonym</rel>
+          <obj>Indian</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>demonym</rel>
+          <obj>EthnicGroup</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_20">
+      <text>Darlington is in the North East England region.</text>
+      <triples>
+        <triple>
+          <sub>Darlington</sub>
+          <rel>region</rel>
+          <obj>North_East_England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>region</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_21">
+      <text>The leader's title in India is "President."</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leaderTitle</rel>
+          <obj>President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_22">
+      <text>A Chief Justice is a leadership title in India.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>leaderTitle</rel>
+          <obj>Chief_Justice</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_23">
+      <text>Brandon Carter was born in England.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>birthPlace</rel>
+          <obj>England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_24">
+      <text>Nurhan Atasoy is a citizen of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>citizenship</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>citizenship</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_25">
+      <text>The percentage of Turkey's area that is water is 1.3 percent.</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>percentageOfAreaWater</rel>
+          <obj>1.3</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>percentageOfAreaWater</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_26">
+      <text>Istanbul is located in the +2 UTC timezone.</text>
+      <triples>
+        <triple>
+          <sub>Istanbul</sub>
+          <rel>utcOffset</rel>
+          <obj>+2</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>utcOffset</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_27">
+      <text>India has reached the total population of 1293057000.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>populationTotal</rel>
+          <obj>1293057000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>populationTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_28">
+      <text>Tokat is located in Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Tokat</sub>
+          <rel>country</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_29">
+      <text>Reşadiye is part of the Tokat Province.</text>
+      <triples>
+        <triple>
+          <sub>Reşadiye</sub>
+          <rel>isPartOf</rel>
+          <obj>Tokat_Province</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>isPartOf</rel>
+          <obj>Province</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_30">
+      <text>University of Cambridge is located in England.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Cambridge</sub>
+          <rel>country</rel>
+          <obj>England</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_31">
+      <text>Mathematical optimization is the professional field of Andrzej Piotr Ruszczyński.</text>
+      <triples>
+        <triple>
+          <sub>Andrzej_Piotr_Ruszczyński</sub>
+          <rel>professionalField</rel>
+          <obj>Mathematical_optimization</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>professionalField</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_32">
+      <text>The title of the leader of Turkey is "President".</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>leaderTitle</rel>
+          <obj>President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_33">
+      <text>Nurhan Atasoy was born in Reşadiye.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>birthPlace</rel>
+          <obj>Reşadiye</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>birthPlace</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_34">
+      <text>India was founded on January 26, 1950.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>foundingDate</rel>
+          <obj>1950-01-26</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_35">
+      <text>Brandon Carter is known for the Carter constant.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>knownFor</rel>
+          <obj>Carter_constant</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>knownFor</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_36">
+      <text>Brandon Carter is known for his work with the Doomsday argument.</text>
+      <triples>
+        <triple>
+          <sub>Brandon_Carter</sub>
+          <rel>knownFor</rel>
+          <obj>Doomsday_argument</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Physicist</sub>
+          <rel>knownFor</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_37">
+      <text>The OS grid reference for Darlington is NZ289147.</text>
+      <triples>
+        <triple>
+          <sub>Darlington</sub>
+          <rel>gridReference</rel>
+          <obj>NZ289147</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>gridReference</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_38">
+      <text>Darinka Dentcheva is known for her work with stochastic programming.</text>
+      <triples>
+        <triple>
+          <sub>Darinka_Dentcheva</sub>
+          <rel>knownFor</rel>
+          <obj>Stochastic_programming</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>knownFor</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_39">
+      <text>The leader of Saint Petersburg is Georgy Poltavchenko.</text>
+      <triples>
+        <triple>
+          <sub>Saint_Petersburg</sub>
+          <rel>leader</rel>
+          <obj>Georgy_Poltavchenko</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>leader</rel>
+          <obj>Mayor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_40">
+      <text>Turkey is formally known as "Republic of Turkey".</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>longName</rel>
+          <obj>Republic_of_Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>longName</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_41">
+      <text>Teşvikiye was the primary residence of Nurhan Atasoy.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>residence</rel>
+          <obj>Teşvikiye</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>residence</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_42">
+      <text>New Jersey has a total area of 22591.38.</text>
+      <triples>
+        <triple>
+          <sub>New_Jersey</sub>
+          <rel>areaTotal</rel>
+          <obj>22591.38</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>State</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_43">
+      <text>The population density in metropolitan Istanbul is 2691.</text>
+      <triples>
+        <triple>
+          <sub>Istanbul</sub>
+          <rel>populationMetroDensity</rel>
+          <obj>2691</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>populationMetroDensity</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_44">
+      <text>Andrzej Piotr Ruszczyński is known for his work with stochastic programming.</text>
+      <triples>
+        <triple>
+          <sub>Andrzej_Piotr_Ruszczyński</sub>
+          <rel>knownFor</rel>
+          <obj>Stochastic_programming</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Mathematician</sub>
+          <rel>knownFor</rel>
+          <obj>AcademicSubject</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_45">
+      <text>Nurhan Atasoy resides in Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>residence</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>residence</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_46">
+      <text>The Turkish language is the official language of Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Turkey</sub>
+          <rel>officialLanguage</rel>
+          <obj>Turkish</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>officialLanguage</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_47">
+      <text>Saint Petersburg was founded on May 27, 1703.</text>
+      <triples>
+        <triple>
+          <sub>Saint_Petersburg</sub>
+          <rel>foundingDate</rel>
+          <obj>1703-05-27</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>City</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_48">
+      <text>The town of Darlington has a population of 106000.</text>
+      <triples>
+        <triple>
+          <sub>Darlington</sub>
+          <rel>populationTotal</rel>
+          <obj>106000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>populationTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_49">
+      <text>India has a total area of 3287590000000.</text>
+      <triples>
+        <triple>
+          <sub>India</sub>
+          <rel>areaTotal</rel>
+          <obj>3287590000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>areaTotal</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_50">
+      <text>The University of Cambridge is a research university.</text>
+      <triples>
+        <triple>
+          <sub>University_of_Cambridge</sub>
+          <rel>type</rel>
+          <obj>Research_university</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>University</sub>
+          <rel>type</rel>
+          <obj>UniversityType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Scientist" id="1_Scientist_train_51">
+      <text>Nurhan Atasoy's birthplace is Turkey.</text>
+      <triples>
+        <triple>
+          <sub>Nurhan_Atasoy</sub>
+          <rel>birthPlace</rel>
+          <obj>Turkey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Scientist</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

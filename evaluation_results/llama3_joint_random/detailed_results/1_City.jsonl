@@ -1,0 +1,61 @@
+{"id": "1_City_test_1", "response": "[Albany, largestCity, Linn County]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_2", "response": "[Adams Township, isPartOf, Madison County]\n[Adams Township, isPartOf, Indiana]\n[Adams Township, country, United States]", "precision": 0.333, "recall": 1.0, "f1": 0.5}
+{"id": "1_City_test_3", "response": "[Atlanta, largestCity, Fulton County]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_4", "response": "[Atlanta, isPartOf, Georgia]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_5", "response": "Here is the output:\n\n(Corvallis, largestCity, Benton County)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_6", "response": "[Alexandria, populationDensity, 755.3]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_7", "response": "[Alexandria, isPartOf, Monroe Township]\n[Alexandria, county, Madison County]\n[Alexandria, country, Indiana]", "precision": 0.333, "recall": 1.0, "f1": 0.5}
+{"id": "1_City_test_8", "response": "[Ann Arbor, country, Michigan]\n\nNote: The input text \"Ann Arbor is in Michigan\" implies that Ann Arbor is a city located in the state of Michigan. The ontology schema provides the relation \"(Place, country, Place)\" which can be used to extract the triple.", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_9", "response": "[Antioch, leader, United States House of Representatives]\n\nNote: I've used the ontology schema to identify the entities and relationships in the input text. In this case, \"Antioch\" is a Place, \"United States House of Representatives\" is an Organisation, and \"leader\" is a relation. The output triple follows the format specified in the example, with no additional text or explanations.", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_10", "response": "[Albany, leaderTitle, Mayor]\n[Albany, leader, Politician]\n[Albany, leader, Person]\n[Politician, IsA, Person]\n[Mayor, IsA, Politician]", "precision": 0.2, "recall": 1.0, "f1": 0.333}
+{"id": "1_City_test_11", "response": "[Attica, isPartOf, United States]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_12", "response": "[Attica, isPartOf, United States]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_13", "response": "Here is the output:\n\n[Alpharetta, isPartOf, Georgia]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_14", "response": "[Atlanta, isPartOf, Georgia]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_15", "response": "[Attica, isPartOf, Fountain County]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_16", "response": "(Antioch, elevationAboveTheSeaLevelInMetres, 13)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_17", "response": "[Arabic, language, Michigan]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_18", "response": "[Salem, capital, Oregon]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_19", "response": "[Attica, populationDensity, 783.1]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_20", "response": "[Attica, isPartOf, Indiana]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_21", "response": "[Attica, areaTotal, 4.14]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_22", "response": "[Attica, isPartOf, Logan Township]\n[Attica, country, Indiana]\n[Attica, county, Fountain County]\n[Logan Township, isPartOf, Attica]\n[Fountain County, isPartOf, Attica]\n[Indiana, isPartOf, Attica]", "precision": 0.167, "recall": 1.0, "f1": 0.286}
+{"id": "1_City_test_23", "response": "[Albany, elevationAboveTheSeaLevel, 64.008]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_24", "response": "[Albany, IsA, City]\n[Albany, isPartOf, Dougherty County]\n[Dougherty County, IsA, County]\n[Albany, IsA, Place]", "precision": 0.25, "recall": 1.0, "f1": 0.4}
+{"id": "1_City_test_25", "response": "(Albany, isPartOf, Georgia)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_26", "response": "[Albany, isPartOf, Oregon]\n[Albany, IsA, City]", "precision": 0.5, "recall": 1.0, "f1": 0.667}
+{"id": "1_City_test_27", "response": "[Albany, areaTotal, 144.7]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_28", "response": "[Albany (Georgia), populationDensity, 535]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_29", "response": "[Albany, areaTotal, 45.97]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_30", "response": "[Albany, elevationAboveTheSeaLevel, 62]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_31", "response": "[Albany, isPartOf, Linn County]\n[Albany, isPartOf, Oregon]\n[Albany, IsA, City]\n[Linn County, isPartOf, Oregon]", "precision": 0.25, "recall": 1.0, "f1": 0.4}
+{"id": "1_City_test_32", "response": "[Albany, isPartOf, Benton County]\n[Benton County, isPartOf, Oregon]\n[Albany, country, Georgia]\n[Georgia, isPartOf, Oregon]", "precision": 0.25, "recall": 1.0, "f1": 0.4}
+{"id": "1_City_test_33", "response": "(Albany, isPartOf, United States)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_34", "response": "[Albany, populationDensity, 1104.1]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_35", "response": "[Albany, country, United States]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_36", "response": "[Albany, areaOfWater, 0.54]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_37", "response": "[Atlanta, isPartOf, Georgia]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_38", "response": "[Atlanta, capital, Georgia]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_39", "response": "[United States, isPartOf, Georgia]\n[Georgia, IsA, State]\n[State, IsA, PopulatedPlace]\n[PopulatedPlace, IsA, Place]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_40", "response": "[DeKalb County, isPartOf, United States]\n[DeKalb County, country, United States]\n[DeKalb County, countySeat, DeKalb County]\n[DeKalb County, IsA, County]\n[United States, IsA, Country]\n[United States, IsA, PopulatedPlace]\n[DeKalb County, IsA, Settlement]\n[DeKalb County, IsA, PopulatedPlace]", "precision": 0.125, "recall": 1.0, "f1": 0.222}
+{"id": "1_City_test_41", "response": "[Atlanta, isPartOf, DeKalb County]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_42", "response": "Here is the output:\n\n[Alpharetta, isPartOf, Fulton County (Georgia)]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_43", "response": "[Atlanta, countySeat, Fulton County]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_44", "response": "[Atlanta, isPartOf, Fulton County]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_45", "response": "[Alexandria, elevationAboveTheSeaLevel, 265]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_46", "response": "[Alexandria, areaCode, 765]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_47", "response": "[Alexandria, isPartOf, Madison County]\n\nNote: The output is in the format of [Entity, relation, value] as per the given example. The ontology schema is used to determine the correct relation and value for the given input text.", "precision": 0.5, "recall": 1.0, "f1": 0.667}
+{"id": "1_City_test_48", "response": "[Alexandria, isPartOf, Indiana]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_49", "response": "[Alexandria, areaTotal, 6.81]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_50", "response": "(Antioch, leader, Mayor)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_51", "response": "(Antioch, utcOffset, -7)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_52", "response": "[Antioch, isPartOf, California]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_53", "response": "[Antioch, populationTotal, 102372]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_54", "response": "[Antioch, areaTotal, 75.324]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_55", "response": "[Antioch, utcOffset, -8]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_56", "response": "[Anaheim, isPartOf, Orange County]\n[Anaheim, country, California]\n[Anaheim, IsA, City]", "precision": 0.333, "recall": 1.0, "f1": 0.5}
+{"id": "1_City_test_57", "response": "(Orange County, isPartOf, Greater Los Angeles area)", "precision": 0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_58", "response": "[Anderson, isPartOf, Adams Township]\n[Anderson, county, Madison County]\n[Anderson, isPartOf, Indiana]", "precision": 0.333, "recall": 1.0, "f1": 0.5}
+{"id": "1_City_test_59", "response": "[Michigan, language, English]", "precision": 1.0, "recall": 1.0, "f1": 1.0}
+{"id": "1_City_test_60", "response": "[Lansing, isCapitalOf, Michigan]", "precision": 0.0, "recall": 0.0, "f1": 0}
+{"id": "1_City_test_61", "response": "[Michigan, language, Spanish]", "precision": 1.0, "recall": 1.0, "f1": 1.0}

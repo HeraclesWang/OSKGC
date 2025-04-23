@@ -1,0 +1,808 @@
+{
+    "title": "1_Building",
+    "id": "1_Building",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Ambassador",
+            "label": "Ambassador"
+        },
+        {
+            "id": "Architect",
+            "label": "Architect"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "ArchitecturalStyle",
+            "label": "ArchitecturalStyle"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "ChiefJustice",
+            "label": "ChiefJustice"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "CityDistrict",
+            "label": "CityDistrict"
+        },
+        {
+            "id": "Clerk",
+            "label": "Clerk"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "Currency",
+            "label": "Currency"
+        },
+        {
+            "id": "Date",
+            "label": "Date"
+        },
+        {
+            "id": "District",
+            "label": "District"
+        },
+        {
+            "id": "EducationalInstitution",
+            "label": "EducationalInstitution"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "GovernmentAgency",
+            "label": "GovernmentAgency"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "Hospital",
+            "label": "Hospital"
+        },
+        {
+            "id": "Hotel",
+            "label": "Hotel"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MemberOfParliament",
+            "label": "MemberOfParliament"
+        },
+        {
+            "id": "Minister",
+            "label": "Minister"
+        },
+        {
+            "id": "Museum",
+            "label": "Museum"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "PersonFunction",
+            "label": "PersonFunction"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "PoliticalFunction",
+            "label": "PoliticalFunction"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "Prefecture",
+            "label": "Prefecture"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "ProtectedArea",
+            "label": "ProtectedArea"
+        },
+        {
+            "id": "Province",
+            "label": "Province"
+        },
+        {
+            "id": "Representative",
+            "label": "Representative"
+        },
+        {
+            "id": "Road",
+            "label": "Road"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Scientist",
+            "label": "Scientist"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "Stadium",
+            "label": "Stadium"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "University",
+            "label": "University"
+        },
+        {
+            "id": "Venue",
+            "label": "Venue"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "Year",
+            "label": "Year"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "buildingStartYear",
+            "label": "buildingStartYear",
+            "domain": "ArchitecturalStructure",
+            "range": "Year"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "ArchitecturalStructure",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "currency",
+            "label": "currency",
+            "domain": "Place",
+            "range": "Currency"
+        },
+        {
+            "id": "height",
+            "label": "height",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "completionDate",
+            "label": "completionDate",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "completionYear",
+            "label": "completionYear",
+            "domain": "ArchitecturalStructure",
+            "range": "Year"
+        },
+        {
+            "id": "significantBuilding",
+            "label": "significantBuilding",
+            "domain": "Person",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "ethnicGroup",
+            "label": "ethnicGroup",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "tenant",
+            "label": "tenant",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "origin",
+            "label": "origin",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "developer",
+            "label": "developer",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "chancellor",
+            "label": "chancellor",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "deathPlace",
+            "label": "deathPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "formerName",
+            "label": "formerName",
+            "domain": "ArchitecturalStructure",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "architect",
+            "label": "architect",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "NationalRegisterOfHistoricPlacesReferenceNumber",
+            "label": "NationalRegisterOfHistoricPlacesReferenceNumber",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "foundationPlace",
+            "label": "foundationPlace",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "architecturalStyle",
+            "label": "architecturalStyle",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "cost",
+            "label": "cost",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "address",
+            "label": "address",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "addedToTheNationalRegisterOfHistoricPlaces",
+            "label": "addedToTheNationalRegisterOfHistoricPlaces",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "floorCount",
+            "label": "floorCount",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "keyPerson",
+            "label": "keyPerson",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "bedCount",
+            "label": "bedCount",
+            "domain": "Organisation",
+            "range": "number"
+        },
+        {
+            "id": "architect",
+            "label": "architect",
+            "domain": "ArchitecturalStructure",
+            "range": "Person"
+        },
+        {
+            "id": "governingBody",
+            "label": "governingBody",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "buildingStartDate",
+            "label": "buildingStartDate",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "inaugurationDate",
+            "label": "inaugurationDate",
+            "domain": "ArchitecturalStructure",
+            "range": "Date"
+        },
+        {
+            "id": "yearOfConstruction",
+            "label": "yearOfConstruction",
+            "domain": "ArchitecturalStructure",
+            "range": "Year"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "significantBuilding",
+            "label": "significantBuilding",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "birthPlace",
+            "label": "birthPlace",
+            "domain": "Person",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "ArchitecturalStructure",
+            "range": "Person"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "currentTenants",
+            "label": "currentTenants",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "floorArea",
+            "label": "floorArea",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Person",
+            "range": "Place"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "EducationalInstitution",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ProtectedArea",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Museum",
+            "range": "Building"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Venue",
+            "range": "Building"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Stadium",
+            "range": "Venue"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Hospital",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "University",
+            "range": "EducationalInstitution"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentAgency",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Province",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Minister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CityDistrict",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Clerk",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Hotel",
+            "range": "Building"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChiefJustice",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Representative",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Road",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Architect",
+            "range": "Scientist"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Ambassador",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Prefecture",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "District",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MemberOfParliament",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ArchitecturalStyle",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalFunction",
+            "range": "PersonFunction"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Scientist",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        }
+    ]
+}

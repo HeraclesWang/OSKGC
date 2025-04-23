@@ -1,0 +1,277 @@
+[
+    {
+        "id": "1_Food_test_1",
+        "input_text": "The country Binignit comes from is the Philippines.",
+        "response": "[Philippines, country, Binignit]:(Country, country, Country)"
+    },
+    {
+        "id": "1_Food_test_2",
+        "input_text": "Joko Widodo is the leader of Indonesia.",
+        "response": "Indonesia, leader, Joko Widodo:(Country, leader, President)"
+    },
+    {
+        "id": "1_Food_test_3",
+        "input_text": "Beef kway teow is a dish from the country of Singapore.",
+        "response": "[Singapore, country, Country], [Beef kway teow, dish, Dish], [Singapore, region, Place], [Beef, species, Animal], [Beef kway teow, mainIngredient, Food], [Beef kway teow, related, Noodles]"
+    },
+    {
+        "id": "1_Food_test_4",
+        "input_text": "The main ingredients of binignit are sweet potatoes.",
+        "response": "[binignit, mainIngredient, sweet potatoes]:(Dish, mainIngredient, Species)"
+    },
+    {
+        "id": "1_Food_test_5",
+        "input_text": "White Americans are an ethnic group in the United States.",
+        "response": "[United States, ethnicGroup, White Americans]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "1_Food_test_6",
+        "input_text": "Chicharrón is found in the Andalusia region.",
+        "response": "[Andalusia, region, Chicharrón]:(Region, related, Dish)"
+    },
+    {
+        "id": "1_Food_test_7",
+        "input_text": "Bionico requires granola as one of its ingredients.",
+        "response": "[Bionico, ingredient, granola]:(Food, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_8",
+        "input_text": "Lemon is part of genus Citrus.",
+        "response": "[Lemon, mainIngredient, Citrus]:(Food, genus, Genus)"
+    },
+    {
+        "id": "1_Food_test_9",
+        "input_text": "Rice is an ingredient in bandeja paisa.",
+        "response": "[Rice, ingredient, bandeja paisa]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "1_Food_test_10",
+        "input_text": "Bionico can be found in Guadalajara.",
+        "response": "[Guadalajara, region, Bionico]:(City, region, Food)"
+    },
+    {
+        "id": "1_Food_test_11",
+        "input_text": "Matteo Renzi is a leader from Italy.",
+        "response": "[Italy, leader, Matteo Renzi]:(Country, leader, PrimeMinister)"
+    },
+    {
+        "id": "1_Food_test_12",
+        "input_text": "An ingredient of Ajoblanco is garlic.",
+        "response": "[Ajoblanco, ingredient, garlic]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_13",
+        "input_text": "The capital of Malaysia is Kuala Lumpur.",
+        "response": "[Malaysia, capital, Kuala Lumpur]:(Country, capital, City)"
+    },
+    {
+        "id": "1_Food_test_14",
+        "input_text": "Sandesh (confectionery) is a dish that can be served as a dessert.",
+        "response": "[Sandesh, mainIngredient, Unknown], [Sandesh, dishVariation, Dessert], [Dessert, course, MainCourse]\n\nExplanation: The input text mentions that Sandesh is a confectionery dish that can be served as a dessert. However, the exact ingredients are not specified, so we can't determine the main ingredient. The dish variation is Sandesh, which is a type of dessert, and the course is dessert or main course, depending on how it is served."
+    },
+    {
+        "id": "1_Food_test_15",
+        "input_text": "Noodles are an ingredient in batchoy.",
+        "response": "[Noodles, ingredient, Batchoy]:(Food, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_16",
+        "input_text": "Sour cream is an ingredient of Bionico.",
+        "response": "[Bionico, ingredient, Sour cream]:(Dish, ingredient, ChemicalSubstance)"
+    },
+    {
+        "id": "1_Food_test_17",
+        "input_text": "Garlic is an ingredient in arrabbiata sauce.",
+        "response": "[Garlic, ingredient, arrabbiata sauce]:(Species, ingredient, Food)"
+    },
+    {
+        "id": "1_Food_test_18",
+        "input_text": "One dish variation called Barny Cakes is the use of milk in the recipe.",
+        "response": "[Barny Cakes, dishVariation, Milk]:(Dish, ingredient, ChemicalSubstance)"
+    },
+    {
+        "id": "1_Food_test_19",
+        "input_text": "Spaniards are the ethnic group of Spain.",
+        "response": "[Spain, ethnicGroup, Spaniards]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "1_Food_test_20",
+        "input_text": "The leader of Malaysia is Abdul Halim of Kedah.",
+        "response": "Malaysia, leader, Abdul Halim:(Country, leader, Sultan)\n(Kedah, demonym, Kedahian)\n(Kedah, leader, Abdul Halim)\n(Kedah, ethnicGroup, Malay)\n(Malaysia, officialLanguage, Malay)\n(Malaysia, currency, Malaysian ringgit)"
+    },
+    {
+        "id": "1_Food_test_21",
+        "input_text": "The English language is spoken in Singapore.",
+        "response": "[Singapore, officialLanguage, English]:(Place, officialLanguage, Language)"
+    },
+    {
+        "id": "1_Food_test_22",
+        "input_text": "Tomato belongs to the genus Solanum.",
+        "response": "[Tomato, genus, Solanum]:(Species, genus, TopicalConcept)"
+    },
+    {
+        "id": "1_Food_test_23",
+        "input_text": "Arem-arem is a food found in Indonesia.",
+        "response": "[Indonesia, food, Arem-arem]:(Country, food, Dish)"
+    },
+    {
+        "id": "1_Food_test_24",
+        "input_text": "Arem-arem is a dish of Javanese cuisine.",
+        "response": "[Javanese cuisine, related, Arem-arem]\n[Arem-arem, dish, Dish]\n[Arem-arem, mainIngredient, Food]\n[Arem-arem, cuisine, Food]\n[Arem-arem, country, Place]\n[Javanese cuisine, cuisine, Food]\n[Javanese cuisine, region, Place]"
+    },
+    {
+        "id": "1_Food_test_25",
+        "input_text": "Arem-arem comes from Indonesia.",
+        "response": "[Indonesia, creatorOfDish, Arem-arem]\n(Country, creatorOfDish, Dish)"
+    },
+    {
+        "id": "1_Food_test_26",
+        "input_text": "Lemper is a dish variation of Arem-Arem.",
+        "response": "[Lemper, dishVariation, Arem-Arem]:(Dish, dishVariation, Dish)"
+    },
+    {
+        "id": "1_Food_test_27",
+        "input_text": "Banana leaf is an ingredient in Arem-arem.",
+        "response": "[Arem-arem, ingredient, Banana leaf]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_28",
+        "input_text": "Arem-arem can be served as a main course.",
+        "response": "[Arem-arem, mainIngredient, null]:(Food, mainIngredient, Dish)\n[Arem-arem, course, MainCourse]:(Food, course, MainCourse)"
+    },
+    {
+        "id": "1_Food_test_29",
+        "input_text": "Binignit is a dish from the region of Visayas.",
+        "response": "[Visayas, region, Binignit]:(Place, region, Dish)"
+    },
+    {
+        "id": "1_Food_test_30",
+        "input_text": "Coconut milk is an ingredient of Binignit.",
+        "response": "[Binignit, ingredient, Coconut milk]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_31",
+        "input_text": "Sweet potato is and ingredient in Binignit.",
+        "response": "[Binignit, ingredient, Sweet potato]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_32",
+        "input_text": "Binignit should be served as the dessert course.",
+        "response": "[Binignit, course, Dessert]:(Food, course, MainCourse)"
+    },
+    {
+        "id": "1_Food_test_33",
+        "input_text": "Taro is a main ingredient of Binignit.",
+        "response": "[Binignit, mainIngredient, Taro]:(Dish, mainIngredient, Species)"
+    },
+    {
+        "id": "1_Food_test_34",
+        "input_text": "Banana is an ingredient in binignit.",
+        "response": "[Banana, ingredient, binignit]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "1_Food_test_35",
+        "input_text": "One of the main ingredients in binignit is banana.",
+        "response": "[binignit, mainIngredient, banana]:(Dish, mainIngredient, Species)"
+    },
+    {
+        "id": "1_Food_test_36",
+        "input_text": "Binignit comes from the region Mindanao.",
+        "response": "[Mindanao, region, Binignit]:(Place, region, Region)"
+    },
+    {
+        "id": "1_Food_test_37",
+        "input_text": "Sago is an ingredient of Binignit.",
+        "response": "[Binignit, ingredient, Sago]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_38",
+        "input_text": "One of the main ingredients in Binignit is sago.",
+        "response": "[Binignit, mainIngredient, sago]:(Dish, mainIngredient, Species)"
+    },
+    {
+        "id": "1_Food_test_39",
+        "input_text": "One of the main ingredients of binignit is coconut milk.",
+        "response": "[binignit, mainIngredient, coconut milk]:(Dish, mainIngredient, Food)\n\nIn this example, the input text mentions a dish (binignit) and one of its main ingredients (coconut milk). The output is constructed based on the given ontology schema, with the relation being \"mainIngredient\" and the hierarchy \"Dish\" and \"Food\". The triple is formatted according to the example output."
+    },
+    {
+        "id": "1_Food_test_40",
+        "input_text": "Sesame oil is an ingredient in beef kway teow.",
+        "response": "[beef kway teow, ingredient, Sesame oil]:(Dish, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_41",
+        "input_text": "Beef kway teow is a dish in Indonesia.",
+        "response": "[Indonesia, dish, Beef kway teow]:(Country, region, Dish)"
+    },
+    {
+        "id": "1_Food_test_42",
+        "input_text": "Beef kway teow comes from the Singapore region.",
+        "response": "[Singapore, region, Beef kway teow]:(Place, region, Dish)"
+    },
+    {
+        "id": "1_Food_test_43",
+        "input_text": "Oyster sauce is an ingredient in Beef kway teow.",
+        "response": "[Beef kway teow, ingredient, Oyster sauce]:(Dish, ingredient, Species)\n[Oyster sauce, species, Mollusca]:(Species, species, Animal)\n[Oyster sauce, species, Crustacea]:(Species, division, Species)\n[Oyster sauce, species, Ostrea edulis]:(Species, genus, TopicalConcept)\n[Oyster sauce, species, Ostrea edulis, species]:(Species, species, Species)\n[Beef kway teow, dishVariation, Kway teow]:(Dish, dishVariation, Dish)\n[Beef kway teow, cuisine, Chinese]:(Dish, cuisine, Food)\n[Beef kway teow, course, MainCourse]:(Dish, course, Food)\n[Beef kway teow, country, China]:(Dish, country, Place)"
+    },
+    {
+        "id": "1_Food_test_44",
+        "input_text": "Palm sugar is an ingredient in beef kway teow.",
+        "response": "[beef kway teow, ingredient, Palm sugar]:(Food, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_45",
+        "input_text": "Sausage is a main ingredient of Bacon Explosion.",
+        "response": "[Bacon Explosion, mainIngredient, Sausage]:(Dish, mainIngredient, Food)"
+    },
+    {
+        "id": "1_Food_test_46",
+        "input_text": "An ingredient of a bacon explosion is sausage.",
+        "response": "[bacon explosion, ingredient, sausage]:(Food, ingredient, Species)"
+    },
+    {
+        "id": "1_Food_test_47",
+        "input_text": "An ingredient in a bacon sandwich is brown sauce.",
+        "response": "[brown sauce, ingredient, bacon sandwich]:(Food, ingredient, Food)"
+    },
+    {
+        "id": "1_Food_test_48",
+        "input_text": "Jusuf Kalla is a leader in Indonesia.",
+        "response": "Indonesia, leader, Jusuf Kalla:(Country, leader, VicePresident)"
+    },
+    {
+        "id": "1_Food_test_49",
+        "input_text": "Indonesia is the country Bakso comes from.",
+        "response": "[Bakso, country, Indonesia]:(Dish, country, Country)"
+    },
+    {
+        "id": "1_Food_test_50",
+        "input_text": "Indonesia is the country Asam pedas comes from.",
+        "response": "[Indonesia, country, Asam pedas]:(Country, country, Food)"
+    },
+    {
+        "id": "1_Food_test_51",
+        "input_text": "Batagor comes from the country of Indonesia.",
+        "response": "[Indonesia, country, Batagor]:(Country, country, Place)"
+    },
+    {
+        "id": "1_Food_test_52",
+        "input_text": "Bakso is a food found in Indonesia.",
+        "response": "[Indonesia, food, Bakso]:(Country, food, Dish)"
+    },
+    {
+        "id": "1_Food_test_53",
+        "input_text": "In Indonesia the currency is the Indonesian rupiah.",
+        "response": "[Indonesia, currency, Indonesian rupiah]:(Place, currency, Currency)"
+    },
+    {
+        "id": "1_Food_test_54",
+        "input_text": "Ayam penyet is from Indonesia.",
+        "response": "[Indonesia, food, Ayam penyet]:(Country, food, Dish)"
+    },
+    {
+        "id": "1_Food_test_55",
+        "input_text": "The capital of Indonesia is Jakarta.",
+        "response": "[Indonesia, capital, Jakarta]:(Country, capital, City)"
+    }
+]

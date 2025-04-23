@@ -1,0 +1,57 @@
+[
+    {
+        "id": "2_MusicalWork_test_1",
+        "input_text": "The album Nord was produced by Year of No Light and won the album of the year in the sludge metal genre.",
+        "response": "[Nord, producer, Year of No Light]:(Album, producer, Person), [Nord, genre, Sludge Metal]:(Album, genre, MusicGenre)"
+    },
+    {
+        "id": "2_MusicalWork_test_2",
+        "input_text": "The Brian Kelly album Afterplay was preceded by Pools of Light and then Expect a Miracle.",
+        "response": "[Aftplay, precededBy, Pools of Light]:(Album, precededBy, Album)\n[Pools of Light, precededBy, Expect a Miracle]:(Album, precededBy, Album)"
+    },
+    {
+        "id": "2_MusicalWork_test_3",
+        "input_text": "The 58.41 minutes Year of No Light album Nord was preceded by Demo 2004.",
+        "response": "[Nord, precededBy, Demo 2004], (Album, precededBy, MusicalWork)"
+    },
+    {
+        "id": "2_MusicalWork_test_4",
+        "input_text": "Year of No Light followed their album Nord, which was released on 06-09-2006, with the album Live at Roadburn 2008.",
+        "response": "Based on the given ontology schema and input text, I will construct a knowledge graph and extract triples accordingly. Here is the output:\n\n[Year of No Light, album, Nord]:(Band, album, Album)\n[Nord, releaseDate, 06-09-2006]:(Album, releaseDate, Date)\n[Nord, recordedIn, Live at Roadburn 2008]:(Album, recordedIn, Work)\n[Live at Roadburn 2008, precededBy, Nord]:(Work, precededBy, Album)\n\nNote that I did not find any information about the genre, artist, or producer of the album or song in the given input text, so no triples related to those entities were extracted. If you provide more information, I can try to extract more triples."
+    },
+    {
+        "id": "2_MusicalWork_test_5",
+        "input_text": "The Year of No Light album Nord is in the sludge metal genre, one variety of which is southern sludge.",
+        "response": "[Nord, genre, Sludge Metal]:(Album, genre, MusicGenre), [Sludge Metal, musicSubgenre, Southern Sludge]:(MusicGenre, musicSubgenre, MusicGenre)"
+    },
+    {
+        "id": "2_MusicalWork_test_6",
+        "input_text": "Altar of Plagues is a band associated with Year of No Light which produced the album Nord.",
+        "response": "Here is the extracted knowledge graph based on the given ontology schema and input text:\n\n[Altar of Plagues, associatedBand, Year of No Light]:(Band, associatedBand, Organisation)\n[Year of No Light, produced, Nord]:(Organisation, produced, Album)\n[Nord, album, Album]:(Album, album, Album)\n[Year of No Light, produced, Nord]:(Organisation, produced, MusicalWork)\n[Nord, releaseDate,?]:(Album, releaseDate, Date)\n\nNote: The release date of the album \"Nord\" is not specified in the input text, so it is represented as a question mark in the output."
+    },
+    {
+        "id": "2_MusicalWork_test_7",
+        "input_text": "Nord is an album by Year of No Light in the sludge metal genre, which originated from the hardcore punk genre.",
+        "response": "[Nord, genre, Sludge Metal]:(Album, genre, MusicGenre)\n[Sludge Metal, stylisticOrigin, Hardcore Punk]:(MusicGenre, stylisticOrigin, MusicGenre)"
+    },
+    {
+        "id": "2_MusicalWork_test_8",
+        "input_text": "Nord, an album made by Year of No Light and released by the record label Crucial blast, belongs to the post metal genre.",
+        "response": "[Nord, genre, Post Metal]:(Album, genre, MusicGenre), [Post Metal, musicSubgenre,?]:(MusicGenre, musicSubgenre, MusicGenre)"
+    },
+    {
+        "id": "2_MusicalWork_test_9",
+        "input_text": "Year of No Light is a band whose members include a former guitarist for Monarch has created an album called Nord.",
+        "response": "Based on the given ontology schema and input text, I can construct the following knowledge graph:\n\n[Nord, genre, unknown]:(Album, genre, MusicGenre)\n[Year of No Light, artist, unknown]:(Work, artist, Person)\n[Year of No Light, recordLabel, unknown]:(Work, recordLabel, Organisation)\n[unknown, member, unknown]:(Person, member, Group)\n[unknown, formerGuitarist, Monarch]:(Person, formerGuitarist, Band)\n[Monarch, associatedBand, unknown]:(Organisation, associatedBand, Organisation)\n\nNote: The output format is in the format of [Entity, relation, value]:(Entity Type, relation, Entity Type) as per the example provided."
+    },
+    {
+        "id": "2_MusicalWork_test_10",
+        "input_text": "The Year of No Light album Live at Roadburn 2008 was followed by their album Nord.",
+        "response": "Based on the given ontology schema and input text, I constructed the following knowledge graph:\n\n[Live at Roadburn 2008, genre, unknown]:(Album, genre, MusicGenre)\n[Live at Roadburn 2008, releaseDate, 2008]:(Album, releaseDate, Date)\n[Live at Roadburn 2008, followedBy, Nord]:(Album, followedBy, Album)\n[Nord, precededBy, Live at Roadburn 2008]:(Album, precededBy, Album)\n\nNote: The genre of the album \"Live at Roadburn 2008\" is unknown as it is not specified in the input text."
+    },
+    {
+        "id": "2_MusicalWork_test_11",
+        "input_text": "Year of No Light created the album Live at Roadburn 2008, which was preceded by band’s self-produced album Nord.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Live at Roadburn 2008, precededBy, Nord]:(Work, precededBy, Work)\n[Nord, producer, Year of No Light]:(Work, producer, Person)\n[Year of No Light, created, Live at Roadburn 2008]:(Person, created, Work)\n\nNote: I assume that \"Year of No Light\" is a Person, as it is the name of a band, and \"created\" is a relation that is not explicitly defined in the ontology schema, but can be inferred as a type of \"created\" relation. If you want to map \"Year of No Light\" to a different entity type, please let me know."
+    }
+]

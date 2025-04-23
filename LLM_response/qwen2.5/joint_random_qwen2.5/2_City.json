@@ -1,0 +1,282 @@
+[
+    {
+        "id": "2_City_test_1",
+        "input_text": "Albany (Oregon) has a population density of 1104.1 inhabitants per square kilometre and covers an area of 45.97 sq km.",
+        "response": "[Albany (Oregon), populationDensity, 1104.1]:(City, populationDensity, number), [Albany (Oregon), areaTotal, 45.97]:(Place, areaTotal, number)"
+    },
+    {
+        "id": "2_City_test_2",
+        "input_text": "Atlanta, is a part of the state of Georgia in the United States.",
+        "response": "[Atlanta, isPartOf, Georgia]:(Place, isPartOf, Place), [Georgia, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_3",
+        "input_text": "Albany (Georgia) is part of the United States of American where Asian Americans are one of the ethnic groups.",
+        "response": "[Albany, isPartOf, United States of America]:(Place, isPartOf, Place), [United States of America, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_4",
+        "input_text": "Alexandria (Indiana), part of Madison County (Indiana) which has Anderson (Indiana) as its largest city.",
+        "response": "[Alexandria (Indiana), isPartOf, Madison County (Indiana)]:((Place, isPartOf, Place)), [Madison County (Indiana), largestCity, Anderson (Indiana)]:((Place, largestCity, Place))"
+    },
+    {
+        "id": "2_City_test_5",
+        "input_text": "Attica (Indiana) is part of Indiana, where Indianapolis is the capital.",
+        "response": "[Attica, isPartOf, Indiana]:(Place, isPartOf, Place), [Indiana, capital, Indianapolis]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_6",
+        "input_text": "Fulton County (Georgia) is the location of Alpharetta, in the United States.",
+        "response": "[Fulton County, IsA, County], [Alpharetta, isPartOf, Fulton County], [Fulton County, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_7",
+        "input_text": "Albany (Oregon) has area codes 541 and 458.",
+        "response": "[Albany, areaCode, 541]:(Place, areaCode, Code), [Albany, areaCode, 458]:(Place, areaCode, Code)"
+    },
+    {
+        "id": "2_City_test_8",
+        "input_text": "Atlanta is part of Fulton County (Georgia) and DeKalb County (Georgia).",
+        "response": "[Fulton County (Georgia), isPartOf, Atlanta]:(Place, isPartOf, Place), [DeKalb County (Georgia), isPartOf, Atlanta]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_9",
+        "input_text": "Attica (Indiana) covers an area of 4.14 sq km and has 783.1 inhabitants for each of those square kilometres.",
+        "response": "[Attica (Indiana), areaTotal, 4.14]: (Place, areaTotal, number), [Attica (Indiana), populationDensity, 783.1]: (Place, populationDensity, number)"
+    },
+    {
+        "id": "2_City_test_10",
+        "input_text": "Albany (Oregon) is part of Benton County (Oregon), where the largest city is Corvallis (Oregon).",
+        "response": "[Benton County, isPartOf, Oregon], [Benton County, largestCity, Corvallis], [Albany, isPartOf, Benton County]"
+    },
+    {
+        "id": "2_City_test_11",
+        "input_text": "Alexandria (Indiana) is part of Monroe Township (Madison County, Indiana) in the country of the United States.",
+        "response": "[Monoine Township, isPartOf, Monroe County], [Alexandria, Indiana, isPartOf, Monroe Township], [Monroe County, isPartOf, Indiana], [Indiana, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_12",
+        "input_text": "Alpharetta is part of Fulton County (Georgia) where the largest city is Atlanta.",
+        "response": "[Alpharetta, isPartOf, Fulton County], [Fulton County, largestCity, Atlanta]:(Fulton County, largestCity, Place)"
+    },
+    {
+        "id": "2_City_test_13",
+        "input_text": "Attica (Indiana) is in Fountain County United States.",
+        "response": "[Attica, IN, Place], [Attica, isPartOf, Fountain County], [Fountain County, isPartOf, United States]:(County, isPartOf, Place), [Attica, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_14",
+        "input_text": "Attica (Indiana) is located in the state of Indiana in the United States.",
+        "response": "[Attica (Indiana), isPartOf, Indiana]:(Place, isPartOf, Place), [Attica (Indiana), country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_15",
+        "input_text": "Native Americans are an ethnic group in the United States, where Attica (Indiana) is located.",
+        "response": "[United States, ethnicGroup, Native Americans]:(Place, ethnicGroup, EthnicGroup), [Attica, Indiana, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_16",
+        "input_text": "Attica (Indiana) is located in the United States where African Americans are one of the country's ethnic groups.",
+        "response": "[Attica (Indiana), country, United States]:(Place, country, Place), [United States, ethnicGroup, African Americans]:(Place, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_17",
+        "input_text": "Attica (Indiana) is in the United States, where the capital is Washington, D.C.",
+        "response": "[Attica, state, United States]:(Place, country, Place), [United States, capital, Washington, D.C.]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_18",
+        "input_text": "Attica (Indiana) is part of Fountain County, United States.",
+        "response": "[Attica, isPartOf, Fountain County]:(Place, isPartOf, Place), [Attica, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_19",
+        "input_text": "Attica (Indiana) is a part of Logan Township (Fountain County, Indiana), in the United States.",
+        "response": "[Attica, isPartOf, Logan Township]:(Place, isPartOf, Place), [Attica, isPartOf, Fountain County]:(Place, isPartOf, Place), [Attica, isPartOf, Indiana]:(Place, isPartOf, Place), [Attica, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_20",
+        "input_text": "Attica (Indiana) is part of the United States of America where one of the ethnic groups are Asian Americans.",
+        "response": "[Attica (Indiana), isPartOf, United States of America]:(Place, isPartOf, Place), [United States of America, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_21",
+        "input_text": "Attica (Indiana) is part of the United States, where the capital is Washington, D.C.",
+        "response": "[Attica, isPartOf, United States]:(Place, isPartOf, Place), [United States, capital, Washington, D.C.]:(Country, capital, Place)"
+    },
+    {
+        "id": "2_City_test_22",
+        "input_text": "Albany (Oregon) is a city in Linn County (Oregon) and part of Benton County (Oregon).",
+        "response": "[Albany, isPartOf, Linn County], [Albany, isPartOf, Benton County]:(City, isPartOf, County)"
+    },
+    {
+        "id": "2_City_test_23",
+        "input_text": "The United States includes the ethnic group of African Americans and is the location of Albany (Oregon).",
+        "response": "[Africa Americans, ethnicGroup, African Americans]:(EthnicGroup, ethnicGroup, EthnicGroup), [Albany, Oregon, capital, Albany]:(City, capital, Place), [Albany, Oregon, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_24",
+        "input_text": "Albany (Georgia) is located in the state of Georgia, United States.",
+        "response": "[Albany, isPartOf, Georgia]:(Place, isPartOf, Place), [Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_25",
+        "input_text": "Albany (Georgia) is in Dougherty County and Asian Americans are an ethnic group in the United States.",
+        "response": "[Albany, isPartOf, Dougherty County]:(Place, isPartOf, Place), [United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_26",
+        "input_text": "The United States has an ethnic group called Native Americans and is where you will find Albany (Oregon).",
+        "response": "[Albany, isPartOf, Oregon], [Oregon, ethnicGroup, Native Americans], [United States, ethnicGroup, Native Americans]"
+    },
+    {
+        "id": "2_City_test_27",
+        "input_text": "The population density of Albany (Georgia) is 535 inhabitants per square kilometre and the total area is 144.7 SqKm.",
+        "response": "[Albany (Georgia), populationDensity, 535]:(City, populationDensity, number), [Albany (Georgia), areaTotal, 144.7]:(Place, areaTotal, number)"
+    },
+    {
+        "id": "2_City_test_28",
+        "input_text": "Portland (Oregon) is the largest city in Oregon which also includes Albany (Oregon).",
+        "response": "[Portland (Oregon), largestCity, Oregon]:(Place, largestCity, Place), [Oregon, capital, Albany (Oregon)]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_29",
+        "input_text": "Albany (Georgia) is found within the United States where one of the ethnic groups are the African Americans.",
+        "response": "[Albany, ethnicGroup, African Americans]:(Place, ethnicGroup, EthnicGroup), [Albany, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_30",
+        "input_text": "Native Americans are an ethnic group in the United States, where Albany (Georgia) can be found.",
+        "response": "[United States, ethnicGroup, Native Americans]:(Place, ethnicGroup, EthnicGroup), [Albany, Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_31",
+        "input_text": "Albany (Georgia) is in the United States which uses the English language.",
+        "response": "[Albany (Georgia), country, United States]:(Place, country, Place), [United States, language, English]:(Place, language, Language)"
+    },
+    {
+        "id": "2_City_test_32",
+        "input_text": "Albany (Georgia) is located in the state of Georgia, of which Atlanta is the capital.",
+        "response": "[Albany, isPartOf, Georgia]:((Place, isPartOf, Place)), [Georgia, capital, Atlanta]:((Place, capital, Place))"
+    },
+    {
+        "id": "2_City_test_33",
+        "input_text": "Albany (Oregon) is located within the United States which has the capital of Washington, D.C.",
+        "response": "[Albany, isPartOf, United States], [United States, capital, Washington, D.C.]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_34",
+        "input_text": "Albany (Oregon) is located within the United States, where one of the ethnic groups is Asian Americans.",
+        "response": "[Albany, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup), [Albany, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_35",
+        "input_text": "Albany (Georgia) is in the United States, home to a number of ethnic groups including, African Americans.",
+        "response": "[Albany, country, United States]:(Place, country, Place), [United States, ethnicGroup, African Americans]:(Place, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_36",
+        "input_text": "Albany (Georgia) is part of Dougherty County in the United States.",
+        "response": "[Douglas County, isPartOf, Albany (Georgia)]:(Place, isPartOf, Place), [Albany (Georgia), country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_37",
+        "input_text": "English is spoken in the United States, where Albany (Oregon) can be found.",
+        "response": "[United States, language, English]:(Place, language, Language), [Albany, Oregon, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_38",
+        "input_text": "Albany (Georgia) is in the United States whose capital city is Washington, D.C.",
+        "response": "[Albany, Georgia, country, United States]:(Place, country, Place), [United States, capital, Washington, D.C.]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_39",
+        "input_text": "Albany (Georgia) is in the United States where Asian Americans are an ethnic group.",
+        "response": "[Albany, country, United States], [United States, ethnicGroup, Asian Americans]:(Place, ethnicGroup, EthnicGroup)"
+    },
+    {
+        "id": "2_City_test_40",
+        "input_text": "Atlanta is mostly part of DeKalb County (Georgia) in Georgia.",
+        "response": "[Atlanta, isPartOf, DeKalb County], [DeKalb County, isPartOf, Georgia]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_41",
+        "input_text": "Alpharetta is located in the state of Georgia in the United States.",
+        "response": "[Alpharetta, isPartOf, Georgia]:(Place, isPartOf, Place), [Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_42",
+        "input_text": "Atlanta is part of Fulton County (Georgia), Georgia.",
+        "response": "[Fulton County (Georgia), isPartOf, Atlanta]:(Place, isPartOf, Place), [Atlanta, isPartOf, Fulton County (Georgia)]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_43",
+        "input_text": "Alpharetta is part of the state of Georgia located in the United States.",
+        "response": "[Alpharetta, isPartOf, Georgia]:(Place, isPartOf, Place), [Georgia, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_44",
+        "input_text": "Atlanta is located within the state of Georgia, in the United States.",
+        "response": "[Atlanta, isPartOf, Georgia]:(Place, isPartOf, Place), [Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_45",
+        "input_text": "Atlanta is part of DeKalb County (Georgia), United States.",
+        "response": "[Atlanta, isPartOf, DeKalb County], [DeKalb County, isPartOf, Georgia], [Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_46",
+        "input_text": "Atlanta is part of DeKalb County (Georgia) in United States.",
+        "response": "[Atlanta, isPartOf, DeKalb County], [DeKalb County, isPartOf, Georgia], [Georgia, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_47",
+        "input_text": "Atlanta is part of DeKalb County (Georgia) where Dunwoody is the largest city.",
+        "response": "[Atlanta, isPartOf, DeKalb County], [DeKalb County, isPartOf, Georgia], [Dunwoody, largestCity, Place]"
+    },
+    {
+        "id": "2_City_test_48",
+        "input_text": "Atlanta is part of Fulton County (Georgia) but most of it is located in DeKalb County (Georgia).",
+        "response": "[Fulton County, Georgia, isPartOf, Organisation]:([Fulton County, isPartOf, Organisation]), [Atlanta, isPartOf, Fulton County]:([Place, isPartOf, Place]), [Atlanta, isPartOf, DeKalb County]:([Place, isPartOf, Place])"
+    },
+    {
+        "id": "2_City_test_49",
+        "input_text": "Atlanta is part of Fulton County (Georgia), United States.",
+        "response": "[Fulton County (Georgia), isPartOf, Atlanta]:(Place, isPartOf, Place), [Atlanta, isPartOf, Fulton County (Georgia)]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_50",
+        "input_text": "Alpharetta is part of Fulton County (Georgia), in the United States.",
+        "response": "[Alpharetta, isPartOf, Fulton County], [Fulton County, isPartOf, Georgia], [Alpharetta, country, United States]"
+    },
+    {
+        "id": "2_City_test_51",
+        "input_text": "Alpharetta is part of Fulton County (Georgia) in the United States.",
+        "response": "[Alpharetta, isPartOf, Fulton County]:(Place, isPartOf, Place), [Fulton County, isPartOf, Georgia]:(Place, isPartOf, Place), [Fulton County, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_52",
+        "input_text": "Alexandria (Indiana) with total area of 6.81 sq km, has a population density of 755.3 inhabitants per square kilometre.",
+        "response": "[Alexandria (Indiana), areaTotal, 6.81]: (Place, areaTotal, number), [Alexandria (Indiana), populationDensity, 755.3]: (Place, populationDensity, number)"
+    },
+    {
+        "id": "2_City_test_53",
+        "input_text": "Alexandria (Indiana) is part of Indiana, where the capital is Indianapolis.",
+        "response": "[Alexandria (Indiana), isPartOf, Indiana]:(Place, isPartOf, Place), [Indiana, capital, Indianapolis]:(Place, capital, Place)"
+    },
+    {
+        "id": "2_City_test_54",
+        "input_text": "Alexandria (Indiana) is part of the state of Indiana, which can be found in the United States.",
+        "response": "[Alexandria, isPartOf, Indiana]:(Place, isPartOf, Place), [Indiana, isPartOf, United States]:(Place, isPartOf, Place)"
+    },
+    {
+        "id": "2_City_test_55",
+        "input_text": "Alexandria (Indiana) is part of Madison County (Indiana), United States.",
+        "response": "[Alexandria, isPartOf, Madison County]:(Place, isPartOf, Place), [Alexandria, country, United States]:(Place, country, Place)"
+    },
+    {
+        "id": "2_City_test_56",
+        "input_text": "Alexandria (Indiana) is part of the Monroe Township (Madison County, Indiana), in the United States.",
+        "response": "[Alexandria, IN, isPartOf, Monroe Township], [Monroe Township, isPartOf, Madison County], [Madison County, isPartOf, Indiana], [Indiana, isPartOf, United States]:(Place, isPartOf, Place)"
+    }
+]

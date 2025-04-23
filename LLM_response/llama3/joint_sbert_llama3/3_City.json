@@ -1,0 +1,287 @@
+[
+  {
+    "id": "3_City_test_1",
+    "input_text": "Alexandria (Indiana) is part of Madison County (Indiana), located in the state of Indiana, whose capital is Indianapolis.",
+    "response": "[Alexandria, isPartOf, Madison County]:(City, isPartOf, County), [Alexandria, isPartOf, Indiana]:(City, isPartOf, State), [Madison County, isPartOf, Indiana]:(County, isPartOf, State), [Indiana, capital, Indianapolis]:(State, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_2",
+    "input_text": "The United States uses the English language, includes the ethnic group of African Americans and is the location of Albany (Oregon).",
+    "response": "Here is the constructed knowledge graph based on the input text:\n\n[United States, language, English]:(Country, language, Language)\n[United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup)\n[Albany, country, United States]:(City, country, Country)\n[Albany, location, United States]:(Place, location, Place)\n[Albany, leaderTitle, Governor]:(Place, leaderTitle, PersonFunction)\n\nNote: The output follows the exact format specified in the example, with no additional text or explanations."
+  },
+  {
+    "id": "3_City_test_3",
+    "input_text": "Alpharetta is part of Fulton County (Georgia), Georgia in the United States.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Alpharetta, isPartOf, Fulton County]\n[Fulton County, isPartOf, Georgia]\n[Georgia, country, United States]\n[Alpharetta, country, United States]\n\nNote that I've followed the ontology schema's entity types, relations, and hierarchy to construct the triples. The output format matches the example provided, with no additional text or explanations."
+  },
+  {
+    "id": "3_City_test_4",
+    "input_text": "The United States is home to an ethnic group called Asian Americans and is where you will find Alpharetta, which is in the state of Georgia.",
+    "response": "Here is the constructed knowledge graph based on the input text:\n\n[United States, country, United States]:(Country, country, Country)\n[United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)\n[United States, state, Georgia]:(Country, state, State)\n[Georgia, state, United States]:(State, state, Country)\n[Alpharetta, place, Alpharetta]:(Place, place, Place)\n[Alpharetta, country, United States]:(Place, country, Country)\n[Alpharetta, state, Georgia]:(Place, state, State)"
+  },
+  {
+    "id": "3_City_test_5",
+    "input_text": "Albany (Oregon) is part of Benton County (Oregon) in the United States, with Washington, D.C. as its capital.",
+    "response": "[Oregon, county, Benton County]:(State, county, County), [Benton County, isPartOf, Oregon]:(County, isPartOf, State), [Albany, isPartOf, Oregon]:(City, isPartOf, State), [Oregon, country, United States]:(State, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, City)"
+  },
+  {
+    "id": "3_City_test_6",
+    "input_text": "Attica (Indiana) is in Fountain County in the United States Washington, D.C. is the capital of the United States.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Attica, isPartOf, Fountain County]:(Town, isPartOf, County), [Fountain County, country, United States]:(County, country, Country), [Attica, isPartOf, Indiana]:(Town, isPartOf, State), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_7",
+    "input_text": "Atlanta is located in Fulton County (Georgia), Georgia in the United States.",
+    "response": "[Atlanta, isPartOf, Fulton County]:(Place, isPartOf, County), [Atlanta, isPartOf, Georgia]:(Place, isPartOf, State), [Atlanta, isPartOf, United States]:(Place, isPartOf, Country), [Atlanta, country, United States]:(Place, country, Country)"
+  },
+  {
+    "id": "3_City_test_8",
+    "input_text": "Atlanta is located within the state of Georgia in the United States, where Asian Americans are an ethnic group.",
+    "response": "Here is the output based on the input text:\n\n[Atlanta, country, United States]\n[Atlanta, state, Georgia]\n[Atlanta, country, United States]\n[United States, ethnicGroup, Asian Americans]\n\nNote that the output follows the format specified in the example, with no additional text or explanations. The triples are constructed based on the ontology schema and the input text."
+  },
+  {
+    "id": "3_City_test_9",
+    "input_text": "Most of Atlanta is part of DeKalb County (Georgia) in the United States. An ethnic group in the United States is Asian Americans.",
+    "response": "[Atlanta, isPartOf, DeKalb County]\n[DeKalb County, isPartOf, Georgia]\n[DeKalb County, country, United States]\n[United States, ethnicGroup, Asian Americans]"
+  },
+  {
+    "id": "3_City_test_10",
+    "input_text": "Albany (Oregon) is located in the United States, where Native Americans are an ethnic group and where the capital city is Washington, D.C.",
+    "response": "[United States, capital, Washington, D.C.]:(Country, capital, CapitalCity), [United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup), [Albany, country, United States]:(City, country, Country), [Albany, capital, Washington, D.C.]:(City, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_11",
+    "input_text": "Attica (Indiana) is part of Logan Township (Fountain County, Indiana) in the United States whose caiptal city is Washington, D.C.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Attica, isPartOf, Logan Township]:(City, isPartOf, Town), [Attica, isPartOf, Indiana]:(City, isPartOf, State), [Indiana, country, United States]:(State, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_12",
+    "input_text": "The United States, which has the capital city of Washington, D.C., is also the location of Attica (Indiana), part of Fountain County.",
+    "response": "[Washington, D.C., capital, United States]:(CapitalCity, capital, Country), [United States, location, Attica, Indiana]:(Country, location, Place), [United States, isPartOf, Fountain County]:(Country, isPartOf, County)"
+  },
+  {
+    "id": "3_City_test_13",
+    "input_text": "Attica (Indiana) in the United States is part of Indiana where the capital is Indianapolis.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Attica, isPartOf, Indiana]:(PopulatedPlace, isPartOf, State), [Attica, country, UnitedStates]:(PopulatedPlace, country, Country), [Indiana, capital, Indianapolis]:(State, capital, CapitalCity), [Indianapolis, isPartOf, Indiana]:(CapitalCity, isPartOf, State)"
+  },
+  {
+    "id": "3_City_test_14",
+    "input_text": "The United States, which has the capital city of Washington, D.C., is the location of Attica (Indiana), part of the state of Indiana.",
+    "response": "[Attica, country, United States]:(PopulatedPlace, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity), [United States, location, Attica]:(Country, location, PopulatedPlace), [Attica, state, Indiana]:(PopulatedPlace, state, State), [Indiana, location, Attica]:(State, location, PopulatedPlace)"
+  },
+  {
+    "id": "3_City_test_15",
+    "input_text": "Albany (Georgia) is located in Dougherty County in the United States. Native Americans are an ethnic group in the United States.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Albany, country, United States]\n[United States, ethnicGroup, Native Americans]\n[United States, country, United States]\n[Albany, isPartOf, United States]\n[Albany, isPartOf, Dougherty County]\n[Dougherty County, isPartOf, United States]\n[United States, capital, Washington, D.C.]"
+  },
+  {
+    "id": "3_City_test_16",
+    "input_text": "Albany (Oregon) is in the United States where English is the language spoken. Native Americans are an ethnic group in the United States.",
+    "response": "[United States, language, English]:(Country, language, Language)\n[Albany (Oregon), country, United States]:(City, country, Country)\n[United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_17",
+    "input_text": "Albany (Georgia) is a city in Dougherty County, Georgia in the United States.",
+    "response": "[Albany, country, United States]\n[Albany, county, Dougherty County]\n[Albany, place, Place]\n[Dougherty County, place, Place]\n[United States, place, Place]\n[Albany, isPartOf, Dougherty County]\n[Dougherty County, isPartOf, United States]\n[Albany, country, United States]"
+  },
+  {
+    "id": "3_City_test_18",
+    "input_text": "Albany (Georgia) is located in the state of Georgia in the United States where African Americans are an ethnic group.",
+    "response": "[Albany, country, United States]\n[United States, state, Georgia]\n[Georgia, state, United States]\n[Albany, ethnicGroup, African Americans]"
+  },
+  {
+    "id": "3_City_test_19",
+    "input_text": "The Asian Americans are an ethnic group in the United States, where English is spoken and Albany (Oregon) is located.",
+    "response": "Here is the output based on the input text:\n\n[Asian Americans, ethnicGroup, EthnicGroup]\n[United States, ethnicGroup, Asian Americans]\n[United States, language, English]\n[Albany, country, United States]\n[Albany, location, Oregon]\n\nNote: I extracted the following triples based on the ontology schema and the input text:\n\n* [Asian Americans, ethnicGroup, EthnicGroup] (Asian Americans are an ethnic group)\n* [United States, ethnicGroup, Asian Americans] (Asian Americans are an ethnic group in the United States)\n* [United States, language, English] (English is spoken in the United States)\n* [Albany, country, United States] (Albany is located in the United States)\n* [Albany, location, Oregon] (Albany is located in Oregon)"
+  },
+  {
+    "id": "3_City_test_20",
+    "input_text": "Albany (Oregon) falls under Linn County (Oregon) in the United States whose capital city is Washington, D.C.",
+    "response": "[Albany, isPartOf, Linn County]:(City, isPartOf, County), [Linn County, country, United States]:(County, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_21",
+    "input_text": "Washington, D.C. is the capital of the United States, where you will find Albany (Oregon) and where one of the ethnic groups are the African Americans.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Washington, D.C., country, United States]:(Place, country, Country)\n[United States, capital, Washington, D.C.]:(Country, capital, CapitalCity)\n[United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup)\n[Washington, D.C., areaCode,?]:(Place, areaCode, Code)\n[Washington, D.C., language,?]:(Place, language, Language)\n[Washington, D.C., leader,?]:(Place, leader, Person)\n[Washington, D.C., leaderTitle,?]:(Place, leaderTitle, PersonFunction)\n[Washington, D.C., populationDensity,?]:(Place, populationDensity, number)\n[Washington, D.C., populationMetro,?]:(Place, populationMetro, number)\n[Washington, D.C., timeZone,?]:(Place, timeZone, TopicalConcept)\n[Washington, D.C., governmentType,?]:(Place, governmentType, TopicalConcept)\n\nNote: The values for areaCode, language, leader, leaderTitle, populationDensity, populationMetro, timeZone, and governmentType are not provided in the input text, so"
+  },
+  {
+    "id": "3_City_test_22",
+    "input_text": "The Native Americans are an ethnic group within the United States which is the location of the city of Albany (Oregon), Oregon.",
+    "response": "[United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup), [United States, demonym, Americans]:(Country, demonym, EthnicGroup), [Albany, country, United States]:(City, country, Country), [Albany, location, Oregon]:(City, location, State), [Oregon, isPartOf, United States]:(State, isPartOf, Country)"
+  },
+  {
+    "id": "3_City_test_23",
+    "input_text": "Albany (Oregon), Linn County (Oregon) is located in the United States where Asian Americans are an ethnic group.",
+    "response": "Here is the output:\n\n[Albany, isPartOf, Linn County]:(City, isPartOf, County)\n[Linn County, country, United States]:(County, country, Country)\n[United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_24",
+    "input_text": "Albany (Oregon) is part of Benton County (Oregon), in the United States, where African Americans are one of the ethnic groups.",
+    "response": "[African Americans, ethnicGroup, (TopicalConcept)]:(EthnicGroup, isPartOf, TopicalConcept)\n[Albany, country, United States]:(City, country, Country)\n[Albany, isPartOf, Benton County]:(City, isPartOf, County)\n[Albany, isPartOf, Oregon]:(City, isPartOf, State)\n[Benton County, country, United States]:(County, country, Country)\n[Benton County, isPartOf, Oregon]:(County, isPartOf, State)"
+  },
+  {
+    "id": "3_City_test_25",
+    "input_text": "Albany (Georgia) is part of Dougherty County in Georgia and the state's capital is Atlanta.",
+    "response": "[Albany, isPartOf, Dougherty County]:(Place, isPartOf, County), [Dougherty County, isPartOf, Georgia]:(County, isPartOf, State), [Georgia, capital, Atlanta]:(State, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_26",
+    "input_text": "Albany (Oregon), Oregon is a city in Linn County (Oregon) within the United States.",
+    "response": "[Albany, country, United States]:(City, country, Country), [Albany, isPartOf, Oregon]:(City, isPartOf, State), [Albany, isPartOf, Linn County]:(City, isPartOf, County)"
+  },
+  {
+    "id": "3_City_test_27",
+    "input_text": "Albany (Georgia) is a city in Dougherty County in the United States where African Americans are an ethnic group.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[Albany, country, United States]\n[Albany, county, Dougherty County]\n[Albany, ethnicGroup, African Americans]\n[Albany, location, Dougherty County]\n[Albany, country, United States]"
+  },
+  {
+    "id": "3_City_test_28",
+    "input_text": "English is the language of the United States which includes the ethnic group of Asian Americans and is the location of Albany (Georgia).",
+    "response": "[United States, language, English]:(Country, language, Language), [United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup), [United States, location, Albany]:(Country, location, Place), [Albany, country, United States]:(Place, country, Country)"
+  },
+  {
+    "id": "3_City_test_29",
+    "input_text": "The United States contain the ethnic group of Asian Americans, has the capital of Washington, D.C. and is the location of Albany (Oregon).",
+    "response": "[Albany, country, United States]:(City, country, Country), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity), [United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_30",
+    "input_text": "Albany (Oregon) is part of Benton County (Oregon), which is located in Oregon in the United States.",
+    "response": "[Albany, isPartOf, Benton County]:(City, isPartOf, County)\n[Benton County, isPartOf, Oregon]:(County, isPartOf, State)\n[Albany, country, United States]:(City, country, Country)\n[Albany, location, Oregon]:(City, location, State)"
+  },
+  {
+    "id": "3_City_test_31",
+    "input_text": "Albany (Oregon) is part of Oregon in the United States, where the capital is Washington, D.C.",
+    "response": "Here is the output:\n\n[Albany, isPartOf, Oregon]\n[Oregon, country, United States]\n[United States, capital, Washington, D.C.]\n\nNote that I extracted the following triples:\n\n1. Albany is part of Oregon (based on the relation \"isPartOf\" between Place and Place)\n2. Oregon is part of the United States (based on the relation \"country\" between State and Country)\n3. The United States has Washington, D.C. as its capital (based on the relation \"capital\" between Country and CapitalCity)"
+  },
+  {
+    "id": "3_City_test_32",
+    "input_text": "Albany (Oregon) is located at 64.008 above sea level and its population density is 1104.1 persons per sq. km. Its total area is 45.97 sq. km.",
+    "response": "[Albany, elevationAboveTheSeaLevel, 64.008]:(City, elevationAboveTheSeaLevel, number), [Albany, populationDensity, 1104.1]:(City, populationDensity, number), [Albany, areaTotal, 45.97]:(City, areaTotal, number)"
+  },
+  {
+    "id": "3_City_test_33",
+    "input_text": "Albany (Oregon) is a city in Oregon, where the capital is Salem (Oregon). Oregon is in the United States.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Albany, isPartOf, Oregon]:(City, isPartOf, State)\n[Albany, capital, Salem]:(City, capital, City)\n[Oregon, country, United States]:(State, country, Country)\n[Oregon, capital, Salem]:(State, capital, City)"
+  },
+  {
+    "id": "3_City_test_34",
+    "input_text": "Albany (Oregon), Oregon is located within the United States where Asian Americans are an ethnic group.",
+    "response": "[Albany, country, United States]:(City, country, Country), [United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_35",
+    "input_text": "English is spoken in the United States, where Native Americans are an ethnic group and where Albany (Georgia) can be found.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[United States, language, English]:(Country, language, Language)\n[United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)\n[United States, location, Albany]:(Country, location, Place)\n[Albany, country, United States]:(City, country, Country)\n[Albany, location, Georgia]:(City, location, State)"
+  },
+  {
+    "id": "3_City_test_36",
+    "input_text": "Albany (Georgia) has a population density of 535 people per square kilometer, its total area is 144.7 sq kms and is elevated 62 meters above sea level.",
+    "response": "[Albany, elevationAboveTheSeaLevel, 62]:(City, elevationAboveTheSeaLevel, number), [Albany, populationDensity, 535]:(City, populationDensity, number), [Albany, areaTotal, 144.7]:(City, areaTotal, number)"
+  },
+  {
+    "id": "3_City_test_37",
+    "input_text": "Albany (Oregon) is in Oregon in the United States where African Americans are part of an ethnic group.",
+    "response": "[Auburn, country, United States]:(City, country, Country), [United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup), [United States, capital, Washington, D.C.]:(Country, capital, CapitalCity), [Oregon, state, United States]:(State, state, Country), [Albany, city, Oregon]:(City, city, Place), [Albany, country, United States]:(City, country, Country), [Albany, ethnicGroup, African Americans]:(City, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_38",
+    "input_text": "Albany (Georgia) is in the state of Georgia in the United States. Asian Americans are an ethnic group in the United States.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Albany, country, United States]\n[United States, state, Georgia]\n[Georgia, country, United States]\n[United States, ethnicGroup, Asian Americans]\n[United States, isPartOf, World]\n\nNote: I assume that \"Albany\" is a city, and \"Georgia\" is a state. I also assume that \"Asian Americans\" is an ethnic group. The relation \"isPartOf\" is inferred based on the hierarchy in the ontology schema."
+  },
+  {
+    "id": "3_City_test_39",
+    "input_text": "The United States, which includes the African Americans among its ethnic groups, is the location of Atlanta, Georgia.",
+    "response": "Here is the output based on the given ontology schema and the input text:\n\n[United States, location, Atlanta]:(Country, location, Place), [United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup), [Atlanta, location, United States]:(Place, location, Country)"
+  },
+  {
+    "id": "3_City_test_40",
+    "input_text": "Alpharetta is part of Fulton County (Georgia), Georgia, in the United States.",
+    "response": "[Alpharetta, isPartOf, Fulton County]\n[Fulton County, isPartOf, Georgia]\n[Georgia, isPartOf, United States]\n[Alpharetta, country, United States]\n[Alpharetta, isPartOf, Georgia]\n[Georgia, country, United States]"
+  },
+  {
+    "id": "3_City_test_41",
+    "input_text": "Atlanta is part of DeKalb County (Georgia) in Georgia in the United States.",
+    "response": "Here is the output:\n\n[Atlanta, isPartOf, DeKalb County]:(Place, isPartOf, County), [Atlanta, country, United States]:(Place, country, Country), [Atlanta, state, Georgia]:(Place, state, State), [DeKalb County, state, Georgia]:(County, state, State)"
+  },
+  {
+    "id": "3_City_test_42",
+    "input_text": "Atlanta is part of Fulton County (Georgia), Georgia in the United States.",
+    "response": "[Atlanta, isPartOf, Fulton County]:(Place, isPartOf, County), [Atlanta, country, United States]:(Place, country, Country), [Fulton County, state, Georgia]:(County, state, State), [Georgia, country, United States]:(State, country, Country)"
+  },
+  {
+    "id": "3_City_test_43",
+    "input_text": "Most of Atlanta is part of DeKalb County (Georgia) in Georgia, United States.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[DeKalb County, isPartOf, Georgia]:(County, isPartOf, State)\n[DeKalb County, country, United States]:(County, country, Country)\n[DeKalb County, location, Atlanta]:(County, location, Place)\n[Atlanta, isPartOf, DeKalb County]:(Place, isPartOf, County)\n[Atlanta, country, United States]:(Place, country, Country)\n[Atlanta, state, Georgia]:(Place, state, State)"
+  },
+  {
+    "id": "3_City_test_44",
+    "input_text": "Alpharetta is part of the state of Georgia in the United States, where African Americans are one of the country's ethnic group.",
+    "response": "Here is the constructed knowledge graph based on the given ontology schema and input text:\n\n[Alpharetta, isPartOf, Georgia]:(Place, isPartOf, State)\n[Alpharetta, country, United States]:(Place, country, Country)\n[United States, ethnicGroup, African Americans]:(Country, ethnicGroup, EthnicGroup)\n[Georgia, country, United States]:(State, country, Country)\n\nNote that I've used the ontology schema to extract the relevant triples based on the input text. Let me know if this meets your requirements!"
+  },
+  {
+    "id": "3_City_test_45",
+    "input_text": "Most of Atlanta, United States is part of DeKalb County (Georgia). Native Americans are an ethnic group in the United States.",
+    "response": "[Atlanta, isPartOf, DeKalb County]:(Place, isPartOf, Place), [DeKalb County, country, United States]:(County, country, Country), [United States, ethnicGroup, Native Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_46",
+    "input_text": "Atlanta is located in the United States and is part of Fulton County (Georgia) and DeKalb County (Georgia).",
+    "response": "[Atlanta, isPartOf, United States]\n[Atlanta, isPartOf, Fulton County]\n[Atlanta, isPartOf, DeKalb County]\n[Atlanta, country, United States]\n[United States, country, Country]\n[Fulton County, isPartOf, Georgia]\n[DeKalb County, isPartOf, Georgia]\n[Georgia, country, Country]"
+  },
+  {
+    "id": "3_City_test_47",
+    "input_text": "Alpharetta is part of Fulton County (Georgia) in the United States. The United States is home to an ethnic group called African Americans.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Alpharetta, isPartOf, Fulton County]\n[Fulton County, isPartOf, United States]\n[Alpharetta, country, United States]\n[United States, ethnicGroup, African Americans]\n\nLet me explain the reasoning behind the output:\n\n* \"Alpharetta is part of Fulton County\" corresponds to the relation (Place, isPartOf, Place) in the ontology schema, where Alpharetta is a Place and Fulton County is also a Place.\n* \"Fulton County is part of United States\" corresponds to the relation (Place, isPartOf, Place) in the ontology schema, where Fulton County is a Place and United States is also a Place.\n* \"Alpharetta's country is United States\" corresponds to the relation (Place, country, Place) in the ontology schema, where Alpharetta is a Place and United States is a Country.\n* \"United States has an ethnic group called African Americans\" corresponds to the relation (Place, ethnicGroup, EthnicGroup) in the ontology schema, where United States is a Place and African Americans is an EthnicGroup."
+  },
+  {
+    "id": "3_City_test_48",
+    "input_text": "Atlanta is part of Fulton County (Georgia) in the United States where Asian Americans are one of the ethnic groups.",
+    "response": "[Atlanta, isPartOf, Fulton County]:(City, isPartOf, County)\n[Fulton County, country, United States]:(County, country, Country)\n[Atlanta, country, United States]:(City, country, Country)\n[Atlanta, ethnicGroup, Asian Americans]:(City, ethnicGroup, EthnicGroup)\n[United States, ethnicGroup, Asian Americans]:(Country, ethnicGroup, EthnicGroup)"
+  },
+  {
+    "id": "3_City_test_49",
+    "input_text": "Atlanta is part of Fulton County (Georgia) in the United States. One ethnic group in the United States are Native Americans.",
+    "response": "Here is the output based on the given ontology schema and input text:\n\n[Atlanta, isPartOf, Fulton County]\n[Fulton County, isPartOf, Georgia]\n[Georgia, isPartOf, United States]\n[United States, ethnicGroup, Native Americans]"
+  },
+  {
+    "id": "3_City_test_50",
+    "input_text": "Alexandria (Indiana) is part of Madison County (Indiana) in the United States. The largest city in Madison County (Indiana) is Anderson (Indiana).",
+    "response": "[Alexandria, isPartOf, Madison County]:(Town, isPartOf, County), [Alexandria, isPartOf, Indiana]:(Town, isPartOf, State), [Madison County, country, United States]:(County, country, Country), [Anderson, isPartOf, Madison County]:(City, isPartOf, County), [Anderson, isPartOf, Indiana]:(City, isPartOf, State)"
+  },
+  {
+    "id": "3_City_test_51",
+    "input_text": "Alexandria (Indiana), Indiana is part of Monroe Township (Madison County, Indiana). Indianapolis is the capital of that state.",
+    "response": "[Alexandria, isPartOf, Indiana]:(PopulatedPlace, isPartOf, County), [Indiana, isPartOf, Monroe Township]:(State, isPartOf, County), [Monroe Township, isPartOf, Madison County]:(County, isPartOf, County), [Indiana, capital, Indianapolis]:(State, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_52",
+    "input_text": "Alexandria (Indiana) is in Indiana, United States whose capital is Indianapolis.",
+    "response": "[Alexandria, isPartOf, Indiana]:(City, isPartOf, State), [Alexandria, country, United States]:(City, country, Country), [Alexandria, capital, Indianapolis]:(City, capital, CapitalCity), [Indiana, capital, Indianapolis]:(State, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_53",
+    "input_text": "Alexandria (Indiana), Indiana in the United States is part of Madison County (Indiana).",
+    "response": "[Alexandria, isPartOf, Madison County]:(City, isPartOf, County), [Alexandria, isPartOf, Indiana]:(City, isPartOf, State), [Indiana, country, United States]:(State, country, Country)"
+  },
+  {
+    "id": "3_City_test_54",
+    "input_text": "Alexandria (Indiana), Indiana, United States is part of Monroe Township (Madison County, Indiana).",
+    "response": "[Alexandria, isPartOf, Monroe Township]:(City, isPartOf, Township), [Indiana, country, United States]:(State, country, Country), [Alexandria, isPartOf, Indiana]:(City, isPartOf, State]"
+  },
+  {
+    "id": "3_City_test_55",
+    "input_text": "Alexandria (Indiana) is part of the Monroe Township (Madison County, Indiana), Indiana and the capital of Indiana is Indianapolis.",
+    "response": "[Alexandria, isPartOf, Monroe Township]:(City, isPartOf, Township)\n[Monroe Township, isPartOf, Madison County]:(Township, isPartOf, County)\n[Monroe Township, isPartOf, Indiana]:(Township, isPartOf, State)\n[Indiana, capital, Indianapolis]:(State, capital, CapitalCity)"
+  },
+  {
+    "id": "3_City_test_56",
+    "input_text": "Alexandria (Indiana) is part of the Monroe Township (Madison County, Indiana), Indiana, United States.",
+    "response": "[Alexandria, isPartOf, Monroe Township]:(City, isPartOf, Town), [Indiana, country, United States]:(State, country, Country), [Monroe Township, isPartOf, Indiana]:(Town, isPartOf, State]"
+  },
+  {
+    "id": "3_City_test_57",
+    "input_text": "Alexandria (Indiana), Indiana is part of Madison County (Indiana), United States.",
+    "response": "[Alexandria, isPartOf, Madison County]:(City, isPartOf, County), [Alexandria, isPartOf, Indiana]:(City, isPartOf, State), [Indiana, country, United States]:(State, country, Country)"
+  }
+]

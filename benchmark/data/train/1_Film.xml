@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Film" id="1_Film_train_1">
+      <text>Cecil Parker had a main role in It's Great to Be Young.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>starring</rel>
+          <obj>Cecil_Parker</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_2">
+      <text>The movie "Super Capers" was directed by Ray Griggs.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>director</rel>
+          <obj>Ray_Griggs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_3">
+      <text>Adam West was born in the year 1928.</text>
+      <triples>
+        <triple>
+          <sub>Adam_West</sub>
+          <rel>birthYear</rel>
+          <obj>1928</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>birthYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_4">
+      <text>Writer of the 1956 film It's Great to Be Young is Ted Willis.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>writer</rel>
+          <obj>Ted_Willis</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>writer</rel>
+          <obj>ScreenWriter</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_5">
+      <text>HBO and Cinemax are sister stations.</text>
+      <triples>
+        <triple>
+          <sub>HBO</sub>
+          <rel>sisterStation</rel>
+          <obj>Cinemax</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>TelevisionStation</sub>
+          <rel>sisterStation</rel>
+          <obj>TelevisionStation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_6">
+      <text>Death on a Factory Farm was released by HBO.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>broadcastedBy</rel>
+          <obj>HBO</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>broadcastedBy</rel>
+          <obj>TelevisionStation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_7">
+      <text>John Mills died in 2005.</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>deathYear</rel>
+          <obj>2005</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>deathYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_8">
+      <text>Terence Rattigan died in 1977.</text>
+      <triples>
+        <triple>
+          <sub>Terence_Rattigan</sub>
+          <rel>deathYear</rel>
+          <obj>1977</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>deathYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_9">
+      <text>It's Great to Be Young had Gilbert Taylor as cinematographer.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>cinematography</rel>
+          <obj>Gilbert_Taylor</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>cinematography</rel>
+          <obj>Cinematographer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_10">
+      <text>Terence Rattigan was born on 01/01/1911.</text>
+      <triples>
+        <triple>
+          <sub>Terence_Rattigan</sub>
+          <rel>birthDate</rel>
+          <obj>1911-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_11">
+      <text>The owner of HBO is Time Warner.</text>
+      <triples>
+        <triple>
+          <sub>HBO</sub>
+          <rel>owner</rel>
+          <obj>Time_Warner</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>TelevisionStation</sub>
+          <rel>owner</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_12">
+      <text>Terence Rattigan is registered in IMDb under the ID 0711905.</text>
+      <triples>
+        <triple>
+          <sub>Terence_Rattigan</sub>
+          <rel>imdbId</rel>
+          <obj>0711905</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ScreenWriter</sub>
+          <rel>imdbId</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_13">
+      <text>The film McVeagh of the South Seas was produced by the Progressive Motion Picture Company.</text>
+      <triples>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>producer</rel>
+          <obj>The_Progressive_Motion_Picture_Company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>producer</rel>
+          <obj>ProductionCompany</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_14">
+      <text>HBO's former name was 'The Green Channel'.</text>
+      <triples>
+        <triple>
+          <sub>HBO</sub>
+          <rel>formerName</rel>
+          <obj>The_Green_Channel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>TelevisionStation</sub>
+          <rel>formerName</rel>
+          <obj>TelevisionStation</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_15">
+      <text>Tom Sizemore was married to Maeve Quinlan.</text>
+      <triples>
+        <triple>
+          <sub>Tom_Sizemore</sub>
+          <rel>spouse</rel>
+          <obj>Maeve_Quinlan</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>spouse</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_16">
+      <text>McVeagh of the South Seas IMDb ID is 0004319.</text>
+      <triples>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>imdbId</rel>
+          <obj>0004319</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>imdbId</rel>
+          <obj>Code</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_17">
+      <text>Distributor of the movie Super Capers is Roadside Attractions.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>distributor</rel>
+          <obj>Roadside_Attractions</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>distributor</rel>
+          <obj>ProductionCompany</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_18">
+      <text>Roadside Attractions is founded in 2003.</text>
+      <triples>
+        <triple>
+          <sub>Roadside_Attractions</sub>
+          <rel>foundingYear</rel>
+          <obj>2003</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>ProductionCompany</sub>
+          <rel>foundingYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_19">
+      <text>The director of the movie Death on a Factory Farm was Sarah Teale.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>director</rel>
+          <obj>Sarah_Teale</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_20">
+      <text>Tom Sizemore began his career in 1989.</text>
+      <triples>
+        <triple>
+          <sub>Tom_Sizemore</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1989</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_21">
+      <text>Michael R. Burns plays an important role for the company Lionsgate.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>keyPerson</rel>
+          <obj>Michael_R._Burns</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>keyPerson</rel>
+          <obj>BusinessPerson</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_22">
+      <text>Super Capers was written by the director Ray Griggs.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>writer</rel>
+          <obj>Ray_Griggs</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>writer</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_23">
+      <text>The deathplace of John Mills was in Denham (Buckinghamshire).</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>deathPlace</rel>
+          <obj>Denham</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>deathPlace</rel>
+          <obj>Village</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_24">
+      <text>Adam West had a main role in the movie Super Capers.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>starring</rel>
+          <obj>Adam_West</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_25">
+      <text>Jamie Lawrence was born on March 8th, 1970.</text>
+      <triples>
+        <triple>
+          <sub>Jamie_Lawrence</sub>
+          <rel>birthDate</rel>
+          <obj>1970-03-08</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicComposer</sub>
+          <rel>birthDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_26">
+      <text>Harry Carey (actor) was the writer of McVeagh of the South Seas.</text>
+      <triples>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>writer</rel>
+          <obj>Harry_Carey</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>writer</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_27">
+      <text>McVeagh of the South Seas was distributed by Alliance Films Corporation.</text>
+      <triples>
+        <triple>
+          <sub>McVeagh_of_the_South_Seas</sub>
+          <rel>distributor</rel>
+          <obj>Alliance_Films_Corporation</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>distributor</rel>
+          <obj>ProductionCompany</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_28">
+      <text>The film Super Capers starred Justin Whalin.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>starring</rel>
+          <obj>Justin_Whalin</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_29">
+      <text>Harold French started being an active actor in 1920.</text>
+      <triples>
+        <triple>
+          <sub>Harold_French</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1920</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_30">
+      <text>Adam West got his first role in 1954.</text>
+      <triples>
+        <triple>
+          <sub>Adam_West</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>1954</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>activeYearsStartYear</rel>
+          <obj>Year</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_31">
+      <text>The duration of the film 'It's great to be young', from 1956, is 94 minutes.</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>runtime</rel>
+          <obj>94</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_32">
+      <text>John Mills was married to Aileen Raymond.</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>spouse</rel>
+          <obj>Aileen_Raymond</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>spouse</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_33">
+      <text>Lionsgate provides digital distribution service.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>service</rel>
+          <obj>Digital_distribution</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>service</rel>
+          <obj>Service</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_34">
+      <text>Nicholas Brodszky has a non-performing background.</text>
+      <triples>
+        <triple>
+          <sub>Nicholas_Brodszky</sub>
+          <rel>background</rel>
+          <obj>non_performing_personnel</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MusicComposer</sub>
+          <rel>background</rel>
+          <obj>Background</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_35">
+      <text>'Death on a Factory Farm' was produced by Tom Simon.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>producer</rel>
+          <obj>Tom_Simon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>producer</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_36">
+      <text>The location of Lionsgate is in the United States.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>location</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_37">
+      <text>Geof Bartz is the editor of the film Death on a Factory Farm.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>editor</rel>
+          <obj>Geof_Bartz</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>editor</rel>
+          <obj>MovieEditor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_38">
+      <text>Death on a Factory Farm has a duration of 83 minutes.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>runtime</rel>
+          <obj>83</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>runtime</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_39">
+      <text>Super Capers' gross income was $ 30955.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>gross</rel>
+          <obj>30955</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>gross</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_40">
+      <text>The language of the movie Super Capers is English.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>language</rel>
+          <obj>English</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>language</rel>
+          <obj>Language</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_41">
+      <text>Louis Levy is the music composer for the film "It's great to Be Young".</text>
+      <triples>
+        <triple>
+          <sub>It's_Great_to_Be_Young</sub>
+          <rel>musicComposer</rel>
+          <obj>Louis_Levy</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>musicComposer</rel>
+          <obj>MusicComposer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_42">
+      <text>Lionsgate is an entertainment company.</text>
+      <triples>
+        <triple>
+          <sub>Lionsgate</sub>
+          <rel>industry</rel>
+          <obj>Entertainment</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>industry</rel>
+          <obj>Industry</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_43">
+      <text>John Mills is the spouse of Mary Hayley Bell.</text>
+      <triples>
+        <triple>
+          <sub>John_Mills</sub>
+          <rel>spouse</rel>
+          <obj>Mary_Hayley_Bell</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>spouse</rel>
+          <obj>Writer</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_44">
+      <text>Justin Whalin was born in San Francisco.</text>
+      <triples>
+        <triple>
+          <sub>Justin_Whalin</sub>
+          <rel>birthPlace</rel>
+          <obj>San_Francisco</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>birthPlace</rel>
+          <obj>City</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_45">
+      <text>Justin Whalin’s job is a presenter.</text>
+      <triples>
+        <triple>
+          <sub>Justin_Whalin</sub>
+          <rel>occupation</rel>
+          <obj>Presenter</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Actor</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_46">
+      <text>Cyril Frankel was born in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Cyril_Frankel</sub>
+          <rel>birthPlace</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_47">
+      <text>Harold French is born in the United Kingdom.</text>
+      <triples>
+        <triple>
+          <sub>Harold_French</sub>
+          <rel>birthPlace</rel>
+          <obj>United_Kingdom</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>birthPlace</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_48">
+      <text>Super Capers is a film starring Tom Lister, Jr.</text>
+      <triples>
+        <triple>
+          <sub>Super_Capers</sub>
+          <rel>starring</rel>
+          <obj>Tom_Lister,_Jr.</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>starring</rel>
+          <obj>Actor</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_49">
+      <text>Harold French is a film director.</text>
+      <triples>
+        <triple>
+          <sub>Harold_French</sub>
+          <rel>occupation</rel>
+          <obj>Film_director</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_50">
+      <text>Tom Simon is the director of Death on a Factory Farm.</text>
+      <triples>
+        <triple>
+          <sub>Death_on_a_Factory_Farm</sub>
+          <rel>director</rel>
+          <obj>Tom_Simon</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Film</sub>
+          <rel>director</rel>
+          <obj>MovieDirector</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Film" id="1_Film_train_51">
+      <text>Cyril Frankel was a television director.</text>
+      <triples>
+        <triple>
+          <sub>Cyril_Frankel</sub>
+          <rel>occupation</rel>
+          <obj>Television_director</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>MovieDirector</sub>
+          <rel>occupation</rel>
+          <obj>Profession</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

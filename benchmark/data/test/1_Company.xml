@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='utf-8'?>
+<benchmark>
+  <entries>
+    <entry category="1_Company" id="1_Company_test_1">
+      <text>GMA New Media is in the mass media industry.</text>
+      <triples>
+        <triple>
+          <sub>GMA_New_Media</sub>
+          <rel>industry</rel>
+          <obj>Mass_Media</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>industry</rel>
+          <obj>Industry</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_2">
+      <text>Chinabank has a net income of 15100000000.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>netIncome</rel>
+          <obj>15100000000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>netIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_3">
+      <text>AmeriGas was founded on 01-01-1959.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>foundingDate</rel>
+          <obj>1959-01-01</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_4">
+      <text>The President is the leader title of the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Philippines</sub>
+          <rel>leaderTitle</rel>
+          <obj>President</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leaderTitle</rel>
+          <obj>PoliticalFunction</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_5">
+      <text>Michel Temer is the leader of Brazil.</text>
+      <triples>
+        <triple>
+          <sub>Brazil</sub>
+          <rel>leader</rel>
+          <obj>Michel_Temer</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Country</sub>
+          <rel>leader</rel>
+          <obj>President</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_6">
+      <text>Donabate is part of Swords (Dublin).</text>
+      <triples>
+        <triple>
+          <sub>Donabate</sub>
+          <rel>isPartOf</rel>
+          <obj>Swords</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Town</sub>
+          <rel>isPartOf</rel>
+          <obj>Town</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_7">
+      <text>Chinabank was founded on 08-16-1920.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>foundingDate</rel>
+          <obj>1920-08-16</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundingDate</rel>
+          <obj>Date</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_8">
+      <text>Philippine Entertainment Portal's parent company is Summit Media.</text>
+      <triples>
+        <triple>
+          <sub>Philippine_Entertainment_Portal</sub>
+          <rel>parentCompany</rel>
+          <obj>Summit_Media</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>parentCompany</rel>
+          <obj>Company</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_9">
+      <text>Chinabank is a public company.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>type</rel>
+          <obj>Public_company</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>type</rel>
+          <obj>CompanyType</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_10">
+      <text>Chinabank's location is the Philippines.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>location</rel>
+          <obj>Philippines</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_11">
+      <text>Chinabank was founded in the Insular Government of the Philippine Islands.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>foundationPlace</rel>
+          <obj>Insular_Government_of_the_Philippine_Islands</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>AdministrativeRegion</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_12">
+      <text>Chinabank has 5594 employees.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>5594</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_13">
+      <text>Chinabank offers banking service.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>service</rel>
+          <obj>Banking</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>service</rel>
+          <obj>Service</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_14">
+      <text>Manila is Chinabank’s founding place.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>foundationPlace</rel>
+          <obj>Manila</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>foundationPlace</rel>
+          <obj>CapitalCity</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_15">
+      <text>Chinabank has 295 locations.</text>
+      <triples>
+        <triple>
+          <sub>Chinabank</sub>
+          <rel>numberOfLocations</rel>
+          <obj>295</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>numberOfLocations</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_16">
+      <text>The net income of AmeriGas is 211200000.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>netIncome</rel>
+          <obj>211200000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>netIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_17">
+      <text>AmeriGas is located in King of Prussia (Pennsylvania).</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>location</rel>
+          <obj>King_of_Prussia</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>location</rel>
+          <obj>Settlement</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_18">
+      <text>AmeriGas is in the energy industry.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>industry</rel>
+          <obj>Energy_industry</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>industry</rel>
+          <obj>Industry</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_19">
+      <text>AmeriGas works in the country of the United States.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>country</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>country</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_20">
+      <text>AmeriGas has 8500 employees.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>8500</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>numberOfEmployees</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_21">
+      <text>AmeriGas provides its services in the United States.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>serves</rel>
+          <obj>United_States</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>serves</rel>
+          <obj>Country</obj>
+        </schema>
+      </schemas>
+    </entry>
+    <entry category="1_Company" id="1_Company_test_22">
+      <text>AmeriGas has an operating income of $ 380700000.</text>
+      <triples>
+        <triple>
+          <sub>AmeriGas</sub>
+          <rel>operatingIncome</rel>
+          <obj>380700000</obj>
+        </triple>
+      </triples>
+      <schemas>
+        <schema>
+          <sub>Company</sub>
+          <rel>operatingIncome</rel>
+          <obj>number</obj>
+        </schema>
+      </schemas>
+    </entry>
+  </entries>
+</benchmark>

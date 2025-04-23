@@ -1,0 +1,814 @@
+{
+    "title": "2_Airport",
+    "id": "2_Airport",
+    "entity type": [
+        {
+            "id": "AdministrativeRegion",
+            "label": "AdministrativeRegion"
+        },
+        {
+            "id": "Aircraft",
+            "label": "Aircraft"
+        },
+        {
+            "id": "Airline",
+            "label": "Airline"
+        },
+        {
+            "id": "Airport",
+            "label": "Airport"
+        },
+        {
+            "id": "ArchitecturalStructure",
+            "label": "ArchitecturalStructure"
+        },
+        {
+            "id": "Building",
+            "label": "Building"
+        },
+        {
+            "id": "BusinessPerson",
+            "label": "BusinessPerson"
+        },
+        {
+            "id": "CapitalCity",
+            "label": "CapitalCity"
+        },
+        {
+            "id": "ChemicalCompound",
+            "label": "ChemicalCompound"
+        },
+        {
+            "id": "ChemicalSubstance",
+            "label": "ChemicalSubstance"
+        },
+        {
+            "id": "ChiefJustice",
+            "label": "ChiefJustice"
+        },
+        {
+            "id": "City",
+            "label": "City"
+        },
+        {
+            "id": "Class",
+            "label": "Class"
+        },
+        {
+            "id": "Code",
+            "label": "Code"
+        },
+        {
+            "id": "Company",
+            "label": "Company"
+        },
+        {
+            "id": "Country",
+            "label": "Country"
+        },
+        {
+            "id": "County",
+            "label": "County"
+        },
+        {
+            "id": "EthnicGroup",
+            "label": "EthnicGroup"
+        },
+        {
+            "id": "Event",
+            "label": "Event"
+        },
+        {
+            "id": "Family",
+            "label": "Family"
+        },
+        {
+            "id": "GovernmentAgency",
+            "label": "GovernmentAgency"
+        },
+        {
+            "id": "Governor",
+            "label": "Governor"
+        },
+        {
+            "id": "HistoricalRegion",
+            "label": "HistoricalRegion"
+        },
+        {
+            "id": "Language",
+            "label": "Language"
+        },
+        {
+            "id": "Legislature",
+            "label": "Legislature"
+        },
+        {
+            "id": "Mayor",
+            "label": "Mayor"
+        },
+        {
+            "id": "MeanOfTransportation",
+            "label": "MeanOfTransportation"
+        },
+        {
+            "id": "MilitaryConflict",
+            "label": "MilitaryConflict"
+        },
+        {
+            "id": "MilitaryUnit",
+            "label": "MilitaryUnit"
+        },
+        {
+            "id": "Minister",
+            "label": "Minister"
+        },
+        {
+            "id": "Order",
+            "label": "Order"
+        },
+        {
+            "id": "Organisation",
+            "label": "Organisation"
+        },
+        {
+            "id": "Person",
+            "label": "Person"
+        },
+        {
+            "id": "Place",
+            "label": "Place"
+        },
+        {
+            "id": "Plant",
+            "label": "Plant"
+        },
+        {
+            "id": "PlantType",
+            "label": "PlantType"
+        },
+        {
+            "id": "PoliticalParty",
+            "label": "PoliticalParty"
+        },
+        {
+            "id": "Politician",
+            "label": "Politician"
+        },
+        {
+            "id": "PopulatedPlace",
+            "label": "PopulatedPlace"
+        },
+        {
+            "id": "President",
+            "label": "President"
+        },
+        {
+            "id": "PrimeMinister",
+            "label": "PrimeMinister"
+        },
+        {
+            "id": "Province",
+            "label": "Province"
+        },
+        {
+            "id": "Royalty",
+            "label": "Royalty"
+        },
+        {
+            "id": "Runway",
+            "label": "Runway"
+        },
+        {
+            "id": "RunwaySurfaceType",
+            "label": "RunwaySurfaceType"
+        },
+        {
+            "id": "Settlement",
+            "label": "Settlement"
+        },
+        {
+            "id": "SocietalEvent",
+            "label": "SocietalEvent"
+        },
+        {
+            "id": "Species",
+            "label": "Species"
+        },
+        {
+            "id": "State",
+            "label": "State"
+        },
+        {
+            "id": "TopicalConcept",
+            "label": "TopicalConcept"
+        },
+        {
+            "id": "Town",
+            "label": "Town"
+        },
+        {
+            "id": "Type",
+            "label": "Type"
+        },
+        {
+            "id": "Village",
+            "label": "Village"
+        },
+        {
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "relation": [
+        {
+            "id": "elevationAboveTheSeaLevelInMetres",
+            "label": "elevationAboveTheSeaLevelInMetres",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "division",
+            "label": "division",
+            "domain": "TopicalConcept",
+            "range": "Species"
+        },
+        {
+            "id": "1stRunwayLengthFeet",
+            "label": "1stRunwayLengthFeet",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "hubAirport",
+            "label": "hubAirport",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "administrativeArrondissement",
+            "label": "administrativeArrondissement",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "language",
+            "label": "language",
+            "domain": "Place",
+            "range": "Language"
+        },
+        {
+            "id": "locationIdentifier",
+            "label": "locationIdentifier",
+            "domain": "ArchitecturalStructure",
+            "range": "Code"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "aircraftHelicopter",
+            "label": "aircraftHelicopter",
+            "domain": "Organisation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "leaderTitle",
+            "label": "leaderTitle",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "jurisdiction",
+            "label": "jurisdiction",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "attackAircraft",
+            "label": "attackAircraft",
+            "domain": "Organisation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "foundedBy",
+            "label": "foundedBy",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "runwaySurfaceType",
+            "label": "runwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "5thRunwayNumber",
+            "label": "5thRunwayNumber",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "runwayLength",
+            "label": "runwayLength",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "aircraftFighter",
+            "label": "aircraftFighter",
+            "domain": "Organisation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "2ndRunwaySurfaceType",
+            "label": "2ndRunwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "operatingOrganisation",
+            "label": "operatingOrganisation",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "runwayName",
+            "label": "runwayName",
+            "domain": "ArchitecturalStructure",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "Place"
+        },
+        {
+            "id": "chief",
+            "label": "chief",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "icaoLocationIdentifier",
+            "label": "icaoLocationIdentifier",
+            "domain": "ArchitecturalStructure",
+            "range": "Code"
+        },
+        {
+            "id": "runwaySurfaceType",
+            "label": "runwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "transportAircraft",
+            "label": "transportAircraft",
+            "domain": "Organisation",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "elevationAboveTheSeaLevel",
+            "label": "elevationAboveTheSeaLevel",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "order",
+            "label": "order",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "demonym",
+            "label": "demonym",
+            "domain": "Place",
+            "range": "EthnicGroup"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "3rdRunwayLengthFeet",
+            "label": "3rdRunwayLengthFeet",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "mayor",
+            "label": "mayor",
+            "domain": "Place",
+            "range": "Person"
+        },
+        {
+            "id": "headquarter",
+            "label": "headquarter",
+            "domain": "Organisation",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "elevationAboveTheSeaLevelInFeet",
+            "label": "elevationAboveTheSeaLevelInFeet",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "leaderParty",
+            "label": "leaderParty",
+            "domain": "Place",
+            "range": "Organisation"
+        },
+        {
+            "id": "1stRunwayNumber",
+            "label": "1stRunwayNumber",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "leader",
+            "label": "leader",
+            "domain": "Organisation",
+            "range": "Person"
+        },
+        {
+            "id": "class",
+            "label": "class",
+            "domain": "TopicalConcept",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "battle",
+            "label": "battle",
+            "domain": "Organisation",
+            "range": "Event"
+        },
+        {
+            "id": "location",
+            "label": "location",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "iataLocationIdentifier",
+            "label": "iataLocationIdentifier",
+            "domain": "ArchitecturalStructure",
+            "range": "Code"
+        },
+        {
+            "id": "runwayLengthFeet",
+            "label": "runwayLengthFeet",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "largestCity",
+            "label": "largestCity",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "5thRunwaySurfaceType",
+            "label": "5thRunwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "4thRunwayLengthFeet",
+            "label": "4thRunwayLengthFeet",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "country",
+            "label": "country",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "countySeat",
+            "label": "countySeat",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "3rdRunwaySurfaceType",
+            "label": "3rdRunwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "serves",
+            "label": "serves",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "capital",
+            "label": "capital",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "isPartOf",
+            "label": "isPartOf",
+            "domain": "Place",
+            "range": "Place"
+        },
+        {
+            "id": "4thRunwaySurfaceType",
+            "label": "4thRunwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "operatingOrganisation",
+            "label": "operatingOrganisation",
+            "domain": "ArchitecturalStructure",
+            "range": "Organisation"
+        },
+        {
+            "id": "runwayLengthMetre",
+            "label": "runwayLengthMetre",
+            "domain": "ArchitecturalStructure",
+            "range": "number"
+        },
+        {
+            "id": "owner",
+            "label": "owner",
+            "domain": "ArchitecturalStructure",
+            "range": "Place"
+        },
+        {
+            "id": "1stRunwaySurfaceType",
+            "label": "1stRunwaySurfaceType",
+            "domain": "ArchitecturalStructure",
+            "range": "TopicalConcept"
+        }
+    ],
+    "hierarchy": [
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Politician",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Aircraft",
+            "range": "MeanOfTransportation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PrimeMinister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Mayor",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Plant",
+            "range": "Species"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Family",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Legislature",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Order",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Company",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Type",
+            "range": "TopicalConcept"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Country",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "AdministrativeRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "President",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "HistoricalRegion",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Class",
+            "range": "PlantType"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "GovernmentAgency",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "RunwaySurfaceType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Province",
+            "range": "AdministrativeRegion"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Minister",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Runway",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Settlement",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "BusinessPerson",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "SocietalEvent",
+            "range": "Event"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "County",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryConflict",
+            "range": "SocietalEvent"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Building",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PoliticalParty",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChiefJustice",
+            "range": "Politician"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Royalty",
+            "range": "Person"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Airline",
+            "range": "Company"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "ChemicalCompound",
+            "range": "ChemicalSubstance"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "CapitalCity",
+            "range": "City"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "State",
+            "range": "PopulatedPlace"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "City",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PopulatedPlace",
+            "range": "Place"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "PlantType",
+            "range": "Type"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Town",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Village",
+            "range": "Settlement"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "MilitaryUnit",
+            "range": "Organisation"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Airport",
+            "range": "ArchitecturalStructure"
+        },
+        {
+            "id": "IsA",
+            "label": "IsA",
+            "domain": "Governor",
+            "range": "Politician"
+        }
+    ]
+}

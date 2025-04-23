@@ -1,0 +1,252 @@
+[
+    {
+        "id": "1_WrittenWork_test_1",
+        "input_text": "The impact factor of the American Journal of Mathematics is 1.337.",
+        "response": "[American Journal of Mathematics, impactFactor, 1.337]"
+    },
+    {
+        "id": "1_WrittenWork_test_2",
+        "input_text": "Wolf Solent is a notable work by John Cowper Powys.",
+        "response": "[Wolf Solent, author, John Cowper Powys], [Wolf Solent, notableWork, John Cowper Powys], [Wolf Solent, literaryGenre, LiteraryGenre], [Wolf Solent, Work, WrittenWork], [Wolf Solent, genre, Genre], [Wolf Solent, writtenWork, WrittenWork]"
+    },
+    {
+        "id": "1_WrittenWork_test_3",
+        "input_text": "The American Journal of Mathematics is also known by the abbreviated title of Am. J. Math.",
+        "response": "Here is the output:\n\n[The American Journal of Mathematics, abbreviation, Am. J. Math.]\n\n(Note: I assume that \"also known by\" is equivalent to \"abbreviation\" in this context, as per the ontology schema)"
+    },
+    {
+        "id": "1_WrittenWork_test_4",
+        "input_text": "John Cowper Powys is the author of Wolf Solent.",
+        "response": "[John Cowper Powys, author, Wolf Solent]\n[John Cowper Powys, writer, Person]\n[John Cowper Powys, literaryGenre, LiteraryGenre]\n[John Cowper Powys, notableWork, Wolf Solent]\n[Wolf Solent, author, John Cowper Powys]\n[Wolf Solent, literaryGenre, LiteraryGenre]\n[Wolf Solent, writtenWork, Work]\n[Work, author, John Cowper Powys]\n[Work, literaryGenre, LiteraryGenre]\n[Work, writtenWork, WrittenWork]\n[WrittenWork, author, John Cowper Powys]\n[WrittenWork, literaryGenre, LiteraryGenre]\n[WrittenWork, writtenWork, Work]\n[John Cowper Powys, Person, IsA, Scientist]\n[John Cowper Powys, Person, IsA, Writer]\n[John Cowper Powys, Person, IsA, Person]\n[Scientist, IsA, Person]\n[Writer, IsA, Person]\n[Person, IsA, Person]"
+    },
+    {
+        "id": "1_WrittenWork_test_5",
+        "input_text": "Alcatraz Versus the Evil Librarians is published in Hardcover.",
+        "response": "[Alcatraz Versus the Evil Librarians, publisher,?]\n\n(Note: The publisher is not specified in the input text, but based on the ontology schema, we can infer that the publisher is a type of Organisation. However, the exact name of the publisher is not provided, so we cannot provide a specific value for the publisher entity.)"
+    },
+    {
+        "id": "1_WrittenWork_test_6",
+        "input_text": "Alcatraz Versus the Evil Librarians was written by Brandon Sanderson.",
+        "response": "Here is the output based on the given ontology schema and input text:\n\n[Alcatraz Versus the Evil Librarians, author, Brandon Sanderson]\n[Alcatraz Versus the Evil Librarians, writtenWork, Work]\n[Brandon Sanderson, isA, Person]\n[Brandon Sanderson, isA, Writer]\n[Alcatraz Versus the Evil Librarians, isA, WrittenWork]"
+    },
+    {
+        "id": "1_WrittenWork_test_7",
+        "input_text": "The book Alcatraz Versus the Evil Librarians is followed by the book Alcatraz Versus the Scrivener's Bones.",
+        "response": "[Alcatraz Versus the Evil Librarians, followedBy, Alcatraz Versus the Scrivener's Bones]"
+    },
+    {
+        "id": "1_WrittenWork_test_8",
+        "input_text": "The author of A Glastonbury Romance is John Cowper Powys.",
+        "response": "[John Cowper Powys, author, A Glastonbury Romance], [A Glastonbury Romance, author, John Cowper Powys], [John Cowper Powys, wrote, A Glastonbury Romance]\n\nNote: The ontology schema does not have a direct relation for \"author\" between a person and a written work. However, we can infer the relation using the hierarchy: (Person, IsA, Scientist) and (WrittenWork, IsA, Work). Therefore, we can create two triples: one for the person being the author and one for the written work having the person as its author."
+    },
+    {
+        "id": "1_WrittenWork_test_9",
+        "input_text": "The book \"A Long Long Way was published by Viking Press.",
+        "response": "[Viking Press, publisher, A Long Long Way]\n[Book, publisher, Viking Press]"
+    },
+    {
+        "id": "1_WrittenWork_test_10",
+        "input_text": "AIP Advances is devoted to the study of physics.",
+        "response": "[AIP Advances, academicDiscipline, Physics]\n\nNote: The ontology schema is used to extract triples from the input text. The relation \"academicDiscipline\" is used to link the Work \"AIP Advances\" to the TopicalConcept \"Physics\"."
+    },
+    {
+        "id": "1_WrittenWork_test_11",
+        "input_text": "Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg is concerned with the academic discipline of Pure Mathematics.",
+        "response": "[Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg, academicDiscipline, Pure Mathematics]"
+    },
+    {
+        "id": "1_WrittenWork_test_12",
+        "input_text": "Ring of Fire II is written in English.",
+        "response": "[Ring of Fire II, language, English]"
+    },
+    {
+        "id": "1_WrittenWork_test_13",
+        "input_text": "Administrative Science Quarterly has the ISSN number of 0001-8392.",
+        "response": "[Administrative Science Quarterly, issnNumber, 0001-8392]"
+    },
+    {
+        "id": "1_WrittenWork_test_14",
+        "input_text": "The Addiction journal is published by Wiley-Blackwell on behalf of the Society for the Study of Addiction.",
+        "response": "[The Addiction journal, publisher, Wiley-Blackwell], [The Addiction journal, publisher, Society for the Study of Addiction]"
+    },
+    {
+        "id": "1_WrittenWork_test_15",
+        "input_text": "The novel Into Battle is published by Australians.",
+        "response": "[Intro Battle, publisher, Australians]"
+    },
+    {
+        "id": "1_WrittenWork_test_16",
+        "input_text": "1634: The Bavarian Crisis was preceded by 1634: The Ram Rebellion.",
+        "response": "Here is the extracted triple based on the given ontology schema:\n\n[1634: The Bavarian Crisis, precededBy, 1634: The Ram Rebellion]\n\nNote that the input text is a date-range, but since there is no specific entity type for date-range in the ontology schema, I assume it is a Work, and the date-range is the release date."
+    },
+    {
+        "id": "1_WrittenWork_test_17",
+        "input_text": "A notable work of John Cowper Powys is Porius: A Romance of the Dark Ages.",
+        "response": "[Porius: A Romance of the Dark Ages, author, John Cowper Powys]\n[Porius: A Romance of the Dark Ages, writtenWork, WrittenWork]\n[John Cowper Powys, notableWork, Porius: A Romance of the Dark Ages]\n[John Cowper Powys, writer, Person]\n[WrittenWork, IsA, Work]"
+    },
+    {
+        "id": "1_WrittenWork_test_18",
+        "input_text": "In the United States one of the ethnic groups are African Americans.",
+        "response": "Here is the constructed knowledge graph based on the input text and the given ontology schema:\n\n[African Americans, ethnicGroup, EthnicGroup]\n[United States, serves, Place]\n[United States, country, Place]\n[United States, IsA, PopulatedPlace]\n[PopulatedPlace, IsA, Place]\n[EthnicGroup, IsA, TopicalConcept]\n[African Americans, IsA, EthnicGroup]"
+    },
+    {
+        "id": "1_WrittenWork_test_19",
+        "input_text": "The Acta Palaeontologica Polonica has a LCCN number of 60040714.",
+        "response": "Here is the output based on the input text:\n\n[Acta Palaeontologica Polonica, LCCN_number, 60040714]"
+    },
+    {
+        "id": "1_WrittenWork_test_20",
+        "input_text": "The novel 1634: The Bavarian Crisis is followed by Ring of Fire II.",
+        "response": "[1634: The Bavarian Crisis, followedBy, Ring of Fire II]"
+    },
+    {
+        "id": "1_WrittenWork_test_21",
+        "input_text": "Viking Press is in the United States.",
+        "response": "[Viking Press, country, United States]"
+    },
+    {
+        "id": "1_WrittenWork_test_22",
+        "input_text": "Penguin Random House is the parent company of Viking Press.",
+        "response": "[Penguin Random House, parentCompany, Viking Press]"
+    },
+    {
+        "id": "1_WrittenWork_test_23",
+        "input_text": "89646863 is the LCCN number of ACM Transactions on Information Systems.",
+        "response": "[ACM Transactions on Information Systems, LCCN_number, 89646863]"
+    },
+    {
+        "id": "1_WrittenWork_test_24",
+        "input_text": "Alcatraz Versus the Evil Librarians has the ISBN number 0-439-92550-9.",
+        "response": "[Alcatraz Versus the Evil Librarians, isbnNumber, 0-439-92550-9]"
+    },
+    {
+        "id": "1_WrittenWork_test_25",
+        "input_text": "Alcatraz Versus the Evil Librarians OCLC number is 78771100.",
+        "response": "[Alcatraz Versus the Evil Librarians, oclcNumber, 78771100]:(Work, oclcNumber, number)"
+    },
+    {
+        "id": "1_WrittenWork_test_26",
+        "input_text": "Alcatraz Versus the Evil Librarians is in the genre of Fantasy literature.",
+        "response": "Here is the output based on the input text and the given ontology schema:\n\n[Alcatraz Versus the Evil Librarians, genre, Fantasy]\n[Alcatraz Versus the Evil Librarians, literaryGenre, Fantasy]\n[Fantasy, IsA, Genre]"
+    },
+    {
+        "id": "1_WrittenWork_test_27",
+        "input_text": "Alcatraz Versus the Evil Librarians is 320 pages long.",
+        "response": "Here is the extracted triple based on the ontology schema:\n\n[Alcatraz Versus the Evil Librarians, numberOfPages, 320]"
+    },
+    {
+        "id": "1_WrittenWork_test_28",
+        "input_text": "The book \"Alcatraz Versus the Evil Librarians is in print.",
+        "response": "Here is the output based on the given ontology schema and the input text:\n\n[Alcatraz Versus the Evil Librarians, author,?]\n[Alcatraz Versus the Evil Librarians, mediaType, WrittenWork]\n[Alcatraz Versus the Evil Librarians, genre, LiteraryGenre]\n[Alcatraz Versus the Evil Librarians, releaseDate,?]\n[Alcatraz Versus the Evil Librarians, publisher,?]\n[Alcatraz Versus the Evil Librarians, isbnNumber,?]\n\nNote: The output is based on the ontology schema and the input text, and it extracts the relevant triples using the defined entity types, relations, and hierarchy. The missing values (e.g.,?) are placeholders for the actual values that are not present in the input text."
+    },
+    {
+        "id": "1_WrittenWork_test_29",
+        "input_text": "The literary genre of Alcatraz Versus the Evil Librarians is fantasy literature.",
+        "response": "[Alcatraz Versus the Evil Librarians, literaryGenre, FantasyLiterature]"
+    },
+    {
+        "id": "1_WrittenWork_test_30",
+        "input_text": "John Cowper Powys died in Blaenau Ffestiniog.",
+        "response": "[John Cowper Powys, deathPlace, Blaenau Ffestiniog]"
+    },
+    {
+        "id": "1_WrittenWork_test_31",
+        "input_text": "Weymouth Sands' author was John Cowper Powys.",
+        "response": "Here is the output:\n\n[Weymouth Sands, author, John Cowper Powys]"
+    },
+    {
+        "id": "1_WrittenWork_test_32",
+        "input_text": "One of John Cowper Powys notable works is Owen Glendower.",
+        "response": "Here is the output:\n\n[Owen Glendower, author, John Cowper Powys]\n[John Cowper Powys, notableWork, Owen Glendower]\n[John Cowper Powys, writer, Person]\n[Owen Glendower, writtenWork, Work]\n\nNote: The output follows the format [Entity1, relation, Entity2], where Entity1 and Entity2 are the entities involved in the relation, and relation is the type of relation between them."
+    },
+    {
+        "id": "1_WrittenWork_test_33",
+        "input_text": "John Cowper Powys was born in Shirley (Derbyshire).",
+        "response": "Here is the output:\n\n[John Cowper Powys, birthPlace, Shirley (Derbyshire)]"
+    },
+    {
+        "id": "1_WrittenWork_test_34",
+        "input_text": "The Acta Mathematica Hungarica covers the academic discipline of mathematics.",
+        "response": "Here is the output:\n\n[Acta Mathematica Hungarica, academicDiscipline, mathematics]"
+    },
+    {
+        "id": "1_WrittenWork_test_35",
+        "input_text": "The novel \"Into Battle\" followed \"Above the Veil\".",
+        "response": "[The novel \"Into Battle\", followedBy, \"Above the Veil\"]"
+    },
+    {
+        "id": "1_WrittenWork_test_36",
+        "input_text": "Above the Veil is 248 pages long.",
+        "response": "[Above the Veil, numberOfPages, 248]\n\nNote: The input text does not provide enough information to infer the entity type of \"Above the Veil\", so it is assumed to be a Work based on the ontology schema."
+    },
+    {
+        "id": "1_WrittenWork_test_37",
+        "input_text": "Above the Veil is written in English.",
+        "response": "[Above the Veil, language, English]"
+    },
+    {
+        "id": "1_WrittenWork_test_38",
+        "input_text": "The novel Aenir was followed by Above the Veil.",
+        "response": "[Aenir, followedBy, Above the Veil]"
+    },
+    {
+        "id": "1_WrittenWork_test_39",
+        "input_text": "Above the Veil was preceded By Aenir.",
+        "response": "[Above the Veil, precededBy, Aenir]"
+    },
+    {
+        "id": "1_WrittenWork_test_40",
+        "input_text": "The ISBN number of Above the Veil is 0-439-17685-9.",
+        "response": "[Above the Veil, isbnNumber, 0-439-17685-9]"
+    },
+    {
+        "id": "1_WrittenWork_test_41",
+        "input_text": "Above the Veil is available in hardcover.",
+        "response": "[Above the Veil, mediaType, hardcover]\n\nNote: The ontology schema does not include a specific relation for \"available in\" or \"format\", so the most suitable relation is \"mediaType\" which is a part of the \"MediaType\" type."
+    },
+    {
+        "id": "1_WrittenWork_test_42",
+        "input_text": "Above the Veil has the OCLC number 46451790.",
+        "response": "[Above the Veil, oclcNumber, 46451790]"
+    },
+    {
+        "id": "1_WrittenWork_test_43",
+        "input_text": "Above the Veil is from the country of Australia.",
+        "response": "[Above the Veil, country, Australia]"
+    },
+    {
+        "id": "1_WrittenWork_test_44",
+        "input_text": "The novel Into Battle is preceded by Above the Veil.",
+        "response": "[Intro Battle, precededBy, Above the Veil]\n\nNote: The output is in the format of [Subject, relation, Object], where Subject and Object are entities and relation is a relation from the ontology schema."
+    },
+    {
+        "id": "1_WrittenWork_test_45",
+        "input_text": "American Journal of Mathematics has the OCLC number 1480153.",
+        "response": "[American Journal of Mathematics, oclcNumber, 1480153]"
+    },
+    {
+        "id": "1_WrittenWork_test_46",
+        "input_text": "The American Journal of Mathematics was published by Johns Hopkins University Press.",
+        "response": "Here is the output:\n\n[The American Journal of Mathematics, publisher, Johns Hopkins University Press]"
+    },
+    {
+        "id": "1_WrittenWork_test_47",
+        "input_text": "The American Journal of Mathematics EISSN number is 1080.",
+        "response": "[The American Journal of Mathematics, eissnNumber, 1080]"
+    },
+    {
+        "id": "1_WrittenWork_test_48",
+        "input_text": "The ISSN number of the American Journal of Mathematics is 1080-6377.",
+        "response": "[American Journal of Mathematics, issnNumber, 1080-6377]"
+    },
+    {
+        "id": "1_WrittenWork_test_49",
+        "input_text": "The American Journal of Mathematics was first published in 1878.",
+        "response": "[The American Journal of Mathematics, firstPublicationYear, 1878]"
+    },
+    {
+        "id": "1_WrittenWork_test_50",
+        "input_text": "The American Journal of Mathematics has an ISSN number of 0002-9327.",
+        "response": "[The American Journal of Mathematics, issnNumber, 0002-9327]"
+    }
+]

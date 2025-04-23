@@ -1,0 +1,307 @@
+[
+    {
+        "id": "3_Artist_test_1",
+        "input_text": "Aaron Turner played post-metal for Greymachine and currently is a member of the Mamiffer.",
+        "response": "[Aaron Turner, genre, Post-metal]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedMusicalArtist, Organisation), [Greymachine, genre, Post-metal]:(Organisation, genre, MusicGenre), [Aaron Turner, associatedBand, Mamiffer]:(Person, associatedMusicalArtist, Organisation)]"
+    },
+    {
+        "id": "3_Artist_test_2",
+        "input_text": "Aaron Turner is a Black metal musician, and he is a member of the Lotus Eaters band. Death metal is a fusion of black metal.",
+        "response": "[Aaron Turner, genre, Black metal music]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedBand, Organisation), [Black metal music, musicFusionGenre, Death metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_3",
+        "input_text": "Black Metal is a genre of Aaron Turner's music. Aaron Turner played for Old Man Gloom and played for the Greymachine band.",
+        "response": "[Aaron Turner, genre, Black Metal]:(Person, occupation, PersonFunction), [Black Metal, musicSubgenre, Metal]:(MusicGenre, musicSubgenre, MusicGenre), [Aaron Turner, associatedBand, Old Man Gloom]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedMusicalArtist, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_4",
+        "input_text": "Jazz musician Alison O'Donnell records for Deram Records and Static Caravan Recordings.",
+        "response": "[Alison O'Donnell, occupation, Jazz musician]:(Person, occupation, PersonFunction), [Alison O'Donnell, recordLabel, Deram Records]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, recordLabel, Static Caravan Recordings]:(Person, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_5",
+        "input_text": "Aaron Turner who is a post-metal artist and member of the band Twilight, performs for Mamiffer.",
+        "response": "[Aaron Turner, genre, Post-metal]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Band), [Aaron Turner, performsFor, Mamiffer]:(Person, performsFor, MusicalArtist), [Twilight, genre, Post-metal]:(Band, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_6",
+        "input_text": "Aaron Turner plays with the band Isis and performs Black Metal music which helped create Death Metal music.",
+        "response": "[Aaron Turner, associatedBand, Isis]:(Person, associatedBand, Organisation), [Aaron Turner, instrument, Guitar]:(Person, instrument, Device), [Aaron Turner, genre, Black Metal music]:(Person, genre, MusicGenre), [Black Metal music, derivative, Death Metal music]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_7",
+        "input_text": "Aaron Turner plays electric guitar in the Black Metal genre. Death metal is a fusion of black metal.",
+        "response": "[Aaron Turner, instrument, Electric guitar]:(Person, instrument, Device), [Aaron Turner, associatedBand, Black Metal]:(Person, associatedBand, Organisation), [Black Metal, musicFusionGenre, Death metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_8",
+        "input_text": "Aaron Turner is a singer who played with the band Twilight which has been described as Black metal.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Twilight, genre, Black metal]:(Organisation, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_9",
+        "input_text": "Aaron Turner is a musician and performer of the musical genre Post-metal with the Lotus Eaters band, having previously played with Twilight.",
+        "response": "[Aaron Turner, genre, Post-metal]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Twilight]:(Person, associatedMusicalArtist, Organisation), [Post-metal, musicSubgenre, TopicalConcept]:(MusicGenre, musicSubgenre, TopicalConcept)]"
+    },
+    {
+        "id": "3_Artist_test_10",
+        "input_text": "Jazz music performer, Alison O'Donnell is signed to the record label Static Caravan Recordings and her recording label is Floating World Records.",
+        "response": "[Alison O'Donnell, occupation, Jazz music performer]:(Person, occupation, PersonFunction), [Alison O'Donnell, recordLabel, Static Caravan Recordings]:(Person, recordLabel, RecordLabel), [Static Caravan Recordings, genre, Jazz]:(RecordLabel, genre, MusicGenre), [Alison O'Donnell, recordLabel, Floating World Records]:(Person, recordLabel, RecordLabel), [Floating World Records, genre, Jazz]:(RecordLabel, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_11",
+        "input_text": "Associated with the group Greymachine, Aaron Turner, is a Black metal musician. Death metal is a musical fusion of black metal.",
+        "response": "[Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Black metal music]:(Person, genre, MusicGenre), [Death metal, musicFusionGenre, Black metal music]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_12",
+        "input_text": "Uruguay's leader is now Tabaré Vázquez because Alfredo Zitarrosa died in Montevideo which is in Uruguay.",
+        "response": "[Tabaré Vázquez, leader, Uruguay]:(Person, leader, Organisation), [Alfredo Zitarrosa, deathPlace, Montevideo]:(Person, deathPlace, Place), [Montevideo, country, Uruguay]:(Place, country, Place)"
+    },
+    {
+        "id": "3_Artist_test_13",
+        "input_text": "Aaron Turner plays Post-metal music and performed for the House of Low Culture. Mr. Turner is also associated with Greymachine.",
+        "response": "[Aaron Turner, genre, Post-metal music]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, House of Low Culture]:(Person, associatedBand, Organisation), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_14",
+        "input_text": "The singer Andra, whose genre is Pop music, is associated with both Marius Moga and Andreea Bălan.",
+        "response": "[Andra, genre, Pop music]:(Person, genre, MusicGenre), [Andra, associatedMusicalArtist, Marius Moga]:(Person, associatedMusicalArtist, Person), [Andra, associatedMusicalArtist, Andreea Bălan]:(Person, associatedMusicalArtist, Person)"
+    },
+    {
+        "id": "3_Artist_test_15",
+        "input_text": "Anders Osborne's genre is rock music. He is signed to Shanachie Records having been previously signed to the record label 'Alligator Records'.",
+        "response": "[Anders Osborne, genre, Rock music]:(Person, genre, MusicGenre), [Anders Osborne, recordLabel, Shanachie Records]:(Person, recordLabel, RecordLabel), [Anders Osborne, recordLabel, Alligator Records]:(Person, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_16",
+        "input_text": "Synthpop music is the genre of Alex Day. Synthpop music spawned from House music and has its origins in Disco.",
+        "response": "[Synthpop music, genre, MusicGenre]:(MusicGenre, stylisticOrigin, Disco) , [Synthpop music, genre, MusicGenre]:(MusicGenre, derivative, House) , [Alex Day, genre, Synthpop music]:(Person, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_17",
+        "input_text": "Alison O'Donnell, who records for Deram Records, plays jazz music of which Funk is a derivative.",
+        "response": "[Alison O'Donnell, recordLabel, Deram Records]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, genre, Jazz music]:(Person, genre, MusicGenre), [Jazz music, derivative, Funk]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_18",
+        "input_text": "Abradab plays Hip Hop music. That type of music has its styles in Jazz and Funk music.",
+        "response": "[Abradab, genre, Hip Hop music]:(MusicalArtist, genre, MusicGenre), [Hip Hop music, stylisticOrigin, Jazz]:(MusicGenre, stylisticOrigin, MusicGenre), [Hip Hop music, stylisticOrigin, Funk]:(MusicGenre, stylisticOrigin, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_19",
+        "input_text": "Albennie Jones was born in the United States. She is a solo singer and jazz artist.",
+        "response": "[Albennie Jones, birthPlace, United States]:(Person, birthPlace, Place), [Albennie Jones, profession, Solo singer]:(Person, profession, PersonFunction), [Albennie Jones, genre, Jazz]:(Person, genre, TopicalConcept)"
+    },
+    {
+        "id": "3_Artist_test_20",
+        "input_text": "Alison O'Donnell performs jazz music. Funk is a derivative of Jazz, in which the clarinet is used.",
+        "response": "[Alison O'Donnell, genre, Jazz]:(MusicalArtist, genre, MusicGenre), [Jazz, derivative, Funk]:(MusicGenre, derivative, MusicGenre), [Funk, instrument, Clarinet]:(MusicGenre, instrument, Device)"
+    },
+    {
+        "id": "3_Artist_test_21",
+        "input_text": "Alison O'Donnell, who is signed to the record label Kissing Spell Records, performs jazz music, a derivative of which is Funk.",
+        "response": "[Alison O'Donnell, recordLabel, Kissing Spell Records]:(Person, recordLabel, RecordLabel), [Jazz music, derivative, Funk]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_22",
+        "input_text": "Once signed to Deram Records, Alison O'Donnell, performs jazz music and is with the recording label, Stanyan Records.",
+        "response": "[Alison O'Donnell, recordLabel, Deram Records]:(Person, recordLabel, Organisation), [Alison O'Donnell, genre, Jazz music]:(Person, genre, MusicGenre), [Alison O'Donnell, recordLabel, Stanyan Records]:(Person, recordLabel, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_23",
+        "input_text": "Alison O'Donnell, who is signed with the record label Stanyan Records, plays jazz music; one of the Jazz derivatives is Funk.",
+        "response": "[Alison O'Donnell, recordLabel, Stanyan Records]:(Person, recordLabel, RecordLabel), [Jazz, derivative, Funk]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_24",
+        "input_text": "Alison O'Donnell plays jazz music and is signed to the record label of Floating World Records. Alison O'Donnell was once signed to the record label Fruits de Mer Records.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Alison O'Donnell, recordLabel, Floating World Records]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, recordLabel, Fruits de Mer Records]:(Person, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_25",
+        "input_text": "The label Floating World Records signed Alison O'Donnell, who plays jazz music and is signed with the record label Deram Records.",
+        "response": "[Alison O'Donnell, recordLabel, Floating World Records]:(Person, recordLabel, Organisation), [Alison O'Donnell, genre, Jazz music]:(Person, genre, MusicGenre), [Alison O'Donnell, recordLabel, Deram Records]:(Person, recordLabel, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_26",
+        "input_text": "Alison O'Donnell can play the autoharp and performs jazz music, a genre that is derived into funk.",
+        "response": "[Alison O'Donnell, instrument, Autoharp]:(Person, instrument, Device), [Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Jazz music, derivative, Funk]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_27",
+        "input_text": "The musical genre of Abradab is hip hop music which originated from jazz music. Drum and bass derives its sounds from hip hop music.",
+        "response": "[Abradab, genre, Hip hop music]:(MusicalArtist, genre, MusicGenre), [Hip hop music, stylisticOrigin, Jazz]:(MusicGenre, stylisticOrigin, MusicGenre), [Drum and bass, musicFusionGenre, Hip hop music]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_28",
+        "input_text": "Albennie Jones plays Jazz music which originated from Blues music. A fusion of Jazz is Afrobeat music.",
+        "response": "[Albennie Jones, genre, Jazz music]:(Person, genre, MusicGenre), [Jazz music, stylisticOrigin, Blues]:(MusicGenre, stylisticOrigin, MusicGenre), [Afrobeat music, musicFusionGenre, Jazz music]:(TopicalConcept, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_29",
+        "input_text": "Alison O'Donnell performs jazz music and has Kissing Spell Records as her record label. She was once signed to Fruits de Mer Records.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Alison O'Donnell, recordLabel, Kissing Spell Records]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, associatedRecordLabel, Fruits de Mer Records]:(Person, associatedRecordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_30",
+        "input_text": "Born in Errata (Mississippi), Albennie Jones is a Jazz musician and solo singer.",
+        "response": "[Albennie Jones, birthPlace, Errata]:(Person, birthPlace, Place), [Albennie Jones, nationality, Mississippi]:(Person, nationality, Place), [Albennie Jones, profession, Jazz musician]:(Person, profession, PersonFunction), [Albennie Jones, genre, Jazz]:(Person, genre, MusicGenre), [Albennie Jones, occupation, solo singer]:(Person, occupation, PersonFunction)"
+    },
+    {
+        "id": "3_Artist_test_31",
+        "input_text": "Alison O'Donnell performs jazz music, of which Funk is a derivative. The musical genre Afrobeat is a fusion genre and contains elements of other genres such as Jazz.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Jazz music, derivative, Funk]:(MusicGenre, derivative, MusicGenre), [Afrobeat, musicFusionGenre, Jazz music]:(TopicalConcept, musicFusionGenre, TopicalConcept)"
+    },
+    {
+        "id": "3_Artist_test_32",
+        "input_text": "The musical genre of Abradab is hip hop music which originated from jazz and disco.",
+        "response": "[Abradab, genre, Hip hop music]:(MusicalArtist, genre, MusicGenre), [Hip hop music, stylisticOrigin, Jazz]:(MusicGenre, stylisticOrigin, MusicGenre), [Hip hop music, stylisticOrigin, Disco]:(MusicGenre, stylisticOrigin, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_33",
+        "input_text": "Alison O'Donnell plays jazz music and her record labels are Static Caravan Recordings and Fruits de Mer Records.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Alison O'Donnell, recordLabel, Static Caravan Recordings]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, recordLabel, Fruits de Mer Records]:(Person, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_34",
+        "input_text": "Jazz musician Alison O'Donnell plays the bodhrán. Jazz gave birth to Funk.",
+        "response": "[Alison O'Donnell, instrument, Bodhrán]:(Person, instrument, Device), [Jazz, derivative, Funk]:(TopicalConcept, derivative, TopicalConcept)"
+    },
+    {
+        "id": "3_Artist_test_35",
+        "input_text": "Alison O'Donnell plays jazz music and his recording label was Floating World Records. Funk music is derived from Jazz.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(MusicalArtist, genre, MusicGenre), [Alison O'Donnell, recordLabel, Floating World Records]:(Person, recordLabel, RecordLabel), [Jazz music, derivative, Funk]:(MusicGenre, derivative, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_36",
+        "input_text": "Jazz music performer Alison O'Donnell, was once a member of both the Flibbertigibbet band and the band, Bajik.",
+        "response": "[Alison O'Donnell, occupation, Jazz music performer]:(Person, occupation, PersonFunction), [Alison O'Donnell, associatedBand, Flibbertigibbet]:(Person, associatedBand, Organisation), [Alison O'Donnell, associatedBand, Bajik]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_37",
+        "input_text": "Alison O'Donnell; performs jazz music, was in the band Mellow Candle and was a member of the Flibbertigibbet band.",
+        "response": "[Alison O'Donnell, genre, Jazz music]:(Person, genre, MusicGenre), [Alison O'Donnell, associatedBand, Mellow Candle]:(Person, associatedBand, Organisation), [Alison O'Donnell, associatedBand, Flibbertigibbet]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_38",
+        "input_text": "Jazz performer, Alison O'Donnell, is signed to the record labels Kissing Spell Records and Osmosys Records.",
+        "response": "[Alison O'Donnell, occupation, Jazz performer]:(Person, occupation, PersonFunction), [Alison O'Donnell, recordLabel, Kissing Spell Records]:(Person, recordLabel, RecordLabel), [Alison O'Donnell, recordLabel, Osmosys Records]:(Person, recordLabel, RecordLabel)"
+    },
+    {
+        "id": "3_Artist_test_39",
+        "input_text": "Jazz musician Alison O'Donnell is signed with Static Caravan Recordings. Jazz is the origin of Funk.",
+        "response": "[Alison O'Donnell, occupation, Jazz musician]:(Person, occupation, PersonFunction), [Alison O'Donnell, recordLabel, Static Caravan Recordings]:(Person, recordLabel, RecordLabel), [Jazz, derivative, Funk]:(TopicalConcept, derivative, TopicalConcept)"
+    },
+    {
+        "id": "3_Artist_test_40",
+        "input_text": "Black Metal music is Aaron Turner's thing and he plays for Twilight band. Mr. Turner is also associated with Greymachine, the band.",
+        "response": "[Aaron Turner, genre, Black Metal music]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Twilight]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedMusicalArtist, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_41",
+        "input_text": "Black metal musician Aaron Turner has played with the bands Twilight and Lotus Eaters.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedMusicalArtist, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_42",
+        "input_text": "Aaron Turner's music is Post-metal and he is an artist for the band Isis. he also played for Old Man Gloom.",
+        "response": "[Aaron Turner, genre, Post-metal]:(Person, occupation, PersonFunction), [Post-metal, musicSubgenre, Metal]:(TopicalConcept, musicSubgenre, TopicalConcept), [Aaron Turner, recordLabel, Isis]:(Person, associatedBand, Organisation), [Aaron Turner, associatedBand, Old Man Gloom]:(Person, associatedMusicalArtist, Person)"
+    },
+    {
+        "id": "3_Artist_test_43",
+        "input_text": "Aaron Turner played with the bands Twilight and Sumac. He performs black metal music.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Aaron Turner, associatedBand, Sumac]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Black metal music]:(Person, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_44",
+        "input_text": "Aaron Turner, whose musical genre, played with the band Twilight. Death metal is a musical fusion of black metal.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Death metal]:(Person, genre, MusicGenre), [Death metal, musicFusionGenre, Black metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_45",
+        "input_text": "Black Metal artist Aaron Turner played with the band Twilight and Old Man Gloom.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Old Man Gloom]:(Person, associatedMusicalArtist, Organisation), [Twilight, genre, Black Metal]:(Organisation, genre, MusicGenre), [Old Man Gloom, genre, Black Metal]:(Organisation, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_46",
+        "input_text": "Death metal is a musical fusion of black metal and is also a genre of Aaron Turner's music who started performing in 1995.",
+        "response": "[Death metal, musicFusionGenre, Black metal]:(MusicGenre, musicFusionGenre, MusicGenre), [Death metal, genre, Aaron Turner]:(MusicGenre, genre, MusicalArtist), [Aaron Turner, activeYearsStartYear, 1995]:(Person, activeYearsStartYear, Year)"
+    },
+    {
+        "id": "3_Artist_test_47",
+        "input_text": "Death metal is a musical fusion of black metal which itself is a genre of Aaron Turner's music. Aaron Turner played for Old Man Gloom.",
+        "response": "[Aaron Turner, associatedMusicalArtist, Death metal]:(Person, associatedMusicalArtist, MusicGenre), [Death metal, stylisticOrigin, Black metal]:(MusicGenre, stylisticOrigin, MusicGenre), [Black metal, genreOf, Aaron Turner's music]:(MusicGenre, genreOf, Person's music), [Aaron Turner, associatedBand, Old Man Gloom]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_48",
+        "input_text": "Aaron Turner is a black metal musician in the Lotus Eaters who plays electric guitar.",
+        "response": "[Aaron Turner, genre, Black metal music]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedMusicalArtist, Organisation), [Lotus Eaters, genre, Black metal music]:(Organisation, genre, MusicGenre), [Aaron Turner, instrument, Electric guitar]:(Person, instrument, Device)"
+    },
+    {
+        "id": "3_Artist_test_49",
+        "input_text": "Aaron Turner, who plays Drone music, played with the band Twilight and Mamiffer.",
+        "response": "[Aaron Turner, genre, Drone music]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Band), [Aaron Turner, associatedBand, Mamiffer]:(Person, associatedBand, Band)"
+    },
+    {
+        "id": "3_Artist_test_50",
+        "input_text": "Death metal is a musical fusion of black metal, the music that Aaron Turner, of Mamiffer, performs.",
+        "response": "[Death metal, musicFusionGenre, Black metal]:(MusicGenre, musicFusionGenre, MusicGenre), [Death metal, stylisticOrigin, Music that Aaron Turner performs]:(MusicGenre, stylisticOrigin, TopicalConcept), [Aaron Turner, associatedBand, Mamiffer]:(Person, associatedBand, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_51",
+        "input_text": "Aaron Turner plays Post-metal for the band Twilight and also played for the Greymachine band.",
+        "response": "[Aaron Turner, instrument, Device], [Aaron Turner, genre, Post-metal]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Twilight, genre, Post-metal]:(Organisation, genre, MusicGenre), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation)]"
+    },
+    {
+        "id": "3_Artist_test_52",
+        "input_text": "Aaron Turner played with the band Twilight which performs black metal music. Death metal is a musical fusion of black metal.",
+        "response": "[Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Twilight, genre, Black metal music]:(Organisation, genre, MusicGenre), [Black metal music, musicFusionGenre, Death metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_53",
+        "input_text": "Aaron Turner who played for the Greymachine band is an artist for the band Isis and a performer of the musical genre Post-metal.",
+        "response": "[Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation), [Aaron Turner, associatedBand, Isis]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Post-metal]:(Person, genre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_54",
+        "input_text": "Aaron Turner a Black metal musician in the Lotus Eaters band started performing in 1995.",
+        "response": "[Aaron Turner, genre, Black metal music]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedMusicalArtist, Organisation), [Lotus Eaters, activeYearsStartYear, 1995]:(Organisation, activeYearsStartYear, Year)"
+    },
+    {
+        "id": "3_Artist_test_55",
+        "input_text": "Death metal is a musical fusion of black metal which Aaron Turner performed for House of Low Culture.",
+        "response": "[Aaron Turner, associatedBand, House of Low Culture]:(Person, associatedBand, Organisation), [Death metal, musicFusionGenre, Black metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_56",
+        "input_text": "Aaron Turner is a post-metal musician who started performing in 1995 and played with the post-metal band, Twilight.",
+        "response": "[Aaron Turner, genre, Post-metal]:(Person, occupation, PersonFunction), [Aaron Turner, activeYearsStartYear, 1995]:(Person, activeYearsStartYear, Year), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Post-metal, musicFusionGenre, Post-metal]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_57",
+        "input_text": "Aaron Turner performed with the band Sumac and is a Black metal musician. Death metal is a musical fusion of black metal.",
+        "response": "[Aaron Turner, associatedBand, Sumac]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Black metal music]:(Person, genre, MusicGenre), [Death metal, musicFusionGenre, Black metal music]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_58",
+        "input_text": "Aaron Turner is an artist for the band, Isis and his music is Post-metal, he used to play with the band Twilight.",
+        "response": "[Aaron Turner, associatedBand, Isis]:(Person, associatedBand, Organisation), [Aaron Turner, genre, Post-metal]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Post-metal, musicFusionGenre, Post-rock]:(MusicGenre, musicFusionGenre, MusicGenre)"
+    },
+    {
+        "id": "3_Artist_test_59",
+        "input_text": "Aaron Turner performs ambient music. He is associated with the group Greymachine and has played with the band Twilight.",
+        "response": "[Aaron Turner, genre, Ambient music]:(Person, genre, MusicGenre), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation), [Ambient music, musicFusionGenre, None]:(MusicGenre, musicFusionGenre, None), [Greymachine, genre, Ambient music]:(Organisation, genre, MusicGenre), [Twilight, associatedPerson, Aaron Turner]:(Organisation, associatedPerson, Person)"
+    },
+    {
+        "id": "3_Artist_test_60",
+        "input_text": "Aaron Turner, who performs black metal music, is a musician in the Lotus Eaters band and once played for Old Man Gloom.",
+        "response": "[Aaron Turner, genre, Black metal music]:(Person, occupation, PersonFunction), [Aaron Turner, associatedBand, Lotus Eaters]:(Person, associatedMusicalArtist, Organisation), [Aaron Turner, associatedBand, Old Man Gloom]:(Person, associatedMusicalArtist, Organisation)"
+    },
+    {
+        "id": "3_Artist_test_61",
+        "input_text": "Aaron Turner plays drone music and played with the bands Twilight and Greymachine.",
+        "response": "[Aaron Turner, genre, Drone music]:(Person, genre, MusicGenre), [Aaron Turner, instrument, Guitar]:(Person, instrument, Device), [Aaron Turner, associatedBand, Twilight]:(Person, associatedBand, Organisation), [Aaron Turner, associatedBand, Greymachine]:(Person, associatedBand, Organisation)"
+    }
+]
