@@ -1,6 +1,6 @@
 # OSKGC: A benchmark for Ontology Schema-based Knowledge Graph Construction from text
 
-OSKGC is a benchmark dataset designed for knowledge graph construction based on a predefined ontology schema. The primary task formulation it supports is a novel setting proposed in our paper, where information is extracted from input text and constructed into a knowledge graph under the constraints of a predefined ontology schema. Unlike conventional knowledge graph construction tasks, OSKGC requires the constructed knowledge graph to maintain both textual accuracy and ontological structural conformity, necessitating evaluation at both triple-level and schema-level. This enables enriching existing knowledge graphs with new textual information without altering their fundamental structure. We provide baseline methods under both pipeline and joint extraction settings, experimenting with several mainstream locally-deployable LLMs and commercial LLMs.
+OSKGC is a benchmark dataset designed for knowledge graph construction based on a predefined ontology schema. The primary task formulation it supports is a novel setting proposed in our paper, where information is extracted from input text and constructed into a knowledge graph under the constraints of a predefined ontology schema. Unlike conventional knowledge graph construction tasks, OSKGC requires the constructed knowledge graph to maintain both textual accuracy and ontological structural conformity, necessitating evaluation at both triple-level and schema-level. This enables enriching existing knowledge graphs with new textual information without altering their fundamental structure. We provide baseline methods under both pipeline and joint extraction settings, experimenting with several mainstream locally-deployable LLMs and proprietary LLMs.
 
 ## Dataset Composition
 
@@ -362,7 +362,7 @@ Run model only:
 ```bash
 python main.py --config config.yaml --do run
 ```
-- Commercial LLMs:
+- Proprietary LLMs:
 ```bash
 python main.py --config config.yaml --api-config config_api.yaml --do run
 ```
@@ -371,7 +371,7 @@ Run model with evaluation:
 ```bash
 python main.py --config config.yaml --do both
 ```
-- Commercial LLMs:
+- Proprietary LLMs:
 ```bash
 python main.py --config config.yaml --api-config config_api.yaml --do both
 ```
@@ -382,7 +382,7 @@ python main.py --config config.yaml --do evaluate
 # or
 python evaluate.py --config config.yaml
 ```
-- Commercial LLMs:
+- Proprietary LLMs:
 ```bash
 python main.py --config config.yaml --api-config config_api.yaml --do evaluate
 # or
