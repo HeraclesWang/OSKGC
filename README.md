@@ -354,7 +354,7 @@ pip install -r requirements.txt
 ```
 ### Configuration
 1. Modify `config.yaml` to set experiment parameters (pipeline/joint extraction, one-shot example selection, etc.)
-2. For commercial LLM API usage, configure `config_api.yaml`
+2. For proprietary LLM API usage, configure `config_api.yaml`
 
 ### Execution Commands
 Run model only:
