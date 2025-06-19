@@ -334,7 +334,10 @@ A sample (partial) ontology schema:
 
 2. **Hierarchical Structure** (Blue nodes):  
    - Fine-grained entity types  
-   - Connected to core structure via root nodes  
+   - Connected to core structure via root nodes
+
+#### RDF version
+We also provide an RDF-compliant version in [`benchmark/ontology/rdf`](.benchmark/ontology/rdf) for researchers who require linked data. We reused existing ontology classes from DBpedia and defined a portion of the classes ourselves. 
 
 ### Hierarchical Structure [`benchmark/hierarchy.xml`](./benchmark/hierarchy.xml)
 
