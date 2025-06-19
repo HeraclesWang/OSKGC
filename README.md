@@ -339,9 +339,9 @@ A sample (partial) ontology schema:
 #### RDF version
 We also provide an RDF-compliant version in [`benchmark/ontology/rdf`](./benchmark/ontology/rdf) for researchers who require linked data. We reused existing ontology classes from DBpedia and defined a portion of the classes ourselves. 
 
-### Hierarchical Structure [`benchmark/hierarchy.xml`](./benchmark/hierarchy.xml)
+### Hierarchical Structure [`benchmark/hierarchy.ttl`](./benchmark/hierarchy.ttl) & [`benchmark/hierarchy.xml`](./benchmark/hierarchy.xml)
 
-While relation structures vary by category, all hierarchies follow a standardized framework based on DBpedia ontology classes. This XML file provides the unified subsumption hierarchical structure used throughout OSKGC. 
+While relation structures vary by category, all hierarchies follow a standardized framework based on DBpedia ontology classes. This XML file provides the unified subsumption hierarchical structure used throughout OSKGC. We provide both Turtle and XML format versions to accommodate researchers with different needs.
 
 ## Baseline Experiments
 
