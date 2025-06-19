@@ -1,0 +1,563 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/1_Airport#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_Airport/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_Airport/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/1_Airport> a owl:Ontology ;
+    rdfs:label "1_Airport" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/1_Airport/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> a owl:Class ;
+    rdfs:label "AdministrativeRegion" .
+
+<http://dbpedia.org/ontology/Aircraft> a owl:Class ;
+    rdfs:label "Aircraft" .
+
+<http://dbpedia.org/ontology/Airline> a owl:Class ;
+    rdfs:label "Airline" .
+
+<http://dbpedia.org/ontology/Airport> a owl:Class ;
+    rdfs:label "Airport" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/ChemicalCompound> a owl:Class ;
+    rdfs:label "ChemicalCompound" .
+
+<http://dbpedia.org/ontology/ChemicalSubstance> a owl:Class ;
+    rdfs:label "ChemicalSubstance" .
+
+cls:ChiefJustice a owl:Class ;
+    rdfs:label "ChiefJustice" .
+
+cls:ChiefMinister a owl:Class ;
+    rdfs:label "ChiefMinister" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+cls:Class a owl:Class ;
+    rdfs:label "Class" .
+
+cls:Code a owl:Class ;
+    rdfs:label "Code" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+cls:County a owl:Class ;
+    rdfs:label "County" .
+
+<http://dbpedia.org/ontology/Currency> a owl:Class ;
+    rdfs:label "Currency" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/Event> a owl:Class ;
+    rdfs:label "Event" .
+
+<http://dbpedia.org/ontology/Family> a owl:Class ;
+    rdfs:label "Family" .
+
+<http://dbpedia.org/ontology/GovernmentAgency> a owl:Class ;
+    rdfs:label "GovernmentAgency" .
+
+<http://dbpedia.org/ontology/Governor> a owl:Class ;
+    rdfs:label "Governor" .
+
+cls:HistoricalRegion a owl:Class ;
+    rdfs:label "HistoricalRegion" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+<http://dbpedia.org/ontology/Legislature> a owl:Class ;
+    rdfs:label "Legislature" .
+
+<http://dbpedia.org/ontology/Mayor> a owl:Class ;
+    rdfs:label "Mayor" .
+
+<http://dbpedia.org/ontology/MeanOfTransportation> a owl:Class ;
+    rdfs:label "MeanOfTransportation" .
+
+<http://dbpedia.org/ontology/MemberOfParliament> a owl:Class ;
+    rdfs:label "MemberOfParliament" .
+
+<http://dbpedia.org/ontology/MilitaryConflict> a owl:Class ;
+    rdfs:label "MilitaryConflict" .
+
+<http://dbpedia.org/ontology/MilitaryUnit> a owl:Class ;
+    rdfs:label "MilitaryUnit" .
+
+cls:Order a owl:Class ;
+    rdfs:label "Order" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/Plant> a owl:Class ;
+    rdfs:label "Plant" .
+
+cls:PlantType a owl:Class ;
+    rdfs:label "PlantType" .
+
+<http://dbpedia.org/ontology/PoliticalParty> a owl:Class ;
+    rdfs:label "PoliticalParty" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+<http://dbpedia.org/ontology/Province> a owl:Class ;
+    rdfs:label "Province" .
+
+<http://dbpedia.org/ontology/Royalty> a owl:Class ;
+    rdfs:label "Royalty" .
+
+cls:Runway a owl:Class ;
+    rdfs:label "Runway" .
+
+cls:RunwaySurfaceType a owl:Class ;
+    rdfs:label "RunwaySurfaceType" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/SocietalEvent> a owl:Class ;
+    rdfs:label "SocietalEvent" .
+
+<http://dbpedia.org/ontology/Species> a owl:Class ;
+    rdfs:label "Species" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+rel:elevationAboveTheSeaLevelInMetres a owl:DatatypeProperty ;
+    rdfs:label "elevationAboveTheSeaLevelInMetres" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:division a owl:ObjectProperty ;
+    rdfs:label "division" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:1stRunwayLengthFeet a owl:DatatypeProperty ;
+    rdfs:label "1stRunwayLengthFeet" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:currency a owl:ObjectProperty ;
+    rdfs:label "currency" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Currency> .
+
+rel:administrativeArrondissement a owl:ObjectProperty ;
+    rdfs:label "administrativeArrondissement" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:hubAirport a owl:ObjectProperty ;
+    rdfs:label "hubAirport" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:officialLanguage a owl:ObjectProperty ;
+    rdfs:label "officialLanguage" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:locationIdentifier a owl:ObjectProperty ;
+    rdfs:label "locationIdentifier" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range cls:Code .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:1stRunwayLengthMetre a owl:DatatypeProperty ;
+    rdfs:label "1stRunwayLengthMetre" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:aircraftHelicopter a owl:ObjectProperty ;
+    rdfs:label "aircraftHelicopter" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:jurisdiction a owl:ObjectProperty ;
+    rdfs:label "jurisdiction" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:attackAircraft a owl:ObjectProperty ;
+    rdfs:label "attackAircraft" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:city a owl:ObjectProperty ;
+    rdfs:label "city" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:5thRunwayNumber a owl:DatatypeProperty ;
+    rdfs:label "5thRunwayNumber" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:runwayLength a owl:DatatypeProperty ;
+    rdfs:label "runwayLength" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:aircraftFighter a owl:ObjectProperty ;
+    rdfs:label "aircraftFighter" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:2ndRunwaySurfaceType a owl:ObjectProperty ;
+    rdfs:label "2ndRunwaySurfaceType" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:operatingOrganisation a owl:ObjectProperty ;
+    rdfs:label "operatingOrganisation" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:runwayName a owl:ObjectProperty ;
+    rdfs:label "runwayName" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:nativeName a owl:ObjectProperty ;
+    rdfs:label "nativeName" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:headquarter a owl:ObjectProperty ;
+    rdfs:label "headquarter" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:chief a owl:ObjectProperty ;
+    rdfs:label "chief" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:serves a owl:ObjectProperty ;
+    rdfs:label "serves" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:icaoLocationIdentifier a owl:ObjectProperty ;
+    rdfs:label "icaoLocationIdentifier" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range cls:Code .
+
+rel:runwaySurfaceType a owl:ObjectProperty ;
+    rdfs:label "runwaySurfaceType" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+rel:transportAircraft a owl:ObjectProperty ;
+    rdfs:label "transportAircraft" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:order a owl:ObjectProperty ;
+    rdfs:label "order" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:foundingYear a owl:DatatypeProperty ;
+    rdfs:label "foundingYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:gYear .
+
+rel:demonym a owl:ObjectProperty ;
+    rdfs:label "demonym" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:3rdRunwayLengthFeet a owl:DatatypeProperty ;
+    rdfs:label "3rdRunwayLengthFeet" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:mayor a owl:ObjectProperty ;
+    rdfs:label "mayor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:headquarter a owl:ObjectProperty ;
+    rdfs:label "headquarter" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:elevationAboveTheSeaLevelInFeet a owl:DatatypeProperty ;
+    rdfs:label "elevationAboveTheSeaLevelInFeet" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:leaderParty a owl:ObjectProperty ;
+    rdfs:label "leaderParty" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:1stRunwayNumber a owl:DatatypeProperty ;
+    rdfs:label "1stRunwayNumber" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:class a owl:ObjectProperty ;
+    rdfs:label "class" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:battle a owl:ObjectProperty ;
+    rdfs:label "battle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Event> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:iataLocationIdentifier a owl:ObjectProperty ;
+    rdfs:label "iataLocationIdentifier" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range cls:Code .
+
+rel:runwayLengthFeet a owl:DatatypeProperty ;
+    rdfs:label "runwayLengthFeet" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:largestCity a owl:ObjectProperty ;
+    rdfs:label "largestCity" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:4thRunwayLengthFeet a owl:DatatypeProperty ;
+    rdfs:label "4thRunwayLengthFeet" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:countySeat a owl:ObjectProperty ;
+    rdfs:label "countySeat" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:3rdRunwaySurfaceType a owl:ObjectProperty ;
+    rdfs:label "3rdRunwaySurfaceType" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:serves a owl:ObjectProperty ;
+    rdfs:label "serves" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:capital a owl:ObjectProperty ;
+    rdfs:label "capital" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:isPartOf a owl:ObjectProperty ;
+    rdfs:label "isPartOf" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:4thRunwaySurfaceType a owl:ObjectProperty ;
+    rdfs:label "4thRunwaySurfaceType" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:operatingOrganisation a owl:ObjectProperty ;
+    rdfs:label "operatingOrganisation" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:runwayLengthMetre a owl:DatatypeProperty ;
+    rdfs:label "runwayLengthMetre" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range xsd:decimal .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:1stRunwaySurfaceType a owl:ObjectProperty ;
+    rdfs:label "1stRunwaySurfaceType" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:ceremonialCounty a owl:ObjectProperty ;
+    rdfs:label "ceremonialCounty" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Aircraft> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Mayor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Plant> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Family> rdfs:subClassOf cls:PlantType .
+
+<http://dbpedia.org/ontology/Legislature> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:Order rdfs:subClassOf cls:PlantType .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:HistoricalRegion rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:Class rdfs:subClassOf cls:PlantType .
+
+<http://dbpedia.org/ontology/GovernmentAgency> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Province> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+cls:RunwaySurfaceType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:Runway rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/SocietalEvent> rdfs:subClassOf <http://dbpedia.org/ontology/Event> .
+
+cls:County rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/MilitaryConflict> rdfs:subClassOf <http://dbpedia.org/ontology/SocietalEvent> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/PoliticalParty> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:ChiefJustice rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Royalty> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Airline> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/ChemicalCompound> rdfs:subClassOf <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/MemberOfParliament> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+cls:PlantType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:ChiefMinister rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/MilitaryUnit> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Airport> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Governor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .

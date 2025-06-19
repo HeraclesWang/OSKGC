@@ -1,0 +1,273 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_Company#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Company/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Company/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_Company> a owl:Ontology ;
+    rdfs:label "2_Company" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_Company/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> a owl:Class ;
+    rdfs:label "AdministrativeRegion" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+cls:BusinessPerson a owl:Class ;
+    rdfs:label "BusinessPerson" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+cls:CompanyType a owl:Class ;
+    rdfs:label "CompanyType" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/GovernmentAgency> a owl:Class ;
+    rdfs:label "GovernmentAgency" .
+
+cls:Industry a owl:Class ;
+    rdfs:label "Industry" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+cls:Product a owl:Class ;
+    rdfs:label "Product" .
+
+<http://dbpedia.org/ontology/Profession> a owl:Class ;
+    rdfs:label "Profession" .
+
+cls:Representative a owl:Class ;
+    rdfs:label "Representative" .
+
+cls:Service a owl:Class ;
+    rdfs:label "Service" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Software> a owl:Class ;
+    rdfs:label "Software" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:netIncome a owl:DatatypeProperty ;
+    rdfs:label "netIncome" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:areaTotal a owl:DatatypeProperty ;
+    rdfs:label "areaTotal" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:decimal .
+
+rel:numberOfEmployees a owl:DatatypeProperty ;
+    rdfs:label "numberOfEmployees" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:revenue a owl:DatatypeProperty ;
+    rdfs:label "revenue" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:numberOfLocations a owl:DatatypeProperty ;
+    rdfs:label "numberOfLocations" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:ethnicGroup a owl:ObjectProperty ;
+    rdfs:label "ethnicGroup" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:service a owl:ObjectProperty ;
+    rdfs:label "service" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:industry a owl:ObjectProperty ;
+    rdfs:label "industry" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:city a owl:ObjectProperty ;
+    rdfs:label "city" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:type a owl:ObjectProperty ;
+    rdfs:label "type" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:serves a owl:ObjectProperty ;
+    rdfs:label "serves" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:foundationPlace a owl:ObjectProperty ;
+    rdfs:label "foundationPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:foundingDate a owl:DatatypeProperty ;
+    rdfs:label "foundingDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:date .
+
+rel:parentCompany a owl:ObjectProperty ;
+    rdfs:label "parentCompany" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:keyPerson a owl:ObjectProperty ;
+    rdfs:label "keyPerson" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:product a owl:ObjectProperty ;
+    rdfs:label "product" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:product a owl:ObjectProperty ;
+    rdfs:label "product" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:operatingIncome a owl:DatatypeProperty ;
+    rdfs:label "operatingIncome" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:foundingDate a owl:DatatypeProperty ;
+    rdfs:label "foundingDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:date .
+
+rel:keyPerson a owl:ObjectProperty ;
+    rdfs:label "keyPerson" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:CompanyType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:Service rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Software> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/GovernmentAgency> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Profession> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+cls:Representative rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Product rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Industry rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .

@@ -1,0 +1,219 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_CelestialBody#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_CelestialBody> a owl:Ontology ;
+    rdfs:label "2_CelestialBody" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/Asteroid> a owl:Class ;
+    rdfs:label "Asteroid" .
+
+cls:Astronomer a owl:Class ;
+    rdfs:label "Astronomer" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/Project> a owl:Class ;
+    rdfs:label "Project" .
+
+<http://dbpedia.org/ontology/ResearchProject> a owl:Class ;
+    rdfs:label "ResearchProject" .
+
+<http://dbpedia.org/ontology/Scientist> a owl:Class ;
+    rdfs:label "Scientist" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/University> a owl:Class ;
+    rdfs:label "University" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+rel:stateOfOrigin a owl:ObjectProperty ;
+    rdfs:label "stateOfOrigin" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:averageSpeed a owl:DatatypeProperty ;
+    rdfs:label "averageSpeed" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:formerName a owl:ObjectProperty ;
+    rdfs:label "formerName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range <http://dbpedia.org/ontology/Asteroid> .
+
+rel:orbitalPeriod a owl:DatatypeProperty ;
+    rdfs:label "orbitalPeriod" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:surfaceArea a owl:DatatypeProperty ;
+    rdfs:label "surfaceArea" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:deathPlace a owl:ObjectProperty ;
+    rdfs:label "deathPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:escapeVelocity a owl:DatatypeProperty ;
+    rdfs:label "escapeVelocity" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:maximumTemperature a owl:DatatypeProperty ;
+    rdfs:label "maximumTemperature" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birthDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:minimumTemperature a owl:DatatypeProperty ;
+    rdfs:label "minimumTemperature" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:absoluteMagnitude a owl:DatatypeProperty ;
+    rdfs:label "absoluteMagnitude" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:density a owl:DatatypeProperty ;
+    rdfs:label "density" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:discovered a owl:DatatypeProperty ;
+    rdfs:label "discovered" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:date .
+
+rel:apoapsis a owl:DatatypeProperty ;
+    rdfs:label "apoapsis" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:meanTemperature a owl:DatatypeProperty ;
+    rdfs:label "meanTemperature" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:epoch a owl:DatatypeProperty ;
+    rdfs:label "epoch" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:date .
+
+rel:discoverer a owl:ObjectProperty ;
+    rdfs:label "discoverer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:discoverer a owl:ObjectProperty ;
+    rdfs:label "discoverer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:almaMater a owl:ObjectProperty ;
+    rdfs:label "almaMater" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:periapsis a owl:DatatypeProperty ;
+    rdfs:label "periapsis" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:discoverer a owl:ObjectProperty ;
+    rdfs:label "discoverer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:rotationPeriod a owl:DatatypeProperty ;
+    rdfs:label "rotationPeriod" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:nationality a owl:ObjectProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:mass a owl:DatatypeProperty ;
+    rdfs:label "mass" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:temperature a owl:DatatypeProperty ;
+    rdfs:label "temperature" ;
+    rdfs:domain <http://dbpedia.org/ontology/Asteroid> ;
+    rdfs:range xsd:decimal .
+
+rel:doctoralStudent a owl:ObjectProperty ;
+    rdfs:label "doctoralStudent" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+cls:Astronomer rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/ResearchProject> rdfs:subClassOf <http://dbpedia.org/ontology/Project> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/University> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/Scientist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Project> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .

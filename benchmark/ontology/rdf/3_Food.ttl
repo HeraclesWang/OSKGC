@@ -1,0 +1,402 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/3_Food#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Food/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Food/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/3_Food> a owl:Ontology ;
+    rdfs:label "3_Food" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/3_Food/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> a owl:Class ;
+    rdfs:label "AdministrativeRegion" .
+
+<http://dbpedia.org/ontology/Animal> a owl:Class ;
+    rdfs:label "Animal" .
+
+cls:Appetiser a owl:Class ;
+    rdfs:label "Appetiser" .
+
+<http://dbpedia.org/ontology/Bird> a owl:Class ;
+    rdfs:label "Bird" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/ChemicalCompound> a owl:Class ;
+    rdfs:label "ChemicalCompound" .
+
+<http://dbpedia.org/ontology/ChemicalSubstance> a owl:Class ;
+    rdfs:label "ChemicalSubstance" .
+
+cls:ChiefJustice a owl:Class ;
+    rdfs:label "ChiefJustice" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+cls:Condiment a owl:Class ;
+    rdfs:label "Condiment" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+cls:Course a owl:Class ;
+    rdfs:label "Course" .
+
+cls:Cuisine a owl:Class ;
+    rdfs:label "Cuisine" .
+
+<http://dbpedia.org/ontology/Currency> a owl:Class ;
+    rdfs:label "Currency" .
+
+cls:Dessert a owl:Class ;
+    rdfs:label "Dessert" .
+
+cls:Dish a owl:Class ;
+    rdfs:label "Dish" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/Family> a owl:Class ;
+    rdfs:label "Family" .
+
+cls:Food a owl:Class ;
+    rdfs:label "Food" .
+
+cls:Fritter a owl:Class ;
+    rdfs:label "Fritter" .
+
+<http://dbpedia.org/ontology/پھُپھُوندی> a owl:Class ;
+    rdfs:label "Fungus" .
+
+cls:Genus a owl:Class ;
+    rdfs:label "Genus" .
+
+<http://dbpedia.org/ontology/Governor> a owl:Class ;
+    rdfs:label "Governor" .
+
+cls:Ingredient a owl:Class ;
+    rdfs:label "Ingredient" .
+
+<http://dbpedia.org/ontology/Island> a owl:Class ;
+    rdfs:label "Island" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+<http://dbpedia.org/ontology/Legislature> a owl:Class ;
+    rdfs:label "Legislature" .
+
+cls:MainCourse a owl:Class ;
+    rdfs:label "MainCourse" .
+
+<http://dbpedia.org/ontology/MemberOfParliament> a owl:Class ;
+    rdfs:label "MemberOfParliament" .
+
+<http://dbpedia.org/ontology/Mollusca> a owl:Class ;
+    rdfs:label "Mollusca" .
+
+cls:Order a owl:Class ;
+    rdfs:label "Order" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/Plant> a owl:Class ;
+    rdfs:label "Plant" .
+
+cls:PlantType a owl:Class ;
+    rdfs:label "PlantType" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+cls:Representative a owl:Class ;
+    rdfs:label "Representative" .
+
+<http://dbpedia.org/ontology/Royalty> a owl:Class ;
+    rdfs:label "Royalty" .
+
+cls:Sandwich a owl:Class ;
+    rdfs:label "Sandwich" .
+
+cls:Sauce a owl:Class ;
+    rdfs:label "Sauce" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+cls:Snack a owl:Class ;
+    rdfs:label "Snack" .
+
+cls:Soup a owl:Class ;
+    rdfs:label "Soup" .
+
+<http://dbpedia.org/ontology/Species> a owl:Class ;
+    rdfs:label "Species" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/VicePresident> a owl:Class ;
+    rdfs:label "VicePresident" .
+
+rel:ingredient a owl:ObjectProperty ;
+    rdfs:label "ingredient" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:currency a owl:ObjectProperty ;
+    rdfs:label "currency" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Currency> .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:ethnicGroup a owl:ObjectProperty ;
+    rdfs:label "ethnicGroup" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:division a owl:ObjectProperty ;
+    rdfs:label "division" ;
+    rdfs:domain <http://dbpedia.org/ontology/Species> ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:mainIngredient a owl:ObjectProperty ;
+    rdfs:label "mainIngredient" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:dishVariation a owl:ObjectProperty ;
+    rdfs:label "dishVariation" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:carbohydrate a owl:DatatypeProperty ;
+    rdfs:label "carbohydrate" ;
+    rdfs:domain cls:Food ;
+    rdfs:range xsd:decimal .
+
+rel:protein a owl:DatatypeProperty ;
+    rdfs:label "protein" ;
+    rdfs:domain cls:Food ;
+    rdfs:range xsd:decimal .
+
+rel:region a owl:ObjectProperty ;
+    rdfs:label "region" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:family a owl:ObjectProperty ;
+    rdfs:label "family" ;
+    rdfs:domain <http://dbpedia.org/ontology/Species> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:demonym a owl:ObjectProperty ;
+    rdfs:label "demonym" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:ingredient a owl:ObjectProperty ;
+    rdfs:label "ingredient" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:fat a owl:DatatypeProperty ;
+    rdfs:label "fat" ;
+    rdfs:domain cls:Food ;
+    rdfs:range xsd:decimal .
+
+rel:genus a owl:ObjectProperty ;
+    rdfs:label "genus" ;
+    rdfs:domain <http://dbpedia.org/ontology/Species> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:mainIngredient a owl:ObjectProperty ;
+    rdfs:label "mainIngredient" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:alternativeName a owl:ObjectProperty ;
+    rdfs:label "alternativeName" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:order a owl:ObjectProperty ;
+    rdfs:label "order" ;
+    rdfs:domain <http://dbpedia.org/ontology/Species> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:cuisine a owl:ObjectProperty ;
+    rdfs:label "cuisine" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:course a owl:ObjectProperty ;
+    rdfs:label "course" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:dishVariation a owl:ObjectProperty ;
+    rdfs:label "dishVariation" ;
+    rdfs:domain cls:Food ;
+    rdfs:range cls:Food .
+
+rel:ingredient a owl:ObjectProperty ;
+    rdfs:label "ingredient" ;
+    rdfs:domain cls:Food ;
+    rdfs:range <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+rel:capital a owl:ObjectProperty ;
+    rdfs:label "capital" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+cls:Soup rdfs:subClassOf cls:Dish .
+
+cls:Sauce rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Plant> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Family> rdfs:subClassOf cls:PlantType .
+
+cls:Course rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/Legislature> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:Order rdfs:subClassOf cls:PlantType .
+
+cls:Dish rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:Ingredient rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Snack rdfs:subClassOf cls:Dish .
+
+<http://dbpedia.org/ontology/Island> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Bird> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/پھُپھُوندی> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+cls:Fritter rdfs:subClassOf cls:Dish .
+
+<http://dbpedia.org/ontology/Animal> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+cls:Sandwich rdfs:subClassOf cls:Dish .
+
+cls:Cuisine rdfs:subClassOf cls:Food .
+
+cls:MainCourse rdfs:subClassOf cls:Dish .
+
+cls:ChiefJustice rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Representative rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Governor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Royalty> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:Condiment rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/ChemicalCompound> rdfs:subClassOf <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+cls:Genus rdfs:subClassOf cls:PlantType .
+
+cls:Appetiser rdfs:subClassOf cls:Dish .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/MemberOfParliament> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+cls:PlantType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+<http://dbpedia.org/ontology/VicePresident> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Mollusca> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Dessert rdfs:subClassOf cls:Dish .

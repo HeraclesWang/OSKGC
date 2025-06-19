@@ -1,0 +1,293 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/3_Scientist#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Scientist/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/3_Scientist> a owl:Ontology ;
+    rdfs:label "3_Scientist" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/3_Scientist/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AcademicSubject> a owl:Class ;
+    rdfs:label "AcademicSubject" .
+
+<http://dbpedia.org/ontology/Award> a owl:Class ;
+    rdfs:label "Award" .
+
+cls:Botanist a owl:Class ;
+    rdfs:label "Botanist" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/Economist> a owl:Class ;
+    rdfs:label "Economist" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+cls:GovernmentType a owl:Class ;
+    rdfs:label "GovernmentType" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+cls:Mathematician a owl:Class ;
+    rdfs:label "Mathematician" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+cls:Physicist a owl:Class ;
+    rdfs:label "Physicist" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+<http://dbpedia.org/ontology/Professor> a owl:Class ;
+    rdfs:label "Professor" .
+
+cls:Representative a owl:Class ;
+    rdfs:label "Representative" .
+
+<http://dbpedia.org/ontology/Scientist> a owl:Class ;
+    rdfs:label "Scientist" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+cls:TimeZone a owl:Class ;
+    rdfs:label "TimeZone" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/University> a owl:Class ;
+    rdfs:label "University" .
+
+cls:ViceChancellor a owl:Class ;
+    rdfs:label "ViceChancellor" .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:areaTotal a owl:DatatypeProperty ;
+    rdfs:label "areaTotal" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:decimal .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influencedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:doctoralAdvisor a owl:ObjectProperty ;
+    rdfs:label "doctoralAdvisor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:utcOffset a owl:DatatypeProperty ;
+    rdfs:label "utcOffset" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:decimal .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:deathPlace a owl:ObjectProperty ;
+    rdfs:label "deathPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:knownFor a owl:ObjectProperty ;
+    rdfs:label "knownFor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:timeZone a owl:ObjectProperty ;
+    rdfs:label "timeZone" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:governmentType a owl:ObjectProperty ;
+    rdfs:label "governmentType" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:award a owl:ObjectProperty ;
+    rdfs:label "award" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Award> .
+
+rel:foundingDate a owl:DatatypeProperty ;
+    rdfs:label "foundingDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:date .
+
+rel:birthName a owl:ObjectProperty ;
+    rdfs:label "birthName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:spouse a owl:ObjectProperty ;
+    rdfs:label "spouse" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birthDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:demonym a owl:ObjectProperty ;
+    rdfs:label "demonym" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:deathDate a owl:DatatypeProperty ;
+    rdfs:label "deathDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:longName a owl:ObjectProperty ;
+    rdfs:label "longName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:residence a owl:ObjectProperty ;
+    rdfs:label "residence" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:almaMater a owl:ObjectProperty ;
+    rdfs:label "almaMater" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:viceChancellor a owl:ObjectProperty ;
+    rdfs:label "viceChancellor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:nationality a owl:ObjectProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:professionalField a owl:ObjectProperty ;
+    rdfs:label "professionalField" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:citizenship a owl:ObjectProperty ;
+    rdfs:label "citizenship" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:Mathematician rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Physicist rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:GovernmentType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/University> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:ViceChancellor rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Representative rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Professor> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/Economist> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/AcademicSubject> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Botanist rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/Scientist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:TimeZone rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .

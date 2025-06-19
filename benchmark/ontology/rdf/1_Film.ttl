@@ -1,0 +1,328 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/1_Film#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_Film/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_Film/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/1_Film> a owl:Ontology ;
+    rdfs:label "1_Film" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/1_Film/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/Actor> a owl:Class ;
+    rdfs:label "Actor" .
+
+<http://dbpedia.org/ontology/Artist> a owl:Class ;
+    rdfs:label "Artist" .
+
+cls:Background a owl:Class ;
+    rdfs:label "Background" .
+
+cls:BusinessPerson a owl:Class ;
+    rdfs:label "BusinessPerson" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+cls:Cinematographer a owl:Class ;
+    rdfs:label "Cinematographer" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+cls:Code a owl:Class ;
+    rdfs:label "Code" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/فلم> a owl:Class ;
+    rdfs:label "Film" .
+
+cls:Industry a owl:Class ;
+    rdfs:label "Industry" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+cls:MovieDirector a owl:Class ;
+    rdfs:label "MovieDirector" .
+
+cls:MovieEditor a owl:Class ;
+    rdfs:label "MovieEditor" .
+
+<http://dbpedia.org/ontology/MusicComposer> a owl:Class ;
+    rdfs:label "MusicComposer" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+cls:ProductionCompany a owl:Class ;
+    rdfs:label "ProductionCompany" .
+
+<http://dbpedia.org/ontology/Profession> a owl:Class ;
+    rdfs:label "Profession" .
+
+cls:ScreenWriter a owl:Class ;
+    rdfs:label "ScreenWriter" .
+
+cls:Service a owl:Class ;
+    rdfs:label "Service" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/TelevisionStation> a owl:Class ;
+    rdfs:label "TelevisionStation" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+<http://dbpedia.org/ontology/Writer> a owl:Class ;
+    rdfs:label "Writer" .
+
+rel:producer a owl:ObjectProperty ;
+    rdfs:label "producer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:releaseDate a owl:DatatypeProperty ;
+    rdfs:label "releaseDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:date .
+
+rel:child a owl:ObjectProperty ;
+    rdfs:label "child" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:service a owl:ObjectProperty ;
+    rdfs:label "service" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:industry a owl:ObjectProperty ;
+    rdfs:label "industry" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:deathYear a owl:DatatypeProperty ;
+    rdfs:label "deathYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:gYear .
+
+rel:deathPlace a owl:ObjectProperty ;
+    rdfs:label "deathPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:sisterStation a owl:ObjectProperty ;
+    rdfs:label "sisterStation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:imdbId a owl:ObjectProperty ;
+    rdfs:label "imdbId" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range cls:Code .
+
+rel:cinematography a owl:ObjectProperty ;
+    rdfs:label "cinematography" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:spouse a owl:ObjectProperty ;
+    rdfs:label "spouse" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:occupation a owl:ObjectProperty ;
+    rdfs:label "occupation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birthDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:background a owl:ObjectProperty ;
+    rdfs:label "background" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:gross a owl:DatatypeProperty ;
+    rdfs:label "gross" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:musicComposer a owl:ObjectProperty ;
+    rdfs:label "musicComposer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:keyPerson a owl:ObjectProperty ;
+    rdfs:label "keyPerson" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:starring a owl:ObjectProperty ;
+    rdfs:label "starring" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:editor a owl:ObjectProperty ;
+    rdfs:label "editor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:distributor a owl:ObjectProperty ;
+    rdfs:label "distributor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:broadcastedBy a owl:ObjectProperty ;
+    rdfs:label "broadcastedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:deathDate a owl:DatatypeProperty ;
+    rdfs:label "deathDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:runtime a owl:DatatypeProperty ;
+    rdfs:label "runtime" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:director a owl:ObjectProperty ;
+    rdfs:label "director" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:birthYear a owl:DatatypeProperty ;
+    rdfs:label "birthYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:gYear .
+
+rel:producer a owl:ObjectProperty ;
+    rdfs:label "producer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:imdbId a owl:ObjectProperty ;
+    rdfs:label "imdbId" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range cls:Code .
+
+rel:activeYearsStartYear a owl:DatatypeProperty ;
+    rdfs:label "activeYearsStartYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:gYear .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:writer a owl:ObjectProperty ;
+    rdfs:label "writer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:foundingYear a owl:DatatypeProperty ;
+    rdfs:label "foundingYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:gYear .
+
+rel:formerName a owl:ObjectProperty ;
+    rdfs:label "formerName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+cls:Service rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:MovieDirector rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/TelevisionStation> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Writer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Profession> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Background rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:ScreenWriter rdfs:subClassOf <http://dbpedia.org/ontology/Writer> .
+
+<http://dbpedia.org/ontology/فلم> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+cls:ProductionCompany rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+cls:MovieEditor rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Actor> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/MusicComposer> rdfs:subClassOf <http://dbpedia.org/ontology/Writer> .
+
+cls:Industry rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Artist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:Cinematographer rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .

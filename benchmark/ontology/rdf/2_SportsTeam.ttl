@@ -1,0 +1,353 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_SportsTeam> a owl:Ontology ;
+    rdfs:label "2_SportsTeam" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+<http://dbpedia.org/ontology/Athlete> a owl:Class ;
+    rdfs:label "Athlete" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+cls:BusinessPerson a owl:Class ;
+    rdfs:label "BusinessPerson" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/CityDistrict> a owl:Class ;
+    rdfs:label "CityDistrict" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/Currency> a owl:Class ;
+    rdfs:label "Currency" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/FootballLeagueSeason> a owl:Class ;
+    rdfs:label "FootballLeagueSeason" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+<http://dbpedia.org/ontology/Mayor> a owl:Class ;
+    rdfs:label "Mayor" .
+
+<http://dbpedia.org/ontology/MemberOfParliament> a owl:Class ;
+    rdfs:label "MemberOfParliament" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalParty> a owl:Class ;
+    rdfs:label "PoliticalParty" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+<http://dbpedia.org/ontology/School> a owl:Class ;
+    rdfs:label "School" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/SoccerClub> a owl:Class ;
+    rdfs:label "SoccerClub" .
+
+<http://dbpedia.org/ontology/SoccerLeague> a owl:Class ;
+    rdfs:label "SoccerLeague" .
+
+<http://dbpedia.org/ontology/SoccerManager> a owl:Class ;
+    rdfs:label "SoccerManager" .
+
+<http://dbpedia.org/ontology/SoccerPlayer> a owl:Class ;
+    rdfs:label "SoccerPlayer" .
+
+<http://dbpedia.org/ontology/SportsClub> a owl:Class ;
+    rdfs:label "SportsClub" .
+
+<http://dbpedia.org/ontology/SportsLeague> a owl:Class ;
+    rdfs:label "SportsLeague" .
+
+<http://dbpedia.org/ontology/SportsManager> a owl:Class ;
+    rdfs:label "SportsManager" .
+
+<http://dbpedia.org/ontology/Stadium> a owl:Class ;
+    rdfs:label "Stadium" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/Venue> a owl:Class ;
+    rdfs:label "Venue" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+rel:currency a owl:ObjectProperty ;
+    rdfs:label "currency" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Currency> .
+
+rel:officialLanguage a owl:ObjectProperty ;
+    rdfs:label "officialLanguage" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:league a owl:ObjectProperty ;
+    rdfs:label "league" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:champions a owl:ObjectProperty ;
+    rdfs:label "champions" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:club a owl:ObjectProperty ;
+    rdfs:label "club" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:fullName a owl:ObjectProperty ;
+    rdfs:label "fullName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:ground a owl:ObjectProperty ;
+    rdfs:label "ground" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:season a owl:DatatypeProperty ;
+    rdfs:label "season" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:gYear .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:tenant a owl:ObjectProperty ;
+    rdfs:label "tenant" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:operator a owl:ObjectProperty ;
+    rdfs:label "operator" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:state a owl:ObjectProperty ;
+    rdfs:label "state" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:ground a owl:ObjectProperty ;
+    rdfs:label "ground" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:manager a owl:ObjectProperty ;
+    rdfs:label "manager" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:demonym a owl:ObjectProperty ;
+    rdfs:label "demonym" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:mayor a owl:ObjectProperty ;
+    rdfs:label "mayor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:leaderParty a owl:ObjectProperty ;
+    rdfs:label "leaderParty" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:season a owl:ObjectProperty ;
+    rdfs:label "season" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/FootballLeagueSeason> .
+
+rel:ground a owl:ObjectProperty ;
+    rdfs:label "ground" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:nickname a owl:ObjectProperty ;
+    rdfs:label "nickname" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:capital a owl:ObjectProperty ;
+    rdfs:label "capital" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:isPartOf a owl:ObjectProperty ;
+    rdfs:label "isPartOf" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:numberOfMembers a owl:DatatypeProperty ;
+    rdfs:label "numberOfMembers" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range xsd:decimal .
+
+rel:chairman a owl:ObjectProperty ;
+    rdfs:label "chairman" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/SoccerPlayer> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/SoccerClub> rdfs:subClassOf <http://dbpedia.org/ontology/SportsClub> .
+
+<http://dbpedia.org/ontology/SportsManager> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Mayor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/School> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/SportsLeague> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Stadium> rdfs:subClassOf <http://dbpedia.org/ontology/Venue> .
+
+<http://dbpedia.org/ontology/SportsClub> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Athlete> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Venue> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/CityDistrict> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/PoliticalParty> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/SoccerManager> rdfs:subClassOf <http://dbpedia.org/ontology/SportsManager> .
+
+<http://dbpedia.org/ontology/MemberOfParliament> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/SoccerLeague> rdfs:subClassOf <http://dbpedia.org/ontology/SportsLeague> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .

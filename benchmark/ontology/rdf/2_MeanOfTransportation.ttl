@@ -1,0 +1,597 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation> a owl:Ontology ;
+    rdfs:label "2_MeanOfTransportation" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+<http://dbpedia.org/ontology/Artist> a owl:Class ;
+    rdfs:label "Artist" .
+
+<http://dbpedia.org/ontology/Automobile> a owl:Class ;
+    rdfs:label "Automobile" .
+
+<http://dbpedia.org/ontology/AutomobileEngine> a owl:Class ;
+    rdfs:label "AutomobileEngine" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+cls:BusinessPerson a owl:Class ;
+    rdfs:label "BusinessPerson" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+cls:CarBodyStyle a owl:Class ;
+    rdfs:label "CarBodyStyle" .
+
+cls:CarType a owl:Class ;
+    rdfs:label "CarType" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+cls:Designer a owl:Class ;
+    rdfs:label "Designer" .
+
+<http://dbpedia.org/ontology/Device> a owl:Class ;
+    rdfs:label "Device" .
+
+<http://dbpedia.org/ontology/Engine> a owl:Class ;
+    rdfs:label "Engine" .
+
+<http://dbpedia.org/ontology/Engineer> a owl:Class ;
+    rdfs:label "Engineer" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/Factory> a owl:Class ;
+    rdfs:label "Factory" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+cls:LaunchBase a owl:Class ;
+    rdfs:label "LaunchBase" .
+
+<http://dbpedia.org/ontology/LaunchPad> a owl:Class ;
+    rdfs:label "LaunchPad" .
+
+<http://dbpedia.org/ontology/Locomotive> a owl:Class ;
+    rdfs:label "Locomotive" .
+
+cls:Manufacturer a owl:Class ;
+    rdfs:label "Manufacturer" .
+
+<http://dbpedia.org/ontology/MeanOfTransportation> a owl:Class ;
+    rdfs:label "MeanOfTransportation" .
+
+<http://dbpedia.org/ontology/MilitaryUnit> a owl:Class ;
+    rdfs:label "MilitaryUnit" .
+
+<http://dbpedia.org/ontology/MusicalWork> a owl:Class ;
+    rdfs:label "MusicalWork" .
+
+cls:NationalAnthem a owl:Class ;
+    rdfs:label "NationalAnthem" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/Rocket> a owl:Class ;
+    rdfs:label "Rocket" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Ship> a owl:Class ;
+    rdfs:label "Ship" .
+
+cls:ShipClass a owl:Class ;
+    rdfs:label "ShipClass" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+cls:Status a owl:Class ;
+    rdfs:label "Status" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+cls:Transmission a owl:Class ;
+    rdfs:label "Transmission" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/Weapon> a owl:Class ;
+    rdfs:label "Weapon" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+rel:totalProduction a owl:DatatypeProperty ;
+    rdfs:label "totalProduction" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:relatedMeanOfTransportation a owl:ObjectProperty ;
+    rdfs:label "relatedMeanOfTransportation" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:areaTotal a owl:DatatypeProperty ;
+    rdfs:label "areaTotal" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:decimal .
+
+rel:topSpeed a owl:DatatypeProperty ;
+    rdfs:label "topSpeed" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:builder a owl:ObjectProperty ;
+    rdfs:label "builder" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:fate a owl:ObjectProperty ;
+    rdfs:label "fate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:ethnicGroup a owl:ObjectProperty ;
+    rdfs:label "ethnicGroup" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:activeYearsStartDate a owl:DatatypeProperty ;
+    rdfs:label "activeYearsStartDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:assembly a owl:ObjectProperty ;
+    rdfs:label "assembly" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:designer a owl:ObjectProperty ;
+    rdfs:label "designer" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:transmission a owl:ObjectProperty ;
+    rdfs:label "transmission" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Device> .
+
+rel:foundedBy a owl:ObjectProperty ;
+    rdfs:label "foundedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:shipLaunch a owl:DatatypeProperty ;
+    rdfs:label "shipLaunch" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:partialFailures a owl:DatatypeProperty ;
+    rdfs:label "partialFailures" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:bodyStyle a owl:ObjectProperty ;
+    rdfs:label "bodyStyle" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:launchSite a owl:ObjectProperty ;
+    rdfs:label "launchSite" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:countryOrigin a owl:ObjectProperty ;
+    rdfs:label "countryOrigin" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:manufacturer a owl:ObjectProperty ;
+    rdfs:label "manufacturer" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:foundationPlace a owl:ObjectProperty ;
+    rdfs:label "foundationPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:shipClass a owl:ObjectProperty ;
+    rdfs:label "shipClass" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:status a owl:ObjectProperty ;
+    rdfs:label "status" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:site a owl:ObjectProperty ;
+    rdfs:label "site" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:operator a owl:ObjectProperty ;
+    rdfs:label "operator" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:maidenFlight a owl:DatatypeProperty ;
+    rdfs:label "maidenFlight" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:failedLaunches a owl:DatatypeProperty ;
+    rdfs:label "failedLaunches" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:maidenVoyage a owl:DatatypeProperty ;
+    rdfs:label "maidenVoyage" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:operator a owl:ObjectProperty ;
+    rdfs:label "operator" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:associatedRocket a owl:ObjectProperty ;
+    rdfs:label "associatedRocket" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:comparable a owl:ObjectProperty ;
+    rdfs:label "comparable" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:product a owl:ObjectProperty ;
+    rdfs:label "product" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Device> .
+
+rel:parentCompany a owl:ObjectProperty ;
+    rdfs:label "parentCompany" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:cylinderCount a owl:DatatypeProperty ;
+    rdfs:label "cylinderCount" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:christeningDate a owl:DatatypeProperty ;
+    rdfs:label "christeningDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:keyPerson a owl:ObjectProperty ;
+    rdfs:label "keyPerson" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:owner a owl:ObjectProperty ;
+    rdfs:label "owner" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:shipInService a owl:DatatypeProperty ;
+    rdfs:label "shipInService" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:builder a owl:ObjectProperty ;
+    rdfs:label "builder" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:shipBeam a owl:DatatypeProperty ;
+    rdfs:label "shipBeam" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:length a owl:DatatypeProperty ;
+    rdfs:label "length" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:finalFlight a owl:DatatypeProperty ;
+    rdfs:label "finalFlight" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:demonym a owl:ObjectProperty ;
+    rdfs:label "demonym" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:modelYears a owl:DatatypeProperty ;
+    rdfs:label "modelYears" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:gYear .
+
+rel:successor a owl:ObjectProperty ;
+    rdfs:label "successor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:shipLaidDown a owl:DatatypeProperty ;
+    rdfs:label "shipLaidDown" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:assembly a owl:ObjectProperty ;
+    rdfs:label "assembly" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:anthem a owl:ObjectProperty ;
+    rdfs:label "anthem" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:manufacturer a owl:ObjectProperty ;
+    rdfs:label "manufacturer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Device> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:productionEndYear a owl:DatatypeProperty ;
+    rdfs:label "productionEndYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:gYear .
+
+rel:totalLaunches a owl:DatatypeProperty ;
+    rdfs:label "totalLaunches" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:alternativeName a owl:ObjectProperty ;
+    rdfs:label "alternativeName" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+rel:class a owl:ObjectProperty ;
+    rdfs:label "class" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:employer a owl:ObjectProperty ;
+    rdfs:label "employer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:shipDisplacement a owl:DatatypeProperty ;
+    rdfs:label "shipDisplacement" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:poweredBy a owl:ObjectProperty ;
+    rdfs:label "poweredBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:designCompany a owl:ObjectProperty ;
+    rdfs:label "designCompany" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:assembly a owl:ObjectProperty ;
+    rdfs:label "assembly" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:diameter a owl:DatatypeProperty ;
+    rdfs:label "diameter" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:shipDraft a owl:DatatypeProperty ;
+    rdfs:label "shipDraft" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:division a owl:ObjectProperty ;
+    rdfs:label "division" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:engineSize a owl:DatatypeProperty ;
+    rdfs:label "engineSize" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:engine a owl:ObjectProperty ;
+    rdfs:label "engine" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/Device> .
+
+rel:capital a owl:ObjectProperty ;
+    rdfs:label "capital" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:completionDate a owl:DatatypeProperty ;
+    rdfs:label "completionDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:date .
+
+rel:productionStartYear a owl:DatatypeProperty ;
+    rdfs:label "productionStartYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:gYear .
+
+rel:subsidiary a owl:ObjectProperty ;
+    rdfs:label "subsidiary" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:wheelbase a owl:DatatypeProperty ;
+    rdfs:label "wheelbase" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range xsd:decimal .
+
+rel:successor a owl:ObjectProperty ;
+    rdfs:label "successor" ;
+    rdfs:domain <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    rdfs:range <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Rocket> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:CarType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:Transmission rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+cls:Designer rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Locomotive> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Factory> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Ship> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Engine> rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Engineer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Weapon> rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/Automobile> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+cls:NationalAnthem rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/LaunchPad> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:LaunchBase rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/MusicalWork> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+cls:ShipClass rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+cls:Manufacturer rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+cls:CarBodyStyle rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/AutomobileEngine> rdfs:subClassOf <http://dbpedia.org/ontology/Engine> .
+
+cls:Status rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+<http://dbpedia.org/ontology/Artist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/MilitaryUnit> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .

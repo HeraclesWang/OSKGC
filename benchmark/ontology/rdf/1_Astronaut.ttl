@@ -1,0 +1,364 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/1_Astronaut#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_Astronaut/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_Astronaut/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/1_Astronaut> a owl:Ontology ;
+    rdfs:label "1_Astronaut" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/1_Astronaut/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> a owl:Class ;
+    rdfs:label "AdministrativeRegion" .
+
+<http://dbpedia.org/ontology/Animal> a owl:Class ;
+    rdfs:label "Animal" .
+
+<http://dbpedia.org/ontology/Astronaut> a owl:Class ;
+    rdfs:label "Astronaut" .
+
+<http://dbpedia.org/ontology/Award> a owl:Class ;
+    rdfs:label "Award" .
+
+<http://dbpedia.org/ontology/Bird> a owl:Class ;
+    rdfs:label "Bird" .
+
+<http://dbpedia.org/ontology/Chancellor> a owl:Class ;
+    rdfs:label "Chancellor" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/CityDistrict> a owl:Class ;
+    rdfs:label "CityDistrict" .
+
+cls:Code a owl:Class ;
+    rdfs:label "Code" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+cls:County a owl:Class ;
+    rdfs:label "County" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/Event> a owl:Class ;
+    rdfs:label "Event" .
+
+<http://dbpedia.org/ontology/FictionalCharacter> a owl:Class ;
+    rdfs:label "FictionalCharacter" .
+
+<http://dbpedia.org/ontology/Governor> a owl:Class ;
+    rdfs:label "Governor" .
+
+cls:Mascot a owl:Class ;
+    rdfs:label "Mascot" .
+
+<http://dbpedia.org/ontology/Mayor> a owl:Class ;
+    rdfs:label "Mayor" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/Profession> a owl:Class ;
+    rdfs:label "Profession" .
+
+<http://dbpedia.org/ontology/Province> a owl:Class ;
+    rdfs:label "Province" .
+
+<http://dbpedia.org/ontology/Senator> a owl:Class ;
+    rdfs:label "Senator" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/SocietalEvent> a owl:Class ;
+    rdfs:label "SocietalEvent" .
+
+<http://dbpedia.org/ontology/SpaceMission> a owl:Class ;
+    rdfs:label "SpaceMission" .
+
+<http://dbpedia.org/ontology/Species> a owl:Class ;
+    rdfs:label "Species" .
+
+<http://dbpedia.org/ontology/SportsLeague> a owl:Class ;
+    rdfs:label "SportsLeague" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+cls:Status a owl:Class ;
+    rdfs:label "Status" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/University> a owl:Class ;
+    rdfs:label "University" .
+
+rel:mascot a owl:ObjectProperty ;
+    rdfs:label "mascot" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/FictionalCharacter> .
+
+rel:selectedByNasa a owl:DatatypeProperty ;
+    rdfs:label "selectedByNasa" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:gYear .
+
+rel:utcOffset a owl:DatatypeProperty ;
+    rdfs:label "utcOffset" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range xsd:decimal .
+
+rel:cosparId a owl:ObjectProperty ;
+    rdfs:label "cosparId" ;
+    rdfs:domain <http://dbpedia.org/ontology/Event> ;
+    rdfs:range cls:Code .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:awards a owl:DatatypeProperty ;
+    rdfs:label "awards" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:decimal .
+
+rel:deathPlace a owl:ObjectProperty ;
+    rdfs:label "deathPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:senator a owl:ObjectProperty ;
+    rdfs:label "senator" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:award a owl:ObjectProperty ;
+    rdfs:label "award" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Award> .
+
+rel:birthName a owl:ObjectProperty ;
+    rdfs:label "birthName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:commander a owl:ObjectProperty ;
+    rdfs:label "commander" ;
+    rdfs:domain <http://dbpedia.org/ontology/Event> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:bird a owl:ObjectProperty ;
+    rdfs:label "bird" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:occupation a owl:ObjectProperty ;
+    rdfs:label "occupation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birthDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:fossil a owl:ObjectProperty ;
+    rdfs:label "fossil" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:status a owl:ObjectProperty ;
+    rdfs:label "status" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:representative a owl:ObjectProperty ;
+    rdfs:label "representative" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:crewMembers a owl:ObjectProperty ;
+    rdfs:label "crewMembers" ;
+    rdfs:domain <http://dbpedia.org/ontology/Event> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:president a owl:ObjectProperty ;
+    rdfs:label "president" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:timeInSpace a owl:DatatypeProperty ;
+    rdfs:label "timeInSpace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:decimal .
+
+rel:deathDate a owl:DatatypeProperty ;
+    rdfs:label "deathDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:competeIn a owl:ObjectProperty ;
+    rdfs:label "competeIn" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:backupPilot a owl:ObjectProperty ;
+    rdfs:label "backupPilot" ;
+    rdfs:domain <http://dbpedia.org/ontology/Event> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:operator a owl:ObjectProperty ;
+    rdfs:label "operator" ;
+    rdfs:domain <http://dbpedia.org/ontology/Event> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:servedAsChiefOfTheAstronautOfficeIn a owl:DatatypeProperty ;
+    rdfs:label "servedAsChiefOfTheAstronautOfficeIn" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:gYear .
+
+rel:dateOfRetirement a owl:DatatypeProperty ;
+    rdfs:label "dateOfRetirement" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range xsd:date .
+
+rel:almaMater a owl:ObjectProperty ;
+    rdfs:label "almaMater" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:higher a owl:ObjectProperty ;
+    rdfs:label "higher" ;
+    rdfs:domain <http://dbpedia.org/ontology/Award> ;
+    rdfs:range <http://dbpedia.org/ontology/Award> .
+
+rel:title a owl:ObjectProperty ;
+    rdfs:label "title" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:ribbonAward a owl:ObjectProperty ;
+    rdfs:label "ribbonAward" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Award> .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:isPartOf a owl:ObjectProperty ;
+    rdfs:label "isPartOf" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:alternativeName a owl:ObjectProperty ;
+    rdfs:label "alternativeName" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:nationality a owl:ObjectProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:affiliation a owl:ObjectProperty ;
+    rdfs:label "affiliation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:mission a owl:ObjectProperty ;
+    rdfs:label "mission" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Event> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Chancellor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Mayor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/SportsLeague> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Astronaut> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/University> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/Province> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<http://dbpedia.org/ontology/Bird> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/CityDistrict> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/SocietalEvent> rdfs:subClassOf <http://dbpedia.org/ontology/Event> .
+
+<http://dbpedia.org/ontology/Profession> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:County rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Animal> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+cls:Mascot rdfs:subClassOf <http://dbpedia.org/ontology/FictionalCharacter> .
+
+<http://dbpedia.org/ontology/Senator> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/SpaceMission> rdfs:subClassOf <http://dbpedia.org/ontology/SocietalEvent> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+cls:Status rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+<http://dbpedia.org/ontology/Governor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .

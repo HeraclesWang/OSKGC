@@ -1,0 +1,197 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_MusicalWork#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_MusicalWork> a owl:Ontology ;
+    rdfs:label "2_MusicalWork" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/Album> a owl:Class ;
+    rdfs:label "Album" .
+
+<http://dbpedia.org/ontology/Artist> a owl:Class ;
+    rdfs:label "Artist" .
+
+cls:Band a owl:Class ;
+    rdfs:label "Band" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/Device> a owl:Class ;
+    rdfs:label "Device" .
+
+<http://dbpedia.org/ontology/Genre> a owl:Class ;
+    rdfs:label "Genre" .
+
+<http://dbpedia.org/ontology/Group> a owl:Class ;
+    rdfs:label "Group" .
+
+cls:Instrument a owl:Class ;
+    rdfs:label "Instrument" .
+
+<http://dbpedia.org/ontology/MusicGenre> a owl:Class ;
+    rdfs:label "MusicGenre" .
+
+<http://dbpedia.org/ontology/MusicalArtist> a owl:Class ;
+    rdfs:label "MusicalArtist" .
+
+<http://dbpedia.org/ontology/MusicalWork> a owl:Class ;
+    rdfs:label "MusicalWork" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/RecordLabel> a owl:Class ;
+    rdfs:label "RecordLabel" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Song> a owl:Class ;
+    rdfs:label "Song" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+rel:genre a owl:ObjectProperty ;
+    rdfs:label "genre" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:producer a owl:ObjectProperty ;
+    rdfs:label "producer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:associatedBand a owl:ObjectProperty ;
+    rdfs:label "associatedBand" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:instrument a owl:ObjectProperty ;
+    rdfs:label "instrument" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/Device> .
+
+rel:recordedIn a owl:ObjectProperty ;
+    rdfs:label "recordedIn" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:producer a owl:ObjectProperty ;
+    rdfs:label "producer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:precededBy a owl:ObjectProperty ;
+    rdfs:label "precededBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:musicFusionGenre a owl:ObjectProperty ;
+    rdfs:label "musicFusionGenre" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:releaseDate a owl:DatatypeProperty ;
+    rdfs:label "releaseDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:date .
+
+rel:musicSubgenre a owl:ObjectProperty ;
+    rdfs:label "musicSubgenre" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:stylisticOrigin a owl:ObjectProperty ;
+    rdfs:label "stylisticOrigin" ;
+    rdfs:domain <http://dbpedia.org/ontology/TopicalConcept> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:followedBy a owl:ObjectProperty ;
+    rdfs:label "followedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:runtime a owl:DatatypeProperty ;
+    rdfs:label "runtime" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:recordLabel a owl:ObjectProperty ;
+    rdfs:label "recordLabel" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:artist a owl:ObjectProperty ;
+    rdfs:label "artist" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:writer a owl:ObjectProperty ;
+    rdfs:label "writer" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:genre a owl:ObjectProperty ;
+    rdfs:label "genre" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Genre> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/MusicalArtist> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/RecordLabel> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+cls:Band rdfs:subClassOf <http://dbpedia.org/ontology/Group> .
+
+<http://dbpedia.org/ontology/MusicalWork> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/Group> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Song> rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+cls:Instrument rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/Artist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/MusicGenre> rdfs:subClassOf <http://dbpedia.org/ontology/Genre> .
+
+<http://dbpedia.org/ontology/Album> rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .

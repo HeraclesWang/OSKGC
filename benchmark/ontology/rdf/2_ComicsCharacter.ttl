@@ -1,0 +1,220 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter> a owl:Ontology ;
+    rdfs:label "2_ComicsCharacter" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/Actor> a owl:Class ;
+    rdfs:label "Actor" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+<http://dbpedia.org/ontology/Artist> a owl:Class ;
+    rdfs:label "Artist" .
+
+<http://dbpedia.org/ontology/Award> a owl:Class ;
+    rdfs:label "Award" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+<http://dbpedia.org/ontology/Comedian> a owl:Class ;
+    rdfs:label "Comedian" .
+
+<http://dbpedia.org/ontology/ComicsCharacter> a owl:Class ;
+    rdfs:label "ComicsCharacter" .
+
+<http://dbpedia.org/ontology/ComicsCreator> a owl:Class ;
+    rdfs:label "ComicsCreator" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+cls:County a owl:Class ;
+    rdfs:label "County" .
+
+<http://dbpedia.org/ontology/FictionalCharacter> a owl:Class ;
+    rdfs:label "FictionalCharacter" .
+
+<http://dbpedia.org/ontology/فلم> a owl:Class ;
+    rdfs:label "Film" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/TelevisionStation> a owl:Class ;
+    rdfs:label "TelevisionStation" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+<http://dbpedia.org/ontology/Writer> a owl:Class ;
+    rdfs:label "Writer" .
+
+rel:firstAppearanceInFilm a owl:ObjectProperty ;
+    rdfs:label "firstAppearanceInFilm" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+rel:starring a owl:ObjectProperty ;
+    rdfs:label "starring" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:broadcastedBy a owl:ObjectProperty ;
+    rdfs:label "broadcastedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:firstAired a owl:DatatypeProperty ;
+    rdfs:label "firstAired" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range xsd:date .
+
+rel:starring a owl:ObjectProperty ;
+    rdfs:label "starring" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:creator a owl:ObjectProperty ;
+    rdfs:label "creator" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:series a owl:ObjectProperty ;
+    rdfs:label "series" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:nationality a owl:ObjectProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:distributor a owl:ObjectProperty ;
+    rdfs:label "distributor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:award a owl:ObjectProperty ;
+    rdfs:label "award" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Award> .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:voice a owl:ObjectProperty ;
+    rdfs:label "voice" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:fullName a owl:ObjectProperty ;
+    rdfs:label "fullName" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/FictionalCharacter> .
+
+rel:alternativeName a owl:ObjectProperty ;
+    rdfs:label "alternativeName" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range <http://dbpedia.org/ontology/FictionalCharacter> .
+
+rel:lastAired a owl:DatatypeProperty ;
+    rdfs:label "lastAired" ;
+    rdfs:domain <http://dbpedia.org/ontology/FictionalCharacter> ;
+    rdfs:range xsd:date .
+
+rel:foundedBy a owl:ObjectProperty ;
+    rdfs:label "foundedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Comedian> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/ComicsCharacter> rdfs:subClassOf <http://dbpedia.org/ontology/FictionalCharacter> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/ComicsCreator> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/TelevisionStation> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Writer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:County rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/فلم> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Actor> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Artist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .

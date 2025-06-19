@@ -1,0 +1,417 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/3_WrittenWork#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/relation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/3_WrittenWork> a owl:Ontology ;
+    rdfs:label "3_WrittenWork" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/v1> ;
+    rdfs:comment "An ontology in OSKGC" .
+
+<http://dbpedia.org/ontology/AcademicJournal> a owl:Class ;
+    rdfs:label "AcademicJournal" .
+
+<http://dbpedia.org/ontology/AcademicSubject> a owl:Class ;
+    rdfs:label "AcademicSubject" .
+
+<http://dbpedia.org/ontology/Book> a owl:Class ;
+    rdfs:label "Book" .
+
+cls:BusinessPerson a owl:Class ;
+    rdfs:label "BusinessPerson" .
+
+cls:CapitalCity a owl:Class ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+cls:Code a owl:Class ;
+    rdfs:label "Code" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/Disease> a owl:Class ;
+    rdfs:label "Disease" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/EthnicGroup> a owl:Class ;
+    rdfs:label "EthnicGroup" .
+
+<http://dbpedia.org/ontology/Genre> a owl:Class ;
+    rdfs:label "Genre" .
+
+<http://dbpedia.org/ontology/Language> a owl:Class ;
+    rdfs:label "Language" .
+
+<http://dbpedia.org/ontology/LiteraryGenre> a owl:Class ;
+    rdfs:label "LiteraryGenre" .
+
+cls:MediaType a owl:Class ;
+    rdfs:label "MediaType" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+cls:Physicist a owl:Class ;
+    rdfs:label "Physicist" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+<http://dbpedia.org/ontology/Professor> a owl:Class ;
+    rdfs:label "Professor" .
+
+<http://dbpedia.org/ontology/Publisher> a owl:Class ;
+    rdfs:label "Publisher" .
+
+<http://dbpedia.org/ontology/Royalty> a owl:Class ;
+    rdfs:label "Royalty" .
+
+<http://dbpedia.org/ontology/Scientist> a owl:Class ;
+    rdfs:label "Scientist" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Species> a owl:Class ;
+    rdfs:label "Species" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+<http://dbpedia.org/ontology/University> a owl:Class ;
+    rdfs:label "University" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+cls:Virus a owl:Class ;
+    rdfs:label "Virus" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+<http://dbpedia.org/ontology/Writer> a owl:Class ;
+    rdfs:label "Writer" .
+
+<http://dbpedia.org/ontology/WrittenWork> a owl:Class ;
+    rdfs:label "WrittenWork" .
+
+rel:affiliation a owl:ObjectProperty ;
+    rdfs:label "affiliation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:academicDiscipline a owl:ObjectProperty ;
+    rdfs:label "academicDiscipline" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Disease> .
+
+rel:leaderTitle a owl:ObjectProperty ;
+    rdfs:label "leaderTitle" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/PersonFunction> .
+
+rel:publisher a owl:ObjectProperty ;
+    rdfs:label "publisher" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:founder a owl:ObjectProperty ;
+    rdfs:label "founder" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:impactFactor a owl:DatatypeProperty ;
+    rdfs:label "impactFactor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:doctoralAdvisor a owl:ObjectProperty ;
+    rdfs:label "doctoralAdvisor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influencedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:releaseDate a owl:DatatypeProperty ;
+    rdfs:label "releaseDate" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:date .
+
+rel:author a owl:ObjectProperty ;
+    rdfs:label "author" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:ethnicGroup a owl:ObjectProperty ;
+    rdfs:label "ethnicGroup" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/EthnicGroup> .
+
+rel:abbreviation a owl:ObjectProperty ;
+    rdfs:label "abbreviation" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:leader a owl:ObjectProperty ;
+    rdfs:label "leader" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:issnNumber a owl:DatatypeProperty ;
+    rdfs:label "issnNumber" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:mediaType a owl:ObjectProperty ;
+    rdfs:label "mediaType" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:firstPublicationYear a owl:DatatypeProperty ;
+    rdfs:label "firstPublicationYear" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:gYear .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:headquarter a owl:ObjectProperty ;
+    rdfs:label "headquarter" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:serves a owl:ObjectProperty ;
+    rdfs:label "serves" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:numberOfPages a owl:DatatypeProperty ;
+    rdfs:label "numberOfPages" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:oclcNumber a owl:DatatypeProperty ;
+    rdfs:label "oclcNumber" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:parentCompany a owl:ObjectProperty ;
+    rdfs:label "parentCompany" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:state a owl:ObjectProperty ;
+    rdfs:label "state" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:genre a owl:ObjectProperty ;
+    rdfs:label "genre" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:country a owl:ObjectProperty ;
+    rdfs:label "country" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:editor a owl:ObjectProperty ;
+    rdfs:label "editor" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:president a owl:ObjectProperty ;
+    rdfs:label "president" ;
+    rdfs:domain <http://dbpedia.org/ontology/Organisation> ;
+    rdfs:range <http://dbpedia.org/ontology/Person> .
+
+rel:academicDiscipline a owl:ObjectProperty ;
+    rdfs:label "academicDiscipline" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:precededBy a owl:ObjectProperty ;
+    rdfs:label "precededBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:literaryGenre a owl:ObjectProperty ;
+    rdfs:label "literaryGenre" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/TopicalConcept> .
+
+rel:notableWork a owl:ObjectProperty ;
+    rdfs:label "notableWork" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+rel:LCCN_number a owl:DatatypeProperty ;
+    rdfs:label "LCCN_number" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Language> .
+
+rel:residence a owl:ObjectProperty ;
+    rdfs:label "residence" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:isbnNumber a owl:DatatypeProperty ;
+    rdfs:label "isbnNumber" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range xsd:decimal .
+
+rel:almaMater a owl:ObjectProperty ;
+    rdfs:label "almaMater" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Organisation> .
+
+rel:codenCode a owl:ObjectProperty ;
+    rdfs:label "codenCode" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range cls:Code .
+
+rel:birthPlace a owl:ObjectProperty ;
+    rdfs:label "birthPlace" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:capital a owl:ObjectProperty ;
+    rdfs:label "capital" ;
+    rdfs:domain <http://dbpedia.org/ontology/Place> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:academicDiscipline a owl:ObjectProperty ;
+    rdfs:label "academicDiscipline" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Species> .
+
+rel:nationality a owl:ObjectProperty ;
+    rdfs:label "nationality" ;
+    rdfs:domain <http://dbpedia.org/ontology/Person> ;
+    rdfs:range <http://dbpedia.org/ontology/Place> .
+
+rel:followedBy a owl:ObjectProperty ;
+    rdfs:label "followedBy" ;
+    rdfs:domain <http://dbpedia.org/ontology/Work> ;
+    rdfs:range <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/WrittenWork> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Physicist rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Book> rdfs:subClassOf <http://dbpedia.org/ontology/WrittenWork> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/University> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/LiteraryGenre> rdfs:subClassOf <http://dbpedia.org/ontology/Genre> .
+
+<http://dbpedia.org/ontology/Writer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:MediaType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+<http://dbpedia.org/ontology/Professor> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/AcademicJournal> rdfs:subClassOf <http://dbpedia.org/ontology/WrittenWork> .
+
+<http://dbpedia.org/ontology/Royalty> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/Genre> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/Publisher> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/AcademicSubject> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Virus rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Scientist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
