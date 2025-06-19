@@ -1,0 +1,1443 @@
+@prefix onto: <https://HeraclesWang.github.io/OSKGC/hierarchy#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/hierarchy/class#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/hierarchy> a owl:Ontology ;
+    rdfs:label "OSKGC Hierarchy" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/hierarchy/v1> ;
+    rdfs:comment "The unified class hierarchy for OSKGC ontologies." .
+
+<http://dbpedia.org/ontology/PersonFunction> a owl:Class ;
+    rdfs:label "PersonFunction" .
+
+<http://dbpedia.org/ontology/Profession> a owl:Class ;
+    rdfs:label "Profession" .
+
+<http://dbpedia.org/ontology/PoliticalFunction> a owl:Class ;
+    rdfs:label "PoliticalFunction" .
+
+cls:AthleticFunction a owl:Class ;
+    rdfs:label "AthleticFunction" .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure> a owl:Class ;
+    rdfs:label "ArchitecturalStructure" .
+
+cls:Runway a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Runway>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Runway>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> ;
+    rdfs:label "Runway" .
+
+<http://dbpedia.org/ontology/Monument> a owl:Class ;
+    rdfs:label "Monument" .
+
+<http://dbpedia.org/ontology/Airport> a owl:Class ;
+    rdfs:label "Airport" .
+
+cls:LaunchBase a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#LaunchBase>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#LaunchBase>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#LaunchBase> ;
+    rdfs:label "LaunchBase" .
+
+<http://dbpedia.org/ontology/MilitaryStructure> a owl:Class ;
+    rdfs:label "MilitaryStructure" .
+
+<http://dbpedia.org/ontology/LaunchPad> a owl:Class ;
+    rdfs:label "LaunchPad" .
+
+<http://dbpedia.org/ontology/Building> a owl:Class ;
+    rdfs:label "Building" .
+
+<http://dbpedia.org/ontology/Factory> a owl:Class ;
+    rdfs:label "Factory" .
+
+<http://dbpedia.org/ontology/Venue> a owl:Class ;
+    rdfs:label "Venue" .
+
+<http://dbpedia.org/ontology/Stadium> a owl:Class ;
+    rdfs:label "Stadium" .
+
+<http://dbpedia.org/ontology/Hotel> a owl:Class ;
+    rdfs:label "Hotel" .
+
+<http://dbpedia.org/ontology/Museum> a owl:Class ;
+    rdfs:label "Museum" .
+
+<http://dbpedia.org/ontology/Road> a owl:Class ;
+    rdfs:label "Road" .
+
+<http://dbpedia.org/ontology/Species> a owl:Class ;
+    rdfs:label "Species" .
+
+<http://dbpedia.org/ontology/پھُپھُوندی> a owl:Class ;
+    rdfs:label "Fungus" .
+
+cls:Virus a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#Virus>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#Virus>,
+                     <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#Virus> ;
+    rdfs:label "Virus" .
+
+<http://dbpedia.org/ontology/Animal> a owl:Class ;
+    rdfs:label "Animal" .
+
+<http://dbpedia.org/ontology/Bird> a owl:Class ;
+    rdfs:label "Bird" .
+
+<http://dbpedia.org/ontology/Mollusca> a owl:Class ;
+    rdfs:label "Mollusca" .
+
+<http://dbpedia.org/ontology/Crustacean> a owl:Class ;
+    rdfs:label "Crustacean" .
+
+<http://dbpedia.org/ontology/Plant> a owl:Class ;
+    rdfs:label "Plant" .
+
+<http://dbpedia.org/ontology/Organisation> a owl:Class ;
+    rdfs:label "Organisation" .
+
+<http://dbpedia.org/ontology/Hospital> a owl:Class ;
+    rdfs:label "Hospital" .
+
+<http://dbpedia.org/ontology/GovernmentAgency> a owl:Class ;
+    rdfs:label "GovernmentAgency" .
+
+<http://dbpedia.org/ontology/Company> a owl:Class ;
+    rdfs:label "Company" .
+
+<http://dbpedia.org/ontology/RecordLabel> a owl:Class ;
+    rdfs:label "RecordLabel" .
+
+cls:Manufacturer a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Manufacturer>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Manufacturer>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    rdfs:label "Manufacturer" .
+
+<http://dbpedia.org/ontology/Airline> a owl:Class ;
+    rdfs:label "Airline" .
+
+cls:ProductionCompany a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Film/class#ProductionCompany>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#ProductionCompany> ;
+    rdfs:label "ProductionCompany" .
+
+<http://dbpedia.org/ontology/Publisher> a owl:Class ;
+    rdfs:label "Publisher" .
+
+<http://dbpedia.org/ontology/MilitaryUnit> a owl:Class ;
+    rdfs:label "MilitaryUnit" .
+
+<http://dbpedia.org/ontology/SportsTeam> a owl:Class ;
+    rdfs:label "SportsTeam" .
+
+<http://dbpedia.org/ontology/BasketballTeam> a owl:Class ;
+    rdfs:label "BasketballTeam" .
+
+cls:AmericanFootballTeam a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#AmericanFootballTeam>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#AmericanFootballTeam>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#AmericanFootballTeam> ;
+    rdfs:label "AmericanFootballTeam" .
+
+<http://dbpedia.org/ontology/HockeyTeam> a owl:Class ;
+    rdfs:label "HockeyTeam" .
+
+<http://dbpedia.org/ontology/ReligiousOrganisation> a owl:Class ;
+    rdfs:label "ReligiousOrganisation" .
+
+<http://dbpedia.org/ontology/PoliticalParty> a owl:Class ;
+    rdfs:label "PoliticalParty" .
+
+<http://dbpedia.org/ontology/Legislature> a owl:Class ;
+    rdfs:label "Legislature" .
+
+<http://dbpedia.org/ontology/EducationalInstitution> a owl:Class ;
+    rdfs:label "EducationalInstitution" .
+
+<http://dbpedia.org/ontology/School> a owl:Class ;
+    rdfs:label "School" .
+
+<http://dbpedia.org/ontology/University> a owl:Class ;
+    rdfs:label "University" .
+
+<http://dbpedia.org/ontology/TelevisionStation> a owl:Class ;
+    rdfs:label "TelevisionStation" .
+
+<http://dbpedia.org/ontology/SportsLeague> a owl:Class ;
+    rdfs:label "SportsLeague" .
+
+<http://dbpedia.org/ontology/IceHockeyLeague> a owl:Class ;
+    rdfs:label "IceHockeyLeague" .
+
+<http://dbpedia.org/ontology/BasketballLeague> a owl:Class ;
+    rdfs:label "BasketballLeague" .
+
+<http://dbpedia.org/ontology/SoccerLeague> a owl:Class ;
+    rdfs:label "SoccerLeague" .
+
+<http://dbpedia.org/ontology/SportsClub> a owl:Class ;
+    rdfs:label "SportsClub" .
+
+<http://dbpedia.org/ontology/SoccerClub> a owl:Class ;
+    rdfs:label "SoccerClub" .
+
+<http://dbpedia.org/ontology/Group> a owl:Class ;
+    rdfs:label "Group" .
+
+cls:Band a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Band>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Artist/class#Band>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/class#Band> ;
+    rdfs:label "Band" .
+
+<http://dbpedia.org/ontology/ChemicalSubstance> a owl:Class ;
+    rdfs:label "ChemicalSubstance" .
+
+<http://dbpedia.org/ontology/ChemicalCompound> a owl:Class ;
+    rdfs:label "ChemicalCompound" .
+
+<http://dbpedia.org/ontology/Mineral> a owl:Class ;
+    rdfs:label "Mineral" .
+
+<http://dbpedia.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person" .
+
+<http://dbpedia.org/ontology/Athlete> a owl:Class ;
+    rdfs:label "Athlete" .
+
+<http://dbpedia.org/ontology/SoccerPlayer> a owl:Class ;
+    rdfs:label "SoccerPlayer" .
+
+<http://dbpedia.org/ontology/AmericanFootballPlayer> a owl:Class ;
+    rdfs:label "AmericanFootballPlayer" .
+
+<http://dbpedia.org/ontology/IceHockeyPlayer> a owl:Class ;
+    rdfs:label "IceHockeyPlayer" .
+
+<http://dbpedia.org/ontology/BasketballPlayer> a owl:Class ;
+    rdfs:label "BasketballPlayer" .
+
+<http://dbpedia.org/ontology/MartialArtist> a owl:Class ;
+    rdfs:label "MartialArtist" .
+
+<http://dbpedia.org/ontology/PoliticianSpouse> a owl:Class ;
+    rdfs:label "PoliticianSpouse" .
+
+cls:MovieDirector a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Film/class#MovieDirector>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> ;
+    rdfs:label "MovieDirector" .
+
+<http://dbpedia.org/ontology/Politician> a owl:Class ;
+    rdfs:label "Politician" .
+
+cls:SecretaryOfState a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Politician/class#SecretaryOfState>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#SecretaryOfState>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#SecretaryOfState> ;
+    rdfs:label "SecretaryOfState" .
+
+<http://dbpedia.org/ontology/President> a owl:Class ;
+    rdfs:label "President" .
+
+<http://dbpedia.org/ontology/Senator> a owl:Class ;
+    rdfs:label "Senator" .
+
+cls:ChiefMinister a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#ChiefMinister>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Politician/class#ChiefMinister>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#ChiefMinister>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#ChiefMinister> ;
+    rdfs:label "ChiefMinister" .
+
+<http://dbpedia.org/ontology/VicePrimeMinister> a owl:Class ;
+    rdfs:label "VicePrimeMinister" .
+
+<http://dbpedia.org/ontology/MemberOfParliament> a owl:Class ;
+    rdfs:label "MemberOfParliament" .
+
+<http://dbpedia.org/ontology/PrimeMinister> a owl:Class ;
+    rdfs:label "PrimeMinister" .
+
+<http://dbpedia.org/ontology/Minister> a owl:Class ;
+    rdfs:label "Minister" .
+
+cls:ViceChancellor a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#ViceChancellor> ;
+    rdfs:label "ViceChancellor" .
+
+cls:Representative a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Building/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/1_City/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Food/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Politician/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/3_City/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Representative>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#Representative> ;
+    rdfs:label "Representative" .
+
+cls:LieutenantGovernor a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Politician/class#LieutenantGovernor>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#LieutenantGovernor>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#LieutenantGovernor> ;
+    rdfs:label "LieutenantGovernor" .
+
+<http://dbpedia.org/ontology/Governor> a owl:Class ;
+    rdfs:label "Governor" .
+
+cls:DeputyMinister a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Politician/class#DeputyMinister>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#DeputyMinister> ;
+    rdfs:label "DeputyMinister" .
+
+cls:ChiefJustice a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Building/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Food/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#ChiefJustice>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#ChiefJustice> ;
+    rdfs:label "ChiefJustice" .
+
+cls:Chief a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Politician/class#Chief>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#Chief>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Chief> ;
+    rdfs:label "Chief" .
+
+cls:Secretary a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Politician/class#Secretary>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#Secretary>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    rdfs:label "Secretary" .
+
+<http://dbpedia.org/ontology/Ambassador> a owl:Class ;
+    rdfs:label "Ambassador" .
+
+<http://dbpedia.org/ontology/Chancellor> a owl:Class ;
+    rdfs:label "Chancellor" .
+
+cls:Clerk a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Building/class#Clerk>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#Clerk>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#Clerk> ;
+    rdfs:label "Clerk" .
+
+<http://dbpedia.org/ontology/VicePresident> a owl:Class ;
+    rdfs:label "VicePresident" .
+
+<http://dbpedia.org/ontology/Mayor> a owl:Class ;
+    rdfs:label "Mayor" .
+
+cls:Academic a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_University/class#Academic>,
+                     <https://HeraclesWang.github.io/OSKGC/2_University/class#Academic>,
+                     <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> ;
+    rdfs:label "Academic" .
+
+<http://dbpedia.org/ontology/Astronaut> a owl:Class ;
+    rdfs:label "Astronaut" .
+
+cls:BusinessPerson a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Building/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Film/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/class#BusinessPerson>,
+                     <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#BusinessPerson> ;
+    rdfs:label "BusinessPerson" .
+
+<http://dbpedia.org/ontology/Writer> a owl:Class ;
+    rdfs:label "Writer" .
+
+<http://dbpedia.org/ontology/MusicComposer> a owl:Class ;
+    rdfs:label "MusicComposer" .
+
+cls:ScreenWriter a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Film/class#ScreenWriter>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> ;
+    rdfs:label "ScreenWriter" .
+
+<http://dbpedia.org/ontology/MilitaryPerson> a owl:Class ;
+    rdfs:label "MilitaryPerson" .
+
+<http://dbpedia.org/ontology/Coach> a owl:Class ;
+    rdfs:label "Coach" .
+
+<http://dbpedia.org/ontology/AmericanFootballCoach> a owl:Class ;
+    rdfs:label "AmericanFootballCoach" .
+
+<http://dbpedia.org/ontology/Artist> a owl:Class ;
+    rdfs:label "Artist" .
+
+<http://dbpedia.org/ontology/ComicsCreator> a owl:Class ;
+    rdfs:label "ComicsCreator" .
+
+cls:Cinematographer a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Film/class#Cinematographer>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Film/class#Cinematographer>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#Cinematographer> ;
+    rdfs:label "Cinematographer" .
+
+cls:Designer a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Designer>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Designer>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Designer> ;
+    rdfs:label "Designer" .
+
+<http://dbpedia.org/ontology/Actor> a owl:Class ;
+    rdfs:label "Actor" .
+
+<http://dbpedia.org/ontology/MusicalArtist> a owl:Class ;
+    rdfs:label "MusicalArtist" .
+
+<http://dbpedia.org/ontology/Guitarist> a owl:Class ;
+    rdfs:label "Guitarist" .
+
+cls:MovieEditor a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Film/class#MovieEditor>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieEditor>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieEditor> ;
+    rdfs:label "MovieEditor" .
+
+<http://dbpedia.org/ontology/Sculptor> a owl:Class ;
+    rdfs:label "Sculptor" .
+
+<http://dbpedia.org/ontology/Comedian> a owl:Class ;
+    rdfs:label "Comedian" .
+
+<http://dbpedia.org/ontology/Photographer> a owl:Class ;
+    rdfs:label "Photographer" .
+
+<http://dbpedia.org/ontology/SportsManager> a owl:Class ;
+    rdfs:label "SportsManager" .
+
+<http://dbpedia.org/ontology/SoccerManager> a owl:Class ;
+    rdfs:label "SoccerManager" .
+
+<http://dbpedia.org/ontology/Engineer> a owl:Class ;
+    rdfs:label "Engineer" .
+
+<http://dbpedia.org/ontology/Royalty> a owl:Class ;
+    rdfs:label "Royalty" .
+
+<http://dbpedia.org/ontology/Saint> a owl:Class ;
+    rdfs:label "Saint" .
+
+<http://dbpedia.org/ontology/Scientist> a owl:Class ;
+    rdfs:label "Scientist" .
+
+<http://dbpedia.org/ontology/Professor> a owl:Class ;
+    rdfs:label "Professor" .
+
+cls:Botanist a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#Botanist>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Botanist>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#Botanist> ;
+    rdfs:label "Botanist" .
+
+<http://dbpedia.org/ontology/Architect> a owl:Class ;
+    rdfs:label "Architect" .
+
+cls:Mathematician a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#Mathematician>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Mathematician>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#Mathematician> ;
+    rdfs:label "Mathematician" .
+
+cls:Astronomer a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/class#Astronomer>,
+                     <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/class#Astronomer>,
+                     <https://HeraclesWang.github.io/OSKGC/3_CelestialBody/class#Astronomer> ;
+    rdfs:label "Astronomer" .
+
+<http://dbpedia.org/ontology/Economist> a owl:Class ;
+    rdfs:label "Economist" .
+
+cls:Physicist a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#Physicist>,
+                     <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#Physicist>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Physicist>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#Physicist>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#Physicist>,
+                     <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#Physicist> ;
+    rdfs:label "Physicist" .
+
+<http://dbpedia.org/ontology/Device> a owl:Class ;
+    rdfs:label "Device" .
+
+<http://dbpedia.org/ontology/Engine> a owl:Class ;
+    rdfs:label "Engine" .
+
+<http://dbpedia.org/ontology/AutomobileEngine> a owl:Class ;
+    rdfs:label "AutomobileEngine" .
+
+cls:Instrument a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Instrument>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Instrument>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Instrument>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Instrument>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Artist/class#Instrument> ;
+    rdfs:label "Instrument" .
+
+cls:Transmission a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Transmission>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Transmission>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> ;
+    rdfs:label "Transmission" .
+
+<http://dbpedia.org/ontology/Weapon> a owl:Class ;
+    rdfs:label "Weapon" .
+
+<http://dbpedia.org/ontology/Event> a owl:Class ;
+    rdfs:label "Event" .
+
+<http://dbpedia.org/ontology/SocietalEvent> a owl:Class ;
+    rdfs:label "SocietalEvent" .
+
+<http://dbpedia.org/ontology/SpaceMission> a owl:Class ;
+    rdfs:label "SpaceMission" .
+
+<http://dbpedia.org/ontology/MilitaryConflict> a owl:Class ;
+    rdfs:label "MilitaryConflict" .
+
+<http://dbpedia.org/ontology/MeanOfTransportation> a owl:Class ;
+    rdfs:label "MeanOfTransportation" .
+
+<http://dbpedia.org/ontology/Rocket> a owl:Class ;
+    rdfs:label "Rocket" .
+
+<http://dbpedia.org/ontology/Automobile> a owl:Class ;
+    rdfs:label "Automobile" .
+
+<http://dbpedia.org/ontology/Aircraft> a owl:Class ;
+    rdfs:label "Aircraft" .
+
+<http://dbpedia.org/ontology/Ship> a owl:Class ;
+    rdfs:label "Ship" .
+
+<http://dbpedia.org/ontology/Locomotive> a owl:Class ;
+    rdfs:label "Locomotive" .
+
+<http://dbpedia.org/ontology/FictionalCharacter> a owl:Class ;
+    rdfs:label "FictionalCharacter" .
+
+cls:Mascot a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Astronaut/class#Mascot>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#Mascot> ;
+    rdfs:label "Mascot" .
+
+<http://dbpedia.org/ontology/ComicsCharacter> a owl:Class ;
+    rdfs:label "ComicsCharacter" .
+
+cls:Food a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Food>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Food>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    rdfs:label "Food" .
+
+cls:Sauce a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Sauce>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Sauce>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sauce> ;
+    rdfs:label "Sauce" .
+
+cls:Ingredient a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Ingredient>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Ingredient>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> ;
+    rdfs:label "Ingredient" .
+
+cls:Cuisine a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Cuisine>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Cuisine>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Cuisine> ;
+    rdfs:label "Cuisine" .
+
+cls:Course a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Course>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Course>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    rdfs:label "Course" .
+
+cls:Dish a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Dish>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Dish>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish> ;
+    rdfs:label "Dish" .
+
+cls:Soup a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Soup>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Soup>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Soup> ;
+    rdfs:label "Soup" .
+
+cls:Fritter a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Fritter>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Fritter>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Fritter> ;
+    rdfs:label "Fritter" .
+
+cls:Sandwich a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Sandwich>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Sandwich>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    rdfs:label "Sandwich" .
+
+cls:Snack a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Snack>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Snack>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Snack> ;
+    rdfs:label "Snack" .
+
+cls:MainCourse a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#MainCourse>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#MainCourse>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    rdfs:label "MainCourse" .
+
+cls:Dessert a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Dessert>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Dessert>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    rdfs:label "Dessert" .
+
+cls:Appetiser a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Appetiser>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Appetiser>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Appetiser> ;
+    rdfs:label "Appetiser" .
+
+cls:Condiment a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Condiment>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Condiment>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Condiment> ;
+    rdfs:label "Condiment" .
+
+<http://dbpedia.org/ontology/Work> a owl:Class ;
+    rdfs:label "Work" .
+
+<http://dbpedia.org/ontology/Project> a owl:Class ;
+    rdfs:label "Project" .
+
+<http://dbpedia.org/ontology/ResearchProject> a owl:Class ;
+    rdfs:label "ResearchProject" .
+
+<http://dbpedia.org/ontology/فلم> a owl:Class ;
+    rdfs:label "Film" .
+
+<http://dbpedia.org/ontology/Software> a owl:Class ;
+    rdfs:label "Software" .
+
+<http://dbpedia.org/ontology/MusicalWork> a owl:Class ;
+    rdfs:label "MusicalWork" .
+
+cls:NationalAnthem a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Artist/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/1_University/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/2_University/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#NationalAnthem>,
+                     <https://HeraclesWang.github.io/OSKGC/3_University/class#NationalAnthem> ;
+    rdfs:label "NationalAnthem" .
+
+<http://dbpedia.org/ontology/Song> a owl:Class ;
+    rdfs:label "Song" .
+
+<http://dbpedia.org/ontology/Album> a owl:Class ;
+    rdfs:label "Album" .
+
+<http://dbpedia.org/ontology/WrittenWork> a owl:Class ;
+    rdfs:label "WrittenWork" .
+
+<http://dbpedia.org/ontology/AcademicJournal> a owl:Class ;
+    rdfs:label "AcademicJournal" .
+
+<http://dbpedia.org/ontology/Book> a owl:Class ;
+    rdfs:label "Book" .
+
+<http://dbpedia.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place" .
+
+<http://dbpedia.org/ontology/NaturalPlace> a owl:Class ;
+    rdfs:label "NaturalPlace" .
+
+<http://dbpedia.org/ontology/River> a owl:Class ;
+    rdfs:label "River" .
+
+<http://dbpedia.org/ontology/Mountain> a owl:Class ;
+    rdfs:label "Mountain" .
+
+<http://dbpedia.org/ontology/Sea> a owl:Class ;
+    rdfs:label "Sea" .
+
+<http://dbpedia.org/ontology/ProtectedArea> a owl:Class ;
+    rdfs:label "ProtectedArea" .
+
+<http://dbpedia.org/ontology/PopulatedPlace> a owl:Class ;
+    rdfs:label "PopulatedPlace" .
+
+<http://dbpedia.org/ontology/State> a owl:Class ;
+    rdfs:label "State" .
+
+<http://dbpedia.org/ontology/Island> a owl:Class ;
+    rdfs:label "Island" .
+
+<http://dbpedia.org/ontology/Continent> a owl:Class ;
+    rdfs:label "Continent" .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> a owl:Class ;
+    rdfs:label "AdministrativeRegion" .
+
+<http://dbpedia.org/ontology/District> a owl:Class ;
+    rdfs:label "District" .
+
+<http://dbpedia.org/ontology/Canton> a owl:Class ;
+    rdfs:label "Canton" .
+
+<http://dbpedia.org/ontology/Prefecture> a owl:Class ;
+    rdfs:label "Prefecture" .
+
+<http://dbpedia.org/ontology/OverseasDepartment> a owl:Class ;
+    rdfs:label "OverseasDepartment" .
+
+<http://dbpedia.org/ontology/Province> a owl:Class ;
+    rdfs:label "Province" .
+
+cls:HistoricalRegion a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#HistoricalRegion>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Politician/class#HistoricalRegion>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#HistoricalRegion>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#HistoricalRegion>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#HistoricalRegion>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#HistoricalRegion> ;
+    rdfs:label "HistoricalRegion" .
+
+<http://dbpedia.org/ontology/Country> a owl:Class ;
+    rdfs:label "Country" .
+
+<http://dbpedia.org/ontology/Settlement> a owl:Class ;
+    rdfs:label "Settlement" .
+
+<http://dbpedia.org/ontology/Village> a owl:Class ;
+    rdfs:label "Village" .
+
+cls:County a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Astronaut/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Building/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_City/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Monument/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Politician/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/1_University/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_City/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Monument/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/2_University/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_City/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_ComicsCharacter/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Monument/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/class#County>,
+                     <https://HeraclesWang.github.io/OSKGC/3_University/class#County> ;
+    rdfs:label "County" .
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+    rdfs:label "City" .
+
+cls:CapitalCity a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Artist/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Building/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_City/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Film/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Food/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Monument/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Politician/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_University/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Artist/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_City/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Monument/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Politician/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_University/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Artist/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_ComicsCharacter/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Monument/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Politician/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_University/class#CapitalCity>,
+                     <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#CapitalCity> ;
+    rdfs:label "CapitalCity" .
+
+<http://dbpedia.org/ontology/CityDistrict> a owl:Class ;
+    rdfs:label "CityDistrict" .
+
+<http://dbpedia.org/ontology/Town> a owl:Class ;
+    rdfs:label "Town" .
+
+<http://dbpedia.org/ontology/TopicalConcept> a owl:Class ;
+    rdfs:label "TopicalConcept" .
+
+<http://dbpedia.org/ontology/AcademicSubject> a owl:Class ;
+    rdfs:label "AcademicSubject" .
+
+cls:Background a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Background>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Film/class#Background>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Background>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Artist/class#Background> ;
+    rdfs:label "Background" .
+
+cls:ArchitecturalStyle a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Building/class#ArchitecturalStyle>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Building/class#ArchitecturalStyle>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Building/class#ArchitecturalStyle> ;
+    rdfs:label "ArchitecturalStyle" .
+
+cls:CarBodyStyle a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#CarBodyStyle>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#CarBodyStyle>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> ;
+    rdfs:label "CarBodyStyle" .
+
+<http://dbpedia.org/ontology/Type> a owl:Class ;
+    rdfs:label "Type" .
+
+cls:UniversityType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#UniversityType> ;
+    rdfs:label "UniversityType" .
+
+cls:CarType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#CarType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#CarType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarType> ;
+    rdfs:label "CarType" .
+
+cls:ShipClass a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#ShipClass>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#ShipClass>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#ShipClass> ;
+    rdfs:label "ShipClass" .
+
+cls:RunwaySurfaceType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#RunwaySurfaceType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#RunwaySurfaceType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#RunwaySurfaceType> ;
+    rdfs:label "RunwaySurfaceType" .
+
+cls:VirusType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#VirusType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#VirusType> ;
+    rdfs:label "VirusType" .
+
+cls:MediaType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#MediaType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#MediaType> ;
+    rdfs:label "MediaType" .
+
+cls:AlbumType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/class#AlbumType> ;
+    rdfs:label "AlbumType" .
+
+cls:GovernmentType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_City/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/1_University/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_City/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_University/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_City/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#GovernmentType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_University/class#GovernmentType> ;
+    rdfs:label "GovernmentType" .
+
+cls:MonumentType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Monument/class#MonumentType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Monument/class#MonumentType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Monument/class#MonumentType> ;
+    rdfs:label "MonumentType" .
+
+cls:CompanyType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Company/class#CompanyType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#CompanyType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Film/class#CompanyType> ;
+    rdfs:label "CompanyType" .
+
+cls:PlantType a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Food/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#PlantType>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#PlantType> ;
+    rdfs:label "PlantType" .
+
+cls:Order a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Order>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Food/class#Order>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Order>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Order>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Order>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> ;
+    rdfs:label "Order" .
+
+<http://dbpedia.org/ontology/Family> a owl:Class ;
+    rdfs:label "Family" .
+
+cls:Class a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Class>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Class>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Class> ;
+    rdfs:label "Class" .
+
+cls:Genus a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Food/class#Genus>,
+                     <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#Genus>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Food/class#Genus>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Food/class#Genus> ;
+    rdfs:label "Genus" .
+
+cls:TimeZone a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/1_City/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/2_City/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/3_City/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/class#TimeZone>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#TimeZone> ;
+    rdfs:label "TimeZone" .
+
+<http://dbpedia.org/ontology/Genre> a owl:Class ;
+    rdfs:label "Genre" .
+
+<http://dbpedia.org/ontology/MusicGenre> a owl:Class ;
+    rdfs:label "MusicGenre" .
+
+<http://dbpedia.org/ontology/LiteraryGenre> a owl:Class ;
+    rdfs:label "LiteraryGenre" .
+
+cls:Status a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Astronaut/class#Status>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Status>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Astronaut/class#Status>,
+                     <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Status>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#Status>,
+                     <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Status> ;
+    rdfs:label "Status" .
+
+cls:Product a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/class#Product>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Company/class#Product>,
+                     <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Product>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#Product> ;
+    rdfs:label "Product" .
+
+cls:Service a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Company/class#Service>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Film/class#Service>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#Service>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#Service> ;
+    rdfs:label "Service" .
+
+cls:Industry a owl:Class ;
+    owl:equivalentClass <https://HeraclesWang.github.io/OSKGC/1_Company/class#Industry>,
+                     <https://HeraclesWang.github.io/OSKGC/1_Film/class#Industry>,
+                     <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry>,
+                     <https://HeraclesWang.github.io/OSKGC/3_Company/class#Industry> ;
+    rdfs:label "Industry" .
+
+<http://dbpedia.org/ontology/Profession> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+<http://dbpedia.org/ontology/PoliticalFunction> rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:AthleticFunction rdfs:subClassOf <http://dbpedia.org/ontology/PersonFunction> .
+
+cls:Runway rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Monument> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Airport> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+cls:LaunchBase rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/MilitaryStructure> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/LaunchPad> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Building> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/Factory> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/Venue> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/Stadium> rdfs:subClassOf <http://dbpedia.org/ontology/Venue> .
+
+<http://dbpedia.org/ontology/Hotel> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/Museum> rdfs:subClassOf <http://dbpedia.org/ontology/Building> .
+
+<http://dbpedia.org/ontology/Road> rdfs:subClassOf <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+<http://dbpedia.org/ontology/پھُپھُوندی> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+cls:Virus rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Animal> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Bird> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/Mollusca> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/Crustacean> rdfs:subClassOf <http://dbpedia.org/ontology/Animal> .
+
+<http://dbpedia.org/ontology/Plant> rdfs:subClassOf <http://dbpedia.org/ontology/Species> .
+
+<http://dbpedia.org/ontology/Hospital> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/GovernmentAgency> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Company> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/RecordLabel> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+cls:Manufacturer rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/Airline> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+cls:ProductionCompany rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/Publisher> rdfs:subClassOf <http://dbpedia.org/ontology/Company> .
+
+<http://dbpedia.org/ontology/MilitaryUnit> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/SportsTeam> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/BasketballTeam> rdfs:subClassOf <http://dbpedia.org/ontology/SportsTeam> .
+
+cls:AmericanFootballTeam rdfs:subClassOf <http://dbpedia.org/ontology/SportsTeam> .
+
+<http://dbpedia.org/ontology/HockeyTeam> rdfs:subClassOf <http://dbpedia.org/ontology/SportsTeam> .
+
+<http://dbpedia.org/ontology/ReligiousOrganisation> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/PoliticalParty> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/Legislature> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/EducationalInstitution> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/School> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/University> rdfs:subClassOf <http://dbpedia.org/ontology/EducationalInstitution> .
+
+<http://dbpedia.org/ontology/TelevisionStation> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/SportsLeague> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/IceHockeyLeague> rdfs:subClassOf <http://dbpedia.org/ontology/SportsLeague> .
+
+<http://dbpedia.org/ontology/BasketballLeague> rdfs:subClassOf <http://dbpedia.org/ontology/SportsLeague> .
+
+<http://dbpedia.org/ontology/SoccerLeague> rdfs:subClassOf <http://dbpedia.org/ontology/SportsLeague> .
+
+<http://dbpedia.org/ontology/SportsClub> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+<http://dbpedia.org/ontology/SoccerClub> rdfs:subClassOf <http://dbpedia.org/ontology/SportsClub> .
+
+<http://dbpedia.org/ontology/Group> rdfs:subClassOf <http://dbpedia.org/ontology/Organisation> .
+
+cls:Band rdfs:subClassOf <http://dbpedia.org/ontology/Group> .
+
+<http://dbpedia.org/ontology/ChemicalCompound> rdfs:subClassOf <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+<http://dbpedia.org/ontology/Mineral> rdfs:subClassOf <http://dbpedia.org/ontology/ChemicalSubstance> .
+
+<http://dbpedia.org/ontology/Athlete> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/SoccerPlayer> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/AmericanFootballPlayer> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/IceHockeyPlayer> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/BasketballPlayer> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/MartialArtist> rdfs:subClassOf <http://dbpedia.org/ontology/Athlete> .
+
+<http://dbpedia.org/ontology/PoliticianSpouse> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:MovieDirector rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:SecretaryOfState rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/President> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Senator> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:ChiefMinister rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/VicePrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/MemberOfParliament> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/PrimeMinister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Minister> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:ViceChancellor rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Representative rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:LieutenantGovernor rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Governor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:DeputyMinister rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:ChiefJustice rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Chief rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Secretary rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Ambassador> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Chancellor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Clerk rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/VicePresident> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+<http://dbpedia.org/ontology/Mayor> rdfs:subClassOf <http://dbpedia.org/ontology/Politician> .
+
+cls:Academic rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Astronaut> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+cls:BusinessPerson rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Writer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/MusicComposer> rdfs:subClassOf <http://dbpedia.org/ontology/Writer> .
+
+cls:ScreenWriter rdfs:subClassOf <http://dbpedia.org/ontology/Writer> .
+
+<http://dbpedia.org/ontology/MilitaryPerson> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Coach> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/AmericanFootballCoach> rdfs:subClassOf <http://dbpedia.org/ontology/Coach> .
+
+<http://dbpedia.org/ontology/Artist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/ComicsCreator> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+cls:Cinematographer rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+cls:Designer rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Actor> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/MusicalArtist> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Guitarist> rdfs:subClassOf <http://dbpedia.org/ontology/MusicalArtist> .
+
+cls:MovieEditor rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Sculptor> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Comedian> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/Photographer> rdfs:subClassOf <http://dbpedia.org/ontology/Artist> .
+
+<http://dbpedia.org/ontology/SportsManager> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/SoccerManager> rdfs:subClassOf <http://dbpedia.org/ontology/SportsManager> .
+
+<http://dbpedia.org/ontology/Engineer> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Royalty> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Saint> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Scientist> rdfs:subClassOf <http://dbpedia.org/ontology/Person> .
+
+<http://dbpedia.org/ontology/Professor> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+cls:Botanist rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/Architect> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+cls:Mathematician rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+cls:Astronomer rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/Economist> rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+cls:Physicist rdfs:subClassOf <http://dbpedia.org/ontology/Scientist> .
+
+<http://dbpedia.org/ontology/Engine> rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/AutomobileEngine> rdfs:subClassOf <http://dbpedia.org/ontology/Engine> .
+
+cls:Instrument rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+cls:Transmission rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/Weapon> rdfs:subClassOf <http://dbpedia.org/ontology/Device> .
+
+<http://dbpedia.org/ontology/SocietalEvent> rdfs:subClassOf <http://dbpedia.org/ontology/Event> .
+
+<http://dbpedia.org/ontology/SpaceMission> rdfs:subClassOf <http://dbpedia.org/ontology/SocietalEvent> .
+
+<http://dbpedia.org/ontology/MilitaryConflict> rdfs:subClassOf <http://dbpedia.org/ontology/SocietalEvent> .
+
+<http://dbpedia.org/ontology/Rocket> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Automobile> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Aircraft> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Ship> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+<http://dbpedia.org/ontology/Locomotive> rdfs:subClassOf <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+cls:Mascot rdfs:subClassOf <http://dbpedia.org/ontology/FictionalCharacter> .
+
+<http://dbpedia.org/ontology/ComicsCharacter> rdfs:subClassOf <http://dbpedia.org/ontology/FictionalCharacter> .
+
+cls:Sauce rdfs:subClassOf cls:Food .
+
+cls:Ingredient rdfs:subClassOf cls:Food .
+
+cls:Cuisine rdfs:subClassOf cls:Food .
+
+cls:Course rdfs:subClassOf cls:Food .
+
+cls:Dish rdfs:subClassOf cls:Food .
+
+cls:Soup rdfs:subClassOf cls:Dish .
+
+cls:Fritter rdfs:subClassOf cls:Dish .
+
+cls:Sandwich rdfs:subClassOf cls:Dish .
+
+cls:Snack rdfs:subClassOf cls:Dish .
+
+cls:MainCourse rdfs:subClassOf cls:Dish .
+
+cls:Dessert rdfs:subClassOf cls:Dish .
+
+cls:Appetiser rdfs:subClassOf cls:Dish .
+
+cls:Condiment rdfs:subClassOf cls:Food .
+
+<http://dbpedia.org/ontology/Project> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/ResearchProject> rdfs:subClassOf <http://dbpedia.org/ontology/Project> .
+
+<http://dbpedia.org/ontology/فلم> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/Software> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/MusicalWork> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+cls:NationalAnthem rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+<http://dbpedia.org/ontology/Song> rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+<http://dbpedia.org/ontology/Album> rdfs:subClassOf <http://dbpedia.org/ontology/MusicalWork> .
+
+<http://dbpedia.org/ontology/WrittenWork> rdfs:subClassOf <http://dbpedia.org/ontology/Work> .
+
+<http://dbpedia.org/ontology/AcademicJournal> rdfs:subClassOf <http://dbpedia.org/ontology/WrittenWork> .
+
+<http://dbpedia.org/ontology/Book> rdfs:subClassOf <http://dbpedia.org/ontology/WrittenWork> .
+
+<http://dbpedia.org/ontology/NaturalPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/River> rdfs:subClassOf <http://dbpedia.org/ontology/NaturalPlace> .
+
+<http://dbpedia.org/ontology/Mountain> rdfs:subClassOf <http://dbpedia.org/ontology/NaturalPlace> .
+
+<http://dbpedia.org/ontology/Sea> rdfs:subClassOf <http://dbpedia.org/ontology/NaturalPlace> .
+
+<http://dbpedia.org/ontology/ProtectedArea> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/PopulatedPlace> rdfs:subClassOf <http://dbpedia.org/ontology/Place> .
+
+<http://dbpedia.org/ontology/State> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Island> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Continent> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/AdministrativeRegion> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/District> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<http://dbpedia.org/ontology/Canton> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<http://dbpedia.org/ontology/Prefecture> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<http://dbpedia.org/ontology/OverseasDepartment> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<http://dbpedia.org/ontology/Province> rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+cls:HistoricalRegion rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Country> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Settlement> rdfs:subClassOf <http://dbpedia.org/ontology/PopulatedPlace> .
+
+<http://dbpedia.org/ontology/Village> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+cls:County rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/City> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+cls:CapitalCity rdfs:subClassOf <http://dbpedia.org/ontology/City> .
+
+<http://dbpedia.org/ontology/CityDistrict> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/Town> rdfs:subClassOf <http://dbpedia.org/ontology/Settlement> .
+
+<http://dbpedia.org/ontology/AcademicSubject> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:Background rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:ArchitecturalStyle rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:CarBodyStyle rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Type> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:UniversityType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:CarType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:ShipClass rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:RunwaySurfaceType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:VirusType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:MediaType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:AlbumType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:GovernmentType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:MonumentType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:CompanyType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:PlantType rdfs:subClassOf <http://dbpedia.org/ontology/Type> .
+
+cls:Order rdfs:subClassOf cls:PlantType .
+
+<http://dbpedia.org/ontology/Family> rdfs:subClassOf cls:PlantType .
+
+cls:Class rdfs:subClassOf cls:PlantType .
+
+cls:Genus rdfs:subClassOf cls:PlantType .
+
+cls:TimeZone rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/Genre> rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+<http://dbpedia.org/ontology/MusicGenre> rdfs:subClassOf <http://dbpedia.org/ontology/Genre> .
+
+<http://dbpedia.org/ontology/LiteraryGenre> rdfs:subClassOf <http://dbpedia.org/ontology/Genre> .
+
+cls:Status rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:Product rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:Service rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
+
+cls:Industry rdfs:subClassOf <http://dbpedia.org/ontology/TopicalConcept> .
