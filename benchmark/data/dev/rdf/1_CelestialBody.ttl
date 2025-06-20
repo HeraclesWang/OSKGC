@@ -1,0 +1,239 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody> a owl:Ontology ;
+    rdfs:label "1_CelestialBody data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody/v1> ;
+    rdfs:comment "The instance dataset for the 1_CelestialBody ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "110 Lydia has a rotation period of 39332.9." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/110_Lydia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#rotationPeriod> ;
+    oskstruct:object "39332.9"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "103 Hera was discovered on 7 September 1868." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Hera> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#discovered> ;
+    oskstruct:object "1868-09-07"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "James Craig Watson died in Madison (Wisconsin)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/James_Craig_Watson> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/class#Astronomer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Madison> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "1000 Piazzia has an orbital period of 488160." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1000_Piazzia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#orbitalPeriod> ;
+    oskstruct:object "488160"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "The rotation period of 1097 Vicia is 95040." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1097_Vicia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#rotationPeriod> ;
+    oskstruct:object "95040"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "1099 Figneria has an orbital period of 179942000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1099_Figneria> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#orbitalPeriod> ;
+    oskstruct:object "179942000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "(66063) 1998 RO1 was discovered by Lincoln Near-Earth Asteroid Research." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(66063)_1998_RO1> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#discoverer> ;
+    oskstruct:object <http://dbpedia.org/resource/Lincoln_Near-Earth_Asteroid_Research> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ResearchProject> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "(15788) 1993 SB was discovered by Roque de los Muchachos Observatory." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(15788)_1993_SB> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#discoverer> ;
+    oskstruct:object <http://dbpedia.org/resource/Roque_de_los_Muchachos_Observatory> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "101 Helena has an orbital period of 1516.6700000000003 days." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/101_Helena> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#orbitalPeriod> ;
+    oskstruct:object "1516.6700000000003"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "(410777) 2009 FD has a mass of 8.3 kgs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(410777)_2009_FD> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#mass> ;
+    oskstruct:object "8.3"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "(19255) 1994 VK8 has an escape velocity of 0.0925 kilometres per second." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(19255)_1994_VK8> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#escapeVelocity> ;
+    oskstruct:object "0.0925"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "(19255) 1994 VK8 has a mass of 5.6 kgs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(19255)_1994_VK8> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#mass> ;
+    oskstruct:object "5.6"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "1099 Figneria has a mass of 2.7 kilograms." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1099_Figneria> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#mass> ;
+    oskstruct:object "2.7"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "The orbital period for 110 Lydia is 142603000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/110_Lydia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#orbitalPeriod> ;
+    oskstruct:object "142603000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "The former name of the asteroid (66063) 1998 RO1 was 1999 SN5." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(66063)_1998_RO1> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#formerName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#1999_SN5> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Asteroid> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "1097 Vicia has an apoapsis of 511592000 kilometres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1097_Vicia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#apoapsis> ;
+    oskstruct:object "511592000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "The periapsis of 1101 Clematis is 445895000000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_17/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1101_Clematis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#periapsis> ;
+    oskstruct:object "445895000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "(410777) 2009 FD was discovered by Spacewatch." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_18/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#(410777)_2009_FD> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#discoverer> ;
+    oskstruct:object <http://dbpedia.org/resource/Spacewatch> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ResearchProject> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "10 Hygiea has an escape velocity of 0.21 kilometres per second." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_19/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#1_CelestialBody_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/10_Hygiea> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Asteroid> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#escapeVelocity> ;
+    oskstruct:object "0.21"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .

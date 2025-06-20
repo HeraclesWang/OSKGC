@@ -1,0 +1,305 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork> a owl:Ontology ;
+    rdfs:label "1_WrittenWork data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork/v1> ;
+    rdfs:comment "The instance dataset for the 1_WrittenWork ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text """The book "A Glastonbury Romance" was followed by "Weymouth Sands".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Glastonbury_Romance> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Weymouth_Sands> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Book> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "British people live in the United Kingdom." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_Kingdom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#demonym> ;
+    oskstruct:object <http://dbpedia.org/resource/British_people> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "1634: The Ram Rebellion can be found as an E-book." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1634:_The_Ram_Rebellion> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#mediaType> ;
+    oskstruct:object <http://dbpedia.org/resource/E-book> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "The OCLC number of A Fortress of Grey Ice is 51969173." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Fortress_of_Grey_Ice> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#oclcNumber> ;
+    oskstruct:object "51969173"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "A wizard of Mars is 560 pages long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Wizard_of_Mars> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#numberOfPages> ;
+    oskstruct:object "560"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Cornell University is affiliated with the Association of Public and Land-grant Universities." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Cornell_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Association_of_Public_and_Land-grant_Universities> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "The president of Cornell University is Elizabeth Garrett." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Cornell_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#president> ;
+    oskstruct:object <http://dbpedia.org/resource/Elizabeth_Garrett> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Professor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "A Loyal Character Dancer is in print." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Loyal_Character_Dancer> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#mediaType> ;
+    oskstruct:object <http://dbpedia.org/resource/Print> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "The novel 1634: The Ram Rebellion is 512 pages long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1634:_The_Ram_Rebellion> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#numberOfPages> ;
+    oskstruct:object "512"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg has the ISSN number 1865-8784." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universit%C3%A4t_Hamburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AcademicJournal> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#issnNumber> ;
+    oskstruct:object "1865-8784"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "ACM Transactions on Information Systems has the abbreviation of ACM Trans. Inf. Syst." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/ACM_Transactions_on_Information_Systems> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AcademicJournal> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#abbreviation> ;
+    oskstruct:object <http://dbpedia.org/resource/ACM_Trans._Inf._Syst.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AcademicJournal> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "The novel Aenir was preceded by the novel Castle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aenir> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Castle> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Book> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "Polish Academy of Sciences is the publisher of Acta Palaeontologica Polonica." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acta_Palaeontologica_Polonica> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AcademicJournal> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#publisher> ;
+    oskstruct:object <http://dbpedia.org/resource/Polish_Academy_of_Sciences> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "Sara Miller McCune is the founder of SAGE publications." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/SAGE_Publications> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Publisher> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#founder> ;
+    oskstruct:object <http://dbpedia.org/resource/Sara_Miller_McCune> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "1634: The Bavarian Crisis was preceded by Grantville Gazette III." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1634:_The_Bavarian_Crisis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Grantville_Gazette_III> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Book> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "A Long Long Way is available in hardcover." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Long_Long_Way> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#mediaType> ;
+    oskstruct:object <http://dbpedia.org/resource/Hardcover> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "OCLC number 45644811 is Aenir." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_17/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aenir> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#oclcNumber> ;
+    oskstruct:object "45644811"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "The OCLC number of A Wizard of Mars is 318875313." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_18/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Wizard_of_Mars> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#oclcNumber> ;
+    oskstruct:object "318875313"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "A Wizard of Mars is published in Hardcover." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_19/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A_Wizard_of_Mars> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#mediaType> ;
+    oskstruct:object <http://dbpedia.org/resource/Hardcover> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_20> a oskstruct:DataEntry ;
+    oskstruct:text "A.T. Charlie Johnson did his PhD under the supervision of Michael Tinkham." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_20/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.T._Charlie_Johnson> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#Physicist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#doctoralAdvisor> ;
+    oskstruct:object <http://dbpedia.org/resource/Michael_Tinkham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Professor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_21> a oskstruct:DataEntry ;
+    oskstruct:text """"Abh. Math. Semin. Univ. Hambg." is the abbreviation for Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_21/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universit%C3%A4t_Hamburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AcademicJournal> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#abbreviation> ;
+    oskstruct:object <http://dbpedia.org/resource/Abh._Math._Semin._Univ._Hambg.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AcademicJournal> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_22> a oskstruct:DataEntry ;
+    oskstruct:text "The novel Castle is followed by Aenir." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_22/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Castle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Aenir> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Book> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_23> a oskstruct:DataEntry ;
+    oskstruct:text "Wizards at War was published by Harcourt (publishers)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_23/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Wizards_at_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#publisher> ;
+    oskstruct:object <http://dbpedia.org/resource/Harcourt> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Publisher> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_24> a oskstruct:DataEntry ;
+    oskstruct:text "J. R. R. Tolkien wrote The Two Towers." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_24/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Two_Towers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Book> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#author> ;
+    oskstruct:object <http://dbpedia.org/resource/J._R._R._Tolkien> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Writer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_25> a oskstruct:DataEntry ;
+    oskstruct:text "Eric Flint was influenced by Robert A. Heinlein." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_25/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#1_WrittenWork_dev_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Eric_Flint> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Writer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#influencedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_A._Heinlein> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Writer> .

@@ -1,0 +1,87 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Monument#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Monument/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument> a owl:Ontology ;
+    rdfs:label "2_Monument data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Monument/v1> ;
+    rdfs:comment "The instance dataset for the 2_Monument ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Baku Turkish Martyrs' Memorial's designer was Hüseyin Bütüner and Hilmi Güner." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Baku_Turkish_Martyrs'_Memorial> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Monument> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#designer> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Hüseyin_Bütüner> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Baku_Turkish_Martyrs'_Memorial> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Monument> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#designer> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Hilmi_Güner> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "Franklin County (Pennsylvania) is found to the west of Adams County (Pennsylvania), where the 11th Mississippi Infantry Monument is located." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adams_County> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Monument/class#County> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#hasToItsWest> ;
+    oskstruct:object <http://dbpedia.org/resource/Franklin_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Monument/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/11th_Mississippi_Infantry_Monument> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Monument> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Adams_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Monument/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "The 11th Mississippi Infantry Monument was established in 2000 in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/11th_Mississippi_Infantry_Monument> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Monument> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#established> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Monument#2_Monument_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/11th_Mississippi_Infantry_Monument> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Monument> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .

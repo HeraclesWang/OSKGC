@@ -1,0 +1,327 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_City#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_City/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_City/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City> a owl:Ontology ;
+    rdfs:label "1_City data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_City/v1> ;
+    rdfs:comment "The instance dataset for the 1_City ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Ciudad Ayala is a city." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ciudad_Ayala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#IsA> ;
+    oskstruct:object <http://dbpedia.org/resource/City> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "The population density of Angola (Indiana), is 524.5 (inhabitants per square kilometre)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#populationDensity> ;
+    oskstruct:object "524.5"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Albuquerque is in New Mexico." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Albuquerque> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Mexico> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "Ann Arbor is the largest city in Washtenaw County." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Washtenaw_County> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_City/class#County> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#largestCity> ;
+    oskstruct:object <http://dbpedia.org/resource/Ann_Arbor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "The California State Senate is part of the California State Legislature." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/California_State_Senate> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Legislature> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/California_State_Legislature> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Angola (Indiana) is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "There are 14.2 square kilometers of water in Abilene (Texas)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abilene> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#areaOfWater> ;
+    oskstruct:object "14.2"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "Auburn (Washington) is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Auburn> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "Abilene (Texas) is part of Taylor County (Texas)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abilene> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Taylor_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_City/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "Arlington (Texas) is has an elevation of 184 above sea level." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arlington> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#elevationAboveTheSeaLevel> ;
+    oskstruct:object "184"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "Vietnamese is a language spoken in California." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/California> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Vietnamese> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "The area of water, in Anaheim (California), is 25.2 square kilometres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anaheim> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#areaOfWater> ;
+    oskstruct:object "25.2"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "Auburn (Alabama) is part of Alabama." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Auburn> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Alabama> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "Akron has a total area of 161.54 square kilometres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akron> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#areaTotal> ;
+    oskstruct:object "161.54"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "The Albuquerque City Council has a leadership role in Albuquerque." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Albuquerque> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Albuquerque_City_Council> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "Anderson (Indiana) is part of the Union Township (Madison County, Indiana)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anderson> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Union_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "The leader title in Mexico is the President of the Senate." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_17/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mexico> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/President_of_the_Senate> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "Ciudad Ayala has a leader called the Governator." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_18/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ciudad_Ayala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Governator> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "Texas is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_19/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Texas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_20> a oskstruct:DataEntry ;
+    oskstruct:text "Anaheim has the area code 657." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_20/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anaheim> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#areaCode> ;
+    oskstruct:object <http://dbpedia.org/resource/657> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_City/class#Code> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_21> a oskstruct:DataEntry ;
+    oskstruct:text "Alpharetta is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_21/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpharetta> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_22> a oskstruct:DataEntry ;
+    oskstruct:text "The president is the leader of the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_22/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/President_of_the_United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_23> a oskstruct:DataEntry ;
+    oskstruct:text "In Albuquerque (New Mexico), the leader is called, the United States House of Representatives." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_23/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Albuquerque> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States_House_of_Representatives> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_24> a oskstruct:DataEntry ;
+    oskstruct:text "Ciudad Ayala is in the Pacific Standard Time Zone." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_24/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ciudad_Ayala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#timeZone> ;
+    oskstruct:object <http://dbpedia.org/resource/Pacific_Standard_Time_Zone> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_City/class#TimeZone> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_25> a oskstruct:DataEntry ;
+    oskstruct:text "Madison County (Indiana) is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_25/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Madison_County> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_City/class#County> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_26> a oskstruct:DataEntry ;
+    oskstruct:text "Mayor is the title of the leader of Akron." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_26/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akron> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Mayor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_27> a oskstruct:DataEntry ;
+    oskstruct:text "Richland Township is in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_27/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_City#1_City_dev_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Richland_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_City/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .

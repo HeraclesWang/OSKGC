@@ -1,0 +1,144 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Astronaut/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut> a owl:Ontology ;
+    rdfs:label "2_Astronaut data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut/v1> ;
+    rdfs:comment "The instance dataset for the 2_Astronaut ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Nie Haisheng was born on October 13, 1964 in Zaoyang." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nie_Haisheng> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Zaoyang> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nie_Haisheng> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#birthDate> ;
+    oskstruct:object "1964-10-13"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "Alan Shepard, born in New Hampshire, spent 13017 minutes in space." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_Shepard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#timeInSpace> ;
+    oskstruct:object "13017"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_Shepard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Hampshire> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Nie Haisheng was born on the 13th of October, 1964 and is from the People's Republic of China." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nie_Haisheng> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#nationality> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#People's_Republic_of_China> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nie_Haisheng> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#birthDate> ;
+    oskstruct:object "1964-10-13"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "Buzz Aldrin graduated from Massachusetts Institute of Technology with a Sc.D in 1963 and was a crew member of Apollo 11." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Buzz_Aldrin> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#mission> ;
+    oskstruct:object <http://dbpedia.org/resource/Apollo_11> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SpaceMission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Buzz_Aldrin> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#almaMater> ;
+    oskstruct:object <http://dbpedia.org/resource/Massachusetts_Institute_of_Technology> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "Leader, Joe Biden, and Buzz Aldrin are both American." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Buzz_Aldrin> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joe_Biden> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Alan Shepard died in California, the common place to find the gem Benitoite." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/California> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#gemstone> ;
+    oskstruct:object <http://dbpedia.org/resource/Benitoite> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Mineral> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#2_Astronaut_dev_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_Shepard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Astronaut> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/California> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .

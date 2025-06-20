@@ -1,0 +1,125 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist> a owl:Ontology ;
+    rdfs:label "2_Scientist data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Scientist/v1> ;
+    rdfs:comment "The instance dataset for the 2_Scientist ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Brandon Carter, who was born on January 1st, 1942, is a graduate from the University of Cambridge." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Brandon_Carter> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Physicist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#birthDate> ;
+    oskstruct:object "1942-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Brandon_Carter> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Physicist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#almaMater> ;
+    oskstruct:object <http://dbpedia.org/resource/University_of_Cambridge> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "Nurhan Atasoy lives in Istanbul where one of the leaders is titled Mayor." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nurhan_Atasoy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Scientist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#residence> ;
+    oskstruct:object <http://dbpedia.org/resource/Istanbul> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Istanbul> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Mayor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Nurhan Atasoy, born in Reşadiye, has been awarded the State Award for Superior Achievement." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nurhan_Atasoy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Scientist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Re%C5%9Fadiye> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nurhan_Atasoy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Scientist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#award> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#State_Award_for_Superior_Achievement> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "Nurhan Atasoy was born in Turkey, a country that has an area total of 783356 km^2." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Nurhan_Atasoy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Scientist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Turkey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turkey> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#areaTotal> ;
+    oskstruct:object "783356"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "Influenced by Andrzej Piotr Ruszczyński, Darinka Dentcheva became a professional in the field of mathematical optimization." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Darinka_Dentcheva> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Mathematician> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#influencedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Andrzej_Piotr_Ruszczy%C5%84ski> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Mathematician> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Scientist#2_Scientist_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Darinka_Dentcheva> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#Mathematician> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#professionalField> ;
+    oskstruct:object <http://dbpedia.org/resource/Mathematical_optimization> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AcademicSubject> .
