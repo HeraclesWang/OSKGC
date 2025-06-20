@@ -1,0 +1,206 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_Film#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_Film/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_Film/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film> a owl:Ontology ;
+    rdfs:label "1_Film data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_Film/v1> ;
+    rdfs:comment "The instance dataset for the 1_Film ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears was released on 1944-07-28." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#releaseDate> ;
+    oskstruct:object "1944-07-28"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "Terence Rattigan died on the 30th of November in the year 1977." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#deathDate> ;
+    oskstruct:object "1977-11-30"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "Anatole de Grunwald was born in Saint Petersburg." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Saint_Petersburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Mills> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears is written by Anatole de Grunwald." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "The music of the film English Without Tears is composed by Nicholas Brodszky." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_7> a oskstruct:DataEntry ;
+    oskstruct:text """"English Without Tears" was produced by Anatole de Grunwald.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "The cinematography of English Without Tears was done by Bernard Knowles." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#cinematography> ;
+    oskstruct:object <http://dbpedia.org/resource/Bernard_Knowles> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "The editing of the movie English Without Tears was done by Alan Jaggs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#editor> ;
+    oskstruct:object <http://dbpedia.org/resource/Alan_Jaggs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#MovieEditor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "'English Without Tears' was written by Terence Rattigan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears is 89 minutes long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears is a film directed by Harold French." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Anatole de Grunwald died in London." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/London> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Film/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Michael Rooker was born in the year 1955." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Michael_Rooker> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Actor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#birthYear> ;
+    oskstruct:object "1955"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Michael Rooker was born on April 6th 1955." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Michael_Rooker> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Actor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#birthDate> ;
+    oskstruct:object "1955-04-06"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Super Capers is a film starring Michael Rooker." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Film#1_Film_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Michael_Rooker> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
