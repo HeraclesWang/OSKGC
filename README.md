@@ -317,7 +317,10 @@ In our task formulation:
 - Text serves as model input  
 - Triples and schemas serve as golden labels for:  
   - Triple-level factual accuracy evaluation  
-  - Schema-level structural conformity evaluation  
+  - Schema-level structural conformity evaluation
+
+#### RDF version 
+We provide an RDF version of the dataset for researchers who may need it. This version contains exactly the same data as the XML-format version, but entities, their types, and relations are represented using URIs, making it more suitable for the Semantic Web community.
 
 ### Predefined Ontology Schemas [`benchmark/ontology`](./benchmark/ontology)
 
