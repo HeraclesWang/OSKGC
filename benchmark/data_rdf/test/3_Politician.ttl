@@ -1,0 +1,1650 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_Politician#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Politician/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician> a owl:Ontology ;
+    rdfs:label "3_Politician data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_Politician/v1> ;
+    rdfs:comment "The instance dataset for the 3_Politician ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett was born in Maine and fought in the American Civil War. He was awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Maine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought in the Battle of Fredericksburg during the American Civil War which had Jefferson Davis as one of its commanders." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Fredericksburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Fredericksburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Jefferson_Davis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Salem Church, in which Aaron S. Daggett fought and in which Robert E. Lee was a commander, was part of the American Civil War." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_E._Lee> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought in the American Civil War, Battle of Fredericksburg and Abraham Lincoln was a commander in the Civil War." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Fredericksburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Fredericksburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Abraham_Lincoln> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "Married to Ruth Ribicoff, Abraham A. Ribicoff was born in the United States, the country where Native Americans are one of the ethnic groups." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Native_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Ruth_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States and was the Governor of Connecticut before being succeeded by Anthony J. Celebrezze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Anthony_J._Celebrezze> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born and died in the United States of America. His wife is called Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "Casey Ribicoff is the wife of the United States citizen Abraham A. Ribicoff, who was born in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff; was born in Connecticut, is married to Ruth Ribicoff, and worked as Governor of Connecticut." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Ruth_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff, born in New Britain (Connecticut), worked as the United States Secretary of Health, Education, and Welfare and was succeeded by Anthony J. Celebrezze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Anthony_J._Celebrezze> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Britain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Gettysburg, where Aaron S. Daggett fought, was part of the American Civil War conflict, where Robert E. Lee was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_E._Lee> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Cold Harbor, where Aaron S. Daggett took part, took place during the American Civil War where Jefferson Davis was a leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_12/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Jefferson_Davis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Born in Georgia (Vermont), Alvah Sabin, was a member of the Whig Party of the United States. Daniel Webster is the leader of the Whig Party in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alvah_Sabin> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Representative> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#party> ;
+    oskstruct:object <http://dbpedia.org/resource/Whig_Party> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalParty> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Whig_Party> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PoliticalParty> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Daniel_Webster> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#SecretaryOfState> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_13/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alvah_Sabin> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Representative> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Georgia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Salem Church in which Aaron S. Daggett fought occurred during the American Civil War where Robert E. Lee was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_E._Lee> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_14/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff, who was born in the United States worked as the United States Secretary of Health, Education, and Welfare, where he was succeded by John N. Dempsey." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/John_N._Dempsey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_15/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff who worked as the United States Secretary of Health, Education, and Welfare was born in Connecticut and had a wife called Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_16/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff once worked for the United States Secretary of Health, Education, and Welfare office and was married to Chicago-born Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PoliticianSpouse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Chicago> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_17/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff, born New Britain (Connecticut), once worked for the United States Secretary of Health, Education, and Welfare office and was succeeded by, John N. Dempsey." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/John_N._Dempsey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_18/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Britain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "Born in the United States, Abraham A. Ribicoff, worked as the United States Secretary of Health, Education, and Welfare, and his wife is Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_19/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "United States born Abraham A. Ribicoff was married to Casey Ribicoff. The United States is home to Native Americans." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Native_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_20/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "The United States includes the ethnic group of African Americans and is the birthplace of Abraham A. Ribicoff who is married to Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_21/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "In the United States, Abraham A. Ribicoff was born and later married Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_22/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23> a oskstruct:DataEntry ;
+    oskstruct:text "African Americans are an ethnic group in the United States, the birth place of the United States citizen Abraham A. Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_23/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24> a oskstruct:DataEntry ;
+    oskstruct:text "New Britain (Connecticut) was the birthplace of Abraham A. Ribicoff who worked as Governor of Connecticut and was succeeded by, John N. Dempsey." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/John_N._Dempsey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Britain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_24/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25> a oskstruct:DataEntry ;
+    oskstruct:text "Native Americans are an ethnic group in the United States, the birthplace of Abraham A. Ribicoff was Connecticut." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Native_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_25/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26> a oskstruct:DataEntry ;
+    oskstruct:text "United States born, Abraham A. Ribicoff, worked as the United States Secretary of Health, Education, and Welfare, and is married to Ruth Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_26/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Ruth_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in New Britain (Connecticut), united states where African Americans are an ethnic group." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Britain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_27/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28> a oskstruct:DataEntry ;
+    oskstruct:text "The United States includes the ethnic group of Native Americans and is the birthplace of Abraham A. Ribicoff, who holds the nationality of the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Native_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_28/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29> a oskstruct:DataEntry ;
+    oskstruct:text "In the United States, one of the national ethnic groups are the African Americans. The United States is where Abraham A. Ribicoff, who was married to Casey Ribicoff, died." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_29/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States and became Governor of Connecticut. Ruth Ribicoff is his spouse." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_30/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Ruth_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff, married to Ruth Ribicoff, was born in the United States, where African Americans are one of the ethnic groups." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Ruth_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_31/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32> a oskstruct:DataEntry ;
+    oskstruct:text "The Native Americans are an ethnic group in the United States where Abraham A. Ribicoff has nationality, having been born in New Britain (Connecticut)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Native_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Britain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_32/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33> a oskstruct:DataEntry ;
+    oskstruct:text "Casey Ribicoff, is the wife of Abraham A. Ribicoff (born in Connecticut), who, was the Governor of Connecticut." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_33/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States and worked as the United States Secretary of Health, Education, and Welfare. He was succeeded by Anthony J. Celebrezze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Anthony_J._Celebrezze> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_34/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in Connecticut and worked as the United States Secretary of Health, Education, and Welfare before being succeeded by Anthony J. Celebrezze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#United_States_Secretary_of_Health,_Education,_and_Welfare> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Anthony_J._Celebrezze> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_35/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Politician/class#Secretary> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States and was Governor of Connecticut. His successor was John N. Dempsey." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/John_N._Dempsey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_36/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born and died in the United States where African Americans are an ethnic group." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_37/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/African_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States. He was married to Casey Ribicoff and was succeeded by John N. Dempsey." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/John_N._Dempsey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_38/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff worked as Governor of Connecticut and his wife, Casey Ribicoff, was born in Chicago." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PoliticianSpouse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Chicago> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_39/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in Connecticut and is from the United States. His wife is Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_40/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41> a oskstruct:DataEntry ;
+    oskstruct:text "USA born Abraham A. Ribicoff was the Governor of Connecticut and was married to Casey Ribicoff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#office> ;
+    oskstruct:object <http://dbpedia.org/resource/Governor_of_Connecticut> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_41/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham A. Ribicoff was born in the United States and was married to Casey Ribicoff. He died in New York City." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#spouse> ;
+    oskstruct:object <http://dbpedia.org/resource/Casey_Ribicoff> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticianSpouse> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_42/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abraham_A._Ribicoff> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Governor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/New_York_City> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43> a oskstruct:DataEntry ;
+    oskstruct:text "Maine born Aaron S. Daggett fought in the Battle of the Wilderness and was awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_the_Wilderness> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_43/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Maine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44> a oskstruct:DataEntry ;
+    oskstruct:text "Purple Heart recipient Aaron S. Daggett was born in Maine and, most notably, fought in the Battle of Fredericksburg." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Maine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_44/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Fredericksburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought in the Battle of Antietam during the American Civil War which had Abraham Lincoln as one of its commanders." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Abraham_Lincoln> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_45/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett took part in the Battle of Salem Church, which was part of the American Civil War, where Jefferson Davis was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Jefferson_Davis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_46/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Antietam was part of the military conflict known as the American Civil War, where Aaron S. Daggett fought and Robert E. Lee was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_E._Lee> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_47/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought in the Battle of Antietam which took place during the American civil war conflict in which Jefferson Davis was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Jefferson_Davis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_48/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Antietam> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49> a oskstruct:DataEntry ;
+    oskstruct:text "Born in Greene (Maine), Aaron S. Daggett, fought in the Battle of Gettysburg and was awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_49/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Greene> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50> a oskstruct:DataEntry ;
+    oskstruct:text "Abraham Lincoln was a commander during the American Civil War, which included the Battle of Cold Harbor in which Aaron S. Daggett participated." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_50/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Abraham_Lincoln> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought in the Battle of Salem Church during the American Civil War in which Abraham Lincoln was a commander." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Abraham_Lincoln> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_51/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Salem_Church> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett fought at the Battle of Gettysburg during the American Civil War which had Jefferson Davis as one of its commanders." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_52/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Jefferson_Davis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett, born in Greene (Maine), fought in the American Civil War and was awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_53/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Greene> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54> a oskstruct:DataEntry ;
+    oskstruct:text "Robert E. Lee was a commander in the American Civil War when the Battle of Cold Harbor took place. Aaron S. Daggett fought in this battle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Cold_Harbor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_54/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_E._Lee> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55> a oskstruct:DataEntry ;
+    oskstruct:text "The Battle of Gettysburg took place during the American Civil War which was commanded by Abraham Lincoln and had Aaron S. Daggett as one of its participants." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_55/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/American_Civil_War> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryConflict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#commander> ;
+    oskstruct:object <http://dbpedia.org/resource/Abraham_Lincoln> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56> a oskstruct:DataEntry ;
+    oskstruct:text "Greene (Maine) is the birthplace of Aaron S. Daggett who fought in the Battle of the Wilderness and was awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_the_Wilderness> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_56/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Greene> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron S. Daggett, who was born in Maine, fought in the Battle of Gettysburg and awarded the Purple Heart." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Battle_of_Gettysburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#award> ;
+    oskstruct:object <http://dbpedia.org/resource/Purple_Heart> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_57/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_S._Daggett> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryPerson> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Maine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58> a oskstruct:DataEntry ;
+    oskstruct:text "Makis Voridis was the successor of Adonis Georgiadis, who was in office while Antonis Samaras was Prime Minister and Evangelos Venizelos was the deputy." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adonis_Georgiadis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#inOfficeWhilePrimeMinister> ;
+    oskstruct:object <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PrimeMinister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#hasDeputy> ;
+    oskstruct:object <http://dbpedia.org/resource/Evangelos_Venizelos> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_58/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adonis_Georgiadis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Makis_Voridis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Minister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59> a oskstruct:DataEntry ;
+    oskstruct:text "Adonis Georgiadis was in office whilst Antonis Samaras, later succeeded by Konstantinos Mitsotakis, was Prime Minister and Evangelos Venizelos was his Deputy." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adonis_Georgiadis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#inOfficeWhilePrimeMinister> ;
+    oskstruct:object <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#successor> ;
+    oskstruct:object <http://dbpedia.org/resource/Konstantinos_Mitsotakis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Minister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_59/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PrimeMinister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#hasDeputy> ;
+    oskstruct:object <http://dbpedia.org/resource/Evangelos_Venizelos> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60> a oskstruct:DataEntry ;
+    oskstruct:text "Adonis Georgiadis was in office when Antonis Samaras served as Prime Minister and had Evangelos Venizelos for a Deputy. While Antonis Samaras, was in office while Konstantinos Mitsotakis was Prime Minister." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adonis_Georgiadis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#inOfficeWhilePrimeMinister> ;
+    oskstruct:object <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Minister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#inOfficeWhilePrimeMinister> ;
+    oskstruct:object <http://dbpedia.org/resource/Konstantinos_Mitsotakis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Politician#3_Politician_test_60/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antonis_Samaras> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/PrimeMinister> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#hasDeputy> ;
+    oskstruct:object <http://dbpedia.org/resource/Evangelos_Venizelos> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePrimeMinister> .

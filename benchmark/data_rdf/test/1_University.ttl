@@ -1,0 +1,195 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_University#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_University/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_University/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University> a owl:Ontology ;
+    rdfs:label "1_University data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_University/v1> ;
+    rdfs:comment "The instance dataset for the 1_University ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "The Aarhus University is in the country of Denmark." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Denmark> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "The University of Burgundy has 16800 undergraduate students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#numberOfUndergraduateStudents> ;
+    oskstruct:object "16800"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "The number of staff members at the University of Burgundy is 2900." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#staff> ;
+    oskstruct:object "2900"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "The University of Burgundy is in France." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/France> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "Dijon's elevation is 245 above the sea level." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#elevationAboveTheSeaLevel> ;
+    oskstruct:object "245"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "There are 9400 postgraduate students attending the University of Burgundy." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#numberOfPostgraduateStudents> ;
+    oskstruct:object "9400"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "The University of Burgundy campus is located in Dijon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#campus> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "The long name of France is the French Republic." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/France> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#longName> ;
+    oskstruct:object <http://dbpedia.org/resource/French_Republic> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "The postal code for Dijon is 21000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#postalCode> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#21000> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_University/class#Code> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "The number of doctoral students in the University of Burgundy is 1299." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#numberOfDoctoralStudents> ;
+    oskstruct:object "1299"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "The Aarhus University is affiliated with the European University Association." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/European_University_Association> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "The Aarhus University is in the city of Aarhus." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#city> ;
+    oskstruct:object <http://dbpedia.org/resource/Aarhus> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Aarhus University was established in 1928." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#established> ;
+    oskstruct:object "1928"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_14> a oskstruct:DataEntry ;
+    oskstruct:text """The latin name of Aarhus University is "Universitas Aarhusiensis".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#latinName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Universitas_Aarhusiensis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Accademia di Architettura di Mendrisio is located in the city of Mendrisio." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_University#1_University_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_University/relation#city> ;
+    oskstruct:object <http://dbpedia.org/resource/Mendrisio> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .

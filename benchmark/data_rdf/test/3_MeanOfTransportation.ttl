@@ -1,0 +1,1407 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation> a owl:Ontology ;
+    rdfs:label "3_MeanOfTransportation data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation/v1> ;
+    rdfs:comment "The instance dataset for the 3_MeanOfTransportation ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "AIDAluna is powered by United States based Caterpillar Inc. Douglas R. Oberhelman is a key person at Caterpillar Inc." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Douglas_R._Oberhelman> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "Made by Dodge, the 1955 Dodge has a V8 engine and a 120 inch wheelbase." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#wheelbase> ;
+    oskstruct:object "120"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge, also called the Dodge Suburban, has a V8 engine and a 3-speed automatic transmission." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#transmission> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#3-speed_automatic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#alternativeName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Dodge_Suburban> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "The Acura TLX is related to the Honda Accord which is made by Honda. Acura is a division of the Honda." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda_Accord> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_Accord> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge has a V8 engine, a hardtop and is also called the Dodge Custom Royal." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#alternativeName> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Custom_Royal> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Hardtop> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "Finland is the builder if the icebreaker called the Aleksey Chirikov. Both Sauli Niinistö and Juha Sipilä are leaders in Finland." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Finland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Sauli_Niinist%C3%B6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Finland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Juha_Sipil%C3%A4> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksey_Chirikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#builder> ;
+    oskstruct:object <http://dbpedia.org/resource/Finland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "The AIDAstella is 253260 mm long with a 32.2 length ship beam. Its maiden voyage was 3/17/2013." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAstella> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#maidenVoyage> ;
+    oskstruct:object "2013-03-17"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAstella> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#shipBeam> ;
+    oskstruct:object "32.2"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAstella> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#length> ;
+    oskstruct:object "253260"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "Delta II, which is comparable with the rocket Antares, originates from the United States and took off from Cape Canaveral Air Force Station Space Launch Complex 17." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Delta_II> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Rocket> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#launchSite> ;
+    oskstruct:object <http://dbpedia.org/resource/Cape_Canaveral_Air_Force_Station_Space_Launch_Complex_17> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/LaunchPad> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antares> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Rocket> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#comparable> ;
+    oskstruct:object <http://dbpedia.org/resource/Delta_II> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Rocket> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Delta_II> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Rocket> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#countryOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "The icebreaker, Aleksey Chirikov, built by Finland, has a ship beam of 21.2 m, and the builder is in Helsinki." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksey_Chirikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#builder> ;
+    oskstruct:object <http://dbpedia.org/resource/Finland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksey_Chirikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#shipBeam> ;
+    oskstruct:object "21.2"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksey_Chirikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#builder> ;
+    oskstruct:object <http://dbpedia.org/resource/Helsinki> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "Acura is a division of the Honda who manufactured the Acura TLX which has a V6 engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V6_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "Honda is the manufacturer of the Acura TLX which has a Honda K engine. Acura is a division of the Honda." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_K_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "The Honda Accord is related to the Acura TLX which is made by Honda which has an Acura division." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_12/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_Accord> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Acura is a division of the Honda. which manufactures the Honda K engine used in the Acura TLX." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_K_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_13/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda_K_engine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AutomobileEngine> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Acura is a division of Honda which makes the Acura TLX. The engine size of the Acura TLX is 3.5 litres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_14/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engineSize> ;
+    oskstruct:object "3.5"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "The Acura TLX has a Honda J engine which is manufactured by Honda, a division of which, is Acura." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_J_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_15/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda_J_engine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/AutomobileEngine> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Acura is a division of the Honda. Honda is the manufacturer of the Acura TLX which has a 2.4 litre engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_16/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engineSize> ;
+    oskstruct:object "2.4"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "Acura is a division of the manufacturer, Honda, who produced the Acura TLX with an Inline-four engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_17/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Inline-four_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "Honda makes the Acura TLX which holds a Honda J engine. A division of Honda is Acura." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Honda> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Acura> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_18/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_J_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "Honda makes the Acura TLX which has a Honda K engine and is related to the Honda Accord." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_K_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_19/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acura_TLX> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Honda_Accord> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "The DeSoto Custom is related to the Dodge Coronet and 1955 Dodge, and is made by the DeSoto co." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Coronet> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_20/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge, also called the Dodge Coronet, has a hardtop and a V8 engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#alternativeName> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Coronet> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_21/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Hardtop> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge is manufactured by Dodge and related to the Plymouth Plaza and the DeSoto Custom." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Plymouth_Plaza> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_22/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge and the Plymouth Plaza and the DeSoto Custom are related means of transport in that they are all cars. Plymouth are the manufacturers of the Plymouth Plaza." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Plymouth_Plaza> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_23/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Plymouth_Plaza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Plymouth> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge was manufactured by Dodge and the DeSoto Custom which was related to the Dodge Coronet, was a related means of transportation." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Coronet> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_24/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge, with an alternative name of Dodge coronet, has a V8 engine and 3-speed automatic transmission." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#transmission> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#3-speed_automatic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_25/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#alternativeName> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Coronet> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge also known as the Dodge Custom Royal has a 3-speed automatic transmission and a V8 engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#transmission> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#3-speed_automatic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_26/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#alternativeName> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge_Custom_Royal> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge is related to the DeSoto Custom which is made by the DeSoto Co. Two related vehicles are the 1955 Dodge and the Plymouth Plaza." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Plymouth_Plaza> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_27/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a hardtop." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#transmission> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#3-speed_automatic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_28/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Hardtop> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge has a V8 engine, a 3-speed automatic transmission and a station wagon style body." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/V8_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#transmission> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#3-speed_automatic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Transmission> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_29/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Station_wagon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30> a oskstruct:DataEntry ;
+    oskstruct:text "The 1955 Dodge is manufactured by Dodge and is a related means of transport to the DeSoto Custom and the Chrysler Newport." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Chrysler_Newport> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_30/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Dodge> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31> a oskstruct:DataEntry ;
+    oskstruct:text "The DeSoto Custom was manufactured at DeSoto and is a related means of transport to the 1955 Dodge and the Chrysler Newport." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1955_Dodge> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#relatedMeanOfTransportation> ;
+    oskstruct:object <http://dbpedia.org/resource/Chrysler_Newport> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Automobile> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_31/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/DeSoto_Custom> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/DeSoto> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32> a oskstruct:DataEntry ;
+    oskstruct:text "Caterpillar Inc. was founded in the United States and is located in Peoria (Illinois) and their engine powers the AIDAluna." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Peoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_32/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33> a oskstruct:DataEntry ;
+    oskstruct:text "Rostock based AIDA Cruises owns the AIDAluna which has a Caterpillar Inc. engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Rostock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_33/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34> a oskstruct:DataEntry ;
+    oskstruct:text "Caterpillar Inc. of Peoria (Illinois) includes key figure Douglas R. Oberhelman and powers AIDAluna." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Douglas_R._Oberhelman> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Peoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_34/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35> a oskstruct:DataEntry ;
+    oskstruct:text "Located in Illinois with a key person called Douglas R. Oberhelman is the Caterpillar Co. AIDAluna is powered by Caterpillar Inc." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Douglas_R._Oberhelman> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Illinois> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_35/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36> a oskstruct:DataEntry ;
+    oskstruct:text "AIDAluna is powered by Caterpillar Inc., who are from Peoria (Illinois). AIDA Cruises is the owner of the AIDAluna." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Peoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_36/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37> a oskstruct:DataEntry ;
+    oskstruct:text "The AIDAluna had its maiden voyage on the 22nd of March 2009. It is powered by a Caterpillar Inc. engine and is 252000 mm in length." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#maidenVoyage> ;
+    oskstruct:object "2009-03-22"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#length> ;
+    oskstruct:object "252000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_37/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38> a oskstruct:DataEntry ;
+    oskstruct:text "AIDAluna is powered by Caterpillar Inc. which was founded in California and is located in Peoria (Illinois)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/California> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Peoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_38/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39> a oskstruct:DataEntry ;
+    oskstruct:text "Caterpillar Inc. was founded in California, United States That company's engine powered the AIDAluna." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/California> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_39/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40> a oskstruct:DataEntry ;
+    oskstruct:text "AIDA Cruises, located in Germany, is the owner of the AIDAluna which is powered by Caterpillar Inc." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Germany> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_40/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41> a oskstruct:DataEntry ;
+    oskstruct:text "The AIDAluna, christened on April 4, 2009, is 252000 millimetres long and powered by the Caterpillar Inc. engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#length> ;
+    oskstruct:object "252000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_41/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#christeningDate> ;
+    oskstruct:object "2009-04-04"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42> a oskstruct:DataEntry ;
+    oskstruct:text "AIDA Cruises is the owner of the AIDAluna which is powered by Caterpillar Inc. found in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/AIDA_Cruises> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_42/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43> a oskstruct:DataEntry ;
+    oskstruct:text "The AIDAluna service began March 22, 2009. The AIDAluna is powered by Caterpillar Inc. and has a length of 252000 millimetres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#length> ;
+    oskstruct:object "252000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Caterpillar_Inc.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_43/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AIDAluna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#activeYearsStartDate> ;
+    oskstruct:object "2009-03-22"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44> a oskstruct:DataEntry ;
+    oskstruct:text "The Alvis Speed 25, with a straight-six engine, was made by the Alvis Car and Engineering Company founded in Coventry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alvis_Speed_25> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Alvis_Car_and_Engineering_Company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alvis_Car_and_Engineering_Company> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Coventry> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_44/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alvis_Speed_25> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Straight-six_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45> a oskstruct:DataEntry ;
+    oskstruct:text "Pontiac makes the Pontiac Rageous coupé at its plant in Detroit." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#assembly> ;
+    oskstruct:object <http://dbpedia.org/resource/Detroit> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Coup%C3%A9> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_45/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#manufacturer> ;
+    oskstruct:object <http://dbpedia.org/resource/Pontiac> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46> a oskstruct:DataEntry ;
+    oskstruct:text "The wheelbase of the Abarth 1000 GT Coupé is 2160 millimetres. Its production started in the Year 1958." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#productionStartYear> ;
+    oskstruct:object "1958"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#wheelbase> ;
+    oskstruct:object "2160"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_46/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Coup%C3%A9> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47> a oskstruct:DataEntry ;
+    oskstruct:text "The Abarth 1000 GT Coupé has a Coupé body style with a straight-four engine and a wheelbase of 2160 millimetres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#wheelbase> ;
+    oskstruct:object "2160"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Coup%C3%A9> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_47/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#engine> ;
+    oskstruct:object <http://dbpedia.org/resource/Straight-four_engine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AutomobileEngine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48> a oskstruct:DataEntry ;
+    oskstruct:text "The Pontiac Rageous coupé was last assembled in Michigan in 1997." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#assembly> ;
+    oskstruct:object <http://dbpedia.org/resource/Michigan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#productionEndYear> ;
+    oskstruct:object "1997"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_48/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pontiac_Rageous> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Coup%C3%A9> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49> a oskstruct:DataEntry ;
+    oskstruct:text "The Abarth 1000 GT, which ended production in 1958, has a Coupé body style and a wheelbase of 2160 mms." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#productionEndYear> ;
+    oskstruct:object "1958"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#wheelbase> ;
+    oskstruct:object "2160"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_49/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abarth_1000_GT_Coup%C3%A9> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Automobile> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#bodyStyle> ;
+    oskstruct:object <http://dbpedia.org/resource/Coup%C3%A9> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#CarBodyStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50> a oskstruct:DataEntry ;
+    oskstruct:text "The A-Rosa Luna is powered by an MTU Friedrichshafen engine. Rolls-Royce Power Systems is the parent company of MTU Friedrichshafen, and Rolls-Royce Holdings is its owner." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#parentCompany> ;
+    oskstruct:object <http://dbpedia.org/resource/Rolls-Royce_Power_Systems> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/Rolls-Royce_Holdings> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_50/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A-Rosa_Luna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51> a oskstruct:DataEntry ;
+    oskstruct:text "MTU Friedrichshafen of Friedrichshafen, owned by Rolls-Royce Holdings, manufactures the A-Rosa Luna engine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Friedrichshafen> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/Rolls-Royce_Holdings> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#3_MeanOfTransportation_test_51/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A-Rosa_Luna> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Ship> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#poweredBy> ;
+    oskstruct:object <http://dbpedia.org/resource/MTU_Friedrichshafen> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#Manufacturer> .

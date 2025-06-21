@@ -1,0 +1,1299 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_Airport#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Airport/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport> a owl:Ontology ;
+    rdfs:label "3_Airport data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_Airport/v1> ;
+    rdfs:comment "The instance dataset for the 3_Airport ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "Adirondack Regional Airport serves the city of Saranac Lake (New York) which is part of Harrietstown and Essex County (New York)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Essex_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "05L/23R is the name of the runway at Angola International airport in Ícolo e Bengo, Angola." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#05L/23R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "Adirondack Regional Airport serves the city of Saranac Lake (New York) which is part of Essex County (New York), in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Essex_County> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#County> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Essex_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "Allama Iqbal International airport which is located in Pakistan has a runway length of 3360.12. The runway name is 18L/36R." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Pakistan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "3360.12"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#18L/36R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "With a runway length of 4000 metres, Athens International Airport is located in Spata and serves the city of Athens." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Athens_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Athens> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Athens_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "4000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Athens_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Spata> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "Turkmenistan Airlines is operated by Ashgabat International Airport, whose headquarters are located in Ashgabat, Turkmenistan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ashgabat_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/Turkmenistan_Airlines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Airline> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turkmenistan_Airlines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airline> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#headquarter> ;
+    oskstruct:object <http://dbpedia.org/resource/Turkmenistan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turkmenistan_Airlines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airline> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#headquarter> ;
+    oskstruct:object <http://dbpedia.org/resource/Ashgabat> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "At the Ardmore airport in New Zealand, the 3rd runway is made from Poaceae which belongs to the flowering plants division and is in the class of Monocotyledon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ardmore_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#3rdRunwaySurfaceType> ;
+    oskstruct:object <http://dbpedia.org/resource/Poaceae> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Family> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Poaceae> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Family> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#class> ;
+    oskstruct:object <http://dbpedia.org/resource/Monocotyledon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Class> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Poaceae> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Family> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#division> ;
+    oskstruct:object <http://dbpedia.org/resource/Flowering_plant> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "Adolfo Suárez Madrid–Barajas Airport in Madrid, which is operated by ENAIRE, has an elevation of 610 metres above sea level." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/ENAIRE> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "610"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Madrid> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "The Dutch language is spoken in Antwerp, Belgium in which Antwerp International Airport is located." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antwerp_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Antwerp> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antwerp> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Belgium> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Belgium> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Dutch_language> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "The runway length at Adolfo Suárez Madrid–Barajas airport in Madrid is 3500 m and named 14L/32R." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "3500"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Madrid> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#14L/32R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "The runway length at the Bedford Aerodrome in Thurleigh is 1095 and the aerodrome serves the Bedford Autodrome." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bedford_Aerodrome> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "1095"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bedford_Aerodrome> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Bedford> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bedford_Aerodrome> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Thurleigh> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "Al Asad airbase is operated by the United States Air Force, which was involved in the United States invasion of Panama, and who use an aircraft fighter called McDonnell Douglas F-15 Eagle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al_Asad_Airbase> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryUnit> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryUnit> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#aircraftFighter> ;
+    oskstruct:object <http://dbpedia.org/resource/McDonnell_Douglas_F-15_Eagle> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Aircraft> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_12/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryUnit> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States_invasion_of_Panama> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Ashgabat is the location of Ashgabat International Airport which is elevated 211 metres above sea level, and has a runway that is 2989 metres long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ashgabat_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ashgabat> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ashgabat_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "2989"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_13/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ashgabat_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "211"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Aarhus airport has a runway length of 2777 metres and is operated by Aarhus Lufthavn A/S. The name of the runway is 10L/28R." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "2777"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Aarhus_Lufthavn_A/S> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_14/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#10L/28R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "The Athens International Airport serves the city of Athens, in Greece where Alexis Tsipras is the leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Athens_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Athens> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Athens> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#CapitalCity> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Greece> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_15/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Greece> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Alexis_Tsipras> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Appleton International Airport located in Greenville (Wisconsin), has an elevation of 280 meters above sea level as well as a runway length of 2439." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Appleton_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Greenville> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Appleton_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "2439"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_16/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Appleton_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "280"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "The United States Air Force operates the Al Asad airbase and previously fought in the Invasion of Grenada and the bombing of Libya in 1986." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al_Asad_Airbase> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryUnit> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryUnit> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/Invasion_of_Grenada> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_17/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States_Air_Force> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MilitaryUnit> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#battle> ;
+    oskstruct:object <http://dbpedia.org/resource/1986_United_States_bombing_of_Libya> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MilitaryConflict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "Alpena County Regional Airport has a runway length is 2744 metres and is located in Maple Ridge Township (Alpena County, Michigan) in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Maple_Ridge_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "2744"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_18/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Maple_Ridge_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "With its capital of Austin (Texas), Andrews County Airport is located in Texas where there are Texans." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andrews_County_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Texas> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Texas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Austin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_19/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Texas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#demonym> ;
+    oskstruct:object <http://dbpedia.org/resource/Texan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20> a oskstruct:DataEntry ;
+    oskstruct:text """Angola International Airport is located at Ícolo e Bengo in Angola and the runway is named "south runway".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_20/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#South_Runway> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "Al-Taqaddum Air Base serves the city of Fallujah which is in Iraq, where they speak Arabic." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al-Taqaddum_Air_Base> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Fallujah> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Fallujah> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Iraq> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_21/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Iraq> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Arabic> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "Adolfo Suárez Madrid–Barajas Airport is found in Alcobendas which is part of the community of Madrid. The leader party at Alcobendas is the People's Party (Spain)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alcobendas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Community_of_Madrid> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alcobendas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#leaderParty> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#People's_Party> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalParty> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_22/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alcobendas> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23> a oskstruct:DataEntry ;
+    oskstruct:text "The 18L/36R runway in Allama Iqbal International airport in Pakistan, has a length of 3310." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Pakistan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "3310"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_23/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#18L/36R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24> a oskstruct:DataEntry ;
+    oskstruct:text "Antwerp International Airport serves the city of Antwerp, Belgium, where French is spoken." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antwerp_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Antwerp> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Belgium> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/French> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_24/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Antwerp> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Belgium> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25> a oskstruct:DataEntry ;
+    oskstruct:text "The Al-Taqaddum air base serves the city of Fallujah in Iraq. Haider al-Abadi is the leader of Iraq." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Iraq> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Haider_al-Abadi> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al-Taqaddum_Air_Base> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Fallujah> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_25/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Fallujah> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Iraq> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26> a oskstruct:DataEntry ;
+    oskstruct:text "With an elevation of 610 metres above sea level, Adolfo Suárez Madrid–Barajas Airport is located in Alcobendas, in Spain." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alcobendas> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "610"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_26/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alcobendas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Spain> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27> a oskstruct:DataEntry ;
+    oskstruct:text "Appleton International Airport can be found in Greenville (Wisconsin) which is part of Ellington (Wisconsin), in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Appleton_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Greenville> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ellington> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_27/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Greenville> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Village> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Ellington> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28> a oskstruct:DataEntry ;
+    oskstruct:text "The runway length of Alpena County Regional Airport is 1533 and it is located at Maple Ridge Township (Alpena County, Michigan), United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Maple_Ridge_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "1533"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_28/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Maple_Ridge_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29> a oskstruct:DataEntry ;
+    oskstruct:text "Located in Wilson Township (Alpena County, Michigan), Alpena County Regional Airport has an elevation of 210 metres above sea level and a runway length of 1533 metres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "1533"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_29/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "210"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30> a oskstruct:DataEntry ;
+    oskstruct:text "Adirondack Regional Airport is located in Saranac Lake (New York) Harrietstown, United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Village> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_30/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31> a oskstruct:DataEntry ;
+    oskstruct:text "Saranac Lake (New York), part of Harrietstown, United States, is served by Adirondack Regional Airport." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Village> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_31/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32> a oskstruct:DataEntry ;
+    oskstruct:text "Adirondack Regional Airport has a runway length of 1219 and serves the cities of Saranac Lake (New York) and Lake Placid (New York)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "1219"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Lake_Placid> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_32/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33> a oskstruct:DataEntry ;
+    oskstruct:text "Lake Placid (New York) is served by the Adirondack Regional Airport. This airport is 507 metres above sea level and serves the city of Saranac Lake (New York)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Lake_Placid> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "507"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_33/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34> a oskstruct:DataEntry ;
+    oskstruct:text "Saranac Lake (New York) is part of Harrietstown, New York and has an airport called Adirondack Regional airport." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Village> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Harrietstown> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/New_York> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_34/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adirondack_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/Saranac_Lake> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35> a oskstruct:DataEntry ;
+    oskstruct:text "The Pakistan Civil Aviation Authority runs Allama Iqbal International Airport in Punjab (Pakistan) which is led by the Provincial Assembly of the Punjab (Pakistan)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/Pakistan_Civil_Aviation_Authority> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/GovernmentAgency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Punjab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Province> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_35/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Punjab> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Province> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Provincial_Assembly_of_the_Punjab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36> a oskstruct:DataEntry ;
+    oskstruct:text "Allama Iqbal International airport is located in Punjab (Pakistan) and is operated by Pakistan Civil Aviation Authority headquartered at Jinnah International Airport." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#operatingOrganisation> ;
+    oskstruct:object <http://dbpedia.org/resource/Pakistan_Civil_Aviation_Authority> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/GovernmentAgency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pakistan_Civil_Aviation_Authority> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/GovernmentAgency> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#headquarter> ;
+    oskstruct:object <http://dbpedia.org/resource/Jinnah_International_Airport> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Airport> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_36/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Punjab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Province> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37> a oskstruct:DataEntry ;
+    oskstruct:text "The 18L/36R runway of the Allama Iqbal International airport is located in Punjab (Pakistan) and has a length of 3310." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "3310"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Punjab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Province> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_37/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allama_Iqbal_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#18L/36R> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Airport/class#Runway> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38> a oskstruct:DataEntry ;
+    oskstruct:text "Found in Wilson Township (Alpena County, Michigan), is Alpena County Regional Airport. This airport is 210 metres above sea level and has a runway length of 2744 metres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "2744"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_38/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "210"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39> a oskstruct:DataEntry ;
+    oskstruct:text "Alpena County Regional Airport is located in Wilson Township (Alpena County, Michigan) in the United States. It has a runway length of 1533." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_39/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "1533"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40> a oskstruct:DataEntry ;
+    oskstruct:text "The location of Alpena County Regional Airport is Wilson Township (Alpena County, Michigan), United States, and has a runway length of 2744." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_40/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLength> ;
+    oskstruct:object "2744"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41> a oskstruct:DataEntry ;
+    oskstruct:text "With an elevation of 210 metres above sea level, Alpena County Regional Airport is located in the Wilson Township (Alpena County, Michigan), in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Wilson_Township> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_41/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alpena_County_Regional_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "210"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42> a oskstruct:DataEntry ;
+    oskstruct:text "At 159 meters above sea level, Angola International airport is located in Ícolo e Bengo, in Angola." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_42/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "159"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43> a oskstruct:DataEntry ;
+    oskstruct:text "Located at Ícolo e Bengo, Angola International Airport is 159 metres above the sea level and has a runway length of 3800 metres." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "159"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_43/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "3800"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44> a oskstruct:DataEntry ;
+    oskstruct:text "With a runway length of 3800 metres, Angola International Airport is located at Ícolo e Bengo, in Angola." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_44/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthMetre> ;
+    oskstruct:object "3800"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45> a oskstruct:DataEntry ;
+    oskstruct:text "Angola International Airport is located in Ícolo e Bengo, Luanda Province, Angola." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Luanda_Province> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Province> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_45/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Luanda_Province> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Province> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46> a oskstruct:DataEntry ;
+    oskstruct:text "Located in Ícolo e Bengo, Angola International Airport is 159 meters above sea level and has a runway length of 4000 ft." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthFeet> ;
+    oskstruct:object "4000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_46/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#elevationAboveTheSeaLevelInMetres> ;
+    oskstruct:object "159"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47> a oskstruct:DataEntry ;
+    oskstruct:text "Angola International airport is located in Ícolo e Bengo, Angola, it has a runway length of 4000 ft." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/%C3%8Dcolo_e_Bengo> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Angola> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Airport#3_Airport_test_47/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Angola_International_Airport> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Airport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#runwayLengthFeet> ;
+    oskstruct:object "4000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
