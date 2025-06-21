@@ -1,0 +1,391 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Building#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Building/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Building/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building> a owl:Ontology ;
+    rdfs:label "2_Building data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Building/v1> ;
+    rdfs:comment "The instance dataset for the 2_Building ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "There are 45 floors at 200 Public Square in Cleveland." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/200_Public_Square> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Cleveland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/200_Public_Square> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#floorCount> ;
+    oskstruct:object "45"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "The Akita Museum of Art is located in Akita Prefecture, Japan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akita_Prefecture> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Prefecture> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Japan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akita_Museum_of_Art> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Museum> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Akita_Prefecture> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Prefecture> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Marriott International, with Bill Marriott as a key leader, is the tenant of AC Hotel Bella Sky Copenhagen." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AC_Hotel_Bella_Sky_Copenhagen> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hotel> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#tenant> ;
+    oskstruct:object <http://dbpedia.org/resource/Marriott_International> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Marriott_International> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Bill_Marriott> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "The construction of Adisham Hall, Sri Lanka, was completed in 1931." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionYear> ;
+    oskstruct:object "1931"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "A leader of the United States, which is home to 250 Delaware Avenue, is John Roberts." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Roberts> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#ChiefJustice> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/250_Delaware_Avenue> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Asser Levy Public Baths is located on 23rd Street, Manhattan, and was constructed in 1904." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/23rd_Street> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#yearOfConstruction> ;
+    oskstruct:object "1904"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "Adisham Hall whose architectural style is Tudor and Jacabian is located in Haputale." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architecturalStyle> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Tudor_and_Jacabian> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#ArchitecturalStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Haputale> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "Addis Ababa City Hall is located in Ethiopia whose leader is Mulatu Teshome." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ethiopia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Mulatu_Teshome> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Addis_Ababa_City_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Ethiopia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "T. S. Thakur is the leader of India; also the location of Amdavad ni Gufa." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/India> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/T._S._Thakur> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#ChiefJustice> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Amdavad_ni_Gufa> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Museum> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "The Akita Museum of Art is located in Akita (Akita), part of Akita Prefecture." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akita_Museum_of_Art> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Museum> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Akita> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Akita> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Akita_Prefecture> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Prefecture> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "Julia Morgan from San Francisco was the designer of the Asilomar Conference Grounds." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/Julia_Morgan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Julia_Morgan> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Architect> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/San_Francisco> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "Asser Levy Public Baths are in New York City of which is a part of New Netherland." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/New_York_City> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/New_York_City> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/New_Netherland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "The Asilomar Conference Grounds is located at Pacific Grove (California) in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Pacific_Grove> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pacific_Grove> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "Amdavad ni Gufa is located in Ahmedabad in India." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Amdavad_ni_Gufa> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Museum> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ahmedabad> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ahmedabad> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "Asilomar Conference Grounds, Asilomar Blvd has a reference number in the National Register of Historic Places of: 87000823." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Asilomar_Blvd> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#NationalRegisterOfHistoricPlacesReferenceNumber> ;
+    oskstruct:object "87000823"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "The Asher and Mary Isabelle Richardson House is located on U.S. Route 83 and has the reference number 88002539 in the National Register of Historic Places." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asher_and_Mary_Isabelle_Richardson_House> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/U.S._Route_83> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asher_and_Mary_Isabelle_Richardson_House> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#NationalRegisterOfHistoricPlacesReferenceNumber> ;
+    oskstruct:object "88002539"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text """The 3Arena, designed by the architectural company Populous, is located at "North Wall Quay".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/3Arena> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Venue> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/North_Wall_Quay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/3Arena> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Venue> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/Populous> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "Amdavad ni Gufa is located in Gujarat, India." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Amdavad_ni_Gufa> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Museum> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Gujarat> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Gujarat> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "250 Delaware Avenue is located in the United States, which is led by Joe Biden." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joe_Biden> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_dev_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/250_Delaware_Avenue> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .

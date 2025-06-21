@@ -1,0 +1,543 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Artist#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Artist/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist> a owl:Ontology ;
+    rdfs:label "2_Artist data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Artist/v1> ;
+    rdfs:comment "The instance dataset for the 2_Artist ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Anders Osborne sings the blues under the Shanachie Records label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Shanachie_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "Disco is a genre of music that contain elements of other genres such as pop music which is the musical genre of Aleksandra Kovač." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandra_Kova%C4%8D> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Disco> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Allen Forrest is an exponent of Pop music, which when part of fusion genre, is what Disco music is." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Disco> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allen_Forrest> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "Andra began her Pop music singing career in 2000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andra> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andra> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#activeYearsStartYear> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "Al Anderson (NRBQ) performs rock music and plays the guitar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al_Anderson> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#instrument> ;
+    oskstruct:object <http://dbpedia.org/resource/Guitar> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Instrument> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al_Anderson> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Andrew Rayel is associated with both musical artist Jonathan Mendelsohn and Mark Sixma." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andrew_Rayel> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedMusicalArtist> ;
+    oskstruct:object <http://dbpedia.org/resource/Jonathan_Mendelsohn> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andrew_Rayel> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedMusicalArtist> ;
+    oskstruct:object <http://dbpedia.org/resource/Mark_Sixma> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "Andrew Rayel who performed the genre of Trance music is associated with the musical artist Armin van Buuren." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andrew_Rayel> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Trance_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Andrew_Rayel> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedMusicalArtist> ;
+    oskstruct:object <http://dbpedia.org/resource/Armin_van_Buuren> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "Musician Alison O'Donnell is associated with The Owl Service and Plastik Mak." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Alison_O'Donnell> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Plastik_Mak> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Alison_O'Donnell> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Owl_Service> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "England born Alfred Garth Jones, died in Sidcup." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alfred_Garth_Jones> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Artist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/England> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alfred_Garth_Jones> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Artist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Sidcup> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "Afrobeat is a fusion of funk music which is the genre of Aleksandra Kovač." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Funk> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Afrobeat> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandra_Kova%C4%8D> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Funk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron Bertram plays for the Kids Imagine Nation band and his genre is Ska punk." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Bertram> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Ska_punk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Bertram> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Kids_Imagine_Nation> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "Anders Osborne is associated with the band Galactic and has worked with Tab Benoit." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Galactic> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedMusicalArtist> ;
+    oskstruct:object <http://dbpedia.org/resource/Tab_Benoit> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "Universal Music Group's, Philips Records, is the label of Agustín Barboza." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philips_Records> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/RecordLabel> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#parentCompany> ;
+    oskstruct:object <http://dbpedia.org/resource/Universal_Music_Group> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agust%C3%ADn_Barboza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Philips_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "Alex Day performs Synthpop music which is a form of pop music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alex_Day> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Synthpop> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Synthpop> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "Agustín Barboza died in Asunción, Paraguay." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agust%C3%ADn_Barboza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Paraguay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agust%C3%ADn_Barboza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Asunci%C3%B3n> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "Allen Forrest performs rhythm and blues music, the music Disco derives from." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allen_Forrest> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rhythm_and_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rhythm_and_blues> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#derivative> ;
+    oskstruct:object <http://dbpedia.org/resource/Disco> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "Alfred Garth Jones was born in Manchester, England." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alfred_Garth_Jones> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Artist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/England> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alfred_Garth_Jones> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Artist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Manchester> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "Ace Wilder, a solo singer, is contracted with the record label EMI Records." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ace_Wilder> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/EMI_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ace_Wilder> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#background> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#solo_singer> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "Alfred Garth Jones died in London, where the leader is the European Parliament." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alfred_Garth_Jones> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Artist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#deathPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/London> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/London> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#CapitalCity> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/European_Parliament> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_20> a oskstruct:DataEntry ;
+    oskstruct:text "Agustín Barboza was born in Asunción in Paraguay." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agust%C3%ADn_Barboza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Paraguay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agust%C3%ADn_Barboza> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Asunci%C3%B3n> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_21> a oskstruct:DataEntry ;
+    oskstruct:text "Ace Wilder is an exponent of hip hop music, a style that originated from disco." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ace_Wilder> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Hip_hop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hip_hop_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Disco> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_22> a oskstruct:DataEntry ;
+    oskstruct:text "Ahmet Ertegun plays rock and roll music, whose stylistic origins are in country music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_22/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ahmet_Ertegun> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_and_roll> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rock_and_roll> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Country_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_23> a oskstruct:DataEntry ;
+    oskstruct:text "Anders Osborne’s musical genre is rock music and bhangra is part of the rock music fusion." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_23/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Bhangra> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_24> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron Bertram plays for the Suburban Legends band and Kids Imagine Nation." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_24/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Bertram> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Suburban_Legends> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Bertram> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Kids_Imagine_Nation> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_25> a oskstruct:DataEntry ;
+    oskstruct:text "Anders Osborne's genre is Rhythm and blues and they are signed to the record label Alligator Records." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_25/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Alligator_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anders_Osborne> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rhythm_and_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_26> a oskstruct:DataEntry ;
+    oskstruct:text "Alison O'Donnell is a musician for the United Bible Studies band and was previously member of the Flibbertigibbet band." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_26/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Alison_O'Donnell> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Flibbertigibbet> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Alison_O'Donnell> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/United_Bible_Studies> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_27> a oskstruct:DataEntry ;
+    oskstruct:text "Allen Forrest has a background as a solo singer and was a pop artist." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_27/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allen_Forrest> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Artist#2_Artist_dev_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Allen_Forrest> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#background> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#solo_singer> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .

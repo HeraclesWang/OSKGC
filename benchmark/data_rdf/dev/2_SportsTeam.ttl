@@ -1,0 +1,391 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam> a owl:Ontology ;
+    rdfs:label "2_SportsTeam data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam/v1> ;
+    rdfs:comment "The instance dataset for the 2_SportsTeam ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Dave Challinor is the manager of A.F.C. Fylde, and he plays for Tranmere Rovers F.C." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.F.C._Fylde> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#manager> ;
+    oskstruct:object <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Tranmere_Rovers_F.C.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "The Olympic Stadium, located in Athens, is the home ground of AEK Athens F.C." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Olympic_Stadium> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Stadium> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Athens> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AEK_Athens_F.C.> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Olympic_Stadium> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Stadium> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "A.F.C. Blackpool has 1500 members and play at their ground, Jepson Way." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.F.C._Blackpool> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Jepson_Way> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.F.C._Blackpool> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "1500"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "AFC Ajax has 53502 members and they payed in season 2014." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#season> ;
+    oskstruct:object "2014"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "53502"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "The ground of A.S. Gubbio 1910, which has 5300 members, is called Stadio Pietro Barbetti." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Gubbio_1910> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Stadio_Pietro_Barbetti> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Stadium> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Gubbio_1910> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "5300"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "AFC Ajax (amateurs)'s ground, Sportpark De Toekomst, is operated by AFC Ajax." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Sportpark_De_Toekomst> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Stadium> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sportpark_De_Toekomst> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Stadium> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#operator> ;
+    oskstruct:object <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "AFC Ajax is based in Amsterdam where the leader is Eberhard van der Laan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Amsterdam> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Amsterdam> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Eberhard_van_der_Laan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Mayor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "Paulo Sousa, manager of ACF Fiorentina, is attached to club Inter Milan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/ACF_Fiorentina> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#manager> ;
+    oskstruct:object <http://dbpedia.org/resource/Paulo_Sousa> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Paulo_Sousa> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Inter_Milan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "The ground of A.S. Gubbio 1910 is located in Italy, the capital of which is Rome." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Italy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Rome> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Gubbio_1910> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Italy> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "A.S. Livorno Calcio is based in Livorno and Serie B league." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Livorno_Calcio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Livorno> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Livorno_Calcio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Serie_B> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "1. FC Magdeburg played in the 2014 season and has 27250 members." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1._FC_Magdeburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#season> ;
+    oskstruct:object "2014"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/1._FC_Magdeburg> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "27250"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "Agremiação Sportiva Arapiraquense has 17000 members and are nicknamed Alvinegro." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agremia%C3%A7%C3%A3o_Sportiva_Arapiraquense> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#nickname> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Alvinegro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Agremia%C3%A7%C3%A3o_Sportiva_Arapiraquense> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "17000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "A.F.C. Fylde's manager is Dave Challinor who plays at the Stockport County F.C." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.F.C._Fylde> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#manager> ;
+    oskstruct:object <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Stockport_County_F.C.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "The AZAL PFK competes in The Azerbaijan Premier League where the championship is held by Qarabağ FK." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AZAL_PFK> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Azerbaijan_Premier_League> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Azerbaijan_Premier_League> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerLeague> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#champions> ;
+    oskstruct:object <http://dbpedia.org/resource/Qaraba%C4%9F_FK> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "The A.S. Gubbio 1910 football club play in Serie D, the champions of which are S.S. Robur Siena." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Gubbio_1910> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Serie_D> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Serie_D> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerLeague> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#champions> ;
+    oskstruct:object <http://dbpedia.org/resource/S.S._Robur_Siena> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "AFC stands for AFC Ajax is Amsterdamsche Football Club Ajax. Its current membership is 53502." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "53502"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AFC_Ajax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#fullName> ;
+    oskstruct:object <http://dbpedia.org/resource/Amsterdamsche_Football_Club_Ajax> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "Jorge Humberto Rodríguez manages the A.D. Isidro Metapán and plays for the El Salvador national football team." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.D._Isidro_Metap%C3%A1n> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#manager> ;
+    oskstruct:object <http://dbpedia.org/resource/Jorge_Humberto_Rodr%C3%ADguez> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Jorge_Humberto_Rodr%C3%ADguez> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerManager> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/El_Salvador_national_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "Dave Challinor is at Colwyn Bay F.C. and is the manager of A.F.C. Fylde." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.F.C._Fylde> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#manager> ;
+    oskstruct:object <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dave_Challinor> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Colwyn_Bay_F.C.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "AZ Alkmaar has 17023 members and played in the 2014–15 Eredivisie." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AZ_Alkmaar> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#numberOfMembers> ;
+    oskstruct:object "17023"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#2_SportsTeam_dev_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AZ_Alkmaar> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#season> ;
+    oskstruct:object <http://dbpedia.org/resource/2014%E2%80%9315_Eredivisie> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/FootballLeagueSeason> .

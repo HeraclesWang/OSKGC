@@ -1,0 +1,429 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete> a owl:Ontology ;
+    rdfs:label "2_Athlete data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Athlete/v1> ;
+    rdfs:comment "The instance dataset for the 2_Athlete ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_1> a oskstruct:DataEntry ;
+    oskstruct:text "Ahmad Kadhim Assad plays for Al-Quwa Al-Jawiya and his club is Al Shorta SC." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ahmad_Kadhim_Assad> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Al_Shorta_SC> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ahmad_Kadhim_Assad> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Al-Quwa_Al-Jawiya> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_2> a oskstruct:DataEntry ;
+    oskstruct:text "Alaa Abdul-Zahra is in the Al-Khor Sports Club which is in the Qatar Stars League." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al-Khor_Sports_Club> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Qatar_Stars_League> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alaa_Abdul-Zahra> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Al-Khor_Sports_Club> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_3> a oskstruct:DataEntry ;
+    oskstruct:text "Alaa Abdul-Zahra plays for Al-Wakrah Sport Club in the Qatar Stars league." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al-Wakrah_Sport_Club> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Qatar_Stars_League> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alaa_Abdul-Zahra> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Al-Wakrah_Sport_Club> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_4> a oskstruct:DataEntry ;
+    oskstruct:text "Alessio Romagnoli played for the Italy national under-16 football team coached by Daniele Zoratto." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Italy_national_under-16_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Italy_national_under-16_football_team> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#coach> ;
+    oskstruct:object <http://dbpedia.org/resource/Daniele_Zoratto> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_5> a oskstruct:DataEntry ;
+    oskstruct:text "Abner is a footballer for the C.D. FAS club, which is a member team of the Salvadoran Primera División." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/C.D._FAS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Salvadoran_Primera_Divisi%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abner> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/C.D._FAS> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_6> a oskstruct:DataEntry ;
+    oskstruct:text "Adam McQuaid, who was born in Charlottetown, weighs 94.8024 kg." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adam_McQuaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#weight> ;
+    oskstruct:object "94.8024"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adam_McQuaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Charlottetown> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_7> a oskstruct:DataEntry ;
+    oskstruct:text "Aleksandr Prudnikov's club is called Sparta Prague and he plays for FC Kuban Krasnodar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandr_Prudnikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/FC_Kuban_Krasnodar> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandr_Prudnikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Sparta_Prague> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_8> a oskstruct:DataEntry ;
+    oskstruct:text "Alessio Romagnoli is a member of the Italy national under-17 football team and plays for A.S. Roma." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Italy_national_under-17_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/A.S._Roma> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_9> a oskstruct:DataEntry ;
+    oskstruct:text "Alaa Abdul-Zahra plays for Al Kharaitiyat SC who have their ground at Al Khor." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alaa_Abdul-Zahra> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Al_Kharaitiyat_SC> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Al_Kharaitiyat_SC> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#ground> ;
+    oskstruct:object <http://dbpedia.org/resource/Al_Khor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_10> a oskstruct:DataEntry ;
+    oskstruct:text "Adam McQuaid's draft team is the Columbus Blue Jackets in Columbus (Ohio)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adam_McQuaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#draftTeam> ;
+    oskstruct:object <http://dbpedia.org/resource/Columbus_Blue_Jackets> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/HockeyTeam> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Columbus_Blue_Jackets> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/HockeyTeam> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Columbus> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_11> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron Boogaard was born in Canada and plays for Wichita Thunder." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Boogaard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Wichita_Thunder> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/HockeyTeam> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Boogaard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Canada> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_12> a oskstruct:DataEntry ;
+    oskstruct:text "A.S. Roma play in the Serie A league and Alessio Romagnoli played for their youth team." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#youthclub> ;
+    oskstruct:object <http://dbpedia.org/resource/A.S._Roma> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/A.S._Roma> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Serie_A> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_13> a oskstruct:DataEntry ;
+    oskstruct:text "Aaron Boogaard's draft team is Minnesota Wild where Chuck Fletcher is the general manager." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aaron_Boogaard> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#draftTeam> ;
+    oskstruct:object <http://dbpedia.org/resource/Minnesota_Wild> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/HockeyTeam> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Minnesota_Wild> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/HockeyTeam> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#generalManager> ;
+    oskstruct:object <http://dbpedia.org/resource/Chuck_Fletcher> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SportsManager> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_14> a oskstruct:DataEntry ;
+    oskstruct:text "Former clubs of Alessio Romagnoli include U.C. Sampdoria and A.S. Roma." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/A.S._Roma> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/U.C._Sampdoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_15> a oskstruct:DataEntry ;
+    oskstruct:text "Alessio Romagnoli is connected to U.C. Sampdoria of the Italy national under-16 football team." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Italy_national_under-16_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/U.C._Sampdoria> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_16> a oskstruct:DataEntry ;
+    oskstruct:text "Abner plays for C.D. FAS in the Salvadoran Primera División." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/C.D._FAS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerClub> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#league> ;
+    oskstruct:object <http://dbpedia.org/resource/Salvadoran_Primera_Divisi%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerLeague> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abner> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/C.D._FAS> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_17> a oskstruct:DataEntry ;
+    oskstruct:text "Abel Hernández 's club is the Uruguay national under-20 football team and also U.S. Città di Palermo." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abel_Hern%C3%A1ndez> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Uruguay_national_under-20_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Abel_Hern%C3%A1ndez> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/U.S._Citt%C3%A0_di_Palermo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_18> a oskstruct:DataEntry ;
+    oskstruct:text "Aleksandr Prudnikov's club is FC Tom Tomsk and he also plays for FC Kuban Krasnodar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandr_Prudnikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/FC_Kuban_Krasnodar> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aleksandr_Prudnikov> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/FC_Tom_Tomsk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_19> a oskstruct:DataEntry ;
+    oskstruct:text "A.S. Roma player Alessio Romagnoli represented Italy national under-16 football team." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Italy_national_under-16_football_team> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alessio_Romagnoli> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/A.S._Roma> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_20> a oskstruct:DataEntry ;
+    oskstruct:text "Born on August 25, 1987, Piotr Hallmann was 175.26 cm tall." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Piotr_Hallmann> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MartialArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#birthDate> ;
+    oskstruct:object "1987-08-25"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Piotr_Hallmann> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MartialArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#height> ;
+    oskstruct:object "175.26"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_21> a oskstruct:DataEntry ;
+    oskstruct:text "Alex Plante was born in Brandon (Manitoba) in 1989." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alex_Plante> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Brandon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Athlete#2_Athlete_dev_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alex_Plante> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/IceHockeyPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#birthYear> ;
+    oskstruct:object "1989"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
