@@ -1,0 +1,562 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Film#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Film/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Film/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film> a owl:Ontology ;
+    rdfs:label "2_Film data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Film/v1> ;
+    rdfs:comment "The instance dataset for the 2_Film ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_1> a oskstruct:DataEntry ;
+    oskstruct:text "Born in 1878, Harry Carey (actor) later grew up to write and star in the movie McVeagh of the South Seas." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Harry_Carey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Harry_Carey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_2> a oskstruct:DataEntry ;
+    oskstruct:text "John Mills had a main role in the movie It's Great to Be Young which has taken 282838 pounds at the box office." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Mills> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#gross> ;
+    oskstruct:object "282838"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_3> a oskstruct:DataEntry ;
+    oskstruct:text "John Mills starred in the 1956 film It's Great to Be Young which featured cinematography by Gilbert Taylor." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Mills> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#cinematography> ;
+    oskstruct:object <http://dbpedia.org/resource/Gilbert_Taylor> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#Cinematographer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_4> a oskstruct:DataEntry ;
+    oskstruct:text """A person named Jamie Lawrence is a member of the Brentford F.C. while someone with the same name was the composer for "Death on a Factory Farm" music.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Jamie_Lawrence> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Jamie_Lawrence> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/SoccerPlayer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#club> ;
+    oskstruct:object <http://dbpedia.org/resource/Brentford_F.C.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/SoccerClub> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_5> a oskstruct:DataEntry ;
+    oskstruct:text "Death on a Factory Farm is a film broadcasted by HBO, formerly known as The Green Channel." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#broadcastedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/HBO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/TelevisionStation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/HBO> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/TelevisionStation> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#formerName> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Green_Channel> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/TelevisionStation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_6> a oskstruct:DataEntry ;
+    oskstruct:text "Super Capers, a film that had a running time of 98 minutes, stars Justin Whalin." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Justin_Whalin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#runtime> ;
+    oskstruct:object "98"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_7> a oskstruct:DataEntry ;
+    oskstruct:text "Ted Willis wrote “It's great to be young” a 1956 film starring Cecil Parker." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Cecil_Parker> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Ted_Willis> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_8> a oskstruct:DataEntry ;
+    oskstruct:text "Producer Sarah Teale's Death on a Factory Farm runs for 83." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Sarah_Teale> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#runtime> ;
+    oskstruct:object "83"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_9> a oskstruct:DataEntry ;
+    oskstruct:text "Tom Simon directed the film 'Death on a Factory Farm,' which was broadcasted by HBO." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Simon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#broadcastedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/HBO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/TelevisionStation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_10> a oskstruct:DataEntry ;
+    oskstruct:text """Tom Simon directed the film "Death on a Factory Farm", which was edited by Geof Bartz.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Simon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#editor> ;
+    oskstruct:object <http://dbpedia.org/resource/Geof_Bartz> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieEditor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_11> a oskstruct:DataEntry ;
+    oskstruct:text "McVeagh of the South Seas, a film directed by Cyril Bruce, is located in IMdb under ID 0004319." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#imdbId> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#0004319> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#Code> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Cyril_Bruce> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_12> a oskstruct:DataEntry ;
+    oskstruct:text "Harold French directed English Without Tears, which is 89 minutes in duration." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_13> a oskstruct:DataEntry ;
+    oskstruct:text "It's Great to Be Young stars John Mills, who was born in North Elmham." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Mills> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/John_Mills> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Actor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/North_Elmham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_14> a oskstruct:DataEntry ;
+    oskstruct:text "Harry Carey (actor) was the writer of the film McVeagh of the South Seas, directed by Cyril Bruce." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Cyril_Bruce> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Harry_Carey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_15> a oskstruct:DataEntry ;
+    oskstruct:text "Cecil Parker starred in the 1956 movie It's Great to Be Young, directed by Cyril Frankel." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Cyril_Frankel> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Cecil_Parker> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_16> a oskstruct:DataEntry ;
+    oskstruct:text "McVeagh of the South Seas with IMDb ID 0004319 is written by Harry Carey (actor)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#imdbId> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#0004319> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#Code> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/McVeagh_of_the_South_Seas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Harry_Carey> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_17> a oskstruct:DataEntry ;
+    oskstruct:text "Jamie Lawrence, born on 03-08-1970, is the music composer of Death on a Factory Farm." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Jamie_Lawrence> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Jamie_Lawrence> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicComposer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthDate> ;
+    oskstruct:object "1970-03-08"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_18> a oskstruct:DataEntry ;
+    oskstruct:text "Sarah Teale directed the movie Death on a Factory Farm which has a duration of 83 minutes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Sarah_Teale> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#runtime> ;
+    oskstruct:object "83"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_19> a oskstruct:DataEntry ;
+    oskstruct:text "The music of the film English Without Tears is composed by Nicholas Brodszky with Harold French as the director." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_20> a oskstruct:DataEntry ;
+    oskstruct:text """"Death on a Factory Farm" is a movie produced by Tom Simon and directed by Tom Simon.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Simon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Death_on_a_Factory_Farm> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Simon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_21> a oskstruct:DataEntry ;
+    oskstruct:text "Harold French was a film director who directed English without Tears." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#occupation> ;
+    oskstruct:object <http://dbpedia.org/resource/Film_director> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_22> a oskstruct:DataEntry ;
+    oskstruct:text """Louis Levy, who was born on November 20, 1894, is the music composer for the film "It's Great to be Young."""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_22/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Louis_Levy> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Louis_Levy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicComposer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthDate> ;
+    oskstruct:object "1894-11-20"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_23> a oskstruct:DataEntry ;
+    oskstruct:text """Terence Rattigan, who authored "English Without Tears", was born on 01/01/1911.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_23/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthDate> ;
+    oskstruct:object "1911-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_24> a oskstruct:DataEntry ;
+    oskstruct:text "It's Great to Be Young is a 1956 film directed by Cyril Frankel, who was born in the United Kingdom." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_24/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Cyril_Frankel> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Cyril_Frankel> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/United_Kingdom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_25> a oskstruct:DataEntry ;
+    oskstruct:text """"It's great to Be Young" was written by the musical composer, Louis Levy, a native of England.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_25/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Louis_Levy> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Louis_Levy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicComposer> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/England> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_26> a oskstruct:DataEntry ;
+    oskstruct:text "Justin Whalin stars in Super Capers, which is written by director Ray Griggs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_26/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Justin_Whalin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Ray_Griggs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_27> a oskstruct:DataEntry ;
+    oskstruct:text "Super Capers starred Adam West, who was born in the year 1928." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_27/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Adam_West> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adam_West> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Actor> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#birthYear> ;
+    oskstruct:object "1928"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_28> a oskstruct:DataEntry ;
+    oskstruct:text "It's Great to Be Young, which is a 1956 film directed by Cyril Frankel, is 94 minutes in length." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_28/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#runtime> ;
+    oskstruct:object "94"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Film#2_Film_train_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#It's_Great_to_Be_Young> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Cyril_Frankel> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .

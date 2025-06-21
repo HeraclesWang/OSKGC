@@ -1,0 +1,701 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork> a owl:Ontology ;
+    rdfs:label "1_MusicalWork data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork/v1> ;
+    rdfs:comment "The instance dataset for the 1_MusicalWork ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_1> a oskstruct:DataEntry ;
+    oskstruct:text "The band Train were signed to the record label Warner Music Group." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Train> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Warner_Music_Group> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_2> a oskstruct:DataEntry ;
+    oskstruct:text "Pat Monahan is the writer of the song Mermaid by the band Train." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Pat_Monahan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_3> a oskstruct:DataEntry ;
+    oskstruct:text "The song Mermaid is off the album California 37 by the band Train." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#album> ;
+    oskstruct:object <http://dbpedia.org/resource/California_37> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_4> a oskstruct:DataEntry ;
+    oskstruct:text "Baroque pop is a fusion genre which includes some elements of pop rock." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Baroque_pop> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_5> a oskstruct:DataEntry ;
+    oskstruct:text "San Francisco is in the timezone UTC -7." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/San_Francisco> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#utcOffset> ;
+    oskstruct:object "-7"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_6> a oskstruct:DataEntry ;
+    oskstruct:text "The Bootleg Series Volume 1: The Quine Tapes was recorded in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordedIn> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_7> a oskstruct:DataEntry ;
+    oskstruct:text "Expect a Miracle is in the instrumental music genre." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Instrumental_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_8> a oskstruct:DataEntry ;
+    oskstruct:text "The Train song Mermaid was released on the date 2012-12-27." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#releaseDate> ;
+    oskstruct:object "2012-12-27"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_9> a oskstruct:DataEntry ;
+    oskstruct:text "Noise rock is a fusion genre of rock music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_10> a oskstruct:DataEntry ;
+    oskstruct:text "The Bootleg Series Volume 1: The Quine Tapes is produced by The Velvet Underground." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_11> a oskstruct:DataEntry ;
+    oskstruct:text "The total area of the United States is around 9833520000000 square kilometers." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#areaTotal> ;
+    oskstruct:object "9833520000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_12> a oskstruct:DataEntry ;
+    oskstruct:text "Pop rock is the genre of the band Train." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Train> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_13> a oskstruct:DataEntry ;
+    oskstruct:text "Mermaid is a song by Train released on the Columbia Records record label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Columbia_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_14> a oskstruct:DataEntry ;
+    oskstruct:text "Expect a Miracle has a runtime of 54.56 minutes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#runtime> ;
+    oskstruct:object "54.56"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_15> a oskstruct:DataEntry ;
+    oskstruct:text "Monarch is a band that is associated with Year of No Light." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Year_of_No_Light> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Monarch> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_16> a oskstruct:DataEntry ;
+    oskstruct:text "Post-hardcore is a derivative of noise rock." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#derivative> ;
+    oskstruct:object <http://dbpedia.org/resource/Post-hardcore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_17> a oskstruct:DataEntry ;
+    oskstruct:text "The stylistic origin of the musical genre punk blues lies in earlier garage rock sound." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_17/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Garage_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_18> a oskstruct:DataEntry ;
+    oskstruct:text "The parent company of Polydor Records is Universal Music Group." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_18/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Polydor_Records> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/RecordLabel> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#parentCompany> ;
+    oskstruct:object <http://dbpedia.org/resource/Universal_Music_Group> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_19> a oskstruct:DataEntry ;
+    oskstruct:text "The release of the song Imagine by John Lennon was followed by the release of the song Happy Xmas (War Is Over)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_19/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Happy_Xmas> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Song> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_20> a oskstruct:DataEntry ;
+    oskstruct:text "Stoner sludge is a subgenre of sludge metal." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_20/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sludge_metal> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicSubgenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Stoner_sludge> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_21> a oskstruct:DataEntry ;
+    oskstruct:text "The Mermaid song by Train has a total runtime of 3.16 minutes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_21/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#runtime> ;
+    oskstruct:object "3.16"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_22> a oskstruct:DataEntry ;
+    oskstruct:text "The Train song Mermaid was preceded by the song This'll be my year." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_22/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#precededBy> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#This'll_Be_My_Year> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Song> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_23> a oskstruct:DataEntry ;
+    oskstruct:text "Squeeze was followed by the album 1969: The Velvet Underground Live." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_23/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#followedBy> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#1969:_The_Velvet_Underground_Live> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_24> a oskstruct:DataEntry ;
+    oskstruct:text "The key person at Universal Music Group is Lucian Grainge." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_24/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Universal_Music_Group> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/RecordLabel> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Lucian_Grainge> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_25> a oskstruct:DataEntry ;
+    oskstruct:text "The genre of the Velvet Underground is proto-punk." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_25/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Proto-punk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_26> a oskstruct:DataEntry ;
+    oskstruct:text "Proto-punk is a music subgenre of rock music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_26/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicSubgenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Proto-punk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_27> a oskstruct:DataEntry ;
+    oskstruct:text "The album Expect a miracle is of the easy listening genre." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_27/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Easy_listening> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_28> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes's genre is rock." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_28/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_29> a oskstruct:DataEntry ;
+    oskstruct:text "The Bootleg Series Volume 1: The Quine Tapes was recorded under the Universal Music Group record label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_29/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Universal_Music_Group> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_30> a oskstruct:DataEntry ;
+    oskstruct:text "Altar of Plagues has been associated with Year of No Light." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_30/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Year_of_No_Light> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Altar_of_Plagues> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_31> a oskstruct:DataEntry ;
+    oskstruct:text "The song by Train called Mermaid is on the Sony Music Entertainment record label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_31/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Sony_Music_Entertainment> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_32> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes was preceded by the album Squeeze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_32/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_33> a oskstruct:DataEntry ;
+    oskstruct:text "Post-metal music includes synthesizers among the instruments it uses." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_33/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Post-metal> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#instrument> ;
+    oskstruct:object <http://dbpedia.org/resource/Synthesizer> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Instrument> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_34> a oskstruct:DataEntry ;
+    oskstruct:text "The album Let It Breed is preceded by the release of the album Love American Style." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_34/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Let_It_Breed> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Love_American_Style> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_35> a oskstruct:DataEntry ;
+    oskstruct:text "The Train song Mermaid is followed by the John Lennon song Imagine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_35/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Song> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_36> a oskstruct:DataEntry ;
+    oskstruct:text "Expect a Miracle is preceded by the Brian Kelly album Pools of Light." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_36/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Pools_of_Light> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_37> a oskstruct:DataEntry ;
+    oskstruct:text "Interscope Geffen A&M distributes the Polydor Records label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_37/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Polydor_Records> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/RecordLabel> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#distributingLabel> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Interscope_Geffen_A&M> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_38> a oskstruct:DataEntry ;
+    oskstruct:text "San Francisco's area code is 628." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_38/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/San_Francisco> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#areaCode> ;
+    oskstruct:object <http://dbpedia.org/resource/628> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Code> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_39> a oskstruct:DataEntry ;
+    oskstruct:text "The album Take It Off! is produced by the American band the Honeymoon Killers." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_39/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Take_It_Off!> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_40> a oskstruct:DataEntry ;
+    oskstruct:text """"Imagine" is a song by musical artist, John Lennon.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_40/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#artist> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Lennon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_41> a oskstruct:DataEntry ;
+    oskstruct:text "Phil Spector produced John Lennon’s song Imagine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_41/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Phil_Spector> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_42> a oskstruct:DataEntry ;
+    oskstruct:text "Live at Roadburn 2008 by Year of No Light was produced by the Roadburn Festival." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_42/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Live_at_Roadburn_2008> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Roadburn_Festival> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_43> a oskstruct:DataEntry ;
+    oskstruct:text "Wharton Tiers was born on January 1, 1953." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_43/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Wharton_Tiers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicalArtist> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#birthDate> ;
+    oskstruct:object "1953-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_44> a oskstruct:DataEntry ;
+    oskstruct:text "The Train song Mermaid was written by Amund Bjørklund." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_44/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#writer> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Amund_Bjørklund> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_45> a oskstruct:DataEntry ;
+    oskstruct:text "The genre of the Honeymoon Killers is noise rock." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_45/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_46> a oskstruct:DataEntry ;
+    oskstruct:text "The Velvet Underground, produced their album Bootleg Series Volume 1: The Quine Tapes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_46/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_47> a oskstruct:DataEntry ;
+    oskstruct:text "Noise music is an origin of noise rock." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_47/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_48> a oskstruct:DataEntry ;
+    oskstruct:text "The song Mermaid is by the musical band Train." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_48/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicalBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Train> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_49> a oskstruct:DataEntry ;
+    oskstruct:text "Charlie Colin is a former band mate of the band Train." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_49/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Train> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#formerBandMember> ;
+    oskstruct:object <http://dbpedia.org/resource/Charlie_Colin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_50> a oskstruct:DataEntry ;
+    oskstruct:text "Lou Reed is a former band member of the Velvet Underground." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_50/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#formerBandMember> ;
+    oskstruct:object <http://dbpedia.org/resource/Lou_Reed> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_51> a oskstruct:DataEntry ;
+    oskstruct:text "The song Imagine by John Lennon earned the FIMI certification." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_51/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_51/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#certification> ;
+    oskstruct:object <http://dbpedia.org/resource/FIMI> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Award> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_52> a oskstruct:DataEntry ;
+    oskstruct:text "The location that the Bootleg Series Volume 1: The Quine Tapes was recorded in was St. Louis." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_52/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_52/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#recordedIn> ;
+    oskstruct:object <http://dbpedia.org/resource/St._Louis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_53> a oskstruct:DataEntry ;
+    oskstruct:text "Pop rock's subgenre is indie pop." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_53/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_53/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicSubgenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Indie_pop> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_54> a oskstruct:DataEntry ;
+    oskstruct:text "Sludge metal has a variety called southern sludge." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_54/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_54/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sludge_metal> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#musicSubgenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Southern_sludge> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_55> a oskstruct:DataEntry ;
+    oskstruct:text "Squeeze is an album produced by the Velvet Underground." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_55/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_55/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_56> a oskstruct:DataEntry ;
+    oskstruct:text "Stargate produced the song Mermaid." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_56/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_56/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Stargate> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_57> a oskstruct:DataEntry ;
+    oskstruct:text "The album Bootleg Series Volume 1: The Quine Tapes was released on 10-16-2001." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_57/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_57/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#releaseDate> ;
+    oskstruct:object "2001-10-16"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_58> a oskstruct:DataEntry ;
+    oskstruct:text "The drum kit is an instrument used in the punk blues genre." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_58/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_58/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#instrument> ;
+    oskstruct:object <http://dbpedia.org/resource/Drum_kit> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#Instrument> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_59> a oskstruct:DataEntry ;
+    oskstruct:text "Expect a Miracle was followed by Afterplay by Brian Kelly." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_59/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_59/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Afterplay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_60> a oskstruct:DataEntry ;
+    oskstruct:text "A stylistic origin of pop rock is rock music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_60/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_60/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_61> a oskstruct:DataEntry ;
+    oskstruct:text "The song Imagine by John Lennon was released on the album also named Imagine." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_61/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#1_MusicalWork_train_61/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#album> ;
+    oskstruct:object <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .

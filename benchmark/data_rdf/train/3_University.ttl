@@ -1,0 +1,1380 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_University#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_University/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_University/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University> a owl:Ontology ;
+    rdfs:label "3_University data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_University/v1> ;
+    rdfs:comment "The instance dataset for the 3_University ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1> a oskstruct:DataEntry ;
+    oskstruct:text """1 Decembrie 1918 University is located in Alba, Romania and its Latin name is "Universitas Apulensis".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#latinName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Universitas_Apulensis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2> a oskstruct:DataEntry ;
+    oskstruct:text "The 1 Decembrie 1918 University is located in Alba Iulia, Alba. Its nickname is Uab." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#nickname> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Uab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3> a oskstruct:DataEntry ;
+    oskstruct:text """The nickname of the 1 Decembrie 1918 University is Uab. The latin name is "Universitas Apulensis" and the rector is Breaz Valer Daniel.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#nickname> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Uab> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#rector> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Breaz_Valer_Daniel> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#latinName> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Universitas_Apulensis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4> a oskstruct:DataEntry ;
+    oskstruct:text "1 Decembrie 1918 University is located in Alba Iulia, Romania and its rector is Breaz Valer Daniel." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#rector> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Breaz_Valer_Daniel> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5> a oskstruct:DataEntry ;
+    oskstruct:text "The AWH Engineering College is located in Kuttikkattoor, Kerala and it has 250 academic staff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "250"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Kuttikkattoor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6> a oskstruct:DataEntry ;
+    oskstruct:text "The AWH Engineering College was established in India in 2001 and has 250 academic staff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2001"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "250"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7> a oskstruct:DataEntry ;
+    oskstruct:text "AWH Engineering College was established in 2001 in Kuttikkattoor, India." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2001"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Kuttikkattoor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8> a oskstruct:DataEntry ;
+    oskstruct:text "AWH Engineering College is located in Kerala, India. Kerala has Mahé (India) to its northwest." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#hasToItsNorthwest> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Mahé> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9> a oskstruct:DataEntry ;
+    oskstruct:text "There are 250 academic staff at the AWH Engineering College in the state of Kerala. The College was established in 2001." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2001"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "250"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10> a oskstruct:DataEntry ;
+    oskstruct:text "The Accademia di Architettura di Mendrisio in Switzerland has 100 academic staff. Switzerland's leader is Johann Schneider-Ammann." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "100"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Johann_Schneider-Ammann> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11> a oskstruct:DataEntry ;
+    oskstruct:text "The Accademia di Architettura di Mendrisio was established in Switzerland in 1996. It has 100 academic staff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "1996"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "100"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12> a oskstruct:DataEntry ;
+    oskstruct:text "The Accademia di Architettura di Mendrisio is in Switzerland. The Swiss anthem is the Swiss Psalm and its leader is Johann Schneider-Ammann." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#anthem> ;
+    oskstruct:object <http://dbpedia.org/resource/Swiss_Psalm> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#NationalAnthem> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_12/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Johann_Schneider-Ammann> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13> a oskstruct:DataEntry ;
+    oskstruct:text "The Federal Chancellor of Switzerland is called Johann Schneider-Ammann. The Accademia di Architettura di Mendrisio is located in Switzerland." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Johann_Schneider-Ammann> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_13/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Federal_Chancellor_of_Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14> a oskstruct:DataEntry ;
+    oskstruct:text "The Accademia di Architettura di Mendrisio is located in Switzerland. The Swiss legislature is the Federal Assembly and its leader is Johann Schneider-Ammann." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#legislature> ;
+    oskstruct:object <http://dbpedia.org/resource/Federal_Assembly> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Legislature> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_14/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Switzerland> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Johann_Schneider-Ammann> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15> a oskstruct:DataEntry ;
+    oskstruct:text "The Accademia di Architettura di Mendrisio has 100 academic staff and 600 students. Its dean is called Mario Botta." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#dean> ;
+    oskstruct:object <http://dbpedia.org/resource/Mario_Botta> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "600"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_15/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "100"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16> a oskstruct:DataEntry ;
+    oskstruct:text "Accademia di Architettura di Mendrisio is located in Ticino. It has 600 students and 100 staff." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "600"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#staff> ;
+    oskstruct:object "100"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_16/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ticino> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Canton> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17> a oskstruct:DataEntry ;
+    oskstruct:text "Accademia di Architettura di Mendrisio was established in 1996. It has 100 staff and 600 students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "600"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "1996"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_17/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Accademia_di_Architettura_di_Mendrisio> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#staff> ;
+    oskstruct:object "100"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology is located in Bangalore, India. It is associated with the Visvesvaraya Technological University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_18/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology is in Bangalore, Karnataka. It is associated with the Visvesvaraya Technological University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_19/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Karnataka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology was established at Bangalore in 2000. It has 700 postgraduate students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_20/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfPostgraduateStudents> ;
+    oskstruct:object "700"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology is located in Karnataka, India and it was established in 2000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_21/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Karnataka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of technology is located in India and the offered sport is tennis. The governing tennis body is the International Tennis Federation." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#sportsOffered> ;
+    oskstruct:object <http://dbpedia.org/resource/Tennis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Sport> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Tennis> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Sport> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#sportGoverningBody> ;
+    oskstruct:object <http://dbpedia.org/resource/International_Tennis_Federation> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_22/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/India> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23> a oskstruct:DataEntry ;
+    oskstruct:text """The Acharya Institute of Technology is located in Bangalore. It was given the "Technical Campus" status by the All India Council for Technical Education, which is located in Mumbai.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#wasGivenTheTechnicalCampusStatusBy> ;
+    oskstruct:object <http://dbpedia.org/resource/All_India_Council_for_Technical_Education> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/All_India_Council_for_Technical_Education> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Organisation> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Mumbai> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_23/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24> a oskstruct:DataEntry ;
+    oskstruct:text "1 Decembrie 1918 University is in Alba Iulia, Romania. Bucharest is the capital of Romania." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Bucharest> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_24/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25> a oskstruct:DataEntry ;
+    oskstruct:text "The 1 Decembrie 1918 University is in Alba Iulia, Alba County, Romania." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Alba_Iulia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_25/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26> a oskstruct:DataEntry ;
+    oskstruct:text "Acharya Institute of Technology is affiliated with Visvesvaraya Technological University in Bangalore. Its founder is Kempe Gowda I." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#founder> ;
+    oskstruct:object <http://dbpedia.org/resource/Kempe_Gowda_I> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_26/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27> a oskstruct:DataEntry ;
+    oskstruct:text "Kempe Gowda I is the founder of Bangalore, the location of the Acharya Institute of Technology whose President is B.M. Reddy." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#founder> ;
+    oskstruct:object <http://dbpedia.org/resource/Kempe_Gowda_I> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Governor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#president> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#B.M._Reddy> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_27/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology is located in Karnataka. Karnataka has Telangana to its northeast and the Arabian Sea to its west." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Karnataka> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#hasToItsNortheast> ;
+    oskstruct:object <http://dbpedia.org/resource/Telangana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Karnataka> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#hasToItsWest> ;
+    oskstruct:object <http://dbpedia.org/resource/Arabian_Sea> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Sea> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_28/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Karnataka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29> a oskstruct:DataEntry ;
+    oskstruct:text "AWH Engineering College at Kerala has 250 academic staff. Kerala's leader is Kochi." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Kochi> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "250"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_29/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30> a oskstruct:DataEntry ;
+    oskstruct:text "The AWH Engineering College is in Kuttikkattoor, Kerala. Kerala is led by Kochi." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/State> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Kochi> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#state> ;
+    oskstruct:object <http://dbpedia.org/resource/Kerala> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_30/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AWH_Engineering_College> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Kuttikkattoor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Village> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31> a oskstruct:DataEntry ;
+    oskstruct:text "The capital of Romania is Bucharest. The country is the location of the 1 Decembrie 1918 University and the home of one of the ethnic groups of Romania who are the Germans of Romania." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Germans_of_Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Bucharest> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_31/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32> a oskstruct:DataEntry ;
+    oskstruct:text "1 Decembrie 1918 University is located in Romania. The capital of the country is Bucharest and the leader's name is Klaus Iohannis." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Klaus_Iohannis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Bucharest> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_32/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33> a oskstruct:DataEntry ;
+    oskstruct:text "1 Decembrie 1918 University is located in Romania. Romania has a Prime Minister as its leader, and its capital is Bucharest." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Prime_Minister_of_Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Bucharest> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_33/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34> a oskstruct:DataEntry ;
+    oskstruct:text "Romania is led by the Prime Minister; its ethnic group are Germans of Romania and its university is called the 1 Decembrie 1918 University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Prime_Minister_of_Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Romania> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Germans_of_Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_34/triple3> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#1_Decembrie_1918_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Romania> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35> a oskstruct:DataEntry ;
+    oskstruct:text "Aarhus BSS is in Denmark. It was established in 1928 and has an academic staff of 737." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "737"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Denmark> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_35/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "1928"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36> a oskstruct:DataEntry ;
+    oskstruct:text "Aarhus BSS is affiliated to the European University Association. It has 737 staff and 16000 students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#staff> ;
+    oskstruct:object "737"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "16000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_36/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/European_University_Association> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37> a oskstruct:DataEntry ;
+    oskstruct:text "The Aarhus BSS is located in Denmark, has 16000 students and was established in 1928." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "16000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Denmark> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_37/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "1928"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38> a oskstruct:DataEntry ;
+    oskstruct:text "The Acharya Institute of Technology was established in 2000, and is affiliated with the Visvesvaraya Technological University based in Belgaum." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Belgaum> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_38/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39> a oskstruct:DataEntry ;
+    oskstruct:text "The Aarhus BSS was established in 1928. It has 737 academic staff and 16000 students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#academicStaffSize> ;
+    oskstruct:object "737"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "16000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_39/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Aarhus_BSS> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/School> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "1928"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40> a oskstruct:DataEntry ;
+    oskstruct:text "Bangalore‘s Acharya Institute of Technology, which is affiliated with Visvesvaraya Technological University, has a tennis program." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#sportsOffered> ;
+    oskstruct:object <http://dbpedia.org/resource/Tennis> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Sport> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_40/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41> a oskstruct:DataEntry ;
+    oskstruct:text "Acharya Institute of Technology in Bangalore is affiliated to Visvesvaraya Technological University and its president is B.M. Reddy." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_41/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#president> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#B.M._Reddy> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42> a oskstruct:DataEntry ;
+    oskstruct:text "Established in 2000 The Acharya Institute of Technology is located in Bangalore and is affiliated with Visvesvaraya Technological University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_42/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#established> ;
+    oskstruct:object "2000"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43> a oskstruct:DataEntry ;
+    oskstruct:text "With 2900 staff members, The University of Burgundy services 27400 students, 1299 of whom are working on their doctorate degrees." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#staff> ;
+    oskstruct:object "2900"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "27400"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_43/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfDoctoralStudents> ;
+    oskstruct:object "1299"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44> a oskstruct:DataEntry ;
+    oskstruct:text "The University of Burgundy, located in Dijon, employs 2900 staff members including 1299 doctoral students." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#staff> ;
+    oskstruct:object "2900"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfDoctoralStudents> ;
+    oskstruct:object "1299"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_44/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45> a oskstruct:DataEntry ;
+    oskstruct:text "In Dijon, The University of Burgundy campus is home to 27400 students, 1299 of whom are pursuing their doctorate degree." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "27400"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfDoctoralStudents> ;
+    oskstruct:object "1299"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_45/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#campus> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46> a oskstruct:DataEntry ;
+    oskstruct:text "Acharya Institute of Technology in Bangalore is affiliated to Visvesvaraya Technological University and has as its director Dr. G. P. Prabhukumar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#director> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Dr._G._P._Prabhukumar> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_University/class#Academic> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_46/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47> a oskstruct:DataEntry ;
+    oskstruct:text "The campus of the University of Burgundy is located in city of Dijon in France." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#campus> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#city> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_47/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/France> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48> a oskstruct:DataEntry ;
+    oskstruct:text "The university of Burgundy is located in the city of Dijon, France. 9400 postgraduates students attend the University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#city> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfPostgraduateStudents> ;
+    oskstruct:object "9400"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_48/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/France> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49> a oskstruct:DataEntry ;
+    oskstruct:text "The University of Burgundy (located in the city of Dijon) has 27400 students. Dijon's elevation is 245 above sea level." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#numberOfStudents> ;
+    oskstruct:object "27400"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/University_of_Burgundy> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#city> ;
+    oskstruct:object <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_49/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dijon> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#elevationAboveTheSeaLevel> ;
+    oskstruct:object "245"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50> a oskstruct:DataEntry ;
+    oskstruct:text "The All India Council for Technical Education was proud to give the Technical Campus status to the Acharya Institute of Technology located in Bangalore. The Institute is affiliated with Visvesvaraya Technological University." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#affiliation> ;
+    oskstruct:object <http://dbpedia.org/resource/Visvesvaraya_Technological_University> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Bangalore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_University#3_University_train_50/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Acharya_Institute_of_Technology> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_University/relation#wasGivenTheTechnicalCampusStatusBy> ;
+    oskstruct:object <http://dbpedia.org/resource/All_India_Council_for_Technical_Education> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Organisation> .
