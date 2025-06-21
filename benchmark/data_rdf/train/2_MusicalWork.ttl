@@ -1,0 +1,676 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork> a owl:Ontology ;
+    rdfs:label "2_MusicalWork data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork/v1> ;
+    rdfs:comment "The instance dataset for the 2_MusicalWork ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_1> a oskstruct:DataEntry ;
+    oskstruct:text "The album 1969: The Velvet Underground Live is preceded by the Velvet Underground album Squeeze, which was followed by The Quine Tapes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#followedBy> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#1969:_The_Velvet_Underground_Live> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_2> a oskstruct:DataEntry ;
+    oskstruct:text "Train's hit Mermaid written by Espen Lind was put out by the Sony Music Entertainment record label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Sony_Music_Entertainment> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Espen_Lind> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_3> a oskstruct:DataEntry ;
+    oskstruct:text "The rock album Bootleg Series Volume 1: The Quine Tapes by the Velvet Underground was preceded by the album Squeeze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_4> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On was produced by Wharton Tiers and was preceded by the album Let It Breed." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Let_It_Breed> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Wharton_Tiers> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_5> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes released on October 16, 2001 is 230.05 minutes long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#releaseDate> ;
+    oskstruct:object "2001-10-16"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "230.05"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_6> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes was created by The Velvet Underground, a proto-punk band." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Proto-punk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_7> a oskstruct:DataEntry ;
+    oskstruct:text "Baroque pop is a fusion genre which includes some elements of pop rock, an example of which is the Train song by Mermaid ." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Baroque_pop> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_8> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes, which has a runtime of 230.05 minutes, was produced by The Velvet Underground." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "230.05"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_9> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes's genre is rock, of which proto-punk is a musical subgenre." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#musicSubgenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Proto-punk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_10> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On is punk blues, a genre which originated from the earlier garage rock sound." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Garage_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_11> a oskstruct:DataEntry ;
+    oskstruct:text "Brian Kelly produced an instrumental album titled Expect A Miracle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Brian_Kelly> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Instrumental_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_12> a oskstruct:DataEntry ;
+    oskstruct:text "Wharton Tiers produced the Turn Me On album, followed by the album Take It Off!" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Wharton_Tiers> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#followedBy> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Take_It_Off!> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_13> a oskstruct:DataEntry ;
+    oskstruct:text "Brian Kelly recorded an instrumental music piece called Expect a Miracle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#artist> ;
+    oskstruct:object <http://dbpedia.org/resource/Brian_Kelly> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Instrumental_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_14> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On, which has a runtime of 35.1 minutes, is preceded by the album Let It Breed." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Let_It_Breed> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "35.1"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_15> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes was created by The Velvet Underground and is 230.05 minutes long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "230.05"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_16> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On (produced by American band the Honeymoon Killers) is 35.1 minutes long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "35.1"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_17> a oskstruct:DataEntry ;
+    oskstruct:text "The American band, the Honeymoon Killers, self-produced its album Turn Me On, with the help of some musicians from an associated musical group called Pussy Galore." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Pussy_Galore> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_18> a oskstruct:DataEntry ;
+    oskstruct:text "Mermaid is a pop rock song by Train released on the Columbia Records record label." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Pop_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Columbia_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_19> a oskstruct:DataEntry ;
+    oskstruct:text "The Velvet Underground created the album Bootleg Series Volume 1: The Quine Tapes produced by The Velvet Underground which is 230.05 minutes long." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#runtime> ;
+    oskstruct:object "230.05"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_20> a oskstruct:DataEntry ;
+    oskstruct:text "The song Mermaid by Train is written in the reggae music genre which has its stylistic origin in the rhythm and blues genre." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Reggae> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Reggae> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#stylisticOrigin> ;
+    oskstruct:object <http://dbpedia.org/resource/Rhythm_and_Blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_21> a oskstruct:DataEntry ;
+    oskstruct:text "Polydor Records released the rock album, The Bootleg Series Volume 1: The Quine Tapes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Rock_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Polydor_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_22> a oskstruct:DataEntry ;
+    oskstruct:text "Mermaid is a song by Train which has been released on both the Columbia Records and Sony Music Entertainment record labels." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_22/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Columbia_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Sony_Music_Entertainment> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_23> a oskstruct:DataEntry ;
+    oskstruct:text "Noise pop is a fusion genre, having elements from noise rock, which is the genre of the album Turn Me On, among other things." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_23/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/MusicGenre> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#musicFusionGenre> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_pop> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_24> a oskstruct:DataEntry ;
+    oskstruct:text "The Train song Mermaid, which is an example of the reggae genre, was followed by the band’s cover of Imagine by John Lennon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_24/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Reggae> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mermaid> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Song> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Imagine> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Song> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_25> a oskstruct:DataEntry ;
+    oskstruct:text "Bootleg Series Volume 1: The Quine Tapes, released by the record label Polydor Records, was preceded by the album Squeeze." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_25/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Squeeze> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordLabel> ;
+    oskstruct:object <http://dbpedia.org/resource/Polydor_Records> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/RecordLabel> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_26> a oskstruct:DataEntry ;
+    oskstruct:text "The Velvet Underground had created the album Bootleg Series Volume 1: The Quine Tapes, which was produced by The Velvet Underground and recorded in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_26/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#recordedIn> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_27> a oskstruct:DataEntry ;
+    oskstruct:text "Punk blues and noise rock are genre of the album Turn Me On." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_27/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Noise_rock> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_28> a oskstruct:DataEntry ;
+    oskstruct:text "The Velvet Underground band, who produced Bootleg Series Volume 1: The Quine Tapes, drew inspiration from the associated group called Theatre of Eternal music." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_28/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#associatedBand> ;
+    oskstruct:object <http://dbpedia.org/resource/Theatre_of_Eternal_Music> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Bootleg_Series_Volume_1:_The_Quine_Tapes> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Velvet_Underground> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_29> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On, followed by Take it Off!, was preceded by the album Let it Breed." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_29/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#precededBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Let_It_Breed> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#followedBy> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Take_It_Off!> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_30> a oskstruct:DataEntry ;
+    oskstruct:text "The Honeymoon killers produced a punk blues album titled Turn Me On." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_30/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_31> a oskstruct:DataEntry ;
+    oskstruct:text "The album Turn Me On is by the American band which is produced by The Honeymoon Killers which is a punk blues album." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_31/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_32> a oskstruct:DataEntry ;
+    oskstruct:text "The Expect a Miracle album which is of the instrumental music genre is followed by the album Afterplay." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_32/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Instrumental_music> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#followedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Afterplay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Album> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_33> a oskstruct:DataEntry ;
+    oskstruct:text "Artist Brian Kelly, who is a composer and pianist, created and produced Expect a Miracle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_33/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#artist> ;
+    oskstruct:object <http://dbpedia.org/resource/Brian_Kelly> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Expect_a_Miracle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Brian_Kelly> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicalArtist> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_34> a oskstruct:DataEntry ;
+    oskstruct:text "The genre of the Honeymoon Killers' album Turn Me On is punk blues." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_34/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/The_Honeymoon_Killers> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#Band> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#2_MusicalWork_train_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Turn_Me_On> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Album> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#genre> ;
+    oskstruct:object <http://dbpedia.org/resource/Punk_blues> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicGenre> .

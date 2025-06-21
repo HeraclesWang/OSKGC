@@ -1,0 +1,1360 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Company#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Company/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Company/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company> a owl:Ontology ;
+    rdfs:label "2_Company data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Company/v1> ;
+    rdfs:comment "The instance dataset for the 2_Company ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_1> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is a company in the energy industry, and they serve all regions of the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_2> a oskstruct:DataEntry ;
+    oskstruct:text "Trane is a subsidiary that is located in Swords (Dublin)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Subsidiary> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_3> a oskstruct:DataEntry ;
+    oskstruct:text "In Swords (Dublin), the company Trane produces building management system." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_Management_System> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_4> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media not only offers applications in the entertainment industry, but also produces web service." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Entertainment> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#service> ;
+    oskstruct:object <http://dbpedia.org/resource/Web_service> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Service> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_5> a oskstruct:DataEntry ;
+    oskstruct:text "GMA new media is a mass media industry that makes mobile applications." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Mobile_Applications> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Software> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Mass_Media> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_6> a oskstruct:DataEntry ;
+    oskstruct:text "Located in King of Prussia (Pennsylvania); Amerigas is in the energy industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/King_of_Prussia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_7> a oskstruct:DataEntry ;
+    oskstruct:text "A type of S.A. corporation, Hypermarcas, is in the business of producing healthcare products." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/S.A.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Healthcare> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_8> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas was founded on January 1st, 1959, and they now have 8500 employees." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#numberOfEmployees> ;
+    oskstruct:object "8500"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1959-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_9> a oskstruct:DataEntry ;
+    oskstruct:text "Felipe Gozon is a key person in GMA New Media, a company that makes mobile applications." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Mobile_Applications> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Software> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Felipe_Gozon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_10> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is a company which sells cosmetics; their revenue is $ 1800000000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Cosmetics> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#revenue> ;
+    oskstruct:object "1800000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_11> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, founded 01/01/2000, is in the mass media industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2000-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Mass_Media> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_12> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, a company founded on 01-01-2000 are manufacturers of mobile applications." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2000-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Mobile_Applications> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Software> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_13> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is located in São Paulo, Brazil." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/S%C3%A3o_Paulo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_14> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is located in Brazil, a country led by the Vice President." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Vice_President> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_15> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas, which is located in Brazil, is a company in the pharmaceutical industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Pharmaceutical> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_16> a oskstruct:DataEntry ;
+    oskstruct:text "Founded on 2001-01-01, Hypermarcas is in the pharmaceutical industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Pharmaceutical> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2001-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_17> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, which is located in the GMA Network Center, makes mobile applications." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Mobile_Applications> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Software> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/GMA_Network_Center> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Building> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_18> a oskstruct:DataEntry ;
+    oskstruct:text "Paul Ryan is the leader of the United States where AmeriGas provides its services." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Paul_Ryan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Representative> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_19> a oskstruct:DataEntry ;
+    oskstruct:text "Trane was founded in La Crosse, on January 1, 1913." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1913-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_20> a oskstruct:DataEntry ;
+    oskstruct:text "Founded on 2001-01-01, Hypermarcas is located in Brazil." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2001-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_21> a oskstruct:DataEntry ;
+    oskstruct:text "Trane is located in Swords (Dublin), Ireland." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ireland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_22> a oskstruct:DataEntry ;
+    oskstruct:text "Trane is a subsidiary company that makes building management systems." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_22/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_Management_System> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Subsidiary> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_23> a oskstruct:DataEntry ;
+    oskstruct:text "Managed by their CEO, Hypermarcas is in the pharmaceutical industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_23/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Pharmaceutical> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/CEO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_24> a oskstruct:DataEntry ;
+    oskstruct:text "The founding date of Trane, Ireland is 1913-01-01." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_24/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1913-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ireland> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_25> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, which is located in the Philippines, produces web service." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_25/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#service> ;
+    oskstruct:object <http://dbpedia.org/resource/Web_service> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Service> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_26> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, which was founded on 01/01/2000, is located in the GMA Network Center." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_26/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2000-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/GMA_Network_Center> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Building> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_27> a oskstruct:DataEntry ;
+    oskstruct:text "Trane produces HVAC and building management systems." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_27/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_Management_System> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/HVAC> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_28> a oskstruct:DataEntry ;
+    oskstruct:text "The building materials industry Trane was founded on New Years Day in 1913." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_28/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1913-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_materials> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_29> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is a media company that was founded on 01-01-2000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_29/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2000-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Media_company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_30> a oskstruct:DataEntry ;
+    oskstruct:text "Trane was founded in La Crosse WI, which is led by a mayor." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_30/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Mayor> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_31> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is working in the United States. White Americans is one of the ethnic groups in that same country." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_31/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/White_Americans> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_32> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is a company in the mass media industry whose headquarters are located in the GMA Network Center." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_32/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Mass_Media> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/GMA_Network_Center> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Building> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_33> a oskstruct:DataEntry ;
+    oskstruct:text "Trane, a building materials supplier, produces HVAC." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_33/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/HVAC> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_materials> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_34> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is a media company located in the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_34/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Media_company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_35> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas, a type of S.A. (corporation) is managed by their CEO." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_35/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/CEO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/S.A.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_36> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media, Inc. is a media company that offers applications in the entertainment industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_36/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Entertainment> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Media_company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_37> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is located in King of Prussia (Pennsylvania), and does lots of work in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_37/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/King_of_Prussia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_38> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is a company that offers products such as mobile applications, but they also produces web service." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_38/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Mobile_Applications> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Software> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#service> ;
+    oskstruct:object <http://dbpedia.org/resource/Web_service> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Service> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_39> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas, whose key person is their CEO, produces pharmaceutical drugs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_39/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Drugs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/CEO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_40> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is based in the United States and employs 8500 people." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_40/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#numberOfEmployees> ;
+    oskstruct:object "8500"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_41> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is located in the Philippines, where the President is the title of the leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_41/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/President> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_42> a oskstruct:DataEntry ;
+    oskstruct:text "With a revenue of $ 10264000000, Trane is located in Swords (Dublin)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_42/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#revenue> ;
+    oskstruct:object "10264000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_43> a oskstruct:DataEntry ;
+    oskstruct:text "La Crosse, where Trane was founded, has the total area of 58.38 square kilometers." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_43/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#areaTotal> ;
+    oskstruct:object "58.38"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_44> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas serves the United States, and their operating income is 380700000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_44/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#operatingIncome> ;
+    oskstruct:object "380700000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_45> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas, which has 10252 employees, produces healthcare products." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_45/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#numberOfEmployees> ;
+    oskstruct:object "10252"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Healthcare> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_46> a oskstruct:DataEntry ;
+    oskstruct:text "Felipe Gozon is the key person for the media company, GMA New Media." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_46/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Felipe_Gozon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Media_company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_47> a oskstruct:DataEntry ;
+    oskstruct:text "The location of Trane is Swords (Dublin) where the County Manager is leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_47/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Swords> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/County_Manager> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_48> a oskstruct:DataEntry ;
+    oskstruct:text "The key person on GMA New Media, an entertainment industry company, is Felipe Gozon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_48/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_48/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Felipe_Gozon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_48/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Entertainment> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_49> a oskstruct:DataEntry ;
+    oskstruct:text "Vice President is a United States leadership title, and AmeriGas provides its services in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_49/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_49/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_49/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Vice_President> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_50> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas, which is located in Brazil, calls its CEO its key person." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_50/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_50/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_50/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/CEO> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Profession> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_51> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media lies in the Philippines where applications are offered in the entertainment industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_51/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_51/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_51/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_51/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Entertainment> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_52> a oskstruct:DataEntry ;
+    oskstruct:text "Classified as energy industry, AmeriGas was founded on January 1st, 1959." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_52/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_52/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_52/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_52/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1959-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_53> a oskstruct:DataEntry ;
+    oskstruct:text "Trane, which produces building management systems, has a revenue of $ 10264000000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_53/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_53/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_53/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Building_Management_System> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_53/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#revenue> ;
+    oskstruct:object "10264000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_54> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is a company in the energy industry whose operating income is 380700000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_54/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_54/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_54/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#operatingIncome> ;
+    oskstruct:object "380700000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_54/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_55> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas works in the United States, where the Vice President is a leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_55/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_55/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_55/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_55/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/United_States> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/Vice_President> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_56> a oskstruct:DataEntry ;
+    oskstruct:text "GMA Network, the parent company of GMA New Media, is headed by Felipe Gozon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_56/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_56/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_56/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#parentCompany> ;
+    oskstruct:object <http://dbpedia.org/resource/GMA_Network> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_56/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_Network> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#keyPerson> ;
+    oskstruct:object <http://dbpedia.org/resource/Felipe_Gozon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_57> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is a type of S.A. corporation that has 10252 employees." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_57/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_57/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_57/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/S.A.> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_57/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#numberOfEmployees> ;
+    oskstruct:object "10252"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_58> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas serves all regions of the United States, which is also its home country." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_58/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_58/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_58/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_58/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_59> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is a pharmaceutical company that also sells cosmetics." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_59/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_59/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_59/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Pharmaceutical> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_59/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Cosmetics> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_60> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas was founded in the United States on 1959-01-01." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_60/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_60/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_60/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_60/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "1959-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_61> a oskstruct:DataEntry ;
+    oskstruct:text "Trane produces HVAC, employing 29000 people." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_61/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_61/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_61/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#numberOfEmployees> ;
+    oskstruct:object "29000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_61/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/HVAC> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_62> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas has an operating income of $ 380700000 and a net income of $ 211200000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_62/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_62/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_62/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#operatingIncome> ;
+    oskstruct:object "380700000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_62/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#netIncome> ;
+    oskstruct:object "211200000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_63> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is a United States based company with an operating income of $ 380700000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_63/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_63/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_63/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#operatingIncome> ;
+    oskstruct:object "380700000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_63/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_64> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas is a company founded on January 1, 2001, that produces cosmetics." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_64/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_64/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_64/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundingDate> ;
+    oskstruct:object "2001-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_64/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Cosmetics> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_65> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is located in Quezon City, which has a total area of 165.33." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_65/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_65/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_65/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Quezon_City> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_65/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Quezon_City> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#areaTotal> ;
+    oskstruct:object "165.33"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_66> a oskstruct:DataEntry ;
+    oskstruct:text "The main product of Hypermarcas, which is located in São Paulo, is drugs." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_66/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_66/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_66/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Drugs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_66/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/S%C3%A3o_Paulo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_67> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is located in Quezon city of the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_67/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_67/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_67/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_67/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Quezon_City> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_68> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas works in the United States in the energy industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_68/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_68/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_68/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_68/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_69> a oskstruct:DataEntry ;
+    oskstruct:text "Trane is an HVAC manufacturer founded in La Crosse." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_69/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_69/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_69/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/La_Crosse> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_69/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Trane> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/HVAC> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_70> a oskstruct:DataEntry ;
+    oskstruct:text "Hypermarcas produces pharmaceutical drugs, more specifically healthcare products." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_70/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_70/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_70/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#product> ;
+    oskstruct:object <http://dbpedia.org/resource/Drugs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Product> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Company#2_Company_train_70/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Hypermarcas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Healthcare> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
