@@ -1,0 +1,272 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/1_Company#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/1_Company/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/1_Company/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company> a owl:Ontology ;
+    rdfs:label "1_Company data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/1_Company/v1> ;
+    rdfs:comment "The instance dataset for the 1_Company ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "GMA New Media is in the mass media industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_1/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/GMA_New_Media> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Mass_Media> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank has a net income of 15100000000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_2/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#netIncome> ;
+    oskstruct:object "15100000000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas was founded on 01-01-1959." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_3/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#foundingDate> ;
+    oskstruct:object "1959-01-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "The President is the leader title of the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_4/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#leaderTitle> ;
+    oskstruct:object <http://dbpedia.org/resource/President> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PoliticalFunction> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "Michel Temer is the leader of Brazil." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_5/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Brazil> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Michel_Temer> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "Donabate is part of Swords (Dublin)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_6/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Donabate> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/Swords> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank was founded on 08-16-1920." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_7/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#foundingDate> ;
+    oskstruct:object "1920-08-16"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "Philippine Entertainment Portal's parent company is Summit Media." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_8/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philippine_Entertainment_Portal> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#parentCompany> ;
+    oskstruct:object <http://dbpedia.org/resource/Summit_Media> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank is a public company." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_9/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#type> ;
+    oskstruct:object <http://dbpedia.org/resource/Public_company> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Company/class#CompanyType> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank's location is the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_10/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank was founded in the Insular Government of the Philippine Islands." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_11/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Insular_Government_of_the_Philippine_Islands> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/AdministrativeRegion> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank has 5594 employees." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_12/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#numberOfEmployees> ;
+    oskstruct:object "5594"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank offers banking service." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_13/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#service> ;
+    oskstruct:object <http://dbpedia.org/resource/Banking> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Company/class#Service> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Manila is Chinabank’s founding place." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_14/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#foundationPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Manila> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Company/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Chinabank has 295 locations." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_15/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chinabank> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#numberOfLocations> ;
+    oskstruct:object "295"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "The net income of AmeriGas is 211200000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_16/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#netIncome> ;
+    oskstruct:object "211200000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is located in King of Prussia (Pennsylvania)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_17/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/King_of_Prussia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Settlement> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas is in the energy industry." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_18/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#industry> ;
+    oskstruct:object <http://dbpedia.org/resource/Energy_industry> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/1_Company/class#Industry> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas works in the country of the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_19/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas has 8500 employees." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_20/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#numberOfEmployees> ;
+    oskstruct:object "8500"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas provides its services in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_21/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#serves> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "AmeriGas has an operating income of $ 380700000." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_22/triple1> .
+
+<https://HeraclesWang.github.io/OSKGC/data/1_Company#1_Company_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/AmeriGas> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/1_Company/relation#operatingIncome> ;
+    oskstruct:object "380700000"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .

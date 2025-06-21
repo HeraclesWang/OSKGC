@@ -1,0 +1,327 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_Film#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Film/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Film/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film> a owl:Ontology ;
+    rdfs:label "3_Film data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_Film/v1> ;
+    rdfs:comment "The instance dataset for the 3_Film ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears was edited by Alan Jaggs, produced by Anatole de Grunwald, with Bernard Knowles as the cinematographer." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#editor> ;
+    oskstruct:object <http://dbpedia.org/resource/Alan_Jaggs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieEditor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#cinematography> ;
+    oskstruct:object <http://dbpedia.org/resource/Bernard_Knowles> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "Harold French was the director of the 89 minute film English Without Tears, where Nicholas Brodszky was the music composer." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "Nicholas Brodszky composed music of the movie English Without Tears with a running time of 89 minutes and release date was 07-28-1944." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#releaseDate> ;
+    oskstruct:object "1944-07-28"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "'English Without Tears' was written by Terence Rattigan and Anatole de Grunwald, who was born in Saint Petersburg." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Saint_Petersburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "Super Capers was distributed by Roadside Attractions and Lionsgate which was founded by Frank Giustra." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#distributor> ;
+    oskstruct:object <http://dbpedia.org/resource/Roadside_Attractions> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ProductionCompany> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Lionsgate> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Company> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#foundedBy> ;
+    oskstruct:object <http://dbpedia.org/resource/Frank_Giustra> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#BusinessPerson> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Super_Capers> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#distributor> ;
+    oskstruct:object <http://dbpedia.org/resource/Lionsgate> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears, written by Terence Rattigan, runs 89 minutes. The cinematography for the film was done by Bernard Knowles." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#cinematography> ;
+    oskstruct:object <http://dbpedia.org/resource/Bernard_Knowles> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7> a oskstruct:DataEntry ;
+    oskstruct:text """"English Without Tears" was produced and written by Anatole de Grunwald. The editor for the film was Alan Jaggs.""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#editor> ;
+    oskstruct:object <http://dbpedia.org/resource/Alan_Jaggs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieEditor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "English Without Tears was produced by Anatole de Grunwald, directed by Harold French, with Nicholas Brodszky as the composer of the songs used." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#director> ;
+    oskstruct:object <http://dbpedia.org/resource/Harold_French> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Anatole de Grunwald, born on December 25th 1910 is the coauthor of English Without Tears alongside Terence Rattigan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#birthDate> ;
+    oskstruct:object "1910-12-25"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Terence_Rattigan> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "The 89 minute long movie English Without Tears includes music composed by Nicholas Brodszky. Alan Jaggs was in charge of the editing." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#musicComposer> ;
+    oskstruct:object <http://dbpedia.org/resource/Nicholas_Brodszky> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/MusicComposer> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#editor> ;
+    oskstruct:object <http://dbpedia.org/resource/Alan_Jaggs> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieEditor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#runtime> ;
+    oskstruct:object "89"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "Anatole de Grunwald wrote and produced English Without Tears which had Bernard Knowles as the cinematographer." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#producer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#writer> ;
+    oskstruct:object <http://dbpedia.org/resource/Anatole_de_Grunwald> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#ScreenWriter> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Film#3_Film_test_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/English_Without_Tears> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Film/relation#cinematography> ;
+    oskstruct:object <http://dbpedia.org/resource/Bernard_Knowles> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Film/class#MovieDirector> .

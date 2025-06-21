@@ -1,0 +1,1704 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/3_Food#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/3_Food/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/3_Food/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food> a owl:Ontology ;
+    rdfs:label "3_Food data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/3_Food/v1> ;
+    rdfs:comment "The instance dataset for the 3_Food ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "Arem-arem originates from the country of Indonesia where Joko Widodo is the leader and Indonesian is the language." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joko_Widodo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_1/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesian> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "An ingredient of beef kway teow, which originates from Singapore and Indonesia is palm sugar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#region> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_2/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Palm_sugar> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow is a dish from the country of Singapore, where the leader is Halimah Yacob and one of the languages spoken is English." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/English> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_3/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Halimah_Yacob> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "A popular food in Indonesia, Beef kway teow originates from Singapore. The country where Tony Tan is the leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#region> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_4/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Tony_Tan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "The main ingredient of Binignit is coconut milk and it also contains sago. The dish comes from the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_5/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "Two of the main ingredients in binignit are banana and sweet potato, which belongs to the order of Solanales." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_6/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "Sago is a key ingredient of a dish called Binignit which like Sandesh (confectionery) is a dessert." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_7/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "Sausage is an ingredient of a Bacon Explosion, a main course, which comes from the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_8/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Main_course> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Binignit is a dish found in the Philippines where one of the ethnic groups are the Igorot people and the language spoken is Philippine English." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippine_English> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_9/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ethnicGroup> ;
+    oskstruct:object <http://dbpedia.org/resource/Igorot_people> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/EthnicGroup> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "The main ingredients of Binignit are Taro and sweet potato, which belongs to the order Solanales." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_10/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "Bacon explosion is a main course dish that includes the ingredients sausage and bacon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Main_course> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_11/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "The binignit dish can be found in the Philippines. Two of the main ingredients in it are banana and sweet potato." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_12/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Asam pedas is a dish of fish cooked in a sour and hot sauce and comes from Indonesia and Malaysia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asam_pedas> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Fish> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Animal> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asam_pedas> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_13/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asam_pedas> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Malaysia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Barny cakes are found in France where the French language is spoken and the leader is François Hollande." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Barny_Cakes> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Snack> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/France> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/France> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/French> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_14/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/France> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Fran%C3%A7ois_Hollande> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "In Indonesia; Jusuf Kalla is the leader, Indonesian is the language, and Arem-arem is commonly served." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Jusuf_Kalla> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePresident> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_15/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesian> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Arem-arem is a food found in Indonesia, where the currency is Indonesian rupiah and Jusuf Kalla is a leader." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Jusuf_Kalla> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePresident> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_16/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#currency> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesian_rupiah> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Currency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "The Javanese cuisine dish of arem-arem has banana leaf in it and can be found in Indonesia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana_leaf> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_17/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#cuisine> ;
+    oskstruct:object <http://dbpedia.org/resource/Javanese_cuisine> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Cuisine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "Joko Widodo is the leader of Indonesia where the currency is the Indonesian rupiah and Arem-arem is a traditional dish." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joko_Widodo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_18/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#currency> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesian_rupiah> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Currency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "Arem-arem originates from the country of Indonesia, where two of the leaders are, Joko Widodo and Jusuf Kalla." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joko_Widodo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_19/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Jusuf_Kalla> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePresident> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "Arem-arem is a dish of Javanese cuisine, originating from the country of Indonesia, one of whose leaders is Jusuf Kalla." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Jusuf_Kalla> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/VicePresident> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_20/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Arem-arem> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#cuisine> ;
+    oskstruct:object <http://dbpedia.org/resource/Javanese_cuisine> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Cuisine> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "The main ingredient in binignit is sweet potatoes but it also has bananas. The dish comes from the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_21/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "Sweet potato and Taro are two of the main ingredients in Binignit, a dish that can be found in the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_22/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23> a oskstruct:DataEntry ;
+    oskstruct:text "One of the main ingredients of the cuisine of Binignit, in the Philippines, is the sweet potato, and another is coconut milk." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_23/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24> a oskstruct:DataEntry ;
+    oskstruct:text "Sweet potatoes are part of the order of Solanales and are a main ingredient of Binignit which also contains taro." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_24/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25> a oskstruct:DataEntry ;
+    oskstruct:text "Two types of dessert are Sandesh (confectionery) and Binignit. The latter has sweet potato as a main ingredient." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_25/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26> a oskstruct:DataEntry ;
+    oskstruct:text "Binignit is a type of dessert like Cookies. It is made from sweet potato." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_26/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Cookie> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27> a oskstruct:DataEntry ;
+    oskstruct:text "Binignit is a dessert which contains sweet potato. Sandesh (confectionery) is also a dessert." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_27/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28> a oskstruct:DataEntry ;
+    oskstruct:text "Binignit recipes typically contain sweet potatoes and sago. Sweet potatoes belong to the order Solanales." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_28/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29> a oskstruct:DataEntry ;
+    oskstruct:text "The main ingredient of binignit is banana, along with sago. The dish can be found in the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_29/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30> a oskstruct:DataEntry ;
+    oskstruct:text "Taro is an ingredient in Binignit, a dessert. Sandesh (confectionery) is also a dish that can be served as a dessert." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_30/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31> a oskstruct:DataEntry ;
+    oskstruct:text "One of the main ingredients of binignit is coconut milk. Another ingredient is sweet potato which is from the order Solanales." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_31/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32> a oskstruct:DataEntry ;
+    oskstruct:text "Cookies are served as a dessert as is binignit which has the main ingredient of Sweet potatoes." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_32/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Cookie> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33> a oskstruct:DataEntry ;
+    oskstruct:text "Coconut milk is an ingredient of Binignit, a type of dessert. Another type of dessert is sandesh." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_33/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34> a oskstruct:DataEntry ;
+    oskstruct:text "Binignit is a dessert that contains coconut milk. A cookie is also a dessert." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_34/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Cookie> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35> a oskstruct:DataEntry ;
+    oskstruct:text "Banana is one of the main ingredients in the dish binignit which is an ingredient in taro, the dish is from the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_35/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36> a oskstruct:DataEntry ;
+    oskstruct:text "Coconut milk and sweet potato are the main ingredients of the binignit dish, which can be found in the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_36/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37> a oskstruct:DataEntry ;
+    oskstruct:text "One of the main ingredients of Binignit is the sweet potato, which belongs to the order of Solanales, another ingredient that can be used is Sago." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_37/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38> a oskstruct:DataEntry ;
+    oskstruct:text "Coconut milk is an ingredient of Binignit along with sweet potatoes which belong to the solanales order of plants." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Coconut_milk> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_38/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Plant> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#order> ;
+    oskstruct:object <http://dbpedia.org/resource/Solanales> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Order> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39> a oskstruct:DataEntry ;
+    oskstruct:text "Sago is the main ingredient of binignit recipes, which also contain sweet potatoes, and come from the Philippines." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sago> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_39/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40> a oskstruct:DataEntry ;
+    oskstruct:text "Banana is an ingredient in binignit, which along with sandesh (confectionery) are types of dessert." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Banana> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_40/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Dessert> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Sandesh> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41> a oskstruct:DataEntry ;
+    oskstruct:text "The Filipino dish of binignit has sweet potatoes and taro as ingredients." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sweet_potato> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Philippines> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_41/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Binignit> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Taro> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Plant> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42> a oskstruct:DataEntry ;
+    oskstruct:text "Halimah Yacob is a leader in Standard Chinese speaking Singapore where they make Beef kway teow." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Standard_Chinese> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_42/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Halimah_Yacob> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43> a oskstruct:DataEntry ;
+    oskstruct:text "Sesame oil is an ingredient in beef kway teow, a dish found in Indonesia and Singapore." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sesame_oil> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_43/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44> a oskstruct:DataEntry ;
+    oskstruct:text "Tony Tan is a leader in Singapore where Standard Chinese is spoken and where the dish Beef kway teow is from." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Tony_Tan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_44/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#language> ;
+    oskstruct:object <http://dbpedia.org/resource/Standard_Chinese> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Language> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45> a oskstruct:DataEntry ;
+    oskstruct:text "Halimah Yacob is a leader of Singapore, where Beef kway teow originates from. It is a dish which can also be found in indonesia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#region> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_45/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Halimah_Yacob> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow comes from Singapore and Indonesia and has palm sugar as an ingredient." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Palm_sugar> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_46/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow is a dish from the country of Singapore, where the leader is Halimah Yacob and the currency is the Singapore dollar." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#currency> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore_dollar> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Currency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_47/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Halimah_Yacob> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48> a oskstruct:DataEntry ;
+    oskstruct:text "A dish which comes from Indonesia and is popular in Singapore is beef kway teow, it has sesame oil among its ingredients." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sesame_oil> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_48/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow is a dish from the country of Singapore where the currency is the Singapore dollar and the leader is Tony Tan." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Tony_Tan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_49/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#currency> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore_dollar> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Currency> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50> a oskstruct:DataEntry ;
+    oskstruct:text "The leader of Singapore is Tony Tan, it's also where beef kway teow is from. Beef kway teow is also found in Indonesia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_50/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Tony_Tan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow is a popular dish in Singapore, where Tony Tan and Halimah Yacob are leaders." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Tony_Tan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_51/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Halimah_Yacob> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52> a oskstruct:DataEntry ;
+    oskstruct:text "Beef kway teow is found in the countries of Indonesia and Singapore, it includes palm sugar as an ingredient." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Palm_sugar> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_52/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53> a oskstruct:DataEntry ;
+    oskstruct:text "Beef Kway Teow uses Oyster sauce as an ingredient and is made in Singapore and Indonesia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Oyster_sauce> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sauce> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Singapore> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_53/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Beef_kway_teow> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54> a oskstruct:DataEntry ;
+    oskstruct:text "The main ingredients in the American dish Bacon explosion is bacon and sausage." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_54/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55> a oskstruct:DataEntry ;
+    oskstruct:text "Bacon and sausage are the main ingredients in a Bacon Explosion, which comes from the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_55/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56> a oskstruct:DataEntry ;
+    oskstruct:text "Bacon Explosion is served as a main course, it includes sausages and bacon." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#course> ;
+    oskstruct:object <http://dbpedia.org/resource/Main_course> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Course> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_56/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57> a oskstruct:DataEntry ;
+    oskstruct:text "The Bacon Explosion originates from the Kansas city metropolitan area of the United States and includes sausage among its ingredients." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_57/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#region> ;
+    oskstruct:object <http://dbpedia.org/resource/Kansas_City_metropolitan_area> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58> a oskstruct:DataEntry ;
+    oskstruct:text "Bacon explosion which contains bacon and sausage is a dish found in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_58/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59> a oskstruct:DataEntry ;
+    oskstruct:text "The Bacon Explosion originates from the United States and its main ingredients are bacon and sausage." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Bacon> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_59/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_Explosion> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#mainIngredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Sausage> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Ingredient> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60> a oskstruct:DataEntry ;
+    oskstruct:text "Brown sauce is an ingredient in a bacon sandwich which is considered a variation of A BLT, which is itself considered to be variation of a club sandwich." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_sandwich> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/BLT> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/BLT> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/Club_sandwich> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_60/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_sandwich> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Brown_sauce> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Condiment> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61> a oskstruct:DataEntry ;
+    oskstruct:text "Brown sauce is an ingredient of a Bacon Sandwich, a dish from the United Kingdom. Another variation for a bacon sandwich is a BLT." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_sandwich> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#dishVariation> ;
+    oskstruct:object <http://dbpedia.org/resource/BLT> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_sandwich> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_Kingdom> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_61/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bacon_sandwich> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#ingredient> ;
+    oskstruct:object <http://dbpedia.org/resource/Brown_sauce> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#Condiment> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62> a oskstruct:DataEntry ;
+    oskstruct:text "Joko Widodo is the leader of Indonesia, where the capital is Jakarta and where the dish Bakso is from." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple2> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple3> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Jakarta> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Joko_Widodo> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/3_Food#3_Food_test_62/triple3> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bakso> ;
+    oskstruct:subjectType <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/3_Food/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Indonesia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .

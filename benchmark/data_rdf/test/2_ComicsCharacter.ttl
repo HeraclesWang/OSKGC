@@ -1,0 +1,410 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter> a owl:Ontology ;
+    rdfs:label "2_ComicsCharacter data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter/v1> ;
+    rdfs:comment "The instance dataset for the 2_ComicsCharacter ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_1> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax is a character in the film Big Hero 6, which starred Ryan Potter." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Ryan_Potter> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "The character Blockbuster was created by Tom Lyle and Carmine Infantino." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Lyle> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Carmine_Infantino> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "The comic character Bolt, was created by Paris Cullins and Ernie Colón." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Paris_Cullins> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Ernie_Col%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "Dane Whitman Black Knight, was created by John Buscema, who is from the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#Dane_Whitman_Black_Knight> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Buscema> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/John_Buscema> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCreator> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "The character Blockbuster was created by Gardner Fox and Roger Stern." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Gardner_Fox> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Roger_Stern> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "The creators of Blockbuster (comics character) are Gardner Fox and Tom Lyle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Gardner_Fox> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Lyle> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "The comic book character Blockbuster was created by Roger Stern and Carmine Infantino." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Roger_Stern> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Carmine_Infantino> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "The comic character Blockbuster was created by Roger Stern and Tom Lyle." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Roger_Stern> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Tom_Lyle> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Blockbuster is a comic character that was created by Carmine Infantino and Gardner Fox." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Gardner_Fox> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Blockbuster> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Carmine_Infantino> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "The character Bolt was created by Ernie Colón and Dan Mishkin." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Ernie_Col%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Dan_Mishkin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "Ernie Colón, one of the creators of the character Bolt, is a national of Puerto Rico." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Ernie_Col%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ernie_Col%C3%B3n> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCreator> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#nationality> ;
+    oskstruct:object <http://dbpedia.org/resource/Puerto_Rico> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "Ernie Colón and Gary Cohn created the comic character Bolt." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Ernie_Col%C3%B3n> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Bolt> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Gary_Cohn> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "Duncan Rouleau created Baymax, a character in Big Hero 6." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#creator> ;
+    oskstruct:object <http://dbpedia.org/resource/Duncan_Rouleau> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/ComicsCreator> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax is a character in Big Hero 6, Scott Adsit starred in the movie version of Big Hero 6." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Scott_Adsit> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Comedian> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax is a character in the film Big Hero 6, which stars Alan Tudyk." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Alan_Tudyk> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax is a character in Big Hero 6 which also starred Maya Rudolph." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Maya_Rudolph> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Comedian> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "Walt Disney Studios Motion pictures distributed Big Hero 6 film, where Baymax is a character." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#distributor> ;
+    oskstruct:object <http://dbpedia.org/resource/Walt_Disney_Studios_Motion_Pictures> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax first appeared in Big Hero 6, starring Ryan Potter." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#firstAppearanceInFilm> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Ryan_Potter> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "Big Hero 6, starring Damon Wayans, Jr., features the character Baymax." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Damon_Wayans,_Jr.> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "Baymax is a character in the film Big Hero 6 that starred Jamie Chung." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Baymax> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/ComicsCharacter> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#series> ;
+    oskstruct:object <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/فلم> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#2_ComicsCharacter_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Big_Hero_6> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/فلم> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#starring> ;
+    oskstruct:object <http://dbpedia.org/resource/Jamie_Chung> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Actor> .

@@ -1,0 +1,790 @@
+@prefix data: <https://HeraclesWang.github.io/OSKGC/data/2_Building#> .
+@prefix oskstruct: <https://HeraclesWang.github.io/OSKGC/structure#> .
+@prefix res: <https://HeraclesWang.github.io/OSKGC/resource#> .
+@prefix rel: <https://HeraclesWang.github.io/OSKGC/2_Building/relation#> .
+@prefix cls: <https://HeraclesWang.github.io/OSKGC/2_Building/class#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building> a owl:Ontology ;
+    rdfs:label "2_Building data" ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626> ,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    owl:versionIRI <https://HeraclesWang.github.io/OSKGC/data/2_Building/v1> ;
+    rdfs:comment "The instance dataset for the 2_Building ontology." .
+
+oskstruct:DataEntry a owl:Class ;
+    rdfs:label "Data Entry" ;
+    rdfs:comment "A data entry in OSKGC." .
+
+oskstruct:hasTriple a owl:ObjectProperty ;
+    rdfs:domain oskstruct:DataEntry ;
+    rdfs:range oskstruct:Triple ;
+    rdfs:label "has triple" ;
+    rdfs:comment "Links a data entry to one of its extracted knowledge triples." .
+
+oskstruct:Triple a owl:Class ;
+    rdfs:label "Triple" ;
+    rdfs:comment "A structured triple consists of a subject, a predicate, and an object, along with the subject type and object type." .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_1> a oskstruct:DataEntry ;
+    oskstruct:text """The College of William & Mary is the owner of the Alan B. Miller Hall, whose address is "101 Ukrop Way".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_1/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_1/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_1/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#address> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#101_Ukrop_Way> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_1/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_2> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row, located at Colmore Row, was designed by the architect, John Madin." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_2/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_2/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_2/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_2/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Colmore_Row> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_3> a oskstruct:DataEntry ;
+    oskstruct:text "The College of WIlliam & Mary is the current owner of Alan B. Miller Hall and the Mason School of Business is the current tenants." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_3/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_3/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_3/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_3/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_4> a oskstruct:DataEntry ;
+    oskstruct:text "Alan B. Miller Hall is owned by The College of William & Mary and located in Williamsburg (Virginia)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_4/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_4/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_4/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_4/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Williamsburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_5> a oskstruct:DataEntry ;
+    oskstruct:text "The construction of Alan B. Miller Hall, 101 Ukrop Way, began on 30th March 2007." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_5/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_5/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_5/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#buildingStartDate> ;
+    oskstruct:object "2007-03-30"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_5/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#address> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#101_Ukrop_Way> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_6> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row, designed by the architect John Madin is located in Birmingham." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_6/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_6/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_6/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Birmingham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_6/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_7> a oskstruct:DataEntry ;
+    oskstruct:text "Asser Levy Public Baths is located in Manhattan, which is a part of New York." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_7/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_7/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_7/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Manhattan> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/CityDistrict> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_7/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Manhattan> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/CityDistrict> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/New_York> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_8> a oskstruct:DataEntry ;
+    oskstruct:text "300 North LaSalle is in Chicago part of DuPage County." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_8/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_8/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_8/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/300_North_LaSalle> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Chicago> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_8/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Chicago> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/City> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#isPartOf> ;
+    oskstruct:object <http://dbpedia.org/resource/DuPage_County> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#County> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_9> a oskstruct:DataEntry ;
+    oskstruct:text "Asser Levy Public Baths located at Avenue A, Manhattan. and constructed in 1904." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_9/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_9/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_9/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Avenue_A> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_9/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asser_Levy_Public_Baths> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#yearOfConstruction> ;
+    oskstruct:object "1904"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_10> a oskstruct:DataEntry ;
+    oskstruct:text "20 Fenchurch Street, which has a floor count of 34, was completed in April 2014." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_10/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_10/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_10/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/20_Fenchurch_Street> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionDate> ;
+    oskstruct:object "2014-04"^^xsd:string ;
+    oskstruct:objectType xsd:string .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_10/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/20_Fenchurch_Street> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#floorCount> ;
+    oskstruct:object "34"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_11> a oskstruct:DataEntry ;
+    oskstruct:text "The Mason School of Business is a tenant of Alan B. Miller Hall in the United States." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_11/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_11/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_11/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#tenant> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_11/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_12> a oskstruct:DataEntry ;
+    oskstruct:text "Asilomar Conference Grounds is located at Asilomar Blvd and was constructed in 1913." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_12/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_12/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_12/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Asilomar_Blvd> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_12/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Asilomar_Conference_Grounds> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#yearOfConstruction> ;
+    oskstruct:object "1913"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_13> a oskstruct:DataEntry ;
+    oskstruct:text "3Arena at the North Wall Quay is owned by Live Nation Entertainment." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_13/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_13/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_13/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/3Arena> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Venue> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <http://dbpedia.org/resource/Live_Nation_Entertainment> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Company> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_13/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/3Arena> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Venue> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/North_Wall_Quay> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_14> a oskstruct:DataEntry ;
+    oskstruct:text "Adisham Hall's architectural style is Tudor and Jacabian and the building is located in Haputale." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_14/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_14/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_14/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architecturalStyle> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Tudor_and_Jacabian> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#ArchitecturalStyle> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_14/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Adisham_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#Haputale> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_15> a oskstruct:DataEntry ;
+    oskstruct:text "Addis Ababa City Hall is located in the country of Ethiopia which is led by Hailemariam Desalegn." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_15/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_15/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_15/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ethiopia> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Hailemariam_Desalegn> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/PrimeMinister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_15/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Addis_Ababa_City_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Ethiopia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_16> a oskstruct:DataEntry ;
+    oskstruct:text "Robert A. M. Stern is the architect of the Alan B. Miller Hall where the Mason School of Business is located." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_16/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_16/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_16/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#tenant> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_16/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_A._M._Stern> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_17> a oskstruct:DataEntry ;
+    oskstruct:text "The Mason School of Business are the current tenants of Alan B. Miller Hall, which was completed on June 1, 2009." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_17/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_17/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_17/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_17/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionDate> ;
+    oskstruct:object "2009-06-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_18> a oskstruct:DataEntry ;
+    oskstruct:text "The Mason School of Business is located in the United States, and are the current tenants of Alan B. Miller Hall." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_18/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_18/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_18/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/United_States> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_18/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_19> a oskstruct:DataEntry ;
+    oskstruct:text "Alan B. Miller Hall in Virginia is owned by The College of William & Mary." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_19/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_19/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_19/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Virginia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_19/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_20> a oskstruct:DataEntry ;
+    oskstruct:text "The Mason School of Business are the current tenants of Alan B. Miller Hall which is located in Virginia." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_20/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_20/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_20/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_20/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Virginia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_21> a oskstruct:DataEntry ;
+    oskstruct:text "Robert A. M. Stern is the architect of Alan B. Miller Hall of which The Mason School of Business is the current tenant." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_21/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_21/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_21/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_21/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_A._M._Stern> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_22> a oskstruct:DataEntry ;
+    oskstruct:text "Alan B. Miller Hall is at 101 Ukrop Way and was completed on 1 June 2009." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_22/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_22/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_22/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionDate> ;
+    oskstruct:object "2009-06-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_22/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#address> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#101_Ukrop_Way> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_23> a oskstruct:DataEntry ;
+    oskstruct:text """Alan B. Miller Hall, which was inaugurated on 2009-10-02, has the address "101 Ukrop Way".""" ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_23/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_23/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_23/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#inaugurationDate> ;
+    oskstruct:object "2009-10-02"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_23/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#address> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#101_Ukrop_Way> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Place> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_24> a oskstruct:DataEntry ;
+    oskstruct:text "Alan B. Miller Hall which is owned by the College of William & Mary was completed on 1st June 2009." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_24/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_24/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_24/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionDate> ;
+    oskstruct:object "2009-06-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_24/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_25> a oskstruct:DataEntry ;
+    oskstruct:text "The Mason School of Business are the current tenants of Alan B. Miller Hall in Williamsburg (Virginia)." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_25/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_25/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_25/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#currentTenants> ;
+    oskstruct:object <http://dbpedia.org/resource/Mason_School_of_Business> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_25/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Williamsburg> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_26> a oskstruct:DataEntry ;
+    oskstruct:text "The College of William & Mary owns the Alan B. Miller Hall and the Chancellor of the College is Robert Gates." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_26/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_26/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_26/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#owner> ;
+    oskstruct:object <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/University> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_26/triple2> a oskstruct:Triple ;
+    oskstruct:subject <https://HeraclesWang.github.io/OSKGC/resource#College_of_William_&_Mary> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/University> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#chancellor> ;
+    oskstruct:object <http://dbpedia.org/resource/Robert_Gates> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Minister> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_27> a oskstruct:DataEntry ;
+    oskstruct:text "Alan B. Miller Hall in Virginia was completed on 1st June 2009." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_27/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_27/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_27/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionDate> ;
+    oskstruct:object "2009-06-01"^^xsd:date ;
+    oskstruct:objectType xsd:date .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_27/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Alan_B._Miller_Hall> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Virginia> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/State> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_28> a oskstruct:DataEntry ;
+    oskstruct:text "Ampara Hospital is located in Eastern Province (Sri Lanka), Sri Lanka." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_28/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_28/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_28/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Eastern_Province> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Province> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_28/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Eastern_Province> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Province> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_29> a oskstruct:DataEntry ;
+    oskstruct:text "Ampara Hospital is in Sri Lanka, whose leader is Ranil Wickremesinghe." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_29/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_29/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_29/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_29/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#leader> ;
+    oskstruct:object <http://dbpedia.org/resource/Ranil_Wickremesinghe> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/President> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_30> a oskstruct:DataEntry ;
+    oskstruct:text "Ampara Hospital is located in the Ampara District in Sri Lanka." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_30/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_30/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_30/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_District> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/District> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_30/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ampara_District> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/District> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_31> a oskstruct:DataEntry ;
+    oskstruct:text "Ampara Hospital, with a bed count of 476, is located in Sri Lanka." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_31/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_31/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_31/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_31/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#bedCount> ;
+    oskstruct:object "476"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_32> a oskstruct:DataEntry ;
+    oskstruct:text "The Ampara Hospital is located in Ampara, Sri Lanka." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_32/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_32/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_32/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Town> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_32/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Ampara> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Town> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_33> a oskstruct:DataEntry ;
+    oskstruct:text "Sri Jayawardenepura Kotte is the capital of Sri Lanka, where Ampara Hospital is located." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_33/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_33/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_33/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Ampara_Hospital> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Hospital> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#country> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Country> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_33/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/Sri_Lanka> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Country> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#capital> ;
+    oskstruct:object <http://dbpedia.org/resource/Sri_Jayawardenepura_Kotte> ;
+    oskstruct:objectType <https://HeraclesWang.github.io/OSKGC/2_Building/class#CapitalCity> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_34> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row actually on Colmore Row has 23 floors." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_34/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_34/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_34/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#floorCount> ;
+    oskstruct:object "23"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_34/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Colmore_Row> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_35> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row was designed by John Madin, born in Birmingham." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_35/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_35/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_35/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_35/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Architect> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#birthPlace> ;
+    oskstruct:object <http://dbpedia.org/resource/Birmingham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_36> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row at Colmore Row was completed in 1976." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_36/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_36/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_36/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#completionYear> ;
+    oskstruct:object "1976"^^xsd:gYear ;
+    oskstruct:objectType xsd:gYear .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_36/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Colmore_Row> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_37> a oskstruct:DataEntry ;
+    oskstruct:text "Architect John Madin, designed 103 Colmore Row, located on Colmore Row, in Birmingham, England." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_37/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_37/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_37/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_37/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Colmore_Row> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_38> a oskstruct:DataEntry ;
+    oskstruct:text "103 Colmore Row, Birmingham is a building with 23 floors." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_38/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_38/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_38/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Birmingham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_38/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#floorCount> ;
+    oskstruct:object "23"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_39> a oskstruct:DataEntry ;
+    oskstruct:text "John Madin was an architect from Birmingham who designed 103 Colmore Row." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_39/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_39/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_39/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#architect> ;
+    oskstruct:object <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Architect> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_39/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/John_Madin> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Architect> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#origin> ;
+    oskstruct:object <http://dbpedia.org/resource/Birmingham> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/City> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_40> a oskstruct:DataEntry ;
+    oskstruct:text "There are 23 floors at 103 Colmore Row, Birmingham, England." ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_40/triple1> ;
+    oskstruct:hasTriple <https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_40/triple2> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_40/triple1> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#location> ;
+    oskstruct:object <http://dbpedia.org/resource/Colmore_Row> ;
+    oskstruct:objectType <http://dbpedia.org/ontology/Road> .
+
+<https://HeraclesWang.github.io/OSKGC/data/2_Building#2_Building_test_40/triple2> a oskstruct:Triple ;
+    oskstruct:subject <http://dbpedia.org/resource/103_Colmore_Row> ;
+    oskstruct:subjectType <http://dbpedia.org/ontology/Building> ;
+    oskstruct:predicate <https://HeraclesWang.github.io/OSKGC/2_Building/relation#floorCount> ;
+    oskstruct:object "23"^^xsd:decimal ;
+    oskstruct:objectType xsd:decimal .
