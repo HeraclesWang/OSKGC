@@ -1,0 +1,319 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://heracleswang.github.io/OSKGC/dataset> a void:Dataset ;
+    dcterms:title "OSKGC Benchmark Dataset" ;
+    dcterms:description "This dataset includes both ABox (text-triple facts) and TBox (ontology definitions) RDF triples." ;
+    dcterms:issued "2025-06-20"^^xsd:date ;
+    dc:creator <https://orcid.org/0009-0006-7934-1626>,
+               <https://orcid.org/0000-0001-6985-9671> ;
+    void:triples 159879 ;
+    void:classPartition [
+        void:class <https://HeraclesWang.github.io/OSKGC/structure#Triple> ;
+        void:triples 19792
+    ] ;
+    void:classPartition [
+        void:class <https://HeraclesWang.github.io/OSKGC/structure#DataEntry> ;
+        void:triples 10183
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ;
+        void:triples 30203
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#hasTriple> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#subject> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#objectType> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#object> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#predicate> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#subjectType> ;
+        void:triples 19792
+    ] ;
+    void:propertyPartition [
+        void:property <https://HeraclesWang.github.io/OSKGC/structure#text> ;
+        void:triples 10183
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/2000/01/rdf-schema#label> ;
+        void:triples 228
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/2000/01/rdf-schema#range> ;
+        void:triples 57
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/2000/01/rdf-schema#comment> ;
+        void:triples 228
+    ] ;
+    void:propertyPartition [
+        void:property <http://purl.org/dc/elements/1.1/creator> ;
+        void:triples 114
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/2002/07/owl#versionIRI> ;
+        void:triples 57
+    ] ;
+    void:propertyPartition [
+        void:property <http://www.w3.org/2000/01/rdf-schema#domain> ;
+        void:triples 57
+    ] ;
+    void:exampleResource <https://HeraclesWang.github.io/OSKGC/data/3_CelestialBody#3_CelestialBody_train_1> ;
+    void:exampleResource <https://HeraclesWang.github.io/OSKGC/data/2_City#2_City_dev_2> ;
+    void:exampleResource <https://HeraclesWang.github.io/OSKGC/data/1_Airport#1_Airport_test_5> ;
+    void:vocabulary <http://dbpedia.org/ontology/> ;
+    void:vocabulary <http://purl.org/dc/elements/1.1/> ;
+    void:vocabulary <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf-schema#> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    void:vocabulary <http://www.w3.org/2002/07/owl#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/resource#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/structure#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Airport/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Airport/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Airport/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Artist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Artist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Artist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Astronaut/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Astronaut/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Astronaut/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Athlete/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Athlete/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Building/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Building/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Building/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_CelestialBody/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_City/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_City/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_City/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_ComicsCharacter/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Company/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Company/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Company/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Film/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Film/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Film/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Food/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Food/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Food/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Monument/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Monument/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Monument/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Politician/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Politician/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Politician/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Scientist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Scientist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_Scientist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_University/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_University/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_University/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Airport/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Airport/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Airport/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Artist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Artist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Astronaut/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Astronaut/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Athlete/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Athlete/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Athlete/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Building/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Building/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Building/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_CelestialBody/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_City/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_City/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_City/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_ComicsCharacter/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Company/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Company/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Company/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Film/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Film/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Film/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Food/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Food/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Food/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Monument/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Monument/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Monument/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Politician/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Politician/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Politician/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Scientist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Scientist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_Scientist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_University/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_University/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_University/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/2_WrittenWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Airport/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Airport/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Airport/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Artist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Artist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Artist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Astronaut/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Astronaut/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Athlete/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Athlete/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Athlete/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Building/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Building/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Building/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_CelestialBody/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_CelestialBody/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_CelestialBody/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_City/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_City/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_City/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_ComicsCharacter/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_ComicsCharacter/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_ComicsCharacter/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Company/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Company/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Company/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Film/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Film/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Film/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Food/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Food/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Food/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Monument/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Monument/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Monument/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_MusicalWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Politician/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Politician/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Scientist/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Scientist/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_Scientist/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_University/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_University/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_University/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/relation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Airport#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Artist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Astronaut#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Athlete#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Building#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_CelestialBody#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_City#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_ComicsCharacter#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Company#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Film#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Food#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_MeanOfTransportation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Monument#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_MusicalWork#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Politician#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_Scientist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_SportsTeam#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_University#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/1_WrittenWork#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Airport#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Artist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Astronaut#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Athlete#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Building#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_CelestialBody#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_City#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_ComicsCharacter#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Company#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Film#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Food#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_MeanOfTransportation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Monument#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_MusicalWork#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Politician#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_Scientist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_SportsTeam#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_University#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/2_WrittenWork#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Airport#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Artist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Astronaut#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Athlete#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Building#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_CelestialBody#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_City#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_ComicsCharacter#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Company#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Film#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Food#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_MeanOfTransportation#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Monument#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_MusicalWork#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Politician#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_Scientist#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_SportsTeam#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_University#> ;
+    void:vocabulary <https://HeraclesWang.github.io/OSKGC/data/3_WrittenWork#> ;
+    void:vocabulary <https://orcid.org/> ;
+    .
