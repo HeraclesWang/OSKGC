@@ -394,6 +394,83 @@ python main.py --config config.yaml --api-config config_api.yaml --do evaluate
 # or
 python evaluate.py --config config.yaml --api-config config_api.yaml
 ```
+
+## Prompts
+The prompts used in our baseline experiments are presented here.
+
+### Joint extraction setting
+
+```
+Your task is to construct a knowledge graph from the input text based on the given ontology schema. The goal is to extract triples based on the given ontology schema's entity types, relations, and hierarchy, and provide the most accurate corresponding ontology schema possible.
+Ontology schema:
+entity type: {entity type}
+relation: {relation}
+hierarchy: {hierarchy}
+Example text: {example text}
+Example output: {example output}
+The output format must strictly follow the example, with no additional text or explanations.
+Input text: {text}
+Output:
+```
+
+### Pipeline setting
+1. Entity recognition
+```
+Your task is to find all the named entities in the given text, including numbers, codes, and dates. 
+You need to find at least two entities. Only focus on named entities and never extract adjectives or numerical units. 
+Please strictly follow the format of the following example and only provide the named entities you find, without any additional words.
+Example text: {example text}
+Output: {example output}
+Text: {input text}
+Output:
+```
+2. Entity typing
+```
+Please select the appropriate entity type for each given entity from the candidate entity types based on the text and your knowledge.
+Text: {text}
+Entities: {entities}
+Candidate entity types: {candidate types}
+Each square bracket in the candidate entity types contains a candidate entity type. 
+If a candidate entity type is followed by a colon, then each entity type enclosed in square brackets within the subsequent curly brace is a sub-type of that entity type.
+Example:
+Text: {example text}
+Entities: {example entities}
+Output: {example output}
+Please select only one most appropriate entity type from the brackets for each entity, strictly following the format shown in the example, without any additional words or explanation.
+Output:
+```
+The candidate entity types in the entity typing step are written in a special format as shown in the example below, which illustrates the hierarchical structure among the candidate entity types.
+```
+[PersonFunction]:{ [Profession], [PoliticalFunction] }
+[Organisation]:{ [Company]:{ [RecordLabel] }, [PoliticalParty], [Legislature], [EducationalInstitution]:{ [University] }, [Group]:{ [Band] } }
+[Person]:{ [Politician]:{ [President], [Senator], [PrimeMinister], [VicePresident], [Mayor] }, [Artist]:{ [MusicalArtist]:{ [Guitarist] }, [Photographer] }, [Royalty] }
+[Device]:{ [Instrument] }
+[Place]:{ [PopulatedPlace]:{ [State], [Country], [Settlement]:{ [Village], [City]:{ [CapitalCity] }, [CityDistrict], [Town] } } }
+[TopicalConcept]:{ [Background], [Genre]:{ [MusicGenre] } }
+[Date]
+[Language]
+[EthnicGroup]
+[number]
+[Currency]
+[Year]
+```
+
+3. Relation selection
+```
+Please select relations from the candidates to connect given entities in the text, if they exist.
+Example:
+Text: {example text}
+Given entities: {example entities}
+Candidate relations: {example relations}
+Output: {example output}
+Please strictly follow the output format in the example without any additional words.
+Text: {input text}
+Given entities: {entities}
+Candidate relations: {relations}
+Output:
+```
+
+
 ## Baseline Results
 We provide:
 - Raw LLM outputs: [`LLM_response/`](./LLM_response/)
